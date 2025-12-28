@@ -1,0 +1,1141 @@
+gui/al_rrank_window.gui = al_rrank_window
+
+al_rrank_r1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r1
+	}
+}
+
+al_r1_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r1
+		set_variable = al_r1_type_1
+	}
+}
+
+al_r1_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r1
+		set_variable = al_r1_type_2
+	}
+}
+
+al_r1_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r1
+		set_variable = al_r1_type_3
+	}
+}
+
+al_r1_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r1
+		set_variable = al_r1_type_4
+	}
+}
+
+al_r1_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r1
+		set_variable = al_r1_type_5
+	}
+}
+
+al_r1_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r1
+		set_variable = al_r1_type_6
+	}
+}
+
+al_rrank_r2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r2
+	}
+}
+
+al_r2_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r2
+		set_variable = al_r2_type_1
+	}
+}
+
+al_r2_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r2
+		set_variable = al_r2_type_2
+	}
+}
+
+al_r2_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r2
+		set_variable = al_r2_type_3
+	}
+}
+
+al_r2_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r2
+		set_variable = al_r2_type_4
+	}
+}
+
+al_r2_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r2
+		set_variable = al_r2_type_5
+	}
+}
+
+al_r2_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r2
+		set_variable = al_r2_type_6
+	}
+}
+
+al_rrank_r3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r3
+	}
+}
+
+al_r3_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r3
+		set_variable = al_r3_type_1
+	}
+}
+
+al_r3_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r3
+		set_variable = al_r3_type_2
+	}
+}
+
+al_r3_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r3
+		set_variable = al_r3_type_3
+	}
+}
+
+al_r3_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r3
+		set_variable = al_r3_type_4
+	}
+}
+
+al_r3_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r3
+		set_variable = al_r3_type_5
+	}
+}
+
+al_r3_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r3
+		set_variable = al_r3_type_6
+	}
+}
+
+al_rrank_r4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r4
+	}
+}
+
+al_r4_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r4
+		set_variable = al_r4_type_1
+	}
+}
+
+al_r4_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r4
+		set_variable = al_r4_type_2
+	}
+}
+
+al_r4_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r4
+		set_variable = al_r4_type_3
+	}
+}
+
+al_r4_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r4
+		set_variable = al_r4_type_4
+	}
+}
+
+al_r4_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r4
+		set_variable = al_r4_type_5
+	}
+}
+
+al_r4_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r4
+		set_variable = al_r4_type_6
+	}
+}
+
+al_rrank_r5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r5
+	}
+}
+
+al_r5_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r5
+		set_variable = al_r5_type_1
+	}
+}
+
+al_r5_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r5
+		set_variable = al_r5_type_2
+	}
+}
+
+al_r5_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r5
+		set_variable = al_r5_type_3
+	}
+}
+
+al_r5_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r5
+		set_variable = al_r5_type_4
+	}
+}
+
+al_r5_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r5
+		set_variable = al_r5_type_5
+	}
+}
+
+al_r5_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r5
+		set_variable = al_r5_type_6
+	}
+}
+
+al_rrank_r6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r6
+	}
+}
+
+al_r6_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r6
+		set_variable = al_r6_type_1
+	}
+}
+
+al_r6_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r6
+		set_variable = al_r6_type_2
+	}
+}
+
+al_r6_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r6
+		set_variable = al_r6_type_3
+	}
+}
+
+al_r6_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r6
+		set_variable = al_r6_type_4
+	}
+}
+
+al_r6_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r6
+		set_variable = al_r6_type_5
+	}
+}
+
+al_r6_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r6
+		set_variable = al_r6_type_6
+	}
+}
+
+al_rrank_r7_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r7
+	}
+}
+
+al_r7_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r7
+		set_variable = al_r7_type_1
+	}
+}
+
+al_r7_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r7
+		set_variable = al_r7_type_2
+	}
+}
+
+al_r7_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r7
+		set_variable = al_r7_type_3
+	}
+}
+
+al_r7_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r7
+		set_variable = al_r7_type_4
+	}
+}
+
+al_r7_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r7
+		set_variable = al_r7_type_5
+	}
+}
+
+al_r7_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r7
+		set_variable = al_r7_type_6
+	}
+}
+
+al_rrank_r8_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r8
+	}
+}
+
+al_r8_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r8
+		set_variable = al_r8_type_1
+	}
+}
+
+al_r8_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r8
+		set_variable = al_r8_type_2
+	}
+}
+
+al_r8_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r8
+		set_variable = al_r8_type_3
+	}
+}
+
+al_r8_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r8
+		set_variable = al_r8_type_4
+	}
+}
+
+al_r8_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r8
+		set_variable = al_r8_type_5
+	}
+}
+
+al_r8_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r8
+		set_variable = al_r8_type_6
+	}
+}
+
+al_rrank_r9_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r9
+	}
+}
+
+al_r9_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r9
+		set_variable = al_r9_type_1
+	}
+}
+
+al_r9_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r9
+		set_variable = al_r9_type_2
+	}
+}
+
+al_r9_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r9
+		set_variable = al_r9_type_3
+	}
+}
+
+al_r9_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r9
+		set_variable = al_r9_type_4
+	}
+}
+
+al_r9_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r9
+		set_variable = al_r9_type_5
+	}
+}
+
+al_r9_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r9
+		set_variable = al_r9_type_6
+	}
+}
+
+al_rrank_r10_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r10
+	}
+}
+
+al_r10_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r10
+		set_variable = al_r10_type_1
+	}
+}
+
+al_r10_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r10
+		set_variable = al_r10_type_2
+	}
+}
+
+al_r10_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r10
+		set_variable = al_r10_type_3
+	}
+}
+
+al_r10_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r10
+		set_variable = al_r10_type_4
+	}
+}
+
+al_r10_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r10
+		set_variable = al_r10_type_5
+	}
+}
+
+al_r10_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r10
+		set_variable = al_r10_type_6
+	}
+}
+
+al_rrank_r11_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r11
+	}
+}
+
+al_r11_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r11
+		set_variable = al_r11_type_1
+	}
+}
+
+al_r11_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r11
+		set_variable = al_r11_type_2
+	}
+}
+
+al_r11_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r11
+		set_variable = al_r11_type_3
+	}
+}
+
+al_r11_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r11
+		set_variable = al_r11_type_4
+	}
+}
+
+al_r11_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r11
+		set_variable = al_r11_type_5
+	}
+}
+
+al_r11_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r11
+		set_variable = al_r11_type_6
+	}
+}
+
+al_rrank_r12_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r12
+	}
+}
+
+al_r12_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r12
+		set_variable = al_r12_type_1
+	}
+}
+
+al_r12_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r12
+		set_variable = al_r12_type_2
+	}
+}
+
+al_r12_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r12
+		set_variable = al_r12_type_3
+	}
+}
+
+al_r12_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r12
+		set_variable = al_r12_type_4
+	}
+}
+
+al_r12_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r12
+		set_variable = al_r12_type_5
+	}
+}
+
+al_r12_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r12
+		set_variable = al_r12_type_6
+	}
+}
+
+al_rrank_r13_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r13
+	}
+}
+
+al_r13_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r13
+		set_variable = al_r13_type_1
+	}
+}
+
+al_r13_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r13
+		set_variable = al_r13_type_2
+	}
+}
+
+al_r13_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r13
+		set_variable = al_r13_type_3
+	}
+}
+
+al_r13_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r13
+		set_variable = al_r13_type_4
+	}
+}
+
+al_r13_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r13
+		set_variable = al_r13_type_5
+	}
+}
+
+al_r13_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r13
+		set_variable = al_r13_type_6
+	}
+}
+
+al_rrank_r14_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r14
+	}
+}
+
+al_r14_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r14
+		set_variable = al_r14_type_1
+	}
+}
+
+al_r14_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r14
+		set_variable = al_r14_type_2
+	}
+}
+
+al_r14_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r14
+		set_variable = al_r14_type_3
+	}
+}
+
+al_r14_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r14
+		set_variable = al_r14_type_4
+	}
+}
+
+al_r14_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r14
+		set_variable = al_r14_type_5
+	}
+}
+
+al_r14_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r14
+		set_variable = al_r14_type_6
+	}
+}
+
+al_rrank_r15_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r15
+	}
+}
+
+al_r15_type_1_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r15
+		set_variable = al_r15_type_1
+	}
+}
+
+al_r15_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r15
+		set_variable = al_r15_type_2
+	}
+}
+
+al_r15_type_3_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r15
+		set_variable = al_r15_type_3
+	}
+}
+
+al_r15_type_4_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r15
+		set_variable = al_r15_type_4
+	}
+}
+
+al_r15_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r15
+		set_variable = al_r15_type_5
+	}
+}
+
+al_r15_type_6_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r15
+		set_variable = al_r15_type_6
+	}
+}
