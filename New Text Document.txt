@@ -1,0 +1,200 @@
+I want to continue making the rank mod. to recap:
+
+What the mod is about (Authority Ledger)
+
+Authority Ledger is an EU5 mod that:
+
+Adds dynamic country titles based on rank / authority
+
+Replaces static country names like
+
+Hungary
+with contextual names like
+Kingdom of Hungary, Duchy of Naples, etc.
+
+Uses customizable localization instead of hardcoded names, so:
+
+ranks
+
+government changes
+
+authority shifts
+can all change how a country is named at runtime
+
+Integrates into:
+
+map labels
+
+country selection screen
+
+country info UI
+
+In short:
+👉 It makes country names dynamic, rank-aware, and systemic rather than fixed strings.
+
+The core system you’re using
+
+The mod relies on three EU5 systems working together:
+
+Customizable localization
+(in_game/common/customizable_localization/)
+
+Defines how names are constructed (tokens, rules)
+
+Country name construction
+(common/country_name_construction/)
+
+Tells the engine which localization key to use
+
+Localization (.yml)
+(in_game/localization/english/, main_menu/localization/english/)
+
+Provides the actual human-readable text
+
+The main problem we fought
+
+You kept seeing things like:
+
+COUNTRY_FLAVOR of Country
+
+ERROR:GetCustom(country_flavor)
+
+Or crashes
+
+This looked like “broken localization”, but the real causes were layered.
+
+What went wrong (and why)
+1. ❌ Folder overuse
+
+Initially:
+
+Every folder from the template was included
+
+Localization ended up duplicated across:
+
+localization/
+
+main_menu/localization/
+
+in_game/localization/
+
+This caused:
+
+collisions
+
+overrides
+
+crashes
+
+2. ❌ Invalid localization files
+
+Some .yml files had:
+
+multiple l_english: headers
+
+embedded BOM characters inside the file
+
+bad indentation
+
+EU5’s localization parser is not forgiving → hard crashes.
+
+3. ❌ Misuse of REPLACE: in customizable localization
+
+This was the critical logic bug.
+
+You had:
+
+REPLACE:country_flavor = { ... }
+
+
+But the base game defines:
+
+country_flavor = { ... }
+
+
+Result:
+
+Your mod did not override the base key
+
+The engine never defined country_flavor
+
+The token printed literally as COUNTRY_FLAVOR
+
+This was confirmed by inspecting the COMMON bucket.
+
+4. ❌ Wrong name token context
+
+Using:
+
+$COUNTRY$
+
+
+sometimes resolves to the fallback "Country" depending on UI scope.
+
+Correct approach:
+
+[COUNTRY.GetName]
+
+What we fixed (step by step)
+✅ Structural fixes
+
+You correctly identified that:
+
+The template defines allowed paths, not required paths
+
+We switched to a minimal mod structure
+
+Removed unused folders (loading screen, redundant localization roots, etc.)
+
+✅ Localization fixes
+
+Every .yml now:
+
+has exactly one l_english:
+
+has correct indentation
+
+uses UTF-8 BOM correctly (once, at file start)
+
+Split responsibility cleanly:
+
+main_menu/localization → pre-game UI
+
+in_game/localization → map & in-game UI
+
+✅ Logic fixes (most important)
+
+Removed REPLACE: from country_flavor
+
+Let the mod define, not replace, the customizable key
+
+Stopped overriding country_name_long globally (avoided recursion / fallback)
+
+✅ Token fixes
+
+Final working pattern:
+
+"$country_flavor$ of [COUNTRY.GetName]"
+
+
+country_flavor → customizable localization (rank-aware)
+
+[COUNTRY.GetName] → safe, scoped country name
+
+Where you ended up
+
+You now have:
+
+A rank-aware country naming system
+
+Using proper customizable localization
+
+With:
+
+correct folder minimalism
+
+correct token scope
+
+no crashes
+
+no literal tokens showing
