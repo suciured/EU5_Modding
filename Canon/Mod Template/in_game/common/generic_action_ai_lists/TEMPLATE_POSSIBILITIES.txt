@@ -1,0 +1,218 @@
+COMMON/generic_action_ai_lists — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/generic_action_ai_lists/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- actions
+- potential
+- any_active_disaster
+- religion
+- any_international_organizations_member_of
+- NOT
+- aspiration_for_liberty_list
+- OR
+- autocephalous_patriarchates_list
+- autocephalous_patriarchates_creation_list
+- black_death_list
+- canonize_list
+- catholic_list
+- church_aspects_list
+- church_aspect_list
+- colonial_charters_list
+- colonial_revolution_list
+- columbian_exchange_list
+- conquistador_list
+- coup_attempt_list
+- court_and_country_list
+- crisis_of_the_chinese_dynasty_list
+- decline_of_majapahit_list
+- exploration_list
+- fall_of_delhi_list
+- french_wars_of_religion_list
+- global_list
+- golden_age_of_piracy_list
+- horde_list
+- monarchy_list
+- republic_list
+- theocracy_list
+- tribe_list
+- great_pestilence_list
+- guelphs_and_ghibellines_list
+- high_kingship_of_ireland_leader_list
+- high_kingship_of_ireland_member_list
+- hindu_list
+- self_control_list
+- hundred_years_war_list
+- hussite_wars_list
+- ilkhanate_list
+- international_organization_list
+- inti_list
+- italian_wars_list
+- jain_list
+- japanese_shogunate_list
+- little_ice_age_list
+- lordship_of_ireland_io_actions_list
+- mayan_list
+- middle_kingdom_list
+- middle_kingdom_member_list
+- muslim_list
+- nahuatl_list
+- nanbokuchou_list
+- naval_list
+- orthodox_list
+- parliament_list
+- peasants_war_list
+- piety_list
+- pop_based_list
+- purity_list
+- red_turban_rebellions_list
+- reformation_list
+- religious_faction_list
+- religious_influence_list
+- religious_school_list
+- religious_turmoil_list
+- revolution_list
+- rise_of_the_ottomans_list
+- rise_of_the_szlachta_list
+- rise_of_timur_list
+- sects_list
+- sengoku_list
+- succession_crisis_list
+- tatar_yoke_list
+- treaty_of_tordesillas_list
+- union_list
+- unlockable_io_actions_list
+- war_of_religions_list
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- actions
+- potential
+- can_see_situation
+- religion
+- disaster_type
+- any_active_disaster
+- any_international_organizations_member_of
+- international_organization_type
+- exists
+- government_type
+- NOT
+- is_member_of_international_organization
+- aspiration_for_liberty_list
+- OR
+- autocephalous_patriarchates_list
+- autocephalous_patriarchates_creation_list
+- has_autocephalous_patriarchates
+- black_death_list
+- canonize_list
+- has_canonization
+- catholic_list
+- church_aspects_list
+- has_tag
+- church_aspect_list
+- colonial_charters_list
+- modifier:can_colonize
+- is_rebel_country
+- colonial_revolution_list
+- columbian_exchange_list
+- conquistador_list
+- modifier:allow_conquistadors
+- coup_attempt_list
+- court_and_country_list
+- crisis_of_the_chinese_dynasty_list
+- decline_of_majapahit_list
+- exploration_list
+- modifier:may_explore
+- fall_of_delhi_list
+- french_wars_of_religion_list
+- global_list
+- golden_age_of_piracy_list
+- horde_list
+- monarchy_list
+- republic_list
+- theocracy_list
+- tribe_list
+- great_pestilence_list
+- guelphs_and_ghibellines_list
+- high_kingship_of_ireland_leader_list
+- leader_country
+- high_kingship_of_ireland_member_list
+- hindu_list
+- self_control_list
+- modifier:allow_self_control
+- hundred_years_war_list
+- hussite_wars_list
+- ilkhanate_list
+- international_organization_list
+- inti_list
+- italian_wars_list
+- jain_list
+- japanese_shogunate_list
+- little_ice_age_list
+- lordship_of_ireland_io_actions_list
+- mayan_list
+- middle_kingdom_list
+- is_leader_of_international_organization
+- middle_kingdom_member_list
+- muslim_list
+- religion.group
+- nahuatl_list
+- nanbokuchou_list
+- naval_list
+- has_ports
+- orthodox_list
+- parliament_list
+- is_active_parliament
+- peasants_war_list
+- piety_list
+- modifier:allow_mysticism_vs_jurisprudence
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/generic_action_ai_lists
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    can_see_situation = <value>
+    disaster_type = <value>
+    international_organization_type = <value>
+    religion = <value>
+    exists = <value>
+    government_type = <value>
+    is_member_of_international_organization = <value>
+    has_autocephalous_patriarchates = <value>
+    has_canonization = <value>
+    has_tag = <value>
+    actions = {
+        # ...
+    }
+    potential = {
+        # ...
+    }
+    any_active_disaster = {
+        # ...
+    }
+    religion = {
+        # ...
+    }
+    any_international_organizations_member_of = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    aspiration_for_liberty_list = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,4 @@
+# COMMON/scripted_triggers TEMPLATE
+<key> = {
+    # definition block
+}

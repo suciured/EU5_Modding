@@ -1,0 +1,162 @@
+COMMON/estates — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/estates/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- add
+- limit
+- if
+- value
+- satisfaction
+- high_power
+- low_power
+- scope:target
+- opinion
+- else
+- OR
+- NOT
+- crown_estate
+- power
+- nobles_estate
+- else_if
+- clergy_estate
+- burghers_estate
+- capital.market
+- scope:target.capital.market
+- peasants_estate
+- dhimmi_estate
+- tribes_estate
+- cossacks_estate
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- value
+- add
+- desc
+- limit
+- if
+- multiply
+- subtract
+- divide
+- color
+- power_per_pop
+- tax_per_pop
+- rival
+- alliance
+- revolt_court_language
+- satisfaction
+- high_power
+- low_power
+- scope:target
+- characters_have_dynasty
+- can_generate_mercenary_leaders
+- opinion
+- bank
+- government_type
+- scope:target.religion.group
+- has_reform
+- use_diminutive
+- global_monthly_food_modifier
+- scope:target.culture.language
+- is_rival_of
+- global_raw_material_output
+- country_cabinet_efficiency
+- building_upkeep_costs
+- change_policy_cost_modifier
+- global_estate_target_satisfaction
+- diplomatic_reputation
+- nobles_estate_max_tax
+- else
+- clergy_estate_max_tax
+- stability_cost
+- max
+- religion
+- OR
+- has_estate_privilege
+- burghers_estate_max_tax
+- peasants_estate_max_tax
+- NOT
+- dhimmi_estate_max_tax
+- pop_join_rebel_threshold
+- tribes_estate_max_tax
+- cossacks_estate_max_tax
+- crown_estate
+- priority_for_dynasty_head
+- can_spawn_random_characters
+- power_projection
+- revoke_privilege_cost_modifier
+- court_spending_cost
+- estate_building_destruction_satisfaction_impact
+- tax_income_efficiency
+- power
+- parliament_base_support
+- trade_income
+- ruler
+- nobles_estate
+- counter_espionage
+- monthly_prestige
+- levy_combat_efficiency_modifier
+- fort_limit_modifier
+- monthly_towards_aristocracy
+- is_neighbor_of
+- court_language
+- language
+- is_subject_of
+- else_if
+- clergy_estate
+- research_speed_modifier
+- global_pop_conversion_speed_modifier
+- monthly_towards_spiritualist
+- scope:target.religion
+- burghers_estate
+- global_merchant_power
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/estates
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    desc = <value>
+    value = <value>
+    multiply = <value>
+    subtract = <value>
+    divide = <value>
+    color = <value>
+    power_per_pop = <value>
+    tax_per_pop = <value>
+    rival = <value>
+    alliance = <value>
+    add = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    value = {
+        # ...
+    }
+    satisfaction = {
+        # ...
+    }
+    high_power = {
+        # ...
+    }
+    low_power = {
+        # ...
+    }
+    scope:target = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

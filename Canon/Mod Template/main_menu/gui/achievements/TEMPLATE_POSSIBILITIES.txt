@@ -1,0 +1,165 @@
+gui/achievements — TEMPLATE (POSSIBILITIES)
+===========================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- size
+- vbox
+- widget
+- margin
+- position
+- icon
+- expand
+- TooltipTextBlock
+- minimumsize
+- hbox
+- textbox
+- maximumsize
+- modify_texture
+- background
+- tooltipwidget
+- ContextualTooltipType
+- item
+- button_main_tab_alt
+- text_single
+- scrollarea
+- scrollbar_vertical
+- scrollwidget
+- window
+- header_button_left
+- text_multi
+- achievement_list_entry_item
+- ui_direction_button_holder_right
+- button_close_alt
+- window_header_alt
+- header_main_tabs
+- viewportwidget
+- scrollbar_horizontal
+- scroll_list
+- achievement_group_item
+- state
+- achievement_button
+
+Common assignment keywords seen (often-used properties/blocks):
+- using
+- size
+- text
+- layoutpolicy_horizontal
+- visible
+- vbox
+- texture
+- alpha
+- spacing
+- widget
+- margin
+- autoresize
+- onclick
+- parentanchor
+- position
+- icon
+- expand
+- TooltipTextBlock
+- minimumsize
+- hbox
+- textbox
+- alwaystransparent
+- maximumsize
+- modify_texture
+- background
+- tooltipwidget
+- ContextualTooltipType
+- fontsize
+- texture_density
+- allow_outside
+- datamodel
+- item
+- name
+- button_main_tab_alt
+- down
+- text_single
+- blend_mode
+- margin_bottom
+- margin_left
+- scrollarea
+- autoresizescrollarea
+- scrollbar_vertical
+- scrollwidget
+- window
+- movable
+- focuspolicy
+- margin_top
+- header_button_left
+- ignore_layout
+- raw_text
+- default_format
+- scrollbarpolicy_horizontal
+- set_parent_dimension_to_minimum
+- text_multi
+- align
+- fontsize_min
+- achievement_list_entry_item
+- reorder_on_mouse
+- resizable
+- ui_direction_button_holder_right
+- button_close_alt
+- window_header_alt
+- header_main_tabs
+- layoutpolicy_vertical
+- scrollbaralign_vertical
+- autoresizeviewport
+- viewportwidget
+- scissor
+- scrollbar_horizontal
+- scroll_list
+- achievement_group_item
+- state
+- duration
+- trigger_on_create
+- delay
+- on_finish
+- visible_at_creation
+- layer
+- margin_right
+- achievement_button
+
+Comprehensive example (placeholders only):
+# Comprehensive example for gui/achievements
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    using = <value>
+    text = <value>
+    layoutpolicy_horizontal = <value>
+    visible = <value>
+    texture = <value>
+    alpha = <value>
+    spacing = <value>
+    autoresize = <value>
+    onclick = <value>
+    parentanchor = <value>
+    size = {
+        # ...
+    }
+    vbox = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    margin = {
+        # ...
+    }
+    position = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    expand = {
+        # ...
+    }
+    TooltipTextBlock = {
+        # ...
+    }
+}

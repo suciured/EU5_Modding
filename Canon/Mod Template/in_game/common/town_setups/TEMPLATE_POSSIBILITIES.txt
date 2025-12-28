@@ -1,0 +1,215 @@
+COMMON/town_setups — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/town_setups/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- scandinavian_town
+- important_scandinavian_town
+- baltic_town
+- russian_city
+- russian_town
+- polish_town
+- ruthenian_town
+- british_town
+- british_town_port
+- iberian_town
+- iberian_town_port
+- iberian_city
+- iberian_city_port
+- lowlands_town
+- lowlands_costal_town
+- lowlands_city
+- lowlands_coastal_city
+- french_town
+- french_city
+- jurchen_town
+- chinese_town
+- chinese_coastal_town
+- chinese_city
+- chinese_coastal_city
+- south_east_asia_town
+- south_east_asia_port_town
+- south_east_asia_city
+- german_town
+- german_coastal_town
+- german_city
+- german_coastal_city
+- greek_town
+- greek_city_port
+- greek_town_port
+- balkan_town
+- carpathian_town
+- maghreb_town
+- maghreb_coastal_town
+- maghreb_city
+- maghreb_coastal_city
+- egyptian_city
+- anatolian_city
+- anatolian_town
+- indian_city
+- indian_coastal_city
+- indian_sultanate_coastal_city
+- indian_sultanate_city
+- indian_town
+- levant_town
+- levant_city
+- central_asian_city
+- central_asian_town
+- mexican_city
+- mexican_town
+- south_east_woodlands_town
+- italian_town
+- italian_coastal_town
+- italian_city
+- italian_trading_capital
+- italian_coastal_city
+- japan_town
+- japan_city
+- korea_town
+- korea_city
+- korean_city_port
+- sahel_town
+- sahel_city
+- yucatan_town
+- andes_town
+- andes_city
+- east_african_coastal_town
+- east_african_town
+- kilwan_merchant_settlement
+- kilwan_fishing_settlement
+- majapahit_town
+- majapahit_coastal_town
+- majapahit_city
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- mason
+- marketplace
+- temple
+- pottery_guild
+- weapon_guild
+- tools_guild
+- granary
+- cloth_guild
+- brewery
+- tannery
+- paper_guild
+- castle
+- furniture_guild
+- glass_guild
+- fine_cloth_guild
+- distillers_guild
+- scriptorium
+- jewelry_guild
+- wharf
+- naval_supplies_guild
+- slave_market
+- dyes_guild
+- winery
+- stockade
+- porcelain_guild
+- lacquerware_guild
+- zhixian
+- fortress_granary
+- dock
+- funduq
+- mamluk_barracks
+- confucian_school
+- korean_barracks
+- scandinavian_town
+- important_scandinavian_town
+- baltic_town
+- russian_city
+- russian_town
+- polish_town
+- ruthenian_town
+- british_town
+- british_town_port
+- iberian_town
+- iberian_town_port
+- iberian_city
+- iberian_city_port
+- lowlands_town
+- lowlands_costal_town
+- lowlands_city
+- lowlands_coastal_city
+- french_town
+- french_city
+- jurchen_town
+- chinese_town
+- chinese_coastal_town
+- chinese_city
+- provincial_garrison
+- chinese_coastal_city
+- south_east_asia_town
+- south_east_asia_port_town
+- south_east_asia_city
+- german_town
+- german_coastal_town
+- german_city
+- german_coastal_city
+- greek_town
+- greek_city_port
+- greek_town_port
+- balkan_town
+- carpathian_town
+- maghreb_town
+- maghreb_coastal_town
+- maghreb_city
+- maghreb_coastal_city
+- egyptian_city
+- anatolian_city
+- anatolian_town
+- indian_city
+- indian_coastal_city
+- indian_sultanate_coastal_city
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/town_setups
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    mason = <value>
+    marketplace = <value>
+    temple = <value>
+    pottery_guild = <value>
+    weapon_guild = <value>
+    tools_guild = <value>
+    granary = <value>
+    cloth_guild = <value>
+    brewery = <value>
+    tannery = <value>
+    scandinavian_town = {
+        # ...
+    }
+    important_scandinavian_town = {
+        # ...
+    }
+    baltic_town = {
+        # ...
+    }
+    russian_city = {
+        # ...
+    }
+    russian_town = {
+        # ...
+    }
+    polish_town = {
+        # ...
+    }
+    ruthenian_town = {
+        # ...
+    }
+    british_town = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

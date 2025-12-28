@@ -1,0 +1,97 @@
+COMMON/hegemons — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/hegemons/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- any_other_great_power
+- gain
+- NOT
+- lose
+- modifier
+- economic_hegemon
+- naval_hegemon
+- military_hegemon
+- diplomatic_hegemon
+- cultural_hegemon
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- any_other_great_power
+- gain
+- is_great_power
+- is_subject
+- NOT
+- lose
+- value
+- multiply
+- modifier
+- economic_hegemon
+- food_consumption_modifier
+- allow_diplomacy_force_divert_trade
+- allow_cabinet_reduced_paperwork
+- naval_hegemon
+- naval_damage_taken
+- allow_diplomacy_force_embargo
+- allow_cabinet_naval_focus
+- military_hegemon
+- global_war_score_cost
+- allow_diplomacy_violate_sovereignty
+- allow_cabinet_soldiers_as_workforce
+- diplomatic_hegemon
+- improve_relation_impact
+- allow_diplomacy_influence_nation
+- allow_cabinet_diplomatic_corps
+- cultural_hegemon
+- cultural_tradition_modifier
+- allow_diplomacy_force_change_court_language
+- allow_cabinet_assimilate_area
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/hegemons
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    is_great_power = <value>
+    is_subject = <value>
+    value = <value>
+    multiply = <value>
+    food_consumption_modifier = <value>
+    allow_diplomacy_force_divert_trade = <value>
+    allow_cabinet_reduced_paperwork = <value>
+    naval_damage_taken = <value>
+    allow_diplomacy_force_embargo = <value>
+    allow_cabinet_naval_focus = <value>
+    any_other_great_power = {
+        # ...
+    }
+    gain = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    lose = {
+        # ...
+    }
+    modifier = {
+        # ...
+    }
+    economic_hegemon = {
+        # ...
+    }
+    naval_hegemon = {
+        # ...
+    }
+    military_hegemon = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

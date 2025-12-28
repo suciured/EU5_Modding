@@ -1,0 +1,193 @@
+COMMON/unit_abilities — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/unit_abilities/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- owner
+- limit
+- allow
+- start_effect
+- hidden
+- unit_location
+- ai_will_do
+- OR
+- NOT
+- if
+- modifier
+- finished_when
+- any_sub_unit
+- not
+- while
+- random_sub_unit
+- custom_tooltip
+- scope:ship_unit
+- scope:owner
+- add
+- ai_will_revoke
+- any_foreign_building_countries_in_location
+- random_foreign_building_countries_in_location
+- transfer_yearly_gold
+- transfer_yearly_manpower
+- add_bonus_warscore
+- add_location_modifier
+- absorb_pops
+- any_pop
+- random_pop
+- convert_galley_to_light_ship
+- convert_light_ship_to_galley
+- drill_army
+- or
+- execute_prisoners
+- gather_food
+- hire_prisoners_as_mercenaries
+- march_to_sound_of_guns
+- finish_effect
+- promote_to_farari
+- trigger_if
+- trigger_else
+- change_variable
+- else
+- raid_clan_holdings
+- raid_imperial_family_holdings
+- ransom_prisoners
+- sacrifice_prisoners
+- religion
+- scorch_earth
+- unit_location.province
+- change_province_food
+- every_location_in_province
+- every_pop
+- sell_prisoners_into_slavery
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- owner
+- limit
+- toggle
+- allow
+- map
+- start_effect
+- is_exiled
+- hidden
+- in_combat
+- is_moving
+- unit_location
+- ai_will_do
+- OR
+- NOT
+- in_siege
+- add
+- army_only
+- value
+- modifier
+- is_army
+- if
+- custom_tooltip
+- duration
+- finished_when
+- has_prisoners
+- any_sub_unit
+- is_ship
+- sub_unit_category
+- has_commander
+- land_morale_modifier
+- target
+- not
+- religion
+- while
+- random_sub_unit
+- cancel_on_combat_end
+- text
+- culture
+- navy_only
+- confirm
+- modifier:can_convert_galleys_to_light
+- can_build_units_of_category
+- is_port
+- save_scope_as
+- scope:ship_unit
+- create_sub_unit_of_category
+- destroy_subunit
+- scope:owner
+- at_war
+- has_levies
+- has_mercenaries
+- ai_will_revoke
+- can_execute_prisoners
+- country_type
+- in_retreat
+- move_to_assist_on_adjacent_combat
+- has_variable
+- sub_unit_type
+- change_subunit_type
+- cancel_on_combat
+- any_foreign_building_countries_in_location
+- is_at_war_with
+- has_reform
+- random_foreign_building_countries_in_location
+- transfer_yearly_gold
+- transfer_yearly_manpower
+- add_bonus_warscore
+- country
+- amount
+- add_location_modifier
+- years
+- mode
+- absorb_pops
+- any_pop
+- random_pop
+- change_pop_owner
+- convert_galley_to_light_ship
+- convert_light_ship_to_galley
+- drill_army
+- cancel_on_move
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/unit_abilities
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    toggle = <value>
+    map = <value>
+    is_exiled = <value>
+    in_combat = <value>
+    is_moving = <value>
+    in_siege = <value>
+    army_only = <value>
+    value = <value>
+    add = <value>
+    is_army = <value>
+    owner = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    start_effect = {
+        # ...
+    }
+    hidden = {
+        # ...
+    }
+    unit_location = {
+        # ...
+    }
+    ai_will_do = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

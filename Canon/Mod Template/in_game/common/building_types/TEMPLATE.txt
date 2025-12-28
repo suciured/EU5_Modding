@@ -1,0 +1,4 @@
+# COMMON/building_types TEMPLATE
+<key> = {
+    # definition block
+}

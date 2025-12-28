@@ -1,0 +1,218 @@
+COMMON/effect_localization — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/effect_localization/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- start_tutorial_lesson
+- change_building_level
+- change_building_owner
+- set_subsidized
+- add_character_modifier_until_death
+- add_character_modifier_duration
+- add_character_modifier
+- remove_character_modifier
+- marry_character
+- divorce_character
+- set_child_education
+- add_adm
+- add_dip
+- add_mil
+- move_country
+- add_trait
+- remove_trait
+- add_artist_skill
+- change_father
+- change_mother
+- adopt_character
+- change_character_culture
+- change_character_estate
+- remove_ruler
+- change_character_religion
+- make_saint
+- make_saint_in_character_religion
+- add_fertility
+- change_dynasty
+- set_lowborn
+- found_dynasty
+- set_nickname
+- set_first_name
+- set_ethnicity
+- change_character_allegiance
+- remove_character_allegiance
+- set_to_limited_random_stat
+- impregnate
+- start_work_of_art
+- start_work_of_art_of_type
+- start_work_of_art_quality
+- start_work_of_art_of_type_quality
+- add_random_trait_from_category
+- remove_traits_of_category
+- add_additional_migration
+- remove_additional_migration
+- hire_prisoners_as_mercenaries
+- ransom_prisoners
+- request_ransom_prisoners
+- move_prisoners_to_safety
+- execute_prisoners
+- sell_prisoners_into_slavery
+- conditional_effect_empty
+- conditional_effect_simple
+- conditional_effect
+- conditional_effect_else
+- kill_character
+- kill_character_silently
+- trigger_event_non_silently
+- add_migration
+- add_migration_timeframe
+- remove_migration
+- destroy_art
+- destroy_colonial_charter
+- create_mercenary
+- create_holy_site
+- destroy_holy_site
+- remove_commander
+- cancel_exploration
+- change_colonial_charter_owner
+- fire_generic_action
+- propose_resolution
+- execute_propose_effect
+- destroy_rebel
+- set_dynasty_name_type
+- activate_situation
+- end_situation
+- remove_colonial_claim
+- add_extended_winter
+- remove_extended_winter
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- global
+- global_past
+- third
+- third_past
+- first
+- first_past
+- global_neg
+- third_neg
+- global_past_neg
+- third_past_neg
+- first_neg
+- first_past_neg
+- none
+- none_past
+- start_tutorial_lesson
+- change_building_level
+- change_building_owner
+- set_subsidized
+- add_character_modifier_until_death
+- add_character_modifier_duration
+- add_character_modifier
+- remove_character_modifier
+- marry_character
+- divorce_character
+- set_child_education
+- add_adm
+- add_dip
+- add_mil
+- move_country
+- add_trait
+- remove_trait
+- add_artist_skill
+- change_father
+- change_mother
+- adopt_character
+- change_character_culture
+- change_character_estate
+- remove_ruler
+- change_character_religion
+- make_saint
+- make_saint_in_character_religion
+- add_fertility
+- change_dynasty
+- set_lowborn
+- found_dynasty
+- set_nickname
+- set_first_name
+- set_ethnicity
+- change_character_allegiance
+- remove_character_allegiance
+- set_to_limited_random_stat
+- impregnate
+- start_work_of_art
+- start_work_of_art_of_type
+- start_work_of_art_quality
+- start_work_of_art_of_type_quality
+- add_random_trait_from_category
+- remove_traits_of_category
+- add_additional_migration
+- remove_additional_migration
+- hire_prisoners_as_mercenaries
+- ransom_prisoners
+- request_ransom_prisoners
+- move_prisoners_to_safety
+- execute_prisoners
+- sell_prisoners_into_slavery
+- conditional_effect_empty
+- conditional_effect_simple
+- conditional_effect
+- conditional_effect_else
+- kill_character
+- kill_character_silently
+- trigger_event_non_silently
+- add_migration
+- add_migration_timeframe
+- remove_migration
+- destroy_art
+- destroy_colonial_charter
+- create_mercenary
+- create_holy_site
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/effect_localization
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    global = <value>
+    global_past = <value>
+    third = <value>
+    third_past = <value>
+    first = <value>
+    first_past = <value>
+    global_neg = <value>
+    third_neg = <value>
+    global_past_neg = <value>
+    third_past_neg = <value>
+    start_tutorial_lesson = {
+        # ...
+    }
+    change_building_level = {
+        # ...
+    }
+    change_building_owner = {
+        # ...
+    }
+    set_subsidized = {
+        # ...
+    }
+    add_character_modifier_until_death = {
+        # ...
+    }
+    add_character_modifier_duration = {
+        # ...
+    }
+    add_character_modifier = {
+        # ...
+    }
+    remove_character_modifier = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

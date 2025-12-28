@@ -1,0 +1,209 @@
+gui — TEMPLATE (POSSIBILITIES)
+==============================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- size
+- position
+- format
+- margin
+- widget
+- vbox
+- button
+- icon
+- tooltipwidget
+- action_tooltip
+- hbox
+- text_single
+- modify_texture
+- button_regular
+- expand
+- background
+- textbox
+- maximumsize
+- minimumsize
+- TooltipTextBlock
+- state
+- button_default
+- editbox_single
+- flowcontainer
+- LeftClickButtonTooltip
+- button_wax
+- item
+- text_multi
+- scrollarea
+- scrollwidget
+- scrollbar_vertical
+- spriteborder
+- ContextualTooltipType
+- window
+- early_country_flag
+- fixedgridbox
+- CountryBackgroundMap
+- OnMapScenario
+- start_sound
+- spriteBorder
+- FrontEndBackground
+- button_close_alt
+- window_header_alt
+- fontcolor
+- serverbrowser_list_header_button
+- textformatting
+- AgeEventDecorationTop
+- AgeEventDecorationTop2
+- FrontEndMenu
+- scroll_list
+- sdk_button
+- save_slot
+- ui_direction_button_holder_right
+- BasicFunctionalTooltip
+- container
+- loadgame_grid
+- newsfeed_carousel
+- sdk_load_indicator
+- ProficiencyOptions
+- checkbutton
+- editbox
+- button_debug
+- save_load_menu_loading_indicator
+- frame_grid
+- steam_logo_button
+- FrontEndPreloadingWidget
+- checkbox_square_alt
+- glow
+- color
+- bezier
+- saving_indicator
+- INDEPENDANCE
+- WE_PERFORM_request_cardinal_seat_ACTION
+- WE_PERFORM_remove_cardinal_seat_ACTION
+- OTHER_PERFORMS_tordesillas_claim_area_ACTION
+- PERFORM_reinstate_the_legislative_assembly_ACTION
+- BeingUploadedDialog
+- dropdown_menu_default
+- button_main_tab_alt
+- scrollbar_horizontal
+
+Common assignment keywords seen (often-used properties/blocks):
+- log
+- onmap
+- popup
+- idle
+- option
+- pausepopup
+- message_category
+- using
+- size
+- name
+- format
+- visible
+- text
+- onclick
+- layoutpolicy_horizontal
+- position
+- raw_text
+- texture
+- margin
+- widget
+- parentanchor
+- vbox
+- spacing
+- button
+- on_action
+- enabled
+- icon
+- tooltipwidget
+- action_tooltip
+- title
+- autoresize
+- alpha
+- hbox
+- align
+- text_single
+- modify_texture
+- button_regular
+- expand
+- background
+- default_format
+- click_mode
+- sound
+- tooltip_enabled
+- texture_density
+- alwaystransparent
+- textbox
+- datacontext
+- click_type
+- blend_mode
+- maximumsize
+- minimumsize
+- fontsize
+- TooltipTextBlock
+- margin_bottom
+- margin_top
+- description
+- state
+- widgetanchor
+- clicksoundlater
+- button_default
+- editbox_single
+- spriteType
+- layoutpolicy_vertical
+- frame
+- flowcontainer
+- framesize
+- LeftClickButtonTooltip
+- button_wax
+- input_action
+- use_global_input_instance
+- ignoreinvisible
+- visible_at_creation
+- datamodel
+- item
+- tooltip
+- multiline
+- margin_left
+- addrow
+- allow_outside
+- margin_right
+
+Comprehensive example (placeholders only):
+# Comprehensive example for gui
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    log = <value>
+    onmap = <value>
+    popup = <value>
+    idle = <value>
+    option = <value>
+    pausepopup = <value>
+    message_category = <value>
+    using = <value>
+    name = <value>
+    visible = <value>
+    size = {
+        # ...
+    }
+    position = {
+        # ...
+    }
+    format = {
+        # ...
+    }
+    margin = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    vbox = {
+        # ...
+    }
+    button = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+}

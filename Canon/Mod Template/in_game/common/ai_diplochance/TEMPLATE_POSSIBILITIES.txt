@@ -1,0 +1,154 @@
+COMMON/ai_diplochance — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/ai_diplochance/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- royal_marriage
+- demand_become_subject_action
+- offermilaccess
+- offerloan
+- sell_location
+- buy_location
+- invite_to_international_organization
+- ask_to_join_international_organization
+- create_international_organization_targetting
+- enforce_peace
+- threaten_war
+- requestpeace
+- ransom_subunits
+- callaction_defensive
+- callaction_offensive
+- buy_milaccess
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- base
+- in_debt
+- trust_in_actor
+- negative_opinion
+- war_exhaustion
+- recipient_at_war
+- royal_ties
+- rank_difference
+- different_culture
+- different_religion_group
+- same_culture
+- border_distance
+- positive_opinion
+- negative_stability
+- location_value
+- price
+- recipient_occupied_beseiged_locations
+- enforced_demand
+- opinion
+- different_religion
+- actor_is_rival
+- giving_defensive_support
+- receiving_defensive_support
+- base_location_value
+- belongs_to_international_organization
+- same_religion
+- produced_goods
+- core
+- capital
+- yesman
+- relative_strength
+- warscore
+- levy_availability
+- recipient_civil_war
+- disloyal_subject
+- target_opinion
+- allied_to_enemy
+- royal_marriage
+- heir
+- same_court_language
+- actor_overlord_is_rival
+- recipient_is_rival
+- recipient_overlord_is_rival
+- age_female
+- culture_view
+- religion_view
+- union_size
+- demand_become_subject_action
+- actor_at_war
+- has_truce
+- offermilaccess
+- offerloan
+- need_loan
+- loan_is_insignificant
+- loan_ends_too_soon
+- loan_ends_too_late
+- interest_rate_too_high
+- too_many_loans
+- good_interest_rate
+- sell_location
+- price_percentage_of_treasury_funds
+- conquer_desire
+- province_distance
+- buy_location
+- rank
+- invite_to_international_organization
+- ask_to_join_international_organization
+- create_international_organization_targetting
+- enforce_peace
+- diplomatic_reputation
+- low_manpower
+- competing_power
+- threaten_war
+- requestpeace
+- desperation
+- call_for_peace
+- war_enthusiam
+- months_at_war
+- peaceoffer
+- peaceoffer_most_of_wanted
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/ai_diplochance
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    base = <value>
+    in_debt = <value>
+    trust_in_actor = <value>
+    negative_opinion = <value>
+    war_exhaustion = <value>
+    recipient_at_war = <value>
+    royal_ties = <value>
+    rank_difference = <value>
+    different_culture = <value>
+    different_religion_group = <value>
+    royal_marriage = {
+        # ...
+    }
+    demand_become_subject_action = {
+        # ...
+    }
+    offermilaccess = {
+        # ...
+    }
+    offerloan = {
+        # ...
+    }
+    sell_location = {
+        # ...
+    }
+    buy_location = {
+        # ...
+    }
+    invite_to_international_organization = {
+        # ...
+    }
+    ask_to_join_international_organization = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

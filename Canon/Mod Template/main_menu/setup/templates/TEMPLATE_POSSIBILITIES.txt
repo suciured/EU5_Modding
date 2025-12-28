@@ -1,0 +1,121 @@
+setup/templates — TEMPLATE (POSSIBILITIES)
+==========================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- government
+- laws
+- parliament
+- privilege
+- discovered_areas
+- reforms
+- discovered_regions
+- discovered_provinces
+- currency_data
+- scholars
+
+Common assignment keywords seen (often-used properties/blocks):
+- government
+- laws
+- parliament
+- parliament_type
+- centralization_vs_decentralization
+- traditionalist_vs_innovative
+- aristocracy_vs_plutocracy
+- belligerent_vs_conciliatory
+- quality_vs_quantity
+- offensive_vs_defensive
+- capital_economy_vs_traditional_economy
+- individualism_vs_communalism
+- outward_vs_inward
+- spiritualist_vs_humanist
+- serfdom_vs_free_subjects
+- mercantilism_vs_free_trade
+- privilege
+- marriage_law
+- heir_religion_law
+- land_vs_naval
+- immigration_law
+- mining_law
+- type
+- starting_technology_level
+- distribution_of_power_law
+- legal_code_law
+- heir_selection
+- administrative_system
+- cultural_traditions_law
+- censorship
+- education_masses_law
+- medieval_levy_law
+- royal_court_customs_law
+- feudal_de_jure_law
+- include
+- maritime_law
+- piracy_law
+- discovered_areas
+- reforms
+- discovered_regions
+- iqta_law
+- discovered_provinces
+- tribal_legal_basis_law
+- tribal_organization_law
+- tribal_religious_values_law
+- court_language
+- language_of_pleading
+- republican_foundation_law
+- country_rank
+- theocratic_leadership
+- holy_mission_law
+- divine_cause_law
+- sinicized_vs_unsinicized
+- patriarchate_law
+- sumptuary_law
+- ruler
+- precious_metal_distribution_law
+- currency_data
+- purity
+- sharia_law
+- religious_school
+- scholars
+
+Comprehensive example (placeholders only):
+# Comprehensive example for setup/templates
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    parliament_type = <value>
+    centralization_vs_decentralization = <value>
+    traditionalist_vs_innovative = <value>
+    aristocracy_vs_plutocracy = <value>
+    belligerent_vs_conciliatory = <value>
+    quality_vs_quantity = <value>
+    offensive_vs_defensive = <value>
+    capital_economy_vs_traditional_economy = <value>
+    individualism_vs_communalism = <value>
+    outward_vs_inward = <value>
+    government = {
+        # ...
+    }
+    laws = {
+        # ...
+    }
+    parliament = {
+        # ...
+    }
+    privilege = {
+        # ...
+    }
+    discovered_areas = {
+        # ...
+    }
+    reforms = {
+        # ...
+    }
+    discovered_regions = {
+        # ...
+    }
+    discovered_provinces = {
+        # ...
+    }
+}

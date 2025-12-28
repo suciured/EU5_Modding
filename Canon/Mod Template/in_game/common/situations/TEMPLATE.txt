@@ -1,0 +1,4 @@
+# COMMON/situations TEMPLATE
+<key> = {
+    # definition block
+}

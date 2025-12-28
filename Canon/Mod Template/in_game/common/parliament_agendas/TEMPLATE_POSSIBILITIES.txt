@@ -1,0 +1,218 @@
+COMMON/parliament_agendas — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/parliament_agendas/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- potential
+- on_accept
+- limit
+- change_societal_value
+- NOT
+- ordered_owned_location
+- max
+- add
+- change_building_level_in_location
+- add_estate_satisfaction
+- any_owned_location
+- change_institution_progress
+- can_bribe
+- on_bribe
+- root
+- add_country_modifier
+- ai_will_do
+- NOR
+- subtract
+- if
+- estate_opinion
+- OR
+- root.religion
+- culture
+- construct_building
+- allow
+- hidden_effect
+- save_temporary_scope_value_as
+- estate_max_tax
+- AND
+- has_special_status_in_international_organization
+- add_prestige
+- estate_satisfaction
+- any_estate_type_preferring
+- law
+- any_country_in_religion
+- random_country_in_religion
+- add_opinion_mutual_effect
+- drop_antagonism_bomb
+- current_age_or_later
+- random_owned_location
+- c:PRU
+- every_international_organization_member
+- pa_add_privilege
+- random_possible_privilege
+- pa_change_policy
+- any_possible_policy
+- random_possible_policy
+- pa_lessen_tax_burden_for_nobles
+- pa_lessen_tax_burden_for_clergy
+- pa_lessen_tax_burden_for_burghers
+- pa_lessen_tax_burden_for_peasants
+- pa_lessen_levy_obligations_for_nobles
+- pa_lessen_levy_obligations_for_clergy
+- pa_lessen_levy_obligations_for_burghers
+- pa_lessen_levy_obligations_for_peasants
+- pa_break_alliance
+- any_related_country
+- random_related_country
+- remove_relation
+- pa_reduce_opinion
+- pa_raise_opinion
+- pa_rethink_army_academy
+- pa_rethink_navy_academy
+- pa_reduce_land_recruitment
+- add_manpower
+- pa_reduce_naval_recruitment
+- add_sailors
+- pa_push_towards_decentralized_nobles
+- pa_move_towards_decentralized_nobles
+- pa_push_towards_aristocracy
+- pa_move_towards_aristocracy
+- pa_push_towards_serfdom
+- pa_move_towards_serfdom
+- pa_push_towards_belligerent
+- pa_move_towards_belligerent
+- pa_push_towards_land
+- pa_move_towards_land
+- pa_push_towards_traditional_economy_nobles
+- pa_move_towards_traditional_economy_nobles
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- value
+- estate
+- potential
+- on_accept
+- chance
+- type
+- max
+- limit
+- change_societal_value
+- add
+- order_by
+- NOT
+- ordered_owned_location
+- divide
+- current_age
+- has_building_with_at_least_one_level
+- change_building_level_in_location
+- building
+- add_estate_satisfaction
+- any_owned_location
+- knows_about_institution
+- has_embraced_institution
+- change_institution_progress
+- check_range_bounds
+- add_government_power
+- add_prestige
+- importance
+- can_bribe
+- can_bribe_default_trigger
+- on_bribe
+- on_bribe_default_effect
+- add_stability
+- root
+- target
+- add_country_modifier
+- ai_will_do
+- NOR
+- subtract
+- if
+- estate_opinion
+- estate_type
+- modifier
+- is_city
+- special_status
+- multiply
+- OR
+- is_leader_of_international_organization
+- root.religion
+- culture
+- add_cultural_tradition
+- add_war_exhaustion
+- construct_building
+- building_type
+- cost_multiplier
+- cost_multiplier_reason
+- instant
+- international_organization_type
+- allow
+- hidden_effect
+- save_temporary_scope_value_as
+- name
+- estate_max_tax
+- add_army_tradition
+- add_navy_tradition
+- AND
+- has_special_status_in_international_organization
+- estate_satisfaction
+- any_estate_type_preferring
+- law
+- any_country_in_religion
+- random_country_in_religion
+- add_opinion_mutual_effect
+- drop_antagonism_bomb
+- add_research_progress
+- current_age_or_later
+- add_diplomats
+- religion
+- random_owned_location
+- ROOT.religion
+- international_organization
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/parliament_agendas
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    estate = <value>
+    chance = <value>
+    type = <value>
+    order_by = <value>
+    divide = <value>
+    current_age = <value>
+    max = <value>
+    has_building_with_at_least_one_level = <value>
+    building = <value>
+    potential = {
+        # ...
+    }
+    on_accept = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    change_societal_value = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    ordered_owned_location = {
+        # ...
+    }
+    max = {
+        # ...
+    }
+    add = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

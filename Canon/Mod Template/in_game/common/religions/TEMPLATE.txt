@@ -1,0 +1,4 @@
+# COMMON/religions TEMPLATE
+<key> = {
+    # definition block
+}

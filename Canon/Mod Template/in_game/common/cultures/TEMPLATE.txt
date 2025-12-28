@@ -1,0 +1,4 @@
+# COMMON/cultures TEMPLATE
+<key> = {
+    # definition block
+}

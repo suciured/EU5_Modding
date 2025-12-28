@@ -1,0 +1,116 @@
+events/culture — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold event files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/events/culture/my_events.txt
+
+Event ids / namespaces seen (sample):
+- <namespace>.<id>
+
+Common keywords seen:
+- name
+- option
+- limit
+- type
+- desc
+- title
+- trigger
+- NOT
+- immediate
+- illustration_tags
+- save_scope_as
+- event_illustration_estate_effect
+- if
+- add_prestige
+- culture
+- has_ruler
+- religion
+- country_type
+- change_gold_effect
+- custom_tooltip
+- ruler
+- text
+- current_age
+- add_legitimacy
+- trigger_event_silently
+- capital
+- add_estate_satisfaction
+- add_honor
+- country_has_estate
+- add_country_modifier
+- value
+- random_owned_location
+- add_opinion
+- OR
+- change_societal_value
+- add_stability
+- exists
+- image
+- any_owned_location
+- else
+- scope:target_clan
+- is_japanese_emperor_or_shogun
+- max
+- religion.group
+- has_advance
+- is_subject
+- any_pop
+- controller
+- order_by
+- location
+- court_language
+- random_international_organization_member
+- international_organization:japanese_shogunate
+- random_cabinet_character
+- set_court_language
+- current_age_or_later
+- hide_portraits
+- scope:target_location
+- at_war
+- scope:target_shogunate
+- heir
+- add_government_power
+- government_type
+- this
+- has_heir
+- event_illustration_poptype_effect
+- NOR
+- is_coastal
+- remove_from_cabinet
+- namespace
+- owner
+- has_building_with_at_least_one_level
+- add_trait
+- add_location_modifier
+- construct_building
+- AND
+- add_casus_belli
+- opinion
+- scope:minister
+- any_neighbor_location
+
+Comprehensive example:
+# Comprehensive example for events/culture
+# STRUCTURE ONLY: placeholder values
+
+event <namespace>.<id> = {
+    title = <localization_key>
+    desc = <localization_key>
+    picture = <gfx_key>
+
+    trigger = {
+        # conditions
+    }
+
+    immediate = {
+        # instant effects
+    }
+
+    option = {
+        name = <localization_key>
+        ai_chance = { factor = <value> }
+        # effects
+    }
+}

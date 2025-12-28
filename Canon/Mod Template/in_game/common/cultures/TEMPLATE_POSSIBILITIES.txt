@@ -1,0 +1,218 @@
+COMMON/cultures — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/cultures/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- tags
+- opinions
+- culture_groups
+- dakelh_culture
+- wetsuweten_culture
+- sekani_culture
+- dunezza_culture
+- tsimshian_culture
+- haida_culture
+- ingalik_culture
+- nahani_culture
+- kaska_culture
+- tlingit_culture
+- eyak_culture
+- tanaina_culture
+- koyukon_culture
+- tanana_culture
+- nabesna_culture
+- ahtna_culture
+- dan_ke_culture
+- dan_ki_culture
+- haen_culture
+- gwichin_culture
+- sahtu_culture
+- chugash_culture
+- kaniag_culture
+- unalaska_culture
+- atka_culture
+- attu_culture
+- ogul_culture
+- nushag_culture
+- togiag_culture
+- kuskokwag_culture
+- nunivag_culture
+- kaialig_culture
+- magemiut_culture
+- ikog_culture
+- unalig_culture
+- malemiut_culture
+- kaviag_culture
+- kinug_culture
+- inuviluq_culture
+- inuinnait_culture
+- inupiaq_culture
+- najdi_culture
+- kaliji_culture
+- bahrani_culture
+- hijazi_culture
+- hadhrami_culture
+- omani_culture
+- shihhi_culture
+- dhofari_culture
+- mehri_culture
+- soqotri_culture
+- yemeni_culture
+- manekenk_culture
+- selknam_culture
+- yaghan_culture
+- kawesqar_culture
+- aonikenk_culture
+- teushen_culture
+- gununa_kune_culture
+- pehuenche_culture
+- mapuche_culture
+- quirandi_culture
+- tenesch_culture
+- purun_awqa_culture
+- pikumche_culture
+- williche_culture
+- cunco_culture
+- guaiteco_culture
+- henia_culture
+- kamiare_culture
+- warpe_culture
+- tonokote_culture
+- uakambalelte_culture
+- sanaviron_culture
+- chana_culture
+- yaros_culture
+- bohan_culture
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- language
+- color
+- tags
+- opinions
+- culture_groups
+- use_patronym
+- walloon
+- prussian
+- danube_bavarian
+- holsatian
+- saxon
+- markish
+- western_pomeranian
+- eastern_pomeranian
+- lower_saxon
+- rhine_franconian
+- westphalian
+- east_franconian
+- high_alemannic
+- rhine_alemannic
+- swabian
+- german_silesian
+- brandenburgish
+- eastphalian
+- low_franconian
+- moselle_franconian
+- ripuarian_franconian
+- southern_bavarian
+- upper_palatine
+- frisian
+- angrian
+- german_carpathian
+- german_transylvanian
+- norman
+- inka_culture
+- killke_culture
+- chanka_culture
+- wanka_culture
+- chincha_culture
+- kolla_culture
+- wari_culture
+- ychsma_culture
+- chancay_culture
+- atavillos_culture
+- huarco_culture
+- xauxa_culture
+- anccara_culture
+- huayla_culture
+- inga_culture
+- gallo
+- teimani
+- taontaenrat_culture
+- attignawantan_culture
+- arendaronon_culture
+- attigneenongnahac_culture
+- ataronchronon_culture
+- french
+- angevin
+- berrichon
+- burgundian
+- champenais
+- franc_comtois
+- lorrain
+- picard
+- poitevin
+- saintongeais
+- nipissing_culture
+- odawa_culture
+- greek_culture
+- ashkenazi
+- gurji
+- italki
+- kalimi
+- kochini
+- mizrahi
+- mustaarabi
+- qayfengi
+- romanyoti
+- sephardi
+- beyte_yisrael
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/cultures
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    language = <value>
+    color = <value>
+    use_patronym = <value>
+    walloon = <value>
+    prussian = <value>
+    danube_bavarian = <value>
+    holsatian = <value>
+    saxon = <value>
+    markish = <value>
+    western_pomeranian = <value>
+    tags = {
+        # ...
+    }
+    opinions = {
+        # ...
+    }
+    culture_groups = {
+        # ...
+    }
+    dakelh_culture = {
+        # ...
+    }
+    wetsuweten_culture = {
+        # ...
+    }
+    sekani_culture = {
+        # ...
+    }
+    dunezza_culture = {
+        # ...
+    }
+    tsimshian_culture = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

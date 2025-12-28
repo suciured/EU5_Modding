@@ -1,0 +1,4 @@
+# COMMON/unit_types TEMPLATE
+<key> = {
+    # definition block
+}

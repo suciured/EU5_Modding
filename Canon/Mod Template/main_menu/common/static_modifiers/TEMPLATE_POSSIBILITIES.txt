@@ -1,0 +1,209 @@
+common/static_modifiers — TEMPLATE (POSSIBILITIES)
+==================================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- game_data
+- character_base_values
+- ruler_adm
+- ruler_dip
+- ruler_mil
+- general_adm
+- general_dip
+- general_mil
+- admiral_adm
+- admiral_dip
+- admiral_mil
+- explorer_adm
+- explorer_dip
+- explorer_mil
+- is_explorer
+- excommunicated
+- temporary_insanity_adm
+- temporary_insanity_dip
+- temporary_insanity_mil
+- excellent_minister
+- charitable_spouse
+- banned_from_cabinet
+- refuses_to_serve_in_cabinet
+- permanently_banned_from_cabinet
+- bastard
+- imprisoned
+- settling_no_mans_land
+- block_marriage
+- block_leading_armies_or_navies
+- paranoid_regent
+- investigating_regent
+- drunken_explorer
+- boh_hussite_king
+- protecting_against_slave_trade
+- accepting_slave_trade
+- friendly_dog
+- golden_age_florence_adm_modifier
+- golden_age_florence_dip_modifier
+- golden_age_florence_mil_modifier
+- golden_age_florence_balanced_modifier
+- tolerant_monarch
+- plagued_conscience
+- disinherited
+- phillipists
+- mai_and_warrior_modifier
+- mai_and_strategist_modifier
+- on_grand_embassy
+- wonder_translator
+- good_omen_modifier
+- tonnage_and_poundage_denied
+- abusing_royal_prerogative
+- influential_figurine
+- modernizer
+- crusader_liberator_of_jerusalem_modifier
+- arrested_character
+- on_prussian_crusade
+- completed_prussian_crusade
+- osmans_dream_modifier
+- emperor_of_rome
+- sheikh_ul_islam_modifier
+- extended_expedition
+- hun_absolute_rule
+- prefection_modifier
+- appoint_as_heir_modifier
+- enacted_placitum_regium
+- joined_order_of_saint_george
+- joined_order_of_the_ermine
+- joined_order_of_the_dragon
+- joined_order_of_the_band
+- joined_order_of_the_swan
+- joined_order_of_the_black_eagle
+- joined_order_of_the_white_eagle
+- recruited_in_the_government
+- recruited_in_the_military
+- reliance_on_estates_modifier
+- disputed_succession_modifier
+- plotting_rebellion_modifier
+- ccw_ruler_siblings
+- mongol_intolerance
+- allowed_shogun_title
+
+Common assignment keywords seen (often-used properties/blocks):
+- game_data
+- category
+- decaying
+- monthly_prestige
+- monthly_legitimacy
+- global_crown_estate_power
+- local_unrest
+- global_estate_target_satisfaction
+- tax_income_efficiency
+- land_morale_modifier
+- trade_efficiency
+- country_cabinet_efficiency
+- diplomatic_reputation
+- research_speed_modifier
+- nobles_estate_target_satisfaction
+- stability_investment
+- local_migration_attraction
+- clergy_estate_target_satisfaction
+- legislative_efficiency
+- local_monthly_development
+- local_raw_material_output
+- tolerance_own
+- court_spending_cost
+- local_max_control
+- global_pop_conversion_speed_modifier
+- local_monthly_prosperity
+- local_monthly_food_modifier
+- monthly_diplomats
+- mil
+- tolerance_heretic
+- local_monthly_control
+- global_monthly_control
+- blocked_from_being_leader
+- peasants_estate_target_satisfaction
+- discipline
+- adm
+- global_production_efficiency
+- local_defensive
+- monthly_towards_centralization
+- character_life_expectancy
+- dip
+- character_cabinet_efficiency
+- blocked_from_cabinet
+- global_nobles_estate_power
+- parliament_base_support
+- burghers_estate_target_satisfaction
+- local_monthly_development_modifier
+- antagonism_received_modifier
+- army_maintenance_cost
+- global_clergy_estate_power
+- monthly_gold_income
+- local_population_growth
+- global_merchant_power
+- pop_join_rebel_threshold
+- global_population_growth
+- tolerance_heathen
+- loyalty_to_overlord
+- local_pop_conversion_speed_modifier
+- siege_ability
+- stability_cost
+- monthly_religious_influence
+- global_monthly_prosperity
+- global_monthly_literacy
+- local_build_buildings_cost
+- global_build_buildings_cost
+- subject_loyalty
+- naval_morale_modifier
+- monthly_army_tradition
+- global_manpower_modifier
+- blocked_from_marriage
+- change_policy_cost_modifier
+- army_infantry_power
+- global_levy_size_modifier
+- global_defensive
+- global_monthly_development
+- local_production_efficiency
+- monthly_war_exhaustion
+- nobles_estate_max_tax
+- global_integration_speed_modifier
+- monthly_rebel_growth
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/static_modifiers
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    category = <value>
+    decaying = <value>
+    monthly_prestige = <value>
+    monthly_legitimacy = <value>
+    global_crown_estate_power = <value>
+    local_unrest = <value>
+    global_estate_target_satisfaction = <value>
+    tax_income_efficiency = <value>
+    land_morale_modifier = <value>
+    trade_efficiency = <value>
+    game_data = {
+        # ...
+    }
+    character_base_values = {
+        # ...
+    }
+    ruler_adm = {
+        # ...
+    }
+    ruler_dip = {
+        # ...
+    }
+    ruler_mil = {
+        # ...
+    }
+    general_adm = {
+        # ...
+    }
+    general_dip = {
+        # ...
+    }
+    general_mil = {
+        # ...
+    }
+}

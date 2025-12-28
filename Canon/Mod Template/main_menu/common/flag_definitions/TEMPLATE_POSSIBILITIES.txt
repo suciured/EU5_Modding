@@ -1,0 +1,209 @@
+common/flag_definitions — TEMPLATE (POSSIBILITIES)
+==================================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- flag_definition
+- trigger
+- OR
+- overlord_canton_scale
+- NOT
+- AND
+- overlord_canton_offset
+- NOR
+- DEFAULT
+- ENG
+- ABA
+- ACH
+- ADU
+- ALB
+- ALE
+- ANC
+- ANG
+- ANJ
+- AQN
+- AOS
+- ARA
+- ARB
+- ARM
+- ARR
+- ARS
+- ASC
+- ASD
+- ATI
+- ATR
+- BAC
+- BAV
+- BDE
+- BEL
+- BER
+- BLG
+- BLI
+- BNE
+- BNO
+- BOH
+- BOS
+- BOU
+- BRA
+- BRB
+- BRG
+- BRI
+- BRM
+- BRU
+- BTN
+- BUL
+- BUR
+- BYZ
+- CAN
+- CAS
+- scope:actor
+- any_overlord_or_above
+- CAT
+- CDC
+- CEL
+- CEP
+- CES
+- CHL
+- CHP
+- CIL
+- CLI
+- CMR
+- CNN
+- COT
+- CRI
+- CRN
+- CYP
+- CZK
+- DAN
+- DAU
+- EPI
+- ERM
+- ETA
+- EVR
+- FAE
+- FER
+- FLO
+
+Common assignment keywords seen (often-used properties/blocks):
+- flag_definition
+- coa
+- priority
+- trigger
+- OR
+- allow_overlord_canton
+- subject_canton
+- overlord_canton_scale
+- coa_def_revolutionary_republic_trigger
+- coa_def_republic_trigger
+- coa_def_aragon_ownership_trigger
+- coa_def_discovery_age_3_trigger
+- coa_def_capetian_trigger
+- coa_def_portugal_ownership_trigger
+- coa_def_sicily_ownership_trigger
+- coa_def_navarre_ownership_trigger
+- coa_def_granada_ownership_trigger
+- coa_def_absolutism_age_5_trigger
+- coa_def_ghibellines_trigger
+- coa_def_revolutions_age_6_trigger
+- coa_def_FRA_ensign_trigger
+- coa_def_hre_emperor_trigger
+- coa_def_duchy_or_higher_trigger
+- coa_def_SPA_portugal_trigger
+- coa_def_monarchy_trigger
+- coa_def_absolute_monarchy_trigger
+- coa_def_SPA_castile_trigger
+- coa_def_empire_trigger
+- coa_def_SPA_navarre_trigger
+- coa_def_SPA_aragon_trigger
+- coa_def_christian_trigger
+- coa_def_date_after_1600
+- coa_def_kingdom_or_higher_trigger
+- coa_def_reformation_age_4_trigger
+- coa_def_theocracy_trigger
+- coa_def_GBR_ireland_trigger
+- coa_def_bohemia_ownership_trigger
+- coa_def_aragonese_sicily_trigger
+- coa_def_ENG_ensign_trigger
+- coa_def_teutonic_order_trigger
+- NOT
+- coa_def_guelphs_trigger
+- coa_def_american_colonies_trigger
+- coa_def_lost_french_possessions_trigger
+- coa_def_SCO_ensign_trigger
+- coa_def_scottish_trigger
+- coa_def_GBR_SCO_trigger
+- coa_def_aragon_dynasty_trigger
+- coa_def_capetian_navarre_trigger
+- coa_def_galicia_ownership_trigger
+- coa_def_colonial_nation_trigger
+- coa_def_GBR_ensign_trigger
+- coa_def_muslim_trigger
+- coa_def_habsburg_dynasty_trigger
+- coa_def_PLC_ensign_trigger
+- coa_def_paris_ownership_trigger
+- AND
+- coa_def_kiev_ownership_trigger
+- coa_def_volhynia_ownership_trigger
+- coa_def_halych_ownership_trigger
+- has_ruler
+- coa_def_savoy_dynasty_trigger
+- coa_def_PAP_ensign_trigger
+- coa_def_valois_dynasty_trigger
+- coa_def_POL_ensign_trigger
+- coa_def_welsh_trigger
+- coa_def_GBR_WLS_trigger
+- coa_def_celtic_group_trigger
+- coa_def_ARA_ensign_trigger
+- coa_def_poland_ownership_trigger
+- coa_def_lithuanian_trigger
+- coa_def_african_colonies_trigger
+- coa_def_CAS_ensign_trigger
+- coa_def_BYZ_ensign_trigger
+- coa_def_angevine_trigger
+- coa_def_irish_trigger
+- coa_def_MOR_ensign_trigger
+- coa_def_ITA_milano_trigger
+- coa_def_ITA_florence_trigger
+- coa_def_gediminid_dynasty_trigger
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/flag_definitions
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    coa = <value>
+    priority = <value>
+    allow_overlord_canton = <value>
+    subject_canton = <value>
+    coa_def_revolutionary_republic_trigger = <value>
+    coa_def_republic_trigger = <value>
+    coa_def_aragon_ownership_trigger = <value>
+    coa_def_discovery_age_3_trigger = <value>
+    coa_def_capetian_trigger = <value>
+    coa_def_portugal_ownership_trigger = <value>
+    flag_definition = {
+        # ...
+    }
+    trigger = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    overlord_canton_scale = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    AND = {
+        # ...
+    }
+    overlord_canton_offset = {
+        # ...
+    }
+    NOR = {
+        # ...
+    }
+}

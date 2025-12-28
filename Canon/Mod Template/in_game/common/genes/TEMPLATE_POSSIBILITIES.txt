@@ -1,0 +1,218 @@
+COMMON/genes — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/genes/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- setting
+- male
+- textures
+- female
+- curve
+- decal
+- alpha_curve
+- blend_modes
+- boy
+- girl
+- infant
+- value
+- template_1
+- age
+- template_2
+- eye_hsv_shift_curve
+- hair_hsv_shift_curve
+- skin_hsv_shift_curve
+- accessory_genes
+- texture_override
+- template_3
+- special_genes
+- european_low_nobility
+- european_high_nobility
+- european_royalty
+- ashanti_imperial
+- no_expression
+- morph_genes
+- european_war
+- chinese_low_nobility
+- syrian_commoner
+- syrian_low_nobility
+- syrian_high_nobility
+- syrian_royalty
+- aztec_royalty
+- aztec_imperial
+- aztec_clergy
+- aztec_war
+- ashanti_high_nobility
+- ashanti_royalty
+- ashanti_clergy
+- thinnest_short
+- thinner_short
+- thinner_medium
+- thin_short
+- thin_medium
+- thick_short
+- thick_medium
+- thicker_short
+- thicker_medium
+- template_4
+- european_commoner
+- european_war_nobility
+- european_monk
+- european_bishop
+- pope
+- chinese_commoner
+- chinese_high_nobility
+- chinese_royalty
+- chinese_imperial
+- chinese_war
+- chinese_war_nobility
+- syrian_imperial
+- syrian_war
+- syrian_war_nobility
+- syrian_imam
+- aztec_commoner
+- aztec_low_nobility
+- aztec_high_nobility
+- iroquois_commoner
+- iroquois_low_nobility
+- iroquois_high_nobility
+- iroquois_royalty
+- iroquois_imperial
+- iroquois_doctor
+- ashanti_commoner
+- ashanti_low_nobility
+- ashanti_war
+- deccan_commoner
+- deccan_low_nobility
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- age
+- diffuse
+- index
+- setting
+- attribute
+- male
+- female
+- normal
+- boy
+- girl
+- textures
+- adolescent_boy
+- adolescent_girl
+- curve
+- decal
+- body_part
+- alpha_curve
+- blend_modes
+- priority
+- value
+- infant
+- decal_apply_order
+- properties
+- template_1
+- mode
+- template_2
+- inheritable
+- eye_hsv_shift_curve
+- hair_hsv_shift_curve
+- skin_hsv_shift_curve
+- accessory_genes
+- texture_override
+- weight
+- specular
+- template_3
+- special_genes
+- european_low_nobility
+- european_high_nobility
+- european_royalty
+- ashanti_imperial
+- no_expression
+- color
+- size
+- morph_genes
+- european_war
+- chinese_low_nobility
+- syrian_commoner
+- syrian_low_nobility
+- syrian_high_nobility
+- syrian_royalty
+- aztec_royalty
+- aztec_imperial
+- aztec_clergy
+- aztec_war
+- ashanti_high_nobility
+- ashanti_royalty
+- ashanti_clergy
+- sync_inheritance_with
+- thinnest_short
+- thinner_short
+- thinner_medium
+- thin_short
+- thin_medium
+- thick_short
+- thick_medium
+- thicker_short
+- thicker_medium
+- template_4
+- european_commoner
+- european_war_nobility
+- european_monk
+- european_bishop
+- pope
+- chinese_commoner
+- chinese_high_nobility
+- chinese_royalty
+- chinese_imperial
+- chinese_war
+- chinese_war_nobility
+- syrian_imperial
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/genes
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    age = <value>
+    diffuse = <value>
+    index = <value>
+    attribute = <value>
+    normal = <value>
+    adolescent_boy = <value>
+    adolescent_girl = <value>
+    body_part = <value>
+    priority = <value>
+    girl = <value>
+    setting = {
+        # ...
+    }
+    male = {
+        # ...
+    }
+    textures = {
+        # ...
+    }
+    female = {
+        # ...
+    }
+    curve = {
+        # ...
+    }
+    decal = {
+        # ...
+    }
+    alpha_curve = {
+        # ...
+    }
+    blend_modes = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

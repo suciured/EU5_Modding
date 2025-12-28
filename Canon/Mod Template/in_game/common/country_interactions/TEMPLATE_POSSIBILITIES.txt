@@ -1,0 +1,218 @@
+COMMON/country_interactions — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/country_interactions/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- scope:actor
+- if
+- add
+- scope:recipient
+- column
+- select_trigger
+- visible
+- enabled
+- NOT
+- allow
+- effect
+- potential
+- ai_will_do
+- interaction_source_list
+- not
+- OR
+- scope:target
+- else
+- accept
+- international_organization:hre
+- add_opinion
+- subtract
+- diplo_chance
+- every_subject
+- trigger_if
+- AND
+- culture
+- country_has_special_status
+- custom_tooltip
+- add_country_modifier
+- add_gold
+- hidden_effect
+- trigger_else
+- value
+- special_status_can_be_bestowed
+- international_organization:lordship_of_ireland
+- international_organization:catholic_church
+- international_organization:middle_kingdom
+- international_organization_add_special_status
+- set_variable
+- any_current_war
+- cooldown
+- cultural_view
+- else_if
+- opinion
+- pay_gold_org_country_effect
+- any_owned_location
+- reject_effect
+- add_cooldown
+- international_organization_remove_special_status
+- join_war_as_attacker
+- join_war_as_defender
+- giving_scripted_relation
+- defender_leader
+- scope:organization
+- capital
+- create_relation
+- add_trust
+- any_location_in_province
+- has_gold_org_country_trigger
+- civil_war
+- succession_law
+- or
+- reverse_add_opinion
+- add_manpower
+- ai_interaction_source_list
+- set_vote
+- union
+- every_country_with_special_status_of_type
+- add_casus_belli
+- every_international_organization_member
+- ruler
+- is_allied_with
+- change_religion_for_ruler_and_family
+- divide
+- num_countries_with_special_status
+- set_country_rank_effect
+- any_core_in_location
+- every_friendly_or_high_opinion_country
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- value
+- limit
+- scope:actor
+- add
+- if
+- type
+- scope:recipient
+- desc
+- column
+- name
+- data
+- select_trigger
+- looking_for_a
+- target_flag
+- visible
+- enabled
+- NOT
+- allow
+- effect
+- category
+- potential
+- target
+- multiply
+- add_to_list
+- ai_will_do
+- divide
+- exists
+- country
+- interaction_source_list
+- not
+- none_available_msg_key
+- modifier
+- OR
+- scope:target
+- else
+- subtract
+- accept
+- at_war
+- custom_tooltip
+- religion
+- international_organization:hre
+- add_opinion
+- diplo_chance
+- years
+- source
+- government_type
+- every_subject
+- trigger_if
+- base
+- opinion
+- ai_tick
+- culture
+- AND
+- attacker_leader
+- is_member_of_international_organization
+- diplomatic_cost
+- defender_leader
+- text
+- is_subject
+- country_has_special_status
+- is_rival_of
+- country_type
+- is_emperor
+- integration_level
+- add_country_modifier
+- ai_tick_frequency
+- add_gold
+- diplomatic_reputation
+- modifier:is_pope
+- block_when_at_war
+- add_liberty_desire
+- international_organization
+- is_ruler
+- ai_limit_per_check
+- cache_interaction_source_list
+- hidden_effect
+- trigger_else
+- modifier:blocked_from_character_interactions
+- has_or_had_tag
+- special_status_can_be_bestowed
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/country_interactions
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    type = <value>
+    desc = <value>
+    name = <value>
+    data = <value>
+    looking_for_a = <value>
+    target_flag = <value>
+    category = <value>
+    target = <value>
+    multiply = <value>
+    limit = {
+        # ...
+    }
+    scope:actor = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    add = {
+        # ...
+    }
+    scope:recipient = {
+        # ...
+    }
+    column = {
+        # ...
+    }
+    select_trigger = {
+        # ...
+    }
+    visible = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

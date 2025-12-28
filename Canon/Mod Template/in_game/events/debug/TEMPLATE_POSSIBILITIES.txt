@@ -1,0 +1,116 @@
+events/debug — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold event files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/events/debug/my_events.txt
+
+Event ids / namespaces seen (sample):
+- <namespace>.<id>
+
+Common keywords seen:
+- option
+- name
+- type
+- title
+- desc
+- custom_tooltip
+- trigger
+- limit
+- orphan
+- every_owned_location
+- text
+- save_scope_as
+- create_sub_unit_of_category
+- NOT
+- value
+- create_character
+- capital
+- exists
+- trigger_event_silently
+- if
+- female
+- estate
+- hidden_effect
+- scope:target_character
+- always
+- id
+- immediate
+- every_pop
+- create_sub_unit
+- change_religion
+- else_if
+- dynasty
+- qa_debug_convert_all_owned_pops
+- spawn_unit_type
+- else
+- modifier
+- set_variable
+- religion
+- target
+- culture
+- add_pop_size
+- multiply
+- artist
+- location
+- set_new_ruler
+- ruler
+- mode
+- add_gold
+- mother
+- qa_create_character_with_dynasty
+- trigger_event_non_silently
+- owner
+- random_character
+- months
+- OR
+- change_government_type
+- move_country
+- father
+- pop_type
+- add_core
+- tag
+- change_location_owner
+- scope:target_io
+- location:stockholm
+- add_country_modifier
+- remove_country_modifier
+- change_building_level_in_location
+- building
+- c:FIN
+- is_adult
+- is_female
+- market
+- religious_school
+- is_ownable
+- add_estate_satisfaction
+- random_pop
+- change_pop_culture
+- change_pop_religion
+- location:uppsala
+- change_prosperity
+
+Comprehensive example:
+# Comprehensive example for events/debug
+# STRUCTURE ONLY: placeholder values
+
+event <namespace>.<id> = {
+    title = <localization_key>
+    desc = <localization_key>
+    picture = <gfx_key>
+
+    trigger = {
+        # conditions
+    }
+
+    immediate = {
+        # instant effects
+    }
+
+    option = {
+        name = <localization_key>
+        ai_chance = { factor = <value> }
+        # effects
+    }
+}

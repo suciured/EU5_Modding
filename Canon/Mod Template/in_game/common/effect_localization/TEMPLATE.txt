@@ -1,0 +1,4 @@
+# COMMON/effect_localization TEMPLATE
+<key> = {
+    # definition block
+}

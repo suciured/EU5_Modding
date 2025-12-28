@@ -1,0 +1,218 @@
+COMMON/casus_belli — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/casus_belli/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- visible
+- allow_creation
+- scope:target
+- OR
+- NOT
+- province
+- any_international_organizations_member_of
+- allow_declaration
+- any_location_in_province
+- not
+- any_owned_location
+- AND
+- limit
+- if
+- NAND
+- root
+- capital
+- var:high_kingship_region
+- any_location_in_region
+- has_special_status_in_international_organization
+- situation:the_revolution
+- junior_union_with
+- cb_none
+- cb_war_from_event
+- cb_subject_broke_free
+- cb_insulted_us
+- cb_rebel_support
+- cb_declined_call_to_arms
+- cb_denied_military_access
+- cb_following_through_on_threat
+- cb_destroyed_building
+- cb_trade_war_triggered
+- cb_border_war
+- cb_religious_conformance
+- cb_annex
+- cb_maritime_dominance
+- cb_destabilized_our_state
+- cb_livonian_wars
+- cb_claim_timurids
+- cb_dlh_invasion_of_china
+- cb_reclaim_andalucia
+- cb_sco_invade_england
+- cb_subjugation
+- cb_anti_piracy
+- any_market_center_in_country
+- any_location_in_market
+- cb_beaver_wars
+- cb_break_free_tatar_yoke
+- cb_claim_throne
+- cb_coalition
+- cb_colonial_conflict
+- cb_colony_war
+- cb_conquer_province
+- cb_crusade
+- ai_cede_location_desire
+- add
+- scope:location
+- cb_crush_hussitism
+- ai_selection_desire
+- cb_cut_down_in_size
+- cb_deus_vult
+- cb_disloyal_subject
+- cb_disrupting_trade
+- any_port_in_country
+- sea_zone
+- cb_dissolve_tatar_yoke
+- country_has_special_status
+- cb_excommunication
+- cb_expansion_into_the_steppes
+- has_unlocked_casus_belli_trigger
+- cb_exploration
+- cb_fabricated_conquer_province
+- cb_flower_wars
+- cb_force_migration
+- cb_gag_force_country_into_faction
+- great_northern_conflict
+- cb_hegemon
+- cb_heretic
+- religion
+- cb_high_kingship_overthrow
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- war_goal_type
+- visible
+- allow_creation
+- always
+- scope:target
+- is_member_of_international_organization
+- OR
+- speed
+- NOT
+- government_type
+- ai_selection_desire
+- is_situation_active
+- province
+- is_neighbor_of
+- any_international_organizations_member_of
+- international_organization_type
+- is_subject
+- has_reform
+- allow_declaration
+- any_location_in_province
+- is_leader_of_international_organization
+- not
+- is_core_of
+- this
+- exists
+- any_owned_location
+- additional_war_enthusiasm
+- region
+- AND
+- has_culture_group
+- add
+- limit
+- country_rank
+- religion
+- current_age
+- max_warscore_from_battles
+- is_revolutionary
+- no_cb
+- ai_cede_location_desire
+- trade
+- additional_war_enthusiasm_attacker
+- can_expire
+- if
+- scope:target.religion
+- type
+- has_truce_with
+- NAND
+- root
+- modifier:can_create_red_turban_rebellions_cb
+- ai_subjugation_desire
+- has_privateers_from
+- has_variable
+- value
+- overlord
+- is_excommunicated
+- capital
+- has_advance
+- can_join_international_organization
+- has_member
+- var:high_kingship_region
+- any_location_in_region
+- has_special_status_in_international_organization
+- international_organization
+- is_owned_by_international_organization
+- culture
+- situation:the_revolution
+- situation_is_active
+- has_active_senior_partner
+- junior_union_with
+- cb_none
+- can_declare_no_cb_war_on
+- cb_war_from_event
+- cb_subject_broke_free
+- cb_insulted_us
+- cb_rebel_support
+- cb_declined_call_to_arms
+- cb_denied_military_access
+- cb_following_through_on_threat
+- cb_destroyed_building
+- cb_trade_war_triggered
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/casus_belli
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    war_goal_type = <value>
+    always = <value>
+    is_member_of_international_organization = <value>
+    speed = <value>
+    government_type = <value>
+    is_situation_active = <value>
+    ai_selection_desire = <value>
+    is_neighbor_of = <value>
+    international_organization_type = <value>
+    is_subject = <value>
+    visible = {
+        # ...
+    }
+    allow_creation = {
+        # ...
+    }
+    scope:target = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    province = {
+        # ...
+    }
+    any_international_organizations_member_of = {
+        # ...
+    }
+    allow_declaration = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

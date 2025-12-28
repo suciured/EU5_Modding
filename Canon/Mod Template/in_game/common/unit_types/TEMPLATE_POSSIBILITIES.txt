@@ -1,0 +1,218 @@
+COMMON/unit_types — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/unit_types/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- gfx_tags
+- mercenaries_per_location
+- location_potential
+- combat
+- impact
+- country_potential
+- OR
+- limit
+- add
+- has_unlocked_unit_trigger
+- location_trigger
+- owner
+- dominant_culture
+- culture
+- current_age_or_later
+- a_age_1_traditions_infantry
+- a_age_1_traditions_cavalry
+- a_age_1_traditions_auxiliary
+- a_age_1_traditions_artillery
+- a_age_2_renaissance_infantry
+- a_age_2_renaissance_cavalry
+- a_age_2_renaissance_auxiliary
+- a_age_2_renaissance_artillery
+- a_age_3_discovery_infantry
+- a_age_3_discovery_cavalry
+- a_age_3_discovery_auxiliary
+- a_age_3_discovery_artillery
+- a_age_4_reformation_infantry
+- a_age_4_reformation_cavalry
+- a_age_4_reformation_auxiliary
+- a_age_4_reformation_artillery
+- a_age_5_absolutism_infantry
+- a_age_5_absolutism_cavalry
+- a_age_5_absolutism_auxiliary
+- a_age_5_absolutism_artillery
+- a_age_6_revolutions_infantry
+- a_age_6_revolutions_cavalry
+- a_age_6_revolutions_auxiliary
+- a_age_6_revolutions_artillery
+- n_age_1_traditions_galley
+- n_age_1_traditions_light_ship
+- n_age_1_traditions_transport
+- n_age_1_traditions_heavy_ship
+- n_age_2_renaissance_galley
+- n_age_2_renaissance_light_ship
+- n_age_2_renaissance_transport
+- n_age_2_renaissance_heavy_ship
+- n_age_3_discovery_galley
+- n_age_3_discovery_light_ship
+- n_age_3_discovery_transport
+- n_age_3_discovery_heavy_ship
+- n_age_4_reformation_galley
+- n_age_4_reformation_light_ship
+- n_age_4_reformation_transport
+- n_age_4_reformation_heavy_ship
+- n_age_5_absolutism_galley
+- n_age_5_absolutism_light_ship
+- n_age_5_absolutism_transport
+- n_age_5_absolutism_heavy_ship
+- n_age_6_revolutions_galley
+- n_age_6_revolutions_light_ship
+- n_age_6_revolutions_transport
+- n_age_6_revolutions_heavy_ship
+- a_gendarmerie
+- a_provincial_cavalry
+- a_late_cavaliers
+- a_cavaliers
+- a_plated_knights
+- a_teulu
+- a_mailed_knights
+- a_noble_cavalry
+- a_order_knights
+- a_order_knights_2
+- a_moa_hunters
+- a_tribesmen
+- a_warriors
+- a_champions
+- a_chieftains
+- a_villagers
+- a_feudal_levy
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- category
+- copy_from
+- buildable
+- gfx_tags
+- maintenance_demand
+- construction_demand
+- multiply
+- mercenaries_per_location
+- pop_type
+- age
+- upgrades_to
+- initiative
+- movement_speed
+- location_potential
+- strength_damage_taken
+- cannons
+- morale_damage_taken
+- hull_size
+- levy
+- light
+- crew_size
+- combat
+- max_strength
+- maritime_presence
+- combat_power
+- strength_damage_done
+- mountains
+- use_ship_names
+- morale_damage_done
+- wetlands
+- blockade_capacity
+- impact
+- country_potential
+- limit
+- jungle
+- OR
+- grasslands
+- combat_speed
+- build_time_modifier
+- food_storage_per_strength
+- value
+- plateau
+- transport_capacity
+- dominant_culture
+- hills
+- desc
+- add
+- attrition_loss
+- bombard_efficiency
+- artillery_barrage
+- unit_cawa_location_trigger
+- unit_iberian_ship_location_trigger
+- color
+- has_unlocked_unit_trigger
+- has_primary_or_accepted_culture
+- culture
+- sparse
+- location_trigger
+- has_advance
+- upgrades_to_only
+- has_owner
+- owner
+- government_type
+- country_type
+- flanking_ability
+- default
+- unit_longbowmen_location_trigger
+- modifier:global_may_build_paik_units
+- unit_indian_paik_location_trigger
+- food_consumption_per_strength
+- flatland
+- current_age
+- forest
+- has_reform
+- has_estate_privilege
+- has_building_with_at_least_one_level
+- unit_almogavars_location_trigger
+- has_presence_in
+- region
+- unit_jurchen_cavalry_location_trigger
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/unit_types
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    category = <value>
+    copy_from = <value>
+    buildable = <value>
+    maintenance_demand = <value>
+    construction_demand = <value>
+    multiply = <value>
+    pop_type = <value>
+    age = <value>
+    upgrades_to = <value>
+    initiative = <value>
+    gfx_tags = {
+        # ...
+    }
+    mercenaries_per_location = {
+        # ...
+    }
+    location_potential = {
+        # ...
+    }
+    combat = {
+        # ...
+    }
+    impact = {
+        # ...
+    }
+    country_potential = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,218 @@
+COMMON/resolutions — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/resolutions/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- if
+- add
+- scope:recipient
+- column
+- scope:actor
+- select_trigger
+- visible
+- enabled
+- trigger_if
+- else
+- NOT
+- not
+- potential
+- allow
+- effect
+- ai_will_do
+- religion:catholic
+- votes
+- trigger_else
+- multiply
+- else_if
+- can_vote
+- international_organization:catholic_church
+- scope:proposer
+- country_has_special_status
+- OR
+- reject_effect
+- scope:vote
+- ai_proposer_risk
+- subtract
+- custom_tooltip
+- add_religion_modifier
+- set_variable
+- trigger_else_if
+- hidden_effect
+- AND
+- should_finalize_vote
+- or
+- scope:target
+- total_votes_needed
+- add_cooldown
+- vote_effect
+- interaction_source_list
+- is_live
+- scope:vote.ruler
+- total_population_in_international_organization
+- value
+- is_proposal
+- is_vote
+- hidden_trigger
+- situation:western_schism
+- requires_vote
+- apply_pu_estate_satisfaction_hit
+- save_temporary_value_as
+- change_variable
+- propose_effect
+- has_unlocked_resolution_trigger
+- remove_list_global_variable
+- abstain_effect
+- price
+- selected
+- situation:fall_of_delhi
+- has_opinion
+- remove_opinion_mutual_effect
+- add_opinion_mutual_effect
+- relative_strength
+- continent:europe
+- every_country_with_capital_in_geography
+- situation:nanbokuchou
+- root
+- situation:council_of_trent
+- every_country
+- excommunicate_resolution
+- c:PAP
+- add_opinion
+- apostolicae_servitutis
+- benedictus_deus
+- call_crusade
+- cooldown
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- limit
+- value
+- if
+- add
+- desc
+- scope:recipient
+- name
+- exists
+- scope:actor
+- column
+- data
+- select_trigger
+- looking_for_a
+- target_flag
+- visible
+- multiply
+- enabled
+- trigger_if
+- scope:vote
+- international_organization_type
+- else
+- NOT
+- not
+- this
+- potential
+- allow
+- effect
+- ai_will_do
+- religion:catholic
+- type
+- votes
+- always
+- trigger_else
+- subtract
+- else_if
+- can_vote
+- scope:proposer
+- is_member_of_international_organization
+- international_organization:catholic_church
+- target
+- modifier
+- country_has_special_status
+- country
+- OR
+- years
+- proposal_price
+- resolution_is_active
+- custom_tooltip
+- reject_effect
+- papacy_active
+- modifier:curia_actions_blocked
+- months
+- none_available_msg_key
+- add_prestige
+- ai_proposer_risk
+- divide
+- text
+- international_organization_has_policy
+- country_rank
+- add_religion_modifier
+- mode
+- set_variable
+- top_widget
+- total_votes_needed
+- trigger_else_if
+- international_organization_has_leader
+- has_variable
+- hidden_effect
+- AND
+- should_finalize_vote
+- international_organization_has_law
+- or
+- scope:target
+- remove_variable
+- requires_vote
+- source
+- allow_self
+- uses_parliament_for_law_votes_trigger
+- map_mode
+- situation_is_active
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/resolutions
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    desc = <value>
+    name = <value>
+    exists = <value>
+    data = <value>
+    looking_for_a = <value>
+    target_flag = <value>
+    international_organization_type = <value>
+    multiply = <value>
+    this = <value>
+    limit = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    add = {
+        # ...
+    }
+    scope:recipient = {
+        # ...
+    }
+    column = {
+        # ...
+    }
+    scope:actor = {
+        # ...
+    }
+    select_trigger = {
+        # ...
+    }
+    visible = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

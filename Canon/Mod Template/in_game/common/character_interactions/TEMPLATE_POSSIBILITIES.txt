@@ -1,0 +1,218 @@
+COMMON/character_interactions — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/character_interactions/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- scope:actor
+- if
+- scope:recipient
+- add
+- column
+- select_trigger
+- visible
+- OR
+- NOT
+- potential
+- enabled
+- effect
+- allow
+- ai_will_do
+- add_estate_satisfaction
+- hidden_effect
+- set_variable
+- scope:target
+- custom_tooltip
+- AND
+- add_character_modifier
+- else
+- not
+- trigger_if
+- NOR
+- add_opinion
+- any_location_in_area
+- else_if
+- value
+- owner
+- and
+- any_character
+- change_societal_value
+- kill_character
+- price_modifier
+- subtract
+- any_present_country
+- scope:target_area
+- every_location_in_area
+- any_current_war
+- change_variable
+- every_descendant
+- ruler
+- father
+- mother
+- has_different_order_of_chivalry
+- character_can_join_order_of_chivalry
+- join_order_of_chivalry_effect
+- abdicate
+- or
+- aclla_distribution
+- any_location_in_province
+- add_province_modifier
+- adapt_culture_for_ruler
+- every_known_country
+- every_child
+- appoint_as_heir
+- every_character
+- tur_appoint_dragoman
+- has_unlocked_character_interaction_trigger
+- assign_governor
+- any_ancestor
+- any_neighbor_area
+- trigger_else
+- ordered_location_in_area
+- scope:target_location
+- create_country_from_location
+- make_subject_of
+- assume_fort_command
+- add_location_modifier
+- size
+- multiply
+- banish_character
+- random_neighbor_country
+- random_country
+- kill_character_silently
+- choose_theologian_duelist
+- commission_art
+- start_work_of_art
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- limit
+- scope:actor
+- if
+- value
+- add
+- scope:recipient
+- name
+- column
+- select_trigger
+- looking_for_a
+- target_flag
+- visible
+- source
+- data
+- subtract
+- OR
+- NOT
+- message
+- multiply
+- potential
+- enabled
+- effect
+- ai_tick
+- allow
+- ai_will_do
+- on_own_nation
+- is_alive
+- ai_tick_frequency
+- is_ruler
+- has_estate
+- custom_tooltip
+- is_adult
+- add_prestige
+- exists
+- is_consort_action
+- add_estate_satisfaction
+- hidden_effect
+- set_variable
+- scope:target
+- text
+- AND
+- add_government_power
+- desc
+- is_female
+- modifier
+- add_character_modifier
+- else
+- target
+- religion
+- none_available_msg_key
+- owner
+- this
+- add_stability
+- is_heir
+- price
+- sound
+- not
+- years
+- mode
+- government_type
+- has_trait_category
+- has_dynasty
+- is_consort
+- succession_law
+- is_general
+- trigger_if
+- is_regent
+- remove_variable
+- change_character_estate
+- NOR
+- regency_type
+- has_character_modifier
+- add_opinion
+- has_ruler
+- is_admiral
+- scope:target_reform
+- any_location_in_area
+- else_if
+- reason
+- add_legitimacy
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/character_interactions
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    name = <value>
+    looking_for_a = <value>
+    target_flag = <value>
+    source = <value>
+    data = <value>
+    subtract = <value>
+    message = <value>
+    multiply = <value>
+    ai_tick = <value>
+    limit = {
+        # ...
+    }
+    scope:actor = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    scope:recipient = {
+        # ...
+    }
+    add = {
+        # ...
+    }
+    column = {
+        # ...
+    }
+    select_trigger = {
+        # ...
+    }
+    visible = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

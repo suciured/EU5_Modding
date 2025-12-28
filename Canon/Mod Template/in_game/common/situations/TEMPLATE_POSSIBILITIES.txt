@@ -1,0 +1,218 @@
+COMMON/situations — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/situations/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- if
+- else_if
+- OR
+- NOT
+- set_variable
+- legend_key
+- AND
+- random_list
+- add
+- every_country
+- add_to_global_variable_list
+- else
+- trigger
+- can_start
+- can_end
+- visible
+- on_start
+- on_monthly
+- map_color
+- tooltip
+- on_ended
+- international_organization:japanese_shogunate
+- every_international_organization_member
+- c:DLH
+- owner
+- change_variable
+- international_organization:catholic_church
+- is_allied_with
+- NOR
+- order_by
+- any_foreign_building_countries_in_location
+- opinion
+- has_special_status_in_international_organization
+- any_in_global_list
+- trigger_event_non_silently
+- religion:catholic
+- any_related_country
+- any_international_organization_member
+- culture
+- area
+- modifier
+- value
+- can_fire_situation_event
+- root
+- secondary_map_color
+- every_country_in_religion
+- create_international_organization
+- c:CHI
+- random
+- any_owned_location
+- is_target_in_global_variable_list
+- add_country_modifier
+- set_vote
+- c:PAP
+- c:FRA
+- c:ENG
+- random_international_organization_member
+- any_neighbor_country
+- ordered_international_organization_member
+- any_market_present_in_country
+- scope:temp_market
+- any_ownable_location_in_region
+- has_mutual_scripted_relation
+- situation:nanbokuchou
+- any_subject
+- custom_tooltip
+- situation:fall_of_delhi
+- disease_presence
+- set_global_variable
+- continent:europe
+- ordered_country
+- any_current_war
+- situation:sengoku
+- scope:target_war
+- capital
+- lerp
+- any_cabinet_character
+- trigger_if
+- random_in_global_list
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- limit
+- if
+- value
+- else_if
+- trigger_event_non_silently
+- OR
+- NOT
+- custom_tooltip
+- has_owner
+- set_variable
+- name
+- add
+- desc
+- legend_key
+- color
+- AND
+- random_list
+- is_member_of_international_organization
+- require_color_on_map
+- every_country
+- has_variable
+- type
+- add_to_global_variable_list
+- target
+- is_leader_of_international_organization
+- else
+- exists
+- religion
+- remove_variable
+- remove_country_modifier
+- can_see_situation
+- trigger
+- is_subject
+- tag
+- has_reform
+- country_exists
+- save_temporary_scope_as
+- order_by
+- divide
+- monthly_spawn_chance
+- hint_tag
+- can_start
+- can_end
+- visible
+- on_start
+- on_monthly
+- map_color
+- variable
+- clear_global_variable_list
+- owner
+- tooltip
+- on_ended
+- check_range_bounds
+- multiply
+- international_organization:japanese_shogunate
+- every_international_organization_member
+- capital.sub_continent
+- max
+- modifier
+- owns
+- in_war_of_casus_belli
+- resolution
+- is_subject_of
+- c:DLH
+- change_variable
+- international_organization:catholic_church
+- is_allied_with
+- NOR
+- has_ruler
+- has_country_modifier
+- culture
+- voter
+- is_enemy_of
+- is_rival_of
+- any_foreign_building_countries_in_location
+- capital.region
+- is_subject_or_below_of
+- religion.group
+- opinion
+- has_special_status_in_international_organization
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/situations
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    trigger_event_non_silently = <value>
+    has_owner = <value>
+    custom_tooltip = <value>
+    name = <value>
+    desc = <value>
+    color = <value>
+    is_member_of_international_organization = <value>
+    require_color_on_map = <value>
+    has_variable = <value>
+    limit = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    else_if = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    set_variable = {
+        # ...
+    }
+    legend_key = {
+        # ...
+    }
+    AND = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

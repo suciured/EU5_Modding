@@ -1,0 +1,9 @@
+COMMON/script_values EXPLAINER
+======================
+What goes here:
+- Data definitions belonging to the 'script_values' system.
+
+Safe modding patterns:
+- Add new keys/files where possible.
+- Avoid overwriting large base files unless necessary.
+- Keep keys unique (prefix your mod keys).

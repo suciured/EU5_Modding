@@ -1,0 +1,218 @@
+COMMON/auto_modifiers — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/auto_modifiers/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- potential_trigger
+- scales_with
+- limit
+- religion
+- NOT
+- any_current_war
+- num_of_traits_of_category
+- country_base_values
+- country_base_values_with_taxation
+- location_tt_name
+- building_tt_name
+- pop_tt_name
+- army_tt_name
+- navy_tt_name
+- num_locations_impact
+- num_colonial_charters_impact
+- debt_impact
+- num_advances_impact
+- stability_impact
+- positive_stability_impact
+- negative_stability_impact
+- war_exhaustion_impact
+- prestige
+- army_tradition
+- navy_tradition
+- high_legitimacy
+- low_legitimacy
+- high_republican_tradition
+- low_republican_tradition
+- high_devotion
+- low_devotion
+- high_horde_unity
+- low_horde_unity
+- high_tribal_cohesion
+- low_tribal_cohesion
+- neutral_karma
+- high_karma
+- low_karma
+- positive_yanantin
+- balanced_yanantin
+- negative_yanantin
+- high_righteousness
+- low_righteousness
+- positive_harmony
+- balanced_harmony
+- negative_harmony
+- positive_self_control
+- balanced_self_control
+- negative_self_control
+- high_purity
+- low_purity
+- doom
+- country_population
+- country_control_scaled_population
+- country_accepted_culture_population
+- state_religion_clergy_ratio
+- proper_culture_nobles_ratio
+- soldier_percentage_in_country
+- burghers_percentage_in_country
+- peasants_percentage_in_country
+- total_merchant_capacity_impact
+- monthly_income_impact
+- num_embraced_institutions
+- lack_of_rivals
+- larger_than_expected_army
+- horde_army_expectation
+- number_of_religious_aspects
+- power_projection
+- at_war
+- at_war_without_overlord
+- in_civil_war
+- at_peace
+- revolutionary
+- revolution_target
+- ruler_has_general_trait
+- ruler_has_admiral_trait
+- attacker_in_war
+- defender_in_war
+- ruler_is_not_a_commander_during_war
+- ruler_is_general_during_war
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- potential_trigger
+- scales_with
+- value
+- multiply
+- limit
+- global_estate_target_satisfaction
+- uses_government_power
+- exists
+- great_power_score
+- add
+- religion
+- monthly_prestige
+- monthly_towards_belligerent
+- pop_leave_rebels_threshold
+- at_war
+- monthly_legitimacy
+- country_type
+- subtract
+- monthly_doom
+- diplomatic_reputation
+- monthly_devotion
+- monthly_horde_unity
+- monthly_tribal_cohesion
+- research_speed
+- monthly_righteousness
+- land_morale_modifier
+- great_power_score_exempt_from_forfeit
+- monthly_war_exhaustion
+- pop_join_rebel_threshold
+- monthly_republican_tradition
+- monthly_towards_land
+- monthly_towards_naval
+- discipline
+- NOT
+- is_general
+- is_admiral
+- max_war_exhaustion
+- stability_decay
+- nobles_estate_target_satisfaction
+- clergy_estate_target_satisfaction
+- burghers_estate_target_satisfaction
+- peasants_estate_target_satisfaction
+- global_crown_estate_power
+- monthly_religious_influence
+- abs
+- modifier:allow_harmony
+- modifier:allow_self_control
+- any_current_war
+- global_prosperity_decay
+- monthly_rebel_growth
+- fort_limit
+- skill_of_new_artists
+- global_estate_max_tax
+- divide
+- power_projection
+- naval_morale_modifier
+- stability_cost
+- global_monthly_control
+- modifier:allow_righteousness
+- monthly_harmony
+- global_monthly_development
+- stability_investment
+- global_pop_food_consumption
+- monthly_towards_spiritualist
+- monthly_honor
+- loyalty_to_overlord
+- expected_army_size
+- max
+- min
+- global_manpower_modifier
+- has_trait_category
+- num_of_traits_of_category
+- type
+- category
+- country_base_values
+- requires_real
+- global_trades_per_burgher
+- global_monthly_control_decline
+- prestige_decay
+- army_tradition_decay
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/auto_modifiers
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    multiply = <value>
+    global_estate_target_satisfaction = <value>
+    uses_government_power = <value>
+    exists = <value>
+    great_power_score = <value>
+    scales_with = <value>
+    add = <value>
+    monthly_prestige = <value>
+    monthly_towards_belligerent = <value>
+    potential_trigger = {
+        # ...
+    }
+    scales_with = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    religion = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    any_current_war = {
+        # ...
+    }
+    num_of_traits_of_category = {
+        # ...
+    }
+    country_base_values = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

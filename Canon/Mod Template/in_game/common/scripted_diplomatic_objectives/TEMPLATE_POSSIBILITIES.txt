@@ -1,0 +1,144 @@
+COMMON/scripted_diplomatic_objectives — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/scripted_diplomatic_objectives/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- international_organization:hre
+- scope:recipient
+- scope:actor
+- actor_trigger
+- OR
+- recipient_trigger
+- recipient_priority
+- pause_trigger
+- cancel_trigger
+- country_has_special_status
+- AND
+- any_country_with_special_status_of_type
+- scope:election
+- country_with_special_status_of_type
+- country_interactions
+- and
+- c:JAP
+- opinion
+- hre_improve_with_electors
+- NOT
+- recipient_list_builder
+- country_relations
+- jap_clan_spy_objective
+- or
+- add
+- if
+- limit
+- not
+- jap_clan_improve_opinion_with_emperor
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- international_organization:hre
+- type
+- scope:recipient
+- is_member_of_international_organization
+- scope:actor
+- has_variable
+- days_between_checks
+- actor_trigger
+- OR
+- has_active_resolution
+- recipient_trigger
+- recipient_priority
+- add
+- pause_trigger
+- cancel_trigger
+- max_allowed
+- country_has_special_status
+- country
+- AND
+- any_country_with_special_status_of_type
+- scope:election
+- is_rival_of
+- country_with_special_status_of_type
+- country_interactions
+- improve_relation
+- and
+- value
+- always
+- country_exists
+- c:JAP
+- opinion
+- target
+- hre_improve_with_electors
+- unique_international_organization_type_exists
+- can_lead_international_organization
+- is_great_power
+- is_leader_of_international_organization
+- save_temporary_scope_as
+- NOT
+- recipient_list_builder
+- at_war
+- country_relations
+- alliance
+- ask_to_vote_for_me_as_emperor
+- jap_clan_spy_objective
+- exists
+- or
+- if
+- limit
+- not
+- divide
+- scout_enemy_holdings
+- destroy
+- spy_network_target
+- fabricate_cb
+- jap_clan_improve_opinion_with_emperor
+- this
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/scripted_diplomatic_objectives
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    type = <value>
+    is_member_of_international_organization = <value>
+    has_variable = <value>
+    days_between_checks = <value>
+    has_active_resolution = <value>
+    max_allowed = <value>
+    country = <value>
+    is_rival_of = <value>
+    add = <value>
+    improve_relation = <value>
+    international_organization:hre = {
+        # ...
+    }
+    scope:recipient = {
+        # ...
+    }
+    scope:actor = {
+        # ...
+    }
+    actor_trigger = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    recipient_trigger = {
+        # ...
+    }
+    recipient_priority = {
+        # ...
+    }
+    pause_trigger = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,183 @@
+COMMON/death_reason — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/death_reason/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- trigger
+- subtract
+- weight
+- OR
+- battle
+- battle_sea
+- siege
+- marching
+- in_port
+- at_sea
+- camp
+- disease
+- country_annexed
+- seppuku
+- sacrifice
+- their_own_exploding_cannon
+- cannibalism
+- beheading
+- execution
+- slicing
+- guillotine
+- assassination
+- strangling
+- self_defence
+- burned_alive
+- poison_arrow
+- combat
+- killed_by_janissaries
+- stray_fire
+- hanged_by_mob
+- old_age
+- choking_accident
+- sporting_accident
+- fell_down_stairs
+- burst_ulcer
+- pneumonia
+- sudden_illness
+- food_poisoning
+- hunting_accident
+- AND
+- heart_failure
+- fever
+- dysentery
+- jousting
+- farming_accident
+- mining_accident
+- alcoholism
+- froze
+- suicide
+- drowning_river
+- drowning_sea
+- starvation
+- wild_animal
+- vanished
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- possible_parameter
+- random
+- value
+- weight
+- trigger
+- subtract
+- multiply
+- has_estate
+- is_admiral
+- is_explorer
+- is_female
+- is_general
+- OR
+- current_age
+- is_land
+- battle
+- battle_sea
+- siege
+- marching
+- in_port
+- at_sea
+- camp
+- disease
+- country_annexed
+- seppuku
+- sacrifice
+- their_own_exploding_cannon
+- cannibalism
+- beheading
+- execution
+- slicing
+- guillotine
+- assassination
+- strangling
+- self_defence
+- burned_alive
+- poison_arrow
+- combat
+- killed_by_janissaries
+- stray_fire
+- hanged_by_mob
+- old_age
+- choking_accident
+- sporting_accident
+- fell_down_stairs
+- burst_ulcer
+- pneumonia
+- sudden_illness
+- food_poisoning
+- hunting_accident
+- AND
+- heart_failure
+- fever
+- dysentery
+- jousting
+- religion.group
+- farming_accident
+- mining_accident
+- alcoholism
+- has_trait
+- froze
+- winter_level
+- suicide
+- drowning_river
+- has_river
+- drowning_sea
+- is_coastal
+- starvation
+- is_starving
+- wild_animal
+- vanished
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/death_reason
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    possible_parameter = <value>
+    random = <value>
+    value = <value>
+    multiply = <value>
+    weight = <value>
+    has_estate = <value>
+    is_admiral = <value>
+    is_explorer = <value>
+    is_female = <value>
+    is_general = <value>
+    trigger = {
+        # ...
+    }
+    subtract = {
+        # ...
+    }
+    weight = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    battle = {
+        # ...
+    }
+    battle_sea = {
+        # ...
+    }
+    siege = {
+        # ...
+    }
+    marching = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

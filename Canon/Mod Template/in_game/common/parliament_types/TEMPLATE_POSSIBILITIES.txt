@@ -1,0 +1,133 @@
+COMMON/parliament_types — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/parliament_types/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- modifier
+- potential
+- allow
+- NOT
+- locked
+- OR
+- AND
+- culture
+- no_parliament
+- assembly
+- council
+- estate_parliament
+- dutch_parliament
+- plc_parliament
+- autocratic_parliament
+- constitutional_parliament
+- no_organization_parliament
+- union_royal_assembly
+- hre_court_assembly
+- hre_early_imperial_diet
+- hre_bi_camerial_imperial_diet
+- hre_tri_camerial_imperial_diet
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- type
+- modifier
+- potential
+- has_a_parliamentary_system
+- allow
+- NOT
+- has_international_parliament
+- clergy_estate_can_participate_in_parliament
+- burghers_estate_can_participate_in_parliament
+- international_organization_type
+- locked
+- nobles_estate_agenda_impact
+- OR
+- uses_parliament_for_law_votes
+- forbid_multiple_policies_vote
+- elector_can_participate_in_parliament
+- archbishop_elector_can_participate_in_parliament
+- modifier:allow_estate_parliament
+- parliament_type
+- AND
+- culture
+- primas_germaniae_can_participate_in_parliament
+- imperial_prince_can_participate_in_parliament
+- global_estate_target_satisfaction
+- peasants_estate_agenda_impact
+- clergy_estate_agenda_impact
+- burghers_estate_agenda_impact
+- free_city_can_participate_in_parliament
+- legatus_natus_can_participate_in_parliament
+- imperial_prelate_can_participate_in_parliament
+- no_parliament
+- assembly
+- peasants_estate_can_participate_in_parliament
+- council
+- modifier:allow_council_parliament
+- estate_parliament
+- dutch_parliament
+- plc_parliament
+- has_or_had_tag
+- autocratic_parliament
+- modifier:allow_autocratic_parliament
+- global_crown_estate_power
+- monthly_towards_absolutism
+- constitutional_parliament
+- modifier:allow_constitutional_parliament
+- parliament_request_issue_support_needed
+- no_organization_parliament
+- union_royal_assembly
+- policy_vote_required_vote_ratio
+- hre_court_assembly
+- hre_early_imperial_diet
+- hre_bi_camerial_imperial_diet
+- hre_tri_camerial_imperial_diet
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/parliament_types
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    type = <value>
+    has_a_parliamentary_system = <value>
+    has_international_parliament = <value>
+    clergy_estate_can_participate_in_parliament = <value>
+    burghers_estate_can_participate_in_parliament = <value>
+    international_organization_type = <value>
+    nobles_estate_agenda_impact = <value>
+    uses_parliament_for_law_votes = <value>
+    forbid_multiple_policies_vote = <value>
+    elector_can_participate_in_parliament = <value>
+    modifier = {
+        # ...
+    }
+    potential = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    locked = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    AND = {
+        # ...
+    }
+    culture = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

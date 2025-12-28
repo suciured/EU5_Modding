@@ -1,0 +1,218 @@
+COMMON/languages — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/languages/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- male_names
+- female_names
+- dynasty_names
+- lowborn
+- dialects
+- ship_names
+- dynasty_template_keys
+- location_prefix_elision
+- french_language
+- haida_language
+- tsimshian_language
+- yupik_language
+- turkish_language
+- turkish_dialect
+- turkmen_dialect
+- azeri_dialect
+- arabic_language
+- maghrebi_dialect
+- egyptian_dialect
+- iraqi_dialect
+- levantine_dialect
+- peninsular_dialect
+- classical_arabic_dialect
+- maltese_dialect
+- south_arabic_language
+- hokan_language
+- tanoan_language
+- zuni_language
+- keres_language
+- nadene_language
+- coahuilteco_language
+- caddoan_language
+- tonkawa_language
+- atakapa_language
+- chitimacha_language
+- pama_nyungan_language
+- nyulnyulan_language
+- wororan_language
+- djeragan_language
+- gimbiyu_language
+- daly_language
+- laragiya_language
+- limilngan_language
+- gunwinyguan_language
+- yiwaidjan_language
+- garawa_language
+- west_barkly_language
+- tyerrernotepanner_language
+- eastern_tasmanian_language
+- pyemmairrener_language
+- western_tasmanian_language
+- greek_language
+- serbo_croatian_language
+- serbian_dialect
+- croatian_dialect
+- slovene_dialect
+- albanian_language
+- bulgarian_language
+- church_slavonic_language
+- baltic_language
+- latvian_dialect
+- lithuanian_dialect
+- western_baltic_dialect
+- oriya_language
+- sanskrit_language
+- north_dravidian_language
+- brahmaputran_language
+- munda_language
+- khasi_language
+- tupi_language
+- macro_je_language
+- mataco_guaicuru_language
+- nambikwara_language
+- manoki_language
+- txapakura_language
+- pano_language
+- aikana_language
+- kwaza_language
+- mura_language
+- tarairiu_language
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- male_names
+- female_names
+- dynasty_names
+- lowborn
+- color
+- family
+- dialects
+- patronym_suffix_son
+- patronym_suffix_daughter
+- character_name_short_regnal_number
+- character_name_order
+- location_prefix
+- patronym_prefix_son
+- patronym_prefix_daughter
+- location_suffix
+- default
+- location_prefix_vowel
+- fallback
+- ship_names
+- dynasty_template_keys
+- first_name_conjoiner
+- descendant_prefix
+- descendant_suffix_male
+- descendant_suffix_female
+- location_prefix_elision
+- french_language
+- patronym_prefix_son_vowel
+- descendant_prefix_male
+- descendant_prefix_female
+- haida_language
+- tsimshian_language
+- yupik_language
+- turkish_language
+- patronym_suffix
+- turkish_dialect
+- turkmen_dialect
+- azeri_dialect
+- arabic_language
+- maghrebi_dialect
+- egyptian_dialect
+- iraqi_dialect
+- levantine_dialect
+- peninsular_dialect
+- classical_arabic_dialect
+- maltese_dialect
+- south_arabic_language
+- hokan_language
+- tanoan_language
+- zuni_language
+- keres_language
+- nadene_language
+- coahuilteco_language
+- caddoan_language
+- tonkawa_language
+- atakapa_language
+- chitimacha_language
+- pama_nyungan_language
+- nyulnyulan_language
+- wororan_language
+- djeragan_language
+- gimbiyu_language
+- daly_language
+- laragiya_language
+- limilngan_language
+- gunwinyguan_language
+- yiwaidjan_language
+- garawa_language
+- west_barkly_language
+- tyerrernotepanner_language
+- eastern_tasmanian_language
+- pyemmairrener_language
+- western_tasmanian_language
+- greek_language
+- serbo_croatian_language
+- serbian_dialect
+- croatian_dialect
+- slovene_dialect
+- albanian_language
+- bulgarian_language
+- church_slavonic_language
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/languages
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    color = <value>
+    family = <value>
+    patronym_suffix_son = <value>
+    patronym_suffix_daughter = <value>
+    character_name_short_regnal_number = <value>
+    character_name_order = <value>
+    location_prefix = <value>
+    patronym_prefix_son = <value>
+    patronym_prefix_daughter = <value>
+    location_suffix = <value>
+    male_names = {
+        # ...
+    }
+    female_names = {
+        # ...
+    }
+    dynasty_names = {
+        # ...
+    }
+    lowborn = {
+        # ...
+    }
+    dialects = {
+        # ...
+    }
+    ship_names = {
+        # ...
+    }
+    dynasty_template_keys = {
+        # ...
+    }
+    location_prefix_elision = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

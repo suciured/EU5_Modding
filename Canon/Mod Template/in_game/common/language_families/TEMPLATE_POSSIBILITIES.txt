@@ -1,0 +1,162 @@
+COMMON/language_families — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/language_families/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- celtic_language_family
+- romance_language_family
+- germanic_language_family
+- slavic_language_family
+- semitic_language_family
+- uralic_language_family
+- indic_language_family
+- iranic_language_family
+- dravidian_language_family
+- tibetic_language_family
+- austroasiatic_language_family
+- turkic_language_family
+- chinese_language_family
+- tai_language_family
+- philippine_language_family
+- bornean_language_family
+- moluccan_language_family
+- barito_language_family
+- sal_language_family
+- burmic_language_family
+- chadic_language_family
+- tungusic_language_family
+- cushitic_language_family
+- south_semitic_language_family
+- nilotic_language_family
+- eastern_sudanic_language_family
+- central_sudanic_language_family
+- saharan_language_family
+- atlantic_language_family
+- north_volta_language_family
+- south_volta_language_family
+- bantu_language_family
+- otomanguean_language_family
+- chontal_language_family
+- northern_yutonahua_language_family
+- southern_yutonahua_language_family
+- arawakan_language_family
+- cariban_language_family
+- eastern_algonquian_language_family
+- central_algonquian_language_family
+- plains_algonquian_language_family
+- iroquoian_language_family
+- siouan_language_family
+- muskogean_language_family
+- eskaleut_language_family
+- japonic_language_family
+- halmaheran_guinean_language_family
+- trans_new_guinea_language_family
+- oceanic_language_family
+- binanderean_language_family
+- papuan_gulf_language_family
+- trans_fly_language_family
+- polynesian_language_family
+- vanuatu_language_family
+- micronesian_language_family
+- solomonic_language_family
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- color
+- celtic_language_family
+- romance_language_family
+- germanic_language_family
+- slavic_language_family
+- semitic_language_family
+- uralic_language_family
+- indic_language_family
+- iranic_language_family
+- dravidian_language_family
+- tibetic_language_family
+- austroasiatic_language_family
+- turkic_language_family
+- chinese_language_family
+- tai_language_family
+- philippine_language_family
+- bornean_language_family
+- moluccan_language_family
+- barito_language_family
+- sal_language_family
+- burmic_language_family
+- chadic_language_family
+- tungusic_language_family
+- cushitic_language_family
+- south_semitic_language_family
+- nilotic_language_family
+- eastern_sudanic_language_family
+- central_sudanic_language_family
+- saharan_language_family
+- atlantic_language_family
+- north_volta_language_family
+- south_volta_language_family
+- bantu_language_family
+- otomanguean_language_family
+- chontal_language_family
+- northern_yutonahua_language_family
+- southern_yutonahua_language_family
+- arawakan_language_family
+- cariban_language_family
+- eastern_algonquian_language_family
+- central_algonquian_language_family
+- plains_algonquian_language_family
+- iroquoian_language_family
+- siouan_language_family
+- muskogean_language_family
+- eskaleut_language_family
+- japonic_language_family
+- halmaheran_guinean_language_family
+- trans_new_guinea_language_family
+- oceanic_language_family
+- binanderean_language_family
+- papuan_gulf_language_family
+- trans_fly_language_family
+- polynesian_language_family
+- vanuatu_language_family
+- micronesian_language_family
+- solomonic_language_family
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/language_families
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    color = <value>
+    celtic_language_family = {
+        # ...
+    }
+    romance_language_family = {
+        # ...
+    }
+    germanic_language_family = {
+        # ...
+    }
+    slavic_language_family = {
+        # ...
+    }
+    semitic_language_family = {
+        # ...
+    }
+    uralic_language_family = {
+        # ...
+    }
+    indic_language_family = {
+        # ...
+    }
+    iranic_language_family = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

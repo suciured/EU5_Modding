@@ -1,0 +1,218 @@
+COMMON/formable_countries — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/formable_countries/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- form_effect
+- potential
+- allow
+- areas
+- OR
+- culture
+- regions
+- NOT
+- limit
+- if
+- set_country_rank_effect
+- provinces
+- custom_tooltip
+- locations
+- any_primary_or_accepted_or_tolerated_culture
+- trigger_if
+- AND
+- not
+- destroy_international_organization
+- region:iberia_region
+- any_location_in_region
+- any_owned_location
+- NOR
+- add_country_modifier
+- current_age_or_later
+- SCA_f
+- sweden_f
+- denmark_f
+- DRD_f
+- GBR_f
+- situation:hundred_years_war
+- c:ENG
+- c:SCO
+- c:WLS
+- c:SBL
+- ENG_f
+- WLS_f
+- SCO_f
+- NOL_f
+- IRE_f
+- is_member_of_international_organization_of_type
+- any_international_organizations_member_of
+- filter
+- any_international_organization
+- NED_f
+- SWI_f
+- unlock_government_reform_effect
+- add_replacing_gov_reform
+- SPA_f
+- ADU_f
+- owner
+- AIA_f
+- EGY_f
+- KOA_f
+- LAT_f
+- SAR_f
+- MSI_f
+- BEJ_f
+- ETH_f
+- BAV_f
+- HAB_f
+- BOH_f
+- SAX_f
+- international_organization:hre
+- country_has_special_status
+- NSA_f
+- MKL_f
+- POM_f
+- PRU_f
+- LIV_f
+- LVA_f
+- GER_f
+- HRE_f
+- MOL_f
+- MAZ_f
+- SIL_f
+- POL_f
+- PLC_f
+- c:POL
+- c:LIT
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- culture
+- tag
+- level
+- rule
+- form_effect
+- name
+- flag
+- adjective
+- potential
+- color
+- required_locations_fraction
+- allow
+- areas
+- owns
+- OR
+- regions
+- NOT
+- limit
+- if
+- set_country_rank_effect
+- provinces
+- culture.language
+- custom_tooltip
+- text
+- religion.group
+- religion
+- has_culture_group
+- locations
+- always
+- any_primary_or_accepted_or_tolerated_culture
+- trigger_if
+- country_exists
+- AND
+- change_government_type
+- set_capital
+- region
+- language
+- international_organization_type
+- has_variable
+- has_estate_privilege
+- has_reform
+- exists
+- capital
+- capital_required
+- not
+- destroy_international_organization
+- region:iberia_region
+- any_location_in_region
+- type
+- add_legitimacy
+- is_member_of_international_organization
+- has_or_had_tag
+- country_rank
+- is_hegemon
+- any_owned_location
+- court_language
+- NOR
+- is_culture_native_american
+- add_country_modifier
+- modifier
+- years
+- mode
+- trigger_event_non_silently
+- government_type
+- current_age_or_later
+- SCA_f
+- sweden_f
+- denmark_f
+- DRD_f
+- GBR_f
+- situation:hundred_years_war
+- situation_has_ended
+- c:ENG
+- c:SCO
+- c:WLS
+- c:SBL
+- ENG_f
+- WLS_f
+- SCO_f
+- NOL_f
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/formable_countries
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    tag = <value>
+    level = <value>
+    rule = <value>
+    name = <value>
+    flag = <value>
+    adjective = <value>
+    color = <value>
+    required_locations_fraction = <value>
+    culture = <value>
+    owns = <value>
+    form_effect = {
+        # ...
+    }
+    potential = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    areas = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    culture = {
+        # ...
+    }
+    regions = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

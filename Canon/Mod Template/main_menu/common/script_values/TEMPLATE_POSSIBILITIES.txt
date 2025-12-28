@@ -1,0 +1,125 @@
+common/script_values — TEMPLATE (POSSIBILITIES)
+===============================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- add
+- janissary_unit_limit
+- wagenburg_unit_limit
+- qizilbash_unit_limit
+- ghilman_unit_limit
+
+Common assignment keywords seen (often-used properties/blocks):
+- add
+- desc
+- value
+- stability_radical_penalty
+- stability_ultimate_penalty
+- stability_very_extreme_penalty
+- stability_extreme_penalty
+- stability_severe_penalty
+- stability_mild_penalty
+- stability_weak_penalty
+- stability_weak_bonus
+- stability_mild_bonus
+- stability_severe_bonus
+- stability_extreme_bonus
+- stability_very_extreme_bonus
+- stability_ultimate_bonus
+- stability_radical_bonus
+- prestige_radical_penalty
+- prestige_ultimate_penalty
+- prestige_extreme_penalty
+- prestige_severe_penalty
+- prestige_mild_penalty
+- prestige_weak_penalty
+- prestige_weak_bonus
+- prestige_mild_bonus
+- prestige_severe_bonus
+- prestige_extreme_bonus
+- prestige_ultimate_bonus
+- prestige_radical_bonus
+- monthly_prestige_radical_penalty
+- monthly_prestige_ultimate_penalty
+- monthly_prestige_extreme_penalty
+- monthly_prestige_severe_penalty
+- monthly_prestige_mild_penalty
+- monthly_prestige_weak_penalty
+- monthly_prestige_very_weak_penalty
+- monthly_prestige_very_weak_bonus
+- monthly_prestige_weak_bonus
+- monthly_prestige_mild_bonus
+- monthly_prestige_severe_bonus
+- monthly_prestige_extreme_bonus
+- monthly_prestige_ultimate_bonus
+- monthly_prestige_radical_bonus
+- government_power_radical_penalty
+- government_power_ultimate_penalty
+- government_power_extreme_penalty
+- government_power_severe_penalty
+- government_power_mild_penalty
+- government_power_weak_penalty
+- government_power_weak_bonus
+- government_power_mild_bonus
+- government_power_severe_bonus
+- government_power_extreme_bonus
+- government_power_ultimate_bonus
+- government_power_radical_bonus
+- legitimacy_radical_penalty
+- legitimacy_ultimate_penalty
+- legitimacy_extreme_penalty
+- legitimacy_severe_penalty
+- legitimacy_mild_penalty
+- legitimacy_weak_penalty
+- legitimacy_weak_bonus
+- legitimacy_mild_bonus
+- legitimacy_severe_bonus
+- legitimacy_extreme_bonus
+- legitimacy_ultimate_bonus
+- legitimacy_radical_bonus
+- devotion_radical_penalty
+- devotion_ultimate_penalty
+- devotion_extreme_penalty
+- devotion_severe_penalty
+- devotion_mild_penalty
+- devotion_weak_penalty
+- devotion_weak_bonus
+- devotion_mild_bonus
+- devotion_severe_bonus
+- devotion_extreme_bonus
+- devotion_ultimate_bonus
+- devotion_radical_bonus
+- republican_tradition_radical_penalty
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/script_values
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    desc = <value>
+    add = <value>
+    value = <value>
+    stability_radical_penalty = <value>
+    stability_ultimate_penalty = <value>
+    stability_very_extreme_penalty = <value>
+    stability_extreme_penalty = <value>
+    stability_severe_penalty = <value>
+    stability_mild_penalty = <value>
+    stability_weak_penalty = <value>
+    add = {
+        # ...
+    }
+    janissary_unit_limit = {
+        # ...
+    }
+    wagenburg_unit_limit = {
+        # ...
+    }
+    qizilbash_unit_limit = {
+        # ...
+    }
+    ghilman_unit_limit = {
+        # ...
+    }
+}

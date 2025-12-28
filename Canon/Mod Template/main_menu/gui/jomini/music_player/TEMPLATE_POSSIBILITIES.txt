@@ -1,0 +1,139 @@
+gui/jomini/music_player — TEMPLATE (POSSIBILITIES)
+==================================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- size
+- vbox
+- text_single
+- margin
+- widget
+- modify_texture
+- hbox
+- button
+- state
+- scroll_list
+- item
+- expand
+- background
+- button_checkbox
+- button_default
+- window
+- button_close
+- window_header
+- position
+- scrollbar
+- minimumsize
+- maximumsize
+- track
+- slider
+- dec_button
+- inc_button
+- music_player_category
+- music_player_track
+
+Common assignment keywords seen (often-used properties/blocks):
+- using
+- size
+- name
+- alpha
+- layoutpolicy_horizontal
+- vbox
+- text
+- visible
+- onclick
+- text_single
+- margin
+- align
+- widget
+- spacing
+- autoresize
+- tooltip
+- modify_texture
+- hbox
+- fontcolor
+- parentanchor
+- allow_outside
+- button
+- texture
+- blend_mode
+- state
+- duration
+- scroll_list
+- layoutstretchfactor_horizontal
+- datamodel
+- item
+- expand
+- background
+- button_checkbox
+- checked
+- button_default
+- window
+- input_context
+- alwaystransparent
+- reorder_on_mouse
+- resizable
+- movable
+- button_close
+- window_header
+- ignoreinvisible
+- raw_text
+- position
+- scrollbar
+- direction
+- minimumsize
+- maximumsize
+- value
+- onvaluechanged
+- min
+- max
+- step
+- wheelstep
+- track
+- slider
+- dec_button
+- inc_button
+- music_player_category
+- music_player_track
+
+Comprehensive example (placeholders only):
+# Comprehensive example for gui/jomini/music_player
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    using = <value>
+    name = <value>
+    alpha = <value>
+    layoutpolicy_horizontal = <value>
+    text = <value>
+    visible = <value>
+    onclick = <value>
+    align = <value>
+    spacing = <value>
+    autoresize = <value>
+    size = {
+        # ...
+    }
+    vbox = {
+        # ...
+    }
+    text_single = {
+        # ...
+    }
+    margin = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    modify_texture = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    button = {
+        # ...
+    }
+}

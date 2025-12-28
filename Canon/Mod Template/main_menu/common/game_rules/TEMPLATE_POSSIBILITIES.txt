@@ -1,0 +1,202 @@
+common/game_rules — TEMPLATE (POSSIBILITIES)
+============================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- player_difficulty
+- player_very_easy_difficulty
+- player_easy_difficulty
+- player_normal_difficulty
+- player_hard_difficulty
+- player_very_hard_difficulty
+- ai_difficulty
+- ai_very_easy_difficulty
+- ai_easy_difficulty
+- ai_normal_difficulty
+- ai_hard_difficulty
+- ai_very_hard_difficulty
+- ahistorical_formable_countries
+- no_ahistorical_formable_countries
+- allow_plausible_ahistorical_formable_countries
+- allow_ahistorical_formable_countries
+- historical_ai
+- historical_ai_choices
+- weighted_ai_choices
+- random_ai_choices
+- country_change
+- country_change_allowed
+- country_change_prohibited
+- mission_packs_enabled_rule
+- mission_packs_enabled
+- mission_packs_disabled
+- mission_rewards
+- every_task_reward
+- only_end_mission_rewards
+- mission_no_rewards
+- ai_colonisation_rule
+- all_countries_colonize
+- western_colonisation_only
+- ai_exploration_rule
+- western_exploration_only
+- all_countries_explore
+- ai_religious_conversion_rule
+- only_within_religion_group
+- free_conversion
+- culture_conversions_rule
+- dynamic_culture
+- culture_group_only
+- culture_present_in_country
+- any_culture
+- religion_conversions_rule
+- dynamic_religion
+- religion_group_only
+- religion_present_in_country
+- any_religion
+- black_death_date_rule
+- black_death_date_historical
+- black_death_date_random
+- black_death_date_off
+- black_death_origin_rule
+- black_death_origin_historical
+- black_death_origin_random
+- institution_spawn_rule
+- institution_spawn_plausible
+- institution_spawn_fixed_historical
+- institution_spawn_random_city
+- byz_name
+- byz_name_default
+- byz_name_ere
+- limit_ledger
+- limit_ledger_default
+- limit_ledger_limited
+- victory_cards_rule
+- conditional_default
+- victory_cards_enabled
+- victory_cards_disabled
+- client_pause
+- block_client_pause
+- block_client_system_unpause
+- allow_client_pause
+- unpause_timeout
+- timeout_0
+- timeout_30
+- timeout_60
+- timeout_120
+- go_to_lobby_hotjoin
+
+Common assignment keywords seen (often-used properties/blocks):
+- flag
+- default
+- apply_modifier
+- player_difficulty
+- player_very_easy_difficulty
+- player_easy_difficulty
+- player_normal_difficulty
+- player_hard_difficulty
+- player_very_hard_difficulty
+- ai_difficulty
+- ai_very_easy_difficulty
+- ai_easy_difficulty
+- ai_normal_difficulty
+- ai_hard_difficulty
+- ai_very_hard_difficulty
+- ahistorical_formable_countries
+- no_ahistorical_formable_countries
+- allow_plausible_ahistorical_formable_countries
+- allow_ahistorical_formable_countries
+- historical_ai
+- historical_ai_choices
+- weighted_ai_choices
+- random_ai_choices
+- country_change
+- country_change_allowed
+- country_change_prohibited
+- mission_packs_enabled_rule
+- mission_packs_enabled
+- mission_packs_disabled
+- mission_rewards
+- every_task_reward
+- only_end_mission_rewards
+- mission_no_rewards
+- ai_colonisation_rule
+- all_countries_colonize
+- western_colonisation_only
+- ai_exploration_rule
+- western_exploration_only
+- all_countries_explore
+- ai_religious_conversion_rule
+- only_within_religion_group
+- free_conversion
+- culture_conversions_rule
+- dynamic_culture
+- culture_group_only
+- culture_present_in_country
+- any_culture
+- religion_conversions_rule
+- dynamic_religion
+- religion_group_only
+- religion_present_in_country
+- any_religion
+- black_death_date_rule
+- black_death_date_historical
+- black_death_date_random
+- black_death_date_off
+- black_death_origin_rule
+- black_death_origin_historical
+- black_death_origin_random
+- institution_spawn_rule
+- institution_spawn_plausible
+- institution_spawn_fixed_historical
+- institution_spawn_random_city
+- byz_name
+- byz_name_default
+- byz_name_ere
+- limit_ledger
+- limit_ledger_default
+- limit_ledger_limited
+- victory_cards_rule
+- conditional_default
+- victory_cards_enabled
+- victory_cards_disabled
+- client_pause
+- block_client_pause
+- block_client_system_unpause
+- allow_client_pause
+- unpause_timeout
+- timeout_0
+- timeout_30
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/game_rules
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    flag = <value>
+    default = <value>
+    apply_modifier = <value>
+    player_difficulty = {
+        # ...
+    }
+    player_very_easy_difficulty = {
+        # ...
+    }
+    player_easy_difficulty = {
+        # ...
+    }
+    player_normal_difficulty = {
+        # ...
+    }
+    player_hard_difficulty = {
+        # ...
+    }
+    player_very_hard_difficulty = {
+        # ...
+    }
+    ai_difficulty = {
+        # ...
+    }
+    ai_very_easy_difficulty = {
+        # ...
+    }
+}

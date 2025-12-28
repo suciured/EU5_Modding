@@ -1,0 +1,113 @@
+gui/applicationutils — TEMPLATE (POSSIBILITIES)
+===============================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- vbox
+- size
+- widget
+- icon
+- background
+- color
+- position
+- ui_direction_button_holder_right
+- button_close_alt
+- minimumsize
+- window_header_alt
+- margin
+- hbox
+- item
+- button_default
+- text_multi
+- maximumsize
+- dockable_progressbar
+
+Common assignment keywords seen (often-used properties/blocks):
+- layoutpolicy_horizontal
+- layoutpolicy_vertical
+- vbox
+- size
+- using
+- name
+- widget
+- texture
+- spacing
+- text
+- icon
+- visible
+- layoutstretchfactor_vertical
+- alwaystransparent
+- parentanchor
+- focuspolicy
+- onclick
+- background
+- spriteType
+- shaderfile
+- color
+- resizable
+- movable
+- tabfocusroot
+- allow_outside
+- position
+- ui_direction_button_holder_right
+- button_close_alt
+- minimumsize
+- restrictparent_min
+- window_header_alt
+- margin
+- hbox
+- margin_bottom
+- margin_top
+- datamodel
+- item
+- button_default
+- text_multi
+- maximumsize
+- autoresize
+- multiline
+- dockable_progressbar
+- min
+- max
+- value
+
+Comprehensive example (placeholders only):
+# Comprehensive example for gui/applicationutils
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    layoutpolicy_horizontal = <value>
+    layoutpolicy_vertical = <value>
+    using = <value>
+    name = <value>
+    texture = <value>
+    spacing = <value>
+    text = <value>
+    visible = <value>
+    layoutstretchfactor_vertical = <value>
+    alwaystransparent = <value>
+    vbox = {
+        # ...
+    }
+    size = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    background = {
+        # ...
+    }
+    color = {
+        # ...
+    }
+    position = {
+        # ...
+    }
+    ui_direction_button_holder_right = {
+        # ...
+    }
+}

@@ -1,0 +1,161 @@
+COMMON/societal_values — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/societal_values/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- left_modifier
+- right_modifier
+- allow
+- OR
+- AND
+- centralization_vs_decentralization
+- traditionalist_vs_innovative
+- spiritualist_vs_humanist
+- aristocracy_vs_plutocracy
+- serfdom_vs_free_subjects
+- mercantilism_vs_free_trade
+- belligerent_vs_conciliatory
+- quality_vs_quantity
+- offensive_vs_defensive
+- land_vs_naval
+- capital_economy_vs_traditional_economy
+- individualism_vs_communalism
+- outward_vs_inward
+- sinicized_vs_unsinicized
+- NOT
+- capital
+- absolutism_vs_liberalism
+- mysticism_vs_jurisprudence
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- left_modifier
+- right_modifier
+- global_estate_target_satisfaction
+- court_language_is_market_language_importance_modifier
+- bias_for_militarist_policies
+- cultural_tradition_modifier
+- control_importance_modifier
+- societal_value_importance_modifier
+- bias_for_scholar_policies
+- trade_importance_modifier
+- bias_for_isolationist_policies
+- aggressiveness_modifier
+- diplomacy_importance_modifier
+- global_crown_estate_power
+- opinion_importance_multiplier
+- stability_cost
+- global_pop_conversion_speed_modifier
+- trade_efficiency
+- bias_for_capitalist_policies
+- age
+- antagonism_declared_war_no_cb_giving_modifier
+- pop_join_rebel_threshold
+- subject_loyalty
+- counter_espionage
+- embrace_institution_cost_modifier
+- language_change_threshold_modifier
+- institution_importance_modifier
+- global_pop_assimilation_speed_modifier
+- religious_unity_importance_modifier
+- court_language_is_liturgical_language_importance_modifier
+- bias_for_tolerant_policies
+- antagonism_religion_influence
+- court_spending_cost
+- bias_for_patron_of_arts_policies
+- global_raw_material_output
+- global_peasants_food_consumption
+- global_laborers_food_consumption
+- peasants_estate_max_tax
+- court_language_is_common_language_importance_modifier
+- global_trade_protection_factor
+- casus_belli_creation_speed_modifier
+- shared_border_impact
+- manpower_importance_modifier
+- antagonism_taking_land_giving_modifier
+- antagonism_breaking_truce_giving_modifier
+- country_cabinet_efficiency
+- bias_for_diplomat_policies
+- army_initiative
+- army_maintenance_cost
+- global_defensive
+- army_movement_speed
+- defence_importance_modifier
+- trade_sea_movement_cost_modifier
+- trade_land_movement_cost_modifier
+- global_monthly_food_modifier
+- global_build_buildings_cost
+- land_morale_modifier
+- global_migration_speed_modifier
+- revoke_privilege_cost_modifier
+- colonial_migration_size_modifier
+- subjugation_preference_modifier
+- antagonism_language_influence
+- allow
+- OR
+- AND
+- exists
+- research_speed_modifier
+- global_merchant_capacity_modifier
+- clergy_estate_target_satisfaction
+- centralization_vs_decentralization
+- global_distance_from_capital_cost_modifier
+- global_estate_satisfaction_recovery
+- traditionalist_vs_innovative
+- global_max_literacy
+- cultural_influence_modifier
+- spiritualist_vs_humanist
+- global_clergy_city_desired_pop_scaled
+- tolerance_own
+- tolerance_heretic
+- tolerance_heathen
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/societal_values
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    global_estate_target_satisfaction = <value>
+    court_language_is_market_language_importance_modifier = <value>
+    bias_for_militarist_policies = <value>
+    cultural_tradition_modifier = <value>
+    control_importance_modifier = <value>
+    societal_value_importance_modifier = <value>
+    bias_for_scholar_policies = <value>
+    trade_importance_modifier = <value>
+    bias_for_isolationist_policies = <value>
+    aggressiveness_modifier = <value>
+    left_modifier = {
+        # ...
+    }
+    right_modifier = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    AND = {
+        # ...
+    }
+    centralization_vs_decentralization = {
+        # ...
+    }
+    traditionalist_vs_innovative = {
+        # ...
+    }
+    spiritualist_vs_humanist = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,20 @@
+localization/french/events/situations — TEMPLATE (POSSIBILITIES)
+================================================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- <key>
+
+Common assignment keywords seen (often-used properties/blocks):
+- <field_or_block>
+Language headers seen:
+- l_french:
+
+Comprehensive example (placeholders only):
+# Comprehensive example for localization/french/events/situations
+# YAML localization structure (placeholders)
+
+l_english:
+  my_mod_key: "My text"
+  my_mod_key_desc: "More text"

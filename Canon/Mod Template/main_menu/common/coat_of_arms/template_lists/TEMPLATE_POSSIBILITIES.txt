@@ -1,0 +1,209 @@
+common/coat_of_arms/template_lists — TEMPLATE (POSSIBILITIES)
+=============================================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- special_selection
+- trigger
+- OR
+- not
+- NOT
+- AND
+- any_owned_location
+- coat_of_arms_template_lists
+- country
+- template_middle_east_list
+- template_tengri_list
+- template_asia_list
+- template_china_list
+- template_indonesia_list
+- template_african_list
+- template_coptic_list
+- template_hussite_list
+- template_nordic_list
+- template_ermine_list
+- template_vair_list
+- template_senyera_list
+- template_maori_list
+- template_polynesia_list
+- template_aboriginal_list
+- template_north_american_natives_list
+- template_central_america_list
+- template_south_america_list
+- template_mesoamerica_list
+- template_japanese_stripes_list
+- template_japanese_frames_list
+- template_japanese_list
+- template_eurasian_tribes_list
+- template_french_colonial_list
+- template_portuguese_colonial_list_5_charges_saltire
+- template_portuguese_colonial_list_single_charge
+- template_portuguese_colonial_list
+- template_english_colonial_list
+- template_british_colonial_early_list
+- template_british_colonial_ensigns_list
+- template_british_colonial_cross_ensigns_list
+- template_british_colonial_cross_ensigns_wide_list
+- template_revolutionary_colonial_ensigns_list
+- template_hre_eagle_list
+- template_guelphs_list
+- template_ghibellines_list
+- template_bishopric_keys_saltire_list
+- template_european_tricolor_ordinaries_list
+- template_european_tricolor_ordinaries_bordered_list
+- template_charge_quartered_list
+- template_ordinaries_escutcheon_in_heart_list
+- template_pirates_list
+- template_byzantine_list
+- dynasty
+- template_heraldry_shield_ordinaries_list
+- template_heraldry_shield_charges_list
+- template_heraldry_shield_furs_list
+- template_ordinaries_shield_tricolor
+- template_ordinaries_shield_vair
+- template_heraldry_five_charges_in_saltire_list
+- template_heraldry_charge_and_ordinary_overall_list
+- template_byzantine_shield_list
+- template_japanese_shield_list
+- template_mena_shield_list
+- template_mamluk_heraldry_shield_list
+- template_tamgha_shield_list
+- template_round_frame_shield_list
+- colored_emblem_texture_lists
+- charge
+- charge_heraldry
+- charge_small
+- charge_small_horizontal
+- charge_small_bend
+- charge_small_canton
+- charge_crowned
+- charge_chief_keys_crossed
+- charge_cross_cantoned
+- charge_cross_cantoned_addorsed
+- charge_on_cross
+- charge_semy
+- charge_small_in_chief_eagle
+
+Common assignment keywords seen (often-used properties/blocks):
+- special_selection
+- trigger
+- OR
+- coa_def_german_trigger
+- coa_def_french_trigger
+- coa_def_iberian_trigger
+- coa_def_colonial_nation_trigger
+- coa_def_pagan_trigger
+- coa_def_greek_trigger
+- coa_def_english_trigger
+- coa_def_low_countries_trigger
+- coa_def_scottish_trigger
+- coa_def_reformation_age_4_trigger
+- coa_def_italian_trigger
+- coa_def_nordic_trigger
+- coa_def_portuguese_trigger
+- coa_def_discovery_age_3_trigger
+- coa_def_maya_trigger
+- coa_def_monarchy_trigger
+- coa_def_rebel_trigger
+- coa_def_czech_trigger
+- coa_def_capetian_semy_trigger
+- coa_def_muslim_trigger
+- coa_def_sub_saharan_africa_trigger
+- coa_def_north_american_natives_trigger
+- coa_def_ecuador_trigger
+- coa_def_native_american_gulf_trigger
+- coa_def_japanese_trigger
+- coa_def_chinese_trigger
+- coa_def_tamgha_trigger
+- coa_def_irish_trigger
+- coa_def_polish_trigger
+- coa_def_senyera_trigger
+- coa_def_dharmic_trigger
+- coa_def_buddhist_trigger
+- coa_def_maori_trigger
+- culture
+- coa_def_russian_trigger
+- coa_def_POR_ensign_trigger
+- coa_def_greater_sunda_trigger
+- coa_def_folk_chinese_trigger
+- coa_def_mesoamerican_trigger
+- coa_def_british_trigger
+- region
+- culture.language
+- coa_def_theocracy_trigger
+- coa_def_celtic_group_trigger
+- coa_def_byzantine_trigger
+- coa_def_FRA_ensign_trigger
+- coa_def_burgundy_portugal_trigger
+- coa_def_NAV_ensign_trigger
+- coa_def_polynesian_trigger
+- coa_def_andean_trigger
+- coa_def_native_american_eastern_trigger
+- coa_def_carpathian_trigger
+- coa_def_south_slavic_trigger
+- coa_def_arabian_trigger
+- exists
+- coa_def_GBR_ensign_trigger
+- coa_def_overlord_monarchy_trigger
+- coa_def_christian_trigger
+- coa_def_renaissance_age_2_trigger
+- coa_def_ARA_ensign_trigger
+- coa_def_lesser_sunda_trigger
+- coa_def_central_american_trigger
+- coa_def_colombian_trigger
+- coa_def_yazidi_trigger
+- coa_def_native_american_plains_trigger
+- coa_def_indonesian_trigger
+- coa_def_orthodox_trigger
+- sub_continent
+- coa_def_CAS_ensign_trigger
+- coa_def_SPA_ensign_trigger
+- coa_def_leonese_primary_trigger
+- coa_def_castilian_trigger
+- coa_def_confucian_trigger
+- coa_def_aboriginal_trigger
+- coa_def_brazilian_trigger
+- coa_def_tungusic_siberian_trigger
+- coa_def_ugrian_trigger
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/coat_of_arms/template_lists
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    coa_def_german_trigger = <value>
+    coa_def_french_trigger = <value>
+    coa_def_iberian_trigger = <value>
+    coa_def_colonial_nation_trigger = <value>
+    coa_def_pagan_trigger = <value>
+    coa_def_greek_trigger = <value>
+    coa_def_english_trigger = <value>
+    coa_def_low_countries_trigger = <value>
+    coa_def_scottish_trigger = <value>
+    coa_def_reformation_age_4_trigger = <value>
+    special_selection = {
+        # ...
+    }
+    trigger = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    not = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    AND = {
+        # ...
+    }
+    any_owned_location = {
+        # ...
+    }
+    coat_of_arms_template_lists = {
+        # ...
+    }
+}

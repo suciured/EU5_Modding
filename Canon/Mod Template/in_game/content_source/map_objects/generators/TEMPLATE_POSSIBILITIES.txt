@@ -1,0 +1,100 @@
+content_source/map_objects/generators — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold content_source files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/content_source/map_objects/generators/my_content_source.txt
+
+Top-level keys seen:
+- meshes
+- density_curve
+- scale_curve
+- scale_fuzziness_curve
+- grass_generator_medium
+- grass_generator_high
+- pine_generator_low
+- pine_generator_medium
+- pine_generator_high
+- woods_cherry_low
+- woods_cherry_medium
+- woods_cherry_high
+- woods_generator_low
+- woods_generator_medium
+- woods_generator_high
+- forest_generator_low
+- forest_generator_medium
+- forest_generator_high
+- cherry_tree_generator_low
+- cherry_tree_generator_medium
+- cherry_tree_generator_high
+- jungle_generator_low
+- jungle_generator_medium
+- jungle_generator_high
+- grass_generator_low
+- reeds_generator_low
+- reeds_generator_medium
+- reeds_generator_high
+- decal_generator_low
+- dirt_generator_low
+
+Common assignment keywords seen:
+- layer
+- max_density
+- clone
+- mask
+- meshes
+- density_curve
+- scale_curve
+- scale_fuzziness_curve
+- grass_generator_medium
+- grass_generator_high
+- @density_factor_low
+- @density_factor_medium
+- @density_factor_high
+- @pine_density_base
+- pine_generator_low
+- pine_generator_medium
+- pine_generator_high
+- @woods_cherry_base
+- woods_cherry_low
+- woods_cherry_medium
+- woods_cherry_high
+- @woods_density_base
+- woods_generator_low
+- woods_generator_medium
+- woods_generator_high
+- @forest_density_base
+- forest_generator_low
+- forest_generator_medium
+- forest_generator_high
+- @cherry_tree_forest_base
+- cherry_tree_generator_low
+- cherry_tree_generator_medium
+- cherry_tree_generator_high
+- @jungle_density_base
+- jungle_generator_low
+- jungle_generator_medium
+- jungle_generator_high
+- @grass_density_base
+- grass_generator_low
+- @reeds_density_base
+- reeds_generator_low
+- reeds_generator_medium
+- reeds_generator_high
+- @decal_density_base
+- decal_generator_low
+- @dirt_grass_density_base
+- dirt_generator_low
+
+Comprehensive example:
+# Comprehensive example for content_source/map_objects/generators
+# STRUCTURE ONLY: placeholder values
+# content_source files are often inputs for generators or DLC pipelines.
+
+<source_key> = {
+    name = <string>
+    category = <string>
+    source = <reference>
+    # additional metadata
+}

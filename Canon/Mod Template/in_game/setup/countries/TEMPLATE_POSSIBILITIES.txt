@@ -1,0 +1,218 @@
+setup/countries — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold setup files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- setup/countries/my_setup_file.txt
+
+Top-level keys seen here (sample / most common):
+- color
+- AHI
+- ALY
+- ATQ
+- AYD
+- BFR
+- CIL
+- CND
+- CYP
+- DIL
+- DUL
+- ERE
+- GRM
+- HMD
+- HCI
+- HSN
+- INA
+- KAR
+- KBD
+- KRD
+- MEN
+- SHP
+- SRU
+- SUT
+- TDJ
+- TEK
+- TRE
+- TUR
+- BHT
+- BIN
+- BIT
+- CEM
+- DSN
+- DMB
+- EGL
+- HKK
+- HZN
+- HZR
+- JLM
+- MZJ
+- MUS
+- SOH
+- ZRQ
+- ZZR
+- KIL
+- TVS
+- QTO
+- CHM
+- XLL
+- CYA
+- TLN
+- ICM
+- WAN
+- HNK
+- URC
+- CIC
+- CSU
+- AYA
+- PIG
+- PCJ
+- LUP
+- OMG
+- CAV
+- MLT
+- GRR
+- MNT
+- GCV
+- BBA
+- SLL
+- HKR
+- CAX
+- PUU
+- CRA
+- KNA
+- KRK
+- QUL
+- SUR
+- PUK
+- BAG
+- HCH
+
+Common assignment keywords seen here:
+- color
+- culture_definition
+- religion_definition
+- color2
+- description_category
+- difficulty
+- is_historic
+- unit_color0
+- unit_color1
+- unit_color2
+- AHI
+- ALY
+- ATQ
+- AYD
+- BFR
+- CIL
+- CND
+- CYP
+- DIL
+- DUL
+- ERE
+- GRM
+- HMD
+- HCI
+- HSN
+- INA
+- KAR
+- KBD
+- KRD
+- MEN
+- SHP
+- SRU
+- SUT
+- TDJ
+- TEK
+- TRE
+- TUR
+- BHT
+- BIN
+- BIT
+- CEM
+- DSN
+- DMB
+- EGL
+- HKK
+- HZN
+- HZR
+- JLM
+- MZJ
+- MUS
+- SOH
+- ZRQ
+- ZZR
+- KIL
+- TVS
+- QTO
+- CHM
+- XLL
+- CYA
+- TLN
+- ICM
+- WAN
+- HNK
+- URC
+- CIC
+- CSU
+- AYA
+- PIG
+- PCJ
+- LUP
+- OMG
+- CAV
+- MLT
+- GRR
+- MNT
+- GCV
+- BBA
+- SLL
+- HKR
+- CAX
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for setup/countries
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values for setup.
+# Setup is start-state initialization: avoid runtime scripting here.
+
+<setup_key> = {
+    culture_definition = <value>
+    religion_definition = <value>
+    color = <value>
+    color2 = <value>
+    description_category = <value>
+    difficulty = <value>
+    is_historic = <value>
+    unit_color0 = <value>
+    unit_color1 = <value>
+    unit_color2 = <value>
+    color = {
+        # ...
+    }
+    AHI = {
+        # ...
+    }
+    ALY = {
+        # ...
+    }
+    ATQ = {
+        # ...
+    }
+    AYD = {
+        # ...
+    }
+    BFR = {
+        # ...
+    }
+    CIL = {
+        # ...
+    }
+    CND = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<setup_key> = {
+    # add fields/blocks appropriate for this directory
+}

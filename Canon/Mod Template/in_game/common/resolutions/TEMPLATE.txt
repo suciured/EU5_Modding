@@ -1,0 +1,4 @@
+# COMMON/resolutions TEMPLATE
+<key> = {
+    # definition block
+}

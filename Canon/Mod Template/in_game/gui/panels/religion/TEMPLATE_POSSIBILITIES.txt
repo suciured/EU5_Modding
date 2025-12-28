@@ -1,0 +1,194 @@
+gui/panels/religion — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/panels/religion/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- text_single
+- icon
+- hbox
+- tooltipwidget
+- margin
+- widget
+- expand
+- color
+- pieslice
+- maximumsize
+- vbox
+- glow
+- background
+- position
+- modify_texture
+- piechart
+- item
+- scrollarea
+- scrollbar_vertical
+- scrollwidget
+- sort_by_key_button
+- sort_by_highlight
+- sort_by_small_highlight
+- SimpleContextualStringPairTooltipType
+- ContextualTooltipType
+- dynamicgridbox
+- minimumsize
+- spriteborder
+- container
+- button_regular_icon
+- TooltipScrolledStringPairList
+- filtered_sorted_list
+- bookmark_02
+- navigational_button_alt
+- gods_action_button
+- TooltipTextBlock
+- TooltipUIActionBlockOld
+- action_tooltip
+- spriteBorder
+- sort_by_icon_highlight
+- divider_flavor_03
+- header_paper_card_horizontal
+- TooltipListScrollArea
+- LeftClickButtonTooltip
+- button
+- header_button_left
+- overlappingitembox
+- left_action
+- parameter
+- right_click_and_hold_action
+- left_click_and_hold_action
+- button_regular
+- TooltipFlavorTextBlock
+- saints_widget
+- country_flag_very_small
+- divider_flavor_01
+
+Common assignment keywords seen here (often-used properties/blocks):
+- using
+- size
+- texture
+- text
+- visible
+- text_single
+- icon
+- hbox
+- layoutpolicy_horizontal
+- alpha
+- parentanchor
+- align
+- tooltipwidget
+- margin
+- spacing
+- name
+- widget
+- expand
+- color
+- texture_density
+- pieslice
+- value
+- datacontext
+- margin_left
+- maximumsize
+- vbox
+- glow
+- glow_radius
+- background
+- layoutpolicy_vertical
+- position
+- modify_texture
+- piechart
+- datamodel
+- item
+- autoresize
+- fontsize
+- default_format
+- blend_mode
+- ignoreinvisible
+- scrollarea
+- scrollbarpolicy_horizontal
+- autoresizescrollarea
+- scrollbar_vertical
+- scrollwidget
+- sort_by_key_button
+- sort_by_highlight
+- sort_by_small_highlight
+- spriteType
+- margin_right
+- SimpleContextualStringPairTooltipType
+- lowpriotextcontext
+- raw_text
+- margin_top
+- ContextualTooltipType
+- dynamicgridbox
+- minimumsize
+- spriteborder
+- margin_bottom
+- container
+- button_regular_icon
+- title
+- description
+- TooltipScrolledStringPairList
+- textcontext
+- filtered_sorted_list
+- addcolumn
+- addrow
+- alwaystransparent
+- onmousehierarchyenter
+- bookmark_02
+- tintcolor
+- max_width
+- navigational_button_alt
+- onclick
+- gods_action_button
+- TooltipTextBlock
+- TooltipUIActionBlockOld
+- actor
+- action_tooltip
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/panels/religion
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    using = <value>
+    texture = <value>
+    text = <value>
+    visible = <value>
+    layoutpolicy_horizontal = <value>
+    alpha = <value>
+    parentanchor = <value>
+    align = <value>
+    spacing = <value>
+    name = <value>
+    size = {
+        # ...
+    }
+    text_single = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    margin = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    expand = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

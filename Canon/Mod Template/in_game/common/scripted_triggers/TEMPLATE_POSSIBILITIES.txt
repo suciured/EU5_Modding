@@ -1,0 +1,218 @@
+COMMON/scripted_triggers — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/scripted_triggers/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- OR
+- NOT
+- limit
+- custom_tooltip
+- AND
+- trigger_if
+- custom_description
+- trigger_else
+- international_organization:hre
+- any_international_organization_member
+- trigger_else_if
+- any_ruling_countries
+- location
+- not
+- culture
+- portrait_religion_clothing_trigger
+- NOR
+- owner
+- portrait_clothing_trigger
+- had_disaster_for_years
+- international_organization:japanese_shogunate
+- value
+- current_age_or_later
+- any_buildings_in_location
+- hidden_trigger
+- save_temporary_scope_value_as
+- any_rebel
+- scope:root_country
+- country_rank_is_what
+- opinion
+- country_has_special_status
+- if
+- any_owned_foreign_building_location
+- building_type
+- any_owned_location
+- is_target_in_global_variable_list
+- subtract
+- any_country_with_special_status_of_type
+- any_foreign_building_countries_in_location
+- religion:catholic
+- var:strongest_beylik_variable
+- has_special_status_in_international_organization
+- any_international_organizations_member_of
+- scope:actor
+- scope:recipient
+- is_subject_which_can_ally_target
+- scope:attacker
+- any_character
+- region:france_region
+- any_ownable_location_in_region
+- portrait_clergy_trigger
+- root.culture
+- root.religion
+- international_organization:catholic_church
+- scope:recipient.culture
+- c:PAP
+- can_create_subject_alliance
+- is_member_of_international_organization_of_type
+- and
+- is_allied_with
+- has_blocked_disaster_trigger
+- any_great_power
+- any_current_war
+- scope:defender
+- international_organization:middle_kingdom
+- capital
+- has_had_situation
+- current_celestial_authority
+- union
+- ordered_international_organization_member
+- any_holy_site_in_religion
+- any_in_global_list
+- dominant_religion
+- religion
+- c:ENG
+- situation:hussite_wars
+- international_organization:red_turban_rebels
+- NAND
+- any_active_disaster
+- c:DLH
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- OR
+- text
+- NOT
+- custom_tooltip
+- limit
+- has_variable
+- AND
+- trigger_if
+- custom_description
+- value
+- location_key
+- has_trait
+- region
+- exists
+- raw_material
+- this
+- trigger_else
+- culture
+- integration_level
+- has_country_modifier
+- international_organization:hre
+- object
+- any_international_organization_member
+- trigger_else_if
+- owner
+- any_ruling_countries
+- government_type
+- location
+- is_subject
+- has_estate
+- not
+- has_discovered_area
+- type
+- has_reform
+- has_game_rule
+- dominant_culture
+- religion
+- religion.group
+- has_ruler
+- in_civil_war
+- always
+- save_temporary_scope_as
+- has_primary_or_accepted_culture
+- portrait_religion_clothing_trigger
+- NOR
+- dominant_religion
+- scope:good_to_be_replaced_scope
+- gfx_culture_applicable
+- is_ruler
+- target
+- at_war
+- name
+- portrait_clothing_trigger
+- is_leader_of_international_organization
+- has_policy
+- tag
+- disaster_type
+- group
+- country_exists
+- multiply
+- is_member_of_international_organization
+- had_disaster_for_years
+- has_building_with_at_least_one_level
+- pop_type
+- sub_unit_type
+- is_alive
+- country_rank
+- add
+- vegetation
+- international_organization:japanese_shogunate
+- is_adult
+- international_organization_has_policy
+- is_female
+- has_dynasty
+- max
+- current_age
+- current_age_or_later
+- controller
+- has_culture_group
+- is_general
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/scripted_triggers
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    text = <value>
+    has_variable = <value>
+    location_key = <value>
+    value = <value>
+    has_trait = <value>
+    region = <value>
+    exists = <value>
+    raw_material = <value>
+    this = <value>
+    integration_level = <value>
+    OR = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    custom_tooltip = {
+        # ...
+    }
+    AND = {
+        # ...
+    }
+    trigger_if = {
+        # ...
+    }
+    custom_description = {
+        # ...
+    }
+    trigger_else = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

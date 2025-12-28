@@ -1,0 +1,4 @@
+# COMMON/trigger_localization TEMPLATE
+<key> = {
+    # definition block
+}

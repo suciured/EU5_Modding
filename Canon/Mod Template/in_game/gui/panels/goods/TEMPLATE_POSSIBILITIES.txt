@@ -1,0 +1,146 @@
+gui/panels/goods — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/panels/goods/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- hbox
+- widget
+- modify_texture
+- background
+- expand
+- sort_by_key_button
+- tooltipwidget
+- text_single
+- maximumsize
+- sort_by_highlight
+- icon
+- glow
+- color
+- vbox
+- spriteborder
+- action_tooltip
+- button
+- ui_direction_color_button
+- filtered_sorted_list
+- item
+- card_header_button_04
+- contextmenu_widget
+- MarketContextMenu
+- margin
+- country_flag_very_small
+- progressbar
+
+Common assignment keywords seen here (often-used properties/blocks):
+- using
+- size
+- name
+- hbox
+- alpha
+- texture
+- widget
+- modify_texture
+- blend_mode
+- datacontext
+- background
+- spacing
+- expand
+- sort_by_key_button
+- texture_density
+- tooltipwidget
+- text_single
+- align
+- maximumsize
+- sort_by_highlight
+- layoutpolicy_vertical
+- text
+- parentanchor
+- visible
+- enabled
+- icon
+- glow
+- glow_radius
+- color
+- vbox
+- spriteType
+- spriteborder
+- action_tooltip
+- click_type
+- click_mode
+- title
+- on_action
+- button
+- tooltip_enabled
+- ui_direction_color_button
+- onclick
+- filtered_sorted_list
+- addcolumn
+- addrow
+- datamodel
+- item
+- margin_right
+- card_header_button_04
+- cursor
+- onmousehierarchyenter
+- ondoubleclick
+- contextmenu_widget
+- MarketContextMenu
+- margin
+- country_flag_very_small
+- progressbar
+- min
+- max
+- value
+- direction
+- raw_text
+- allow_outside
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/panels/goods
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    using = <value>
+    name = <value>
+    alpha = <value>
+    texture = <value>
+    blend_mode = <value>
+    datacontext = <value>
+    spacing = <value>
+    texture_density = <value>
+    align = <value>
+    layoutpolicy_vertical = <value>
+    size = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    modify_texture = {
+        # ...
+    }
+    background = {
+        # ...
+    }
+    expand = {
+        # ...
+    }
+    sort_by_key_button = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

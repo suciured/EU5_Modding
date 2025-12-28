@@ -1,0 +1,94 @@
+COMMON/historical_scores — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/historical_scores/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- hs_napoleon
+- hs_suleyman
+- hs_charles
+- hs_fredrik_the_great
+- hs_pius_v
+- hs_mansa_musa
+- hs_jan_sobieski
+- hs_gustavus_adolphus
+- hs_peter_the_great
+- hs_elizabeth_i
+- hs_tamerlane
+- hs_tokugawa
+- hs_aurangzeb
+- hs_willem_of_orange
+- hs_pachacuti
+- hs_hiawatha
+- hs_christian_ii
+- hs_may_stuart
+- hs_charles_the_bold
+- tag_montezuma
+- hs_enrique_de_impotent
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- tag
+- score
+- hs_napoleon
+- hs_suleyman
+- hs_charles
+- hs_fredrik_the_great
+- hs_pius_v
+- hs_mansa_musa
+- hs_jan_sobieski
+- hs_gustavus_adolphus
+- hs_peter_the_great
+- hs_elizabeth_i
+- hs_tamerlane
+- hs_tokugawa
+- hs_aurangzeb
+- hs_willem_of_orange
+- hs_pachacuti
+- hs_hiawatha
+- hs_christian_ii
+- hs_may_stuart
+- hs_charles_the_bold
+- tag_montezuma
+- hs_enrique_de_impotent
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/historical_scores
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    tag = <value>
+    score = <value>
+    hs_napoleon = {
+        # ...
+    }
+    hs_suleyman = {
+        # ...
+    }
+    hs_charles = {
+        # ...
+    }
+    hs_fredrik_the_great = {
+        # ...
+    }
+    hs_pius_v = {
+        # ...
+    }
+    hs_mansa_musa = {
+        # ...
+    }
+    hs_jan_sobieski = {
+        # ...
+    }
+    hs_gustavus_adolphus = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

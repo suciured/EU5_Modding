@@ -1,0 +1,218 @@
+COMMON/peace_treaties — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/peace_treaties/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- add
+- scope:winner
+- scope:loser
+- if
+- effect
+- potential
+- cost
+- ai_desire
+- allow
+- scope:war
+- OR
+- NOT
+- or
+- casus_belli
+- else_if
+- AND
+- else
+- destroy_international_organization
+- any_international_organizations_member_of
+- select_trigger
+- visible
+- hidden_effect
+- scope:target
+- trigger_if
+- custom_tooltip
+- split_pop
+- value
+- set_variable
+- scope:recipient
+- create_relation
+- annex_country
+- location
+- construct_building
+- can_make_subject_of
+- make_subject_of
+- every_international_organizations_member_of
+- situation:fall_of_delhi
+- every_loan
+- international_organization:hre
+- is_member_of_international_organization_of_type
+- set_global_variable
+- ruler
+- add_country_modifier
+- base_antagonism
+- add_prestige
+- every_pop
+- every_location_in_province_definition
+- any_location_in_market
+- union
+- international_organization:tatar_yoke
+- divide
+- c:ENG
+- multiply
+- has_special_status_in_international_organization
+- kill_character
+- international_organization:japanese_shogunate
+- leave_situation_faction
+- join_situation_faction
+- add_character_modifier
+- every_owned_location
+- every_country
+- trigger_else
+- scope:winner.var:lost_emperor
+- change_societal_value
+- any_owned_nomad_pop
+- abandon_colonial_claim
+- interaction_source_list
+- every_colonial_claim_province_definition
+- abandon_colonies
+- any_colonial_charter
+- abandon_piracy
+- assume_union_senority
+- every_international_organization_member
+- every_in_list
+- block_foreign_building_treaty
+- break_from_tatar_yoke
+- every_subject_or_below
+- break_from_union
+- break_union
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- value
+- add
+- limit
+- desc
+- scope:winner
+- scope:loser
+- if
+- cost
+- effect
+- potential
+- ai_desire
+- allow
+- scope:war
+- multiply
+- OR
+- base_antagonism
+- antagonism_type
+- target
+- type
+- is_leader_of_international_organization
+- subtract
+- exists
+- NOT
+- casus_belli
+- country_type
+- is_no_cb_war
+- or
+- has_casus_belli
+- is_trade_cb
+- add_prestige
+- is_rival_of
+- has_reform
+- this
+- owner
+- else_if
+- international_organization_type
+- has_variable
+- custom_tooltip
+- AND
+- else
+- name
+- building_type
+- is_situation_active
+- destroy_international_organization
+- years
+- any_international_organizations_member_of
+- religion
+- remove_law_from_international_organization
+- select_trigger
+- looking_for_a
+- target_flag
+- visible
+- hidden_effect
+- tag
+- scope:target
+- international_organization
+- trigger_if
+- source
+- country
+- text
+- split_pop
+- fraction
+- remove_reform
+- remove_country_from_international_organization
+- divide
+- max
+- add_policy_to_international_organization
+- set_global_variable
+- set_variable
+- scope:recipient
+- blocks_full_annexation
+- create_relation
+- first
+- second
+- annex_country
+- reason
+- destroy_building
+- location
+- construct_building
+- instant
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/peace_treaties
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    desc = <value>
+    multiply = <value>
+    antagonism_type = <value>
+    target = <value>
+    type = <value>
+    add = <value>
+    is_leader_of_international_organization = <value>
+    base_antagonism = <value>
+    subtract = <value>
+    limit = {
+        # ...
+    }
+    add = {
+        # ...
+    }
+    scope:winner = {
+        # ...
+    }
+    scope:loser = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    effect = {
+        # ...
+    }
+    potential = {
+        # ...
+    }
+    cost = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

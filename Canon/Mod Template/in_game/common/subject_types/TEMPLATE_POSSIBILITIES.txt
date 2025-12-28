@@ -1,0 +1,213 @@
+COMMON/subject_types — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/subject_types/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- scope:target
+- NOT
+- limit
+- join_defensive_wars_always
+- trigger_if
+- overlord_modifier
+- subject_modifier
+- visible_through_diplomacy
+- creation_visible
+- join_offensive_wars_always
+- visible_through_treaty
+- add
+- on_enable
+- OR
+- on_disable
+- diplo_chance_accept_subject
+- diplo_chance_accept_overlord
+- has_special_status_in_international_organization
+- ai_wants_to_be_overlord
+- scope:subject
+- every_country_with_coalition_grade_antagonism_against_us
+- culture
+- enabled_through_diplomacy
+- value
+- allow_declaring_wars
+- subject_creation_enabled
+- release_country_enabled
+- custom_tooltip
+- if
+- join_offensive_wars_can_call
+- capital
+- scope:actor
+- NOR
+- scope:attacker
+- scope:defender
+- scope:target_province
+- scope:recipient
+- any_international_organizations_member_of
+- trigger_else
+- hidden_effect
+- set_variable
+- appanage
+- can_attack
+- government_reform:french_appanage_reform
+- colonial_nation
+- ordered_owned_location
+- scope:new_town
+- can_rival
+- or
+- not
+- conquistador
+- dominion
+- union_length_days
+- relative_strength
+- reverse_cultural_view
+- and
+- fiefdom
+- scope:future_overlord
+- hanseatic_member
+- imperial_free_city
+- direct_imperial_free_city
+- march
+- samanta
+- maha_samanta
+- pradhana_maha_samanta
+- secessionists
+- state_bank
+- trade_company
+- tributary
+- AND
+- tusi
+- uc_bey
+- add_to_global_variable_list
+- remove_list_global_variable
+- vassal
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- scope:target
+- always
+- NOT
+- base
+- limit
+- government_type
+- negative_opinion
+- positive_opinion
+- same_common_language
+- same_court_language
+- different_culture
+- different_government_type
+- actor_at_war
+- competing_power
+- border_distance
+- type
+- subject_pays
+- level
+- join_defensive_wars_always
+- trigger_if
+- has_overlords_ruler
+- overlord_can_cancel
+- has_limited_diplomacy
+- can_change_rank
+- can_change_heir_selection
+- great_power_score_transfer
+- diplomatic_capacity_cost_scale
+- institution_spread_to_overlord
+- institution_spread_to_subject
+- overlord_modifier
+- subject_modifier
+- visible_through_diplomacy
+- creation_visible
+- color
+- join_offensive_wars_always
+- visible_through_treaty
+- add
+- value
+- on_enable
+- OR
+- subject_can_cancel
+- minimum_opinion_for_offer
+- strength_vs_overlord
+- on_disable
+- diplo_chance_accept_subject
+- diplo_chance_accept_overlord
+- food_access
+- is_situation_active
+- diplomatic_reputation
+- is_member_of_international_organization
+- has_special_status_in_international_organization
+- international_organization
+- rank_difference
+- giving_defensive_support
+- receiving_defensive_support
+- royal_ties
+- culture_war
+- different_religion
+- tax_base
+- reject_subjugation_reasons
+- accept_subjugation_reasons
+- can_be_annexed
+- exists
+- current_strength
+- annexation_speed
+- ai_wants_to_be_overlord
+- scope:subject
+- desc
+- every_country_with_coalition_grade_antagonism_against_us
+- num_of_limited_subjects
+- has_ruler
+- annexation_min_years_before
+- annexation_min_opinion
+- annexation_stall_opinion
+- culture
+- enabled_through_diplomacy
+- is_subject_of
+- sub_continent
+- allow_declaring_wars
+- monthly_prestige
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/subject_types
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    always = <value>
+    base = <value>
+    government_type = <value>
+    negative_opinion = <value>
+    positive_opinion = <value>
+    same_common_language = <value>
+    same_court_language = <value>
+    different_culture = <value>
+    different_government_type = <value>
+    actor_at_war = <value>
+    scope:target = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    join_defensive_wars_always = {
+        # ...
+    }
+    trigger_if = {
+        # ...
+    }
+    overlord_modifier = {
+        # ...
+    }
+    subject_modifier = {
+        # ...
+    }
+    visible_through_diplomacy = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,218 @@
+COMMON/building_types — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/building_types/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- modifier
+- country_potential
+- unique_production_methods
+- possible_production_methods
+- allow
+- location_potential
+- OR
+- capital_country_modifier
+- custom_tags
+- remove_if
+- NOT
+- custom_tooltip
+- limit
+- graphical_tags
+- owner
+- if
+- can_destroy
+- location
+- capital_modifier
+- scope:actor
+- dominant_culture
+- location.owner
+- raw_modifier
+- AND
+- else
+- is_target_in_variable_list
+- on_built
+- culture
+- has_unlocked_building_trigger
+- market_center_modifier
+- market
+- any_foreign_building_countries_in_location
+- situation:reformation
+- set_variable
+- root
+- else_if
+- hidden_effect
+- potential
+- any_market_present_in_country
+- any_subject
+- random_in_list
+- var:trade_company_home_region
+- scope:owner_scope
+- root.location
+- NOR
+- change_variable
+- on_destroyed
+- add_to_variable_list
+- root.owner
+- situation:council_of_trent
+- giving_scripted_relation
+- any_pop
+- barcelona_royal_shipyard
+- province_definition
+- any_location_in_province_definition
+- any_foreign_buildings_in_location
+- sofa_stockade
+- sofa_stockade_maintenance
+- korean_barracks
+- provincial_garrison
+- royal_court
+- royal_court_maintenance
+- house_of_parliament
+- house_of_parliament_requirements
+- order_headquarters
+- order_headquarters_requirements
+- admiralty
+- admiralty_requirements
+- war_college
+- war_college_requirements
+- tax_assessor
+- tax_assessor_requirements
+- supreme_court
+- supreme_court_requirements
+- chancery
+- chancery_maintenance
+- republican_assembly
+- republican_assembly_maintenance
+- royal_garden
+- royal_garden_maintenance
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- category
+- pop_type
+- max_levels
+- employment_size
+- build_time
+- is_foreign
+- construction_demand
+- city
+- town
+- modifier
+- country_potential
+- rural_settlement
+- unique_production_methods
+- produced
+- output
+- possible_production_methods
+- allow
+- always
+- location_potential
+- expensive
+- debug_max_profit
+- tools
+- OR
+- lumber
+- capital_country_modifier
+- obsolete
+- custom_tags
+- remove_if
+- paper
+- NOT
+- custom_tooltip
+- text
+- has_or_had_tag
+- this
+- limit
+- is_capital
+- graphical_tags
+- owner
+- local_cultural_tradition
+- raw_material
+- location
+- weaponry
+- cloth
+- glass
+- tag
+- local_manpower
+- if
+- tar
+- can_recruit_regiment_in_this_location
+- can_destroy
+- merchant_capacity_from_building
+- local_defensive
+- need_good_relation
+- estate
+- has_variable
+- pottery
+- local_sailors
+- stone
+- local_garrison_size
+- vegetation
+- name
+- books
+- has_reform
+- local_crown_estate_power
+- dominant_culture
+- region
+- local_monthly_literacy
+- can_build_ships_in_this_location
+- dyes
+- fine_cloth
+- is_port
+- local_cultural_influence
+- local_max_literacy
+- iron
+- stronger_power_projection
+- target
+- local_unrest
+- capital_modifier
+- culture
+- scope:actor
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/building_types
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    category = <value>
+    pop_type = <value>
+    employment_size = <value>
+    max_levels = <value>
+    build_time = <value>
+    is_foreign = <value>
+    construction_demand = <value>
+    city = <value>
+    town = <value>
+    rural_settlement = <value>
+    modifier = {
+        # ...
+    }
+    country_potential = {
+        # ...
+    }
+    unique_production_methods = {
+        # ...
+    }
+    possible_production_methods = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    location_potential = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    capital_country_modifier = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

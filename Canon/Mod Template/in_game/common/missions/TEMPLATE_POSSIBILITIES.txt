@@ -1,0 +1,218 @@
+COMMON/missions — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/missions/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- if
+- enabled
+- on_completion
+- set_variable
+- requires
+- value
+- NOT
+- OR
+- visible
+- trigger_if
+- custom_tooltip
+- else
+- trigger_else
+- capital
+- add_country_modifier
+- add
+- else_if
+- on_start
+- bypass
+- add_location_modifier
+- column
+- change_societal_value
+- max
+- scope:mission_target_location
+- random_list
+- on_abort
+- order_by
+- scope:mission_target_market
+- trigger
+- multiply
+- on_persistent_completion
+- on_monthly
+- province
+- modifier_while_progressing
+- select_trigger
+- ordered_owned_non_rural_location
+- AND
+- highlight
+- hidden_effect
+- current_age_or_later
+- any_rival
+- root
+- ordered_owned_location
+- trigger_else_if
+- every_location_in_province
+- every_pop
+- any_location_in_province
+- any_neighbor_location
+- location_building_level
+- scope:mission_target_subject
+- NOR
+- any_character
+- scope:actor
+- any_production_method
+- any_export
+- any_exploration_from_country
+- area
+- scope:conquest_province
+- any_pop
+- receiving_scripted_relation
+- interaction_source_list
+- market_possible_goods_trade_surplus
+- add_estate_satisfaction
+- abort
+- any_location_in_area
+- any_buildings_in_location
+- add_province_modifier
+- owner
+- change_variable
+- relative_strength
+- any_cabinet_character
+- merchant_capacity
+- total_effective_goods_production_buildings
+- change_development
+- building_type
+- any_current_war
+- defender_leader
+- attacker_leader
+- add_merchant_power
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- limit
+- value
+- add
+- remove_variable
+- if
+- icon
+- name
+- enabled
+- on_completion
+- set_variable
+- duration
+- requires
+- multiply
+- years
+- custom_tooltip
+- NOT
+- modifier
+- max
+- OR
+- mode
+- visible
+- trigger_if
+- text
+- else
+- trigger_else
+- capital
+- add_country_modifier
+- ceiling
+- min
+- always
+- else_if
+- on_start
+- bypass
+- order_by
+- add_location_modifier
+- owner
+- column
+- has_variable
+- final
+- type
+- change_societal_value
+- scope:mission_target_location
+- random_list
+- building_type
+- target
+- exists
+- has_owner
+- trigger
+- repeatable
+- chance
+- player_playstyle
+- game_has_missions_enabled
+- on_abort
+- country
+- scope:mission_target_market
+- divide
+- is_ownable
+- check_range_bounds
+- on_persistent_completion
+- on_monthly
+- this
+- culture
+- province
+- modifier_while_progressing
+- select_trigger
+- looking_for_a
+- target_flag
+- none_available_msg_key
+- data
+- ordered_owned_non_rural_location
+- goods
+- pop_type
+- country_has_estate
+- AND
+- highlight
+- hidden_effect
+- change_development
+- current_age_or_later
+- estate_type
+- religion
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/missions
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    remove_variable = <value>
+    add = <value>
+    icon = <value>
+    value = <value>
+    name = <value>
+    duration = <value>
+    years = <value>
+    multiply = <value>
+    modifier = <value>
+    mode = <value>
+    limit = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    enabled = {
+        # ...
+    }
+    on_completion = {
+        # ...
+    }
+    set_variable = {
+        # ...
+    }
+    requires = {
+        # ...
+    }
+    value = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,119 @@
+COMMON/international_organization_land_ownership_rules — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/international_organization_land_ownership_rules/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- NOT
+- modifier
+- can_add_trigger
+- can_remove_trigger
+- on_added
+- on_removed
+- ai_desire_to_add
+- can_add_location_trigger
+- add_opinion
+- if
+- limit
+- can_remove_location_trigger
+- high_kingship_land_ownership
+- hre_land_ownership
+- any_coast_border_location
+- italian_wars_land_ownership
+- japanese_shogunate_land_ownership
+- lordship_of_ireland_land_ownership
+- middle_kingdom_land_ownership
+- sect_land_ownership
+- swiss_confederation_land_ownership
+- OR
+- any_neighbor_location
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- always
+- NOT
+- modifier
+- can_add_trigger
+- can_remove_trigger
+- on_added
+- on_removed
+- ai_desire_to_add
+- can_add_location_trigger
+- is_land
+- is_passable
+- owned_location_color
+- add_opinion
+- region
+- if
+- limit
+- this
+- area
+- value
+- is_owned_by_international_organization
+- can_remove_location_trigger
+- allow_control_propagation
+- high_kingship_land_ownership
+- local_institution_growth_modifier
+- local_pop_assimilation_speed
+- local_separatism
+- hre_land_ownership
+- any_coast_border_location
+- is_member_of_international_organization
+- italian_wars_land_ownership
+- add
+- japanese_shogunate_land_ownership
+- lordship_of_ireland_land_ownership
+- middle_kingdom_land_ownership
+- sect_land_ownership
+- swiss_confederation_land_ownership
+- OR
+- any_neighbor_location
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/international_organization_land_ownership_rules
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    always = <value>
+    is_land = <value>
+    is_passable = <value>
+    owned_location_color = <value>
+    region = <value>
+    this = <value>
+    area = <value>
+    value = <value>
+    is_owned_by_international_organization = <value>
+    allow_control_propagation = <value>
+    NOT = {
+        # ...
+    }
+    modifier = {
+        # ...
+    }
+    can_add_trigger = {
+        # ...
+    }
+    can_remove_trigger = {
+        # ...
+    }
+    on_added = {
+        # ...
+    }
+    on_removed = {
+        # ...
+    }
+    ai_desire_to_add = {
+        # ...
+    }
+    can_add_location_trigger = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,169 @@
+gui/panels/market — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/panels/market/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- tooltipwidget
+- icon
+- hbox
+- color
+- glow
+- action_tooltip
+- widget
+- maximumsize
+- sort_by_small_highlight
+- expand
+- sort_by_key_button
+- text_single
+- modify_texture
+- icon_text_2rows
+- header_button_left
+- SimpleContextualTooltipType
+- BasicFunctionalTooltip
+- vbox
+- position
+- item
+- margin
+- pieslice_no_highlight
+- overlappingitembox
+- button
+- ContextualTooltipType
+- TooltipStringPairList
+- progressbar
+- filtered_sorted_list
+- fixedgridbox
+- scroll_card
+- minimumsize
+- background
+- spriteborder
+- country_flag_small
+- piechart
+- button_icon_map_square
+
+Common assignment keywords seen here (often-used properties/blocks):
+- using
+- size
+- texture
+- name
+- datacontext
+- tooltipwidget
+- text
+- alpha
+- icon
+- hbox
+- color
+- glow
+- glow_radius
+- enabled
+- action_tooltip
+- click_type
+- click_mode
+- title
+- widget
+- align
+- visible
+- parentanchor
+- spacing
+- maximumsize
+- texture_density
+- sort_by_small_highlight
+- expand
+- sort_by_key_button
+- on_action
+- text_single
+- modify_texture
+- layoutpolicy_vertical
+- icon_text_2rows
+- layoutstretchfactor_vertical
+- default_format
+- header_button_left
+- SimpleContextualTooltipType
+- lowpriotextcontext
+- raw_text
+- BasicFunctionalTooltip
+- vbox
+- value
+- position
+- datamodel
+- item
+- layoutpolicy_horizontal
+- margin
+- righttoleft
+- pieslice_no_highlight
+- overlappingitembox
+- autoresize
+- button
+- onclick
+- ContextualTooltipType
+- TooltipStringPairList
+- textcontext
+- onmousehierarchyenter
+- progressbar
+- min
+- max
+- direction
+- margin_right
+- filtered_sorted_list
+- fixedgridbox
+- addcolumn
+- addrow
+- scroll_card
+- minimumsize
+- background
+- spriteType
+- spriteborder
+- country_flag_small
+- piechart
+- button_icon_map_square
+- blend_mode
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/panels/market
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    using = <value>
+    texture = <value>
+    name = <value>
+    datacontext = <value>
+    text = <value>
+    alpha = <value>
+    glow_radius = <value>
+    enabled = <value>
+    click_type = <value>
+    click_mode = <value>
+    size = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    color = {
+        # ...
+    }
+    glow = {
+        # ...
+    }
+    action_tooltip = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

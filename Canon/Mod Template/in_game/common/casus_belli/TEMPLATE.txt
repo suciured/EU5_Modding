@@ -1,0 +1,4 @@
+# COMMON/casus_belli TEMPLATE
+<key> = {
+    # definition block
+}

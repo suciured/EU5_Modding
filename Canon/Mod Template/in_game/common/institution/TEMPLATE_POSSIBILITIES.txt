@@ -1,0 +1,148 @@
+COMMON/institution — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/institution/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- AND
+- add
+- OR
+- can_spawn
+- promote_chance
+- owner
+- custom_tooltip
+- if
+- limit
+- feudalism
+- spread_from_friendly_coast_border_location
+- legalism
+- meritocracy
+- renaissance
+- banking
+- professional_armies
+- new_world
+- printing_press
+- pike_and_shot
+- confessionalism
+- global_trade
+- market
+- artillery_institution
+- manufactories
+- NOR
+- else
+- scientific_revolution
+- military_revolution
+- enlightenment
+- industrialization
+- levee_en_masse
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- AND
+- has_game_rule
+- value
+- add
+- OR
+- multiply
+- location_rank
+- age
+- can_spawn
+- promote_chance
+- spread_from_friendly_coast_border_location
+- spread_from_any_coast_border_location
+- spread_from_any_import
+- spread_from_any_export
+- spread_scale_on_control_if_owner_embraced
+- spread_embraced_to_capital
+- spread_to_market_member
+- has_building
+- this
+- spread_from_was_possible_spawn
+- continent
+- sub_continent
+- owner
+- has_institution
+- has_owner
+- area
+- dominant_culture
+- has_building_with_at_least_one_level
+- custom_tooltip
+- text
+- has_discovered_area
+- if
+- limit
+- has_advance
+- dominant_religion
+- feudalism
+- legalism
+- meritocracy
+- renaissance
+- banking
+- professional_armies
+- new_world
+- is_port
+- printing_press
+- pike_and_shot
+- confessionalism
+- global_trade
+- is_market_center
+- market
+- artillery_institution
+- manufactories
+- NOR
+- else
+- scientific_revolution
+- military_revolution
+- is_capital
+- enlightenment
+- industrialization
+- levee_en_masse
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/institution
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    has_game_rule = <value>
+    value = <value>
+    multiply = <value>
+    location_rank = <value>
+    age = <value>
+    spread_from_any_coast_border_location = <value>
+    spread_from_any_import = <value>
+    spread_from_any_export = <value>
+    spread_scale_on_control_if_owner_embraced = <value>
+    spread_embraced_to_capital = <value>
+    AND = {
+        # ...
+    }
+    add = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    can_spawn = {
+        # ...
+    }
+    promote_chance = {
+        # ...
+    }
+    owner = {
+        # ...
+    }
+    custom_tooltip = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

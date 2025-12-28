@@ -1,0 +1,218 @@
+COMMON/prices — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/prices/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- empty_unit_maintenance
+- change_heir_selection
+- build_gravel_road
+- build_paved_road
+- build_modern_road
+- build_railroad
+- expand_rgo_mining
+- expand_rgo_farming
+- expand_rgo_hunting
+- expand_rgo_gathering
+- expand_rgo_forestry
+- embrace_institution
+- grant_privilege
+- revoke_privilege
+- create_supply_depot
+- remove_government_reform
+- set_cabine_action
+- set_cabinet_member
+- replace_cabinet_member
+- set_policy
+- change_policy
+- declaring_war
+- honoring_alliance_call
+- war_breaking_truce
+- war_breaking_truce_with_guarantor
+- war_great_relations
+- war_good_relations
+- war_when_military_acces
+- war_no_cb
+- war_on_subject
+- war_on_same_religion_cb
+- war_on_same_religion_no_cb
+- war_on_different_religion
+- send_gift
+- buy_military_access
+- buy_fleet_basing_rights
+- replace_rival
+- hire_mercenary_leader
+- hire_mercenary_premium
+- bribe_units
+- hire_prisoners
+- ransom_units
+- create_colonial_charter
+- abandon_colonial_charter
+- capital_movement
+- create_market
+- relocate_market
+- train_general
+- train_admiral
+- recruit_explorer
+- hire_advisor
+- hire_artist
+- destroy_market
+- change_court_language
+- change_liturgical_language
+- invite_religious_figure_same_school
+- invite_religious_figure_different_school
+- dismiss_religious_figure
+- propose_curia_action
+- change_curia_vote
+- invite_artist
+- convert_religion
+- policy_vote
+- orthodox_synod
+- periphora
+- canonize
+- invite_foreign_cleric
+- change_parliament_type
+- change_organization_parliament_type
+- change_employment_system
+- add_accepted_culture
+- remove_accepted_culture
+- add_tolerated_culture
+- remove_tolerated_culture
+- change_primary_culture
+- settle_country
+- extend_regency
+- hire_privateer
+- dismiss_privateer
+- privateer_maintenance
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- gold
+- stability
+- scaled_gold
+- prestige
+- religious_influence
+- government_power
+- manpower
+- max_scale
+- honor
+- sailors
+- legitimacy
+- ignore_inflation
+- righteousness
+- scaled_manpower
+- scaled_sailors
+- karma
+- war_exhaustion
+- scaled_recipient_gold
+- min_scale
+- army_tradition
+- navy_tradition
+- yanantin
+- purity
+- empty_unit_maintenance
+- change_heir_selection
+- build_gravel_road
+- build_paved_road
+- build_modern_road
+- build_railroad
+- expand_rgo_mining
+- expand_rgo_farming
+- expand_rgo_hunting
+- expand_rgo_gathering
+- expand_rgo_forestry
+- embrace_institution
+- grant_privilege
+- revoke_privilege
+- create_supply_depot
+- remove_government_reform
+- set_cabine_action
+- set_cabinet_member
+- replace_cabinet_member
+- set_policy
+- change_policy
+- declaring_war
+- honoring_alliance_call
+- war_breaking_truce
+- war_breaking_truce_with_guarantor
+- war_great_relations
+- war_good_relations
+- war_when_military_acces
+- war_no_cb
+- war_on_subject
+- war_on_same_religion_cb
+- war_on_same_religion_no_cb
+- war_on_different_religion
+- send_gift
+- buy_military_access
+- buy_fleet_basing_rights
+- replace_rival
+- hire_mercenary_leader
+- hire_mercenary_premium
+- bribe_units
+- hire_prisoners
+- ransom_units
+- create_colonial_charter
+- abandon_colonial_charter
+- capital_movement
+- create_market
+- relocate_market
+- train_general
+- train_admiral
+- recruit_explorer
+- hire_advisor
+- hire_artist
+- destroy_market
+- change_court_language
+- change_liturgical_language
+- invite_religious_figure_same_school
+- invite_religious_figure_different_school
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/prices
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    gold = <value>
+    stability = <value>
+    scaled_gold = <value>
+    prestige = <value>
+    religious_influence = <value>
+    government_power = <value>
+    manpower = <value>
+    max_scale = <value>
+    honor = <value>
+    sailors = <value>
+    empty_unit_maintenance = {
+        # ...
+    }
+    change_heir_selection = {
+        # ...
+    }
+    build_gravel_road = {
+        # ...
+    }
+    build_paved_road = {
+        # ...
+    }
+    build_modern_road = {
+        # ...
+    }
+    build_railroad = {
+        # ...
+    }
+    expand_rgo_mining = {
+        # ...
+    }
+    expand_rgo_farming = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

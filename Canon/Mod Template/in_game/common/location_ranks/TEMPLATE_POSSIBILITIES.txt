@@ -1,0 +1,92 @@
+COMMON/location_ranks — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/location_ranks/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- rank_modifier
+- country_modifier
+- allow
+- city
+- town
+- rural_settlement
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- rank_modifier
+- local_monthly_food_modifier
+- country_modifier
+- monthly_doom
+- color
+- frame_tier
+- show_in_label
+- local_burghers_desired_pop
+- local_laborers_desired_pop
+- local_soldiers_desired_pop
+- local_nobles_desired_pop
+- local_clergy_desired_pop
+- local_max_control
+- local_population_capacity
+- local_population_capacity_modifier
+- local_food_capacity
+- local_integration_speed_modifier
+- free_building_levels
+- allow
+- modifier:cannot_upgrade_location
+- build_time
+- is_established_city
+- construction_demand
+- city
+- local_construction_speed
+- local_pop_promotion_speed_modifier
+- max_constructions_at_same_time
+- fort_limit
+- location_rank
+- max_rank
+- town
+- rural_settlement
+- local_max_rgo_size_modifier
+- local_population_growth
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/location_ranks
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    local_monthly_food_modifier = <value>
+    monthly_doom = <value>
+    color = <value>
+    frame_tier = <value>
+    show_in_label = <value>
+    local_burghers_desired_pop = <value>
+    local_laborers_desired_pop = <value>
+    local_soldiers_desired_pop = <value>
+    local_nobles_desired_pop = <value>
+    local_clergy_desired_pop = <value>
+    rank_modifier = {
+        # ...
+    }
+    country_modifier = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    city = {
+        # ...
+    }
+    town = {
+        # ...
+    }
+    rural_settlement = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,215 @@
+COMMON/biases — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/biases/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- opinion_dummy
+- opinion_war
+- opinion_different_culture
+- opinion_they_accept_our_culture
+- opinion_we_accept_their_culture
+- opinion_they_tolerate_our_culture
+- opinion_we_tolerate_their_culture
+- opinion_shared_culture_group
+- opinion_same_court_language
+- opinion_same_court_language_family
+- opinion_same_common_language
+- opinion_same_common_language_family
+- opinion_royal_marriage
+- opinion_same_dynasty
+- opinion_positive_societal_values
+- opinion_negative_societal_values
+- opinion_promised_land_unfulfilled
+- opinion_enforced_peace
+- opinion_mutual_great_powers
+- opinion_hegemons
+- opinion_alliance
+- opinion_fighting_same_war
+- opinion_they_defend_us
+- opinion_they_saved_us
+- opinion_they_aid_us
+- opinion_they_helped_us
+- opinion_giving_guarantee
+- opinion_receiving_guarantee
+- opinion_they_have_casus_belli
+- opinion_receiving_military_access
+- opinion_receiving_food_access
+- opinion_receiving_fleet_basing_rights
+- opinion_positive_religious_tolerance
+- opinion_negative_religious_tolerance
+- opinion_liked_religious_school
+- opinion_disliked_religious_school
+- opinion_religious_aspect
+- opinion_subsidies
+- opinion_rival
+- opinion_enemy
+- opinion_defending_our_rival
+- opinion_enemy_of_my_enemy
+- opinion_border_percentage
+- opinion_declared_war
+- opinion_gift
+- opinion_broke_alliance
+- opinion_decline_alliance
+- opinion_dishonored_alliance
+- opinion_declined_tribute_offer
+- opinion_broke_tribute
+- opinion_decline_military_access
+- opinion_decline_fleet_basing_rights
+- opinion_decline_guarantee
+- opinion_insult
+- opinion_changed_subject_type
+- opinion_threatened_us
+- opinion_supported_rebels
+- opinion_improve_relation
+- opinion_improve_relation_reversed
+- opinion_abandon_civil_war
+- opinion_liberated_us
+- opinion_took_on_debt
+- opinion_placed_privateers
+- opinion_bribed_mercenaries
+- opinion_default_loans
+- opinion_papal_relations
+- opinion_raided_our_borders
+- opinion_destroyed_building
+- opinion_caught_spying
+- opinion_decline_ask_to_vote_for_me_as_emperor
+- opinion_influence_nation
+- opinion_decline_influence_nation
+- opinion_sabotage_reputation
+- opinion_forced_succession_law_on_partner
+- opinion_tried_to_excommunicate_us
+- opinion_receiving_deny_market_access
+- opinion_annoyed_about_denying_market_access
+- opinion_receiving_trade_access
+- opinion_excommunicated
+- opinion_broke_trade_access
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- value
+- yearly_decay
+- min
+- max
+- years
+- yearly_gain
+- months
+- opinion_dummy
+- opinion_war
+- opinion_different_culture
+- opinion_they_accept_our_culture
+- opinion_we_accept_their_culture
+- opinion_they_tolerate_our_culture
+- opinion_we_tolerate_their_culture
+- opinion_shared_culture_group
+- opinion_same_court_language
+- opinion_same_court_language_family
+- opinion_same_common_language
+- opinion_same_common_language_family
+- opinion_royal_marriage
+- opinion_same_dynasty
+- opinion_positive_societal_values
+- opinion_negative_societal_values
+- opinion_promised_land_unfulfilled
+- opinion_enforced_peace
+- opinion_mutual_great_powers
+- opinion_hegemons
+- opinion_alliance
+- opinion_fighting_same_war
+- opinion_they_defend_us
+- opinion_they_saved_us
+- opinion_they_aid_us
+- opinion_they_helped_us
+- opinion_giving_guarantee
+- opinion_receiving_guarantee
+- opinion_they_have_casus_belli
+- opinion_receiving_military_access
+- opinion_receiving_food_access
+- opinion_receiving_fleet_basing_rights
+- opinion_positive_religious_tolerance
+- opinion_negative_religious_tolerance
+- opinion_liked_religious_school
+- opinion_disliked_religious_school
+- opinion_religious_aspect
+- opinion_subsidies
+- opinion_rival
+- opinion_enemy
+- opinion_defending_our_rival
+- opinion_enemy_of_my_enemy
+- opinion_border_percentage
+- opinion_declared_war
+- opinion_gift
+- opinion_broke_alliance
+- opinion_decline_alliance
+- opinion_dishonored_alliance
+- opinion_declined_tribute_offer
+- opinion_broke_tribute
+- opinion_decline_military_access
+- opinion_decline_fleet_basing_rights
+- opinion_decline_guarantee
+- opinion_insult
+- opinion_changed_subject_type
+- opinion_threatened_us
+- opinion_supported_rebels
+- opinion_improve_relation
+- opinion_improve_relation_reversed
+- opinion_abandon_civil_war
+- opinion_liberated_us
+- opinion_took_on_debt
+- opinion_placed_privateers
+- opinion_bribed_mercenaries
+- opinion_default_loans
+- opinion_papal_relations
+- opinion_raided_our_borders
+- opinion_destroyed_building
+- opinion_caught_spying
+- opinion_decline_ask_to_vote_for_me_as_emperor
+- opinion_influence_nation
+- opinion_decline_influence_nation
+- opinion_sabotage_reputation
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/biases
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    yearly_decay = <value>
+    min = <value>
+    max = <value>
+    years = <value>
+    yearly_gain = <value>
+    months = <value>
+    opinion_dummy = {
+        # ...
+    }
+    opinion_war = {
+        # ...
+    }
+    opinion_different_culture = {
+        # ...
+    }
+    opinion_they_accept_our_culture = {
+        # ...
+    }
+    opinion_we_accept_their_culture = {
+        # ...
+    }
+    opinion_they_tolerate_our_culture = {
+        # ...
+    }
+    opinion_we_tolerate_their_culture = {
+        # ...
+    }
+    opinion_shared_culture_group = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

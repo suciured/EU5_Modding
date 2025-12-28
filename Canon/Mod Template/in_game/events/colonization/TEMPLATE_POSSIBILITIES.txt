@@ -1,0 +1,116 @@
+events/colonization — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold event files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/events/colonization/my_events.txt
+
+Event ids / namespaces seen (sample):
+- <namespace>.<id>
+
+Common keywords seen:
+- name
+- option
+- type
+- desc
+- limit
+- title
+- trigger
+- immediate
+- illustration_tags
+- NOT
+- save_scope_as
+- is_subject_type
+- event_illustration_estate_effect
+- if
+- scope:target
+- exists
+- image
+- owner
+- has_owner
+- raw_material
+- add_country_modifier
+- has_policy
+- add_prestige
+- scope:target.province_definition
+- add_estate_satisfaction
+- hide_portraits
+- is_ownable
+- culture
+- add
+- trigger_event_silently
+- scope:recipient
+- value
+- every_location_in_province_definition
+- add_liberty_desire
+- religion
+- OR
+- any_location_in_province_definition
+- factor
+- change_settling_character_loyalty
+- NAND
+- overlord
+- random_location_in_province_definition
+- divide
+- custom_tooltip
+- namespace
+- add_gold
+- multiply
+- is_subject_of
+- show_as_tooltip
+- scope:target_location
+- amount
+- max
+- order_by
+- scope:new_town
+- change_location_rank
+- cc_setup_new_town
+- ai_chance
+- else
+- event_illustration_poptype_effect
+- var:settling_no_mans_land_var
+- ordered_in_local_list
+- snml_exploit_resource
+- is_land
+- any_neighbor_location
+- add_pop
+- size
+- any_pop
+- add_migration
+- from
+- to
+- months
+- any_coast_border_location
+- subject_type
+- modifier
+- any_subject
+- add_war_exhaustion
+- has_trait
+- change_gold_effect
+- create_no_mans_land_scopes
+- remove_variable
+
+Comprehensive example:
+# Comprehensive example for events/colonization
+# STRUCTURE ONLY: placeholder values
+
+event <namespace>.<id> = {
+    title = <localization_key>
+    desc = <localization_key>
+    picture = <gfx_key>
+
+    trigger = {
+        # conditions
+    }
+
+    immediate = {
+        # instant effects
+    }
+
+    option = {
+        name = <localization_key>
+        ai_chance = { factor = <value> }
+        # effects
+    }
+}

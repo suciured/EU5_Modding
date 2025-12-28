@@ -1,0 +1,4 @@
+# COMMON/subject_types TEMPLATE
+<key> = {
+    # definition block
+}

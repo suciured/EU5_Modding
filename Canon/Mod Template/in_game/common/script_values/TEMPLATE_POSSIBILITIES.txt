@@ -1,0 +1,218 @@
+COMMON/script_values — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/script_values/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- add
+- limit
+- if
+- save_temporary_value_as
+- value
+- else
+- every_international_organization_member
+- else_if
+- scope:recipient
+- divide
+- trigger_if
+- multiply
+- not
+- root
+- subtract
+- NOT
+- owner
+- current_age_or_later
+- distance_to_squared
+- max
+- scope:first
+- scope:second
+- location
+- every_rival
+- every_neighbor_country
+- nor
+- has_mutual_scripted_relation
+- country_is_senior_partner
+- best_capital_for_colony
+- guild_max_level
+- hanseatic_kontor_max_level
+- workshop_max_level
+- manufactory_max_level
+- market_max_level
+- mills_max_level
+- market_warehouse_max_level
+- polders_max_level
+- irrigant_cap
+- bund_cap
+- manpower_max_level
+- plantation_cap
+- rural_building_cap
+- slave_market_max_level
+- janissary_barracks_size
+- chancery_max_level
+- kremlin_max_level
+- venetian_palaces_max_level
+- bock_max_level
+- mercury_patio_max_level
+- hanseatic_shipwright_guild_max_level
+- construction_center_max_level
+- theodosian_walls_max_level
+- italian_merchant_quarters_max_level
+- fulani_cattle_rearing_pen_max_level
+- kurmina_headquarter_max_level
+- eghabho_nore_mansion_max_level
+- reformation_preachers_max_level
+- trade_company_headquarters_max_level
+- overlord
+- trade_company_building_max_level
+- estate_building_max_level
+- chinese_expedition_scoring_function
+- chinese_expedition_positive_ai_weight
+- chinese_expedition_neutral_ai_weight
+- chinese_expedition_negative_ai_weight
+- chinese_expedition_very_negative_ai_weight
+- chinese_expedition_very_positive_ai_weight
+- ai_spam_protection
+- OR
+- pap_reassign_cleric_score_multiplier
+- pap_reassign_cleric_diplomatic_actions_cost
+- assassinate_character_cost_multiplier
+- assured_defence_upkeep_cost
+- automatic_defence_upkeep_cost
+- possible_defence_upkeep_cost
+- assured_offence_upkeep_cost
+- automatic_offence_upkeep_cost
+- possible_offence_upkeep_cost
+- rein_in_junior_diplomacy_upkeep_cost
+- alliance_upkeep_cost
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- value
+- add
+- desc
+- limit
+- multiply
+- if
+- divide
+- subtract
+- save_temporary_value_as
+- name
+- exists
+- else
+- min
+- every_international_organization_member
+- max
+- else_if
+- scope:recipient
+- trigger_if
+- location_rank
+- not
+- root
+- has_variable
+- NOT
+- location
+- owner
+- type
+- current_age_or_later
+- distance_to_squared
+- has_game_rule
+- save_temporary_scope_as
+- target
+- has_river
+- scope:first
+- scope:second
+- integration_level
+- every_rival
+- every_neighbor_country
+- nor
+- has_mutual_scripted_relation
+- in_union_with
+- has_royal_marriage_with
+- is_threat_to
+- country_is_senior_partner
+- best_capital_for_colony
+- is_port
+- guild_max_level
+- hanseatic_kontor_max_level
+- workshop_max_level
+- manufactory_max_level
+- market_max_level
+- mills_max_level
+- market_warehouse_max_level
+- polders_max_level
+- irrigant_cap
+- bund_cap
+- manpower_max_level
+- plantation_cap
+- rural_building_cap
+- slave_market_max_level
+- janissary_barracks_size
+- chancery_max_level
+- kremlin_max_level
+- venetian_palaces_max_level
+- bock_max_level
+- mercury_patio_max_level
+- hanseatic_shipwright_guild_max_level
+- construction_center_max_level
+- theodosian_walls_max_level
+- italian_merchant_quarters_max_level
+- fulani_cattle_rearing_pen_max_level
+- kurmina_headquarter_max_level
+- eghabho_nore_mansion_max_level
+- reformation_preachers_max_level
+- trade_company_headquarters_max_level
+- is_subject
+- overlord
+- trade_company_building_max_level
+- estate_building_max_level
+- chinese_expedition_scoring_function
+- chinese_expedition_positive_ai_weight
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/script_values
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    desc = <value>
+    multiply = <value>
+    add = <value>
+    divide = <value>
+    name = <value>
+    subtract = <value>
+    exists = <value>
+    min = <value>
+    max = <value>
+    add = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    save_temporary_value_as = {
+        # ...
+    }
+    value = {
+        # ...
+    }
+    else = {
+        # ...
+    }
+    every_international_organization_member = {
+        # ...
+    }
+    else_if = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

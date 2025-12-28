@@ -1,0 +1,116 @@
+COMMON/scripted_country_names — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/scripted_country_names/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- OR
+- country_trigger
+- capital_trigger
+- location_trigger
+- any_primary_or_accepted_culture
+- any_overlord_or_above
+- any_core_location
+- any_subject_or_below
+- culture
+- jamaica_scripted_country_name
+- new_granada_scripted_country_name
+- new_spain_scripted_country_name
+- new_south_wales_scripted_country_name
+- any_owned_location
+- new_york_scripted_country_name
+- new_amsterdam_scripted_country_name
+- new_zealand_scripted_country_name
+- nova_scotia_scripted_country_name
+- AND
+- peru_scripted_country_name
+- rio_de_la_plata_scripted_country_name
+- swan_river_colony_scripted_country_name
+- wessex_scripted_country_name
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- OR
+- country_trigger
+- capital_trigger
+- location_trigger
+- tag
+- any_primary_or_accepted_culture
+- area
+- culture.language
+- culture
+- province_definition
+- region
+- any_overlord_or_above
+- has_core
+- court_language
+- any_core_location
+- any_subject_or_below
+- has_culture_group
+- dialect
+- root.capital.area
+- jamaica_scripted_country_name
+- new_granada_scripted_country_name
+- new_spain_scripted_country_name
+- sub_continent
+- new_south_wales_scripted_country_name
+- any_owned_location
+- new_york_scripted_country_name
+- new_amsterdam_scripted_country_name
+- new_zealand_scripted_country_name
+- religion.group
+- nova_scotia_scripted_country_name
+- AND
+- peru_scripted_country_name
+- rio_de_la_plata_scripted_country_name
+- swan_river_colony_scripted_country_name
+- wessex_scripted_country_name
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/scripted_country_names
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    tag = <value>
+    area = <value>
+    culture.language = <value>
+    province_definition = <value>
+    region = <value>
+    has_core = <value>
+    court_language = <value>
+    has_culture_group = <value>
+    dialect = <value>
+    culture = <value>
+    OR = {
+        # ...
+    }
+    country_trigger = {
+        # ...
+    }
+    capital_trigger = {
+        # ...
+    }
+    location_trigger = {
+        # ...
+    }
+    any_primary_or_accepted_culture = {
+        # ...
+    }
+    any_overlord_or_above = {
+        # ...
+    }
+    any_core_location = {
+        # ...
+    }
+    any_subject_or_below = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

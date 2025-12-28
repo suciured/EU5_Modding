@@ -1,0 +1,4 @@
+# COMMON/advances TEMPLATE
+<key> = {
+    # definition block
+}

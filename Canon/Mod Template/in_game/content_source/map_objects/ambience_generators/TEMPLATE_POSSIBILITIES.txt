@@ -1,0 +1,38 @@
+content_source/map_objects/ambience_generators — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold content_source files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/content_source/map_objects/ambience_generators/my_content_source.txt
+
+Top-level keys seen:
+- <source_key>
+
+Common assignment keywords seen:
+- schematic_name
+- generation_mode
+- separation
+- margin
+- clamp_to_water_level
+- zoom_max
+- topography
+- vegetation
+- avoid_sea
+- jungle_mist
+- mountains_mist
+- worlds_clouds
+- sand_storm_01
+- climate
+
+Comprehensive example:
+# Comprehensive example for content_source/map_objects/ambience_generators
+# STRUCTURE ONLY: placeholder values
+# content_source files are often inputs for generators or DLC pipelines.
+
+<source_key> = {
+    name = <string>
+    category = <string>
+    source = <reference>
+    # additional metadata
+}

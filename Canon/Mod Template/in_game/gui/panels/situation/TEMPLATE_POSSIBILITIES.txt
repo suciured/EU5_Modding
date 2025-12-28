@@ -1,0 +1,210 @@
+gui/panels/situation — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/panels/situation/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- icon
+- tooltipwidget
+- text_single
+- ContextualTooltipType
+- expand
+- vbox
+- hbox
+- country_flag_small
+- item
+- TooltipTextBlock
+- situation_card_expandable
+- scrollarea
+- scrollbar_vertical
+- scrollwidget
+- margin
+- color
+- dynamicgridbox
+- widget
+- action_tooltip
+- position
+- maximumsize
+- TooltipStringPairList
+- pieslice
+- situation_panel
+- TooltipRequirementsList
+- modify_texture
+- datacontext_from_model
+- situation_fancy_two_line_card
+- piechart
+- TooltipRowList
+- background
+- country_flag_small_plus
+- situation_side_cards
+- SimpleContextualTooltipType
+- flowcontainer
+- spriteborder
+- text_multi
+- fixedgridbox
+- situation_card_one_line
+- glow
+- TooltipFlavorTextBlock
+- pieslice_no_highlight
+- situation_character_card
+- situation_card_header_button
+- navigational_action_button_alt
+- situation_card_common
+- left_click_and_hold_action
+- parameter
+- situation_card_actions
+- minimumsize
+- timed_modifier_icon
+- country_flag_mid
+- button
+- button_regular
+- BasicFunctionalTooltip
+- scroll_card
+- window_header_alt
+- header_secondary_tabs
+- subheader
+- viewportwidget
+- tooltipmeta
+- filtered_sorted_list
+- header_button_left
+- TooltipDebugTextBlock
+- TooltipScrolledRowList
+- header_button_right
+- TooltipUIActionBlock
+- horizontal_scroll_card
+- progressbar
+- divider_flavor_03
+- simple_two_line_card
+- SimpleContextualStringPairTooltipType
+
+Common assignment keywords seen here (often-used properties/blocks):
+- text
+- using
+- visible
+- layoutpolicy_horizontal
+- texture
+- datacontext
+- size
+- icon
+- tooltipwidget
+- text_single
+- parentanchor
+- datamodel
+- textcontext
+- ContextualTooltipType
+- align
+- expand
+- onclick
+- vbox
+- hbox
+- country_flag_small
+- item
+- spacing
+- TooltipTextBlock
+- situation_card_expandable
+- scrollarea
+- scrollbarpolicy_horizontal
+- scrollbar_vertical
+- scrollwidget
+- value
+- datamodel_wrap
+- maxhorizontalslots
+- layoutpolicy_vertical
+- margin
+- flipdirection
+- color
+- dynamicgridbox
+- title
+- widget
+- action_tooltip
+- on_action
+- position
+- texture_density
+- maximumsize
+- TooltipStringPairList
+- pieslice
+- situation_panel
+- alpha
+- TooltipRequirementsList
+- default_format
+- modify_texture
+- datacontext_from_model
+- index
+- raw_text
+- situation_fancy_two_line_card
+- autoresize
+- blend_mode
+- piechart
+- autoresizescrollarea
+- name
+- margin_top
+- TooltipRowList
+- background
+- margin_bottom
+- country_flag_small_plus
+- fontsize
+- situation_side_cards
+- lowpriotextcontext
+- margin_left
+- ignoreinvisible
+- spriteType
+- SimpleContextualTooltipType
+- flowcontainer
+- spriteborder
+- text_multi
+- fixedgridbox
+- addcolumn
+- addrow
+- max_width
+- situation_card_one_line
+- glow
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/panels/situation
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    text = <value>
+    using = <value>
+    visible = <value>
+    layoutpolicy_horizontal = <value>
+    texture = <value>
+    datacontext = <value>
+    parentanchor = <value>
+    datamodel = <value>
+    textcontext = <value>
+    align = <value>
+    size = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    text_single = {
+        # ...
+    }
+    ContextualTooltipType = {
+        # ...
+    }
+    expand = {
+        # ...
+    }
+    vbox = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

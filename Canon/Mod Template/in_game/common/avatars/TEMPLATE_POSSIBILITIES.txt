@@ -1,0 +1,129 @@
+COMMON/avatars — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/avatars/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- country_modifier
+- allow
+- matsya_avatar
+- location_modifier
+- potential_trigger
+- kurma_avatar
+- varaha_avatar
+- narasimha_avatar
+- vamana_avatar
+- parashurama_avatar
+- rama_avatar
+- krishna_avatar
+- buddha_avatar
+- kalki_avatar
+- durga_avatar
+- kali_avatar
+- parvati_avatar
+- lakshmi_avatar
+- saraswati_avatar
+- chhinnamasta_avatar
+- chandi_avatar
+- tripura_sundari_avatar
+- bhuvaneshvari_avatar
+- tara_avatar
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- god
+- country_modifier
+- allow
+- global_defensive
+- global_monthly_literacy
+- matsya_avatar
+- has_ports
+- location_modifier
+- potential_trigger
+- is_port
+- local_monthly_development_modifier
+- kurma_avatar
+- varaha_avatar
+- stability_cost
+- narasimha_avatar
+- global_hostile_attrition
+- vamana_avatar
+- monthly_legitimacy
+- parashurama_avatar
+- monthly_army_tradition
+- rama_avatar
+- global_max_literacy
+- krishna_avatar
+- global_estate_target_satisfaction
+- buddha_avatar
+- tolerance_heretic
+- tolerance_heathen
+- kalki_avatar
+- global_devastation_recovery
+- durga_avatar
+- kali_avatar
+- army_tradition_from_battle
+- parvati_avatar
+- global_population_growth
+- lakshmi_avatar
+- global_monthly_prosperity
+- saraswati_avatar
+- chhinnamasta_avatar
+- war_declaration_stab_hit_tolerance
+- chandi_avatar
+- monthly_war_exhaustion
+- tripura_sundari_avatar
+- stability_decay
+- bhuvaneshvari_avatar
+- global_monthly_control
+- tara_avatar
+- prestige_from_land_battle
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/avatars
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    god = <value>
+    global_defensive = <value>
+    global_monthly_literacy = <value>
+    has_ports = <value>
+    is_port = <value>
+    local_monthly_development_modifier = <value>
+    stability_cost = <value>
+    global_hostile_attrition = <value>
+    monthly_legitimacy = <value>
+    monthly_army_tradition = <value>
+    country_modifier = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    matsya_avatar = {
+        # ...
+    }
+    location_modifier = {
+        # ...
+    }
+    potential_trigger = {
+        # ...
+    }
+    kurma_avatar = {
+        # ...
+    }
+    varaha_avatar = {
+        # ...
+    }
+    narasimha_avatar = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

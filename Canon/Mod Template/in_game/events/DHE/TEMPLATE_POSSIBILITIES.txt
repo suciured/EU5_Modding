@@ -1,0 +1,116 @@
+events/DHE — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold event files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/events/DHE/my_events.txt
+
+Event ids / namespaces seen (sample):
+- <namespace>.<id>
+
+Common keywords seen:
+- name
+- option
+- type
+- save_scope_as
+- tag
+- desc
+- trigger
+- title
+- limit
+- immediate
+- fire_only_once
+- to
+- from
+- illustration_tags
+- dynamic_historical_event
+- monthly_chance
+- value
+- event_illustration_estate_effect
+- custom_tooltip
+- historical_option
+- change_societal_value
+- add_estate_satisfaction
+- NOT
+- if
+- historical_info
+- add_prestige
+- culture
+- modifier
+- owner
+- OR
+- religion
+- target
+- add_stability
+- factor
+- ai_chance
+- change_gold_effect
+- create_character
+- owns
+- estate
+- has_ruler
+- first_name
+- set_variable
+- birth_location
+- scope:target_character
+- hidden_effect
+- birth_date
+- has_variable
+- years
+- adm
+- text
+- hide_portraits
+- mil
+- dip
+- ruler
+- last_name
+- artist
+- add_opinion
+- add_country_modifier
+- capital
+- mode
+- every_pop
+- create_in_limbo
+- move_country
+- is_alive
+- image
+- multiply
+- add_government_power
+- add_pop_satisfaction
+- country_exists
+- script
+- else
+- add_legitimacy
+- scope:target_location
+- exists
+- at_war
+- remove_variable
+- pop_type
+- trigger_event_silently
+- artist_skill
+- order_by
+
+Comprehensive example:
+# Comprehensive example for events/DHE
+# STRUCTURE ONLY: placeholder values
+
+event <namespace>.<id> = {
+    title = <localization_key>
+    desc = <localization_key>
+    picture = <gfx_key>
+
+    trigger = {
+        # conditions
+    }
+
+    immediate = {
+        # instant effects
+    }
+
+    option = {
+        name = <localization_key>
+        ai_chance = { factor = <value> }
+        # effects
+    }
+}

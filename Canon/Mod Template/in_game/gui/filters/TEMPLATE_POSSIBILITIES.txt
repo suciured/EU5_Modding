@@ -1,0 +1,217 @@
+gui/filters — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/filters/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- trigger
+- range
+- scope:target
+- not
+- NOT
+- location_only_full_expanded_rgo
+- location_only_not_full_expanded_rgo
+- location_control
+- location_market_access
+- location_unemployed_percentage
+- location_population
+- location_only_coastal
+- location_only_not_coastal
+- location_only_burgher_possitive_deficit
+- location_only_labourer_possitive_deficit
+- location_core
+- location_integrated
+- location_conquered
+- location_colonized
+- country_only_within_diplomatic_range
+- country_only_relevant_countries
+- country_only_neighbors
+- country_only_region
+- capital
+- country_only_rivals
+- country_only_enemies
+- country_only_positive_opinion
+- country_only_negative_opinion
+- country_is_great_power
+- unit_has_commander
+- unit_has_not_commander
+- unit_has_levies
+- unit_has_mercenaries
+- unit_has_regulars
+- unit_has_infantries
+- unit_has_cavalries
+- unit_has_artilleries
+- unit_has_auxiliaries
+- unit_has_transports
+- unit_has_gallies
+- unit_has_light_ships
+- unit_has_heavy_ships
+- subunit_has_levies
+- subunit_has_mercenaries
+- character_is_male
+- character_is_female
+- character_is_ruler
+- character_is_consort
+- character_is_heir
+- character_is_regent
+- character_is_general
+- character_is_admiral
+- character_is_explorer
+- character_is_artist
+- character_is_courtier
+- character_is_crown
+- character_is_noble
+- character_is_clergy
+- character_is_burgher
+- character_is_peasant
+- character_is_married
+- character_is_not_married
+- character_has_available_marriage
+- character_is_pregnant
+- character_is_adult
+- character_is_adolescent
+- character_is_child
+- character_has_child_education_selected
+- character_has_not_child_education_selected
+- character_is_exploring
+- character_is_not_exploring
+- character_is_in_cabinet
+- character_is_not_in_cabinet
+- character_is_saint
+- pop_is_nobles
+- pop_is_clergy
+- pop_is_burghers
+- pop_is_laborers
+- pop_is_soldiers
+- pop_is_peasants
+
+Common assignment keywords seen here (often-used properties/blocks):
+- scope
+- tag
+- trigger
+- group
+- exclusive_group
+- range
+- step
+- format
+- scope:target
+- pop_type
+- exists
+- enabled_at_start
+- has_trait_category
+- has_estate
+- integration_level
+- international_organization_type
+- not
+- invert
+- NOT
+- mercenary_has_owner
+- cabinet_action_type
+- is_full_expanded_rgo
+- is_coastal
+- has_commander
+- is_female
+- is_married
+- has_child_education_selected
+- has_exploration
+- in_cabinet
+- root.group
+- goods_category
+- has_customer
+- is_opened
+- is_full_capacity
+- is_subsidized
+- is_lacking_goods
+- is_max_level
+- province_cabinet_action
+- societal_value_cabinet_action
+- is_upgradeable
+- is_upgraded_level
+- is_foreign
+- location_only_full_expanded_rgo
+- location_only_not_full_expanded_rgo
+- location_control
+- location_market_access
+- location_unemployed_percentage
+- location_population
+- location_within_range
+- location_only_coastal
+- location_only_not_coastal
+- location_only_burgher_possitive_deficit
+- is_burgher_positive_deficit
+- location_only_labourer_possitive_deficit
+- is_labourer_positive_deficit
+- location_core
+- location_integrated
+- location_conquered
+- location_colonized
+- country_only_within_diplomatic_range
+- within_diplomatic_range
+- country_only_relevant_countries
+- relevant_countries
+- country_only_neighbors
+- is_neighbor_of
+- country_only_region
+- capital
+- region
+- country_only_rivals
+- is_rival_of
+- country_only_enemies
+- is_enemy_of
+- country_only_positive_opinion
+- has_positive_opinion
+- country_only_negative_opinion
+- country_is_great_power
+- is_great_power
+- unit_has_commander
+- unit_has_not_commander
+- unit_has_levies
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/filters
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    scope = <value>
+    tag = <value>
+    group = <value>
+    exclusive_group = <value>
+    step = <value>
+    format = <value>
+    pop_type = <value>
+    exists = <value>
+    enabled_at_start = <value>
+    has_trait_category = <value>
+    trigger = {
+        # ...
+    }
+    range = {
+        # ...
+    }
+    scope:target = {
+        # ...
+    }
+    not = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    location_only_full_expanded_rgo = {
+        # ...
+    }
+    location_only_not_full_expanded_rgo = {
+        # ...
+    }
+    location_control = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

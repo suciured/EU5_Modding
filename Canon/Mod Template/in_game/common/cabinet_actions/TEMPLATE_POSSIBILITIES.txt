@@ -1,0 +1,218 @@
+COMMON/cabinet_actions — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/cabinet_actions/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- column
+- potential
+- select_trigger
+- visible
+- country_modifier
+- NOT
+- allow
+- any_location_in_province
+- limit
+- OR
+- map_marker
+- location_modifier
+- if
+- is_finished
+- map_color
+- scope:actor
+- lerp
+- progress
+- scope:target
+- any_province
+- on_activate
+- enabled
+- on_deactivate
+- any_location_in_area
+- else
+- scope:target_1
+- not
+- province_modifier
+- set_variable
+- has_unlocked_cabinet_action_trigger
+- trigger_if
+- on_fully_activated
+- ai_will_do
+- scope:target_province
+- AND
+- or
+- interaction_source_list
+- add
+- location:constantinople
+- any_country_at_war_with
+- factor
+- culture
+- hidden_effect
+- add_country_modifier
+- ai_interaction_source_list
+- location:kazan
+- add_migration
+- amount
+- remove_migration
+- custom_tooltip
+- scope:recipient
+- any_location_in_province_definition
+- cabinet_action:settle_the_frontier
+- aid_constantinople
+- alleviate_concerns
+- aptekarsky
+- assimilate_area
+- bironovshchina
+- bolshogo_dvortsa
+- byz_extensive_conscription
+- cab_diplomatic_corps
+- cab_naval_focus
+- change_societal_values
+- counter_espionage_action
+- develop_province
+- diplomatic_endeavors
+- encourage_migration
+- expel_people
+- form_new_culture
+- frustrate_annexation
+- gaituguiliu_policy
+- international_organization:middle_kingdom
+- gather_acllas
+- random_list
+- while
+- change_variable
+- create_character
+- increase_control_province
+- low_control_best_tax_base
+- pre_evaluation_sort_value
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- column
+- data
+- ability
+- potential
+- name
+- select_trigger
+- looking_for_a
+- target_flag
+- none_available_msg_key
+- visible
+- country_modifier
+- value
+- source
+- NOT
+- map_color
+- allow_multiple
+- allow
+- any_location_in_province
+- limit
+- OR
+- exists
+- map_marker
+- show_for_owner
+- location_modifier
+- if
+- is_finished
+- scope:actor
+- lerp
+- min_color
+- max_color
+- factor
+- progress
+- integration_level
+- scope:target
+- count
+- icon
+- has_variable
+- default_sort
+- this
+- any_province
+- on_activate
+- enabled
+- years
+- modifier:unlock_prikazi_reform_cabinet_actions
+- on_deactivate
+- owner
+- any_location_in_area
+- else
+- scope:target_1
+- add
+- is_subject
+- add_to_list
+- not
+- province_modifier
+- set_variable
+- custom_tooltip
+- local_population_growth
+- has_unlocked_cabinet_action_trigger
+- source_flags
+- trigger_if
+- culture
+- on_fully_activated
+- local_max_control
+- local_monthly_control
+- province_integration_speed
+- ai_will_do
+- desc
+- scope:target_province
+- multiply
+- from
+- to
+- is_capital
+- local_monthly_development
+- local_pop_promotion_speed
+- local_pop_assimilation_speed
+- diplomatic_reputation
+- divide
+- has_owner
+- local_migration_attraction
+- AND
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/cabinet_actions
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    data = <value>
+    ability = <value>
+    name = <value>
+    looking_for_a = <value>
+    target_flag = <value>
+    none_available_msg_key = <value>
+    value = <value>
+    source = <value>
+    allow_multiple = <value>
+    exists = <value>
+    column = {
+        # ...
+    }
+    potential = {
+        # ...
+    }
+    select_trigger = {
+        # ...
+    }
+    visible = {
+        # ...
+    }
+    country_modifier = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    any_location_in_province = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

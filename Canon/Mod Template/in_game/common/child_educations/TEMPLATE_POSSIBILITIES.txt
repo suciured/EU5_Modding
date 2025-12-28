@@ -1,0 +1,61 @@
+COMMON/child_educations — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/child_educations/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- allow
+- modifier
+- country_modifier
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- allow
+- modifier
+- character_child_education
+- balanced_education
+- administrative_education
+- character_adm_child_education
+- diplomatic_education
+- character_dip_child_education
+- military_education
+- character_mil_child_education
+- expensive_in_depth_education
+- price_to_select
+- price_to_deselect
+- country_modifier
+- court_spending_cost
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/child_educations
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    character_child_education = <value>
+    balanced_education = <value>
+    administrative_education = <value>
+    character_adm_child_education = <value>
+    diplomatic_education = <value>
+    character_dip_child_education = <value>
+    military_education = <value>
+    character_mil_child_education = <value>
+    expensive_in_depth_education = <value>
+    price_to_select = <value>
+    allow = {
+        # ...
+    }
+    modifier = {
+        # ...
+    }
+    country_modifier = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

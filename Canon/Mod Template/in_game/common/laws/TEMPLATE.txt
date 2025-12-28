@@ -1,0 +1,4 @@
+# COMMON/laws TEMPLATE
+<key> = {
+    # definition block
+}

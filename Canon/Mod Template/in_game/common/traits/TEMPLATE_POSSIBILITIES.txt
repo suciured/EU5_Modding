@@ -1,0 +1,218 @@
+COMMON/traits — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/traits/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- modifier
+- allow
+- NOT
+- chance
+- OR
+- unit
+- just
+- righteous
+- cruel
+- tolerant
+- any_neighbor_country
+- kind_hearted
+- free_thinker
+- well_connected
+- calm
+- careful
+- secretive
+- intricate_web_weaver
+- well_advised
+- benevolent
+- zealot
+- pious
+- lawgiver
+- midas_touched
+- incorruptible
+- architectural_visionary
+- scholar
+- entrepreneur
+- industrious
+- expansionist
+- charismatic_negotiator
+- silver_tongue
+- conqueror
+- tactical_genius
+- bold_fighter
+- strict
+- inspiring_leader
+- martial_educator
+- fierce_negotiator
+- babbling_buffoon
+- embezzler
+- drunkard
+- sinner
+- greedy
+- naive
+- craven
+- loose_lips
+- obsessive_perfectionist
+- malevolent
+- unsuited_for_country_ruling
+- eunuch
+- raised_by_eunuchs
+- glory_seeker
+- born_to_the_saddle
+- defensive_planner
+- battlefield_medic
+- ruthless
+- inspirational_leader_general
+- master_of_arms
+- goal_oriented
+- hardy_warrior
+- siege_specialist
+- cannoneer
+- unsuited_for_army_command
+- military_theorist
+- strategist
+- mamluk
+- dragon_tiger
+- hussar_commander
+- extortioner
+- ruthless_blockader
+- buccaneer
+- prize_hunter
+- ironside
+- naval_engineer
+- naval_showman
+- ram_raider
+- naval_gunner
+- accomplished_sailor
+- level_headed
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- category
+- modifier
+- allow
+- NOT
+- flavor
+- war_declaration_stab_hit_tolerance
+- bias_for_militarist_policies
+- always
+- aggressiveness_modifier
+- bias_for_diplomat_policies
+- peace_offer_negotiation_power
+- win_war_chance_threshold
+- chance
+- base
+- antagonism_tolerance
+- carefulness_modifier
+- war_declaration_war_exhaustion_tolerance
+- peace_offer_fairness
+- court_language_is_liturgical_language_importance_modifier
+- stability_importance_modifier
+- control_importance_modifier
+- bias_for_administrative_policies
+- diplomacy_importance_modifier
+- defence_importance_modifier
+- expected_warscore_modifier
+- monthly_towards_innovative
+- religious_unity_importance_modifier
+- bias_for_capitalist_policies
+- exploration_mission_speed
+- character_child_education
+- OR
+- bias_for_balanced_policies
+- monthly_towards_conciliatory
+- monthly_towards_belligerent
+- court_language_is_market_language_importance_modifier
+- manpower_importance_modifier
+- subjugation_preference_modifier
+- military_tactics
+- discipline
+- land_morale_modifier
+- gold_importance_modifier
+- exploration_maintenance_cost
+- character_adm_child_education
+- character_dip_child_education
+- character_mil_child_education
+- global_estate_target_satisfaction
+- monthly_towards_free_subjects
+- government_type
+- monthly_towards_serfdom
+- tolerance_heretic
+- monthly_war_exhaustion
+- research_speed_modifier
+- institution_importance_modifier
+- court_spending_cost
+- stability_cost
+- mercenary_units_preference_modifier
+- counter_espionage
+- subject_loyalty
+- global_pop_conversion_speed_modifier
+- monthly_towards_traditionalist
+- global_monthly_prosperity
+- tax_income_efficiency
+- legislative_efficiency
+- global_monthly_literacy
+- diplomatic_reputation
+- improve_relation_impact
+- monthly_towards_quality
+- army_initiative
+- character_life_expectancy
+- army_cavalry_power
+- assault_ability
+- siege_ability
+- blocked_from_being_leader
+- exists
+- unit
+- artist_salary_modifier_on_character
+- art_creation_speed
+- artist_impact
+- work_of_art_quality_modifier
+- artist_skill_level_gain
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/traits
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    category = <value>
+    flavor = <value>
+    war_declaration_stab_hit_tolerance = <value>
+    bias_for_militarist_policies = <value>
+    always = <value>
+    aggressiveness_modifier = <value>
+    bias_for_diplomat_policies = <value>
+    peace_offer_negotiation_power = <value>
+    win_war_chance_threshold = <value>
+    base = <value>
+    modifier = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    chance = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    unit = {
+        # ...
+    }
+    just = {
+        # ...
+    }
+    righteous = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

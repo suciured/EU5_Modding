@@ -1,0 +1,4 @@
+# COMMON/country_interactions TEMPLATE
+<key> = {
+    # definition block
+}

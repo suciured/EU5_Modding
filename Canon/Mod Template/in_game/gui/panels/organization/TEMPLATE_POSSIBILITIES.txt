@@ -1,0 +1,217 @@
+gui/panels/organization — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/panels/organization/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- tooltipwidget
+- icon
+- text_single
+- hbox
+- margin
+- expand
+- vbox
+- parameter
+- color
+- modify_texture
+- widget
+- left_action
+- ContextualTooltipType
+- maximumsize
+- action_button_diamond
+- background
+- item
+- TooltipTextBlock
+- position
+- glow
+- minimumsize
+- TooltipFlavorTextBlock
+- country_flag_small
+- scrollarea
+- scrollbar_vertical
+- scrollwidget
+- piechart
+- pieslice_no_highlight
+- spriteborder
+- organization_war_theme
+- SimpleContextualTooltipType
+- pieslice
+- TooltipRowList
+- dynamicgridbox
+- text_multi
+- card_expandable
+- button_secondary_tab_alt
+- organization_geodiplomatic_theme
+- TooltipRequirementsList
+- header_action_button_left
+- left_click_and_hold_action
+- card_common
+- flowcontainer
+- TooltipUIActionBlockOld
+- action_tooltip
+- divider_flavor_01
+- spriteBorder
+- TooltipStringPairList
+- tooltipmeta
+- filtered_sorted_list
+- organization_religious_theme
+- subheader
+- fixedgridbox
+- country_flag_mid
+- organization_panel
+- LeftClickButtonTooltip
+- io_character_card
+- header_button_left
+- action_button_regular
+- country_flag_very_small
+- ConceptTooltipType
+- fancy_two_line_card
+- button_regular_diamond
+- character_label_dynasty
+- character_abilities
+- button_regular
+- TooltipBlockList
+- card_actions
+- SimpleContextualStringPairTooltipType
+- ios_information_header
+- country_flag_big
+- estates_summary
+- card_io_payments
+- card_header_action_button_01
+- country_character
+- scroll_card
+- character_frame_small
+- window_header_alt
+- button
+
+Common assignment keywords seen here (often-used properties/blocks):
+- using
+- text
+- visible
+- size
+- texture
+- layoutpolicy_horizontal
+- tooltipwidget
+- icon
+- text_single
+- hbox
+- texture_density
+- margin
+- expand
+- spacing
+- datacontext
+- vbox
+- alpha
+- parameter
+- parameter_name
+- align
+- parentanchor
+- parameter_value
+- color
+- title
+- autoresize
+- actor
+- name
+- raw_text
+- modify_texture
+- widget
+- left_action
+- datamodel
+- fontsize
+- blend_mode
+- ContextualTooltipType
+- value
+- maximumsize
+- textcontext
+- action_button_diamond
+- action_name
+- background
+- margin_left
+- item
+- TooltipTextBlock
+- position
+- layoutpolicy_vertical
+- action_direction
+- glow
+- glow_radius
+- allow_outside
+- minimumsize
+- spriteType
+- default_format
+- onclick
+- down
+- TooltipFlavorTextBlock
+- alwaystransparent
+- margin_top
+- country_flag_small
+- enabled
+- margin_bottom
+- scrollarea
+- scrollbarpolicy_horizontal
+- scrollbar_vertical
+- scrollwidget
+- piechart
+- pieslice_no_highlight
+- lowpriotextcontext
+- ignoreinvisible
+- spriteborder
+- organization_war_theme
+- SimpleContextualTooltipType
+- pieslice
+- TooltipRowList
+- dynamicgridbox
+- text_multi
+- card_expandable
+- flipdirection
+- datamodel_wrap
+- description
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/panels/organization
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    using = <value>
+    text = <value>
+    visible = <value>
+    texture = <value>
+    layoutpolicy_horizontal = <value>
+    texture_density = <value>
+    spacing = <value>
+    datacontext = <value>
+    alpha = <value>
+    parameter_name = <value>
+    size = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    text_single = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    margin = {
+        # ...
+    }
+    expand = {
+        # ...
+    }
+    vbox = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

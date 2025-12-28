@@ -1,0 +1,197 @@
+gui/settings — TEMPLATE (POSSIBILITIES)
+=======================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- size
+- margin
+- text_single
+- icon
+- hbox
+- minimumsize
+- button_regular
+- widget
+- modify_texture
+- tooltipwidget
+- settings_save_button
+- textbox
+- item
+- position
+- background
+- vbox
+- dynamicgridbox
+- flowcontainer
+- scrollarea
+- scrollwidget
+- scrollbar_vertical
+- scrollbar_horizontal
+- ContextualTooltipHeader
+- tooltiptextblock
+- button
+- spriteborder
+- framesize
+- buttonText
+- text_multi
+- viewportwidget
+- SimpleContextualTooltipType
+- basic_dialog
+- active_item
+- button_drop
+- button_dropdown
+- list
+- maximumsize
+- fixedgridbox
+- fontcolor
+- button_main_tab_alt
+- expand
+- ContextualTooltipType
+- TooltipLockProgress
+- scrollbar
+- track
+- EconomySlider_TrackRange
+- slider
+- EconomySlider_Slider
+- dec_button
+- EconomySlider_DecButton
+- inc_button
+- EconomySlider_IncButton
+- dropDown
+- container
+- setting_segmented_control_button
+- setting_segmented_control_active_button
+- checkbutton
+- editbox
+- cursorcolor
+- selectioncolor
+- window_header_alt
+- header_main_tabs
+- setting_page_button
+- editbox_single
+- divider_solid_gold
+- action_tooltip
+- ui_direction_button_holder_right
+- button_close_alt
+
+Common assignment keywords seen (often-used properties/blocks):
+- using
+- size
+- text
+- name
+- visible
+- autoresize
+- margin
+- onclick
+- align
+- layoutpolicy_horizontal
+- parentanchor
+- text_single
+- texture
+- alwaystransparent
+- default_format
+- icon
+- hbox
+- minimumsize
+- button_regular
+- enabled
+- widget
+- modify_texture
+- spacing
+- margin_left
+- alpha
+- fontsize
+- tooltipwidget
+- settings_save_button
+- textbox
+- margin_bottom
+- tooltip_enabled
+- item
+- position
+- background
+- vbox
+- dynamicgridbox
+- flowcontainer
+- direction
+- use_global_input_instance
+- blend_mode
+- scrollarea
+- scrollwidget
+- scrollbar_vertical
+- scrollbar_horizontal
+- fontcolor
+- ContextualTooltipHeader
+- tooltiptextblock
+- button
+- max_width
+- margin_right
+- input_action
+- autoresizescrollarea
+- setitemsizefromcell
+- gfxtype
+- spriteType
+- spriteborder
+- effectname
+- framesize
+- upframe
+- downframe
+- overframe
+- disableframe
+- intersectionmask
+- tooltip
+- buttonText
+- resizeparent
+- margin_top
+- text_multi
+- focuspolicy
+- layoutpolicy_vertical
+- scrollbaralign_vertical
+- autoresizeviewport
+- viewportwidget
+- scissor
+- SimpleContextualTooltipType
+- basic_dialog
+- multiline
+- text_selectable
+- @settings_width
+- active_item
+
+Comprehensive example (placeholders only):
+# Comprehensive example for gui/settings
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    using = <value>
+    text = <value>
+    name = <value>
+    visible = <value>
+    autoresize = <value>
+    onclick = <value>
+    align = <value>
+    layoutpolicy_horizontal = <value>
+    parentanchor = <value>
+    texture = <value>
+    size = {
+        # ...
+    }
+    margin = {
+        # ...
+    }
+    text_single = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    minimumsize = {
+        # ...
+    }
+    button_regular = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+}

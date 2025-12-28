@@ -1,0 +1,218 @@
+COMMON/tutorial_lessons — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/tutorial_lessons/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- gui_transition
+- custom_tooltip
+- OR
+- trigger_transition
+- trigger
+- effect
+- enabled
+- set_tutorial_var
+- hidden_effect
+- lesson_admin_27
+- lesson_admin_27b
+- lesson_admin_28
+- lesson_admin_29
+- capital
+- add_goods_supply
+- set_global_variable
+- if
+- limit
+- lesson_admin
+- lesson_economy_1
+- lesson_economy_2
+- lesson_economy_3
+- lesson_economy_4
+- lesson_economy_5
+- lesson_admin_21
+- lesson_admin_22
+- lesson_admin_25
+- lesson_admin_26
+- lesson_basics
+- lesson_basics_welcome
+- set_collection_pin
+- lesson_basics_camera
+- lesson_basics_nested_tooltips
+- lesson_basics_nested_tooltips_complete
+- lesson_basics_your_nation
+- lesson_basics_top_bar
+- lesson_basics_estates
+- lesson_basics_resources
+- lesson_basics_time_and_research
+- lesson_basics_wrap_up_0
+- lesson_basics_wrap_up_2
+- lesson_core_loop_0
+- lesson_core_loop_1
+- lesson_core_loop_2
+- lesson_core_loop_3
+- lesson_core_loop_4
+- lesson_core_loop_5
+- lesson_core_loop_6
+- lesson_core_loop_7
+- lesson_core_loop_7b
+- lesson_core_loop_8
+- lesson_core_loop_9
+- lesson_estates_1
+- lesson_estates_2
+- lesson_estates_3
+- lesson_estates_4
+- lesson_estates_5
+- lesson_map_1
+- lesson_map_2
+- lesson_map_3
+- lesson_control_groups_1
+- lesson_control_groups_2
+- lesson_location_1
+- lesson_location_2
+- lesson_location_3
+- lesson_location_3b
+- lesson_location_3_recap
+- lesson_location_4
+- lesson_location_5
+- lesson_mapmodes_1
+- lesson_mapmodes_1c
+- lesson_mapmodes_1b
+- lesson_mapmodes_2
+- lesson_mapmodes_2a
+- lesson_mapmodes_2b
+- lesson_basics_map_modes
+- lesson_basics_map_modes_complete
+- lesson_road
+- lesson_road_2
+- lesson_road_3
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- button_id
+- button_text
+- target
+- text
+- gui_transition
+- highlight_widget
+- is_widgetid_open
+- custom_tooltip
+- force_pause_game
+- shown_in_encyclopedia
+- OR
+- animation
+- trigger_transition
+- trigger
+- effect
+- set_tutorial_var
+- enabled
+- value
+- name
+- close_all_views
+- game_has_missions_enabled
+- gui_tag
+- is_map_mode_active
+- chain
+- delay
+- start_automatically
+- hidden_effect
+- has_global_variable
+- lesson_admin_27
+- lesson_admin_27b
+- lesson_admin_28
+- has_any_mission_active
+- lesson_admin_29
+- is_tooltip_with_name_open
+- is_camera_in_zoom_level
+- capital
+- add_goods_supply
+- goods
+- amount
+- set_global_variable
+- if
+- limit
+- is_player_playstyle
+- lesson_admin
+- lesson_economy_1
+- lesson_economy_2
+- lesson_economy_3
+- lesson_economy_4
+- lesson_economy_5
+- lesson_admin_21
+- lesson_admin_22
+- lesson_admin_25
+- lesson_admin_26
+- lesson_basics
+- lesson_basics_welcome
+- set_collection_pin
+- collection
+- key
+- lesson_basics_camera
+- add_gold
+- lesson_basics_nested_tooltips
+- lesson_basics_nested_tooltips_complete
+- lesson_basics_your_nation
+- lesson_basics_top_bar
+- lesson_basics_estates
+- lesson_basics_resources
+- lesson_basics_time_and_research
+- lesson_basics_wrap_up_0
+- lesson_basics_wrap_up_2
+- lesson_core_loop_0
+- lesson_core_loop_1
+- lesson_core_loop_2
+- lesson_core_loop_3
+- lesson_core_loop_4
+- is_auto_raise_taxrate_for_all_estates
+- lesson_core_loop_5
+- lesson_core_loop_6
+- lesson_core_loop_7
+- lesson_core_loop_7b
+- pause_game
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/tutorial_lessons
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    button_id = <value>
+    button_text = <value>
+    target = <value>
+    text = <value>
+    highlight_widget = <value>
+    is_widgetid_open = <value>
+    force_pause_game = <value>
+    shown_in_encyclopedia = <value>
+    animation = <value>
+    value = <value>
+    gui_transition = {
+        # ...
+    }
+    custom_tooltip = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    trigger_transition = {
+        # ...
+    }
+    trigger = {
+        # ...
+    }
+    effect = {
+        # ...
+    }
+    enabled = {
+        # ...
+    }
+    set_tutorial_var = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}
