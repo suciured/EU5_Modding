@@ -1,0 +1,179 @@
+gui/pdx_account — TEMPLATE (POSSIBILITIES)
+==========================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- margin
+- size
+- widget
+- modify_texture
+- vbox
+- hbox
+- background
+- position
+- text_single
+- minimumsize
+- maximumsize
+- sdk_button
+- textbox
+- scrollbar_vertical
+- spriteborder
+- editbox
+- cursorcolor
+- selectioncolor
+- caesar_create_account_window
+- sdk_dropdown
+- create_account_window
+- caesar_create_social_profile_window
+- create_social_profile_window
+- caesar_legal_docs_viewer
+- window_header_alt
+- scroll_list
+- settings_save_button
+- tooltipwidget
+- LeftClickButtonTooltip
+- caesar_login_window
+- login_window
+- buttonText
+- sdk_required_textbox
+- checkbutton
+- sdk_textbox
+- active_item
+- button_drop
+- icon
+- item
+- button_dropdown
+- list
+- scrollarea
+- scrollwidget
+- fixedgridbox
+- scrollbar_horizontal
+- header_title
+- ui_direction_button_holder_right
+- button_close_alt
+- frame_grid
+- social_required_textbox
+
+Common assignment keywords seen (often-used properties/blocks):
+- using
+- margin
+- size
+- layoutpolicy_horizontal
+- widget
+- name
+- texture
+- resizeparent
+- layoutpolicy_vertical
+- alpha
+- modify_texture
+- blend_mode
+- spacing
+- parentanchor
+- autoresize
+- alwaystransparent
+- vbox
+- hbox
+- raw_text
+- background
+- position
+- onclick
+- visible
+- movable
+- text
+- align
+- default_format
+- text_single
+- minimumsize
+- maximumsize
+- resizable
+- allow_outside
+- tooltip_enabled
+- addcolumn
+- addrow
+- sdk_button
+- reorder_on_mouse
+- textbox
+- multiline
+- scrollbar_vertical
+- spriteType
+- spriteborder
+- editbox
+- focuspolicy
+- cursorcolor
+- selectioncolor
+- maxcharacters
+- password
+- caesar_create_account_window
+- sdk_dropdown
+- create_account_window
+- caesar_create_social_profile_window
+- create_social_profile_window
+- caesar_legal_docs_viewer
+- window_header_alt
+- scroll_list
+- settings_save_button
+- tooltipwidget
+- LeftClickButtonTooltip
+- caesar_login_window
+- login_window
+- buttonText
+- sdk_required_textbox
+- checkbutton
+- sdk_textbox
+- active_item
+- button_drop
+- icon
+- item
+- button_dropdown
+- list
+- scrollarea
+- autoresizescrollarea
+- scrollwidget
+- fixedgridbox
+- scrollbar_horizontal
+- texture_density
+- header_title
+- ui_direction_button_holder_right
+- button_close_alt
+
+Comprehensive example (placeholders only):
+# Comprehensive example for gui/pdx_account
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    using = <value>
+    layoutpolicy_horizontal = <value>
+    name = <value>
+    texture = <value>
+    resizeparent = <value>
+    layoutpolicy_vertical = <value>
+    alpha = <value>
+    blend_mode = <value>
+    spacing = <value>
+    parentanchor = <value>
+    margin = {
+        # ...
+    }
+    size = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    modify_texture = {
+        # ...
+    }
+    vbox = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    background = {
+        # ...
+    }
+    position = {
+        # ...
+    }
+}

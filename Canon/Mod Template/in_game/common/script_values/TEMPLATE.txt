@@ -1,0 +1,4 @@
+# COMMON/script_values TEMPLATE
+<key> = {
+    # definition block
+}

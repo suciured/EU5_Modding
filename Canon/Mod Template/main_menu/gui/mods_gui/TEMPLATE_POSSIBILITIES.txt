@@ -1,0 +1,196 @@
+gui/mods_gui — TEMPLATE (POSSIBILITIES)
+=======================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- size
+- tooltipwidget
+- icon
+- action_tooltip
+- hbox
+- text_single
+- widget
+- vbox
+- margin
+- ChecksumErrorTooltip
+- modify_texture
+- position
+- LeftClickButtonTooltip
+- expand
+- background
+- maximumsize
+- item
+- checkbox_square_alt
+- glow
+- color
+- TooltipTextBlock
+- scrollwidget
+- scrollbar_vertical
+- button_regular
+- header_button_left
+- fixedgridbox
+- scrollbar_horizontal
+- card_header_button_01
+- button_square_plus
+- ContextualTooltipType
+- editbox_single
+- playset_compatibility
+- button_dropdown
+- editbox_single_alt
+- scrollarea
+- checkbutton
+- viewportwidget
+- spriteborder
+- playset_create_button
+- frame_grid
+- active_item
+- button_drop
+- list
+- gui_editor_button
+- ui_direction_button
+- dlc_card
+- selected_mod_item
+- mod_card
+- dlc_button_01
+- card_header_icon_01
+- dlc_icon_01
+- button_close
+- playset_list
+- window
+- state
+- window_header_alt
+- ui_direction_button_holder_left
+- steam_logo_button
+- header_title
+- playset_dropdown
+- playset_dlc_list
+- AutomationReloadCheckbox
+- downloaded_list
+- mods_playset_window
+- TooltipListBase
+- TooltipManualTableField
+- text_multi
+
+Common assignment keywords seen (often-used properties/blocks):
+- using
+- size
+- visible
+- tooltipwidget
+- text
+- enabled
+- icon
+- texture
+- layoutpolicy_horizontal
+- on_action
+- action_tooltip
+- title
+- name
+- hbox
+- click_type
+- click_mode
+- text_single
+- parentanchor
+- autoresize
+- alpha
+- widget
+- align
+- spacing
+- alwaystransparent
+- vbox
+- onclick
+- margin
+- ChecksumErrorTooltip
+- texture_density
+- modify_texture
+- position
+- LeftClickButtonTooltip
+- margin_left
+- blend_mode
+- checked
+- expand
+- color
+- background
+- maximumsize
+- margin_right
+- fontsize
+- layoutpolicy_vertical
+- datamodel
+- item
+- raw_text
+- checkbox_square_alt
+- glow
+- glow_radius
+- TooltipTextBlock
+- oneditingfinished_with_changes
+- scrollwidget
+- scrollbar_vertical
+- allow_outside
+- button_regular
+- header_button_left
+- fixedgridbox
+- setitemsizefromcell
+- addcolumn
+- addrow
+- scissor
+- scrollbarpolicy_horizontal
+- autoresizeviewport
+- shaderfile
+- scrollbar_horizontal
+- datamodel_wrap
+- flipdirection
+- card_header_button_01
+- button_square_plus
+- mirror
+- margin_bottom
+- ContextualTooltipType
+- editbox_single
+- playset_compatibility
+- tooltip_enabled
+- button_dropdown
+- focuspolicy
+- button_trigger
+- editbox_single_alt
+- scrollarea
+- autoresizescrollarea
+
+Comprehensive example (placeholders only):
+# Comprehensive example for gui/mods_gui
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    using = <value>
+    visible = <value>
+    text = <value>
+    enabled = <value>
+    texture = <value>
+    layoutpolicy_horizontal = <value>
+    on_action = <value>
+    title = <value>
+    name = <value>
+    click_type = <value>
+    size = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    action_tooltip = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    text_single = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    vbox = {
+        # ...
+    }
+}

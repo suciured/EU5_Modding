@@ -1,0 +1,4 @@
+# COMMON/disasters TEMPLATE
+<key> = {
+    # definition block
+}

@@ -1,0 +1,209 @@
+common/modifier_type_definitions — TEMPLATE (POSSIBILITIES)
+===========================================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- game_data
+- can_recruit_explorer
+- can_invite_settlers
+- allow_rgo_slave_demand
+- allow_mysticism_vs_jurisprudence
+- shared_border_impact
+- army_logistics_distance
+- army_logistics_distance_modifier
+- army_artillery_power
+- army_auxiliary_power
+- army_cavalry_power
+- army_infantry_power
+- navy_galley_power
+- navy_heavy_ship_power
+- navy_light_ship_power
+- navy_transport_power
+- scaled_lost_war_cost_modifier
+- call_jihad_cost_modifier
+- national_church_power_cost_modifier
+- hussite_wars_actions_price_cost_modifier
+- join_sect_cost_modifier
+- disfavor_sect_cost_modifier
+- stop_disfavoring_sect_cost_modifier
+- promote_sect_cost_modifier
+- stop_promoting_sect_cost_modifier
+- leave_sect_cost_modifier
+- perform_tantric_ritual_cost_modifier
+- organize_spiritual_retreat_cost_modifier
+- commission_religious_images_cost_modifier
+- join_branch_cost_modifier
+- activate_avatar_cost_modifier
+- deactivate_avatar_cost_modifier
+- reroll_avatar_cost_modifier
+- perform_yoga_cost_modifier
+- indulge_in_feasts_cost_modifier
+- discard_worldly_possessions_cost_modifier
+- indulge_in_bloodbath_cost_modifier
+- favor_god_cost_modifier
+- nanbokuchou_change_sides_cost_modifier
+- nanbokuchou_declare_neutrality_cost_modifier
+- sengoku_attempt_imperial_restoration_cost_modifier
+- sengoku_force_end_war_cost_modifier
+- sengoku_revoke_clans_land_cost_modifier
+- sengoku_limit_clans_autonomy_cost_modifier
+- sengoku_summon_to_court_cost_modifier
+- sengoku_proclaim_clan_independence_cost_modifier
+- sengoku_increment_recruitment_cost_modifier
+- sengoku_offer_hostage_cost_modifier
+- sengoku_ask_for_hostage_cost_modifier
+- sengoku_prove_heritage_cost_modifier
+- grant_shugo_office_cost_modifier
+- revoke_shugo_office_cost_modifier
+- claim_shugo_office_cost_modifier
+- join_autocephalous_patriarchate_cost_modifier
+- create_autocephalous_patriarchate_cost_modifier
+- third_rome_cost_modifier
+- relocate_ecumenical_patriarchate_cost_modifier
+- cleansing_ritual_purity_cost_modifier
+- cleansing_ritual_yanantin_cost_modifier
+- get_claim_from_imperial_court_cost_modifier
+- get_marriage_from_imperial_court_cost_modifier
+- become_shogun_from_imperial_court_cost_modifier
+- appease_nobles_estate_from_shogun_court_cost_modifier
+- increase_levies_from_shogun_court_cost_modifier
+- increase_tax_income_from_shogun_court_cost_modifier
+- demand_extra_payment_from_shogun_court_cost_modifier
+- increase_peasant_satisfaction_from_ikko_ikki_cost_modifier
+- reduce_rebels_from_ikko_ikki_cost_modifier
+- allow_safe_refuge_cost_modifier
+- crackdown_their_strongholds_cost_modifier
+- increase_literacy_from_religious_sects_cost_modifier
+- increase_clergy_satisfaction_from_religious_sects_cost_modifier
+- favor_buddhist_schools_from_religious_sects_cost_modifier
+- favor_kami_worship_from_religious_sects_cost_modifier
+- keep_kami_and_buddha_balanced_from_religious_sects_cost_modifier
+- baptize_ruler_from_kirishitan_cost_modifier
+- hold_public_kirishitan_mass_cost_modifier
+- establish_treaty_with_kirishitan_cost_modifier
+- limit_movement_of_kirishitan_cost_modifier
+- pilgrimage_purity_cost_modifier
+
+Common assignment keywords seen (often-used properties/blocks):
+- game_data
+- category
+- percent
+- color
+- boolean
+- decimals
+- format
+- min
+- ai
+- scale_with_pop
+- is_societal_value_change
+- already_percent
+- should_show_in_modifiers_tab
+- bias_type
+- can_recruit_explorer
+- can_invite_settlers
+- allow_rgo_slave_demand
+- allow_mysticism_vs_jurisprudence
+- shared_border_impact
+- army_logistics_distance
+- army_logistics_distance_modifier
+- army_artillery_power
+- army_auxiliary_power
+- army_cavalry_power
+- army_infantry_power
+- navy_galley_power
+- navy_heavy_ship_power
+- navy_light_ship_power
+- navy_transport_power
+- scaled_lost_war_cost_modifier
+- call_jihad_cost_modifier
+- national_church_power_cost_modifier
+- hussite_wars_actions_price_cost_modifier
+- join_sect_cost_modifier
+- disfavor_sect_cost_modifier
+- stop_disfavoring_sect_cost_modifier
+- promote_sect_cost_modifier
+- stop_promoting_sect_cost_modifier
+- leave_sect_cost_modifier
+- perform_tantric_ritual_cost_modifier
+- organize_spiritual_retreat_cost_modifier
+- commission_religious_images_cost_modifier
+- join_branch_cost_modifier
+- activate_avatar_cost_modifier
+- deactivate_avatar_cost_modifier
+- reroll_avatar_cost_modifier
+- perform_yoga_cost_modifier
+- indulge_in_feasts_cost_modifier
+- discard_worldly_possessions_cost_modifier
+- indulge_in_bloodbath_cost_modifier
+- favor_god_cost_modifier
+- nanbokuchou_change_sides_cost_modifier
+- nanbokuchou_declare_neutrality_cost_modifier
+- sengoku_attempt_imperial_restoration_cost_modifier
+- sengoku_force_end_war_cost_modifier
+- sengoku_revoke_clans_land_cost_modifier
+- sengoku_limit_clans_autonomy_cost_modifier
+- sengoku_summon_to_court_cost_modifier
+- sengoku_proclaim_clan_independence_cost_modifier
+- sengoku_increment_recruitment_cost_modifier
+- sengoku_offer_hostage_cost_modifier
+- sengoku_ask_for_hostage_cost_modifier
+- sengoku_prove_heritage_cost_modifier
+- grant_shugo_office_cost_modifier
+- revoke_shugo_office_cost_modifier
+- claim_shugo_office_cost_modifier
+- join_autocephalous_patriarchate_cost_modifier
+- create_autocephalous_patriarchate_cost_modifier
+- third_rome_cost_modifier
+- relocate_ecumenical_patriarchate_cost_modifier
+- cleansing_ritual_purity_cost_modifier
+- cleansing_ritual_yanantin_cost_modifier
+- get_claim_from_imperial_court_cost_modifier
+- get_marriage_from_imperial_court_cost_modifier
+- become_shogun_from_imperial_court_cost_modifier
+- appease_nobles_estate_from_shogun_court_cost_modifier
+- increase_levies_from_shogun_court_cost_modifier
+- increase_tax_income_from_shogun_court_cost_modifier
+- demand_extra_payment_from_shogun_court_cost_modifier
+- increase_peasant_satisfaction_from_ikko_ikki_cost_modifier
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/modifier_type_definitions
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    category = <value>
+    percent = <value>
+    color = <value>
+    boolean = <value>
+    decimals = <value>
+    format = <value>
+    min = <value>
+    ai = <value>
+    scale_with_pop = <value>
+    is_societal_value_change = <value>
+    game_data = {
+        # ...
+    }
+    can_recruit_explorer = {
+        # ...
+    }
+    can_invite_settlers = {
+        # ...
+    }
+    allow_rgo_slave_demand = {
+        # ...
+    }
+    allow_mysticism_vs_jurisprudence = {
+        # ...
+    }
+    shared_border_impact = {
+        # ...
+    }
+    army_logistics_distance = {
+        # ...
+    }
+    army_logistics_distance_modifier = {
+        # ...
+    }
+}

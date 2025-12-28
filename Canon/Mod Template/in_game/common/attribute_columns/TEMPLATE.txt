@@ -1,0 +1,4 @@
+# COMMON/attribute_columns TEMPLATE
+<key> = {
+    # definition block
+}

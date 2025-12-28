@@ -1,0 +1,92 @@
+COMMON/vegetation — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/vegetation/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- location_modifier
+- audio_tags
+- desert
+- sparse
+- grasslands
+- farmland
+- woods
+- forest
+- jungle
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- color
+- movement_cost
+- location_modifier
+- local_population_capacity
+- audio_tags
+- masDataVegetationDensity
+- debug_color
+- local_road_building_time
+- local_monthly_development_modifier
+- local_monthly_food_modifier
+- supply_limit
+- local_rgo_build_time
+- defender
+- local_frontage_allowed
+- blocks_vision_from_sea
+- blocks_vision_from_land
+- desert
+- has_sand
+- sparse
+- grasslands
+- farmland
+- local_max_rgo_size_modifier
+- woods
+- forest
+- jungle
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/vegetation
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    color = <value>
+    movement_cost = <value>
+    local_population_capacity = <value>
+    masDataVegetationDensity = <value>
+    debug_color = <value>
+    local_road_building_time = <value>
+    local_monthly_development_modifier = <value>
+    local_monthly_food_modifier = <value>
+    supply_limit = <value>
+    local_rgo_build_time = <value>
+    location_modifier = {
+        # ...
+    }
+    audio_tags = {
+        # ...
+    }
+    desert = {
+        # ...
+    }
+    sparse = {
+        # ...
+    }
+    grasslands = {
+        # ...
+    }
+    farmland = {
+        # ...
+    }
+    woods = {
+        # ...
+    }
+    forest = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

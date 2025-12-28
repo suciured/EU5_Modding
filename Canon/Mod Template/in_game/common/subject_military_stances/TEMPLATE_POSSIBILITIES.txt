@@ -1,0 +1,86 @@
+COMMON/subject_military_stances — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/subject_military_stances/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- normal_military_stance
+- aggressive_military_stance
+- supportive_military_stance
+- passive_military_stance
+- defensive_military_stance
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- chase_unit_own_location_priority
+- chase_unit_overlord_location_priority
+- chase_unit_subject_location_priority
+- chase_unit_friendly_location_priority
+- chase_unit_neutral_location_priority
+- chase_unit_enemy_location_priority
+- chase_navy_priority
+- hunt_army_priority
+- hunt_navy_priority
+- defend_own_territory_priority
+- defend_ally_territory_priority
+- merge_units_priority
+- hunt_pirates_priority
+- repatriate_ships_priority
+- repatriate_troops_priority
+- support_armies_priority
+- maintain_military_levels_priority
+- carpet_siege_own_locations_attacking_priority
+- carpet_siege_own_locations_defending_priority
+- carpet_siege_enemy_locations_priority
+- blockade_port_priority
+- blockade_strait_priority
+- suppress_rebel_priority
+- army_logistics_priority
+- navy_logistics_priority
+- support_sieges_priority
+- normal_military_stance
+- is_default
+- aggressive_military_stance
+- supportive_military_stance
+- passive_military_stance
+- defensive_military_stance
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/subject_military_stances
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    chase_unit_own_location_priority = <value>
+    chase_unit_overlord_location_priority = <value>
+    chase_unit_subject_location_priority = <value>
+    chase_unit_friendly_location_priority = <value>
+    chase_unit_neutral_location_priority = <value>
+    chase_unit_enemy_location_priority = <value>
+    chase_navy_priority = <value>
+    hunt_army_priority = <value>
+    hunt_navy_priority = <value>
+    defend_own_territory_priority = <value>
+    normal_military_stance = {
+        # ...
+    }
+    aggressive_military_stance = {
+        # ...
+    }
+    supportive_military_stance = {
+        # ...
+    }
+    passive_military_stance = {
+        # ...
+    }
+    defensive_military_stance = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

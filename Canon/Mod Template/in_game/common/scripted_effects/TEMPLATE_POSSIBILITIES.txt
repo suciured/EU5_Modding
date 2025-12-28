@@ -1,0 +1,218 @@
+COMMON/scripted_effects — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/scripted_effects/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- if
+- custom_description
+- set_variable
+- else
+- NOT
+- custom_tooltip
+- hidden_effect
+- add
+- add_country_modifier
+- OR
+- international_organization:hre
+- else_if
+- change_variable
+- AND
+- every_international_organization_member
+- trigger
+- value
+- change_societal_value
+- add_to_global_variable_list
+- reset_societal_value
+- ordered_pop
+- add_character_modifier
+- owner
+- remove_list_global_variable
+- change_building_level_in_location
+- order_by
+- add_opinion
+- set_vote
+- location
+- NOR
+- every_location_in_area
+- situation:western_schism
+- international_organization:catholic_church
+- scope:recipient
+- situation:rise_of_the_ottomans
+- has_special_status_in_international_organization
+- every_subject
+- set_societal_value
+- set_local_variable
+- max
+- save_temporary_scope_value_as
+- add_gold
+- split_pop
+- ordered_international_organization_member
+- set_participated_in_parliament
+- add_estate_satisfaction
+- scope:target_country
+- destroy_international_organization
+- fraction
+- situation:council_of_trent
+- event_illustration_estate_effect
+- random_pop
+- weight
+- modifier
+- scope:expedition_initiator
+- add_to_variable_list
+- create_character
+- every_owned_location
+- every_pop
+- min
+- multiply
+- change_opinion_of_expedition
+- add_organization_donation_opinion_bonus
+- c:PAP
+- change_parliament_issue_support
+- var:schism_opponent_country
+- rtr_grant_annexation_cb_in
+- add_colonial_claim
+- situation:sengoku
+- random_list
+- add_casus_belli
+- international_organization:middle_kingdom
+- not
+- union
+- ruler
+- set_global_variable
+- overlord
+- add_location_modifier
+- add_harmony
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- limit
+- value
+- if
+- text
+- custom_description
+- set_variable
+- name
+- remove_variable
+- add
+- custom_tooltip
+- else
+- NOT
+- target
+- multiply
+- save_scope_as
+- hidden_effect
+- modifier
+- type
+- add_country_modifier
+- max
+- order_by
+- OR
+- exists
+- international_organization:hre
+- else_if
+- change_variable
+- owner
+- AND
+- years
+- every_international_organization_member
+- divide
+- has_variable
+- add_policy_to_international_organization
+- mode
+- trigger
+- change_societal_value
+- add_to_global_variable_list
+- scope_type
+- religion
+- object
+- min
+- resolution
+- save_temporary_scope_as
+- reset_societal_value
+- international_organization
+- ordered_pop
+- add_character_modifier
+- check_range_bounds
+- remove_list_global_variable
+- scope:recipient
+- change_building_level_in_location
+- voter
+- add_location_to_international_organization
+- location
+- add_opinion
+- vote
+- remove_country_modifier
+- subtract
+- add_gold
+- set_vote
+- is_ai
+- culture
+- remove_character_modifier
+- NOR
+- every_location_in_area
+- situation:western_schism
+- international_organization:catholic_church
+- move_country
+- building
+- set_local_variable
+- clear_global_variable_list
+- situation:rise_of_the_ottomans
+- has_special_status_in_international_organization
+- every_subject
+- set_new_ruler
+- set_societal_value
+- add_country_to_international_organization
+- set_parliament_issue_support
+- save_temporary_scope_value_as
+- is_situation_active
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/scripted_effects
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    text = <value>
+    name = <value>
+    remove_variable = <value>
+    target = <value>
+    save_scope_as = <value>
+    multiply = <value>
+    type = <value>
+    modifier = <value>
+    add = <value>
+    limit = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    custom_description = {
+        # ...
+    }
+    set_variable = {
+        # ...
+    }
+    else = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    custom_tooltip = {
+        # ...
+    }
+    hidden_effect = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

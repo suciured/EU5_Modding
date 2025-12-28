@@ -1,0 +1,4 @@
+# COMMON/cabinet_actions TEMPLATE
+<key> = {
+    # definition block
+}

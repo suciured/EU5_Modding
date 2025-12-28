@@ -1,0 +1,218 @@
+COMMON/customizable_localization — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/customizable_localization/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- text
+- trigger
+- OR
+- culture
+- AND
+- NOT
+- country_has_special_status
+- owner
+- any_ruling_countries
+- subunit_home
+- num_countries_with_special_status
+- ruled_country_on_or_after
+- any_parent
+- trigger_if
+- limit
+- scope:character
+- culture.language
+- any_overlord_or_above
+- NOR
+- area
+- any_spouse
+- birth_location
+- has_government_name
+- capital
+- last_valid_ruler
+- GetOrderOfChivalry
+- GetOrderOfChivalryBonusTooltip
+- GetHeathenInsult
+- GetHeathenInsultPlural
+- GetMotherlandFatherland
+- GetExaminationSystemPolicyName
+- GetDangerousWildAnimalName
+- GetHeadOfCabinetName
+- GetCharacterCabinetTitle
+- GetNicknameOrName
+- GetNicknameOrNameWithNoTooltip
+- GetRulerOrRegentTitle
+- GetEmpressEmperor
+- GetQueenKing
+- GetRulerOrHeirTitle
+- GetLover
+- GetAbdicationDeath
+- GetLadyLord
+- GetPrincessPrince
+- GetSibling
+- GetSiblings
+- GetBoreSired
+- GetGAGOwnFaction
+- GetGAGEnemyFaction
+- GetGAGOwnFactionWithNoTooltip
+- GetGAGEnemyFactionWithNoTooltip
+- GetSeatOfPower
+- GetQizilbashEstateName
+- GetSCCallToArmsTooltip
+- international_organization:swiss_confederation
+- GetContemporaryStringedInstrumentPlural
+- GetReligiousLeagueName
+- GetEnemyReligiousLeagueName
+- GetReligiousLeagueNameWithNoTooltip
+- GetEnemyReligiousLeagueNameWithNoTooltip
+- GetWokouName
+- GetLocalReformer_martin_luther
+- GetLocalReformer_martin_luther_WithNoTooltip
+- GetLocalReformer_reformer_philip_melanchton
+- GetLocalReformer_reformer_philip_melanchton_WithNoTooltip
+- GetLocalReformer_reformer_justus_jonas
+- GetLocalReformer_reformer_justus_jonas_WithNoTooltip
+- GetLocalReformer_swe_mikael_agricola
+- GetLocalReformer_swe_mikael_agricola_WithNoTooltip
+- GetLocalReformer_script_hans_tausen
+- GetLocalReformer_script_hans_tausen_WithNoTooltip
+- GetLocalReformer_john_calvin
+- GetLocalReformer_john_calvin_WithNoTooltip
+- GetLocalReformer_swi_huldrych_zwingli
+- GetLocalReformer_swi_huldrych_zwingli_WithNoTooltip
+- GetLocalReformer_reformation_henry_bullinger
+- GetLocalReformer_reformation_henry_bullinger_WithNoTooltip
+- GetLocalReformer_script_john_knox
+- GetLocalReformer_script_john_knox_WithNoTooltip
+- GetLocalReformer_reformation_wido_de_bres
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- text
+- localization_key
+- trigger
+- tag
+- culture.language
+- OR
+- type
+- culture
+- government_type
+- log_loc_errors
+- exists
+- international_organization_has_policy
+- has_reform
+- this
+- fallback
+- country_rank_is_duchy
+- religion.group
+- country_rank_is_kingdom
+- country_rank_is_empire
+- if_invalid_loc
+- parent
+- suffix
+- country_rank_is_county
+- AND
+- has_variable
+- culture.dialect
+- court_language
+- NOT
+- country_rank
+- is_ownable
+- has_dynasty
+- region
+- coa_def_GBR_uk_trigger
+- country
+- parliament_type
+- has_estate_privilege
+- sub_unit_called_knights_trigger
+- religion
+- has_game_rule
+- international_organization_leader_count
+- is_levy
+- sub_unit_type
+- sub_continent
+- is_revolutionary
+- country_has_special_status
+- definition_is_for_levy
+- continent
+- is_ruler
+- has_culture_group
+- has_active_senior_partner
+- save_temporary_scope_as
+- random_valid
+- has_estate
+- capital.region
+- character_address_royal_ruler_trigger
+- owner
+- is_land
+- any_ruling_countries
+- current_age
+- subunit_home
+- name_culture.language
+- is_ship
+- is_adult
+- is_location_holy_site_for
+- union_flavor_is_lpc
+- union_flavor_is_plc
+- union_flavor_is_kalmar_union
+- union_flavor_is_great_britain
+- union_flavor_is_spain
+- union_flavor_is_habsburg
+- num_countries_with_special_status
+- dynasty
+- ruled_country_on_or_after
+- date
+- area
+- character_address_imperial_ruler_trigger
+- any_parent
+- is_subject_type
+- trigger_if
+- limit
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/customizable_localization
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    localization_key = <value>
+    tag = <value>
+    culture.language = <value>
+    type = <value>
+    government_type = <value>
+    log_loc_errors = <value>
+    exists = <value>
+    international_organization_has_policy = <value>
+    culture = <value>
+    has_reform = <value>
+    text = {
+        # ...
+    }
+    trigger = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    culture = {
+        # ...
+    }
+    AND = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    country_has_special_status = {
+        # ...
+    }
+    owner = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

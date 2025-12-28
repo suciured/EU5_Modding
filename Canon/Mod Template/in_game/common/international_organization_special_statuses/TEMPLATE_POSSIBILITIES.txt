@@ -1,0 +1,201 @@
+COMMON/international_organization_special_statuses — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/international_organization_special_statuses/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- NOT
+- scope:recipient
+- OR
+- else_if
+- can_bestow_trigger
+- auto_bestowal_trigger
+- modifier
+- auto_rescind_trigger
+- if
+- on_bestowed_effect
+- on_rescinded_effect
+- has_special_status_in_international_organization
+- country_has_special_status
+- special_status_power
+- leader_modifier
+- else
+- not
+- AND
+- NOR
+- set_variable
+- map_color
+- root.owner
+- max_countries
+- root.culture
+- every_international_organization_member
+- any_owned_foreign_building
+- scope:recipient.leader_country
+- any_international_organization_member
+- change_variable
+- curia
+- military_order
+- bishopric
+- high_king
+- emperor
+- elector
+- hre_country_fulfills_imperial_religion_requirement
+- international_organization_remove_special_status
+- archbishop_elector
+- free_city
+- subject_type:imperial_free_city
+- subject_type:direct_imperial_free_city
+- hre_convert_free_city_to_emperor_subject
+- primas_germaniae
+- legatus_natus
+- imperial_prelate
+- imperial_prince
+- imperial_peasant_republic
+- ilkhan_claimant
+- num_countries_with_special_status
+- japanese_emperor
+- shugo_daimyo
+- lord_of_ireland
+- lieutenant
+- loyalist
+- absentee
+- celestial_governor
+- tatar_overlord
+- tatar_tax_collector
+- senior_partner
+- trigger_if
+- trigger_else
+- junior_partner
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- limit
+- NOT
+- scope:recipient
+- multiply
+- OR
+- value
+- else_if
+- priority
+- can_bestow_trigger
+- auto_bestowal_trigger
+- map_color
+- modifier
+- auto_rescind_trigger
+- if
+- on_bestowed_effect
+- on_rescinded_effect
+- type
+- has_special_status_in_international_organization
+- special_status_power
+- country_has_special_status
+- international_organization
+- always
+- is_member_of_international_organization
+- max_countries
+- has_reform
+- government_type
+- monthly_prestige
+- is_subject
+- international_organization_has_policy
+- monthly_legitimacy
+- leader_modifier
+- has_ruler
+- name
+- else
+- is_leader_of_international_organization
+- religion
+- has_culture_group
+- not
+- leader
+- elector
+- country
+- AND
+- country_cabinet_efficiency
+- NOR
+- set_variable
+- root.owner
+- is_hre_elector
+- global_monthly_development
+- num_locations
+- root.culture
+- trigger_event_silently
+- every_international_organization_member
+- any_owned_foreign_building
+- building_type
+- country_can_use_lordship_of_ireland_cb
+- diplomatic_capacity
+- has_regent
+- is_adult
+- scope:recipient.leader_country
+- any_international_organization_member
+- change_variable
+- curia
+- num_cardinals
+- modifier:is_pope
+- military_order
+- bishopric
+- high_king
+- emperor
+- hre_country_fulfills_imperial_religion_requirement
+- international_organization_remove_special_status
+- archbishop_elector
+- free_city
+- burghers_estate_target_satisfaction
+- global_production_efficiency
+- reject_subjugation_reasons
+- num_of_non_rural
+- hre_enabled_free_cities
+- international_organization_has_law
+- hre_disabled_free_cities
+- subject_type:imperial_free_city
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/international_organization_special_statuses
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    multiply = <value>
+    value = <value>
+    priority = <value>
+    map_color = <value>
+    type = <value>
+    international_organization = <value>
+    always = <value>
+    is_member_of_international_organization = <value>
+    max_countries = <value>
+    has_reform = <value>
+    limit = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    scope:recipient = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    else_if = {
+        # ...
+    }
+    can_bestow_trigger = {
+        # ...
+    }
+    auto_bestowal_trigger = {
+        # ...
+    }
+    modifier = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

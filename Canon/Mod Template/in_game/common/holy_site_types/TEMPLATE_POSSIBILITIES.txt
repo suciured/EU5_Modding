@@ -1,0 +1,96 @@
+COMMON/holy_site_types — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/holy_site_types/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- location_modifier
+- country_modifier
+- shrine
+- mountain
+- temple
+- city
+- episcopal_see
+- orthodox_church_holy_site
+- christian_holy_site
+- inti_holy_site
+- mayan_holy_site
+- islam_holy_site
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- location_modifier
+- local_clergy_desired_pop
+- local_monthly_prosperity
+- country_modifier
+- local_max_control
+- local_clergy_max_literacy
+- religious_icon_power_modifier
+- monthly_religious_influence
+- local_production_efficiency
+- shrine
+- local_unrest
+- mountain
+- local_monthly_food_modifier
+- local_max_literacy
+- temple
+- city
+- local_population_capacity_modifier
+- local_institution_growth_modifier
+- episcopal_see
+- orthodox_church_holy_site
+- christian_holy_site
+- inti_holy_site
+- mayan_holy_site
+- islam_holy_site
+- invite_religious_figure_same_school_cost_modifier
+- invite_religious_figure_different_school_cost_modifier
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/holy_site_types
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    local_clergy_desired_pop = <value>
+    local_monthly_prosperity = <value>
+    local_max_control = <value>
+    local_clergy_max_literacy = <value>
+    religious_icon_power_modifier = <value>
+    monthly_religious_influence = <value>
+    local_production_efficiency = <value>
+    local_unrest = <value>
+    local_monthly_food_modifier = <value>
+    local_max_literacy = <value>
+    location_modifier = {
+        # ...
+    }
+    country_modifier = {
+        # ...
+    }
+    shrine = {
+        # ...
+    }
+    mountain = {
+        # ...
+    }
+    temple = {
+        # ...
+    }
+    city = {
+        # ...
+    }
+    episcopal_see = {
+        # ...
+    }
+    orthodox_church_holy_site = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

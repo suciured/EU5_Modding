@@ -1,0 +1,175 @@
+gui/select_interaction_cards — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/select_interaction_cards/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- widget
+- margin
+- vbox
+- tooltipwidget
+- icon
+- hbox
+- modify_texture
+- text_single
+- TooltipTextBlock
+- action_tooltip
+- glow
+- color
+- position
+- BasicFunctionalTooltip
+- background
+- ContextualTooltipType
+- cabinet_card
+- portrait_standard_head_button
+- expand
+- pieslice
+- header_button_left
+- law_card_header_common
+- header_paper_card
+- card_header_button_01
+- sort_by_left_fade_highlight
+- estate_card_top_part
+- spriteBorder
+- piechart
+- tooltipmeta
+- card_stringpair_list
+- card_row_list
+- location_card
+- economy_slider
+- textbox
+- button_regular
+- framesize
+- unit_card
+
+Common assignment keywords seen here (often-used properties/blocks):
+- using
+- size
+- datacontext
+- text
+- texture
+- visible
+- layoutpolicy_horizontal
+- widget
+- margin
+- parentanchor
+- vbox
+- tooltipwidget
+- icon
+- alpha
+- hbox
+- enabled
+- name
+- texture_density
+- modify_texture
+- align
+- spacing
+- text_single
+- TooltipTextBlock
+- default_format
+- action_tooltip
+- click_type
+- click_mode
+- title
+- glow
+- glow_radius
+- color
+- margin_top
+- position
+- BasicFunctionalTooltip
+- blend_mode
+- background
+- value
+- on_action
+- ContextualTooltipType
+- cabinet_card
+- portrait_standard_head_button
+- overframe
+- mirror
+- fontsize
+- expand
+- pieslice
+- header_button_left
+- law_card_header_common
+- header_paper_card
+- card_header_button_01
+- autoresize
+- sort_by_left_fade_highlight
+- textcontext
+- estate_card_top_part
+- cost
+- on_action_with_params
+- ignore_layout
+- spriteType
+- spriteBorder
+- piechart
+- raw_text
+- tooltipmeta
+- game_concept
+- card_stringpair_list
+- card_row_list
+- location_card
+- margin_left
+- economy_slider
+- min
+- max
+- step
+- onvaluechanged
+- textbox
+- multiline
+- button_regular
+- description
+- conditions
+- effects
+- framesize
+- frame
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/select_interaction_cards
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    using = <value>
+    datacontext = <value>
+    text = <value>
+    texture = <value>
+    visible = <value>
+    layoutpolicy_horizontal = <value>
+    parentanchor = <value>
+    alpha = <value>
+    enabled = <value>
+    name = <value>
+    size = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    margin = {
+        # ...
+    }
+    vbox = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    modify_texture = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

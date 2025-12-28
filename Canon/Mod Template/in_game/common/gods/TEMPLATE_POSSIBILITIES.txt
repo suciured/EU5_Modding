@@ -1,0 +1,218 @@
+COMMON/gods — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/gods/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- country_modifier
+- potential
+- religion
+- potential_trigger
+- NOT
+- any_international_organizations_member_of
+- OR
+- is_favoring_god
+- AND
+- has_access_to_god_holy_site
+- custom_tooltip
+- group
+- god
+- nyambe_god
+- nhialic_god
+- du_chie_god
+- ayum_god
+- alwet_god
+- zanahary_god
+- ratovantany_god
+- andrianerinerina_god
+- andriambahomanana_god
+- andriamahilala_god
+- ngai_god
+- asis_god
+- ilat_god
+- waaq_god
+- kaggen_god
+- hunntuattatteen_god
+- kagara_god
+- haunu_god
+- akuj_god
+- anyame_god
+- asase_ya_god
+- anansi_god
+- tano_god
+- legba_god
+- mawu_god
+- lisa_god
+- sakpata_god
+- olorun_god
+- olokun_isese_god
+- obatala_god
+- ori_god
+- egbesu_god
+- amadioha_god
+- ikenga_god
+- agwu_nsi_god
+- ogbunabali_god
+- takhar_god
+- mindiss_god
+- niparaya_god
+- u_blei_nong_thaw_god
+- ulei_muluk_god
+- ulei_umtang_god
+- ulei_longspah_god
+- marang_buru_god
+- dharti_ayo_god
+- kotan_kar_kamuy_god
+- kamuy_huci_god
+- kim_un_kamuy_god
+- rep_un_kamuy_god
+- baradeo_god
+- nat_awal_god
+- aki_pen_god
+- nat_awual_god
+- phi_heaven_god
+- phi_water_god
+- phi_earth_god
+- phi_fire_god
+- bathoubwrai_god
+- mainao_god
+- song_bwrai_god
+- bura_bagh_raja_god
+- donyi_god
+- polo_god
+- kine_nane_god
+- doying_bote_god
+- sumnima_god
+- paruhang_god
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- religion
+- country_modifier
+- icon
+- potential
+- name_key
+- stability_cost
+- global_population_growth
+- global_life_expectancy
+- global_monthly_prosperity
+- potential_trigger
+- NOT
+- smartism_balanced_gods
+- global_hostile_attrition
+- land_morale_modifier
+- monthly_yanantin
+- group
+- global_devastation_recovery
+- army_movement_speed
+- any_international_organizations_member_of
+- international_organization_type
+- international_organization_has_policy
+- OR
+- is_favoring_god
+- AND
+- has_access_to_god_holy_site
+- custom_tooltip
+- text
+- discipline
+- naval_morale_modifier
+- global_construction_speed
+- global_defensive
+- diplomatic_capacity_modifier
+- global_separatism
+- monthly_rebel_growth
+- army_maintenance_cost
+- god
+- nyambe_god
+- nhialic_god
+- du_chie_god
+- ayum_god
+- alwet_god
+- zanahary_god
+- ratovantany_god
+- andrianerinerina_god
+- andriambahomanana_god
+- tolerance_own
+- andriamahilala_god
+- ngai_god
+- asis_god
+- ilat_god
+- waaq_god
+- kaggen_god
+- army_initiative
+- hunntuattatteen_god
+- kagara_god
+- haunu_god
+- akuj_god
+- anyame_god
+- asase_ya_god
+- anansi_god
+- peasants_estate_target_satisfaction
+- tano_god
+- global_garrison_size_modifier
+- legba_god
+- recruit_explorer_cost_modifier
+- mawu_god
+- lisa_god
+- sakpata_god
+- olorun_god
+- olokun_isese_god
+- obatala_god
+- ori_god
+- egbesu_god
+- amadioha_god
+- ikenga_god
+- agwu_nsi_god
+- ogbunabali_god
+- takhar_god
+- mindiss_god
+- niparaya_god
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/gods
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    religion = <value>
+    icon = <value>
+    name_key = <value>
+    stability_cost = <value>
+    global_population_growth = <value>
+    global_life_expectancy = <value>
+    global_monthly_prosperity = <value>
+    smartism_balanced_gods = <value>
+    global_hostile_attrition = <value>
+    land_morale_modifier = <value>
+    country_modifier = {
+        # ...
+    }
+    potential = {
+        # ...
+    }
+    religion = {
+        # ...
+    }
+    potential_trigger = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    any_international_organizations_member_of = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    is_favoring_god = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,206 @@
+common/achievements — TEMPLATE (POSSIBILITIES)
+==============================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- possible
+- happened
+- any_owned_location
+- OR
+- custom_tooltip
+- any_ownable_location_in_region
+- NOT
+- any_cabinet_action
+- any_current_war
+- any_unit
+- any_international_organizations_member_of
+- for_the_glory
+- brothers_in_arms
+- root
+- any_country_together_in_war_with
+- war_score_in_war
+- city_of_cities
+- any_core_location
+- cold_war
+- until_death_do_us_apart
+- any_royal_marriage
+- that_is_mine
+- victorious
+- its_just_business
+- all_in_favor
+- patron_of_the_arts
+- combined_arms
+- any_country_sub_unit
+- rule_of_law
+- here_i_stand
+- rule_britannia
+- plus_ultra
+- city_of_mans_desire
+- a_pile_of_gold
+- at_every_continent
+- grand_coalition
+- it_belongs_in_a_museum
+- a_cabinet_of_curiosities
+- hearts_and_minds
+- a_brave_new_world
+- continent:america
+- any_location_in_continent
+- crusader_kings
+- lingua_franca
+- break_the_yoke
+- felix_austria
+- hongwu_di
+- region:north_china_region
+- region:south_china_region
+- region:west_china_region
+- region:east_china_region
+- just_a_little_bit_more_patience
+- potato_potato
+- three_mountains
+- doge_coins
+- je_maintiendrai
+- culture
+- lion_of_the_north
+- the_navigator
+- house_of_hus
+- the_spice_must_flow
+- any_trade
+- scientific_victory
+- cities_skyline
+- moneytalks
+- what_the_lord_giveth
+- be_in_all_the_clubs
+- welfare_state
+- any_market_present_in_country
+- five_hundred_miles
+- total_control
+- true_heir_of_timur
+- respected
+- letat_cest_moi
+- manchurian_candidate
+- international_organization:middle_kingdom
+- what_a_great_guy
+
+Common assignment keywords seen (often-used properties/blocks):
+- possible
+- happened
+- has_or_had_tag
+- has_presence_in
+- has_variable
+- any_owned_location
+- continent
+- tag
+- OR
+- custom_tooltip
+- text
+- any_ownable_location_in_region
+- percent
+- NOT
+- religion
+- has_global_variable
+- any_cabinet_action
+- cabinet_action_type
+- current_age
+- any_current_war
+- any_unit
+- is_hegemon_type
+- any_international_organizations_member_of
+- culture
+- for_the_glory
+- brothers_in_arms
+- save_temporary_scope_as
+- root
+- any_country_together_in_war_with
+- war_score_in_war
+- war
+- city_of_cities
+- any_core_location
+- cold_war
+- until_death_do_us_apart
+- any_royal_marriage
+- that_is_mine
+- victorious
+- its_just_business
+- all_in_favor
+- patron_of_the_arts
+- combined_arms
+- any_country_sub_unit
+- is_levy
+- has_regulars
+- has_mercenaries
+- rule_of_law
+- here_i_stand
+- num_of_religious_aspects
+- rule_britannia
+- plus_ultra
+- city_of_mans_desire
+- owns
+- a_pile_of_gold
+- at_every_continent
+- grand_coalition
+- international_organization_type
+- it_belongs_in_a_museum
+- a_cabinet_of_curiosities
+- hearts_and_minds
+- a_brave_new_world
+- continent:america
+- any_location_in_continent
+- is_discovered_by
+- crusader_kings
+- lingua_franca
+- break_the_yoke
+- is_member_of_international_organization
+- felix_austria
+- international_organization:hre.leader_country
+- is_great_power
+- hongwu_di
+- international_organization:middle_kingdom.leader_country
+- region:north_china_region
+- region:south_china_region
+- region:west_china_region
+- region:east_china_region
+- just_a_little_bit_more_patience
+- potato_potato
+- three_mountains
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/achievements
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    has_or_had_tag = <value>
+    has_presence_in = <value>
+    has_variable = <value>
+    continent = <value>
+    tag = <value>
+    text = <value>
+    percent = <value>
+    religion = <value>
+    has_global_variable = <value>
+    cabinet_action_type = <value>
+    possible = {
+        # ...
+    }
+    happened = {
+        # ...
+    }
+    any_owned_location = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    custom_tooltip = {
+        # ...
+    }
+    any_ownable_location_in_region = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    any_cabinet_action = {
+        # ...
+    }
+}

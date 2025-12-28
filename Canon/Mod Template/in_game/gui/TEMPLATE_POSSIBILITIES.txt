@@ -1,0 +1,217 @@
+gui — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- icon
+- modify_texture
+- tooltipwidget
+- widget
+- hbox
+- text_single
+- margin
+- vbox
+- expand
+- action_tooltip
+- color
+- background
+- position
+- maximumsize
+- glow
+- container
+- item
+- ContextualTooltipType
+- spriteborder
+- minimumsize
+- button
+- pieslice_no_highlight
+- sort_by_key_button
+- TooltipTextBlock
+- SimpleContextualTooltipType
+- piechart
+- pieslice
+- sort_by_highlight
+- button_regular
+- TooltipStringPairList
+- OutlinerTextBase
+- vbox_component_entry
+- alert_banner
+- window_header_alt
+- LeftClickButtonTooltip
+- state
+- country_flag_small
+- OutlinerEntryBase
+- icon_text_2rows
+- OutlinerButtonBase
+- window
+- icon_hint
+- frame_grid
+- flowcontainer
+- filtered_sorted_list
+- progressbar
+- button_secondary_tab_alt
+- sort_by_small_highlight
+- header_button_left
+- BasicFunctionalTooltip
+- text_multi
+- scrollwidget
+- scrollbar_vertical
+- scrollarea
+- replacement_shift_item
+- lateralview
+- fixedgridbox
+- button_main_tab_alt
+- spriteBorder
+- tooltipmeta
+- subheader_unified_icon
+- contextmenu_widget
+- header_title
+- TooltipScrolledStringPairList
+- country_flag_very_small
+- divider_flavor_01
+- hint_button
+- parameter
+- card_header_button_04
+- textbox
+- SimpleContextualStringPairTooltipType
+- ui_direction_button
+- button_wax
+- TooltipListBase
+- card_header_button_01
+- mapmode_category_group
+- header_main_tabs
+- dynamicgridbox
+- ContextMenuEntry
+
+Common assignment keywords seen here (often-used properties/blocks):
+- using
+- size
+- texture
+- visible
+- text
+- alpha
+- name
+- layoutpolicy_horizontal
+- icon
+- modify_texture
+- tooltipwidget
+- datacontext
+- widget
+- hbox
+- blend_mode
+- parentanchor
+- text_single
+- align
+- texture_density
+- raw_text
+- on_action
+- spacing
+- title
+- margin
+- vbox
+- expand
+- action_tooltip
+- color
+- autoresize
+- background
+- click_type
+- alwaystransparent
+- enabled
+- position
+- click_mode
+- default_format
+- layoutpolicy_vertical
+- maximumsize
+- glow
+- glow_radius
+- onclick
+- container
+- value
+- spriteType
+- datamodel
+- fontsize
+- item
+- ContextualTooltipType
+- spriteborder
+- margin_left
+- margin_right
+- minimumsize
+- textcontext
+- margin_bottom
+- margin_top
+- button
+- allow_outside
+- lowpriotextcontext
+- pieslice_no_highlight
+- sort_by_key_button
+- onmousehierarchyenter
+- TooltipTextBlock
+- SimpleContextualTooltipType
+- down
+- piechart
+- tooltip_enabled
+- tooltip
+- description
+- click_modifier
+- pieslice
+- ignoreinvisible
+- sort_by_highlight
+- ignore_layout
+- conditions
+- tagtooltip_enabled
+- layoutstretchfactor_horizontal
+- button_regular
+- TooltipStringPairList
+- OutlinerTextBase
+- vbox_component_entry
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    using = <value>
+    texture = <value>
+    visible = <value>
+    text = <value>
+    alpha = <value>
+    name = <value>
+    layoutpolicy_horizontal = <value>
+    datacontext = <value>
+    blend_mode = <value>
+    parentanchor = <value>
+    size = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    modify_texture = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    text_single = {
+        # ...
+    }
+    margin = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

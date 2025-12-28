@@ -1,0 +1,209 @@
+gui/shared — TEMPLATE (POSSIBILITIES)
+=====================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- modify_texture
+- size
+- background
+- texticon
+- iconsize
+- offset
+- icon
+- spriteborder
+- margin
+- ContextualTooltipType
+- widget
+- TooltipStringPairList
+- TooltipTextBlock
+- color
+- tooltipwidget
+- glow
+- spriteBorder
+- text_single
+- frame_grid
+- hbox
+- vbox
+- expand
+- position
+- item
+- maximumsize
+- TooltipTableColumn
+- button
+- TooltipManualTableField
+- TooltipContentSection
+- text_multi
+- SimpleContextualTooltipType
+- TooltipListBase
+- TooltipConditionList
+- state
+- textbox
+- TooltipScrolledStringPairList
+- TooltipFunctionalBlock
+- pieslice
+- minimumsize
+- TooltipFlavorTextBlock
+- piechart
+- scrollwidget
+- scrollbar_vertical
+- TooltipTableHeader
+- TooltipConditionListType
+- tooltipmeta
+- TooltipListRowContent
+- TooltipListScrollArea
+- TooltipListEmptyContent
+- TooltipStatBarIconTextItem
+- TooltipRowList
+- fixedgridbox
+- action_tooltip
+- framesize
+- scrollarea
+- ui_direction_button
+- pieslice_no_highlight
+- card_header_button_04
+- TooltipListColumnContent
+- TooltipTableField
+- ContextualTooltipTypeBase
+- TooltipDebugTextBlock
+- TooltipStatBarItem
+- TooltipLockProgress
+- ContextualTooltipDefaultIcon
+- LeftClickButtonTooltip
+- bezier
+- buttonText
+- flowcontainer
+- mapmode_tooltip_button
+- TooltipHotkeyHeader
+- TooltipUIActionBlock
+- header_title
+- button_icon
+- TooltipScrolledBlockList
+- TooltipRequirementsList
+- TooltipStatsBar
+- SimpleContextualStringPairTooltipType
+- ContextualTooltipHeader
+- TooltipBlockList
+
+Common assignment keywords seen (often-used properties/blocks):
+- using
+- texture
+- alpha
+- modify_texture
+- size
+- blend_mode
+- icon
+- text
+- texture_density
+- background
+- visible
+- spriteType
+- fontsize
+- texticon
+- iconsize
+- offset
+- spriteborder
+- margin
+- textcontext
+- datacontext
+- layoutpolicy_horizontal
+- name
+- ContextualTooltipType
+- widget
+- parentanchor
+- TooltipStringPairList
+- color
+- TooltipTextBlock
+- tooltipwidget
+- margin_bottom
+- glow
+- glow_radius
+- spriteBorder
+- text_single
+- frame_grid
+- align
+- hbox
+- spacing
+- autoresize
+- default_format
+- vbox
+- expand
+- margin_top
+- position
+- raw_text
+- alwaystransparent
+- margin_right
+- item
+- shaderfile
+- datamodel
+- layoutpolicy_vertical
+- maximumsize
+- TooltipTableColumn
+- button
+- gfxtype
+- margin_left
+- effectname
+- TooltipManualTableField
+- ontextcontextchanged
+- ignoreinvisible
+- TooltipContentSection
+- text_multi
+- tintcolor
+- SimpleContextualTooltipType
+- TooltipListBase
+- TooltipConditionList
+- value
+- tooltip
+- state
+- upframe
+- downframe
+- frame
+- textbox
+- noprogresstexture
+- progresstexture
+- TooltipScrolledStringPairList
+- enabled
+- set_parent_size_to_minimum
+- disableframe
+- TooltipFunctionalBlock
+
+Comprehensive example (placeholders only):
+# Comprehensive example for gui/shared
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    using = <value>
+    texture = <value>
+    alpha = <value>
+    blend_mode = <value>
+    text = <value>
+    texture_density = <value>
+    visible = <value>
+    spriteType = <value>
+    fontsize = <value>
+    icon = <value>
+    modify_texture = {
+        # ...
+    }
+    size = {
+        # ...
+    }
+    background = {
+        # ...
+    }
+    texticon = {
+        # ...
+    }
+    iconsize = {
+        # ...
+    }
+    offset = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    spriteborder = {
+        # ...
+    }
+}

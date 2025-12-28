@@ -1,0 +1,218 @@
+COMMON/generic_actions — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/generic_actions/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- scope:actor
+- if
+- column
+- add
+- select_trigger
+- visible
+- NOT
+- effect
+- ai_will_do
+- allow
+- potential
+- OR
+- custom_tooltip
+- cooldown
+- else
+- else_if
+- subtract
+- add_country_modifier
+- value
+- interaction_source_list
+- trigger_if
+- AND
+- scope:target
+- enabled
+- time_of_year
+- NOR
+- not
+- scope:recipient
+- scope:actor.religion
+- add_estate_satisfaction
+- hidden_effect
+- scope:target_country
+- add_gold
+- set_variable
+- trigger_else
+- multiply
+- any_current_war
+- any_international_organizations_member_of
+- every_international_organization_member
+- add_opinion
+- change_societal_value
+- area
+- situation:treaty_of_tordesillas
+- opinion
+- owner
+- any_location_in_area
+- add_casus_belli
+- any_active_disaster
+- capital
+- location
+- country_has_special_status
+- size
+- has_mutual_scripted_relation
+- ruler
+- any_location_in_province
+- culture
+- c:PAP
+- max
+- any_character
+- any_ownable_location_in_area
+- add_character_modifier
+- min
+- religion_percentage_in_country
+- ai_prerequisite
+- religion
+- leader_country
+- map_color
+- change_variable
+- has_special_status_in_international_organization
+- dialect
+- add_cooldown
+- price_modifier
+- relative_strength
+- NAND
+- integer_range
+- situation:hundred_years_war
+- c:BOH
+- every_owned_location
+- pre_evaluation_sort_value
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- limit
+- add
+- value
+- scope:actor
+- if
+- column
+- type
+- name
+- select_trigger
+- looking_for_a
+- target_flag
+- data
+- visible
+- multiply
+- NOT
+- effect
+- automation_tick
+- ai_will_do
+- automation_tick_frequency
+- desc
+- allow
+- potential
+- ai_tick
+- ai_tick_frequency
+- OR
+- custom_tooltip
+- price
+- exists
+- years
+- source
+- subtract
+- none_available_msg_key
+- cooldown
+- else
+- situation_is_active
+- text
+- else_if
+- add_to_list
+- player_automated_category
+- sound
+- add_country_modifier
+- target
+- has_variable
+- scope:target
+- modifier
+- at_war
+- interaction_source_list
+- trigger_if
+- is_leader_of_international_organization
+- AND
+- enabled
+- show_message
+- religion
+- time_of_year
+- divide
+- mode
+- this
+- climate
+- scope:actor.religion
+- area
+- NOR
+- is_member_of_international_organization
+- international_organization_type
+- min
+- region
+- has_owner
+- vegetation
+- topography
+- disaster_type
+- owner
+- max
+- not
+- tag
+- scope:recipient
+- attacker_leader
+- disaster_is_active
+- remove_country_modifier
+- situation:treaty_of_tordesillas
+- save_scope_as
+- culture
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/generic_actions
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    type = <value>
+    name = <value>
+    looking_for_a = <value>
+    target_flag = <value>
+    add = <value>
+    data = <value>
+    multiply = <value>
+    automation_tick = <value>
+    automation_tick_frequency = <value>
+    limit = {
+        # ...
+    }
+    scope:actor = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    column = {
+        # ...
+    }
+    add = {
+        # ...
+    }
+    select_trigger = {
+        # ...
+    }
+    visible = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

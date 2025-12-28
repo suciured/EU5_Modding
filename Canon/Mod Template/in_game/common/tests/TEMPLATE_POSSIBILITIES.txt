@@ -1,0 +1,201 @@
+COMMON/tests — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/tests/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- success
+- OR
+- AND
+- international_organization:hre
+- any_area_in_region
+- any_province_definition_in_area
+- any_location_in_province_definition
+- any_subject
+- NOT
+- any_country
+- religion:lutheran
+- region:west_siberia_region
+- any_location_in_region
+- black_death_happened_test
+- british_families_fight_war_of_the_roses
+- european_historical_colonizers
+- institution:new_world
+- meissen_is_elector
+- has_special_status_in_international_organization
+- iberian_union
+- kalmar_union
+- portugese_south_africa
+- region:southern_africa_region
+- region:kongo_region
+- great_britain_control
+- spanish_presence_in_latin_america
+- lutheranism
+- hussitism
+- religion:hussite
+- ottoman_empire_important_locations
+- calvinism
+- religion:calvinist
+- sikhism
+- religion:sikhism
+- england_knows_american_tribe
+- religion:mississippian_ceremonial
+- religion:midewiwin_religion
+- iberians_know_about_india
+- number_of_reformed_nations
+- any_country_in_religion
+- num_of_electors_active
+- russian_expansion_in_siberia
+- plc_foundation
+- british_start_thirteen_colonies
+- high_education_countries
+- byzantium_succession_crisis
+- morocco_has_left_iberia
+- 100_years_war_longevity
+- lithuania_is_christian
+- early_colonization_started
+- capital
+- hungarian_cultural_unity
+- ottomans_presence_in_the_balkans
+- france_consolidating_region
+- bohemia_hussitism
+- hre_leader
+- not_peacefull_italian_region
+- italy_not_in_hre
+- culture_group:italian_group
+- any_country_in_culture_group
+- yuan_released_important_tags
+- rise_of_timur_happened_test
+- bahmanis_delhi_situation
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- success
+- end_year
+- fail_on_end_year
+- year
+- OR
+- country_exists
+- AND
+- has_discovered_area
+- has_presence_in
+- capital.area
+- owns
+- has_variable
+- owner
+- international_organization:hre
+- international_organization_has_policy
+- any_area_in_region
+- any_province_definition_in_area
+- any_location_in_province_definition
+- any_subject
+- is_subject_type
+- is_religion_enabled
+- knows_country
+- region
+- in_union_with
+- NOT
+- any_country
+- capital.region
+- religion:lutheran
+- tag_exists
+- region:west_siberia_region
+- any_location_in_region
+- black_death_happened_test
+- country_has_disease
+- british_families_fight_war_of_the_roses
+- european_historical_colonizers
+- institution:new_world
+- meissen_is_elector
+- has_special_status_in_international_organization
+- type
+- international_organization
+- iberian_union
+- kalmar_union
+- portugese_south_africa
+- region:southern_africa_region
+- region:kongo_region
+- great_britain_control
+- spanish_presence_in_latin_america
+- lutheranism
+- hussitism
+- religion:hussite
+- ottoman_empire_important_locations
+- calvinism
+- religion:calvinist
+- sikhism
+- religion:sikhism
+- england_knows_american_tribe
+- religion:mississippian_ceremonial
+- religion:midewiwin_religion
+- iberians_know_about_india
+- number_of_reformed_nations
+- any_country_in_religion
+- num_of_electors_active
+- russian_expansion_in_siberia
+- plc_foundation
+- british_start_thirteen_colonies
+- high_education_countries
+- byzantium_succession_crisis
+- morocco_has_left_iberia
+- 100_years_war_longevity
+- has_country_modifier
+- lithuania_is_christian
+- religion.group
+- early_colonization_started
+- capital
+- has_colonial_charter_in
+- hungarian_cultural_unity
+- ottomans_presence_in_the_balkans
+- france_consolidating_region
+- bohemia_hussitism
+- religion
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/tests
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    end_year = <value>
+    fail_on_end_year = <value>
+    year = <value>
+    country_exists = <value>
+    has_discovered_area = <value>
+    has_presence_in = <value>
+    capital.area = <value>
+    owns = <value>
+    has_variable = <value>
+    owner = <value>
+    success = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    AND = {
+        # ...
+    }
+    international_organization:hre = {
+        # ...
+    }
+    any_area_in_region = {
+        # ...
+    }
+    any_province_definition_in_area = {
+        # ...
+    }
+    any_location_in_province_definition = {
+        # ...
+    }
+    any_subject = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

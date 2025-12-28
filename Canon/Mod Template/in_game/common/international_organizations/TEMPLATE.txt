@@ -1,0 +1,4 @@
+# COMMON/international_organizations TEMPLATE
+<key> = {
+    # definition block
+}

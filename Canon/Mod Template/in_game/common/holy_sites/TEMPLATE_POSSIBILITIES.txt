@@ -1,0 +1,213 @@
+COMMON/holy_sites — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/holy_sites/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- religions
+- constantinople_holy_city_gnostic
+- antioch_holy_city_gnostic
+- alexandria_holy_city_gnostic
+- rome_holy_city_gnostic
+- mile_church
+- jerusalem_the_holy_city_catholic
+- the_vatican
+- santiago_de_compostela_cathedral
+- chartres_cathedral
+- cologne_cathedral
+- canterbury_cathedral
+- varanasi_holy_city
+- prayag_kumbh_mela
+- haridwar_kumbh_mela
+- nashik_trimbakeshwar_simhastha
+- kanchipuram_holy_city
+- ranganathaswamy_temple
+- badrinath_temple
+- matsya_narayana
+- shankhodara_temple
+- kurmanathaswamy_temple
+- kurma_varadaraja_swamy_temple
+- amamangalam_maha_vishnu_temple
+- varahaswamy_temple
+- bhu_varaha_swamy_temple
+- nithyakalyana_perumal_temple
+- varaha_lakshmi_narasimha_temple
+- varaha_temple
+- panniyur_sri_varahamurthy
+- sreevaraham_lakshmi_varaha_temple
+- ahobilam_holy_city
+- lakshmi_narasimha_temple
+- vedadri_narasimha_temple
+- thirukkadigai
+- lakshminarasimha_temple
+- narasimhaswamy_temple
+- narasingam_yoga_narasimha_perumal_temple
+- kattu_narasimhaperumal_temple
+- thrikkakara_temple
+- ulagalantha_perumal_temple
+- vamana_temple
+- anantheshwara_temple
+- thiruvallam_sree_parasurama_temple
+- parshuram_kund
+- ram_janmabhoomi
+- kola_valvill_ramar_temple
+- kothandaramaswamy_temple
+- kalaram_temple
+- kodandarama_temple
+- ramchaura_mandir
+- vilwadrinatha_temple
+- ramapuram_sree_rama_temple
+- jagannath_temple
+- dwarkadhish_temple
+- krishna_janmasthan
+- parthasarathy_temple
+- guruvayur_temple
+- radha_damodar_temple
+- rajagopalaswamy_temple
+- jyotisar
+- trichambaram_temple
+- udupi_sri_krishna_matha
+- aranmula_parthasarathy_temple
+- pandava_thoothar_perumal_temple
+- vithoba_temple
+- thirukkavalampadi
+- bodh_gaya
+- muktinath
+- swayambhu
+- ramanathaswamy_temple
+- mahakaleshwar_jyotirlinga
+- deo_patan
+- mallikarjuna_temple
+- nageshvara_jyotirlinga
+- katas_raj_temples
+- brihadisvara_temple
+- mahadev_temple
+- koneswaram_temple
+- thommanon
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- location
+- type
+- importance
+- religions
+- god
+- avatar
+- constantinople_holy_city_gnostic
+- antioch_holy_city_gnostic
+- alexandria_holy_city_gnostic
+- rome_holy_city_gnostic
+- mile_church
+- jerusalem_the_holy_city_catholic
+- the_vatican
+- santiago_de_compostela_cathedral
+- chartres_cathedral
+- cologne_cathedral
+- canterbury_cathedral
+- varanasi_holy_city
+- prayag_kumbh_mela
+- haridwar_kumbh_mela
+- nashik_trimbakeshwar_simhastha
+- kanchipuram_holy_city
+- ranganathaswamy_temple
+- badrinath_temple
+- matsya_narayana
+- shankhodara_temple
+- kurmanathaswamy_temple
+- kurma_varadaraja_swamy_temple
+- amamangalam_maha_vishnu_temple
+- varahaswamy_temple
+- bhu_varaha_swamy_temple
+- nithyakalyana_perumal_temple
+- varaha_lakshmi_narasimha_temple
+- varaha_temple
+- panniyur_sri_varahamurthy
+- sreevaraham_lakshmi_varaha_temple
+- ahobilam_holy_city
+- lakshmi_narasimha_temple
+- vedadri_narasimha_temple
+- thirukkadigai
+- lakshminarasimha_temple
+- narasimhaswamy_temple
+- narasingam_yoga_narasimha_perumal_temple
+- kattu_narasimhaperumal_temple
+- thrikkakara_temple
+- ulagalantha_perumal_temple
+- vamana_temple
+- anantheshwara_temple
+- thiruvallam_sree_parasurama_temple
+- parshuram_kund
+- ram_janmabhoomi
+- kola_valvill_ramar_temple
+- kothandaramaswamy_temple
+- kalaram_temple
+- kodandarama_temple
+- ramchaura_mandir
+- vilwadrinatha_temple
+- ramapuram_sree_rama_temple
+- jagannath_temple
+- dwarkadhish_temple
+- krishna_janmasthan
+- parthasarathy_temple
+- guruvayur_temple
+- radha_damodar_temple
+- rajagopalaswamy_temple
+- jyotisar
+- trichambaram_temple
+- udupi_sri_krishna_matha
+- aranmula_parthasarathy_temple
+- pandava_thoothar_perumal_temple
+- vithoba_temple
+- thirukkavalampadi
+- bodh_gaya
+- muktinath
+- swayambhu
+- ramanathaswamy_temple
+- mahakaleshwar_jyotirlinga
+- deo_patan
+- mallikarjuna_temple
+- nageshvara_jyotirlinga
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/holy_sites
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    location = <value>
+    type = <value>
+    importance = <value>
+    god = <value>
+    avatar = <value>
+    religions = {
+        # ...
+    }
+    constantinople_holy_city_gnostic = {
+        # ...
+    }
+    antioch_holy_city_gnostic = {
+        # ...
+    }
+    alexandria_holy_city_gnostic = {
+        # ...
+    }
+    rome_holy_city_gnostic = {
+        # ...
+    }
+    mile_church = {
+        # ...
+    }
+    jerusalem_the_holy_city_catholic = {
+        # ...
+    }
+    the_vatican = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,218 @@
+COMMON/goods_demand — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/goods_demand/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- multiply
+- if
+- OR
+- culture
+- else_if
+- location
+- location.region
+- religion
+- NOT
+- infantry_construction
+- heavy_infantry_construction
+- early_infantry_construction
+- early_heavy_infantry_construction
+- archer_infantry_construction
+- pikemen_construction
+- rifle_infantry_construction
+- cavalry_construction
+- heavy_cavalry_construction
+- expensive_heavy_cavalry_construction
+- steppe_horse_archers_construction
+- steppe_auxiliary_construction
+- artillery_construction
+- auxuliary_construction
+- elephant_auxiliary_construction
+- elephant_cavalry_construction
+- elephant_infantry_construction
+- a_tribesmen_construction
+- a_warriors_construction
+- a_champions_construction
+- a_chieftains_construction
+- clan_retainers_construction
+- clan_retainer_cavalry_construction
+- infantry_maintenance
+- heavy_infantry_maintenance
+- early_infantry_maintenance
+- early_heavy_infantry_maintenance
+- archer_infantry_maintenance
+- pikemen_maintenance
+- steppe_horse_archers_maintenance
+- rifle_infantry_maintenance
+- steppe_horse_auxiliary_maintenance
+- cavalry_maintenance
+- heavy_cavalry_maintenance
+- expensive_heavy_cavalry_maintenance
+- artillery_maintenance
+- auxuliary_maintenance
+- elephant_auxiliary_maintenance
+- elephant_cavalry_maintenance
+- elephant_infantry_maintenance
+- a_tribesmen_maintenance
+- a_warriors_maintenance
+- a_champions_maintenance
+- a_chieftains_maintenance
+- clan_retainers_maintenance
+- clan_retainer_cavalry_maintenance
+- horse_breeders_construction
+- farm_constructions
+- soldier_building_construction
+- early_soldier_building_construction
+- nahuatl_warrior_building_construction
+- village_construction
+- mercury_patio_construction
+- incamisana_construction
+- tambo_construction
+- terraces_construction
+- school_construction
+- academy_construction
+- university_construction
+- opera_house_construction
+- library_construction
+- theater_construction
+- venetian_palaces_construction
+- art_school_construction
+- guild_construction
+- workshop_construction
+- manufactory_construction
+- mill_construction
+- cathedral_construction
+- minting_office_construction
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- category
+- value
+- lumber
+- multiply
+- limit
+- desc
+- hidden
+- if
+- masonry
+- tools
+- weaponry
+- naval_supplies
+- culture
+- leather
+- cannons
+- liquor
+- salt
+- glass
+- OR
+- paper
+- cloth
+- this
+- copper
+- goods_gold
+- sand
+- else_if
+- tin
+- marble
+- horses
+- location
+- books
+- firearms
+- fine_cloth
+- stone
+- silver
+- iron
+- religion
+- wheat
+- clay
+- sugar
+- pepper
+- silk
+- pop_type
+- elephants
+- medicaments
+- tobacco
+- maize
+- gems
+- livestock
+- cloves
+- fruit
+- beer
+- jewelry
+- cotton
+- coffee
+- wild_game
+- location.region
+- location.sub_continent
+- slaves_goods
+- porcelain
+- fish
+- fur
+- incense
+- cocoa
+- lead
+- fiber_crops
+- group
+- NOT
+- tea
+- potato
+- mercury
+- coal
+- wine
+- dyes
+- location.continent
+- ivory
+- chili
+- olives
+- legumes
+- location_max_winter_level
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/goods_demand
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    category = <value>
+    value = <value>
+    lumber = <value>
+    desc = <value>
+    hidden = <value>
+    masonry = <value>
+    tools = <value>
+    weaponry = <value>
+    naval_supplies = <value>
+    leather = <value>
+    limit = {
+        # ...
+    }
+    multiply = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    culture = {
+        # ...
+    }
+    else_if = {
+        # ...
+    }
+    location = {
+        # ...
+    }
+    location.region = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

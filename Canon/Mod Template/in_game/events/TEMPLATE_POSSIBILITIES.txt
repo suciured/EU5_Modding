@@ -1,0 +1,116 @@
+events — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold event files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/events/my_events.txt
+
+Event ids / namespaces seen (sample):
+- <namespace>.<id>
+
+Common keywords seen:
+- name
+- option
+- type
+- desc
+- trigger
+- title
+- immediate
+- value
+- limit
+- NOT
+- save_scope_as
+- custom_tooltip
+- event_illustration_estate_effect
+- scope:target_location
+- hidden_effect
+- illustration_tags
+- modifier
+- image
+- mode
+- if
+- add_estate_satisfaction
+- years
+- add
+- fire_only_once
+- add_location_modifier
+- owns
+- add_prestige
+- multiply
+- max
+- country_has_estate
+- exists
+- major_earthquake_damage
+- divide
+- major_earthquake_payment
+- change_gold_effect
+- has_ruler
+- target
+- change_institution_progress
+- add_stability
+- ruler
+- change_societal_value
+- catastrophic_earthquake_damage
+- knows_about_institution
+- OR
+- event_illustration_government_estate_effect
+- international_organization:hre
+- set_variable
+- add_opinion
+- minor_earthquake_damage
+- religion
+- add_country_modifier
+- order_by
+- owner
+- has_country_modifier
+- at_war
+- text
+- factor
+- location_rank
+- every_pop
+- culture
+- add_army_tradition
+- has_embraced_institution
+- remove_variable
+- capital
+- min
+- trigger_event_silently
+- change_location_rank
+- create_sub_unit_of_category
+- change_variable
+- id
+- random_owned_location
+- add_gold
+- create_character
+- international_organization_has_policy
+- add_research_progress
+- dominant_culture
+- root
+- else
+- add_legitimacy
+- location
+
+Comprehensive example:
+# Comprehensive example for events
+# STRUCTURE ONLY: placeholder values
+
+event <namespace>.<id> = {
+    title = <localization_key>
+    desc = <localization_key>
+    picture = <gfx_key>
+
+    trigger = {
+        # conditions
+    }
+
+    immediate = {
+        # instant effects
+    }
+
+    option = {
+        name = <localization_key>
+        ai_chance = { factor = <value> }
+        # effects
+    }
+}

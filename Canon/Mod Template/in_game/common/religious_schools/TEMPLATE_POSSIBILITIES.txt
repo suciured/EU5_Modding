@@ -1,0 +1,186 @@
+COMMON/religious_schools — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/religious_schools/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- OR
+- enabled_for_country
+- enabled_for_character
+- modifier
+- culture
+- samkhya_school
+- yoga_school
+- nyaya_school
+- vaisheshika_school
+- mimamsa_school
+- vedanta_school
+- ibadi_school
+- mula_sangh_school
+- balatkara_gana_school
+- kashtha_sangha_school
+- upkesa_gaccha_school
+- kharatara_gaccha_school
+- tapa_gaccha_school
+- tristutik_gaccha_school
+- jafari_school
+- ismaili_school
+- zaidi_school
+- imamiya_school
+- nizari_school
+- mustali_school
+- alevism_school
+- alawi_school
+- bektashi_school
+- chishti_school
+- khalwati_school
+- mevlevi_school
+- naqshbandi_school
+- qadiri_school
+- safavid_school
+- shadhili_school
+- suhrawardi_school
+- isawiyya_school
+- din_i_ilahi_school
+- hanafi_school
+- hanbali_school
+- maliki_school
+- shafii_school
+- zahiri_school
+- ashari_school
+- maturidi_school
+- athari_school
+- mutazili_school
+- wahhabi_school
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- religion
+- OR
+- color
+- enabled_for_country
+- enabled_for_character
+- modifier
+- culture
+- has_global_variable
+- global_pop_conversion_speed_modifier
+- tolerance_heathen
+- stability_investment
+- tolerance_heretic
+- global_population_growth
+- cultural_tradition_modifier
+- tolerance_own
+- monthly_legitimacy
+- pop_join_rebel_threshold
+- global_max_literacy
+- army_infantry_power
+- monthly_towards_mysticism
+- monthly_towards_jurisprudence
+- samkhya_school
+- yoga_school
+- nyaya_school
+- global_monthly_literacy
+- vaisheshika_school
+- mimamsa_school
+- vedanta_school
+- ibadi_school
+- mula_sangh_school
+- balatkara_gana_school
+- kashtha_sangha_school
+- upkesa_gaccha_school
+- kharatara_gaccha_school
+- tapa_gaccha_school
+- monthly_self_control
+- tristutik_gaccha_school
+- clergy_estate_satisfaction_recovery
+- jafari_school
+- ismaili_school
+- monthly_republican_tradition
+- monthly_devotion
+- monthly_horde_unity
+- monthly_tribal_cohesion
+- zaidi_school
+- imamiya_school
+- nizari_school
+- mustali_school
+- alevism_school
+- alawi_school
+- bektashi_school
+- chishti_school
+- khalwati_school
+- mevlevi_school
+- cultural_influence_modifier
+- naqshbandi_school
+- qadiri_school
+- monthly_prestige
+- safavid_school
+- monthly_army_tradition
+- shadhili_school
+- suhrawardi_school
+- isawiyya_school
+- global_monthly_prosperity
+- din_i_ilahi_school
+- cultures_capacity
+- hanafi_school
+- global_clergy_max_literacy
+- hanbali_school
+- antagonism_received_modifier
+- maliki_school
+- global_monthly_development
+- shafii_school
+- global_merchant_capacity_modifier
+- zahiri_school
+- ashari_school
+- research_speed_modifier
+- maturidi_school
+- athari_school
+- mutazili_school
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/religious_schools
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    religion = <value>
+    color = <value>
+    culture = <value>
+    has_global_variable = <value>
+    global_pop_conversion_speed_modifier = <value>
+    tolerance_heathen = <value>
+    stability_investment = <value>
+    tolerance_heretic = <value>
+    global_population_growth = <value>
+    cultural_tradition_modifier = <value>
+    OR = {
+        # ...
+    }
+    enabled_for_country = {
+        # ...
+    }
+    enabled_for_character = {
+        # ...
+    }
+    modifier = {
+        # ...
+    }
+    culture = {
+        # ...
+    }
+    samkhya_school = {
+        # ...
+    }
+    yoga_school = {
+        # ...
+    }
+    nyaya_school = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

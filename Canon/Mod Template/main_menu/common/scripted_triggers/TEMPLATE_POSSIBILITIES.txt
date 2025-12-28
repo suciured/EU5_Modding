@@ -1,0 +1,209 @@
+common/scripted_triggers — TEMPLATE (POSSIBILITIES)
+===================================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- OR
+- any_area_with_core
+- any_subject_or_below
+- NOT
+- culture
+- any_core_location
+- any_subject
+- any_union_partner
+- AND
+- has_special_status_in_international_organization
+- any_owned_location
+- any_primary_or_accepted_culture
+- custom_tooltip
+- coa_def_ensign_trigger
+- coa_def_colonial_nation_trigger
+- not
+- coa_def_hre_subject_trigger
+- coa_def_hre_free_imperial_city_trigger
+- coa_def_hre_elector_trigger
+- coa_def_hre_archbishop_elector_trigger
+- coa_def_hre_emperor_trigger
+- coa_def_guelphs_trigger
+- coa_def_ghibellines_trigger
+- coa_def_appanage_trigger
+- coa_def_at_war_trigger
+- coa_def_shogunate_subject_trigger
+- coa_def_ARA_ensign_trigger
+- coa_def_BOH_ensign_trigger
+- c:BOH
+- coa_def_BUR_ensign_trigger
+- c:BUR
+- coa_def_BYZ_ensign_trigger
+- coa_def_CAS_ensign_trigger
+- coa_def_CEL_ensign_trigger
+- coa_def_CHI_ensign_trigger
+- coa_def_CRN_ensign_trigger
+- coa_def_ENG_ensign_trigger
+- coa_def_FRA_ensign_trigger
+- c:FRA
+- coa_def_GBR_ensign_trigger
+- coa_def_HAB_ensign_trigger
+- c:HAB
+- coa_def_HEN_ensign_trigger
+- coa_def_HOL_ensign_trigger
+- coa_def_HSA_ensign_trigger
+- coa_def_HUN_ensign_trigger
+- c:HUN
+- coa_def_IRE_ensign_trigger
+- coa_def_LIT_ensign_trigger
+- c:LIT
+- coa_def_LIV_ensign_trigger
+- c:LIV
+- coa_def_MLO_ensign_trigger
+- coa_def_MOR_ensign_trigger
+- coa_def_NAP_ensign_trigger
+- c:NAP
+- coa_def_NAV_ensign_trigger
+- coa_def_NED_ensign_trigger
+- coa_def_NOR_ensign_trigger
+- coa_def_NSE_ensign_trigger
+- coa_def_PAP_ensign_trigger
+- coa_def_PLC_ensign_trigger
+- c:PLC
+- coa_def_POL_ensign_trigger
+- c:POL
+- coa_def_POR_ensign_trigger
+- coa_def_RUS_ensign_trigger
+- c:RUS
+- coa_def_SCO_ensign_trigger
+- coa_def_SPA_ensign_trigger
+- coa_def_SWE_ensign_trigger
+- c:SWE
+- coa_def_TEU_ensign_trigger
+- c:TEU
+- coa_def_TUR_ensign_trigger
+- coa_def_WLS_ensign_trigger
+- coa_def_teutonic_order_trigger
+- coa_monarchy_trigger
+- coa_republic_trigger
+- coa_revolutionary_republic_trigger
+
+Common assignment keywords seen (often-used properties/blocks):
+- OR
+- exists
+- any_area_with_core
+- culture
+- any_subject_or_below
+- gfx_culture_applicable
+- religion
+- country_exists
+- NOT
+- owns
+- coa_def_ensign_trigger
+- this
+- culture.language
+- group
+- religion.group
+- any_core_location
+- any_subject
+- has_reform
+- is_subject_type
+- any_union_partner
+- AND
+- has_culture_group
+- is_member_of_international_organization
+- government_type
+- scope_type
+- culture.dialect
+- country_rank
+- sub_continent
+- has_special_status_in_international_organization
+- type
+- international_organization
+- coa_def_county_trigger
+- current_age
+- coa_def_maghrebi_trigger
+- any_owned_location
+- coa_def_turkish_trigger
+- coa_def_tengri_trigger
+- coa_def_BYZ_ensign_trigger
+- coa_def_LIV_ensign_trigger
+- coa_def_POR_ensign_trigger
+- coa_def_TEU_ensign_trigger
+- coa_theocracy_trigger
+- coa_def_duchy_trigger
+- coa_def_miaphysite_trigger
+- coa_def_african_trigger
+- coa_def_muslim_trigger
+- is_country_religion_pagan
+- coa_def_ceremonialist_trigger
+- any_primary_or_accepted_culture
+- coa_def_levantine_trigger
+- coa_def_arabian_trigger
+- coa_def_persian_trigger
+- coa_def_mongolian_trigger
+- coa_def_eastern_turkic_trigger
+- coa_def_tatar_trigger
+- coa_def_armenian_trigger
+- coa_def_georgian_trigger
+- coa_def_east_asian_trigger
+- coa_def_circassian_trigger
+- coa_def_greek_trigger
+- coa_def_hungarian_trigger
+- coa_def_romanian_trigger
+- coa_def_folk_asian_group_trigger
+- coa_def_tungusic_siberian_trigger
+- coa_def_maori_trigger
+- coa_def_aboriginal_trigger
+- coa_def_indonesian_trigger
+- coa_def_papuan_trigger
+- coa_def_native_american_pueblo_trigger
+- coa_def_ecuador_trigger
+- coa_def_aztec_trigger
+- coa_def_maya_trigger
+- coa_def_purepecha_trigger
+- coa_def_huaxtec_trigger
+- coa_def_totonac_trigger
+- coa_def_oaxaca_trigger
+- coa_def_chichimeca_trigger
+- coa_def_sinaloa_trigger
+- coa_def_west_african_trigger
+- coa_def_malagasy_trigger
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/scripted_triggers
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    exists = <value>
+    gfx_culture_applicable = <value>
+    religion = <value>
+    country_exists = <value>
+    owns = <value>
+    culture = <value>
+    coa_def_ensign_trigger = <value>
+    this = <value>
+    culture.language = <value>
+    group = <value>
+    OR = {
+        # ...
+    }
+    any_area_with_core = {
+        # ...
+    }
+    any_subject_or_below = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    culture = {
+        # ...
+    }
+    any_core_location = {
+        # ...
+    }
+    any_subject = {
+        # ...
+    }
+    any_union_partner = {
+        # ...
+    }
+}

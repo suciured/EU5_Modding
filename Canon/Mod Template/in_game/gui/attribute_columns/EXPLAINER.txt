@@ -1,0 +1,9 @@
+gui/attribute_columns EXPLAINER
+===================
+What goes here:
+- UI definitions for screens/components in gui/attribute_columns.
+
+Safe modding patterns:
+- Add new blocks/files whenever possible.
+- Avoid overwriting large base GUI files unless necessary.
+- Keep naming consistent and unique for your mod.

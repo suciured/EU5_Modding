@@ -1,0 +1,116 @@
+events/diplomacy — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold event files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/events/diplomacy/my_events.txt
+
+Event ids / namespaces seen (sample):
+- <namespace>.<id>
+
+Common keywords seen:
+- name
+- option
+- type
+- trigger
+- desc
+- title
+- limit
+- NOT
+- immediate
+- add_opinion
+- save_scope_as
+- trigger_event_silently
+- illustration_tags
+- remove_variable
+- target
+- value
+- add_prestige
+- has_ruler
+- any_subject
+- receiving_scripted_relation
+- has_opinion
+- has_variable
+- hidden_effect
+- show_as_tooltip
+- hide_portraits
+- has_countries_with_coalition_grade_antagonism
+- if
+- ruler
+- random_subject
+- set_variable
+- at_war
+- event_illustration_estate_effect
+- multiply
+- government_type
+- scope:subject_target
+- custom_tooltip
+- add_spy_network
+- scope:target
+- scope:from
+- add_liberty_desire
+- is_ai
+- has_regent
+- root
+- spy_network
+- OR
+- exists
+- add_manpower
+- namespace
+- capital
+- any_known_country
+- image
+- add_gold
+- change_gold_effect
+- id
+- days
+- add_country_modifier
+- ruler.culture
+- scope:union_target
+- reverse_add_opinion
+- add_estate_satisfaction
+- has_country_modifier
+- scope:espionage_event_country
+- add_stability
+- event_illustration_estate_background_effect
+- event_illustration_estate_foreground_effect
+- country
+- key
+- overlord
+- random_known_country
+- opinion
+- is_valid_embassy_country
+- scope:embassy_country
+- add_legitimacy
+- is_during_bankruptcy
+- any_international_organization_member
+- random_international_organization_member
+- triggered_desc
+- any_related_country
+- is_neighbor_of
+- is_subject
+
+Comprehensive example:
+# Comprehensive example for events/diplomacy
+# STRUCTURE ONLY: placeholder values
+
+event <namespace>.<id> = {
+    title = <localization_key>
+    desc = <localization_key>
+    picture = <gfx_key>
+
+    trigger = {
+        # conditions
+    }
+
+    immediate = {
+        # instant effects
+    }
+
+    option = {
+        name = <localization_key>
+        ai_chance = { factor = <value> }
+        # effects
+    }
+}

@@ -1,0 +1,9 @@
+COMMON/generic_actions EXPLAINER
+======================
+What goes here:
+- Data definitions belonging to the 'generic_actions' system.
+
+Safe modding patterns:
+- Add new keys/files where possible.
+- Avoid overwriting large base files unless necessary.
+- Keep keys unique (prefix your mod keys).

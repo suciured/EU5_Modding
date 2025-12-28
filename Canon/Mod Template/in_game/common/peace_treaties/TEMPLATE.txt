@@ -1,0 +1,4 @@
+# COMMON/peace_treaties TEMPLATE
+<key> = {
+    # definition block
+}

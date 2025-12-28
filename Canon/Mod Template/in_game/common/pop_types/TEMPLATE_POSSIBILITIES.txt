@@ -1,0 +1,120 @@
+COMMON/pop_types — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/pop_types/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- literacy_impact
+- dhimmi_estate
+- tribes_estate
+- peasants_estate
+- nobles
+- nobles_estate
+- clergy
+- clergy_estate
+- burghers
+- burghers_estate
+- laborers
+- soldiers
+- peasants
+- tribesmen
+- pop_percentage_impact
+- cossacks_estate
+- slaves
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- color
+- assimilation_conversion_factor
+- pop_food_consumption
+- city_graphics
+- literacy_impact
+- dhimmi_estate
+- tribes_estate
+- promotion_factor
+- promote_to
+- editor
+- has_cap
+- migration_factor
+- peasants_estate
+- upper
+- grow
+- nobles
+- nobles_estate
+- local_cultural_tradition
+- local_monthly_control
+- clergy
+- clergy_estate
+- local_pop_conversion_speed_modifier
+- local_pop_assimilation_speed_modifier
+- burghers
+- burghers_estate
+- counts_towards_market_language
+- local_monthly_development_modifier
+- local_trades_per_burgher
+- laborers
+- local_production_efficiency
+- local_max_rgo_size_modifier
+- soldiers
+- local_defensive
+- local_manpower_modifier
+- peasants
+- local_pop_promotion_speed_modifier
+- local_levy_recruitment_speed_modifier
+- tribesmen
+- tribal_rules
+- pop_percentage_impact
+- local_distance_from_capital_cost_modifier
+- local_tribal_promotion
+- cossacks_estate
+- slaves
+- local_unrest
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/pop_types
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    color = <value>
+    assimilation_conversion_factor = <value>
+    pop_food_consumption = <value>
+    city_graphics = <value>
+    promotion_factor = <value>
+    promote_to = <value>
+    editor = <value>
+    has_cap = <value>
+    migration_factor = <value>
+    upper = <value>
+    literacy_impact = {
+        # ...
+    }
+    dhimmi_estate = {
+        # ...
+    }
+    tribes_estate = {
+        # ...
+    }
+    peasants_estate = {
+        # ...
+    }
+    nobles = {
+        # ...
+    }
+    nobles_estate = {
+        # ...
+    }
+    clergy = {
+        # ...
+    }
+    clergy_estate = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

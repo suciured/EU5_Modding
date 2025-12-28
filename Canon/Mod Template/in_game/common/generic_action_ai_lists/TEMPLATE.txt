@@ -1,0 +1,4 @@
+# COMMON/generic_action_ai_lists TEMPLATE
+<key> = {
+    # definition block
+}

@@ -1,0 +1,218 @@
+COMMON/religions — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/religions/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- definition_modifier
+- opinions
+- tags
+- unique_names
+- custom_tags
+- max_religious_figures_for_religion
+- every_country_in_religion
+- every_holy_site_in_religion
+- bon
+- mahayana
+- shinto
+- factions
+- theravada
+- sammitiya
+- tibetan_buddhism
+- sanjiao
+- anglican
+- bogomilism
+- bosnian_church
+- calvinist
+- catharism
+- catholic
+- hussite
+- lollardy
+- lutheran
+- miaphysite
+- nestorianism
+- orthodox
+- paulicianism
+- strigolniki
+- waldensian
+- hindu
+- jain
+- sikhism
+- druzism
+- bantu_religion
+- lugbara_religion
+- cwezi_religion
+- bori_religion
+- muonyjang_religion
+- fomba_gasy_religion
+- maasai_religion
+- asis_religion
+- waaqeffanna_religion
+- badimo_religion
+- kaggen_religion
+- akuj_religion
+- akan_religion
+- vodun_religion
+- abwoi_religion
+- isese_religion
+- ijaw_religion
+- odinala_religion
+- a_fat_roog_religion
+- dogon_religion
+- nyama_religion
+- nyesoa_religion
+- karama_religion
+- buyli_religion
+- ebore_religion
+- adamawa_religion
+- geno_religion
+- emit_religion
+- nhaala_religion
+- eso_religion
+- naa_wuni_religion
+- kuru_masaba_religion
+- sao_religion
+- rogo_miki_religion
+- songhai_religion
+- godala_religion
+- nyasaye_religion
+- anna_religion
+- rebba_religion
+- omo_religion
+- musala_religion
+- kalge_religion
+- mbori_religion
+- ori_religion
+- ngbandi_religion
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- color
+- group
+- definition_modifier
+- religious_aspects
+- opinions
+- tags
+- tolerance_heretic
+- tolerance_heathen
+- global_burghers_estate_power
+- prestige_from_land_battle
+- religious_school
+- merchant_maintenance_cost
+- land_morale_modifier
+- cultural_influence_modifier
+- trade_sea_movement_cost_modifier
+- language
+- army_movement_speed
+- army_disembark_speed
+- global_pop_food_consumption
+- global_sailors_modifier
+- global_levy_size_modifier
+- has_religious_influence
+- unique_names
+- cultural_tradition_modifier
+- maximum_religious_influence
+- food_consumption_modifier
+- monthly_religious_influence
+- army_reinforce_cost
+- global_max_literacy
+- enable
+- can_have_monasteries
+- add
+- custom_tags
+- catholic
+- global_clergy_estate_power
+- global_nobles_estate_power
+- trade_efficiency
+- has_karma
+- monthly_legitimacy
+- bogomilism
+- has_canonization
+- orthodox
+- tolerance_own
+- navy_initiative
+- global_defensive
+- global_wild_game_output_modifier
+- monthly_karma
+- max_sects
+- stability_investment
+- catharism
+- bosnian_church
+- sunni
+- number_of_allowed_religious_figures
+- max_religious_figures_for_religion
+- every_country_in_religion
+- every_holy_site_in_religion
+- allow_mysticism_vs_jurisprudence
+- land_morale_attrition_cost
+- navy_movement_speed
+- global_estate_target_satisfaction
+- mahayana
+- ai_wants_convert
+- global_peasants_estate_power
+- retreat_delay
+- clergy_estate_target_satisfaction
+- calvinist
+- hussite
+- lutheran
+- waldensian
+- judaism
+- shia
+- miaphysite
+- has_autocephalous_patriarchates
+- nestorianism
+- paulicianism
+- movement_speed_if_no_road
+- expand_rgo_forestry_cost_modifier
+- global_trade_protection_factor
+- bon
+- tibetan_buddhism
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/religions
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    color = <value>
+    group = <value>
+    religious_aspects = <value>
+    tolerance_heretic = <value>
+    tolerance_heathen = <value>
+    global_burghers_estate_power = <value>
+    prestige_from_land_battle = <value>
+    religious_school = <value>
+    merchant_maintenance_cost = <value>
+    land_morale_modifier = <value>
+    definition_modifier = {
+        # ...
+    }
+    opinions = {
+        # ...
+    }
+    tags = {
+        # ...
+    }
+    unique_names = {
+        # ...
+    }
+    custom_tags = {
+        # ...
+    }
+    max_religious_figures_for_religion = {
+        # ...
+    }
+    every_country_in_religion = {
+        # ...
+    }
+    every_holy_site_in_religion = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,134 @@
+COMMON/religious_focuses — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/religious_focuses/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- add
+- limit
+- if
+- capital
+- monthly_progress
+- modifier_while_progressing
+- modifier_on_completion
+- ai_will_do
+- effect_on_completion
+- custom_tooltip
+- adopt_ometeotl
+- allow
+- elevate_patron_god
+- establish_cihuacoatl
+- else_if
+- expand_cuahpipiltin
+- increase_militarism
+- institute_flower_wars
+- legal_reforms
+- NOT
+- change_institution_progress
+- else
+- add_location_modifier
+- raise_sacrifice_rate
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- add
+- value
+- desc
+- multiply
+- limit
+- if
+- capital
+- monthly_progress
+- min
+- modifier_while_progressing
+- modifier_on_completion
+- ai_will_do
+- has_completed_religious_focus
+- effect_on_completion
+- monthly_doom
+- global_estate_target_satisfaction
+- custom_tooltip
+- text
+- adopt_ometeotl
+- allow
+- clergy_estate_max_tax
+- country_child_education
+- elevate_patron_god
+- tolerance_own
+- global_pop_conversion_speed_modifier
+- establish_cihuacoatl
+- else_if
+- court_spending_cost
+- country_cabinet_efficiency
+- expand_cuahpipiltin
+- nobles_estate_target_satisfaction
+- global_manpower_modifier
+- increase_militarism
+- divide
+- army_maintenance_cost
+- army_tradition_decay
+- institute_flower_wars
+- global_nobles_estate_power
+- slave_raid_efficiency
+- legal_reforms
+- government_size
+- NOT
+- has_embraced_institution
+- change_institution_progress
+- type
+- else
+- add_location_modifier
+- modifier
+- years
+- mode
+- raise_sacrifice_rate
+- global_clergy_estate_power
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/religious_focuses
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    desc = <value>
+    multiply = <value>
+    min = <value>
+    add = <value>
+    has_completed_religious_focus = <value>
+    monthly_doom = <value>
+    global_estate_target_satisfaction = <value>
+    text = <value>
+    clergy_estate_max_tax = <value>
+    add = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    capital = {
+        # ...
+    }
+    monthly_progress = {
+        # ...
+    }
+    modifier_while_progressing = {
+        # ...
+    }
+    modifier_on_completion = {
+        # ...
+    }
+    ai_will_do = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

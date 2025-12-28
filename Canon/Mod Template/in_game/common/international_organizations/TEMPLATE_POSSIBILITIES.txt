@@ -1,0 +1,218 @@
+COMMON/international_organizations — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/international_organizations/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- if
+- add
+- OR
+- NOT
+- subtract
+- scope:recipient
+- root
+- every_international_organization_member
+- trigger_if
+- not
+- leader_country
+- giving_scripted_relation
+- else
+- AND
+- trigger_else
+- can_declare_war
+- create_visible_trigger
+- invite_visible_trigger
+- can_join_trigger
+- auto_leave_trigger
+- auto_disband_trigger
+- can_leave_trigger
+- ai_desire_to_join
+- ai_desire_to_allow_new_member
+- on_left
+- value
+- on_joined
+- scope:actor
+- else_if
+- modifier
+- can_lead_trigger
+- monthly_effect
+- leader_modifier
+- custom_tooltip
+- scope:target
+- every_owned_location
+- variables
+- any_international_organization_member
+- religion
+- set_variable
+- international_organization:foreign_league_hre
+- international_organization:foreign_league_iberia
+- international_organization:italian_league_1
+- international_organization:italian_league_2
+- international_organization:italian_league_3
+- international_organization:foreign_league_france
+- has_special_status_in_international_organization
+- or
+- leader
+- add_cooldown
+- opinion
+- has_military_access
+- scale
+- add_to_global_variable_list
+- remove_list_global_variable
+- special_statuses_implemented
+- NOR
+- multiply
+- any_international_organizations_member_of
+- on_disband
+- join_defensive_wars_always
+- is_member_of_international_organization_of_type
+- non_leader_modifier
+- any_subject
+- scope:attacker
+- culture
+- every_subject
+- scope:defender
+- hidden_effect
+- on_creation
+- any_owned_location
+- every_international_organization_owned_location
+- join_defensive_wars_auto_call
+- var:religion
+- can_initiate_policy_votes
+- join_offensive_wars_always
+- top_overlord
+- country_has_recently_left_situation_faction
+- country_has_recently_joined_situation_faction
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- limit
+- value
+- desc
+- add
+- if
+- subtract
+- OR
+- multiply
+- NOT
+- always
+- scope:recipient
+- root
+- type
+- every_international_organization_member
+- trigger_if
+- not
+- target
+- remove_country_from_international_organization
+- is_member_of_international_organization
+- this
+- exists
+- is_leader_of_international_organization
+- is_rival_of
+- leader_country
+- religion
+- giving_scripted_relation
+- else
+- is_enemy_of
+- AND
+- trigger_else
+- can_declare_war
+- create_visible_trigger
+- invite_visible_trigger
+- can_join_trigger
+- auto_leave_trigger
+- auto_disband_trigger
+- leader_type
+- can_leave_trigger
+- ai_desire_to_join
+- ai_desire_to_allow_new_member
+- on_left
+- expel_members_who_are_targets_of_other_members
+- is_subject
+- scope:actor
+- has_leader_country
+- on_joined
+- has_target
+- unique
+- divide
+- else_if
+- modifier
+- years
+- can_lead_trigger
+- name
+- disband_if_no_leader
+- monthly_effect
+- is_rebel_country
+- leader_modifier
+- show_on_diplomatic_map
+- custom_tooltip
+- text
+- scope:target
+- every_owned_location
+- variables
+- leader_color
+- add_to_list
+- any_international_organization_member
+- set_variable
+- international_organization
+- region
+- has_variable
+- international_organization:foreign_league_hre
+- international_organization:foreign_league_iberia
+- international_organization:italian_league_1
+- international_organization:italian_league_2
+- international_organization:italian_league_3
+- international_organization:foreign_league_france
+- format
+- leader_change_trigger_type
+- at_war
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/international_organizations
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    desc = <value>
+    always = <value>
+    multiply = <value>
+    type = <value>
+    target = <value>
+    remove_country_from_international_organization = <value>
+    is_member_of_international_organization = <value>
+    this = <value>
+    exists = <value>
+    limit = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    add = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    subtract = {
+        # ...
+    }
+    scope:recipient = {
+        # ...
+    }
+    root = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

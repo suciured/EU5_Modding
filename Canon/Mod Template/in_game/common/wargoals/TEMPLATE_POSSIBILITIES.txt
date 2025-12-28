@@ -1,0 +1,209 @@
+COMMON/wargoals — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/wargoals/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- defender
+- attacker
+- allowed_locations
+- allowed_subjugation
+- OR
+- scope:loser
+- scope:location
+- custom_tooltip
+- take_country
+- religious_conquer_province
+- conquer_province
+- imperial_ban_conquer_province
+- parliament_conquer_province
+- fabricated_conquer_province
+- take_province_tribal_feud
+- take_country_nationalist
+- take_capital
+- defend_capital
+- take_capital_tributary
+- take_capital_subjugation
+- take_capital_force_migration
+- take_capital_imperial
+- take_capital_claim_throne
+- independence_annexing_me
+- take_capital_coalition
+- take_capital_colony_war
+- take_capital_gag_force_country_into_faction
+- take_capital_prevent_annexation
+- take_border
+- independence
+- superiority
+- superiority_raiding
+- superiority_heretic
+- superiority_flower_wars
+- superiority_livonian_wars
+- superiority_push_back_colonizers
+- superiority_horde
+- timurs_war_superiority
+- superiority_against_hordes
+- humiliate
+- naval
+- demand_military_access
+- crusade_conquest
+- jihad_conquest
+- excommunication_conquest
+- hundred_years_war_wargoal
+- take_shogunate_wargoal
+- sengoku_wargoal
+- clan_expansion_wargoal
+- nanbokuchou_wargoal
+- red_turban_rebellions_wargoal
+- red_turban_rebellions_against_other_rebels_wargoal
+- dissolve_tatar_yoke_wargoal
+- league_of_public_weal_wargoal
+- unify_ilkhanate_wargoal
+- false_ilkhan_claimant_wargoal
+- shed_shackles_of_ilkhanate_wargoal
+- religious_superiority_wargoal
+- superiority_claim_china
+- take_capital_lodi_claims
+- superiority_reclaim_andalucia
+- superiority_sco_invade_england
+- superiority_chinese_unification
+- superiority_beaver_war
+- great_northern_conflict_conquest
+- province
+- any_location_in_province
+- AND
+- high_kingship_subjugate_wargoal
+- high_kingship_reclamation_wargoal
+- take_capital_liberate_hre_member
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- conquer_cost
+- subjugate_cost
+- type
+- defender
+- attacker
+- ticking_war_score
+- war_name
+- region
+- antagonism
+- allowed_locations
+- allowed_subjugation
+- OR
+- always
+- scope:loser
+- is_owned_by_international_organization
+- scope:location
+- call_in_overlord
+- custom_tooltip
+- text
+- scope:location.region
+- take_country
+- religious_conquer_province
+- conquer_province
+- imperial_ban_conquer_province
+- parliament_conquer_province
+- fabricated_conquer_province
+- take_province_tribal_feud
+- take_country_nationalist
+- take_capital
+- defend_capital
+- take_capital_tributary
+- casus_belli_forbids_location_conquest
+- casus_belli_forbids_normal_subjugation_tributary
+- take_capital_subjugation
+- take_capital_force_migration
+- take_capital_imperial
+- take_capital_claim_throne
+- independence_annexing_me
+- take_capital_coalition
+- take_capital_colony_war
+- take_capital_gag_force_country_into_faction
+- take_capital_prevent_annexation
+- take_border
+- independence
+- superiority
+- superiority_raiding
+- superiority_heretic
+- superiority_flower_wars
+- superiority_livonian_wars
+- superiority_push_back_colonizers
+- superiority_horde
+- timurs_war_superiority
+- superiority_against_hordes
+- humiliate
+- naval
+- demand_military_access
+- crusade_conquest
+- jihad_conquest
+- excommunication_conquest
+- hundred_years_war_wargoal
+- war_name_is_country_order_agnostic
+- take_shogunate_wargoal
+- sengoku_wargoal
+- clan_expansion_wargoal
+- nanbokuchou_wargoal
+- red_turban_rebellions_wargoal
+- red_turban_rebellions_against_other_rebels_wargoal
+- dissolve_tatar_yoke_wargoal
+- league_of_public_weal_wargoal
+- unify_ilkhanate_wargoal
+- false_ilkhan_claimant_wargoal
+- shed_shackles_of_ilkhanate_wargoal
+- religious_superiority_wargoal
+- superiority_claim_china
+- take_capital_lodi_claims
+- superiority_reclaim_andalucia
+- superiority_sco_invade_england
+- superiority_chinese_unification
+- superiority_beaver_war
+- great_northern_conflict_conquest
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/wargoals
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    conquer_cost = <value>
+    subjugate_cost = <value>
+    type = <value>
+    ticking_war_score = <value>
+    war_name = <value>
+    region = <value>
+    antagonism = <value>
+    always = <value>
+    is_owned_by_international_organization = <value>
+    call_in_overlord = <value>
+    defender = {
+        # ...
+    }
+    attacker = {
+        # ...
+    }
+    allowed_locations = {
+        # ...
+    }
+    allowed_subjugation = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    scope:loser = {
+        # ...
+    }
+    scope:location = {
+        # ...
+    }
+    custom_tooltip = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

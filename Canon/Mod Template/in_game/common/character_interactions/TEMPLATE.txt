@@ -1,0 +1,4 @@
+# COMMON/character_interactions TEMPLATE
+<key> = {
+    # definition block
+}

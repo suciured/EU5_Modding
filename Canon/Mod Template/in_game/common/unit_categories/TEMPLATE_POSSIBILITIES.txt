@@ -1,0 +1,107 @@
+COMMON/unit_categories — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/unit_categories/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- army_infantry
+- army_cavalry
+- army_artillery
+- army_auxiliary
+- navy_galley
+- combat
+- navy_light_ship
+- navy_heavy_ship
+- navy_transport
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- is_army
+- build_time
+- max_strength
+- frontage
+- initiative
+- combat_speed
+- flanking_ability
+- maintenance_demand
+- construction_demand
+- ai_weight
+- food_storage_per_strength
+- movement_speed
+- supply_weight
+- food_consumption_per_strength
+- damage_taken
+- secure_flanks_defense
+- minimum_levy_size
+- startup_amount
+- transport_capacity
+- anti_piracy_warfare
+- attrition_loss
+- army_infantry
+- assault
+- is_garrison
+- army_cavalry
+- army_artillery
+- bombard
+- army_auxiliary
+- auxiliary
+- navy_galley
+- combat
+- deep_ocean
+- ocean
+- inland_sea
+- narrows
+- navy_light_ship
+- navy_heavy_ship
+- navy_transport
+- transport
+- blockade_capacity
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/unit_categories
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    is_army = <value>
+    build_time = <value>
+    max_strength = <value>
+    frontage = <value>
+    initiative = <value>
+    combat_speed = <value>
+    flanking_ability = <value>
+    maintenance_demand = <value>
+    construction_demand = <value>
+    ai_weight = <value>
+    army_infantry = {
+        # ...
+    }
+    army_cavalry = {
+        # ...
+    }
+    army_artillery = {
+        # ...
+    }
+    army_auxiliary = {
+        # ...
+    }
+    navy_galley = {
+        # ...
+    }
+    combat = {
+        # ...
+    }
+    navy_light_ship = {
+        # ...
+    }
+    navy_heavy_ship = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

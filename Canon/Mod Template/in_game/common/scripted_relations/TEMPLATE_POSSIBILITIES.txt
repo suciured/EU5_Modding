@@ -1,0 +1,218 @@
+COMMON/scripted_relations — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/scripted_relations/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- scope:actor
+- scope:recipient
+- limit
+- add
+- if
+- not
+- NOT
+- category
+- visible
+- offer_enabled
+- OR
+- request_visible
+- break_visible
+- will_expire_trigger
+- wants_to_give_diplo_chance
+- wants_to_give
+- cancel_effect
+- break_effect
+- subtract
+- subject_type
+- offer_effect
+- giving_scripted_relation
+- wants_to_keep
+- request_enabled
+- wants_to_receive
+- add_opinion
+- break_enabled
+- else
+- add_truce_with
+- value
+- offer_visible
+- sea_zone
+- has_diplomacy_with
+- AND
+- wants_to_receive_diplo_chance
+- culture
+- remove_trust
+- expire_effect
+- create_relation
+- every_country_with_coalition_grade_antagonism_against_us
+- or
+- remove_opinion
+- any_subject
+- c:PAP
+- set_variable
+- cancel_enabled
+- remove_relation
+- receiving_scripted_relation
+- border_distance_to
+- relative_strength
+- wants_to_keep_diplo_chance
+- cancel_visible
+- every_port_in_country
+- scope:market
+- add_casus_belli
+- trigger_if
+- any_neighbor_country
+- country_has_special_status
+- save_temporary_value_as
+- scope:actor.union
+- every_in_list
+- remove_list_variable
+- add_trust
+- add_country_modifier
+- agitate_for_liberty
+- alliance
+- favors_to_first
+- favors_to_second
+- offer_declined_effect
+- else_if
+- any_current_war
+- is_on_same_side
+- anti_coalition_treaty
+- anti_piracy_agreement
+- any_port_in_country
+- request_effect
+- area
+- block_foreign_building
+- has_scripted_relation
+- corrupt_officials
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- scope:actor
+- scope:recipient
+- value
+- add
+- limit
+- desc
+- type
+- if
+- not
+- NOT
+- target
+- relation_type
+- category
+- offer
+- cancellation
+- break_on_war
+- multiply
+- visible
+- break
+- relation_type_for_ai
+- offer_enabled
+- OR
+- request_visible
+- is_subject
+- divide
+- modifier
+- subtract
+- base
+- request
+- break_visible
+- is_rival_of
+- trust_in_actor
+- has_limited_diplomacy
+- will_expire_trigger
+- wants_to_give_diplo_chance
+- positive_opinion
+- negative_opinion
+- wants_to_give
+- institution_spread_to_second
+- cancel_effect
+- royal_ties
+- country
+- max
+- break_effect
+- annulled_by_peace_treaty
+- receiving_color
+- remove_variable
+- block_when_at_war
+- actor_is_rival
+- border_distance
+- always
+- giving_defensive_support
+- receiving_defensive_support
+- same_international_organization
+- subject_type
+- name
+- offer_effect
+- giving_scripted_relation
+- relative_strength
+- wants_to_keep
+- has_ports
+- request_enabled
+- wants_to_receive
+- uses_diplo_capacity
+- diplomatic_capacity_cost
+- add_opinion
+- first
+- second
+- modifier:allowed_guarantee
+- strategic_interest
+- common_threat
+- break_enabled
+- else
+- modifier:target_of_military_sponsorships
+- break_on_becoming_subject
+- fleet_basing_rights
+- add_truce_with
+- actor_overlord_is_rival
+- offer_visible
+- diplomatic_cost_request
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/scripted_relations
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    desc = <value>
+    type = <value>
+    target = <value>
+    relation_type = <value>
+    offer = <value>
+    cancellation = <value>
+    break_on_war = <value>
+    multiply = <value>
+    break = <value>
+    scope:actor = {
+        # ...
+    }
+    scope:recipient = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    add = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    not = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    category = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

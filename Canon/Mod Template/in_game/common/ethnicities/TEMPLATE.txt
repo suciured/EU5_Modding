@@ -1,0 +1,4 @@
+# COMMON/ethnicities TEMPLATE
+<key> = {
+    # definition block
+}

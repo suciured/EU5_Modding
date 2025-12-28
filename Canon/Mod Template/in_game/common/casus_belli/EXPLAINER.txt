@@ -1,0 +1,9 @@
+COMMON/casus_belli EXPLAINER
+======================
+What goes here:
+- Data definitions belonging to the 'casus_belli' system.
+
+Safe modding patterns:
+- Add new keys/files where possible.
+- Avoid overwriting large base files unless necessary.
+- Keep keys unique (prefix your mod keys).

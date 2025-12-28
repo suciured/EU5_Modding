@@ -1,0 +1,4 @@
+# COMMON/holy_sites TEMPLATE
+<key> = {
+    # definition block
+}

@@ -1,0 +1,116 @@
+events/exploration — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold event files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/events/exploration/my_events.txt
+
+Event ids / namespaces seen (sample):
+- <namespace>.<id>
+
+Common keywords seen:
+- option
+- name
+- owner
+- change_exploration_progress
+- trigger
+- value
+- multiply
+- type
+- title
+- desc
+- immediate
+- location
+- leader
+- exists
+- save_scope_as
+- area
+- add_gold
+- is_coastal
+- has_owner
+- limit
+- is_area_sea
+- random_pop
+- NOT
+- is_land
+- OR
+- change_societal_value
+- scope:target_explorer
+- any_pop
+- culture
+- religion
+- hidden_effect
+- add_prestige
+- province_definition
+- hide_portraits
+- create_character
+- image
+- is_area_coastal_sea
+- scope:tribal_nation
+- market
+- is_produced_in_market
+- is_traded_in_market
+- age
+- birth_location
+- has_trait
+- illustration_tags
+- namespace
+- any_nomad_countries_in_location
+- random_nomad_countries_in_location
+- random_core_location
+- has_dynasty
+- female
+- scope:bride
+- add_character_modifier
+- add_country_modifier
+- modifier
+- years
+- mode
+- custom_tooltip
+- if
+- else
+- event_illustration_estate_effect
+- exploration_monthly.1
+- exploration_monthly.2
+- ordered_pop
+- order_by
+- max
+- add_pop_size
+- min
+- exploration_monthly.3
+- is_port
+- exploration_monthly.4
+- exploration_monthly.5
+- exploration_monthly.6
+- exploration_monthly.7
+- exploration_monthly.8
+- exploration_monthly.9
+- exploration_monthly.10
+- climate
+- continent
+- exploration_monthly.11
+
+Comprehensive example:
+# Comprehensive example for events/exploration
+# STRUCTURE ONLY: placeholder values
+
+event <namespace>.<id> = {
+    title = <localization_key>
+    desc = <localization_key>
+    picture = <gfx_key>
+
+    trigger = {
+        # conditions
+    }
+
+    immediate = {
+        # instant effects
+    }
+
+    option = {
+        name = <localization_key>
+        ai_chance = { factor = <value> }
+        # effects
+    }
+}

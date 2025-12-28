@@ -1,0 +1,216 @@
+COMMON/trigger_localization — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/trigger_localization/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- is_area_coastal_sea
+- has_accessible_coastline
+- area_exploration_progress
+- area_average_integration
+- is_area_fully_discovered
+- is_being_explored
+- adjacent_to_owned_by
+- adjacent_to_owned_or_owned_by_subject
+- adjacent_to_sea_or_owned_by
+- is_area_passable
+- is_area_sea
+- has_extended_winter
+- building_type
+- building_category
+- building_level
+- building_levels_under_construction
+- building_max_level
+- is_opened
+- is_at_max_level
+- is_full_capacity
+- is_subsidized
+- is_lacking_goods
+- is_building_owned_by
+- building_pop_type
+- employment_size
+- building_manpower_produced
+- building_sailors_produced
+- building_base_cost_in_gold
+- building_profit
+- building_potential_profit
+- building_index
+- building_produced_goods
+- building_goods_input
+- building_employment_size_amount
+- building_employed_amount
+- building_can_be_destroyed_by
+- cabinet_action_type
+- effective_skill
+- has_character_modifier
+- age_in_years
+- age_in_days
+- is_loyal
+- is_alive
+- has_cabinet_action
+- is_married
+- has_available_marriage_slot
+- is_eligible_for_royal_marriage
+- is_adult
+- is_courtier
+- is_ruler
+- is_consort
+- is_heir
+- has_dynasty
+- is_dynasty_head
+- is_female
+- is_pregnant
+- is_parent_of
+- is_child_of
+- is_spouse_of
+- is_sibling_of
+- is_close_relative
+- is_dynastic_descendant_of
+- is_patrilineal_descendant_of
+- is_matrilineal_descendant_of
+- adm
+- dip
+- mil
+- total_abilities
+- character_age
+- is_same_gender
+- is_artist
+- artist_type
+- religious_figure_type
+- in_cabinet
+- is_general
+- is_admiral
+- has_unit
+- has_exploration
+- has_exploration_construction
+- has_trait
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- global
+- none
+- third
+- first
+- global_not
+- third_not
+- first_not
+- none_not
+- is_area_coastal_sea
+- has_accessible_coastline
+- area_exploration_progress
+- area_average_integration
+- is_area_fully_discovered
+- is_being_explored
+- adjacent_to_owned_by
+- adjacent_to_owned_or_owned_by_subject
+- adjacent_to_sea_or_owned_by
+- is_area_passable
+- is_area_sea
+- has_extended_winter
+- building_type
+- building_category
+- building_level
+- building_levels_under_construction
+- building_max_level
+- is_opened
+- is_at_max_level
+- is_full_capacity
+- is_subsidized
+- is_lacking_goods
+- is_building_owned_by
+- building_pop_type
+- employment_size
+- building_manpower_produced
+- building_sailors_produced
+- building_base_cost_in_gold
+- building_profit
+- building_potential_profit
+- building_index
+- building_produced_goods
+- building_goods_input
+- building_employment_size_amount
+- building_employed_amount
+- building_can_be_destroyed_by
+- cabinet_action_type
+- effective_skill
+- has_character_modifier
+- age_in_years
+- age_in_days
+- is_loyal
+- is_alive
+- has_cabinet_action
+- is_married
+- has_available_marriage_slot
+- is_eligible_for_royal_marriage
+- is_adult
+- is_courtier
+- is_ruler
+- is_consort
+- is_heir
+- has_dynasty
+- is_dynasty_head
+- is_female
+- is_pregnant
+- is_parent_of
+- is_child_of
+- is_spouse_of
+- is_sibling_of
+- is_close_relative
+- is_dynastic_descendant_of
+- is_patrilineal_descendant_of
+- is_matrilineal_descendant_of
+- adm
+- dip
+- mil
+- total_abilities
+- character_age
+- is_same_gender
+- is_artist
+- artist_type
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/trigger_localization
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    global = <value>
+    none = <value>
+    third = <value>
+    first = <value>
+    global_not = <value>
+    third_not = <value>
+    first_not = <value>
+    none_not = <value>
+    is_area_coastal_sea = {
+        # ...
+    }
+    has_accessible_coastline = {
+        # ...
+    }
+    area_exploration_progress = {
+        # ...
+    }
+    area_average_integration = {
+        # ...
+    }
+    is_area_fully_discovered = {
+        # ...
+    }
+    is_being_explored = {
+        # ...
+    }
+    adjacent_to_owned_by = {
+        # ...
+    }
+    adjacent_to_owned_or_owned_by_subject = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

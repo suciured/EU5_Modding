@@ -1,0 +1,109 @@
+common/named_colors — TEMPLATE (POSSIBILITIES)
+==============================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- colors
+
+Common assignment keywords seen (often-used properties/blocks):
+- colors
+- map_tunica
+- todo_purple
+- white
+- yellow
+- black
+- blue
+- green
+- red
+- purple
+- grey
+- grey_dark
+- green_light
+- red_mid
+- red_light
+- red_dark
+- tyrian
+- peach
+- yellow_light
+- yellow_mid
+- yellow_dark
+- saffron
+- saffron_mid
+- orange
+- beige
+- maroon
+- brown
+- brown_light
+- blue_light
+- blue_mid
+- blue_dark
+- purple_mid
+- pearl
+- cream
+- ivory
+- cyan
+- white_secondary
+- black_secondary
+- red_secondary
+- blue_secondary
+- green_secondary
+- clay
+- brick
+- blue_gray
+- brown_dark
+- indigo
+- indigo_green
+- blue_sky
+- green_pine
+- brown_tea
+- red_scarlet
+- yellow_pale
+- map_debug
+- map_arpitan
+- map_austrian
+- map_german
+- map_cornish
+- map_corsican
+- map_danish
+- map_skane
+- map_gutnish
+- map_dutch
+- map_emilian
+- map_ENG
+- map_AIA
+- map_GBR
+- map_finnish
+- map_bjarmian
+- map_tavastian
+- map_kvens
+- map_savonian
+- map_sapmi
+- map_karelian
+- map_ingrian
+- map_friulian
+- map_highland
+- map_IRE
+- map_EUR
+- map_ROM
+- map_ITA
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/named_colors
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    map_tunica = <value>
+    todo_purple = <value>
+    white = <value>
+    yellow = <value>
+    black = <value>
+    blue = <value>
+    green = <value>
+    red = <value>
+    purple = <value>
+    grey = <value>
+    colors = {
+        # ...
+    }
+}

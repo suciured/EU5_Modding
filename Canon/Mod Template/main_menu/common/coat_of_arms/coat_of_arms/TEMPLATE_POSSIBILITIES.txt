@@ -1,0 +1,209 @@
+common/coat_of_arms/coat_of_arms — TEMPLATE (POSSIBILITIES)
+===========================================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- instance
+- colored_emblem
+- sub
+- textured_emblem
+- mask
+- position
+- scale
+- template
+- template_aragon_per_saltire_charge
+- sub_GLC
+- KUR
+- MNK
+- RUS
+- SPA_andorra
+- template_charge
+- template_charge_metal
+- template_charge_02
+- template_charge_02_metal
+- template_charge_03
+- template_charge_03_metal
+- template_charge_03_invert
+- template_charge_03_invert_metal
+- template_charge_90
+- template_charge_90_metal
+- template_charge_border
+- template_charge_border_metal
+- template_charge_roundel
+- template_charge_roundel_metal
+- template_charge_square
+- template_charge_square_metal
+- template_geometrical
+- template_geometrical_metal
+- template_charge_canton
+- template_charge_canton_metal
+- template_semy
+- template_semy_metal
+- template_nordic_cross
+- template_nordic_cross_metal
+- template_nordic_cross_canton_charge
+- template_nordic_cross_canton_charge_metal
+- template_nordic_cross_canton_ordinary
+- template_nordic_cross_canton_ordinary_metal
+- template_cross_of_charges
+- template_cross_of_charges_metal
+- template_3_charges
+- template_3_charges_metal
+- template_5_charges_saltire
+- template_5_charges_saltire_metal
+- template_senyera_half_left_charge
+- template_senyera_half_right_charge
+- template_senyera_half_left_two_charges
+- template_senyera_half_right_two_charges
+- template_senyera_third_left_charge
+- template_senyera_third_right_charge
+- template_senyera_quartered_charge_1
+- template_senyera_quartered_charge_1_metal
+- template_senyera_quartered_charge_2
+- template_senyera_quartered_charge_2_metal
+- template_senyera_quartered_diagonal_charge_left_right
+- template_senyera_quartered_diagonal_charge_top_bottom
+- template_senyera_diamond_charge
+- template_senyera_diamond_charge_metal
+- template_frame_circle_charge
+- template_frame_circle_charge_metal
+- template_ordinaries_islamic
+- template_ordinaries_islamic_metal
+- template_charge_offset
+- template_charge_offset_metal
+- template_charge_left_half
+- template_charge_left_half_metal
+- template_charge_right_half
+- template_charge_right_half_metal
+- template_charge_left_thirds
+- template_charge_left_thirds_metal
+- template_charge_right_thirds
+- template_charge_right_thirds_metal
+- template_charge_canton_corner
+- template_charge_canton_corner_metal
+- template_charge_corners_4_charges
+- template_charge_corners_4_charges_metal
+
+Common assignment keywords seen (often-used properties/blocks):
+- instance
+- color1
+- color2
+- texture
+- colored_emblem
+- color3
+- pattern
+- sub
+- parent
+- color4
+- color5
+- textured_emblem
+- mask
+- position
+- scale
+- @third
+- @sixth
+- @five_sixths
+- @three_quarters
+- @two_thirds
+- @half
+- @quarter
+- @semy
+- @ratio
+- @height
+- @width
+- @border_charge_scale
+- @nordic_cross_canton_pixel_width
+- @nordic_cross_canton_pixel_height
+- @nordic_cross_canton_width
+- @nordic_cross_canton_height
+- @nordic_cross_canton_center_x
+- @nordic_cross_canton_center_y
+- template
+- template_aragon_per_saltire_charge
+- sub_GLC
+- KUR
+- MNK
+- RUS
+- SPA_andorra
+- template_charge
+- template_charge_metal
+- template_charge_02
+- template_charge_02_metal
+- template_charge_03
+- template_charge_03_metal
+- template_charge_03_invert
+- template_charge_03_invert_metal
+- template_charge_90
+- template_charge_90_metal
+- template_charge_border
+- template_charge_border_metal
+- template_charge_roundel
+- template_charge_roundel_metal
+- template_charge_square
+- template_charge_square_metal
+- template_geometrical
+- template_geometrical_metal
+- template_charge_canton
+- template_charge_canton_metal
+- template_semy
+- template_semy_metal
+- template_nordic_cross
+- template_nordic_cross_metal
+- template_nordic_cross_canton_charge
+- template_nordic_cross_canton_charge_metal
+- template_nordic_cross_canton_ordinary
+- template_nordic_cross_canton_ordinary_metal
+- template_cross_of_charges
+- template_cross_of_charges_metal
+- template_3_charges
+- template_3_charges_metal
+- template_5_charges_saltire
+- template_5_charges_saltire_metal
+- template_senyera_half_left_charge
+- template_senyera_half_right_charge
+- template_senyera_half_left_two_charges
+- template_senyera_half_right_two_charges
+- template_senyera_third_left_charge
+- template_senyera_third_right_charge
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/coat_of_arms/coat_of_arms
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    color1 = <value>
+    color2 = <value>
+    texture = <value>
+    color3 = <value>
+    pattern = <value>
+    parent = <value>
+    color4 = <value>
+    color5 = <value>
+    @third = <value>
+    @sixth = <value>
+    instance = {
+        # ...
+    }
+    colored_emblem = {
+        # ...
+    }
+    sub = {
+        # ...
+    }
+    textured_emblem = {
+        # ...
+    }
+    mask = {
+        # ...
+    }
+    position = {
+        # ...
+    }
+    scale = {
+        # ...
+    }
+    template = {
+        # ...
+    }
+}

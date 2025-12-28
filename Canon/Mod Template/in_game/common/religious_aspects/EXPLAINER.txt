@@ -1,0 +1,9 @@
+COMMON/religious_aspects EXPLAINER
+======================
+What goes here:
+- Data definitions belonging to the 'religious_aspects' system.
+
+Safe modding patterns:
+- Add new keys/files where possible.
+- Avoid overwriting large base files unless necessary.
+- Keep keys unique (prefix your mod keys).

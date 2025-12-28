@@ -1,0 +1,116 @@
+events/economy — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold event files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/events/economy/my_events.txt
+
+Event ids / namespaces seen (sample):
+- <namespace>.<id>
+
+Common keywords seen:
+- name
+- option
+- type
+- desc
+- NOT
+- title
+- trigger
+- limit
+- immediate
+- OR
+- save_scope_as
+- image
+- illustration_tags
+- has_location_modifier
+- integration_level
+- area
+- value
+- change_societal_value
+- event_illustration_estate_effect
+- has_variable
+- has_building_with_at_least_one_level
+- add_prestige
+- region
+- owner
+- if
+- add_country_modifier
+- change_development
+- add_location_modifier
+- has_advance
+- add_temporary_demand
+- capital.market
+- change_gold_effect
+- current_age_or_later
+- capital
+- hide_portraits
+- has_embraced_institution
+- exists
+- current_age
+- any_location_in_region
+- random_location_in_region
+- fire_only_once
+- is_produced_in_market
+- add_stability
+- has_markets
+- any_privateer_from_country
+- months
+- add_opinion
+- AND
+- root
+- market
+- continent
+- is_traded_in_market
+- namespace
+- custom_tooltip
+- multiply
+- set_variable
+- culture
+- is_member_of_international_organization
+- add_gold
+- add_estate_satisfaction
+- add_government_power
+- else
+- most_powerful_merchant
+- trigger_event_silently
+- random_owned_location
+- any_market_with_merchants
+- artist_type
+- NOR
+- owns
+- change_building_level_in_location
+- location_rank
+- any_owned_location
+- from
+- to
+- amount
+- add_army_tradition
+- event_illustration_poptype_effect
+- change_prosperity
+- location.continent
+- hidden_effect
+
+Comprehensive example:
+# Comprehensive example for events/economy
+# STRUCTURE ONLY: placeholder values
+
+event <namespace>.<id> = {
+    title = <localization_key>
+    desc = <localization_key>
+    picture = <gfx_key>
+
+    trigger = {
+        # conditions
+    }
+
+    immediate = {
+        # instant effects
+    }
+
+    option = {
+        name = <localization_key>
+        ai_chance = { factor = <value> }
+        # effects
+    }
+}

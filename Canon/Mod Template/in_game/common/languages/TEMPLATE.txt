@@ -1,0 +1,4 @@
+# COMMON/languages TEMPLATE
+<key> = {
+    # definition block
+}

@@ -1,0 +1,218 @@
+COMMON/disasters — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/disasters/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- random_list
+- NOT
+- OR
+- set_variable
+- if
+- modifier
+- custom_tooltip
+- can_start
+- can_end
+- on_start
+- on_end
+- on_monthly
+- hidden_effect
+- value
+- else
+- trigger_if
+- AND
+- trigger_event_silently
+- else_if
+- trigger_else
+- NOR
+- random
+- trigger
+- any_rebel
+- every_character
+- clear_gui_variable
+- any_character
+- random_known_country
+- add_country_modifier
+- switch
+- had_disaster_trigger
+- set_ended_disaster_flag_effect
+- change_variable
+- random_neighbor_country
+- situation:fall_of_delhi
+- c:DLH
+- root
+- religion_percentage_in_country
+- add
+- ccw_sided_with_legal_heir
+- ccw_sided_with_bastard_heir
+- c:ENG
+- hidden_trigger
+- any_neighbor_country
+- has_mutual_scripted_relation
+- ROOT
+- trigger_event_non_silently
+- votes_for_resolution
+- current_age_or_later
+- show_as_tooltip
+- any_character_supporting_rebel
+- opinion
+- rebel
+- ambrosian_republic_disaster
+- aspiration_for_liberty
+- byzantine_succession_crisis
+- castilian_civil_war
+- c:FRA
+- scope:pretender_ally_nation
+- c:ARA
+- c:POR
+- scope:iberian_pretender_ally_nation
+- ciompi_revolt
+- coup_attempt
+- any_estate
+- had_disaster_for_years
+- court_and_country
+- crisis_of_the_chinese_dynasty
+- international_organization:middle_kingdom
+- crisis_of_the_sayfawa_dynasty
+- ruler_or_regent
+- curse_of_stefan_uros_iii
+- character:ser_stefan_dusan
+- death_of_hayan_wuruk
+- c:MAJ
+- decline_of_empire
+- age_2_renaissance
+- age_3_discovery
+- age_4_reformation
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- limit
+- random_list
+- trigger_event_non_silently
+- NOT
+- trigger_event_silently
+- set_variable
+- OR
+- if
+- value
+- modifier
+- custom_tooltip
+- name
+- text
+- image
+- monthly_spawn_chance
+- can_start
+- can_end
+- on_start
+- on_end
+- on_monthly
+- hidden_effect
+- add
+- remove_variable
+- tag
+- has_any_active_disaster
+- has_variable
+- global_estate_target_satisfaction
+- government_type
+- else
+- trigger_if
+- at_war
+- id
+- AND
+- multiply
+- in_civil_war
+- max
+- save_scope_as
+- current_age
+- is_adult
+- monthly_rebel_growth
+- else_if
+- trigger
+- monthly_legitimacy
+- min
+- trigger_else
+- global_crown_estate_power
+- exists
+- has_regent
+- has_heir
+- NOR
+- destroy_rebel
+- years
+- remove_country_modifier
+- random
+- chance
+- country_rank
+- type
+- any_rebel
+- religion
+- stability_investment
+- monthly_pretender_rebel_growth
+- every_character
+- remove_character_modifier
+- clear_gui_variable
+- any_character
+- has_ruler
+- random_known_country
+- target
+- has_country_modifier
+- rebel_name_key
+- is_subject
+- stability_cost
+- blocked_from_creating_subjects
+- add_legitimacy
+- is_eligible_heir
+- has_character_modifier
+- is_legally_male
+- add_country_modifier
+- mode
+- switch
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/disasters
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    trigger_event_non_silently = <value>
+    trigger_event_silently = <value>
+    name = <value>
+    text = <value>
+    image = <value>
+    monthly_spawn_chance = <value>
+    remove_variable = <value>
+    add = <value>
+    tag = <value>
+    value = <value>
+    limit = {
+        # ...
+    }
+    random_list = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    set_variable = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    modifier = {
+        # ...
+    }
+    custom_tooltip = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

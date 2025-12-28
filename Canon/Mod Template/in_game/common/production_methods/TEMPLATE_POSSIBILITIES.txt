@@ -1,0 +1,212 @@
+COMMON/production_methods — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/production_methods/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- potential
+- estate_building_input
+- incamisana_maintennace
+- soldier_building_maintenance
+- early_soldier_building_maintenance
+- warrior_monks_training_grounds_maintenance
+- nahuatl_warrior_building_maintenance
+- cardinal_maintenance
+- monastery_maintenance
+- hab_reformed_monastery_maintenance
+- lutheran_preacher_maintenance
+- confucian_school_maintenance
+- sufi_lodge_maintenance
+- temple_maintenance
+- library_maintenance
+- theater_maintenance
+- qalat_al_mashwar_maintenance
+- art_school_maintenance
+- arts_academy_maintenance
+- mint_maintenance
+- dun_fort_maintenance
+- fortress_church_maintenance
+- basic_castle_maintenance
+- ruined_great_wall_of_china_maintenance
+- repaired_great_wall_of_china_maintenance
+- korean_gunnery_maintenance
+- port_building_maintenance
+- galley_barracks_maintenance
+- janissary_barracks_maintenance
+- ghilman_barracks_maintenance
+- safaviyya_order_hall_maintenance
+- cawa_barracks_maintenance
+- port_authority_maintenance
+- satellite_trade_building_requirements
+- kontor_maintenance
+- fondaco_maintenance
+- venetian_quarter_maintenance
+- galata_maintenance
+- market_center_building_maintenance
+- warehouse_maintenance
+- urban_parliament_seat_maintenance
+- early_capital_building_maintenance
+- early_capital_building_silver_maintenance
+- capital_administration_maintenance
+- expensive_capital_administration_maintenance
+- capital_building_maintenance
+- prestige_building_maintenance
+- colony_maintenance
+- missionary_maintenance
+- fur_trading_post_maintenance
+- order_commandery_maintenance
+- pirate_haven_maintenance
+- great_zimbabwe_maintenance
+- khmer_baray_maintenance
+- overseas_trading_post_maintenance
+- hospital_maintenance
+- bridge_maintenance
+- pound_lock_canal_infrastructure_maintenance
+- panaqa_building_input
+- hanseatic_town_hall_maintenance
+- ablaq_palace_maintenance
+- oma_falaj_maintenance
+- sevilla_bullfighting_school_maintenance
+- composite_nature_maintenance
+- single_nature_maintenance
+- dual_nature_maintenance
+- separate_nature_maintenance
+- pirate_stronghold_maintenance
+- black_market_maintenance
+- smuggler_cove_maintenance
+- brothel_maintenance
+- pirate_tavern_maintenance
+- rahdar_maintenance
+- ori_portuguese_quarters_maintenance
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- category
+- paper
+- lumber
+- tools
+- cloth
+- weaponry
+- stone
+- glass
+- books
+- fine_cloth
+- marble
+- goods_gold
+- leather
+- naval_supplies
+- furniture
+- liquor
+- firearms
+- potential
+- has_variable
+- copper
+- clay
+- beeswax
+- tin
+- tar
+- slaves_goods
+- beer
+- no_upkeep
+- dyes
+- silver
+- salt
+- ivory
+- masonry
+- medicaments
+- estate_building_input
+- incamisana_maintennace
+- soldier_building_maintenance
+- early_soldier_building_maintenance
+- warrior_monks_training_grounds_maintenance
+- nahuatl_warrior_building_maintenance
+- cardinal_maintenance
+- monastery_maintenance
+- hab_reformed_monastery_maintenance
+- lutheran_preacher_maintenance
+- confucian_school_maintenance
+- sufi_lodge_maintenance
+- incense
+- temple_maintenance
+- library_maintenance
+- theater_maintenance
+- wine
+- qalat_al_mashwar_maintenance
+- jewelry
+- art_school_maintenance
+- arts_academy_maintenance
+- mint_maintenance
+- dun_fort_maintenance
+- fortress_church_maintenance
+- basic_castle_maintenance
+- ruined_great_wall_of_china_maintenance
+- repaired_great_wall_of_china_maintenance
+- korean_gunnery_maintenance
+- cannons
+- port_building_maintenance
+- galley_barracks_maintenance
+- janissary_barracks_maintenance
+- ghilman_barracks_maintenance
+- safaviyya_order_hall_maintenance
+- cawa_barracks_maintenance
+- port_authority_maintenance
+- satellite_trade_building_requirements
+- kontor_maintenance
+- fondaco_maintenance
+- venetian_quarter_maintenance
+- galata_maintenance
+- market_center_building_maintenance
+- pottery
+- warehouse_maintenance
+- urban_parliament_seat_maintenance
+- early_capital_building_maintenance
+- early_capital_building_silver_maintenance
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/production_methods
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    category = <value>
+    paper = <value>
+    lumber = <value>
+    tools = <value>
+    cloth = <value>
+    weaponry = <value>
+    stone = <value>
+    glass = <value>
+    books = <value>
+    fine_cloth = <value>
+    potential = {
+        # ...
+    }
+    estate_building_input = {
+        # ...
+    }
+    incamisana_maintennace = {
+        # ...
+    }
+    soldier_building_maintenance = {
+        # ...
+    }
+    early_soldier_building_maintenance = {
+        # ...
+    }
+    warrior_monks_training_grounds_maintenance = {
+        # ...
+    }
+    nahuatl_warrior_building_maintenance = {
+        # ...
+    }
+    cardinal_maintenance = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

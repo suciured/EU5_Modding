@@ -1,0 +1,209 @@
+setup/start — TEMPLATE (POSSIBILITIES)
+======================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- define_pop
+- first_name
+- ruler_term
+- government
+- own_control_core
+- name
+- tolerated_cultures
+- dependency
+- stockade
+- nickname
+- add_pops_from_locations
+- reforms
+- laws
+- last_name
+- male_names
+- regnal_numbers
+- female_names
+- data
+- shoen
+- yamashiro
+- our_cores_conquered_by_others
+- variables
+- discovered_regions
+- cathedral
+- yakata
+- castle
+- own_control_integrated
+- monastery
+- opinion
+- request
+- privilege
+- kokufu
+- monument
+- timed_modifier
+- order_commandery
+- discovered_areas
+- add_international_organization
+- members
+- defender
+- tar_kiln
+- accepted_cultures
+- rival
+- ruined_great_wall_of_china
+- trade_office
+- market_village
+- hanseatic_kontor
+- tatara
+- kurultai
+- attacker
+- own_control_conquered
+- clan_shipyards
+- university
+- scripted_mutual
+- elephant_hunting_grounds
+- banking_office
+- areas
+- currency_data
+- regions
+- fishing_village
+- jurchen_barracks
+- regalia
+- seat_of_cardinal
+- order_stronghold
+- mason
+- chronicle
+- saint
+- gallowglass_sept
+- orthodox_monastery
+- clan_family_shrine
+- parliament
+- provinces
+- dock
+- add_exploration_preference
+- nobility_fortifications
+- sergeantry
+- pirate_haven
+- scripted_oneway
+- stannary_court
+- royal_court
+- painting
+
+Common assignment keywords seen (often-used properties/blocks):
+- define_pop
+- feudalism
+- legalism
+- religion
+- tag
+- first_name
+- culture
+- birth_date
+- birth
+- dynasty
+- father
+- include
+- death_date
+- ruler_term
+- estate
+- meritocracy
+- government
+- ruler
+- capital
+- type
+- adm
+- mother
+- own_control_core
+- female
+- spouse
+- name
+- home
+- heir_selection
+- ruler_trait
+- starting_technology_level
+- tolerated_cultures
+- country_rank
+- dependency
+- stockade
+- nickname
+- character
+- add_pops_from_locations
+- dynasty_name_type
+- reforms
+- laws
+- last_name
+- court_language
+- male_names
+- regnal_numbers
+- female_names
+- data
+- shoen
+- religious_school
+- yamashiro
+- our_cores_conquered_by_others
+- sharia_law
+- variables
+- discovered_regions
+- cathedral
+- flag
+- identity
+- yakata
+- add_market
+- castle
+- attacker
+- child_trait
+- land_vs_naval
+- reason
+- own_control_integrated
+- liturgical_language
+- name_john
+- country
+- monastery
+- opinion
+- request
+- name_henry
+- privilege
+- defender
+- caller
+- start_date
+- aristocracy_vs_plutocracy
+- modifier
+- kokufu
+- capital_economy_vs_traditional_economy
+- name_william
+
+Comprehensive example (placeholders only):
+# Comprehensive example for setup/start
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    feudalism = <value>
+    legalism = <value>
+    religion = <value>
+    tag = <value>
+    culture = <value>
+    birth_date = <value>
+    birth = <value>
+    dynasty = <value>
+    father = <value>
+    include = <value>
+    define_pop = {
+        # ...
+    }
+    first_name = {
+        # ...
+    }
+    ruler_term = {
+        # ...
+    }
+    government = {
+        # ...
+    }
+    own_control_core = {
+        # ...
+    }
+    name = {
+        # ...
+    }
+    tolerated_cultures = {
+        # ...
+    }
+    dependency = {
+        # ...
+    }
+}

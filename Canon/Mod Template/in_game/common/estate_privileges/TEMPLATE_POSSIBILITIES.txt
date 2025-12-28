@@ -1,0 +1,218 @@
+COMMON/estate_privileges — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/estate_privileges/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- country_modifier
+- potential
+- allow
+- can_revoke
+- NOT
+- OR
+- has_unlocked_estate_privilege_trigger
+- potential_trigger
+- custom_tooltip
+- limit
+- trigger_if
+- location_modifier
+- if
+- scale
+- on_activate
+- any_overlord_or_above
+- remove_opinion
+- on_deactivate
+- any_international_organizations_member_of
+- not
+- add_opinion
+- reverse_add_opinion
+- c:PAP
+- any_non_state_religion_location
+- formal_guilds
+- trade_monopolies
+- control_over_monetary_policy
+- building_rights
+- burghers_royal_burgh_commissioners
+- burghers_land_rights
+- commercial_advisory_council
+- milanese_cloth_guilds_privileges
+- florence_guilds
+- novgorod_ivans_hundred
+- kbo_lake_chad_trade_privilege
+- kbo_serfdom_economy
+- amenokal_salt_traders
+- burghers_protected_faith
+- land_of_commerce
+- treasury_rights
+- urban_development_grants
+- sponsor_maritime_contracts
+- control_over_the_coinage
+- allow_trade_center_sponsorship
+- shipwright_contracts
+- market_fairs
+- fund_karimi
+- toll_and_tariff_exemptions
+- dedicated_merchant_courts
+- noble_patronage
+- polish_merchant_seal
+- privateer_contracts
+- ceremonial_tax_exemptions
+- kulm_law
+- villes_franches
+- fra_leadership_of_marcel
+- any_character
+- fra_marcel_great_ordinance
+- fra_marcel_compromise_ordinance
+- petty_bureaucracy
+- cardinal_lead_guilds
+- libro_d_argento
+- bra_kreditwerk
+- bra_kreditwerk_reformed
+- vij_tamil_trading_rights
+- jain_banking_rights
+- religion_percentage_in_country
+- jain_scholars
+- consolidated_corruption_of_the_burghers
+- magdeburg_rights
+- novi_fori
+- shooting_societies
+- building_roads_rights
+- kannada_literature_aid
+- vij_allowance_of_religious_practices
+- mam_muhtasibs
+- trunk_road_to_erzurum_privilege
+- cas_mita_system
+- royal_factories_privilege
+- ira_iranian_art_patronage
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- country_modifier
+- estate
+- potential
+- global_nobles_estate_power
+- allow
+- can_revoke
+- nobles_estate_target_satisfaction
+- global_burghers_estate_power
+- has_or_had_tag
+- has_variable
+- burghers_estate_target_satisfaction
+- NOT
+- global_clergy_estate_power
+- OR
+- clergy_estate_target_satisfaction
+- peasants_estate_target_satisfaction
+- global_peasants_estate_power
+- has_unlocked_estate_privilege_trigger
+- monthly_towards_decentralization
+- potential_trigger
+- government_type
+- monthly_towards_aristocracy
+- type
+- nobles_estate_max_tax
+- monthly_towards_free_subjects
+- custom_tooltip
+- global_tribes_estate_power
+- text
+- religion
+- limit
+- dhimmi_estate_target_satisfaction
+- tribes_estate_target_satisfaction
+- country_cabinet_efficiency
+- global_cossacks_estate_power
+- global_dhimmi_estate_power
+- add
+- burghers_estate_max_tax
+- cossacks_estate_target_satisfaction
+- nobles_estate_levy_size
+- trade_efficiency
+- has_advance
+- monthly_towards_centralization
+- target
+- owns
+- monthly_towards_serfdom
+- tax_income_efficiency
+- trigger_if
+- global_max_control
+- location_modifier
+- has_estate_privilege
+- modifier
+- monthly_towards_plutocracy
+- monthly_towards_innovative
+- global_pop_promotion_speed_modifier
+- value
+- tolerance_heathen
+- peasants_estate_max_tax
+- global_crown_estate_power
+- if
+- monthly_towards_communalism
+- monthly_towards_spiritualist
+- monthly_army_tradition
+- global_merchant_capacity_modifier
+- monthly_towards_capital_economy
+- global_production_efficiency
+- legislative_efficiency
+- scale
+- monthly_towards_traditionalist
+- on_activate
+- cultural_influence_modifier
+- area
+- bank_interest
+- region
+- global_pop_conversion_speed_modifier
+- any_overlord_or_above
+- monthly_towards_quality
+- sub_continent
+- research_speed_modifier
+- tolerance_heretic
+- has_reform
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/estate_privileges
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    estate = <value>
+    global_nobles_estate_power = <value>
+    nobles_estate_target_satisfaction = <value>
+    global_burghers_estate_power = <value>
+    has_or_had_tag = <value>
+    has_variable = <value>
+    burghers_estate_target_satisfaction = <value>
+    global_clergy_estate_power = <value>
+    clergy_estate_target_satisfaction = <value>
+    peasants_estate_target_satisfaction = <value>
+    country_modifier = {
+        # ...
+    }
+    potential = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    can_revoke = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    has_unlocked_estate_privilege_trigger = {
+        # ...
+    }
+    potential_trigger = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

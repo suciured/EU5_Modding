@@ -1,0 +1,110 @@
+COMMON/diplomatic_costs — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/diplomatic_costs/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- infiltrate_administration
+- casus_belli_creation
+- support_rebels
+- military_access
+- fleet_basing_rights
+- break_others_alliance_cost
+- anti_piracy_agreement_cost
+- sabotage_reputation_cost
+- scout_enemy_holdings_cost
+- sabotage_clans_buildings_cost
+- corrupt_officials_cost
+- sow_discontent_cost
+- agitate_for_liberty_cost
+- force_change_court_language_cost
+- ask_support_curia_proposal_cost
+- ask_reject_curia_proposal_cost
+- sell_icon_cost
+- subject_return_land_cost
+- start_war_in_colony_cost
+- knowledge_sharing_cost
+- demand_additional_tribute_cost
+- steal_technology_cost
+- steal_maps_cost
+- improve_cultural_view_cost
+- ask_to_vote_for_me_as_emperor_cost
+- ask_for_money_cost
+- ask_join_war_for_favors_cost
+- renegotiate_loan_cost
+- invite_settlers_cost
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- favors
+- spy_network
+- infiltrate_administration
+- casus_belli_creation
+- support_rebels
+- military_access
+- fleet_basing_rights
+- break_others_alliance_cost
+- anti_piracy_agreement_cost
+- sabotage_reputation_cost
+- scout_enemy_holdings_cost
+- sabotage_clans_buildings_cost
+- corrupt_officials_cost
+- sow_discontent_cost
+- agitate_for_liberty_cost
+- force_change_court_language_cost
+- ask_support_curia_proposal_cost
+- ask_reject_curia_proposal_cost
+- sell_icon_cost
+- subject_return_land_cost
+- start_war_in_colony_cost
+- knowledge_sharing_cost
+- demand_additional_tribute_cost
+- steal_technology_cost
+- steal_maps_cost
+- improve_cultural_view_cost
+- ask_to_vote_for_me_as_emperor_cost
+- ask_for_money_cost
+- ask_join_war_for_favors_cost
+- renegotiate_loan_cost
+- invite_settlers_cost
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/diplomatic_costs
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    favors = <value>
+    spy_network = <value>
+    infiltrate_administration = {
+        # ...
+    }
+    casus_belli_creation = {
+        # ...
+    }
+    support_rebels = {
+        # ...
+    }
+    military_access = {
+        # ...
+    }
+    fleet_basing_rights = {
+        # ...
+    }
+    break_others_alliance_cost = {
+        # ...
+    }
+    anti_piracy_agreement_cost = {
+        # ...
+    }
+    sabotage_reputation_cost = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

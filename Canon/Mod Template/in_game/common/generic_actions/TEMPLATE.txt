@@ -1,0 +1,4 @@
+# COMMON/generic_actions TEMPLATE
+<key> = {
+    # definition block
+}

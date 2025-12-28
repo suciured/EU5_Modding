@@ -1,0 +1,217 @@
+COMMON/scriptable_hints — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/scriptable_hints/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- priority
+- player_playstyle
+- hide
+- NOT
+- OR
+- any_active_disaster
+- hint_in_deficit
+- hint_cultural_capacity
+- hint_manpower
+- hint_unhappy_estates
+- any_estate
+- hint_low_stability
+- hint_very_low_stability
+- hint_low_legitimacy
+- hint_low_republican_tradition
+- hint_low_devotion
+- hint_low_horde_unity
+- hint_low_tribal_cohesion
+- hint_war_exhaustion
+- hint_low_sailors
+- hint_low_diplomats
+- hint_low_food_in_market
+- hint_over_diplo_capacity
+- hint_rebels_growing
+- any_rebel
+- hint_call_for_peace
+- hint_unprofitable_buildings
+- hint_trade
+- hint_unused_trade_capacity
+- hint_unprofitable_trade_route
+- hint_market_out_of_supply
+- hint_increasing_trade_capacity
+- hint_increasing_trade_advantage
+- hint_pops_with_needs_yellow
+- hint_pops_with_needs_red
+- hint_has_possible_reform
+- hint_has_conquered_provinces
+- hint_has_possible_cabinet_action
+- hint_has_possible_law
+- hint_has_army_without_leader
+- hint_is_heir_underage
+- hint_has_unmarried_adult_ruler
+- hint_can_do_more_research
+- hint_lack_cabinet_for_cabinet_action
+- hint_inflation
+- hint_has_disloyal_subjects
+- hint_has_buildings_missing_input
+- hint_has_constructions_missing_input
+- hint_lack_pop_promotion_to_fill_buildings
+- hint_casus_belli
+- hint_has_unraised_levies_in_war
+- hint_no_allies
+- any_related_country
+- hint_war
+- hint_battle
+- hint_siege_and_occupation
+- hint_lacks_of_rivals
+- hint_control
+- hint_crown_power
+- hint_estates
+- hint_markets
+- hint_food
+- hint_maritime
+- hint_coup_attempt
+- hint_crisis_of_the_chinese_dynasty
+- hint_fall_of_delhi
+- hint_black_death
+- hint_rise_of_the_ottomans
+- hint_golden_age_of_piracy
+- hint_hundred_years_war
+- hint_hussite_wars
+- hint_italian_wars
+- hint_little_ice_age
+- hint_the_revolution
+- hint_treaty_of_tordesillas
+- hint_great_pestilence
+- hint_columbian_exchange
+- hint_western_schism
+- hint_reformation
+- hint_council_of_trent
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- sort_priority
+- priority
+- hint_tag
+- player_playstyle
+- style
+- hide
+- NOT
+- is_alert_shown
+- can_see_situation
+- tag
+- OR
+- is_situation_active
+- any_active_disaster
+- at_war
+- hint_in_deficit
+- hint_cultural_capacity
+- hint_manpower
+- hint_unhappy_estates
+- any_estate
+- hint_low_stability
+- hint_very_low_stability
+- hint_low_legitimacy
+- hint_low_republican_tradition
+- hint_low_devotion
+- hint_low_horde_unity
+- hint_low_tribal_cohesion
+- hint_war_exhaustion
+- hint_low_sailors
+- hint_low_diplomats
+- hint_low_food_in_market
+- hint_over_diplo_capacity
+- hint_rebels_growing
+- any_rebel
+- hint_call_for_peace
+- hint_unprofitable_buildings
+- hint_trade
+- hint_unused_trade_capacity
+- hint_unprofitable_trade_route
+- hint_market_out_of_supply
+- hint_increasing_trade_capacity
+- hint_increasing_trade_advantage
+- hint_pops_with_needs_yellow
+- hint_pops_with_needs_red
+- hint_has_possible_reform
+- hint_has_conquered_provinces
+- hint_has_possible_cabinet_action
+- hint_has_possible_law
+- hint_has_army_without_leader
+- hint_is_heir_underage
+- hint_has_unmarried_adult_ruler
+- hint_can_do_more_research
+- hint_lack_cabinet_for_cabinet_action
+- hint_inflation
+- hint_has_disloyal_subjects
+- hint_has_buildings_missing_input
+- hint_has_constructions_missing_input
+- hint_lack_pop_promotion_to_fill_buildings
+- hint_casus_belli
+- hint_has_unraised_levies_in_war
+- hint_no_allies
+- any_related_country
+- type
+- hint_war
+- hint_battle
+- hint_siege_and_occupation
+- hint_lacks_of_rivals
+- hint_control
+- hint_crown_power
+- hint_estates
+- hint_markets
+- hint_food
+- hint_maritime
+- hint_coup_attempt
+- hint_crisis_of_the_chinese_dynasty
+- hint_fall_of_delhi
+- hint_black_death
+- hint_rise_of_the_ottomans
+- hint_golden_age_of_piracy
+- hint_hundred_years_war
+- hint_hussite_wars
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/scriptable_hints
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    sort_priority = <value>
+    hint_tag = <value>
+    style = <value>
+    is_alert_shown = <value>
+    can_see_situation = <value>
+    tag = <value>
+    is_situation_active = <value>
+    at_war = <value>
+    type = <value>
+    priority = {
+        # ...
+    }
+    player_playstyle = {
+        # ...
+    }
+    hide = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    any_active_disaster = {
+        # ...
+    }
+    hint_in_deficit = {
+        # ...
+    }
+    hint_cultural_capacity = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

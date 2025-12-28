@@ -1,0 +1,4 @@
+# GUI TEMPLATE
+<gui_block_key> = {
+    # properties
+}

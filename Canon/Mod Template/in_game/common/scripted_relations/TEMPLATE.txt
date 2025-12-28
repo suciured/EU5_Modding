@@ -1,0 +1,4 @@
+# COMMON/scripted_relations TEMPLATE
+<key> = {
+    # definition block
+}

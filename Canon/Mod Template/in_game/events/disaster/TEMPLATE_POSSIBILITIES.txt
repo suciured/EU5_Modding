@@ -1,0 +1,116 @@
+events/disaster — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold event files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/events/disaster/my_events.txt
+
+Event ids / namespaces seen (sample):
+- <namespace>.<id>
+
+Common keywords seen:
+- limit
+- name
+- option
+- type
+- desc
+- value
+- save_scope_as
+- trigger
+- if
+- category
+- title
+- NOT
+- immediate
+- image
+- custom_tooltip
+- set_variable
+- add_stability
+- add_estate_satisfaction
+- owner
+- add_pop_satisfaction
+- triggered_desc
+- OR
+- multiply
+- else
+- years
+- has_variable
+- every_pop
+- modifier
+- text
+- add_government_power
+- change_societal_value
+- religion
+- target
+- hidden_effect
+- culture
+- mode
+- max
+- order_by
+- pop_type
+- hide_portraits
+- add
+- remove_variable
+- every_location_in_province
+- illustration_tags
+- add_country_modifier
+- else_if
+- exists
+- scope:target_province
+- trigger_event_silently
+- change_pop_allegiance
+- ruler_or_regent
+- capital
+- first_valid
+- add_prestige
+- any_pop
+- historical_option
+- fire_only_once
+- check_range_bounds
+- any_location_in_province
+- tag
+- change_gold_effect
+- scope:target_country
+- event_illustration_estate_effect
+- is_adult
+- is_alive
+- show_as_tooltip
+- random_character
+- root
+- dynasty
+- scope:target_location
+- reason
+- create_rebel
+- divide
+- kill_character
+- add_legitimacy
+- scope:target_character
+- change_variable
+- create_character
+- estate
+- namespace
+
+Comprehensive example:
+# Comprehensive example for events/disaster
+# STRUCTURE ONLY: placeholder values
+
+event <namespace>.<id> = {
+    title = <localization_key>
+    desc = <localization_key>
+    picture = <gfx_key>
+
+    trigger = {
+        # conditions
+    }
+
+    immediate = {
+        # instant effects
+    }
+
+    option = {
+        name = <localization_key>
+        ai_chance = { factor = <value> }
+        # effects
+    }
+}

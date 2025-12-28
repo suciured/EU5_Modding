@@ -1,0 +1,216 @@
+COMMON/goods — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/goods/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- demand_add
+- wealth_impact_threshold
+- demand_multiply
+- custom_tags
+- horses
+- clay
+- sand
+- coal
+- iron
+- copper
+- goods_gold
+- silver
+- stone
+- tin
+- lead
+- silk
+- dyes
+- incense
+- tea
+- cocoa
+- coffee
+- fiber_crops
+- ivory
+- lumber
+- salt
+- medicaments
+- gems
+- pearls
+- amber
+- saltpeter
+- alum
+- wine
+- elephants
+- marble
+- mercury
+- saffron
+- pepper
+- cloves
+- chili
+- cotton
+- sugar
+- tobacco
+- tar
+- porcelain
+- naval_supplies
+- firearms
+- cannons
+- weaponry
+- glass
+- steel
+- cloth
+- fine_cloth
+- liquor
+- beer
+- paper
+- books
+- jewelry
+- leather
+- tools
+- masonry
+- lacquerware
+- pottery
+- furniture
+- wool
+- wild_game
+- fur
+- fish
+- wheat
+- maize
+- rice
+- millet
+- legumes
+- potato
+- livestock
+- olives
+- fruit
+- beeswax
+- slaves_goods
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- category
+- color
+- default_market_price
+- demand_add
+- method
+- all
+- nobles
+- wealth_impact_threshold
+- burghers
+- transport_cost
+- demand_multiply
+- upper
+- clergy
+- custom_tags
+- food
+- slaves
+- development_threshold
+- laborers
+- ai_rgo_expansion_priority
+- ai_rgo_size_importance
+- soldiers
+- peasants
+- base_production
+- tribesmen
+- inflation
+- horses
+- clay
+- sand
+- coal
+- iron
+- copper
+- goods_gold
+- silver
+- stone
+- tin
+- lead
+- silk
+- dyes
+- incense
+- tea
+- cocoa
+- coffee
+- fiber_crops
+- ivory
+- lumber
+- salt
+- medicaments
+- gems
+- pearls
+- amber
+- saltpeter
+- alum
+- wine
+- elephants
+- marble
+- mercury
+- saffron
+- pepper
+- cloves
+- chili
+- cotton
+- sugar
+- tobacco
+- tar
+- porcelain
+- naval_supplies
+- firearms
+- cannons
+- weaponry
+- glass
+- steel
+- cloth
+- fine_cloth
+- liquor
+- beer
+- paper
+- books
+- jewelry
+- leather
+- tools
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/goods
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    category = <value>
+    color = <value>
+    default_market_price = <value>
+    method = <value>
+    all = <value>
+    nobles = <value>
+    burghers = <value>
+    transport_cost = <value>
+    upper = <value>
+    clergy = <value>
+    demand_add = {
+        # ...
+    }
+    wealth_impact_threshold = {
+        # ...
+    }
+    demand_multiply = {
+        # ...
+    }
+    custom_tags = {
+        # ...
+    }
+    horses = {
+        # ...
+    }
+    clay = {
+        # ...
+    }
+    sand = {
+        # ...
+    }
+    coal = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

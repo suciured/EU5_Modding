@@ -1,0 +1,218 @@
+COMMON/advances — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/advances/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- potential
+- OR
+- culture
+- ai_weight
+- allow
+- ai_preference_tags
+- NOT
+- if
+- limit
+- NOR
+- add
+- AND
+- capital
+- root
+- any_international_organizations_member_of
+- any_market_present_in_country
+- market
+- unlock_diplomacy
+- custom_tooltip
+- has_unlocked_advance_trigger
+- manufactories_advance
+- lead_ore_dressing
+- powerful_statues
+- ostentatious_clothing
+- artists_advance_absolutism
+- absolutist_court
+- absolute_rulership
+- government_size_absolutism
+- cork_stoppers
+- sanitation_advance
+- construction_speed_absolutism
+- pop_promotion_speed_age_5
+- rgo_size_advance_absolutism
+- lumber_improvements_absolutism
+- coal_improvements_absolutism
+- food_advance_absolutism
+- scientific_revolution_advance
+- newspapers_advance
+- scientific_mapping_advance
+- coke_blast_furnace
+- merchant_power_from_maritime_absolutism_advance
+- hollander_beater
+- maritime_advance_age_5
+- the_constitution
+- ship_building_techniques_absolutism
+- power_projection_advance_5
+- jesuits_bark
+- national_sovereignty
+- naval_professionalism
+- measuring_the_world
+- diplomatic_range_age_5
+- spy_construction_absolutism
+- subject_loyalty_absolutism
+- improve_relation_impact_absolutism
+- relations_absolutism_advance
+- naval_doctrines_advance
+- military_revolution_advance
+- improved_supply_lines
+- increase_control_area_advance
+- artillery_vs_fort_age_5_absolutism
+- army_movement_speed_absolutism
+- regiment_reinforcement_speed_absolutism
+- war_score_absolutism_advance
+- correct_box_advance_absolutism
+- anti_piracy_warfare
+- absolutism_agressive_advance
+- supply_depot_advance_age_5_absolutism
+- line_infantry
+- naval_morale_advance_5
+- gustavian_infantry
+- country_unification_advance
+- new_world_advance
+- explorer_commisions_advance
+- open_sea_exploration
+- repair_at_sea_aod
+- merchant_power_from_maritime_discovery_advance
+- maritime_decay_advance_disc
+- rgo_logistics_discovery
+- colonial_charters
+- colonial_policy_advance
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- age
+- requires
+- potential
+- has_or_had_tag
+- icon
+- OR
+- culture
+- unlock_building
+- unlock_unit
+- for
+- religion
+- ai_weight
+- add
+- government
+- capital.region
+- sub_continent
+- allow
+- land_morale_modifier
+- religion.group
+- monthly_prestige
+- cultural_tradition_modifier
+- monthly_legitimacy
+- tolerance_own
+- unlock_law
+- army_infantry_power
+- trade_efficiency
+- cultural_influence_modifier
+- global_manpower_modifier
+- diplomatic_reputation
+- global_crown_estate_power
+- unlock_levy
+- global_monthly_food_modifier
+- army_cavalry_power
+- global_defensive
+- global_distance_from_capital_cost_modifier
+- ai_preference_tags
+- global_pop_conversion_speed_modifier
+- tolerance_heathen
+- tolerance_heretic
+- region
+- monthly_army_tradition
+- discipline
+- diplomatic_capacity
+- global_max_literacy
+- tax_income_efficiency
+- depth
+- starting_technology_level
+- global_merchant_capacity_modifier
+- research_speed_modifier
+- allow_children
+- global_estate_target_satisfaction
+- global_integration_speed_modifier
+- country_cabinet_efficiency
+- num_possible_artists
+- global_monthly_development
+- monthly_republican_tradition
+- global_merchant_power
+- trade_range_modifier
+- research_cost
+- unlock_government_reform
+- ship_build_speed
+- antagonism_received_modifier
+- global_monthly_literacy
+- global_build_buildings_cost
+- is_basque_spain
+- skill_of_new_artists
+- global_maritime_presence_modifier
+- monthly_diplomats
+- NOT
+- monthly_religious_influence
+- exists
+- global_production_efficiency
+- culture.language
+- capital.area
+- improve_relation_impact
+- military_tactics
+- merchant_maintenance_cost
+- cultures_capacity
+- army_maintenance_cost
+- global_clergy_max_literacy
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/advances
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    age = <value>
+    requires = <value>
+    has_or_had_tag = <value>
+    icon = <value>
+    unlock_building = <value>
+    unlock_unit = <value>
+    for = <value>
+    culture = <value>
+    religion = <value>
+    add = <value>
+    potential = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    culture = {
+        # ...
+    }
+    ai_weight = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    ai_preference_tags = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

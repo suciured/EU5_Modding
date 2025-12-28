@@ -1,0 +1,217 @@
+gui/shared — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/shared/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- icon
+- text_single
+- ContextualTooltipType
+- TooltipTextBlock
+- tooltipwidget
+- TooltipStringPairList
+- hbox
+- color
+- modify_texture
+- margin
+- widget
+- expand
+- glow
+- vbox
+- TooltipFlavorTextBlock
+- mapmode_tooltip_button
+- maximumsize
+- TooltipManualTableField
+- background
+- TooltipScrolledStringPairList
+- action_tooltip
+- TooltipListBase
+- ConceptTooltipType
+- position
+- TooltipTableColumn
+- minimumsize
+- spriteborder
+- item
+- pieslice_no_highlight
+- TooltipRowList
+- piechart
+- hint_button
+- pieslice
+- button
+- TooltipContentSection
+- state
+- translate_uv
+- frame_grid
+- TooltipScrolledRowList
+- tooltipmeta
+- country_flag_small
+- flowcontainer
+- TooltipListRowContent
+- TooltipDebugTextBlock
+- TooltipListColumnContent
+- container
+- text_multi
+- SimpleContextualTooltipType
+- parameter
+- framesize
+- TooltipListScrollArea
+- TooltipStatBarIconTextItem
+- SimpleContextualStringPairTooltipType
+- textbox
+- TooltipConditionList
+- TooltipScrolledColumnList
+- TooltipFunctionalBlock
+- icon_pie
+- TooltipStatBarItem
+- TooltipScrolledContentSection
+- TooltipRequirementsList
+- BasicFunctionalTooltip
+- fixedgridbox
+- production_method_good
+- country_flag_mid
+- portrait_standard_head_button
+- TooltipColumnList
+- TooltipTableField
+- TooltipDebugStringPairList
+- LeftClickButtonTooltip
+- left_click_and_hold_action
+- progressbar
+- TooltipStatsBar
+- start_sound
+- scrollbar_vertical
+- scrollwidget
+- action_button_diamond
+- TooltipCombatStatsList
+- scrollarea
+
+Common assignment keywords seen here (often-used properties/blocks):
+- text
+- using
+- texture
+- visible
+- size
+- icon
+- datacontext
+- textcontext
+- text_single
+- ContextualTooltipType
+- alpha
+- layoutpolicy_horizontal
+- TooltipTextBlock
+- tooltipwidget
+- TooltipStringPairList
+- name
+- hbox
+- color
+- align
+- parentanchor
+- spacing
+- raw_text
+- modify_texture
+- margin
+- texture_density
+- widget
+- expand
+- glow
+- glow_radius
+- autoresize
+- blend_mode
+- vbox
+- TooltipFlavorTextBlock
+- mapmode_tooltip_button
+- maximumsize
+- TooltipManualTableField
+- default_format
+- title
+- background
+- value
+- TooltipScrolledStringPairList
+- action_tooltip
+- TooltipListBase
+- on_action
+- ConceptTooltipType
+- datamodel
+- position
+- TooltipTableColumn
+- alwaystransparent
+- spriteType
+- minimumsize
+- spriteborder
+- item
+- pieslice_no_highlight
+- tagtooltip_enabled
+- tooltip
+- TooltipRowList
+- piechart
+- fontsize
+- click_type
+- hint_button
+- click_mode
+- layoutpolicy_vertical
+- pieslice
+- button
+- TooltipContentSection
+- state
+- translate_uv
+- frame_grid
+- framesize
+- mirror
+- duration
+- gfxtype
+- enabled
+- TooltipScrolledRowList
+- tooltipmeta
+- allow_outside
+- country_flag_small
+- effectname
+- game_concept
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/shared
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    text = <value>
+    using = <value>
+    texture = <value>
+    visible = <value>
+    datacontext = <value>
+    textcontext = <value>
+    alpha = <value>
+    layoutpolicy_horizontal = <value>
+    name = <value>
+    align = <value>
+    size = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    text_single = {
+        # ...
+    }
+    ContextualTooltipType = {
+        # ...
+    }
+    TooltipTextBlock = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    TooltipStringPairList = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

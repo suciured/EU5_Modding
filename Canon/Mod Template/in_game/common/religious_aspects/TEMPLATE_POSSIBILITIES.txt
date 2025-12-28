@@ -1,0 +1,218 @@
+COMMON/religious_aspects — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/religious_aspects/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- modifier
+- opinions
+- NOT
+- enabled
+- visible
+- religion
+- prima_scriptura
+- five_doors
+- holy_cooperation
+- twelve_emissaries
+- arminianism
+- gomarism
+- instituionalized_arminianism
+- instituionalized_gomarism
+- consolamentum
+- pescatarianism
+- the_perfects
+- adoptionism
+- adult_baptism
+- aniconism
+- asceticism
+- bread_and_wine
+- clerical_poverty
+- crown_as_head_of_faith
+- freedom_to_preach
+- gnosticism
+- individual_creeds
+- monasticism
+- modalism
+- organized_through_bishops
+- pacifism
+- parish_registers
+- participation_women
+- rejection_of_sacraments
+- sola_fide
+- sola_scriptura
+- soli_deo_gloria
+- translated_bibles
+- usury_allowed
+- war_sermons
+- worship_nyambe_god
+- worship_nhialic_god
+- worship_du_chie_god
+- worship_ayum_god
+- worship_alwet_god
+- worship_zanahary_god
+- worship_ratovantany_god
+- worship_andrianerinerina_god
+- worship_andriambahomanana_god
+- worship_andriamahilala_god
+- worship_ngai_god
+- worship_asis_god
+- worship_ilat_god
+- worship_waaq_god
+- worship_kaggen_god
+- worship_hunntuattatteen_god
+- worship_kagara_god
+- worship_haunu_god
+- worship_akuj_god
+- worship_anyame_god
+- worship_asase_ya_god
+- worship_anansi_god
+- worship_tano_god
+- worship_legba_god
+- worship_mawu_god
+- worship_lisa_god
+- worship_sakpata_god
+- worship_olorun_god
+- worship_olokun_isese_god
+- worship_obatala_god
+- worship_ori_god
+- worship_egbesu_god
+- worship_amadioha_god
+- worship_ikenga_god
+- worship_agwu_nsi_god
+- worship_ogbunabali_god
+- worship_takhar_god
+- worship_mindiss_god
+- worship_niparaya_god
+- worship_u_blei_nong_thaw_god
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- religion
+- modifier
+- icon
+- opinions
+- stability_cost
+- global_population_growth
+- global_life_expectancy
+- global_monthly_prosperity
+- NOT
+- global_hostile_attrition
+- monthly_towards_spiritualist
+- crown_as_head_of_faith
+- monthly_religious_influence
+- tolerance_own
+- rejection_of_sacraments
+- land_morale_modifier
+- enabled
+- monasticism
+- freedom_to_preach
+- global_devastation_recovery
+- monthly_yanantin
+- monthly_towards_communalism
+- tolerance_heretic
+- aniconism
+- asceticism
+- individual_creeds
+- monthly_towards_individualism
+- sola_scriptura
+- arminianism
+- instituionalized_arminianism
+- gomarism
+- instituionalized_gomarism
+- punishment_of_sin
+- organized_through_bishops
+- visible
+- monthly_towards_innovative
+- clerical_poverty
+- translated_bibles
+- war_sermons
+- justified_conflicts
+- sola_fide
+- soli_deo_gloria
+- global_max_literacy
+- army_movement_speed
+- army_maintenance_cost
+- prima_scriptura
+- research_speed_modifier
+- adoptionism
+- global_clergy_desired_pop
+- modalism
+- peasants_estate_target_satisfaction
+- clergy_estate_target_satisfaction
+- global_crown_estate_power
+- bread_and_wine
+- pietism
+- monthly_rebel_growth
+- pacifism
+- monthly_towards_belligerent
+- naval_morale_modifier
+- five_doors
+- holy_cooperation
+- twelve_emissaries
+- global_estate_target_satisfaction
+- has_variable
+- global_pop_conversion_speed_modifier
+- consolamentum
+- pescatarianism
+- global_fish_output_modifier
+- the_perfects
+- has_religious_aspect
+- adult_baptism
+- global_monthly_food_modifier
+- monthly_towards_free_subjects
+- gnosticism
+- monthly_towards_traditionalist
+- parish_registers
+- participation_women
+- usury_allowed
+- diplomatic_capacity_modifier
+- global_separatism
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/religious_aspects
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    religion = <value>
+    icon = <value>
+    stability_cost = <value>
+    global_population_growth = <value>
+    global_life_expectancy = <value>
+    global_monthly_prosperity = <value>
+    global_hostile_attrition = <value>
+    monthly_towards_spiritualist = <value>
+    monthly_religious_influence = <value>
+    tolerance_own = <value>
+    modifier = {
+        # ...
+    }
+    opinions = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    enabled = {
+        # ...
+    }
+    visible = {
+        # ...
+    }
+    religion = {
+        # ...
+    }
+    prima_scriptura = {
+        # ...
+    }
+    five_doors = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

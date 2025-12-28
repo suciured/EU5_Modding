@@ -1,0 +1,203 @@
+common/game_concepts — TEMPLATE (POSSIBILITIES)
+===============================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- alias
+- modifier
+- location_modifier
+- province_modifier
+- country_modifier
+- unit_modifier
+- character_modifier
+- dynasty_modifier
+- decaying_modifier
+- international_organization_modifier
+- effect
+- trigger
+- action
+- tithe
+- curia
+- overseas
+- fertility
+- goods_demand
+- reformation
+- reform_desire
+- war_ally
+- country
+- ruler
+- title_history
+- formable_country
+- settled_country
+- extraterritorial_country
+- society_of_pops
+- army_based
+- navy_based
+- regency
+- province_capital
+- province
+- province_definition
+- geography
+- continent
+- sub_continent
+- region
+- area
+- port
+- fortification
+- fort_limit
+- zone_of_control
+- tax_rate
+- max_tax
+- min_tax
+- tax
+- bankrupt
+- economical_base
+- profit
+- potential_profit
+- tax_base
+- max_tax_base
+- tax_base_share
+- tax_efficiency
+- production_efficiency
+- trade_efficiency
+- manpower
+- sailors
+- religion
+- dominant_religion
+- dominant_country
+- religion_group
+- culture
+- culture_group
+- merged_culture_group
+- dominant_language
+- dominant_dialect
+- dominant_culture
+- primary_culture
+- primary_or_accepted_culture
+- religious_status
+- state_religion
+- cultural_capacity
+- accepted_culture
+- tolerated_culture
+- non_accepted_culture
+- foreign_culture
+- cultural_status
+- assimilate
+
+Common assignment keywords seen (often-used properties/blocks):
+- texture
+- alias
+- shown_in_loading_screen
+- family
+- modifier
+- location_modifier
+- province_modifier
+- country_modifier
+- unit_modifier
+- character_modifier
+- dynasty_modifier
+- decaying_modifier
+- international_organization_modifier
+- effect
+- trigger
+- action
+- tithe
+- curia
+- overseas
+- fertility
+- goods_demand
+- reformation
+- reform_desire
+- war_ally
+- country
+- ruler
+- title_history
+- formable_country
+- settled_country
+- extraterritorial_country
+- society_of_pops
+- army_based
+- navy_based
+- regency
+- province_capital
+- province
+- province_definition
+- geography
+- continent
+- sub_continent
+- region
+- area
+- port
+- fortification
+- fort_limit
+- zone_of_control
+- tax_rate
+- max_tax
+- min_tax
+- tax
+- bankrupt
+- economical_base
+- profit
+- potential_profit
+- tax_base
+- max_tax_base
+- tax_base_share
+- tax_efficiency
+- production_efficiency
+- trade_efficiency
+- manpower
+- sailors
+- religion
+- dominant_religion
+- dominant_country
+- religion_group
+- culture
+- culture_group
+- merged_culture_group
+- dominant_language
+- dominant_dialect
+- dominant_culture
+- primary_culture
+- primary_or_accepted_culture
+- religious_status
+- state_religion
+- cultural_capacity
+- accepted_culture
+- tolerated_culture
+- non_accepted_culture
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/game_concepts
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    texture = <value>
+    shown_in_loading_screen = <value>
+    family = <value>
+    tooltip_map_mode = <value>
+    alias = {
+        # ...
+    }
+    modifier = {
+        # ...
+    }
+    location_modifier = {
+        # ...
+    }
+    province_modifier = {
+        # ...
+    }
+    country_modifier = {
+        # ...
+    }
+    unit_modifier = {
+        # ...
+    }
+    character_modifier = {
+        # ...
+    }
+    dynasty_modifier = {
+        # ...
+    }
+}

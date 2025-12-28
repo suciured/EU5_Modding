@@ -1,0 +1,218 @@
+COMMON/government_reforms — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/government_reforms/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- country_modifier
+- potential
+- allow
+- OR
+- locked
+- NOT
+- has_unlocked_government_reform_trigger
+- is_locked_mechanic
+- culture
+- societal_values
+- custom_tooltip
+- AND
+- on_activate
+- capital
+- potential_trigger
+- if
+- limit
+- location_modifier
+- on_deactivate
+- scale
+- NOR
+- add_to_global_variable_list
+- any_neighbor_country
+- not
+- or
+- dominant_culture
+- religious_tolerance
+- the_combination_act
+- the_recruiting_act
+- national_assemblies
+- east_india_trading_company
+- admiralty_regime_reform
+- military_regime_reform
+- thalassocracy_reform
+- agricultural_cultivation
+- the_espionage_act
+- public_welfare_act
+- religious_laws_enforced
+- land_inheritance_act
+- the_education_act
+- the_loyalty_act
+- vassal_obligation_act
+- enlightened_aristocracy
+- the_transportation_act
+- cultural_recognition_act
+- licensing_of_the_press_act
+- diplomatic_traditions
+- patrimonialism
+- enforce_religious_adherence
+- harbor_administration
+- trade_office_network
+- exchange_of_ideas
+- local_army_organization
+- bank_ledgers_system
+- plutocratic_ethos
+- garrison_system
+- colonial_expansion
+- mercenary_registration_act
+- multilingual_diplomats
+- asymmetrical_warfare_tactics
+- mining_communities
+- universal_serfdom
+- statute_of_monopolies
+- state_backed_merchant_fleet
+- naval_infrastructure_act
+- policy_of_calculated_delay
+- anti_heresy_act
+- administration_of_clerical_lands
+- humanitarian_administration
+- production_quota_bureaus
+- weapons_quality_standards
+- diplomatic_consolidation_act
+- provincial_taxation_system
+- conscript_logistics_act
+- smooth_integration_act
+- centralization_of_power_act
+- horse_artillery
+- autonomous_estates
+- military_allotment
+- naval_armament_act
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- country_modifier
+- years
+- potential
+- age
+- has_or_had_tag
+- unique
+- allow
+- OR
+- government
+- locked
+- government_reform_slots
+- NOT
+- has_unlocked_government_reform_trigger
+- major
+- has_variable
+- culture
+- type
+- global_crown_estate_power
+- is_locked_mechanic
+- mechanic
+- has_reform
+- societal_values
+- global_nobles_estate_power
+- nobles_estate_target_satisfaction
+- country_cabinet_efficiency
+- monthly_towards_decentralization
+- monthly_towards_aristocracy
+- custom_tooltip
+- text
+- legislative_efficiency
+- government_size
+- monthly_legitimacy
+- AND
+- monthly_towards_free_subjects
+- global_estate_target_satisfaction
+- monthly_towards_centralization
+- monthly_towards_naval
+- tax_income_efficiency
+- has_embraced_institution
+- government_type
+- on_activate
+- capital
+- country_type
+- culture.language
+- value
+- has_culture_group
+- religion
+- religion.group
+- court_spending_cost
+- monthly_towards_conciliatory
+- potential_trigger
+- is_leader_of_international_organization
+- monthly_towards_serfdom
+- monthly_towards_traditionalist
+- diplomatic_reputation
+- parliament_base_support
+- peasants_estate_target_satisfaction
+- monthly_towards_free_trade
+- global_burghers_estate_power
+- global_merchant_capacity_modifier
+- monthly_towards_communalism
+- monthly_towards_humanist
+- change_heir_selection
+- monthly_army_tradition
+- monthly_towards_spiritualist
+- cultures_capacity
+- research_speed_modifier
+- global_peasants_estate_power
+- monthly_towards_plutocracy
+- monthly_towards_belligerent
+- if
+- limit
+- court_language
+- has_advance
+- monthly_prestige
+- stability_investment
+- tolerance_heretic
+- global_production_efficiency
+- global_sailors_modifier
+- change_policy_cost_modifier
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/government_reforms
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    years = <value>
+    age = <value>
+    has_or_had_tag = <value>
+    unique = <value>
+    government = <value>
+    government_reform_slots = <value>
+    major = <value>
+    has_variable = <value>
+    type = <value>
+    global_crown_estate_power = <value>
+    country_modifier = {
+        # ...
+    }
+    potential = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    locked = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    has_unlocked_government_reform_trigger = {
+        # ...
+    }
+    is_locked_mechanic = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

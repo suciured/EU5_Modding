@@ -1,0 +1,46 @@
+setup — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold setup files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- setup/my_setup_file.txt
+
+Top-level keys seen here (sample / most common):
+- <setup_key>
+
+Common assignment keywords seen here:
+- <field_or_block>
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for setup
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values for setup.
+# Setup is start-state initialization: avoid runtime scripting here.
+
+<setup_key> = {
+    tag = <value>
+    color = <value>
+    primary_culture = <value>
+    religion = <value>
+    capital = <value>
+    capital = {
+        # ...
+    }
+    government = {
+        # ...
+    }
+    laws = {
+        # ...
+    }
+    culture = {
+        # ...
+    }
+    religion = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<setup_key> = {
+    # add fields/blocks appropriate for this directory
+}

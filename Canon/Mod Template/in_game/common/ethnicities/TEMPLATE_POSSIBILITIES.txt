@@ -1,0 +1,209 @@
+COMMON/ethnicities — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/ethnicities/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- skin_color
+- hair_color
+- eye_color
+- gene_stubble
+- gene_head_face_forward
+- hair_styles
+- gene_nose_ridge_shape
+- gene_eyebrows_inner
+- gene_eyebrows_outer
+- gene_lip_color
+- gene_head_width
+- gene_skin_detail
+- gene_mouth_upper_lip_size
+- gene_nose_height
+- gene_nose_length
+- gene_mouth_lower_lip_size
+- gene_cheek_def
+- gene_nose_nostril_width
+- gene_cheek_width
+- gene_eye_upper_lid_size
+- gene_blush
+- gene_forehead_height
+- gene_jaw_width
+- gene_cheek_fat
+- gene_forehead_brow_height
+- gene_chin_length
+- gene_eye_socket_color
+- gene_eye_lower_lid_def
+- gene_forehead_angle
+- gene_mouth_width
+- gene_nose_forward
+- gene_nose_ridge_def
+- gene_nose_tip_size
+- gene_forehead_brow_angle
+- gene_nose_tip_angle
+- gene_skull_depth
+- gene_skull_height
+- gene_nose_nostril_height
+- gene_head_height
+- gene_nose_tip_forward
+- gene_nose_width
+- gene_complexion
+- gene_eye_open
+- gene_jaw_height
+- gene_nose_root_def
+- gene_skull_width
+- gene_eyelashes
+- gene_chin_size
+- gene_forehead_roundness
+- gene_mouth_upper_lip_shape
+- gene_forehead_brow_forward
+- gene_jaw_def
+- gene_nose_tip_def
+- gene_eye_angle
+- gene_eye_size
+- gene_forehead_brow_curve
+- gene_eye_spacing
+- gene_neck_width
+- gene_chin_dimple
+- gene_eye_forward
+- gene_eye_height
+- gene_eye_upper_lid_shape
+- gene_mouth_height
+- gene_nose_ridge_angle
+- gene_cheek_forward
+- gene_chin_def
+- gene_mouth_forward
+- eyelashes
+- gene_ear_out
+- gene_jaw_forward
+- gene_skin_noise
+- gene_cheek_height
+- gene_ear_size
+- gene_jaw_angle
+- gene_chin_height
+- gene_body_weight
+- gene_eye_socket
+- gene_neck_def
+- expressions_mouth
+- expressions_eyes
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- skin_color
+- hair_color
+- template
+- eye_color
+- gene_stubble
+- gene_head_face_forward
+- hair_styles
+- gene_nose_ridge_shape
+- gene_eyebrows_inner
+- gene_eyebrows_outer
+- gene_lip_color
+- gene_head_width
+- gene_skin_detail
+- gene_mouth_upper_lip_size
+- gene_nose_height
+- gene_nose_length
+- gene_mouth_lower_lip_size
+- gene_cheek_def
+- gene_nose_nostril_width
+- gene_cheek_width
+- gene_eye_upper_lid_size
+- gene_blush
+- gene_forehead_height
+- gene_jaw_width
+- gene_cheek_fat
+- gene_forehead_brow_height
+- gene_chin_length
+- gene_eye_socket_color
+- gene_eye_lower_lid_def
+- gene_forehead_angle
+- gene_mouth_width
+- gene_nose_forward
+- gene_nose_ridge_def
+- gene_nose_tip_size
+- gene_forehead_brow_angle
+- gene_nose_tip_angle
+- gene_skull_depth
+- gene_skull_height
+- gene_nose_nostril_height
+- gene_head_height
+- gene_nose_tip_forward
+- gene_nose_width
+- gene_complexion
+- gene_eye_open
+- gene_jaw_height
+- gene_nose_root_def
+- gene_skull_width
+- gene_eyelashes
+- gene_chin_size
+- gene_forehead_roundness
+- gene_mouth_upper_lip_shape
+- gene_forehead_brow_forward
+- gene_jaw_def
+- gene_nose_tip_def
+- gene_eye_angle
+- gene_eye_size
+- gene_forehead_brow_curve
+- gene_eye_spacing
+- gene_neck_width
+- gene_chin_dimple
+- gene_eye_forward
+- gene_eye_height
+- gene_eye_upper_lid_shape
+- gene_mouth_height
+- gene_nose_ridge_angle
+- gene_cheek_forward
+- gene_chin_def
+- gene_mouth_forward
+- eyelashes
+- gene_ear_out
+- gene_jaw_forward
+- gene_skin_noise
+- gene_cheek_height
+- gene_ear_size
+- gene_jaw_angle
+- gene_chin_height
+- gene_body_weight
+- gene_eye_socket
+- gene_neck_def
+- expressions_mouth
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/ethnicities
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    template = <value>
+    skin_color = {
+        # ...
+    }
+    hair_color = {
+        # ...
+    }
+    eye_color = {
+        # ...
+    }
+    gene_stubble = {
+        # ...
+    }
+    gene_head_face_forward = {
+        # ...
+    }
+    hair_styles = {
+        # ...
+    }
+    gene_nose_ridge_shape = {
+        # ...
+    }
+    gene_eyebrows_inner = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,28 @@
+gui/preload — TEMPLATE (POSSIBILITIES)
+======================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- size
+
+Common assignment keywords seen (often-used properties/blocks):
+- fontsize
+- size
+- font
+- autoresize
+- fontsize_min
+
+Comprehensive example (placeholders only):
+# Comprehensive example for gui/preload
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    fontsize = <value>
+    font = <value>
+    autoresize = <value>
+    fontsize_min = <value>
+    size = {
+        # ...
+    }
+}

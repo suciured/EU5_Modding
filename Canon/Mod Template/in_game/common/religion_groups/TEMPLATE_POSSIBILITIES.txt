@@ -1,0 +1,116 @@
+COMMON/religion_groups — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/religion_groups/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- modifier
+- christian
+- buddhist
+- muslim
+- dharmic
+- zoroastrian_group
+- manichaean_group
+- mandean_group
+- druze_group
+- yazidi_group
+- israelite_group
+- folk_african_group
+- folk_argentinian_group
+- folk_aridoamerica_group
+- folk_asian_group
+- folk_australian_group
+- folk_brazilian_group
+- folk_caribbean_group
+- folk_central_american_group
+- tonal_group
+- folk_european_group
+- folk_melanesian_group
+- folk_micronesian_group
+- folk_north_american_group
+- folk_papuan_group
+- folk_permic_group
+- folk_peruvian_group
+- folk_polynesian_group
+- folk_se_asian_group
+- folk_south_american_group
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- color
+- convert_slaves_at_start
+- modifier
+- allow_rgo_slave_demand
+- allow_slaves_of_same_group
+- christian
+- buddhist
+- muslim
+- dharmic
+- zoroastrian_group
+- manichaean_group
+- mandean_group
+- druze_group
+- yazidi_group
+- israelite_group
+- folk_african_group
+- folk_argentinian_group
+- folk_aridoamerica_group
+- folk_asian_group
+- folk_australian_group
+- folk_brazilian_group
+- folk_caribbean_group
+- folk_central_american_group
+- tonal_group
+- folk_european_group
+- folk_melanesian_group
+- folk_micronesian_group
+- folk_north_american_group
+- folk_papuan_group
+- folk_permic_group
+- folk_peruvian_group
+- folk_polynesian_group
+- folk_se_asian_group
+- folk_south_american_group
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/religion_groups
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    color = <value>
+    convert_slaves_at_start = <value>
+    allow_rgo_slave_demand = <value>
+    allow_slaves_of_same_group = <value>
+    modifier = {
+        # ...
+    }
+    christian = {
+        # ...
+    }
+    buddhist = {
+        # ...
+    }
+    muslim = {
+        # ...
+    }
+    dharmic = {
+        # ...
+    }
+    zoroastrian_group = {
+        # ...
+    }
+    manichaean_group = {
+        # ...
+    }
+    mandean_group = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

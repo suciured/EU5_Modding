@@ -1,0 +1,195 @@
+COMMON/regencies — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/regencies/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- if
+- create_character
+- else
+- random_character
+- allow
+- modifier
+- start_effect
+- any_character
+- hidden_effect
+- previous_ruler
+- age
+- dynasty
+- custom_tooltip
+- trigger_event_non_silently
+- list_size
+- random_character_in_dynasty
+- else_if
+- value
+- add
+- any_character_in_dynasty
+- root
+- random_owned_location
+- last_dynasty_in_location
+- OR
+- AND
+- fratricide_succesion_regency
+- every_child
+- scope:new_leader
+- random_in_list
+- set_new_ruler_with_union_fratricide
+- judicial_election_regency
+- mamluk_succesion_regency
+- random_list
+- root.last_valid_ruler.dynasty
+- adm
+- dip
+- mil
+- papal_election_regency
+- religion:catholic
+- add_religion_modifier
+- trigger_event_silently
+- republican_election_regency
+- consort_regency
+- NOT
+- NOR
+- subject_regency
+- any_subject
+- random_subject
+- lordship_of_ireland_regency
+- nobles_estate_regency
+- clergy_estate_regency
+- burghers_estate_regency
+- peasants_estate_regency
+- overlord_regency
+- overlord
+- interregnum
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- limit
+- can_become_a_regent
+- religion
+- save_scope_as
+- set_regent
+- if
+- has_estate
+- create_character
+- age
+- female
+- else
+- estate
+- modifier
+- random_character
+- allow
+- start_effect
+- save_temporary_scope_as
+- is_female
+- any_character
+- hidden_effect
+- value
+- previous_ruler
+- is_adult
+- dynasty
+- stability_investment
+- succession_law
+- is_alive
+- custom_tooltip
+- text
+- trigger_event_non_silently
+- list_size
+- culture
+- global_clergy_estate_power
+- global_burghers_estate_power
+- global_peasants_estate_power
+- random_character_in_dynasty
+- else_if
+- add
+- divide
+- internally_assigned
+- has_ruler
+- is_eligible_heir
+- global_nobles_estate_power
+- add_to_list
+- exists
+- any_character_in_dynasty
+- is_close_relative
+- root
+- random_owned_location
+- create_dynasty_from_location
+- last_dynasty_in_location
+- nobles_estate_target_satisfaction
+- has_trait
+- is_at_war_with
+- multiply
+- add_liberty_desire
+- always
+- OR
+- AND
+- fratricide_succesion_regency
+- monthly_towards_belligerent
+- every_child
+- is_religious_figure
+- scope:new_leader
+- found_dynasty
+- random_in_list
+- list
+- set_new_ruler_with_union_fratricide
+- set_variable
+- set_new_ruler
+- judicial_election_regency
+- mamluk_succesion_regency
+- monthly_legitimacy
+- random_list
+- has_dynasty
+- root.last_valid_ruler.dynasty
+- adm
+- dip
+- mil
+- add_trait
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/regencies
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    can_become_a_regent = <value>
+    religion = <value>
+    save_scope_as = <value>
+    set_regent = <value>
+    has_estate = <value>
+    female = <value>
+    estate = <value>
+    save_temporary_scope_as = <value>
+    is_female = <value>
+    age = <value>
+    limit = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    create_character = {
+        # ...
+    }
+    else = {
+        # ...
+    }
+    random_character = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    modifier = {
+        # ...
+    }
+    start_effect = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

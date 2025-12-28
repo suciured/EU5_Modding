@@ -1,0 +1,172 @@
+gui/panels/left_panel — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/panels/left_panel/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- widget
+- icon
+- modify_texture
+- tooltipwidget
+- spriteborder
+- button
+- frame_grid
+- button_panel_tab_alt
+- background
+- text_single
+- color
+- hbox
+- pieslice_no_highlight
+- position
+- vbox
+- expand
+- action_tooltip
+- margin
+- piechart
+- left_panel_bar
+- header_button_left
+- item
+- text_multi
+- minimumsize
+- maximumsize
+- button_regular
+- BasicFunctionalTooltip
+- TooltipTextBlock
+- flag_3d_animated
+- character_frame_medium
+- character_ribbon_3
+- country_rank_banner
+- stat_player_button
+- LeftClickButtonTooltip
+
+Common assignment keywords seen here (often-used properties/blocks):
+- using
+- size
+- texture
+- visible
+- texture_density
+- parentanchor
+- widget
+- icon
+- modify_texture
+- alpha
+- tooltipwidget
+- spriteType
+- blend_mode
+- allow_outside
+- spriteborder
+- onclick
+- tooltip_enabled
+- name
+- input_action
+- use_global_input_instance
+- button
+- frame_grid
+- gfxtype
+- upframe
+- button_panel_tab_alt
+- down
+- effectname
+- background
+- text_single
+- datacontext
+- color
+- hbox
+- pieslice_no_highlight
+- value
+- title
+- position
+- vbox
+- layoutpolicy_horizontal
+- layoutpolicy_vertical
+- expand
+- action_tooltip
+- on_action
+- spacing
+- text
+- widgetanchor
+- mirror
+- click_type
+- click_mode
+- ignore_layout
+- margin_top
+- margin_bottom
+- alwaystransparent
+- margin
+- piechart
+- autoresize
+- default_format
+- left_panel_bar
+- header_button_left
+- enabled
+- margin_right
+- filter_mouse
+- datamodel
+- item
+- text_multi
+- minimumsize
+- maximumsize
+- align
+- button_regular
+- BasicFunctionalTooltip
+- TooltipTextBlock
+- textcontext
+- layer
+- set_parent_size_to_minimum
+- flag_3d_animated
+- on_input_action_shortcut
+- character_frame_medium
+- character_ribbon_3
+- conditions
+- country_rank_banner
+- uphoverframe
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/panels/left_panel
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    using = <value>
+    texture = <value>
+    visible = <value>
+    texture_density = <value>
+    parentanchor = <value>
+    alpha = <value>
+    spriteType = <value>
+    blend_mode = <value>
+    allow_outside = <value>
+    onclick = <value>
+    size = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    modify_texture = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    spriteborder = {
+        # ...
+    }
+    button = {
+        # ...
+    }
+    frame_grid = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

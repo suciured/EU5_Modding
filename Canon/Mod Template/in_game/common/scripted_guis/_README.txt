@@ -1,0 +1,7 @@
+COMMON/scripted_guis
+============
+Purpose:
+- Definitions for: scripted_guis
+
+Observed in extracted base data:
+- 0 text file(s) detected in this folder (some folders may be empty or contain non-text assets).

@@ -1,0 +1,4 @@
+# COMMON/regencies TEMPLATE
+<key> = {
+    # definition block
+}

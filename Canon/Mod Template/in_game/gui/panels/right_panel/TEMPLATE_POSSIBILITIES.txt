@@ -1,0 +1,141 @@
+gui/panels/right_panel — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/panels/right_panel/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- icon
+- size
+- tooltipwidget
+- background
+- button_panel_tab_alt
+- TooltipFunctionalBlock
+- SimpleConceptTooltipType
+- widget
+- vbox
+- modify_texture
+- pieslice_no_highlight
+- color
+- right_panel_bar
+- flowcontainer
+- text_single
+- position
+- spriteborder
+- margin
+- piechart
+- button
+- hbox
+- ConceptTooltipType
+- TooltipTextBlock
+- frame_grid
+- action_tooltip
+
+Common assignment keywords seen here (often-used properties/blocks):
+- using
+- texture
+- icon
+- parentanchor
+- texture_density
+- visible
+- size
+- allow_outside
+- text
+- tooltipwidget
+- background
+- onclick
+- button_panel_tab_alt
+- down
+- TooltipFunctionalBlock
+- SimpleConceptTooltipType
+- textcontext
+- widget
+- vbox
+- alpha
+- alwaystransparent
+- widgetanchor
+- modify_texture
+- layoutpolicy_horizontal
+- name
+- filter_mouse
+- datacontext
+- pieslice_no_highlight
+- value
+- color
+- right_panel_bar
+- flowcontainer
+- spacing
+- text_single
+- align
+- autoresize
+- default_format
+- position
+- spriteType
+- spriteborder
+- blend_mode
+- margin
+- piechart
+- button
+- tooltip_enabled
+- hbox
+- ConceptTooltipType
+- TooltipTextBlock
+- input_action
+- use_global_input_instance
+- frame_grid
+- frame
+- action_tooltip
+- click_type
+- title
+- on_action
+- enabled
+- layer
+- set_parent_size_to_minimum
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/panels/right_panel
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    using = <value>
+    texture = <value>
+    parentanchor = <value>
+    texture_density = <value>
+    visible = <value>
+    allow_outside = <value>
+    text = <value>
+    onclick = <value>
+    down = <value>
+    textcontext = <value>
+    icon = {
+        # ...
+    }
+    size = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    background = {
+        # ...
+    }
+    button_panel_tab_alt = {
+        # ...
+    }
+    TooltipFunctionalBlock = {
+        # ...
+    }
+    SimpleConceptTooltipType = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

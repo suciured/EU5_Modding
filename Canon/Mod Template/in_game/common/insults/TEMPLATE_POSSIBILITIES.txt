@@ -1,0 +1,218 @@
+COMMON/insults — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/insults/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- trigger
+- scope:recipient
+- scope:actor
+- OR
+- NOT
+- capital
+- culture
+- insult_default
+- insult_default2
+- insult_default3
+- insult_default4
+- insult_default5
+- insult_default6
+- insult_default7
+- insult_default8
+- insult_default9
+- insult_default10
+- insult_default11
+- insult_default12
+- insult_default13
+- insult_default14
+- insult_default15
+- insult_no_army
+- insult_bookkeeping
+- insult_rome
+- insult_heir_hunter
+- insult_monarchy
+- insult_diamonds
+- insult_european_indian
+- insult_against_bahmanis
+- insult_against_deccani
+- insult_against_timurid
+- insult_explorer_vs_africa_or_india
+- insult_christian_muslim
+- insult_against_habsburg
+- insult_byz_to_ven
+- insult_guybrush
+- insult_against_guybrush
+- insult_low_dipadm
+- insult_cossack_to_turk
+- insult_muslim_truce
+- insult_against_denmark
+- insult_against_england
+- insult_marprelate
+- insult_marprelate2
+- insult_against_saxony
+- insult_fort
+- any_country_sub_unit
+- insult_revolutionary
+- insult_monarchy_rank
+- insult_low_adm
+- insult_against_gbr
+- insult_from_arabs
+- insult_against_craven
+- insult_against_sinner
+- insult_against_hre
+- insult_against_serbia
+- insult_against_european_in_india
+- insult_japanese
+- insult_loans
+- insult_rebels
+- insult_low_mil_tech
+- insult_golden_horde_vs_muscovy
+- insult_wallachia_to_ottomans
+- insult_barbary_pirates
+- insult_turkish_drunkard
+- insult_against_scotland
+- insult_for_buddhists
+- insult_against_england2
+- insult_for_persians
+- chinese_insult_1
+- chinese_insult_2
+- chinese_insult_3
+- insult_republic_to_monarchy
+- insult_from_pirates_1
+- insult_from_pirates_2
+- insult_from_pirates_3
+- insult_from_pirates_4
+- insult_from_pirates_5
+- insult_to_pirates_1
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- trigger
+- scope:recipient
+- scope:actor
+- tag
+- OR
+- always
+- religion
+- NOT
+- has_reform
+- religion.group
+- government_type
+- capital
+- has_regent
+- culture
+- culture.language
+- has_trait
+- scope:actor.capital.sub_continent
+- capital.continent
+- owns
+- scope:actor.capital.continent
+- character_name
+- has_culture_group
+- vegetation
+- topography
+- insult_default
+- insult_default2
+- insult_default3
+- insult_default4
+- insult_default5
+- insult_default6
+- insult_default7
+- insult_default8
+- insult_default9
+- insult_default10
+- insult_default11
+- insult_default12
+- insult_default13
+- insult_default14
+- insult_default15
+- insult_no_army
+- insult_bookkeeping
+- insult_rome
+- insult_heir_hunter
+- has_heir
+- insult_monarchy
+- insult_diamonds
+- insult_european_indian
+- scope:recipient.capital.sub_continent
+- insult_against_bahmanis
+- insult_against_deccani
+- region
+- insult_against_timurid
+- insult_explorer_vs_africa_or_india
+- capital.sub_continent
+- insult_christian_muslim
+- insult_against_habsburg
+- insult_byz_to_ven
+- insult_guybrush
+- insult_against_guybrush
+- insult_low_dipadm
+- insult_cossack_to_turk
+- insult_muslim_truce
+- has_truce_with
+- insult_against_denmark
+- insult_against_england
+- insult_marprelate
+- insult_marprelate2
+- insult_against_saxony
+- insult_fort
+- any_country_sub_unit
+- sub_unit_category
+- insult_revolutionary
+- is_revolutionary
+- insult_monarchy_rank
+- insult_low_adm
+- insult_against_gbr
+- insult_from_arabs
+- insult_against_craven
+- insult_against_sinner
+- has_consort
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/insults
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    tag = <value>
+    always = <value>
+    religion = <value>
+    has_reform = <value>
+    religion.group = <value>
+    government_type = <value>
+    has_regent = <value>
+    culture.language = <value>
+    has_trait = <value>
+    scope:actor.capital.sub_continent = <value>
+    trigger = {
+        # ...
+    }
+    scope:recipient = {
+        # ...
+    }
+    scope:actor = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+    capital = {
+        # ...
+    }
+    culture = {
+        # ...
+    }
+    insult_default = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,202 @@
+common/modifier_icons — TEMPLATE (POSSIBILITIES)
+================================================
+Observed patterns to help scaffold files in this folder.
+Structure-only: does not guarantee validity of every field in every context.
+
+Top-level keys seen (sample / most common):
+- default
+- none
+- fort_limit
+- fort_limit_modifier
+- fort_maintenance_cost
+- local_fort_maintenance_cost
+- max_ships_built_at_same_time
+- max_regiments_trained_at_same_time
+- max_constructions_at_same_time
+- trade_income
+- construction_center_max_level
+- ship_build_speed
+- local_ship_build_speed
+- regiment_recruit_speed
+- local_levy_size_modifier
+- global_levy_size_modifier
+- levy_maintenance_modifier
+- army_food_gathering
+- army_food_gathering_modifier
+- local_army_levy_size_modifier
+- global_army_levy_size_modifier
+- local_navy_levy_size_modifier
+- global_navy_levy_size_modifier
+- wrong_culture_levy_size
+- local_levy_recruitment_speed_modifier
+- global_levy_recruitment_speed_modifier
+- army_tradition_from_battle
+- navy_tradition_from_battle
+- prestige_from_land_battle
+- prestige_from_naval_battle
+- army_logistics_distance
+- army_logistics_distance_modifier
+- naval_range
+- naval_range_modifier
+- colonial_range
+- colonial_range_modifier
+- block_tribal_promotion
+- global_tribal_promotion
+- local_tribal_promotion
+- enslave_tribals
+- expel_tribals
+- make_tribals_peasants
+- hussite_wars_actions_price_cost_modifier
+- unemployed_slave_promotion
+- allow_slave_conversion
+- blocked_from_forming_countries
+- lack_of_control_impact_on_warscore
+- ignore_same_religion_colonial_claim
+- counter_espionage
+- spy_network_construction
+- diplomatic_capacity
+- max_diplomats
+- monthly_diplomats
+- has_road_building
+- improve_relation_impact
+- casus_belli_creation_speed
+- casus_belli_creation_speed_modifier
+- subject_opinions
+- antagonism_received_modifier
+- antagonism_culture_influence
+- antagonism_societal_value_influence
+- antagonism_religion_influence
+- antagonism_government_type_influence
+- antagonism_revolution_influence
+- antagonism_language_influence
+- antagonism_taking_land_giving_modifier
+- antagonism_breaking_truce_giving_modifier
+- antagonism_declared_war_no_cb_giving_modifier
+- antagonism_monthly_change_modifier
+- global_war_score_cost
+- local_war_score_cost
+- subject_income_modifier
+- diplomatic_reputation
+- subject_loyalty
+- loyalty_to_overlord
+- prevented_from_changing_court_language_by_overlord
+- diplomatic_range
+- diplomatic_range_modifier
+- character_cabinet_efficiency
+- country_cabinet_efficiency
+
+Common assignment keywords seen (often-used properties/blocks):
+- positive
+- negative
+- default
+- none
+- fort_limit
+- fort_limit_modifier
+- fort_maintenance_cost
+- local_fort_maintenance_cost
+- max_ships_built_at_same_time
+- max_regiments_trained_at_same_time
+- max_constructions_at_same_time
+- trade_income
+- construction_center_max_level
+- ship_build_speed
+- local_ship_build_speed
+- regiment_recruit_speed
+- local_levy_size_modifier
+- global_levy_size_modifier
+- levy_maintenance_modifier
+- army_food_gathering
+- army_food_gathering_modifier
+- local_army_levy_size_modifier
+- global_army_levy_size_modifier
+- local_navy_levy_size_modifier
+- global_navy_levy_size_modifier
+- wrong_culture_levy_size
+- local_levy_recruitment_speed_modifier
+- global_levy_recruitment_speed_modifier
+- army_tradition_from_battle
+- navy_tradition_from_battle
+- prestige_from_land_battle
+- prestige_from_naval_battle
+- army_logistics_distance
+- army_logistics_distance_modifier
+- naval_range
+- naval_range_modifier
+- colonial_range
+- colonial_range_modifier
+- block_tribal_promotion
+- global_tribal_promotion
+- local_tribal_promotion
+- enslave_tribals
+- expel_tribals
+- make_tribals_peasants
+- hussite_wars_actions_price_cost_modifier
+- unemployed_slave_promotion
+- allow_slave_conversion
+- blocked_from_forming_countries
+- lack_of_control_impact_on_warscore
+- ignore_same_religion_colonial_claim
+- counter_espionage
+- spy_network_construction
+- diplomatic_capacity
+- max_diplomats
+- monthly_diplomats
+- has_road_building
+- improve_relation_impact
+- casus_belli_creation_speed
+- casus_belli_creation_speed_modifier
+- subject_opinions
+- antagonism_received_modifier
+- antagonism_culture_influence
+- antagonism_societal_value_influence
+- antagonism_religion_influence
+- antagonism_government_type_influence
+- antagonism_revolution_influence
+- antagonism_language_influence
+- antagonism_taking_land_giving_modifier
+- antagonism_breaking_truce_giving_modifier
+- antagonism_declared_war_no_cb_giving_modifier
+- antagonism_monthly_change_modifier
+- global_war_score_cost
+- local_war_score_cost
+- subject_income_modifier
+- diplomatic_reputation
+- subject_loyalty
+- loyalty_to_overlord
+- prevented_from_changing_court_language_by_overlord
+- diplomatic_range
+- diplomatic_range_modifier
+
+Comprehensive example (placeholders only):
+# Comprehensive example for common/modifier_icons
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values.
+
+<key> = {
+    positive = <value>
+    negative = <value>
+    default = <value>
+    default = {
+        # ...
+    }
+    none = {
+        # ...
+    }
+    fort_limit = {
+        # ...
+    }
+    fort_limit_modifier = {
+        # ...
+    }
+    fort_maintenance_cost = {
+        # ...
+    }
+    local_fort_maintenance_cost = {
+        # ...
+    }
+    max_ships_built_at_same_time = {
+        # ...
+    }
+    max_regiments_trained_at_same_time = {
+        # ...
+    }
+}

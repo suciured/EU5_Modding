@@ -1,0 +1,199 @@
+gui/panels/trade — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/panels/trade/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- tooltipwidget
+- action_tooltip
+- text_single
+- widget
+- hbox
+- icon
+- margin
+- sort_by_highlight
+- glow
+- color
+- sort_by_small_highlight
+- TooltipStringPairList
+- vbox
+- sort_by_key_button
+- icon_text_2rows
+- ContextualTooltipType
+- item
+- button_square_minus
+- button_square_plus
+- fixedgridbox
+- margin_widget
+- BasicFunctionalTooltip
+- modify_texture
+- button
+- sort_by_icon_highlight
+- sort_by_left_fade_highlight
+- sort_by_right_fade_highlight
+- TooltipTextBlock
+- position
+- filtered_sorted_list
+- market_card
+- card_list_button
+- progressbar
+- SimpleContextualTooltipType
+- filter_button_alt
+- maximumsize
+- expand
+- ExistingTradeCard
+- PossibleTradeCard
+- action_button_regular
+- left_action
+- tooltipmeta
+- TooltipContentSection
+- checkbox_square_alt
+- TooltipFunctionalBlock
+- country_flag_very_small
+- ExistingTradeProfitPerCapacityTooltip
+- background
+- PossibleTradeCapacityButtons
+- button_checkbox_auto
+- LeftClickButtonTooltip
+- economy_slider
+- inc_button
+- dec_button
+- market_card_right_buttons
+- AutomatedTradeSlider
+- button_regular
+- dynamicgridbox
+- minimumsize
+- card_header_button_04
+- ecs_scene_viewer_widget
+
+Common assignment keywords seen here (often-used properties/blocks):
+- size
+- using
+- name
+- text
+- datacontext
+- tooltipwidget
+- visible
+- action_tooltip
+- click_type
+- click_mode
+- title
+- on_action
+- enabled
+- layoutpolicy_horizontal
+- texture
+- text_single
+- align
+- click_modifier
+- widget
+- alpha
+- hbox
+- conditions
+- icon
+- autoresize
+- margin
+- parentanchor
+- sort_by_highlight
+- raw_text
+- spacing
+- margin_right
+- default_format
+- glow
+- glow_radius
+- color
+- layoutpolicy_vertical
+- sort_by_small_highlight
+- TooltipStringPairList
+- textcontext
+- margin_left
+- margin_top
+- vbox
+- sort_by_key_button
+- icon_text_2rows
+- layoutstretchfactor_vertical
+- ContextualTooltipType
+- onclick
+- fontsize
+- datamodel
+- item
+- button_square_minus
+- button_square_plus
+- fixedgridbox
+- addcolumn
+- addrow
+- margin_widget
+- BasicFunctionalTooltip
+- modify_texture
+- blend_mode
+- button
+- min
+- max
+- value
+- sort_by_icon_highlight
+- sort_by_left_fade_highlight
+- sort_by_right_fade_highlight
+- datamodel_reuse_widgets
+- righttoleft
+- TooltipTextBlock
+- position
+- filtered_sorted_list
+- market_card
+- card_list_button
+- checked
+- progressbar
+- direction
+- SimpleContextualTooltipType
+- lowpriotextcontext
+- filter_button_alt
+- maximumsize
+- expand
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/panels/trade
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    using = <value>
+    name = <value>
+    text = <value>
+    datacontext = <value>
+    visible = <value>
+    click_type = <value>
+    click_mode = <value>
+    title = <value>
+    on_action = <value>
+    enabled = <value>
+    size = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    action_tooltip = {
+        # ...
+    }
+    text_single = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    margin = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

@@ -1,0 +1,187 @@
+COMMON/diseases — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/diseases/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- if
+- OR
+- else
+- value
+- else_if
+- spawn_disease
+- situation:great_pestilence
+- monthly_spawn_chance
+- situation:black_death
+- spawn
+- r0
+- location_stagnation_chance
+- percentage_to_meet_their_fate_on_calc
+- location_modifier
+- mortality_rate
+- character_mortality_chance
+- on_spread_to_country
+- map_color
+- lerp
+- secondary_map_color
+- random_ownable_location
+- calc_interval_days
+- trigger_if
+- NOT
+- multiply
+- disease_presence
+- subtract
+- continent:america
+- specific_pop_type_effect
+- AND
+- set_variable
+- potential_trigger
+- location_infection_spread_threshold
+- random_location_in_continent
+- bubonic_plague
+- add
+- distance_to_squared
+- owner
+- great_pestilence
+- any_location_in_continent
+- influenza
+- malaria
+- environmental_infection
+- measles
+- smallpox
+- typhus
+- trigger_else
+- sub_unit_stagnation_chance
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- value
+- limit
+- if
+- multiply
+- has_building_with_at_least_one_level
+- OR
+- else
+- continent
+- else_if
+- situation_is_active
+- situation_has_ended
+- add
+- disease
+- vegetation
+- climate
+- topography
+- spawn_disease
+- save_scope_as
+- situation:great_pestilence
+- monthly_spawn_chance
+- situation:black_death
+- spawn
+- r0
+- subtract
+- calc_interval_days
+- location_stagnation_chance
+- percentage_to_meet_their_fate_on_calc
+- location_modifier
+- mortality_rate
+- character_mortality_chance
+- on_spread_to_country
+- map_color
+- lerp
+- min_color
+- max_color
+- factor
+- secondary_map_color
+- random_ownable_location
+- trigger_event_non_silently
+- disease_affects_pops_here
+- trigger_if
+- NOT
+- disease_presence
+- num_roads
+- has_game_rule
+- area
+- continent:america
+- owner_from_old_world
+- region
+- is_endemic_typhus_location
+- specific_pop_type_effect
+- pop_type
+- monthly_resistance_reduction
+- AND
+- activate_situation
+- set_variable
+- name
+- disease_has_stagnated
+- potential_trigger
+- local_forced_attrition
+- max_attrition
+- local_pop_promotion_speed_modifier
+- local_pop_demotion_speed_modifier
+- local_prosperity_decay
+- local_monthly_control
+- local_monthly_development
+- has_country_modifier
+- location_infection_spread_threshold
+- random_location_in_continent
+- winter_level
+- has_siege
+- bubonic_plague
+- disease_is_active
+- is_endemic_bubonic_plague_location
+- sub_continent
+- distance_to_squared
+- location
+- local_migration_attraction
+- local_migration_speed
+- owner
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/diseases
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    multiply = <value>
+    has_building_with_at_least_one_level = <value>
+    continent = <value>
+    situation_is_active = <value>
+    situation_has_ended = <value>
+    disease = <value>
+    vegetation = <value>
+    climate = <value>
+    add = <value>
+    limit = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    else = {
+        # ...
+    }
+    value = {
+        # ...
+    }
+    else_if = {
+        # ...
+    }
+    spawn_disease = {
+        # ...
+    }
+    situation:great_pestilence = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

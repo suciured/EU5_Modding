@@ -1,0 +1,4 @@
+# COMMON/customizable_localization TEMPLATE
+<key> = {
+    # definition block
+}

@@ -1,0 +1,12 @@
+FONTS — TEMPLATE (POSSIBILITIES)
+===============================
+Fonts are registered and then referenced by GUI or localization files.
+
+Comprehensive example (structure, placeholders only):
+
+font = {
+    name = <font_key>
+    path = <relative_path_to_font_file>
+    size = <number>
+    fallback = <font_key_optional>
+}

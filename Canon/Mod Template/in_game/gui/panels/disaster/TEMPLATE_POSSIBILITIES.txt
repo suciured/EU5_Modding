@@ -1,0 +1,192 @@
+gui/panels/disaster — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/panels/disaster/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- tooltipwidget
+- text_single
+- expand
+- icon
+- hbox
+- color
+- pieslice
+- disaster_card_expandable
+- TooltipRequirementsList
+- disaster_panel
+- progressbar
+- horizontal_scroll_card
+- minimumsize
+- maximumsize
+- piechart
+- margin
+- country_character
+- vbox
+- widget
+- two_characters_header
+- ContextualTooltipType
+- TooltipTextBlock
+- position
+- disaster_estates_display_card
+- scrollarea
+- scrollbar_vertical
+- scrollwidget
+- background
+- modify_texture
+- country_flag_small_plus
+- dynamicgridbox
+- item
+- divider_flavor_03
+- header_secondary_tabs
+- disaster_card_header_button
+- country_flag_small
+- TooltipStringPairList
+- disaster_card_common
+- glow
+- window_header_alt
+- spriteborder
+- viewportwidget
+- button_secondary_tab_alt
+- subheader
+- disaster_card_actions
+- tooltipmeta
+- action_button_default
+- parameter
+- left_click_and_hold_action
+- text_multi
+- one_character_header
+- character_abilities
+- disaster_fancy_two_line_card
+- fancy_two_line_card
+
+Common assignment keywords seen here (often-used properties/blocks):
+- text
+- using
+- size
+- texture
+- visible
+- datacontext
+- align
+- tooltipwidget
+- text_single
+- layoutpolicy_horizontal
+- expand
+- value
+- spacing
+- icon
+- autoresize
+- hbox
+- color
+- pieslice
+- onclick
+- margin_top
+- textcontext
+- disaster_card_expandable
+- TooltipRequirementsList
+- disaster_panel
+- default_format
+- progressbar
+- horizontal_scroll_card
+- minimumsize
+- texture_density
+- maximumsize
+- piechart
+- margin
+- country_character
+- vbox
+- layoutpolicy_vertical
+- widget
+- two_characters_header
+- righttoleft
+- ContextualTooltipType
+- alpha
+- raw_text
+- TooltipTextBlock
+- position
+- name
+- disaster_estates_display_card
+- scrollarea
+- scrollbarpolicy_horizontal
+- scrollbar_vertical
+- scrollwidget
+- fontsize
+- parentanchor
+- background
+- modify_texture
+- blend_mode
+- country_flag_small_plus
+- dynamicgridbox
+- datamodel
+- item
+- divider_flavor_03
+- spriteType
+- header_secondary_tabs
+- disaster_card_header_button
+- margin_left
+- flipdirection
+- datamodel_wrap
+- maxhorizontalslots
+- country_flag_small
+- TooltipStringPairList
+- layoutstretchfactor_horizontal
+- disaster_card_common
+- glow
+- glow_radius
+- min
+- max
+- direction
+- window_header_alt
+- spriteborder
+- frame
+- autoresizeviewport
+- viewportwidget
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/panels/disaster
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    text = <value>
+    using = <value>
+    texture = <value>
+    visible = <value>
+    datacontext = <value>
+    align = <value>
+    layoutpolicy_horizontal = <value>
+    value = <value>
+    spacing = <value>
+    autoresize = <value>
+    size = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    text_single = {
+        # ...
+    }
+    expand = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    color = {
+        # ...
+    }
+    pieslice = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

@@ -1,0 +1,167 @@
+COMMON/international_organization_payments — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/international_organization_payments/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- limit
+- add
+- add_to_local_variable_list
+- every_international_organization_member
+- maintenance_modifier
+- potential_trigger
+- scale
+- NOT
+- if
+- multiply
+- get_payer_list
+- get_payee_list
+- price_multiplier
+- proportion_for_payer
+- proportion_for_payee
+- subtract
+- else
+- every_country_with_special_status_of_type
+- not
+- has_special_status_in_international_organization
+- value
+- else_if
+- every_estate
+- leader_country
+- imperial_contribution
+- imperial_treasury_contribution
+- imperial_army_contribution
+- OR
+- middle_kingdom_tribute
+- tatar_yoke_contribution
+- tatar_yoke_leader_payments
+- tithe
+- every_in_global_list
+- var:religion
+- situation:western_schism
+- c:PAP
+- var:schism_opponent_country
+- scope:recipient
+- trigger_if
+- trigger_else
+- union_contribution
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- value
+- add
+- limit
+- multiply
+- desc
+- add_to_local_variable_list
+- every_international_organization_member
+- name
+- target
+- maintenance_modifier
+- potential_trigger
+- scale
+- subtract
+- NOT
+- if
+- get_payer_list
+- get_payee_list
+- price
+- uses_maintenance
+- price_multiplier
+- proportion_for_payer
+- proportion_for_payee
+- monthly_prestige
+- type
+- modifier:excluded_from_paying_imperial_contribution
+- else
+- every_country_with_special_status_of_type
+- not
+- has_special_status_in_international_organization
+- else_if
+- country_can_pay_tithe
+- every_estate
+- min
+- international_organization_has_leader
+- monthly_army_tradition
+- leader_country
+- monthly_celestial_authority
+- is_leader_of_international_organization
+- international_organization
+- global_monthly_development
+- monthly_diplomats
+- has_global_variable_list
+- save_temporary_scope_as
+- diplomatic_reputation
+- imperial_contribution
+- imperial_treasury_contribution
+- imperial_army_contribution
+- OR
+- middle_kingdom_tribute
+- min_slider_value
+- format
+- tatar_yoke_contribution
+- tatar_yoke_leader_payments
+- tithe
+- every_in_global_list
+- variable
+- exists
+- has_variable
+- var:religion
+- situation:western_schism
+- prev
+- c:PAP
+- var:schism_opponent_country
+- scope:recipient
+- trigger_if
+- root
+- trigger_else
+- union_contribution
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/international_organization_payments
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    desc = <value>
+    multiply = <value>
+    add = <value>
+    name = <value>
+    target = <value>
+    price = <value>
+    uses_maintenance = <value>
+    monthly_prestige = <value>
+    subtract = <value>
+    limit = {
+        # ...
+    }
+    add = {
+        # ...
+    }
+    add_to_local_variable_list = {
+        # ...
+    }
+    every_international_organization_member = {
+        # ...
+    }
+    maintenance_modifier = {
+        # ...
+    }
+    potential_trigger = {
+        # ...
+    }
+    scale = {
+        # ...
+    }
+    NOT = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

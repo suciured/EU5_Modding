@@ -1,0 +1,218 @@
+COMMON/attribute_columns — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/attribute_columns/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- sort
+- sort_value
+- limit
+- if
+- else
+- sort_text
+- name
+- population
+- else_if
+- owner_flag
+- control
+- development
+- market
+- scope:target
+- scope:target_1
+- scope:target_2
+- scope:target_3
+- root
+- value
+- scope:actor
+- colonial_charter
+- integration
+- rebel_progress
+- power
+- default
+- left_click_cost
+- left_click_and_confirm_cost
+- right_click_cost
+- right_click_and_confirm_cost
+- subject_type_attribute_column
+- location
+- army_construction_queue
+- navy_construction_queue
+- civil_construction_queue
+- migration_attraction
+- raw_material
+- rank
+- distance_to_target_area
+- unemployed_population_building_type
+- num_buildings_of_type
+- build_roads
+- shugo_province_name
+- country
+- great_power_score
+- heir_status_icon
+- characters_eligible_for_royal_marriage
+- ruler
+- country_rivals
+- rtr_yuan_allegiance
+- army_size
+- regular_army_size
+- navy_size
+- expected_army_size
+- expected_navy_size
+- unit
+- unit_location
+- sub_unit
+- character
+- character_info
+- character_artist
+- character_marriage
+- owner
+- character_ruler
+- character_general
+- character_admiral
+- character_explorer
+- character_adm
+- character_dip
+- character_mil
+- mercenary_leader_info
+- dynasty
+- pop
+- war
+- combat
+- siege
+- culture
+- culture_percentage_in_country
+- religion
+- religion_percentage_in_country
+- market_food
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- value
+- sort
+- sort_by_tooltip_key
+- widget
+- sort_value
+- width
+- fixed_height
+- limit
+- if
+- else
+- sort_text
+- sort_key
+- exists
+- is_constant_width
+- sort_order
+- name
+- contains_select_target_button
+- single_widget_for_row
+- population
+- scope_type
+- else_if
+- sort_by_cost_button
+- sort_by_cost_type
+- owner_flag
+- control
+- development
+- market
+- scope:target
+- scope:target_1
+- scope:target_2
+- scope:target_3
+- root
+- can_become_a_leader
+- add
+- scope:actor
+- colonial_charter
+- integration
+- rebel_progress
+- power
+- default
+- left_click_cost
+- left_click_and_confirm_cost
+- right_click_cost
+- right_click_and_confirm_cost
+- subject_type_attribute_column
+- location
+- army_construction_queue
+- navy_construction_queue
+- civil_construction_queue
+- migration_attraction
+- raw_material
+- rank
+- distance_to_target_area
+- unemployed_population_building_type
+- num_buildings_of_type
+- build_roads
+- shugo_province_name
+- country
+- great_power_score
+- heir_status_icon
+- characters_eligible_for_royal_marriage
+- ruler
+- country_rivals
+- is_rival_of
+- is_enemy_of
+- rtr_yuan_allegiance
+- army_size
+- regular_army_size
+- navy_size
+- expected_army_size
+- expected_navy_size
+- unit
+- unit_location
+- sub_unit
+- character
+- character_info
+- character_artist
+- character_marriage
+- owner
+- character_ruler
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/attribute_columns
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    sort_by_tooltip_key = <value>
+    widget = <value>
+    width = <value>
+    fixed_height = <value>
+    sort_key = <value>
+    exists = <value>
+    is_constant_width = <value>
+    sort_order = <value>
+    contains_select_target_button = <value>
+    sort = {
+        # ...
+    }
+    sort_value = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    else = {
+        # ...
+    }
+    sort_text = {
+        # ...
+    }
+    name = {
+        # ...
+    }
+    population = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

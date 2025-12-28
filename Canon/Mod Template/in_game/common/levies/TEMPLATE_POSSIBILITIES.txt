@@ -1,0 +1,178 @@
+COMMON/levies — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/levies/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- allow
+- country_allow
+- OR
+- allow_as_crew
+- levy_conscripts
+- levy_gendarmerie
+- levy_a_scottish_highlander
+- levy_a_late_paik
+- levy_a_militiamen
+- levy_provincial_cavalry
+- levy_a_flintlock_levy
+- levy_late_cavaliers
+- levy_a_late_longbowmen
+- levy_a_late_gallowglass
+- levy_a_paik
+- levy_a_matchlock_levy
+- levy_cavaliers
+- levy_a_longbowmen
+- levy_a_reformed_gallowglass
+- levy_a_late_almogavars
+- levy_a_florentine_citizen_militia
+- levy_late_crusader_knights
+- levy_plated_knights
+- levy_a_men_at_arms
+- levy_a_peasant_levy
+- levy_steppe_horde
+- levy_teulu
+- levy_crusader_knights
+- levy_a_early_longbowmen
+- levy_schiltron
+- levy_a_gallowglass
+- levy_kerns
+- levy_caterans
+- levy_a_lour_lances
+- levy_a_early_paik
+- levy_a_almogavars
+- levy_mailed_knights
+- levy_noble_cavalry
+- levy_a_footmen
+- levy_a_feudal_levy
+- levy_chieftains
+- levy_a_villagers
+- levy_tribal_cavalry
+- location
+- market
+- NOT
+- levy_moa_hunters
+- levy_tribesmen
+- levy_fishing_boat
+- levy_birlinn
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- allowed_pop_type
+- size
+- unit
+- allow
+- allowed_culture
+- pop_type
+- unit_indian_paik_location_levy_trigger
+- unit_longbowmen_pop_trigger
+- unit_gallowglass_pop_trigger
+- unit_almogavars_pop_trigger
+- religion
+- country_allow
+- has_building_with_at_least_one_level
+- OR
+- allow_as_crew
+- levy_conscripts
+- levy_gendarmerie
+- levy_a_scottish_highlander
+- levy_a_late_paik
+- levy_a_militiamen
+- levy_provincial_cavalry
+- levy_a_flintlock_levy
+- levy_late_cavaliers
+- levy_a_late_longbowmen
+- levy_a_late_gallowglass
+- levy_a_paik
+- levy_a_matchlock_levy
+- levy_cavaliers
+- levy_a_longbowmen
+- levy_a_reformed_gallowglass
+- levy_a_late_almogavars
+- levy_a_florentine_citizen_militia
+- unit_florentine_citizen_militia_pop_trigger
+- levy_late_crusader_knights
+- levy_plated_knights
+- levy_a_men_at_arms
+- levy_a_peasant_levy
+- levy_steppe_horde
+- government_type
+- levy_teulu
+- levy_crusader_knights
+- levy_a_early_longbowmen
+- levy_schiltron
+- levy_a_gallowglass
+- levy_kerns
+- unit_kerns_pop_trigger
+- levy_caterans
+- unit_caterans_pop_trigger
+- levy_a_lour_lances
+- levy_a_early_paik
+- levy_a_almogavars
+- levy_mailed_knights
+- levy_noble_cavalry
+- levy_a_footmen
+- levy_a_feudal_levy
+- levy_chieftains
+- levy_a_villagers
+- levy_tribal_cavalry
+- location
+- market
+- is_produced_in_market
+- is_traded_in_market
+- has_estate_privilege
+- NOT
+- levy_moa_hunters
+- unit_moa_hunter_pop_trigger
+- levy_tribesmen
+- levy_fishing_boat
+- levy_birlinn
+- culture.language
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/levies
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    allowed_pop_type = <value>
+    size = <value>
+    unit = <value>
+    allowed_culture = <value>
+    pop_type = <value>
+    unit_indian_paik_location_levy_trigger = <value>
+    unit_longbowmen_pop_trigger = <value>
+    unit_gallowglass_pop_trigger = <value>
+    unit_almogavars_pop_trigger = <value>
+    religion = <value>
+    allow = {
+        # ...
+    }
+    country_allow = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    allow_as_crew = {
+        # ...
+    }
+    levy_conscripts = {
+        # ...
+    }
+    levy_gendarmerie = {
+        # ...
+    }
+    levy_a_scottish_highlander = {
+        # ...
+    }
+    levy_a_late_paik = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

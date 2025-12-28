@@ -1,0 +1,38 @@
+COMMON/scripted_guis — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/scripted_guis/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- <your_key_here>
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- <field_or_block_here>
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/scripted_guis
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    name = <value>
+    category = <value>
+    value = <value>
+    trigger = {
+        # ...
+    }
+    effect = {
+        # ...
+    }
+    modifiers = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

@@ -1,0 +1,208 @@
+gui/attribute_columns — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold UI files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/gui/attribute_columns/my_ui_file.gui
+
+Top-level block keys seen here (sample / most common):
+- size
+- text_single
+- icon
+- hbox
+- margin
+- tooltipwidget
+- sort_by_highlight
+- widget
+- modify_texture
+- background
+- vbox
+- minimumsize
+- expand
+- color
+- position
+- SimpleContextualTooltipType
+- sort_by_left_fade_highlight
+- maximumsize
+- SimpleContextualStringPairTooltipType
+- glow
+- card_row_list
+- item
+- sort_by_small_highlight
+- ContextualTooltipType
+- tooltipmeta
+- divider_flavor_01
+- text_multi
+- card_column
+- card_stringpair_list
+- TooltipStringPairList
+- container
+- country_flag_small
+- character_frame_small
+- character_abilities
+- overlappingitembox
+- portrait_standard_head_button
+- character_ribbon_3
+- gender_icon
+- cabinet_card
+- sort_by_right_fade_highlight
+- flowcontainer
+- button
+- TooltipTextBlock
+- piechart
+- pieslice
+- TooltipWidget
+- spriteborder
+- pieslice_no_highlight
+- TooltipConditionList
+- TooltipFunctionalBlock
+- card_field
+- cabinet_action_power
+- artist_abilities
+- country_flag_very_small
+- character_role_icon
+- select_portrait
+- dynasty_shield_mid
+- LeftClickButtonTooltip
+- clickable_header_card
+- country_flag_mid_plus
+- estate_privilege_action_button_alt
+- spriteBorder
+- parliament_Type_header
+- card_header_button_01
+- card_block_list
+- datacontext_from_model
+- scroll_card_button
+- progressbar
+- frame_grid
+- unit_card
+- portrait_standard_head_framed_button
+
+Common assignment keywords seen here (often-used properties/blocks):
+- size
+- using
+- text
+- texture
+- text_single
+- name
+- align
+- icon
+- visible
+- hbox
+- autoresize
+- spacing
+- margin
+- tooltipwidget
+- layoutpolicy_horizontal
+- datacontext
+- sort_by_highlight
+- layoutpolicy_vertical
+- widget
+- textcontext
+- alpha
+- default_format
+- modify_texture
+- raw_text
+- tooltip
+- background
+- parentanchor
+- blend_mode
+- vbox
+- minimumsize
+- expand
+- texture_density
+- color
+- position
+- SimpleContextualTooltipType
+- sort_by_left_fade_highlight
+- maximumsize
+- SimpleContextualStringPairTooltipType
+- glow
+- glow_radius
+- margin_right
+- card_row_list
+- tagtooltip_enabled
+- item
+- margin_left
+- sort_by_small_highlight
+- ContextualTooltipType
+- datamodel
+- tooltipmeta
+- divider_flavor_01
+- fontsize
+- resizeparent
+- text_multi
+- multiline
+- onmousehierarchyleave
+- margin_top
+- card_column
+- card_stringpair_list
+- TooltipStringPairList
+- value
+- set_parent_size_to_minimum
+- ontextcontextchanged
+- container
+- lowpriotextcontext
+- country_flag_small
+- character_frame_small
+- margin_bottom
+- ignoreinvisible
+- game_concept
+- allow_outside
+- character_abilities
+- overlappingitembox
+- portrait_standard_head_button
+- onmousehierarchyenter
+- character_ribbon_3
+- gender_icon
+- spriteType
+- alwaystransparent
+- cabinet_card
+- tooltip_enabled
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for gui/attribute_columns
+# STRUCTURE ONLY: placeholder values. Replace with valid GUI keys/values.
+
+<gui_block_key> = {
+    using = <value>
+    text = <value>
+    texture = <value>
+    name = <value>
+    align = <value>
+    visible = <value>
+    autoresize = <value>
+    spacing = <value>
+    layoutpolicy_horizontal = <value>
+    datacontext = <value>
+    size = {
+        # ...
+    }
+    text_single = {
+        # ...
+    }
+    icon = {
+        # ...
+    }
+    hbox = {
+        # ...
+    }
+    margin = {
+        # ...
+    }
+    tooltipwidget = {
+        # ...
+    }
+    sort_by_highlight = {
+        # ...
+    }
+    widget = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<gui_block_key> = {
+    # add properties/blocks appropriate for this directory
+}

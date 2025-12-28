@@ -1,0 +1,113 @@
+COMMON/age — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/age/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- modifier
+- max_ai_privilege_per_estate
+- min_ai_privilege_per_estate
+- age_1_traditions
+- age_2_renaissance
+- age_3_discovery
+- age_4_reformation
+- age_5_absolutism
+- age_6_revolutions
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- nobles_estate
+- clergy_estate
+- burghers_estate
+- peasants_estate
+- dhimmi_estate
+- tribes_estate
+- cossacks_estate
+- year
+- price_stability
+- max_price
+- modifier
+- lack_of_control_impact_on_warscore
+- efficiency
+- victory_card
+- months_for_exploration_spread
+- max_ai_privilege_per_estate
+- min_ai_privilege_per_estate
+- expected_army_size_modifier
+- levy_maintenance_modifier
+- global_navy_levy_size_modifier
+- antagonism_religion_influence
+- hegemons_allowed
+- levy_combat_efficiency_modifier
+- war_score_from_battles
+- mercenaries
+- antagonism_culture_influence
+- antagonism_government_type_influence
+- global_war_score_cost
+- construction_center_max_level
+- subject_pays_colonial_cost_modifier
+- subject_loyalty
+- antagonism_societal_value_influence
+- age_1_traditions
+- age_2_renaissance
+- diplomatic_capacity_modifier
+- cultural_tradition_modifier
+- age_3_discovery
+- exploration_mission_speed
+- colonial_maintenance_cost
+- age_4_reformation
+- global_pop_conversion_speed_modifier
+- merchant_maintenance_cost
+- age_5_absolutism
+- revoke_privilege_cost_modifier
+- global_integration_speed_modifier
+- age_6_revolutions
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/age
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    nobles_estate = <value>
+    clergy_estate = <value>
+    burghers_estate = <value>
+    peasants_estate = <value>
+    dhimmi_estate = <value>
+    tribes_estate = <value>
+    cossacks_estate = <value>
+    year = <value>
+    price_stability = <value>
+    max_price = <value>
+    modifier = {
+        # ...
+    }
+    max_ai_privilege_per_estate = {
+        # ...
+    }
+    min_ai_privilege_per_estate = {
+        # ...
+    }
+    age_1_traditions = {
+        # ...
+    }
+    age_2_renaissance = {
+        # ...
+    }
+    age_3_discovery = {
+        # ...
+    }
+    age_4_reformation = {
+        # ...
+    }
+    age_5_absolutism = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

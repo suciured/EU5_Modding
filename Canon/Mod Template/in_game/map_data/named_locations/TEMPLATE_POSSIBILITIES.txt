@@ -1,0 +1,127 @@
+map_data/named_locations — TEMPLATE (POSSIBILITIES)
+====================================
+Observed patterns to help scaffold map_data files.
+Structure-only: does not guarantee validity of every field in every context.
+
+Where to put your mod file:
+- in_game/map_data/named_locations/my_map_file.txt
+
+Top-level keys seen here (sample / most common):
+- <map_key>
+
+Common assignment keywords seen here:
+- stockholm
+- norrtalje
+- nykoping
+- arboga
+- enkoping
+- uppsala
+- kastelholm
+- kolmarden
+- soderkoping
+- norrkoping
+- linkoping
+- alvastra
+- vadstena
+- strangnas
+- tierp
+- heby
+- vasteras
+- oppunda
+- nora
+- sala
+- orebro
+- riseberga
+- goksholm
+- skinskatteberg
+- sodertalje
+- tjust
+- sevede
+- handbord
+- kalmar
+- kinda
+- jonkoping
+- oland
+- vallsjo
+- vetlanda
+- albo
+- konga
+- vaxjo
+- uppvidinge
+- ljungby
+- trollaborg
+- waestbo
+- hjo
+- tiveden
+- vartofta
+- skara
+- lodose
+- hornborg
+- utlandet
+- kungsbacka
+- ekholm
+- falkoping
+- allingsas
+- bogesund
+- lidkoping
+- skene
+- slite
+- hoborg
+- visby
+- gefle
+- hedesunda
+- hamrange
+- ockelbo
+- linde
+- grythyttan
+- dalaborg
+- amal
+- vedbo
+- varnum
+- tingvalla
+- gillberg
+- nas
+- nordmark
+- farnebo
+- josse
+- fryksdal
+- hudiksvall
+- alfta
+- soderala
+- hogdal
+- avesta
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for map_data/named_locations
+# STRUCTURE ONLY: placeholder values. Replace with valid keys/values for map_data.
+# WARNING: Map data is sensitive; incorrect edits can break map loading.
+
+<map_key> = {
+    stockholm = <value>
+    norrtalje = <value>
+    nykoping = <value>
+    arboga = <value>
+    enkoping = <value>
+    uppsala = <value>
+    kastelholm = <value>
+    kolmarden = <value>
+    soderkoping = <value>
+    norrkoping = <value>
+    positions = {
+        # ...
+    }
+    shape = {
+        # ...
+    }
+    points = {
+        # ...
+    }
+    area = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<map_key> = {
+    # add fields/blocks appropriate for this directory
+}

@@ -1,0 +1,218 @@
+COMMON/heir_selections — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/heir_selections/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- add
+- if
+- limit
+- allowed_estates
+- not
+- heir_is_allowed
+- OR
+- potential
+- calc
+- locked
+- else
+- sibling_score
+- succession_effect
+- modifier
+- NOR
+- custom_tags
+- NOT
+- and
+- scope:target
+- any_parent
+- has_traits_of_type
+- scope:new_ruler
+- mother
+- father
+- culture
+- any_primary_or_accepted_culture
+- root.father
+- root.father.father
+- has_unlocked_heir_selection_trigger
+- AND
+- is_target_in_variable_list
+- cognatic_primogeniture
+- absolute_cognatic_primogeniture
+- salic_law
+- semi_salic_law
+- partition_inheritance
+- fratricide_succesion
+- allowed
+- or
+- unigeniture
+- mamluk_succesion
+- any_cabinet_character
+- trigger_event_non_silently
+- days
+- youngest_son_of_ruler
+- tanistry_elective
+- elective_succession
+- trigger_if
+- custom_tooltip
+- any_ruler
+- dynastic_elective_succession
+- favorite_son_elective_succession
+- union_of_crowns_succession
+- include_other_countries
+- has_mutual_scripted_relation
+- austrian_cognatic_primogeniture
+- matrilineal_salic_law
+- judicial_election
+- oligarchic_elective
+- republic_4_year_terms
+- republic_2_year_terms
+- lottery_election
+- veche_selection
+- doge_election
+- diarchic_election
+- bank_selection
+- pirate_elective
+- peasant_elective
+- military_dictatorship
+- signoria_selection
+- podesta_elective
+- candidate_country
+- admiralty_regime_heir_selection
+- general_heir_selection
+- guru_election
+- matrilineal_non_exclusive
+- bishopric_elective
+- theocratic_elective
+- grandmaster_elective
+- abbot_elective
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- desc
+- add
+- value
+- if
+- limit
+- exists
+- allowed_estates
+- not
+- heir_is_allowed
+- OR
+- potential
+- has_reform
+- calc
+- allow_female
+- through_female
+- ignore_ruler
+- include_ruler_siblings
+- locked
+- succession_law
+- use_election
+- term_duration
+- is_female
+- max_possible_candidates
+- else
+- allow_children
+- traverse_family_tree
+- sibling_score
+- succession_effect
+- has_trait_category
+- modifier
+- care_about_producing_heirs
+- NOR
+- all_in_country
+- custom_tags
+- show_candidates
+- NOT
+- and
+- allow_foreign_ruler
+- culture
+- add_legitimacy
+- is_admiral
+- all_in_dynasty
+- is_general
+- is_alive
+- scope:target
+- format
+- religion
+- any_parent
+- this
+- root.father
+- mother
+- has_traits_of_type
+- father
+- depth_first
+- scope:new_ruler
+- is_ruler
+- custom_tooltip
+- modulo
+- government_type
+- allow_male
+- multiply
+- is_a_praefecta
+- has_variable
+- has_trait
+- subtract
+- any_primary_or_accepted_culture
+- root.father.father
+- has_unlocked_heir_selection_trigger
+- estate_type
+- AND
+- change_character_estate
+- use_mothers_dynasty
+- add_government_power
+- has_variable_list
+- is_target_in_variable_list
+- name
+- target
+- tag
+- cognatic_primogeniture
+- absolute_cognatic_primogeniture
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/heir_selections
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    desc = <value>
+    value = <value>
+    exists = <value>
+    has_reform = <value>
+    allow_female = <value>
+    through_female = <value>
+    ignore_ruler = <value>
+    include_ruler_siblings = <value>
+    succession_law = <value>
+    use_election = <value>
+    add = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    allowed_estates = {
+        # ...
+    }
+    not = {
+        # ...
+    }
+    heir_is_allowed = {
+        # ...
+    }
+    OR = {
+        # ...
+    }
+    potential = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}

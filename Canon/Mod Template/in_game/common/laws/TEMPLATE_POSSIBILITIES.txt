@@ -1,0 +1,218 @@
+COMMON/laws — TEMPLATE (POSSIBILITIES)
+======================================
+This file lists *observed* key patterns from base data to help modders scaffold files.
+Structure-only: it does not define valid values or guarantee all options are accepted.
+
+Where to put your mod file:
+- in_game/common/laws/my_mod_file.txt
+
+Top-level keys seen in this folder (sample / most common):
+- country_modifier
+- add
+- estate_preferences
+- potential
+- limit
+- allow
+- potential_trigger
+- if
+- on_activate
+- wants_this_policy_bias
+- NOT
+- OR
+- custom_tooltip
+- on_deactivate
+- else
+- locked
+- multiply
+- has_unlocked_policy_trigger
+- wants_keep_policy
+- international_organization:middle_kingdom
+- wants_propose_policy
+- subtract
+- has_currency_to_vote_for_law
+- hre_on_reform_level_passed_effect
+- country_has_special_status
+- hre_can_select_adjacent_reform_level
+- hre_has_selected_policy_of_this_law
+- international_organization_modifier
+- is_leader_of_international_organization_of_type
+- leader_country
+- set_variable
+- culture
+- scope:recipient
+- hidden_effect
+- custom_tags
+- on_pay_price
+- AND
+- value
+- change_celestial_authority
+- add_gold
+- hre_on_reform_level_passed_opinion_effect_all_members
+- NOR
+- trigger_if
+- has_unlocked_law_trigger
+- change_union_integration_level
+- scale
+- hre_lock_law
+- every_international_organization_member
+- save_temporary_scope_value_as
+- country_is_senior_partner
+- law_religion_group
+- any_international_organization_member
+- on_fully_activated
+- current_age_or_later
+- payments_implemented
+- else_if
+- not
+- location_modifier
+- add_to_global_variable_list
+- remove_list_global_variable
+- international_organization_unlock_parliament_issue_effect
+- international_organization_lock_parliament_issue_effect
+- international_organization_has_locked_law
+- location:lisbon
+- location:coimbra
+- custom_description
+- hre_has_locked_law
+- international_organization:hre
+- hre_num_of_emperor_comfort_policies_active
+- policy_bias_towards_new_member
+- scope:actor
+- add_opinion
+- hre_set_imperial_religion
+- international_organization_has_unlocked_law_trigger
+- ordered_international_organization_member
+- succession_law
+- change_societal_value
+- join_defensive_wars_always
+- any_international_organizations_member_of
+- religion
+
+Common assignment keywords seen in this folder (often-used fields/blocks):
+- value
+- country_modifier
+- add
+- desc
+- years
+- estate_preferences
+- potential
+- limit
+- allow
+- potential_trigger
+- if
+- on_activate
+- wants_this_policy_bias
+- type
+- NOT
+- law_category
+- multiply
+- custom_tooltip
+- OR
+- text
+- on_deactivate
+- else
+- international_organization_has_policy
+- is_leader_of_international_organization
+- has_variable
+- international_organization_type
+- culture
+- has_or_had_tag
+- locked
+- exists
+- subtract
+- has_unlocked_policy_trigger
+- wants_keep_policy
+- international_organization:middle_kingdom
+- wants_propose_policy
+- this
+- set_variable
+- max
+- clergy_estate_target_satisfaction
+- has_currency_to_vote_for_law
+- hre_on_reform_level_passed_effect
+- min
+- divide
+- requires_vote
+- global_estate_target_satisfaction
+- country_has_special_status
+- country
+- monthly_towards_centralization
+- add_tribal_cohesion
+- monthly_religious_influence
+- nobles_estate_target_satisfaction
+- hre_can_select_adjacent_reform_level
+- hre_has_selected_policy_of_this_law
+- international_organization_modifier
+- is_leader_of_international_organization_of_type
+- monthly_legitimacy
+- religion
+- leader_country
+- tolerance_heretic
+- scope:recipient
+- country_cabinet_efficiency
+- unique
+- global_crown_estate_power
+- monthly_tribal_cohesion
+- hidden_effect
+- name
+- global_pop_conversion_speed_modifier
+- custom_tags
+- add_stability
+- monthly_towards_decentralization
+- on_pay_price
+- peasants_estate_target_satisfaction
+- law
+- upper_level
+- lower_level
+- has_advance
+- AND
+- current_age
+- tax_income_efficiency
+- monthly_towards_free_subjects
+
+Comprehensive example (structure, placeholders only):
+# Comprehensive example for COMMON/laws
+# This is a STRUCTURE example using placeholder values.
+# Replace placeholders with valid values for this folder.
+
+<your_key_here> = {
+    value = <value>
+    desc = <value>
+    years = <value>
+    type = <value>
+    add = <value>
+    law_category = <value>
+    text = <value>
+    multiply = <value>
+    international_organization_has_policy = <value>
+    is_leader_of_international_organization = <value>
+    country_modifier = {
+        # ...
+    }
+    add = {
+        # ...
+    }
+    estate_preferences = {
+        # ...
+    }
+    potential = {
+        # ...
+    }
+    limit = {
+        # ...
+    }
+    allow = {
+        # ...
+    }
+    potential_trigger = {
+        # ...
+    }
+    if = {
+        # ...
+    }
+}
+
+Minimal skeleton to start:
+<key> = {
+    # add fields/blocks appropriate for this folder
+}
