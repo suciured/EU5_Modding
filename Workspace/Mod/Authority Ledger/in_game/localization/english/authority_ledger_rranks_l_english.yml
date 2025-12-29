@@ -1,5 +1,4 @@
 ﻿l_english:
- country_name_construction_prefix_rank_of_name: "$country_flavor$ of [COUNTRY.GetName]"
  al_rrank_window_title: "Authority Ledger R-Ranks"
  al_rrank_window_button: "Authority Ledger"
  al_rrank_window_button_tooltip: "Left click to open. Right click to close."

@@ -36,6 +36,26 @@ window = {
 					button_regular_alt_yellow = {
 						blockoverride "primary_visible" {}
 						size = { 190 40 }
+						name = "al_rrank_r0_button"
+						onclick = "[GetScriptedGui('al_rrank_r0_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r0_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					widget = { size = { 120 40 } }
+					widget = { size = { 120 40 } }
+					widget = { size = { 120 40 } }
+					widget = { size = { 120 40 } }
+					widget = { size = { 120 40 } }
+					widget = { size = { 120 40 } }
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
 						name = "al_rrank_r1_button"
 						onclick = "[GetScriptedGui('al_rrank_r1_sgui').Execute(GuiScope.End)]"
 						text = "al_rrank_r1_name"

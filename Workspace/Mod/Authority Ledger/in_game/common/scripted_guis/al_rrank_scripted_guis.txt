@@ -1,5 +1,15 @@
 gui/al_rrank_window.gui = al_rrank_window
 
+al_rrank_r0_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r0
+	}
+}
+
 al_rrank_r1_sgui = {
 	scope = country
 	is_shown = { always = yes }

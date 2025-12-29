@@ -1,0 +1,32 @@
+[VERSION] 0.2
+[DATE] 2025-12-29
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - None
+  - Edited:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/gui/al_rrank_window.gui
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/common/scripted_effects/al_rrank_effects.txt
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/common/scripted_guis/al_rrank_scripted_guis.txt
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/localization/english/authority_ledger_rranks_l_english.yml
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/main_menu/localization/english/authority_ledger_rranks_l_english.yml
+  - Deleted:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/localization/english/authority_ledger_l_english.yml
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - /workspace/EU5_Modding/Canon/Knowledge Base/Plugins/COMMON/PLUGIN_COMMON__PART_0002.txt
+    - /workspace/EU5_Modding/Canon/Knowledge Base/Plugins/COMMON/PLUGIN_COMMON__PART_0003.txt
+  - Raw:
+    - /workspace/EU5_Modding/Canon/Raw/in_game/common/customizable_localization/country_name_construction.txt
+    - /workspace/EU5_Modding/Canon/Raw/in_game/common/customizable_localization/country_ranks.txt
+    - /workspace/EU5_Modding/Canon/Raw/main_menu/localization/english/government_names_l_english.yml
+[NOTES]
+  - Added an R0 button row to the R-rank window and wired it to a scripted GUI action.
+  - Updated the rank-clear effect to wipe the R0 variable along with the others.
+  - Removed the custom country name construction localization override to fall back to base token handling.
+  - Dropped the now-redundant in-game localization file that only contained the overridden key.
+[OPEN_ITEMS]
+  - None
