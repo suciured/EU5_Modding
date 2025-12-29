@@ -1,2 +1,4 @@
 ﻿l_english:
- country_name_construction_prefix_rank_of_name: "$country_flavor$ of [COUNTRY.GetName]"
+ al_rrank_r2_name: "Kingdom"
+ country_name_construction_prefix_rank_of_name: "$COUNTRY_FLAVOR$ of $COUNTRY$"
+ country_name_long: "$COUNTRY_FLAVOR$ of $COUNTRY$"
