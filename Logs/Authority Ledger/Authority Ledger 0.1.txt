@@ -1,0 +1,29 @@
+[VERSION] 0.1
+[DATE] 2025-12-29
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - None
+  - Edited:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/localization/english/authority_ledger_l_english.yml
+  - Deleted:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/common/customizable_localization/country_flavor.txt
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/common/country_name_construction/authority_ledger_replace.txt
+[TEMPLATE_CLEANUP]
+  - Removed unused template folders/files:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/common/customizable_localization (empty after cleanup)
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/common/country_name_construction (empty after cleanup)
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/common (empty after cleanup)
+[SOURCES_USED]
+  - Knowledge Base:
+    - /workspace/EU5_Modding/Canon/Knowledge Base/Plugins/COMMON/PLUGIN_COMMON__PART_0002.txt
+  - Raw:
+    - /workspace/EU5_Modding/Canon/Raw/in_game/common/customizable_localization/country_ranks.txt
+    - /workspace/EU5_Modding/Canon/Raw/in_game/common/customizable_localization/country_name_construction.txt
+[NOTES]
+  - Dropped legacy root/common overrides to avoid conflicting customizable localization definitions.
+  - Simplified country name construction localization to use rank-aware country flavor with scoped country name.
+  - Kept localization in in_game scope only to prevent duplicated keys.
+[OPEN_ITEMS]
+  - None
