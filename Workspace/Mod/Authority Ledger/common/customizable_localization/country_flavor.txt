@@ -1,3 +1,0 @@
-country_flavor = {
-    text = al_rrank_r2_name
-}

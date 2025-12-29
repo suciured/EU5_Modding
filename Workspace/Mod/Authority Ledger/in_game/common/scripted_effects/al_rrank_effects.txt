@@ -1,4 +1,5 @@
 al_clear_rrank_variables = {
+	remove_variable = al_rrank_r0
 	remove_variable = al_rrank_r1
 	remove_variable = al_r1_type_1
 	remove_variable = al_r1_type_2
