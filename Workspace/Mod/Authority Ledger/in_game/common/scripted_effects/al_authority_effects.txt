@@ -82,6 +82,8 @@
 	}
 	set_variable = { name = la value = var:al_la }
 	set_variable = { name = ca value = var:al_ca }
+	set_variable = { name = LA value = var:al_la }
+	set_variable = { name = CA value = var:al_ca }
 	set_variable = {
 		name = al_na
 		value = {
@@ -91,6 +93,7 @@
 	}
 	change_variable = { name = al_ta add = var:al_na }
 	set_variable = { name = ta value = var:al_ta }
+	set_variable = { name = TA value = var:al_ta }
 
 	set_variable = { name = al_tr_candidate value = 0 }
 	if = {
