@@ -41,7 +41,7 @@ window = {
 						text_single = {
 							size = { 100% 100% }
 							align = center|nobaseline
-							raw_text = "[GetPlayer.MakeScope.GetVariable('TA').GetValue|0]"
+							raw_text = "[GetPlayer.MakeScope.GetVariable('al_ta').GetValue|0]"
 						}
 					}
 					widget = { size = { 120 40 } }
@@ -51,7 +51,7 @@ window = {
 						text_single = {
 							size = { 100% 100% }
 							align = center|nobaseline
-							raw_text = "[GetPlayer.MakeScope.GetVariable('CA').GetValue|0]"
+							raw_text = "[GetPlayer.MakeScope.GetVariable('al_ca').GetValue|0]"
 						}
 					}
 					widget = { size = { 120 40 } }
@@ -61,7 +61,7 @@ window = {
 						text_single = {
 							size = { 100% 100% }
 							align = center|nobaseline
-							raw_text = "[GetPlayer.MakeScope.GetVariable('LA').GetValue|0]"
+							raw_text = "[GetPlayer.MakeScope.GetVariable('al_la').GetValue|0]"
 						}
 					}
 					widget = { size = { 120 40 } }
