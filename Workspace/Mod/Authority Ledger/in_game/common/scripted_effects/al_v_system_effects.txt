@@ -15,6 +15,10 @@
 # - V4 net + TA accumulation (subject halving)
 # - V5 rank evaluation from thresholds
 
+al_authority_monthly_update_effect = {
+    al_v_system_monthly_update_effect = yes
+}
+
 al_v_system_monthly_update_effect = {
     # Tick counter (optional)
     if = {
@@ -23,15 +27,47 @@ al_v_system_monthly_update_effect = {
     }
     change_variable = { name = v4_tick add = 1 }
 
-    # Ensure Title Authority exists
+    # Ensure V3/V4 storage exists
+    if = {
+        limit = { NOT = { has_variable = v3_7 } }
+        set_variable = { name = v3_7 value = 0 }
+    }
+    if = {
+        limit = { NOT = { has_variable = v3_8 } }
+        set_variable = { name = v3_8 value = 0 }
+    }
     if = {
         limit = { NOT = { has_variable = v4_ta } }
         set_variable = { name = v4_ta value = 0 }
     }
+    if = {
+        limit = { NOT = { has_variable = v5_t_rank } }
+        set_variable = { name = v5_t_rank value = 0 }
+    }
 
-    # Reset derived display variables (set to 0 to avoid stale legacy values)
-    set_variable = { name = v3_7 value = 0 }
-    set_variable = { name = v3_8 value = 0 }
-    set_variable = { name = v4_3 value = 0 }
-    set_variable = { name = v5_t_rank value = 0 }
+    # Debug display: total population/dev/locations
+    set_variable = { name = al_total_population value = total_population }
+    set_variable = { name = al_total_development value = total_development }
+    set_variable = { name = al_total_locations value = num_locations }
+
+    # V3 debug proxies: map totals into central/local bases for now
+    set_variable = { name = v3_7 value = var:al_total_population }
+    set_variable = { name = v3_8 value = var:al_total_development }
+
+    # V4.1/V4.2: role-aware central/local flow
+    set_variable = { name = v4_1 value = var:v3_7 }
+    set_variable = { name = v4_2 value = var:v3_8 }
+    if = {
+        limit = { is_subject = yes }
+        change_variable = { name = v4_1 multiply = 0.5 }
+        change_variable = { name = v4_2 multiply = 0.5 }
+    }
+
+    # V4.3: net authority flow (per tick)
+    set_variable = { name = v4_3 value = var:v4_1 }
+    change_variable = { name = v4_3 subtract = var:v4_2 }
+
+    # V4.4: title authority accumulation
+    change_variable = { name = v4_ta add = var:v4_3 }
+
 }
