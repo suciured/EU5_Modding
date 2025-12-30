@@ -73,16 +73,7 @@ window = {
 						tooltip = "al_rrank_type_tooltip"
 						button_ignore = none
 					}
-					button_regular = {
-						blockoverride "primary_visible" {}
-						size = { 120 40 }
-						name = "al_r1_type_2_button"
-						onclick = "[GetScriptedGui('al_r1_type_2_sgui').Execute(GuiScope.End)]"
-						text = "al_r1_type_2_name"
-						fontsize = 10
-						tooltip = "al_rrank_type_tooltip"
-						button_ignore = none
-					}
+					widget = { size = { 120 40 } }
 					button_regular = {
 						blockoverride "primary_visible" {}
 						size = { 120 40 }
@@ -93,16 +84,7 @@ window = {
 						tooltip = "al_rrank_type_tooltip"
 						button_ignore = none
 					}
-					button_regular = {
-						blockoverride "primary_visible" {}
-						size = { 120 40 }
-						name = "al_r1_type_4_button"
-						onclick = "[GetScriptedGui('al_r1_type_4_sgui').Execute(GuiScope.End)]"
-						text = "al_r1_type_4_name"
-						fontsize = 10
-						tooltip = "al_rrank_type_tooltip"
-						button_ignore = none
-					}
+					widget = { size = { 120 40 } }
 					button_regular = {
 						blockoverride "primary_visible" {}
 						size = { 120 40 }
@@ -113,16 +95,7 @@ window = {
 						tooltip = "al_rrank_type_tooltip"
 						button_ignore = none
 					}
-					button_regular = {
-						blockoverride "primary_visible" {}
-						size = { 120 40 }
-						name = "al_r1_type_6_button"
-						onclick = "[GetScriptedGui('al_r1_type_6_sgui').Execute(GuiScope.End)]"
-						text = "al_r1_type_6_name"
-						fontsize = 10
-						tooltip = "al_rrank_type_tooltip"
-						button_ignore = none
-					}
+					widget = { size = { 120 40 } }
 				}
 				hbox = {
 					margin_bottom = 4
