@@ -1,4 +1,9 @@
 ﻿l_english:
+ al_authority_tooltip_title: "Authority Ledger"
+ al_authority_tooltip_ca_label: "Central Authority (CA):"
+ al_authority_tooltip_la_label: "Local Authority (LA):"
+ al_authority_tooltip_ta_label: "Title Authority (TA):"
+ al_authority_tooltip_la_breakdown_title: "Local Authority by Location"
  al_trank_window_title: "Authority Ledger T-Ranks"
  al_trank_window_button: "Authority Ledger"
  al_trank_r0_name: "T0 | County"
