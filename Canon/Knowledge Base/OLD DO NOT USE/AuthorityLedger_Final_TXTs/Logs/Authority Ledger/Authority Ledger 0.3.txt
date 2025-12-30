@@ -1,0 +1,32 @@
+[VERSION] 0.3
+[DATE] 2025-12-30
+[SCOPE] MAJOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - Codex/Authority Ledger/V_System_Spec 0.2.txt
+    - Codex/Authority Ledger/T_Rank_UI_Spec 0.2.txt
+    - Codex/Authority Ledger/T_Rank_Thresholds_Draft 0.2.txt
+    - Logs/Authority Ledger/Authority Ledger 0.3.txt
+  - Edited:
+    - AuthorityLedger_Codex_Index.txt
+    - CODEX_INSTRUCTIONS.txt
+    - Authority Ledger Instructions.txt
+  - Deleted:
+    - None (spec-only; legacy keys deprecated via mapping doc)
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - AuthorityLedger_Codex_Index.txt
+    - CODEX_INSTRUCTIONS.txt
+    - EU5_T-RANK_TEMPLATE.txt
+  - Raw:
+    - None
+[NOTES]
+  - Updated Codex index terminology from legacy CA/LA/TR framing to V-system (V3–V5) bases/net/TA/T-rank.
+  - Added explicit MOD canon definitions and independence gate language (T10→T11).
+  - Clarified Codex rule: MOD-defined systems may be reasoned about only within MOD Codex bounds.
+  - Rewrote Authority Ledger instructions to reflect current V-system math and subject rules; removed legacy pool language.
+[OPEN_ITEMS]
+  - Engine update hook + GUI binding paths remain NOT DEFINED IN REPO SOURCES.

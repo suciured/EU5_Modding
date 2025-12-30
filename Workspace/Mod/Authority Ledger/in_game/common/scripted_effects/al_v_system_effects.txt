@@ -1,0 +1,37 @@
+# v_system_authority_effects.txt — V1–V5 Authority Ledger (MOD)
+# [DATE] 2025-12-30
+#
+# This file intentionally removes legacy Authority Ledger formulas/variables.
+# It defines ONLY safe placeholder effects until per-province aggregation primitives are confirmed.
+#
+# NOT DEFINED IN REPO SOURCES:
+# - A proven province-iteration + location-iteration pattern to compute V2.1–V2.3 exactly as spec.
+# - A proven way to read location 'population' and 'development' values by script name.
+# - A proven monthly hook cadence for this system.
+#
+# Once confirmed, implement:
+# - V2 province aggregates (control avg, pop sum, dev sum)
+# - V3 routing, governance composite, bases
+# - V4 net + TA accumulation (subject halving)
+# - V5 rank evaluation from thresholds
+
+al_v_system_monthly_update_effect = {
+    # Tick counter (optional)
+    if = {
+        limit = { NOT = { has_variable = v4_tick } }
+        set_variable = { name = v4_tick value = 0 }
+    }
+    change_variable = { name = v4_tick add = 1 }
+
+    # Ensure Title Authority exists
+    if = {
+        limit = { NOT = { has_variable = v4_ta } }
+        set_variable = { name = v4_ta value = 0 }
+    }
+
+    # Reset derived display variables (set to 0 to avoid stale legacy values)
+    set_variable = { name = v3_7 value = 0 }
+    set_variable = { name = v3_8 value = 0 }
+    set_variable = { name = v4_3 value = 0 }
+    set_variable = { name = v5_t_rank value = 0 }
+}

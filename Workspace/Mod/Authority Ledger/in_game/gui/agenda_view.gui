@@ -257,9 +257,9 @@ basic_priority_dialog = {
 				size = { 180 40 }
 				name = "Authority Ledger"
 				tooltipwidget = { using = al_authority_ledger_tooltip }
-				onclick = "[ExecuteConsoleCommand('GUI.CreateWidget gui/al_rrank_window.gui al_rrank_window')]"
-				onrightclick = "[ExecuteConsoleCommand('GUI.ClearWidgets gui/al_rrank_window.gui al_rrank_window')]"
-				text = "al_rrank_window_button"
+				onclick = "[ExecuteConsoleCommand('GUI.CreateWidget gui/al_trank_window.gui al_trank_window')]"
+				onrightclick = "[ExecuteConsoleCommand('GUI.ClearWidgets gui/al_trank_window.gui al_trank_window')]"
+				text = "al_trank_window_button"
 				fontsize = 11
 				tooltipwidget = { using = al_authority_ledger_tooltip }
 				button_ignore = none
