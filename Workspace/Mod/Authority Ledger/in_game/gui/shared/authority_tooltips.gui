@@ -10,41 +10,46 @@ template AuthorityLedger_Button_Tooltip {
 				hbox = {
 					spacing = 6
 					text_single = { text = "Tick:" }
-					text_single = { text = "[Player.MakeScope.GetVariable('authority_tick_count').GetValue|0]" }
+					text_single = { text = "[Player.MakeScope.GetVariable('v4_tick').GetValue|0]" }
 				}
 
 				hbox = {
 					spacing = 6
-					text_single = { text = "CA:" }
+					text_single = { text = "Central (V4.1):" }
+					text_single = { text = "[Player.MakeScope.GetVariable('v4_1').GetValue|0]" }
+				}
+
+				hbox = {
+					spacing = 6
+					text_single = { text = "Local (V4.2):" }
+					text_single = {
+						text = "[Player.MakeScope.GetVariable('v4_2').GetValue|0]"
+						tooltipwidget = { using = AuthorityLedger_LA_Breakdown_Tooltip }
+					}
+				}
+
+				hbox = {
+					spacing = 6
+					text_single = { text = "Net (V4.3):" }
+					text_single = { text = "[Player.MakeScope.GetVariable('v4_3').GetValue|0]" }
+				}
+
+				hbox = {
+					spacing = 6
+					text_single = { text = "TA:" }
+					text_single = { text = "[Player.MakeScope.GetVariable('v4_ta').GetValue|0]" }
+				}
+
+				hbox = {
+					spacing = 6
+					text_single = { text = "Central Base (V3.7):" }
 					text_single = { text = "[Player.MakeScope.GetVariable('v3_7').GetValue|0]" }
 				}
 
 				hbox = {
 					spacing = 6
-					text_single = { text = "LA:" }
-					text_single = {
-						text = "[Player.MakeScope.GetVariable('v3_8').GetValue|0]"
-						tooltipwidget = { using = AuthorityLedger_LA_Breakdown_Tooltip }
-					}
-				}
-
-				
-				hbox = {
-					spacing = 6
-					text_single = { text = "CapBase:" }
-					text_single = { text = "[Player.MakeScope.GetVariable('al_capital_base').GetValue|0]" }
-				}
-
-				hbox = {
-					spacing = 6
-					text_single = { text = "LocBase:" }
-					text_single = { text = "[Player.MakeScope.GetVariable('al_local_base').GetValue|0]" }
-				}
-
-hbox = {
-					spacing = 6
-					text_single = { text = "TA:" }
-					text_single = { text = "[Player.MakeScope.GetVariable('v4_ta').GetValue|0]" }
+					text_single = { text = "Local Base (V3.8):" }
+					text_single = { text = "[Player.MakeScope.GetVariable('v3_8').GetValue|0]" }
 				}
 			}
 		}
