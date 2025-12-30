@@ -1,0 +1,700 @@
+EU5 T-RANK TEMPLATE
+Version: Authority-Based System
+Status: Baseline (Converted from R-Rank)
+Purpose: Canon-safe reference for continuation and implementation
+
+==================================================
+OVERVIEW
+==================================================
+
+T-rank is a hidden structural ranking system derived from Net Authority (NA).
+It represents how authority is organized within a state.
+
+- T-rank is never shown directly to the player
+- T-rank is never manually set
+- T-rank is always derived from Net Authority math
+- Government type and subject type are orthogonal to T-rank
+- Decimal subranks (.1–.6) correspond directly to UI slots (1–6)
+
+==================================================
+FORMAT NOTES
+==================================================
+
+- Only structural identifiers are used (numeric subranks)
+- No flavor names are used
+- Any undefined data is marked as TBD
+- Country-rank distribution is bottom-heavy
+- Only two Empire tiers exist (T14–T15)
+- Upgrade constraints default to TBD
+- Exceptions:
+  - T10 → T11 requires Independence
+  - T15 is the maximum rank
+
+==================================================
+T-RANK LADDER
+==================================================
+
+T0
+Canon Country Rank: County
+
+T0.1
+Government: EMPTY
+Subject Type: EMPTY
+Upgrades:
+- EMPTY
+
+T0.2
+Government: Monarchy
+Subject Type: Fiefdom
+Upgrades:
+- T1.1
+- T1.3
+
+T0.3
+Government: EMPTY
+Subject Type: EMPTY
+Upgrades:
+- EMPTY
+
+T0.4
+Government: EMPTY
+Subject Type: EMPTY
+Upgrades:
+- EMPTY
+
+T0.5
+Government: Republic
+Subject Type: Vassal
+Upgrades:
+- T1.5
+
+T0.6
+Government: EMPTY
+Subject Type: EMPTY
+Upgrades:
+- EMPTY
+
+--------------------------------------------------
+
+T1
+Canon Country Rank: County
+
+T1.1
+Government: Monarchy
+Subject Type: Fiefdom
+Upgrade Constraints:
+- TBD
+
+T1.2
+Government: EMPTY
+Subject Type: EMPTY
+Upgrade Constraints:
+- EMPTY
+
+T1.3
+Government: Monarchy
+Subject Type: Vassal
+Upgrade Constraints:
+- TBD
+
+T1.4
+Government: EMPTY
+Subject Type: EMPTY
+Upgrade Constraints:
+- EMPTY
+
+T1.5
+Government: Republic
+Subject Type: Vassal
+Upgrade Constraints:
+- TBD
+
+T1.6
+Government: EMPTY
+Subject Type: EMPTY
+Upgrade Constraints:
+- EMPTY
+
+--------------------------------------------------
+
+T2
+Canon Country Rank: County
+
+T2.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T2.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T2.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T2.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T2.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T2.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T3
+Canon Country Rank: County
+
+T3.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T3.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T3.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T3.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T3.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T3.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T4
+Canon Country Rank: County
+
+T4.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T4.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T4.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T4.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T4.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T4.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T5
+Canon Country Rank: County
+
+T5.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T5.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T5.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T5.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T5.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T5.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T6
+Canon Country Rank: County
+
+T6.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T6.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T6.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T6.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T6.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T6.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T7
+Canon Country Rank: County
+
+T7.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T7.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T7.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T7.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T7.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T7.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T8
+Canon Country Rank: Duchy
+
+T8.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T8.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T8.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T8.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T8.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T8.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T9
+Canon Country Rank: Duchy
+
+T9.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T9.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T9.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T9.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T9.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T9.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T10
+Canon Country Rank: Duchy
+Upgrade Constraints:
+- Requires Independence to advance
+
+T10.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T10.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T10.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T10.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T10.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T10.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T11
+Canon Country Rank: Kingdom
+
+T11.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T11.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T11.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T11.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T11.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T11.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T12
+Canon Country Rank: Kingdom
+
+T12.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T12.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T12.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T12.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T12.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T12.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T13
+Canon Country Rank: Kingdom
+
+T13.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T13.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T13.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T13.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T13.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T13.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T14
+Canon Country Rank: Empire
+
+T14.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T14.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T14.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T14.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T14.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T14.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+T15
+Canon Country Rank: Empire
+Upgrade Constraints:
+- Max Rank
+
+T15.1
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T15.2
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T15.3
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T15.4
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T15.5
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+T15.6
+Government: TBD
+Subject Type: TBD
+Upgrade Constraints:
+- TBD
+
+--------------------------------------------------
+
+==================================================
+END OF FILE
+==================================================

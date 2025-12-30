@@ -1,0 +1,66 @@
+Authority Ledger — T-Rank Chart & Tooltip Spec (MOD CANON)
+========================================================
+[DATE] 2025-12-30
+[SCOPE] UI spec for Authority Ledger T-Ranks chart + tooltip fields
+[STATUS] Layout-stable spec (no button movement)
+
+HARD CONSTRAINTS
+----------------
+1) Grid dimensions do not change.
+2) Button positions do not move.
+3) If a button is empty → delete the button; do NOT reflow or shift other buttons.
+4) Rank labels remain T0..T15 even if content is TBD.
+5) Subtype labels remain literal 'TBD' when undefined.
+6) Remove all R-rank terminology; only T-rank terminology remains.
+
+TOOLTIP / LEDGER PANEL FIELDS
+-----------------------------
+Display:
+- Central Base (V3.7):   [v3_7]
+- Local Base (V3.8):     [v3_8]
+- Net Authority (V4.3):  [v4_3]
+- Title Authority (TA):  [v4_ta]
+- Tick:                  [v4_tick]
+
+Subject reminder (conditional; only when subject):
+- Subject Scaling: Central ×0.5, Local ×0.5 (Overlord gets 0)
+
+RANK DISPLAY
+------------
+- Current integer rank displayed as: T# (derived from v4_ta via thresholds).
+- Independence gate:
+  - If NOT independent: T11–T15 rows are locked/disabled and rank is clamped to T10.
+
+CHART ROW LABELS (left column; fixed)
+-------------------------------------
+T0  | County
+T1  | County
+T2  | County
+T3  | County
+T4  | County
+T5  | County
+T6  | County
+T7  | County
+T8  | Duchy
+T9  | Duchy
+T10 | Duchy
+T11 | Kingdom
+T12 | Kingdom
+T13 | Kingdom
+T14 | Empire
+T15 | Empire
+
+SUBTYPE GRID (6 fixed slots per row; fixed positions)
+-----------------------------------------------------
+- Each row has slots 1..6 corresponding to Tn.1..Tn.6.
+- Slot keys: v5_tN_type_K.
+
+Rules:
+- If a slot has defined subtype content, show that button.
+- If a slot is undefined but reserved, show a button labeled 'TBD'.
+- If a slot is truly empty/unneeded for that row, delete the button (leave empty space).
+- Do NOT reflow or adjust positions.
+
+NOTES
+-----
+- Subtype buttons do NOT change integer T-rank. They are UI nodes for future subtype logic.

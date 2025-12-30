@@ -1,0 +1,31 @@
+[VERSION] 0.2
+[DATE] 2025-12-30
+[SCOPE] MAJOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - Codex/Authority Ledger/V_System_Spec 0.2.txt
+    - Codex/Authority Ledger/T_Rank_UI_Spec 0.2.txt
+    - Codex/Authority Ledger/T_Rank_Thresholds_Draft 0.2.txt
+    - Logs/Authority Ledger 0.2.txt
+  - Edited:
+    - None (spec-only export)
+  - Deleted:
+    - None (spec-only export)
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - AuthorityLedger_Codex_Index.txt
+    - CODEX_INSTRUCTIONS.txt
+    - EU5_T-RANK_TEMPLATE.txt
+  - Mod Output:
+    - authority_system_reference.txt
+    - authority_ledger_variable_mapping_old_to_new.txt
+[NOTES]
+  - Consolidated MOD-canon V1–V5 math into a Codex-safe spec with explicit "NOT DEFINED" boundaries.
+  - Updated UI/tooltip chart spec to reflect bases/net/TA/T-rank and preserve layout constraints (no reflow).
+  - Included subject reward rules (central/local halved; no overlord export) as MOD canon for Codex.
+  - Reaffirmed variable key standard using V-system naming (v3_7, v3_8, v4_3, v4_ta, v5_t_rank, slot keys).
+[OPEN_ITEMS]
+  - Engine update hook and GUI binding file paths remain NOT DEFINED IN REPO SOURCES.

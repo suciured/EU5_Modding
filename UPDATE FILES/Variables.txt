@@ -1,0 +1,140 @@
+AUTHORITY SYSTEM REFERENCE (MOD CANON)
+=================================
+
+LAYER OVERVIEW
+--------------
+V1 : Raw inputs (location & country primitives)
+V2 : Aggregation & scalar construction
+V3 : Routing, governance, base construction
+V4 : Net authority & persistence
+V5 : T-Rank determination
+
+---------------------------------
+V1 — RAW INPUT VARIABLES
+---------------------------------
+
+V1.1 (Location)
+- is_capital_location(l)
+- Boolean flag per location
+
+V1.2 (Location)
+- control(l) ∈ [0,100]
+
+V1.3 (Location)
+- population(l)
+
+V1.4 (Location)
+- development(l)
+
+V1.6 (Country)
+- stability ∈ [-100,100]
+
+V1.7 (Country)
+- government_power ∈ [0,100]
+
+---------------------------------
+V2 — AGGREGATION & SCALARS
+---------------------------------
+
+Let province P contain locations l = 1..N
+
+V2.1 — Province control average
+V2.1(P) = ( Σ control(l) ) / N
+
+V2.2 — Province population sum
+V2.2(P) = Σ population(l)
+
+V2.3 — Province development sum
+V2.3(P) = Σ development(l)
+
+V2.4 — Control scalar curve
+V2.4(P) = 2.0 - ( V2.1(P) / 100 × 1.5 )
+
+V2.5 — Stability scalar
+V2.5(C) = 0.25 + ( (stability + 100) / 200 × 3.75 )
+
+V2.6 — Government power scalar
+V2.6(C) = 0.25 + ( government_power / 100 × 3.75 )
+
+---------------------------------
+V3 — ROUTING, GOVERNANCE, BASES
+---------------------------------
+
+V3.1 — Province routing
+- Central if any is_capital_location(l) = true
+- Local otherwise
+
+V3.2 — Governance composite
+V3.2(C) = ( V2.5(C) + V2.6(C) ) / 2
+
+V3.3 — Province ready LOCAL outputs
+If Local:
+- Pop = V2.2(P) × V2.4(P)
+- Dev = V2.3(P) × V2.4(P)
+If Central:
+- Pop = 0
+- Dev = 0
+
+V3.4 — Province ready CENTRAL outputs
+If Central:
+- Pop = V2.2(P) × V3.2(C)
+- Dev = V2.3(P) × V3.2(C)
+If Local:
+- Pop = 0
+- Dev = 0
+
+V3.5 — Province central base
+V3.5(P) = CentralPop × CentralDev
+
+V3.6 — Province local base
+V3.6(P) = LocalPop × LocalDev
+
+V3.7 — Country central base
+V3.7 = Σ V3.5(P)
+
+V3.8 — Country local base
+V3.8 = Σ V3.6(P)
+
+---------------------------------
+V4 — NET AUTHORITY (ROLE AWARE)
+---------------------------------
+
+Roles:
+- Independent
+- Overlord
+- Subject
+
+V4.1 — Central flow
+Independent/Overlord:
+- V3.7
+Subject:
+- 0.5 × V3.7
+(Never exported to overlord)
+
+V4.2 — Local flow
+Independent/Overlord:
+- V3.8
+Subject:
+- 0.5 × V3.8
+
+V4.3 — Net authority flow
+V4.3 = V4.1 + V4.2
+
+V4.4 — Title Authority update
+TA(t+1) = TA(t) + V4.3
+
+---------------------------------
+V5 — T-RANK SYSTEM
+---------------------------------
+
+V5.1 — T-Rank determination
+- T-Rank is determined solely from Title Authority (TA)
+- Threshold-based table (data-driven)
+- No feedback into authority calculation
+
+NOTES
+-----
+- Subject capital provinces generate central authority for themselves only
+- Subject local and central authority count at 50%
+- Overlords do not receive subject authority
+- No decay, caps, or siphoning defined yet

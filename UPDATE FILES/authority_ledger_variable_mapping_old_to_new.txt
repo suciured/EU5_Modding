@@ -1,0 +1,85 @@
+AUTHORITY LEDGER VARIABLE CLEANUP — OLD→NEW MAPPING (MOD CANON)
+========================================================
+Purpose:
+- Align stored variables and UI slot keys to the new V1–V5 math pipeline.
+- Remove legacy Authority Ledger variables from the prior system.
+- Keep chart layout stable: no button movement; empty slots deleted.
+
+========================================================
+A) KEEP + RENAME (OLD → NEW)
+========================================================
+
+[Core persistent / displayed]
+
+TA        → v4_ta
+ta        → v4_ta
+authority_tick_count → v4_tick
+
+CA        → v3_7
+ca        → v3_7
+
+LA        → v3_8
+la        → v3_8
+
+NA        → v4_3
+na        → v4_3
+
+tr        → v5_t_rank
+
+[Chart slot keys: R → T, preserve positions]
+Rule:
+al_r{N}_type_{K} → v5_t{N}_type_{K}
+
+Examples:
+al_r0_type_2  → v5_t0_type_2
+al_r0_type_5  → v5_t0_type_5
+al_r1_type_1  → v5_t1_type_1
+al_r10_type_6 → v5_t10_type_6
+al_r15_type_3 → v5_t15_type_3
+
+========================================================
+B) DELETE (NO REPLACEMENT)
+========================================================
+These belong to the old authority system and should be removed:
+
+al_capital_base
+al_local_base
+al_govp_norm
+al_stab_norm
+al_state_score
+al_state_mult
+al_tr_candidate
+al_tr_mult
+al_la_locations
+al_la_value
+
+Also delete legacy aliases after migration (do not keep duplicates):
+CA, LA, TA, NA, ca, la, ta, na
+
+========================================================
+C) NEW KEYS (OPTIONAL, RECOMMENDED FOR DEBUG/UI)
+========================================================
+These match the new math layers and aid tooltip/debugging:
+
+v2_5   (stability scalar)
+v2_6   (government power scalar)
+v3_2   (governance composite average)
+
+Optional subject UI flags:
+v4_is_subject
+v4_subject_scale
+
+========================================================
+D) MINIMAL FINAL KEYSET (CLEAN)
+========================================================
+Core:
+v3_7
+v3_8
+v4_3
+v4_ta
+v4_tick
+v5_t_rank
+
+Chart slots:
+v5_t0_type_1 ... v5_t15_type_6
+(Define only used slots; remove empty slots per UI rule — do not reflow.)
