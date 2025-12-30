@@ -1,0 +1,139 @@
+EU5 T-RANK / TITLE RANK SYSTEM — HANDOFF SUMMARY (UPDATED)
+Version: Working Design (Authority-Based, Build B)
+Purpose: Internal continuation doc for consistent future edits.
+
+[SOURCES USED]
+- Original R-rank handoff: /mnt/data/R_Rank_System_Handoff.txt
+- Repo guardrails: /mnt/data/CODEX_INSTRUCTIONS.txt
+
+============================================================
+RENAMES / TERMINOLOGY
+============================================================
+- RScore -> TA (Title Authority)  [hidden accumulator]
+- RRank  -> TR (Title Rank)       [tier derived from TA]
+- "R-rank UI chart" nodes are now "T-ranks" (Tn.m), where:
+  - n = row (tier band)
+  - m = slot (1..6) mapped directly to UI columns
+
+IMPORTANT: TR (Title Rank) is NOT the same as T-rank (UI node tree).
+- TR is computed from TA via thresholds (TR_Thresholds.txt).
+- T-rank is a player-facing selection/tree layout (EU5_T-RANK_TEMPLATE.txt).
+
+============================================================
+CORE IDEA
+============================================================
+TR is an INTERNAL, HIDDEN tier system that represents the degree of structural centralization of a state.
+- Not shown directly to player
+- Never directly set
+- Always derived from Authority math (CA/LA/NA -> TA -> TR)
+
+TR answers:
+"How centralized is this state over time?"
+
+============================================================
+INPUT: NET AUTHORITY (NA)
+============================================================
+Definitions:
+- CA = Central Authority
+- LA = Local Authority
+- NA = CA − LA
+
+Interpretation:
+- Positive NA -> TA increases -> TR tends to rise
+- Negative NA -> TA decreases -> TR tends to fall
+
+============================================================
+BUILD B (CURRENT AUTHORITY MATH)
+============================================================
+This system removed the old single "Authority" variable.
+CA and LA are computed separately from the shared base.
+
+(1) Population cap per location:
+  EffPopsK(l) = min(PopsK(l), POP_CAP_K)
+
+(2) Location base:
+  BaseLoc(l) = Dev(l) × EffPopsK(l) × TaxBase(l)
+
+(3) Aggregation:
+  CapitalBase = Σ BaseLoc(l) for locations in capital province only
+  LocalBase   = Σ BaseLoc(l) for locations NOT in capital province
+
+(4) State capacity (merged stability + government power):
+  StabNorm    = clamp((Stability + 3)/6, 0, 1)   # assumes stability range -3..+3
+  StateScore  = (GovP_norm + StabNorm)/2
+  StateMult   = CA_STATE_MIN + (1 - CA_STATE_MIN) × StateScore
+
+(5) TR feedback into CA:
+  TRMult = 1 + CA_TR_COEFF × TR
+
+(6) Outputs:
+  LA = LocalBase
+  CA = ceil(CapitalBase × StateMult × TRMult)
+  NA = CA − LA
+
+(7) TA accumulation (no clamp, no decay):
+  TA = TA + NA
+
+AUTHORITATIVE FILES:
+- Explainers/Formulas/Variables.txt
+- Explainers/Formulas/Formulas_Only.txt
+
+============================================================
+TR DERIVATION (THRESHOLDS + HYSTERESIS)
+============================================================
+TR is derived from TA using a threshold ladder plus hysteresis to prevent flapping.
+
+Promotion:
+- if TA ≥ Threshold[TR+1] and Gate(TR+1) passes -> TR += 1
+
+Demotion:
+- if TA < Threshold[TR] − Buffer[TR] -> TR -= 1
+
+Buffer rule:
+- Buffer[TR] = max(250000, 0.15 × Threshold[TR])
+
+Gate:
+- TR10 -> TR11 requires Independence (TR capped at 10 unless independent)
+
+AUTHORITATIVE FILE:
+- Explainers/Formulas/TR_Thresholds.txt
+
+============================================================
+T-RANK (UI TREE NODES) — SEPARATE FROM TR
+============================================================
+T-ranks are the UI grid/tree nodes used for selecting a "type" within a tier band.
+They are defined as Tn.m:
+- n: row/tier band (0..15)
+- m: slot/column (1..6)
+
+Slot mapping:
+- .1 .. .6 correspond to UI columns 1..6
+
+EMPTY handling:
+- Unused slots are explicit blocks with EMPTY values.
+
+Locked upgrade paths (T0 -> T1):
+- T0.2 (Monarchy seed) upgrades to: T1.1, T1.3
+- T0.5 (Republic seed) upgrades to: T1.4
+
+AUTHORITATIVE FILE:
+- Explainers/T-Rank/EU5_T-RANK_TEMPLATE.txt
+(Localization for node labels: deferred.)
+
+============================================================
+DESIGN PRINCIPLES
+============================================================
+- TR changes based on long-run structure (NA -> TA), not one-off events
+- Thresholds tuned so France-scale states sit around TR 11–13 when successful
+- TR14–TR15 are rare hegemon tiers
+- TR should gate/unlock mechanics more than directly modify values
+- Keep UI tree (T-ranks) separate from hidden tiers (TR)
+
+============================================================
+STATUS / OPEN ITEMS
+============================================================
+- Localization: deferred
+- Scripted hooks: only proceed if defined in repo KB
+- T-rank upgrades beyond T1: TBD
+
+END
