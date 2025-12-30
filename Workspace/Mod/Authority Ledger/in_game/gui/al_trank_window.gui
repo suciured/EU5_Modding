@@ -30,7 +30,7 @@ window = {
 
 			blockoverride "scrollbox_content" {
 				widget = { size = { 0 10 } }
-				widget = { size = { 0 40 } }
+				widget = { size = { 0 0 } }
 				hbox = {
 					margin_bottom = 4
 					margin_top = 4
