@@ -1,0 +1,19 @@
+[VERSION] 0.13
+[DATE] 2025-12-30
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - Logs/Authority Ledger/Authority Ledger 0.13.txt
+  - Edited:
+    - Workspace/Mod/Authority Ledger/in_game/gui/shared/authority_tooltips.gui
+  - Deleted:
+[TEMPLATE_CLEANUP]
+  - Removed unused template folders/files: None
+[SOURCES_USED]
+  - Knowledge Base: None
+  - Raw: None
+[NOTES]
+  - Updated authority tooltip bindings to use lowercase ca/la/ta variables for consistency with the rest of the UI.
+[OPEN_ITEMS]
+  - None
