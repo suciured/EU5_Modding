@@ -1,0 +1,20 @@
+﻿al_authority_ensure_storage_effect = {
+	if = { limit = { NOT = { has_variable = al_ca } } set_variable = { name = al_ca value = 0 } }
+	if = { limit = { NOT = { has_variable = al_la } } set_variable = { name = al_la value = 0 } }
+	if = { limit = { NOT = { has_variable = al_na } } set_variable = { name = al_na value = 0 } }
+
+	if = { limit = { NOT = { has_variable = al_tr } } set_variable = { name = al_tr value = 0 } }
+	if = { limit = { NOT = { has_variable = al_ta } } set_variable = { name = al_ta value = 0 } }
+
+	if = { limit = { NOT = { has_variable = al_capital_base } } set_variable = { name = al_capital_base value = 0 } }
+	if = { limit = { NOT = { has_variable = al_local_base } } set_variable = { name = al_local_base value = 0 } }
+
+	if = { limit = { NOT = { has_variable = al_govp_norm } } set_variable = { name = al_govp_norm value = 0 } }
+	if = { limit = { NOT = { has_variable = al_stab_norm } } set_variable = { name = al_stab_norm value = 0 } }
+
+	if = { limit = { NOT = { has_variable = al_state_score } } set_variable = { name = al_state_score value = 0 } }
+	if = { limit = { NOT = { has_variable = al_state_mult } } set_variable = { name = al_state_mult value = 1 } }
+
+	if = { limit = { NOT = { has_variable = al_tr_candidate } } set_variable = { name = al_tr_candidate value = 0 } }
+	if = { limit = { NOT = { has_variable = al_tr_mult } } set_variable = { name = al_tr_mult value = 1 } }
+}

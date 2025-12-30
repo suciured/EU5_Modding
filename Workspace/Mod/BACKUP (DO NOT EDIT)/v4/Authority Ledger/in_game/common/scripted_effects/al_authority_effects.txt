@@ -7,6 +7,12 @@
 		limit = { NOT = { has_variable = al_ta } }
 		set_variable = { name = al_ta value = 0 }
 	}
+	# Storage bootstrap (variables + list existence)
+	al_authority_ensure_storage_effect = yes
+
+	# Ensure al_la_locations list exists before we query list_size
+	add_to_list = al_la_locations
+
 
 	set_variable = { name = al_capital_base value = 0 }
 	set_variable = { name = al_local_base value = 0 }
