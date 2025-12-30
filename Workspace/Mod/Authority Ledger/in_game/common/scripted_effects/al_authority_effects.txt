@@ -1,0 +1,228 @@
+﻿al_authority_monthly_update_effect = {
+	if = {
+		limit = { NOT = { has_variable = al_tr } }
+		set_variable = { name = al_tr value = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = al_ta } }
+		set_variable = { name = al_ta value = 0 }
+	}
+
+	set_variable = { name = al_capital_base value = 0 }
+	set_variable = { name = al_local_base value = 0 }
+
+	if = {
+		limit = { list_size = { name = al_la_locations value > 0 } }
+		every_in_list = {
+			list = al_la_locations
+			remove_from_list = al_la_locations
+		}
+	}
+
+	every_owned_location = {
+		if = {
+			limit = { province = root.capital.province }
+			change_variable = { name = al_capital_base add = al_base_loc }
+			remove_variable = al_la_value
+		}
+		else = {
+			change_variable = { name = al_local_base add = al_base_loc }
+			set_variable = { name = al_la_value value = al_base_loc }
+			add_to_list = al_la_locations
+		}
+	}
+
+	set_variable = {
+		name = al_govp_norm
+		value = al_govp_norm_value
+	}
+	set_variable = {
+		name = al_stab_norm
+		value = al_stab_norm_value
+	}
+	set_variable = {
+		name = al_state_score
+		value = {
+			value = var:al_govp_norm
+			add = var:al_stab_norm
+			divide = 2
+		}
+	}
+	set_variable = {
+		name = al_state_mult
+		value = {
+			value = al_ca_state_min
+			add = {
+				value = 1
+				subtract = al_ca_state_min
+				multiply = var:al_state_score
+			}
+		}
+	}
+	set_variable = {
+		name = al_tr_mult
+		value = {
+			value = 1
+			add = {
+				value = al_ca_tr_coeff
+				multiply = var:al_tr
+			}
+		}
+	}
+
+	set_variable = { name = al_la value = var:al_local_base }
+	set_variable = {
+		name = al_ca
+		value = {
+			value = var:al_capital_base
+			multiply = var:al_state_mult
+			multiply = var:al_tr_mult
+			ceiling = yes
+		}
+	}
+	set_variable = { name = la value = var:al_la }
+	set_variable = { name = ca value = var:al_ca }
+	set_variable = {
+		name = al_na
+		value = {
+			value = var:al_ca
+			subtract = var:al_la
+		}
+	}
+	change_variable = { name = al_ta add = var:al_na }
+	set_variable = { name = ta value = var:al_ta }
+
+	set_variable = { name = al_tr_candidate value = 0 }
+	if = {
+		limit = { var:al_ta >= al_tr_threshold_15 is_independent_or_autonomous_subject = yes }
+		set_variable = { name = al_tr_candidate value = 15 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_14 is_independent_or_autonomous_subject = yes }
+		set_variable = { name = al_tr_candidate value = 14 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_13 is_independent_or_autonomous_subject = yes }
+		set_variable = { name = al_tr_candidate value = 13 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_12 is_independent_or_autonomous_subject = yes }
+		set_variable = { name = al_tr_candidate value = 12 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_11 is_independent_or_autonomous_subject = yes }
+		set_variable = { name = al_tr_candidate value = 11 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_10 }
+		set_variable = { name = al_tr_candidate value = 10 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_9 }
+		set_variable = { name = al_tr_candidate value = 9 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_8 }
+		set_variable = { name = al_tr_candidate value = 8 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_7 }
+		set_variable = { name = al_tr_candidate value = 7 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_6 }
+		set_variable = { name = al_tr_candidate value = 6 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_5 }
+		set_variable = { name = al_tr_candidate value = 5 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_4 }
+		set_variable = { name = al_tr_candidate value = 4 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_3 }
+		set_variable = { name = al_tr_candidate value = 3 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_2 }
+		set_variable = { name = al_tr_candidate value = 2 }
+	}
+	else_if = {
+		limit = { var:al_ta >= al_tr_threshold_1 }
+		set_variable = { name = al_tr_candidate value = 1 }
+	}
+
+	if = {
+		limit = { var:al_tr_candidate > var:al_tr }
+		set_variable = { name = al_tr value = var:al_tr_candidate }
+	}
+	else = {
+		if = {
+			limit = { var:al_tr = 15 var:al_ta < al_tr_demote_15 }
+			set_variable = { name = al_tr value = 14 }
+		}
+		else_if = {
+			limit = { var:al_tr = 14 var:al_ta < al_tr_demote_14 }
+			set_variable = { name = al_tr value = 13 }
+		}
+		else_if = {
+			limit = { var:al_tr = 13 var:al_ta < al_tr_demote_13 }
+			set_variable = { name = al_tr value = 12 }
+		}
+		else_if = {
+			limit = { var:al_tr = 12 var:al_ta < al_tr_demote_12 }
+			set_variable = { name = al_tr value = 11 }
+		}
+		else_if = {
+			limit = { var:al_tr = 11 var:al_ta < al_tr_demote_11 }
+			set_variable = { name = al_tr value = 10 }
+		}
+		else_if = {
+			limit = { var:al_tr = 10 var:al_ta < al_tr_demote_10 }
+			set_variable = { name = al_tr value = 9 }
+		}
+		else_if = {
+			limit = { var:al_tr = 9 var:al_ta < al_tr_demote_9 }
+			set_variable = { name = al_tr value = 8 }
+		}
+		else_if = {
+			limit = { var:al_tr = 8 var:al_ta < al_tr_demote_8 }
+			set_variable = { name = al_tr value = 7 }
+		}
+		else_if = {
+			limit = { var:al_tr = 7 var:al_ta < al_tr_demote_7 }
+			set_variable = { name = al_tr value = 6 }
+		}
+		else_if = {
+			limit = { var:al_tr = 6 var:al_ta < al_tr_demote_6 }
+			set_variable = { name = al_tr value = 5 }
+		}
+		else_if = {
+			limit = { var:al_tr = 5 var:al_ta < al_tr_demote_5 }
+			set_variable = { name = al_tr value = 4 }
+		}
+		else_if = {
+			limit = { var:al_tr = 4 var:al_ta < al_tr_demote_4 }
+			set_variable = { name = al_tr value = 3 }
+		}
+		else_if = {
+			limit = { var:al_tr = 3 var:al_ta < al_tr_demote_3 }
+			set_variable = { name = al_tr value = 2 }
+		}
+		else_if = {
+			limit = { var:al_tr = 2 var:al_ta < al_tr_demote_2 }
+			set_variable = { name = al_tr value = 1 }
+		}
+		else_if = {
+			limit = { var:al_tr = 1 var:al_ta < al_tr_demote_1 }
+			set_variable = { name = al_tr value = 0 }
+		}
+	}
+
+	if = {
+		limit = { NOT = { is_independent_or_autonomous_subject = yes } var:al_tr > 10 }
+		set_variable = { name = al_tr value = 10 }
+	}
+}

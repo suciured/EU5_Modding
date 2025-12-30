@@ -1,0 +1,21 @@
+[VERSION] 0.12
+[DATE] 2025-12-30
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - Logs/Authority Ledger/Authority Ledger 0.12.txt
+  - Edited:
+    - Workspace/Mod/Authority Ledger/in_game/common/scripted_effects/al_authority_effects.txt
+    - Workspace/Mod/Authority Ledger/in_game/gui/al_rrank_window.gui
+    - Workspace/Mod/Authority Ledger/in_game/gui/agenda_view.gui
+  - Deleted:
+[TEMPLATE_CLEANUP]
+  - Removed unused template folders/files: None
+[SOURCES_USED]
+  - Knowledge Base: None
+  - Raw: None
+[NOTES]
+  - Mirrored authority values into CA/LA/TA variables and wired UI readouts to those names.
+[OPEN_ITEMS]
+  - None
