@@ -60,4 +60,9 @@ al_v_system_monthly_update_effect = {
 
     # V4.4: title authority accumulation
     change_variable = { name = v4_ta add = var:v4_3 }
+
+    # Debug display: total population/dev/locations
+    set_variable = { name = al_total_population value = total_population }
+    set_variable = { name = al_total_development value = total_development }
+    set_variable = { name = al_total_locations value = num_locations }
 }
