@@ -1,4 +1,3 @@
-
 template AuthorityLedger_Button_Tooltip {
 	ConceptTooltipType = {
 		blockoverride "title_text" { text = "AUTHORITY" }
@@ -7,6 +6,12 @@ template AuthorityLedger_Button_Tooltip {
 			vbox = {
 				using = layoutpolicy_vertical
 				spacing = 4
+
+				hbox = {
+					spacing = 6
+					text_single = { text = "Tick:" }
+					text_single = { text = "[Player.MakeScope.GetVariable('authority_tick_count').GetValue|0]" }
+				}
 
 				hbox = {
 					spacing = 6
@@ -23,7 +28,20 @@ template AuthorityLedger_Button_Tooltip {
 					}
 				}
 
+				
 				hbox = {
+					spacing = 6
+					text_single = { text = "CapBase:" }
+					text_single = { text = "[Player.MakeScope.GetVariable('al_capital_base').GetValue|0]" }
+				}
+
+				hbox = {
+					spacing = 6
+					text_single = { text = "LocBase:" }
+					text_single = { text = "[Player.MakeScope.GetVariable('al_local_base').GetValue|0]" }
+				}
+
+hbox = {
 					spacing = 6
 					text_single = { text = "TA:" }
 					text_single = { text = "[Player.MakeScope.GetVariable('ta').GetValue|0]" }
@@ -52,4 +70,8 @@ template AuthorityLedger_LA_Breakdown_Tooltip {
 			}
 		}
 	}
+}
+
+template al_authority_ledger_tooltip {
+	using = AuthorityLedger_Button_Tooltip
 }

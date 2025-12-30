@@ -1,11 +1,5 @@
-﻿monthly_country_pulse = {
+monthly_country_pulse = {
 	on_actions = {
 		al_authority_monthly_update
-	}
-}
-
-al_authority_monthly_update = {
-	effect = {
-		al_authority_monthly_update_effect = yes
 	}
 }

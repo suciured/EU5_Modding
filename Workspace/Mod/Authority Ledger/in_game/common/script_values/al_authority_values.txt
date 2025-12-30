@@ -1,4 +1,4 @@
-﻿al_pop_cap_k = 30
+al_pop_cap_k = 30
 al_ca_state_min = 0.75
 al_ca_tr_coeff = 0.05
 

@@ -1171,3 +1171,14 @@ al_r15_type_6_sgui = {
 		set_variable = al_r15_type_6
 	}
 }
+
+
+# Authority Ledger: manual recalc button (bypasses on_actions)
+al_authority_recalc_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_authority_monthly_update_effect = yes
+	}
+}

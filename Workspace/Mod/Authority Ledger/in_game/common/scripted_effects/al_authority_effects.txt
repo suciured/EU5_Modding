@@ -1,23 +1,24 @@
-﻿al_authority_monthly_update_effect = {
+al_authority_monthly_update_effect = {
+	
+	# DEBUG: proof-of-life tick counter (increments when monthly update effect runs)
 	if = {
-		limit = { NOT = { has_variable = al_tr } }
-		set_variable = { name = al_tr value = 0 }
+		limit = { NOT = { has_variable = authority_tick_count } }
+		set_variable = { name = authority_tick_count value = 0 }
+	}
+	set_variable = { name = authority_tick_count value = { value = var:authority_tick_count add = 1 } }
+if = {
+		limit = { NOT = { has_variable = tr } }
+		set_variable = { name = tr value = 0 }
 	}
 	if = {
-		limit = { NOT = { has_variable = al_ta } }
-		set_variable = { name = al_ta value = 0 }
+		limit = { NOT = { has_variable = ta } }
+		set_variable = { name = ta value = 0 }
 	}
 
 	set_variable = { name = al_capital_base value = 0 }
 	set_variable = { name = al_local_base value = 0 }
 
-	if = {
-		limit = { list_size = { name = al_la_locations value > 0 } }
-		every_in_list = {
-			list = al_la_locations
-			remove_from_list = al_la_locations
-		}
-	}
+	# CLEANUP REMOVED: al_la_locations may not exist at game start; list_size on missing list can abort the effect.
 
 	every_owned_location = {
 		if = {
@@ -65,14 +66,14 @@
 			value = 1
 			add = {
 				value = al_ca_tr_coeff
-				multiply = var:al_tr
+				multiply = var:tr
 			}
 		}
 	}
 
-	set_variable = { name = al_la value = var:al_local_base }
+	set_variable = { name = la value = var:al_local_base }
 	set_variable = {
-		name = al_ca
+		name = ca
 		value = {
 			value = var:al_capital_base
 			multiply = var:al_state_mult
@@ -80,152 +81,152 @@
 			ceiling = yes
 		}
 	}
-	set_variable = { name = la value = var:al_la }
-	set_variable = { name = ca value = var:al_ca }
-	set_variable = { name = LA value = var:al_la }
-	set_variable = { name = CA value = var:al_ca }
+	set_variable = { name = la value = var:la }
+	set_variable = { name = ca value = var:ca }
+	set_variable = { name = LA value = var:la }
+	set_variable = { name = CA value = var:ca }
 	set_variable = {
-		name = al_na
+		name = na
 		value = {
-			value = var:al_ca
-			subtract = var:al_la
+			value = var:ca
+			subtract = var:la
 		}
 	}
-	change_variable = { name = al_ta add = var:al_na }
-	set_variable = { name = ta value = var:al_ta }
-	set_variable = { name = TA value = var:al_ta }
+	change_variable = { name = ta add = var:na }
+	set_variable = { name = ta value = var:ta }
+	set_variable = { name = TA value = var:ta }
 
 	set_variable = { name = al_tr_candidate value = 0 }
 	if = {
-		limit = { var:al_ta >= al_tr_threshold_15 is_independent_or_autonomous_subject = yes }
+		limit = { var:ta >= al_tr_threshold_15 is_independent_or_autonomous_subject = yes }
 		set_variable = { name = al_tr_candidate value = 15 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_14 is_independent_or_autonomous_subject = yes }
+		limit = { var:ta >= al_tr_threshold_14 is_independent_or_autonomous_subject = yes }
 		set_variable = { name = al_tr_candidate value = 14 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_13 is_independent_or_autonomous_subject = yes }
+		limit = { var:ta >= al_tr_threshold_13 is_independent_or_autonomous_subject = yes }
 		set_variable = { name = al_tr_candidate value = 13 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_12 is_independent_or_autonomous_subject = yes }
+		limit = { var:ta >= al_tr_threshold_12 is_independent_or_autonomous_subject = yes }
 		set_variable = { name = al_tr_candidate value = 12 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_11 is_independent_or_autonomous_subject = yes }
+		limit = { var:ta >= al_tr_threshold_11 is_independent_or_autonomous_subject = yes }
 		set_variable = { name = al_tr_candidate value = 11 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_10 }
+		limit = { var:ta >= al_tr_threshold_10 }
 		set_variable = { name = al_tr_candidate value = 10 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_9 }
+		limit = { var:ta >= al_tr_threshold_9 }
 		set_variable = { name = al_tr_candidate value = 9 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_8 }
+		limit = { var:ta >= al_tr_threshold_8 }
 		set_variable = { name = al_tr_candidate value = 8 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_7 }
+		limit = { var:ta >= al_tr_threshold_7 }
 		set_variable = { name = al_tr_candidate value = 7 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_6 }
+		limit = { var:ta >= al_tr_threshold_6 }
 		set_variable = { name = al_tr_candidate value = 6 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_5 }
+		limit = { var:ta >= al_tr_threshold_5 }
 		set_variable = { name = al_tr_candidate value = 5 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_4 }
+		limit = { var:ta >= al_tr_threshold_4 }
 		set_variable = { name = al_tr_candidate value = 4 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_3 }
+		limit = { var:ta >= al_tr_threshold_3 }
 		set_variable = { name = al_tr_candidate value = 3 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_2 }
+		limit = { var:ta >= al_tr_threshold_2 }
 		set_variable = { name = al_tr_candidate value = 2 }
 	}
 	else_if = {
-		limit = { var:al_ta >= al_tr_threshold_1 }
+		limit = { var:ta >= al_tr_threshold_1 }
 		set_variable = { name = al_tr_candidate value = 1 }
 	}
 
 	if = {
-		limit = { var:al_tr_candidate > var:al_tr }
-		set_variable = { name = al_tr value = var:al_tr_candidate }
+		limit = { var:al_tr_candidate > var:tr }
+		set_variable = { name = tr value = var:al_tr_candidate }
 	}
 	else = {
 		if = {
-			limit = { var:al_tr = 15 var:al_ta < al_tr_demote_15 }
-			set_variable = { name = al_tr value = 14 }
+			limit = { var:tr = 15 var:ta < al_tr_demote_15 }
+			set_variable = { name = tr value = 14 }
 		}
 		else_if = {
-			limit = { var:al_tr = 14 var:al_ta < al_tr_demote_14 }
-			set_variable = { name = al_tr value = 13 }
+			limit = { var:tr = 14 var:ta < al_tr_demote_14 }
+			set_variable = { name = tr value = 13 }
 		}
 		else_if = {
-			limit = { var:al_tr = 13 var:al_ta < al_tr_demote_13 }
-			set_variable = { name = al_tr value = 12 }
+			limit = { var:tr = 13 var:ta < al_tr_demote_13 }
+			set_variable = { name = tr value = 12 }
 		}
 		else_if = {
-			limit = { var:al_tr = 12 var:al_ta < al_tr_demote_12 }
-			set_variable = { name = al_tr value = 11 }
+			limit = { var:tr = 12 var:ta < al_tr_demote_12 }
+			set_variable = { name = tr value = 11 }
 		}
 		else_if = {
-			limit = { var:al_tr = 11 var:al_ta < al_tr_demote_11 }
-			set_variable = { name = al_tr value = 10 }
+			limit = { var:tr = 11 var:ta < al_tr_demote_11 }
+			set_variable = { name = tr value = 10 }
 		}
 		else_if = {
-			limit = { var:al_tr = 10 var:al_ta < al_tr_demote_10 }
-			set_variable = { name = al_tr value = 9 }
+			limit = { var:tr = 10 var:ta < al_tr_demote_10 }
+			set_variable = { name = tr value = 9 }
 		}
 		else_if = {
-			limit = { var:al_tr = 9 var:al_ta < al_tr_demote_9 }
-			set_variable = { name = al_tr value = 8 }
+			limit = { var:tr = 9 var:ta < al_tr_demote_9 }
+			set_variable = { name = tr value = 8 }
 		}
 		else_if = {
-			limit = { var:al_tr = 8 var:al_ta < al_tr_demote_8 }
-			set_variable = { name = al_tr value = 7 }
+			limit = { var:tr = 8 var:ta < al_tr_demote_8 }
+			set_variable = { name = tr value = 7 }
 		}
 		else_if = {
-			limit = { var:al_tr = 7 var:al_ta < al_tr_demote_7 }
-			set_variable = { name = al_tr value = 6 }
+			limit = { var:tr = 7 var:ta < al_tr_demote_7 }
+			set_variable = { name = tr value = 6 }
 		}
 		else_if = {
-			limit = { var:al_tr = 6 var:al_ta < al_tr_demote_6 }
-			set_variable = { name = al_tr value = 5 }
+			limit = { var:tr = 6 var:ta < al_tr_demote_6 }
+			set_variable = { name = tr value = 5 }
 		}
 		else_if = {
-			limit = { var:al_tr = 5 var:al_ta < al_tr_demote_5 }
-			set_variable = { name = al_tr value = 4 }
+			limit = { var:tr = 5 var:ta < al_tr_demote_5 }
+			set_variable = { name = tr value = 4 }
 		}
 		else_if = {
-			limit = { var:al_tr = 4 var:al_ta < al_tr_demote_4 }
-			set_variable = { name = al_tr value = 3 }
+			limit = { var:tr = 4 var:ta < al_tr_demote_4 }
+			set_variable = { name = tr value = 3 }
 		}
 		else_if = {
-			limit = { var:al_tr = 3 var:al_ta < al_tr_demote_3 }
-			set_variable = { name = al_tr value = 2 }
+			limit = { var:tr = 3 var:ta < al_tr_demote_3 }
+			set_variable = { name = tr value = 2 }
 		}
 		else_if = {
-			limit = { var:al_tr = 2 var:al_ta < al_tr_demote_2 }
-			set_variable = { name = al_tr value = 1 }
+			limit = { var:tr = 2 var:ta < al_tr_demote_2 }
+			set_variable = { name = tr value = 1 }
 		}
 		else_if = {
-			limit = { var:al_tr = 1 var:al_ta < al_tr_demote_1 }
-			set_variable = { name = al_tr value = 0 }
+			limit = { var:tr = 1 var:ta < al_tr_demote_1 }
+			set_variable = { name = tr value = 0 }
 		}
 	}
 
 	if = {
-		limit = { NOT = { is_independent_or_autonomous_subject = yes } var:al_tr > 10 }
-		set_variable = { name = al_tr value = 10 }
+		limit = { NOT = { is_independent_or_autonomous_subject = yes } var:tr > 10 }
+		set_variable = { name = tr value = 10 }
 	}
 }

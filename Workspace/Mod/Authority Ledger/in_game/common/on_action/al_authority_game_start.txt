@@ -1,7 +1,0 @@
-﻿on_game_start = {
-	effect = {
-		every_country = {
-			al_authority_monthly_update_effect = yes
-		}
-	}
-}
