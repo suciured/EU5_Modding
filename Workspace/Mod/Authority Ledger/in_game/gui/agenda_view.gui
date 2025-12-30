@@ -113,6 +113,98 @@ template advances_button_actions {
 	tooltipwidget = { BasicFunctionalTooltip = {} }
 }
 
+template al_authority_ledger_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "al_authority_tooltip_title"
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipListBase = {
+				TooltipListRowContent = {
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = {
+								raw_text = "al_authority_tooltip_ca_label"
+							}
+							expand = {}
+							text_single = {
+								raw_text = "[GetPlayer.MakeScope.GetVariable('al_ca').GetValue|0]"
+							}
+						}
+					}
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = {
+								raw_text = "al_authority_tooltip_la_label"
+							}
+							expand = {}
+							text_single = {
+								raw_text = "[GetPlayer.MakeScope.GetVariable('al_la').GetValue|0]"
+								tooltipwidget = {
+									using = al_authority_ledger_la_tooltip
+								}
+							}
+						}
+					}
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = {
+								raw_text = "al_authority_tooltip_ta_label"
+							}
+							expand = {}
+							text_single = {
+								raw_text = "[GetPlayer.MakeScope.GetVariable('al_ta').GetValue|0]"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+template al_authority_ledger_la_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "al_authority_tooltip_la_breakdown_title"
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipListBase = {
+				TooltipListColumnContent = {
+					TooltipTableColumn = {
+						blockoverride "column_title" {
+							visible = no
+						}
+						blockoverride "field_text" {
+							default_format = "#subtle_name"
+							align = left|nobaseline
+							raw_text = "[Location.GetName]"
+						}
+						blockoverride "field_right" { expand = {} }
+					}
+
+					TooltipTableColumn = {
+						blockoverride "column_title" {
+							visible = no
+						}
+						blockoverride "field_left" { expand = {} }
+						blockoverride "field_text" {
+							align = right|nobaseline
+							raw_text = "[Location.MakeScope.GetVariable('al_la_value').GetValue|0]"
+						}
+					}
+
+					blockoverride "column_datamodel" {
+						datamodel = "[GetPlayer.MakeScope.GetList('al_la_locations')]"
+					}
+				}
+			}
+		}
+	}
+}
+
 basic_priority_dialog = {
 	layer = top
 	name = "agenda_view"
@@ -157,13 +249,12 @@ basic_priority_dialog = {
 				blockoverride "primary_visible" {}
 				size = { 180 40 }
 				name = "Authority Ledger"
-				
-				tooltipwidget = { using = AuthorityLedger_Button_Tooltip }
+				tooltipwidget = { using = al_authority_ledger_tooltip }
 				onclick = "[ExecuteConsoleCommand('GUI.CreateWidget gui/al_rrank_window.gui al_rrank_window')]"
 				onrightclick = "[ExecuteConsoleCommand('GUI.ClearWidgets gui/al_rrank_window.gui al_rrank_window')]"
 				text = "al_rrank_window_button"
 				fontsize = 11
-				tooltipwidget = { using = AuthorityLedger_Button_Tooltip }
+				tooltipwidget = { using = al_authority_ledger_tooltip }
 				button_ignore = none
 			}
 			
