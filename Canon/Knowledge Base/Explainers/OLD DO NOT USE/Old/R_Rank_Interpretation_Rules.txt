@@ -1,0 +1,136 @@
+EU5 R-RANK INTERPRETATION RULES
+VERSION: 1.0
+APPLIES TO: R_Ranks.txt
+
+PURPOSE:
+Define how R-ranks are to be interpreted, compared, promoted, and constrained.
+This file contains RULES ONLY. No rank data is repeated here.
+
+--------------------------------------------------
+CORE DEFINITIONS
+--------------------------------------------------
+
+R-RANK:
+An abstract measure of administrative, institutional, and political capacity.
+R-rank is NOT a title and NOT synonymous with territorial size.
+
+CANON_RANK:
+The engine-level rank used by the game system.
+Valid values: county, duchy, kingdom, empire.
+
+SUBTYPE:
+A flavor classification within an R-rank and government type.
+Subtypes do not change canon rank by themselves.
+
+--------------------------------------------------
+STRUCTURAL RULES
+--------------------------------------------------
+
+RULE 1: ONE CANON RANK PER R
+Each R-rank MUST map to exactly one canon rank.
+Canon rank never varies within an R.
+
+RULE 2: CANON RANK PROGRESSION
+Canon ranks progress strictly in this order:
+county -> duchy -> kingdom -> empire
+No skips and no barony rank exists.
+
+RULE 3: R IS NOT SIZE
+R-rank measures governance capacity, not land area.
+A smaller territory may have a higher R than a larger one.
+
+RULE 4: BOTTOM-HEAVY DISTRIBUTION
+County R-ranks MUST outnumber empire R-ranks by at least 2:1.
+This enforces rarity and fragility of empires.
+
+--------------------------------------------------
+PROMOTION RULES
+--------------------------------------------------
+
+RULE 5: PROMOTION SCOPE
+Most promotions occur within the same canon rank.
+Cross-canon promotions are exceptional and explicit.
+
+RULE 6: PROMOTION DIRECTION
+Promotions always increase R-rank.
+No direct promotion may decrease R.
+
+RULE 7: PROMOTION PATHS
+Valid promotions are ONLY those explicitly listed in the rank file.
+Unlisted promotions are invalid.
+
+RULE 8: TRADE-BASED EXCEPTIONS
+Republic subtypes with strong trade focus may skip a single R tier
+when promoting, but never skip a canon rank.
+
+--------------------------------------------------
+DEMOTION & COLLAPSE RULES
+--------------------------------------------------
+
+RULE 9: DEMOTION EXISTS
+Entities may demote one or more R levels due to collapse, reform,
+loss of institutions, or overextension.
+
+RULE 10: NO NEGATIVE R
+R-rank may never fall below R0.
+
+RULE 11: EMPIRE COLLAPSE PRESSURE
+Entities at R14–R15 accumulate structural strain.
+Sustained instability MUST trigger:
+- fragmentation,
+- canon rank downgrade,
+- or forced reform.
+
+--------------------------------------------------
+HARD CAPS & LIMITS
+--------------------------------------------------
+
+RULE 12: HARD CAP
+R15 is the absolute maximum.
+No entity may exist above R15.
+
+RULE 13: POST-CAP BEHAVIOR
+Entities at R15 may not promote further.
+Only consolidation, stagnation, or collapse is allowed.
+
+--------------------------------------------------
+SUBTYPE RULES
+--------------------------------------------------
+
+RULE 14: SUBTYPE FLUIDITY
+Subtypes may change without changing R-rank or canon rank,
+provided reforms or conditions justify the change.
+
+RULE 15: SUBTYPE ≠ GOVERNMENT CHANGE
+Changing subtype does not imply a change in government type
+unless explicitly stated by another system.
+
+--------------------------------------------------
+INTERACTION RULES
+--------------------------------------------------
+
+RULE 16: SUBJECT LOGIC
+Higher R entities may hold lower R entities as subjects.
+Lower R entities may not hold higher R entities.
+
+RULE 17: MULTI-R EMPIRES
+An empire may contain subjects spanning multiple R tiers.
+This does not alter the empire’s own R.
+
+--------------------------------------------------
+INTERPRETATION SAFETY
+--------------------------------------------------
+
+RULE 18: NO INFERENCE
+If a relationship, promotion, or mapping is not explicitly defined,
+it must be treated as invalid.
+
+RULE 19: CANON FIRST
+When conflicts arise, canon rank rules override subtype flavor.
+
+RULE 20: DATA SEPARATION
+Interpretation rules must never redefine rank data.
+Rank data and rule logic are intentionally separated.
+
+--------------------------------------------------
+END OF FILE

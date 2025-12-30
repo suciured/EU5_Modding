@@ -1,0 +1,194 @@
+EU5 R-RANK SYSTEM
+VERSION: 1.2
+SCOPE: R0–R15
+CANON RANKS: county, duchy, kingdom, empire
+NO BARONY RANK
+COUNTY RANKS OUTNUMBER EMPIRE RANKS (~3.5x)
+EMPIRE HARD CAP = R15 (Spain / UK scale)
+GOVERNMENT TYPES: Monarchy, Republic
+
+FORMAT:
+R# | R_NAME
+CANON_RANK: <county|duchy|kingdom|empire>
+- GOV_TYPE: SUBTYPE -> PROMOTION(S)
+
+--------------------------------------------------
+
+R0 | Basic Realm
+CANON_RANK: county
+- Monarchy: Holding -> Lordship
+- Monarchy: Estate -> Manor
+- Monarchy: Demesne -> Senior County
+- Republic: Commune -> Borough
+- Republic: Free Settlement -> Charter Town
+- Republic: Market Hamlet -> Trade City
+
+--------------------------------------------------
+
+R1 | Local Authority
+CANON_RANK: county
+- Monarchy: Lordship -> County / March County
+- Monarchy: Manor -> County
+- Monarchy: Petty Lordship -> Palatine County
+- Republic: Borough -> City-State
+- Republic: Charter Town -> Civic Republic
+- Republic: Free Town -> Trade City
+
+--------------------------------------------------
+
+R2 | Minor Polity
+CANON_RANK: county
+- Monarchy: County -> Palatine County / Proto-Duchy
+- Monarchy: Viscounty -> County
+- Monarchy: Border County -> March County
+- Republic: City-State -> Trade Republic
+- Republic: Civic Republic -> Republic
+- Republic: Port Republic -> Maritime Republic
+
+--------------------------------------------------
+
+R3 | Developed County
+CANON_RANK: county
+- Monarchy: Palatine County -> Proto-Duchy
+- Monarchy: Crown County -> Ducal County
+- Monarchy: Capital County -> Senior County
+- Republic: Trade City -> Trade Republic
+- Republic: Port Republic -> Maritime League
+- Republic: Guild Republic -> Merchant League
+
+--------------------------------------------------
+
+R4 | Administrative County
+CANON_RANK: county
+- Monarchy: Senior County -> Proto-Duchy
+- Monarchy: March County -> March / Duchy
+- Monarchy: Ducal County -> Duchy
+- Republic: League City -> City League
+- Republic: Regional City-State -> League State
+- Republic: Federal City -> Federal League
+
+--------------------------------------------------
+
+R5 | Senior County
+CANON_RANK: county
+- Monarchy: Capital County -> Proto-Duchy
+- Monarchy: March County -> March
+- Monarchy: Royal County -> Duchy
+- Republic: Metropolitan Republic -> Grand Republic
+- Republic: Commercial City -> Merchant League
+- Republic: Port Confederation -> Maritime League
+
+--------------------------------------------------
+
+R6 | County-Confederate
+CANON_RANK: county
+- Monarchy: County Confederation -> Proto-Duchy
+- Monarchy: Ducal County -> Duchy
+- Monarchy: Composite County -> Duchy
+- Republic: City League -> League State
+- Republic: Federal City -> Federal League
+- Republic: Maritime City League -> Maritime League
+
+--------------------------------------------------
+
+R7 | Proto-Duchy
+CANON_RANK: duchy
+- Monarchy: Proto-Duchy -> Duchy
+- Monarchy: March -> High Duchy
+- Monarchy: Border Duchy -> Crown Duchy
+- Republic: League State -> Grand Republic
+- Republic: Regional League -> Federal League
+- Republic: Trade League -> Merchant League
+
+--------------------------------------------------
+
+R8 | Duchy
+CANON_RANK: duchy
+- Monarchy: Duchy -> High Duchy
+- Monarchy: Border Duchy -> Crown Duchy
+- Monarchy: Royal Duchy -> Ducal State
+- Republic: Grand Republic -> Federal League
+- Republic: Trade League -> Merchant League
+- Republic: Maritime League -> Maritime Republic
+
+--------------------------------------------------
+
+R9 | High Duchy
+CANON_RANK: duchy
+- Monarchy: Grand Duchy -> Proto-Kingdom
+- Monarchy: Crown Duchy -> Kingdom
+- Monarchy: March Principality -> Kingdom
+- Republic: Federal League -> Commonwealth
+- Republic: Merchant League -> Maritime Republic
+- Republic: Maritime League -> Maritime Empire (trade skip)
+
+--------------------------------------------------
+
+R10 | Ducal State
+CANON_RANK: duchy
+- Monarchy: Composite Duchy -> Proto-Kingdom
+- Monarchy: Ducal State -> Kingdom
+- Monarchy: Royal March -> Kingdom
+- Republic: State Republic -> Commonwealth
+- Republic: Continental League -> Grand Federation
+- Republic: Maritime Republic -> Imperial Republic
+
+--------------------------------------------------
+
+R11 | Proto-Kingdom
+CANON_RANK: kingdom
+- Monarchy: Petty Kingdom -> Kingdom
+- Monarchy: Crowned Duchy -> Kingdom
+- Monarchy: Client Kingdom -> High Kingdom
+- Republic: Crowned Republic -> Commonwealth
+- Republic: Republican Kingdom -> Federal Republic
+- Republic: Client Republic -> Continental Republic
+
+--------------------------------------------------
+
+R12 | Kingdom
+CANON_RANK: kingdom
+- Monarchy: Kingdom -> High Kingdom
+- Monarchy: Crown Realm -> High Kingdom
+- Monarchy: Composite Kingdom -> Empire
+- Republic: Commonwealth -> Grand Federation
+- Republic: Federal Republic -> Continental Republic
+- Republic: Maritime Republic -> Maritime Empire
+
+--------------------------------------------------
+
+R13 | High Kingdom
+CANON_RANK: kingdom
+- Monarchy: High Kingdom -> Empire
+- Monarchy: Composite Kingdom -> Composite Empire
+- Monarchy: Imperial Kingdom -> Empire
+- Republic: Grand Federation -> Federal Empire
+- Republic: Continental Republic -> Imperial Republic
+- Republic: Maritime Republic -> Maritime Empire
+
+--------------------------------------------------
+
+R14 | Empire
+CANON_RANK: empire
+- Monarchy: Empire -> Grand Empire
+- Monarchy: Composite Empire -> Grand Empire
+- Monarchy: Colonial Empire -> Grand Empire
+- Republic: Imperial Republic -> Maritime Empire
+- Republic: Federal Empire -> Hegemonic Republic
+- Republic: Maritime Empire -> Grand Empire
+
+--------------------------------------------------
+
+R15 | Grand Empire
+CANON_RANK: empire
+- Monarchy: Grand Empire
+- Monarchy: Overseas Empire
+- Monarchy: Composite Grand Empire
+- Republic: Maritime Empire
+- Republic: Hegemonic Republic
+- Republic: Supreme Federation
+
+NO PROMOTION ABOVE R15
+POST-R15 STATES MUST SPLIT, REFORM, OR COLLAPSE
+--------------------------------------------------
+END OF FILE

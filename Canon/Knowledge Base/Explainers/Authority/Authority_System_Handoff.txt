@@ -1,0 +1,163 @@
+EU5 AUTHORITY SYSTEM – HANDOFF SPECIFICATION
+Version: Working Design (1337 Start Compatible)
+Purpose: Internal system documentation for continuation by another assistant or developer.
+
+========================
+CORE CONCEPT
+========================
+
+Authority is an invisible systemic value representing political-administrative power.
+It is NOT a UI stat and is never directly shown to the player.
+
+Authority is used to:
+- Determine internal centralization vs fragmentation
+- Gate reforms, subject behavior, and autonomy
+- Drive the hidden R-rank system
+
+Authority is calculated continuously from in-game state.
+
+------------------------
+KEY DEFINITIONS
+------------------------
+
+Location:
+- The smallest map unit (villages, towns, cities).
+
+Province:
+- A collection of locations.
+- Each province has exactly ONE provincial capital location.
+
+Provincial Capital:
+- The administrative control node for the province.
+- Authority generated in the province is centralized here.
+
+========================
+LOCATION-LEVEL INPUTS
+========================
+
+Each location contributes Authority *potential* only.
+
+AuthorityPotential(location) =
+    Dev × (Pop / 1000) × BaseTax
+
+Where:
+- Dev = in-game province_average_development (real dev from save)
+- Pop = total population at location
+- BaseTax = economic base (derived from RGOs, base prices, full employment)
+- Control is NOT applied at the location level
+
+Notes:
+- A pop unit = 1,000 people
+- Rural locations ARE INCLUDED
+- Town/city status does NOT gate generation
+
+========================
+PROVINCE-LEVEL AUTHORITY
+========================
+
+ProvinceAuthority(P) =
+    Σ AuthorityPotential(location ∈ P)
+
+This represents the total political-economic weight of the province.
+
+Authority is NOT yet political at this stage.
+It is raw potential.
+
+========================
+CONTROL & CENTRALIZATION
+========================
+
+Control is evaluated ONLY at the provincial capital.
+
+CapturedAuthority(P) =
+    ProvinceAuthority(P) × Control(P_capital)
+
+RetainedAuthority(P) =
+    ProvinceAuthority(P) × (1 − Control(P_capital))
+
+Where:
+- Control ∈ [0, 1]
+- Control represents how effectively the center dominates the province
+
+========================
+STATE-LEVEL TOTALS
+========================
+
+Central Authority (CA) =
+    Σ CapturedAuthority(P) from eligible provinces
+
+Local Authority (LA) =
+    Σ RetainedAuthority(P) from ALL provinces
+
+Net Authority (NA) =
+    CA − LA
+
+NA is the primary driver of R-rank.
+
+========================
+R-RANK SYSTEM
+========================
+
+R-rank is an internal tier based on Net Authority.
+
+- R0: Highly autonomous / fragmented
+- R1+: Increasing centralization
+
+R-rank is:
+- Hidden from player
+- Derived, not set
+- Used as a condition for laws, reforms, subjects
+
+========================
+DESIGN PRINCIPLES
+========================
+
+1. Authority is PROVINCE-CENTRIC
+   Locations do not politically compete directly.
+
+2. Population & RGOs are PRIMARY
+   Development is a multiplier, not the driver.
+
+3. Capitals are CHOKE POINTS
+   Control at capitals determines outcomes.
+
+4. Early game is decentralized by default
+   High population ≠ high central authority.
+
+5. System must scale to empires naturally
+   Expansion increases LA unless integrated.
+
+========================
+IMPORTANT CLARIFICATIONS
+========================
+
+- province_average_development is a composite value
+  (geography × infrastructure × population × literacy)
+
+- Dev should NOT be used raw for balance-sensitive systems
+  (use transforms later if needed: sqrt, log, clamps)
+
+- town_setup DOES NOT instantiate buildings
+  Buildings only count if explicitly present
+
+- RGOs are defined by:
+  raw_material + RGO size + base price
+
+========================
+FUTURE EXTENSIONS (PLANNED)
+========================
+
+- Provincial estates / diets
+- Multiple provincial capitals
+- Crownland vs estate provinces
+- Reforms that bypass provinces
+- Capital relocation effects
+- Administrative vs noble provinces
+
+========================
+STATUS
+========================
+
+This document reflects the CURRENT agreed design.
+Math and structure are considered stable.
+Values, modifiers, and reforms will be layered later.
