@@ -30,7 +30,7 @@ window = {
 
 			blockoverride "scrollbox_content" {
 				widget = { size = { 0 10 } }
-				widget = { size = { 0 80 } }
+				widget = { size = { 0 40 } }
 				hbox = {
 					margin_bottom = 4
 					margin_top = 4
@@ -41,7 +41,7 @@ window = {
 						text_single = {
 							size = { 100% 100% }
 							align = center|nobaseline
-							raw_text = "[GetPlayer.MakeScope.GetVariable('v4_ta').GetValue|0]"
+							raw_text = "[GetPlayer.MakeScope.GetVariable('ta').GetValue|0]"
 						}
 					}
 					widget = { size = { 120 40 } }
@@ -51,7 +51,7 @@ window = {
 						text_single = {
 							size = { 100% 100% }
 							align = center|nobaseline
-							raw_text = "[GetPlayer.MakeScope.GetVariable('v3_7').GetValue|0]"
+							raw_text = "[GetPlayer.MakeScope.GetVariable('ca').GetValue|0]"
 						}
 					}
 					widget = { size = { 120 40 } }
@@ -61,7 +61,7 @@ window = {
 						text_single = {
 							size = { 100% 100% }
 							align = center|nobaseline
-							raw_text = "[GetPlayer.MakeScope.GetVariable('v3_8').GetValue|0]"
+							raw_text = "[GetPlayer.MakeScope.GetVariable('la').GetValue|0]"
 						}
 					}
 					widget = { size = { 120 40 } }
