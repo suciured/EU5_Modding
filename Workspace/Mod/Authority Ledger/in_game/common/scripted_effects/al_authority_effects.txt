@@ -12,7 +12,7 @@ if = {
 	}
 	if = {
 		limit = { NOT = { has_variable = ta } }
-	if = { limit = { NOT = { has_variable = ta } } set_variable = { name = ta value = 0 } }
+		set_variable = { name = ta value = 0 }
 	}
 
 	set_variable = { name = al_capital_base value = 0 }
@@ -23,13 +23,13 @@ if = {
 	every_owned_location = {
 		if = {
 			limit = { province = root.capital.province }
-			change_variable = { name = al_capital_base add = al_base_loc }
+			root = { change_variable = { name = al_capital_base add = al_base_loc } }
 			remove_variable = al_la_value
 		}
 		else = {
-			change_variable = { name = al_local_base add = al_base_loc }
+			root = { change_variable = { name = al_local_base add = al_base_loc } }
 			set_variable = { name = al_la_value value = al_base_loc }
-			add_to_list = al_la_locations
+			root = { add_to_list = al_la_locations }
 		}
 	}
 
