@@ -161,7 +161,7 @@ basic_priority_dialog = {
 				onrightclick = "[ExecuteConsoleCommand('GUI.ClearWidgets gui/al_rrank_window.gui al_rrank_window')]"
 				text = "al_rrank_window_button"
 				fontsize = 11
-				tooltipwidget = { using = AuthorityLedger_Button_Tooltip }
+				tooltip = "al_rrank_window_button_tooltip"
 				button_ignore = none
 			}
 			

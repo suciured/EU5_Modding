@@ -1,163 +1,187 @@
-EU5 AUTHORITY SYSTEM – HANDOFF SPECIFICATION
-Version: Working Design (1337 Start Compatible)
-Purpose: Internal system documentation for continuation by another assistant or developer.
+EU5 AUTHORITY SYSTEM — HANDOFF
+Status: Canon Knowledge Base (Authoritative)
 
-========================
-CORE CONCEPT
-========================
 
-Authority is an invisible systemic value representing political-administrative power.
-It is NOT a UI stat and is never directly shown to the player.
+============================================================
+PURPOSE
+============================================================
 
-Authority is used to:
-- Determine internal centralization vs fragmentation
-- Gate reforms, subject behavior, and autonomy
-- Drive the hidden R-rank system
+This document defines the current Authority system (Build B) used by EU5.
+It replaces the legacy single-Authority model with a split system based on:
 
-Authority is calculated continuously from in-game state.
+- Central Authority (CA)
+- Local Authority (LA)
+- Net Authority (NA)
+- Title Authority (TA)
+- Title Rank (TR)
 
-------------------------
-KEY DEFINITIONS
-------------------------
+This file is authoritative for design intent and system behavior.
+Implementation details in Canon/Raw are explicitly out of scope.
 
-Location:
-- The smallest map unit (villages, towns, cities).
+============================================================
+CORE CONCEPTS
+============================================================
 
-Province:
-- A collection of locations.
-- Each province has exactly ONE provincial capital location.
+CA (Central Authority)
+- Country-scoped
+- Represents authority concentrated in the capital province only
 
-Provincial Capital:
-- The administrative control node for the province.
-- Authority generated in the province is centralized here.
+LA (Local Authority)
+- Country-scoped
+- Represents authority held outside the capital province
 
-========================
-LOCATION-LEVEL INPUTS
-========================
+NA (Net Authority)
+- Defined as: NA = CA − LA
+- Determines long-term centralization pressure
 
-Each location contributes Authority *potential* only.
+TA (Title Authority)
+- Country-scoped persistent accumulator
+- Updated over time as: TA = TA + NA
+- No clamp and no decay in Build B
 
-AuthorityPotential(location) =
-    Dev × (Pop / 1000) × BaseTax
+TR (Title Rank)
+- Hidden tier derived from TA
+- Used for gating mechanics and scaling CA
+- NOT the same as T-rank UI nodes
 
-Where:
-- Dev = in-game province_average_development (real dev from save)
-- Pop = total population at location
-- BaseTax = economic base (derived from RGOs, base prices, full employment)
-- Control is NOT applied at the location level
+============================================================
+AUTHORITY GENERATION MODEL
+============================================================
+
+Authority is generated bottom-up from locations.
+
+Population handling:
+- Pops are measured in thousands
+- Effective pops per location are capped
+
+EffPopsK(l) = min(PopsK(l), POP_CAP_K)
+
+Location base:
+BaseLoc(l) = Dev(l) × EffPopsK(l) × TaxBase(l)
+
+Aggregation:
+- CapitalBase = sum of BaseLoc(l) for locations in the capital province
+- LocalBase   = sum of BaseLoc(l) for all other locations
+
+============================================================
+STATE CAPACITY MODIFIER
+============================================================
+
+Central Authority is modified by state capacity.
+
+Inputs:
+- Stability (assumed range −3 to +3)
+- Government Power (normalized externally)
+
+Normalization:
+StabNorm = clamp((Stability + 3) / 6, 0, 1)
+
+StateScore = (GovP_norm + StabNorm) / 2
+
+StateMult = CA_STATE_MIN + (1 − CA_STATE_MIN) × StateScore
 
 Notes:
-- A pop unit = 1,000 people
-- Rural locations ARE INCLUDED
-- Town/city status does NOT gate generation
+- GovP_norm is an external dependency
+- Its source, scale, and definition are not specified here
 
-========================
-PROVINCE-LEVEL AUTHORITY
-========================
+============================================================
+TITLE RANK FEEDBACK
+============================================================
 
-ProvinceAuthority(P) =
-    Σ AuthorityPotential(location ∈ P)
+Central Authority scales with Title Rank.
 
-This represents the total political-economic weight of the province.
+TRMult = 1 + CA_TR_COEFF × TR
 
-Authority is NOT yet political at this stage.
-It is raw potential.
+============================================================
+FINAL AUTHORITY VALUES
+============================================================
 
-========================
-CONTROL & CENTRALIZATION
-========================
+LA = LocalBase
 
-Control is evaluated ONLY at the provincial capital.
+CA = ceil(CapitalBase × StateMult × TRMult)
 
-CapturedAuthority(P) =
-    ProvinceAuthority(P) × Control(P_capital)
+NA = CA − LA
 
-RetainedAuthority(P) =
-    ProvinceAuthority(P) × (1 − Control(P_capital))
+TA = TA + NA
 
-Where:
-- Control ∈ [0, 1]
-- Control represents how effectively the center dominates the province
+============================================================
+TITLE RANK (TR) DERIVATION
+============================================================
 
-========================
-STATE-LEVEL TOTALS
-========================
+TR is derived exclusively from TA using explicit thresholds.
 
-Central Authority (CA) =
-    Σ CapturedAuthority(P) from eligible provinces
+Rules:
+- Promotion occurs when TA ≥ Threshold[TR+1]
+- Demotion occurs only when:
+  TA < Threshold[TR] − Buffer[TR]
 
-Local Authority (LA) =
-    Σ RetainedAuthority(P) from ALL provinces
+Buffer rule:
+Buffer[TR] = max(250000, 0.15 × Threshold[TR])
 
-Net Authority (NA) =
-    CA − LA
+Gate:
+- TR cannot exceed 10 unless the country is independent
 
-NA is the primary driver of R-rank.
+The threshold table is authoritative and fully defined in:
+- Canon/Knowledge Base/Explainers/Formulas/TR_Thresholds.txt
 
-========================
-R-RANK SYSTEM
-========================
+============================================================
+LEDGER / UI EXPOSURE (UPDATED)
+============================================================
 
-R-rank is an internal tier based on Net Authority.
+Ledger status:
+- CA, LA, NA, TA, and TR are conceptual country-level values
+- No ledger implementation exists in Canon/Raw
 
-- R0: Highly autonomous / fragmented
-- R1+: Increasing centralization
+Design intent:
+- Authority values are intended to be readable by UI systems
+- Exposure is read-only
+- Presentation follows existing ledger-style viewers
 
-R-rank is:
-- Hidden from player
-- Derived, not set
-- Used as a condition for laws, reforms, subjects
+Explicit non-assumptions:
+- No variable names are reserved
+- No GUI files are assumed
+- No ledger tab registration pattern is defined
 
-========================
+Codex must treat ledger exposure as:
+> “Design-defined, implementation-pending”
+
+============================================================
+RELATION TO T-RANK UI TREE
+============================================================
+
+T-ranks (Tn.m) are UI node selections and are NOT tiers.
+
+- TR = hidden systemic tier
+- T-rank = player-facing title structure
+
+They are intentionally decoupled.
+
+============================================================
 DESIGN PRINCIPLES
-========================
+============================================================
 
-1. Authority is PROVINCE-CENTRIC
-   Locations do not politically compete directly.
+- Early decentralization, late centralization
+- Capitals are structural choke points
+- Growth is driven by population and economy
+- Rank progression is slow, reversible, and state-driven
+- No single variable represents “authority”
 
-2. Population & RGOs are PRIMARY
-   Development is a multiplier, not the driver.
+============================================================
+IMPLEMENTATION STATUS SUMMARY
+============================================================
 
-3. Capitals are CHOKE POINTS
-   Control at capitals determines outcomes.
+Defined:
+✔ Authority math
+✔ TA accumulation
+✔ TR thresholds
+✔ Capital-only CA rule
 
-4. Early game is decentralized by default
-   High population ≠ high central authority.
+Not defined:
+✘ Script hooks
+✘ Variable storage
+✘ GovP_norm source
+✘ Ledger UI bindings
 
-5. System must scale to empires naturally
-   Expansion increases LA unless integrated.
+All missing items are intentional and must not be inferred.
 
-========================
-IMPORTANT CLARIFICATIONS
-========================
-
-- province_average_development is a composite value
-  (geography × infrastructure × population × literacy)
-
-- Dev should NOT be used raw for balance-sensitive systems
-  (use transforms later if needed: sqrt, log, clamps)
-
-- town_setup DOES NOT instantiate buildings
-  Buildings only count if explicitly present
-
-- RGOs are defined by:
-  raw_material + RGO size + base price
-
-========================
-FUTURE EXTENSIONS (PLANNED)
-========================
-
-- Provincial estates / diets
-- Multiple provincial capitals
-- Crownland vs estate provinces
-- Reforms that bypass provinces
-- Capital relocation effects
-- Administrative vs noble provinces
-
-========================
-STATUS
-========================
-
-This document reflects the CURRENT agreed design.
-Math and structure are considered stable.
-Values, modifiers, and reforms will be layered later.
+END

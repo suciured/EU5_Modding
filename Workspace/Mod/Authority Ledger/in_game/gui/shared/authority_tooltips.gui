@@ -1,0 +1,47 @@
+
+template AuthorityLedger_Button_Tooltip {
+	ConceptTooltipType = {
+		blockoverride "title_text" { text = "AUTHORITY" }
+
+		blockoverride "tooltip_content" {
+			vbox = {
+				using = layoutpolicy_vertical
+				spacing = 4
+
+				hbox = {
+					spacing = 6
+					text_single = { text = "CA:" }
+					text_single = { text = "[Player.MakeScope.GetVariable('CA').GetValue|0]" }
+				}
+
+				hbox = {
+					spacing = 6
+					text_single = { text = "LA:" }
+					text_single = {
+						text = "[Player.MakeScope.GetVariable('LA').GetValue|0]"
+						tooltipwidget = { using = AuthorityLedger_LA_Breakdown_Tooltip }
+					}
+				}
+
+				hbox = {
+					spacing = 6
+					text_single = { text = "TA:" }
+					text_single = { text = "[Player.MakeScope.GetVariable('TA').GetValue|0]" }
+				}
+			}
+		}
+	}
+}
+
+template AuthorityLedger_LA_Breakdown_Tooltip {
+	ConceptTooltipType = {
+		blockoverride "title_text" { text = "LOCAL AUTHORITY BREAKDOWN" }
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				blockoverride "text" {
+					text = "Per-location LA breakdown pending GUI list binding."
+				}
+			}
+		}
+	}
+}
