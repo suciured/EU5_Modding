@@ -45,15 +45,6 @@ al_v_system_monthly_update_effect = {
         set_variable = { name = v5_t_rank value = 0 }
     }
 
-    # Debug display: total population/dev/locations
-    set_variable = { name = al_total_population value = total_population }
-    set_variable = { name = al_total_development value = total_development }
-    set_variable = { name = al_total_locations value = num_locations }
-
-    # V3 debug proxies: map totals into central/local bases for now
-    set_variable = { name = v3_7 value = var:al_total_population }
-    set_variable = { name = v3_8 value = var:al_total_development }
-
     # V4.1/V4.2: role-aware central/local flow
     set_variable = { name = v4_1 value = var:v3_7 }
     set_variable = { name = v4_2 value = var:v3_8 }
