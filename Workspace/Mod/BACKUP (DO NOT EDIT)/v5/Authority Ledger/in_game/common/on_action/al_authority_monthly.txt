@@ -1,0 +1,5 @@
+monthly_country_pulse = {
+	on_actions = {
+		al_authority_monthly_update
+	}
+}
