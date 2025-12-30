@@ -45,18 +45,3 @@ al_base_loc = {
 	multiply = al_eff_pops_k
 	multiply = location_tax_base
 }
-
-al_govp_norm_value = {
-	value = government_power
-	divide = 100
-	min = 0
-	max = 1
-}
-
-al_stab_norm_value = {
-	value = stability
-	add = 100
-	divide = 200
-	min = 0
-	max = 1
-}

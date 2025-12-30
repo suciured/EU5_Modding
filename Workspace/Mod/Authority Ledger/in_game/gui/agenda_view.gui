@@ -129,7 +129,7 @@ template al_authority_ledger_tooltip {
 							}
 							expand = {}
 							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('al_ca').GetValue|0]"
+								raw_text = "[GetPlayer.MakeScope.GetVariable('CA').GetValue|0]"
 							}
 						}
 					}
@@ -140,7 +140,7 @@ template al_authority_ledger_tooltip {
 							}
 							expand = {}
 							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('al_la').GetValue|0]"
+								raw_text = "[GetPlayer.MakeScope.GetVariable('LA').GetValue|0]"
 								tooltipwidget = {
 									using = al_authority_ledger_la_tooltip
 								}
@@ -154,7 +154,7 @@ template al_authority_ledger_tooltip {
 							}
 							expand = {}
 							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('al_ta').GetValue|0]"
+								raw_text = "[GetPlayer.MakeScope.GetVariable('TA').GetValue|0]"
 							}
 						}
 					}
@@ -192,12 +192,12 @@ template al_authority_ledger_la_tooltip {
 						blockoverride "field_left" { expand = {} }
 						blockoverride "field_text" {
 							align = right|nobaseline
-							raw_text = "[Location.MakeScope.GetVariable('al_la_value').GetValue|0]"
+							raw_text = "[Location.MakeScope.GetVariable('LA_value').GetValue|0]"
 						}
 					}
 
 					blockoverride "column_datamodel" {
-						datamodel = "[GetPlayer.MakeScope.GetList('al_la_locations')]"
+						datamodel = "[GetPlayer.MakeScope.GetList('LA_locations')]"
 					}
 				}
 			}
