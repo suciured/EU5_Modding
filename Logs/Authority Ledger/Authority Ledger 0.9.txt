@@ -1,0 +1,24 @@
+[VERSION] 0.9
+[DATE] 2025-12-30
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+  - Edited:
+    - Workspace/Mod/Authority Ledger/in_game/common/script_values/al_authority_values.txt
+    - Workspace/Mod/Authority Ledger/in_game/common/scripted_effects/al_authority_effects.txt
+  - Deleted:
+    - Workspace/Mod/Authority Ledger/in_game/common/on_action/al_authority_on_action.txt
+    - Workspace/Mod/Authority Ledger/in_game/common/on_action/country_monthly.txt
+[TEMPLATE_CLEANUP]
+  - Removed unused template folders/files:
+    - Workspace/Mod/Authority Ledger/in_game/common/on_action (empty after removing unsupported on_action files)
+[SOURCES_USED]
+  - Knowledge Base: None
+  - Raw: None
+[NOTES]
+  - Removed unsupported local-control scaling so per-location LA matches the canonical base location formula.
+  - Dropped the monthly on_action hook and copied base on_action file to avoid overriding Raw behavior without a defined hook schema.
+  - Kept per-location LA storage aligned with the unscaled base location value.
+[OPEN_ITEMS]
+  - None
