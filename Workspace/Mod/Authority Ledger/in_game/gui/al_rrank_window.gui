@@ -30,6 +30,42 @@ window = {
 
 			blockoverride "scrollbox_content" {
 				widget = { size = { 0 10 } }
+				widget = { size = { 0 80 } }
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					widget = { size = { 190 40 } }
+					widget = {
+						size = { 120 40 }
+						background = { using = tooltip_table_field_texture }
+						text_single = {
+							size = { 100% 100% }
+							align = center|nobaseline
+							raw_text = "[GetPlayer.MakeScope.GetVariable('al_ta').GetValue|0]"
+						}
+					}
+					widget = { size = { 120 40 } }
+					widget = {
+						size = { 120 40 }
+						background = { using = tooltip_table_field_texture }
+						text_single = {
+							size = { 100% 100% }
+							align = center|nobaseline
+							raw_text = "[GetPlayer.MakeScope.GetVariable('al_ca').GetValue|0]"
+						}
+					}
+					widget = { size = { 120 40 } }
+					widget = {
+						size = { 120 40 }
+						background = { using = tooltip_table_field_texture }
+						text_single = {
+							size = { 100% 100% }
+							align = center|nobaseline
+							raw_text = "[GetPlayer.MakeScope.GetVariable('al_la').GetValue|0]"
+						}
+					}
+					widget = { size = { 120 40 } }
+				}
 				hbox = {
 					margin_bottom = 4
 					margin_top = 4
