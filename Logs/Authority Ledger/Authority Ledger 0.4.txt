@@ -1,0 +1,33 @@
+[VERSION] 0.4
+[DATE] 2025-12-30
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/common/script_values/al_authority_values.txt
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/common/scripted_effects/al_authority_effects.txt
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/common/on_action/al_authority_monthly.txt
+  - Edited:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/gui/agenda_view.gui
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/localization/english/authority_ledger_rranks_l_english.yml
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - /workspace/EU5_Modding/Canon/Knowledge Base/Explainers/Formulas/Formulas_Only.txt
+    - /workspace/EU5_Modding/Canon/Knowledge Base/Explainers/Formulas/Variables.txt
+    - /workspace/EU5_Modding/Canon/Knowledge Base/Explainers/Formulas/TR_Thresholds.txt
+  - Raw:
+    - /workspace/EU5_Modding/Canon/Raw/in_game/common/on_action/on_actions.info
+    - /workspace/EU5_Modding/Canon/Raw/in_game/common/script_values/_script_values.info
+    - /workspace/EU5_Modding/Canon/Raw/in_game/gui/shared/province_tooltips.gui
+[NOTES]
+  - Added script values for Authority Ledger constants and per-location base authority math.
+  - Implemented a monthly authority update effect that recalculates CA/LA/NA/TA, tracks LA per location, and updates TR with hysteresis.
+  - Hooked the monthly update into the country monthly pulse on_action.
+  - Replaced the Authority Ledger button tooltip with a custom CA/LA/TA display plus LA location breakdown tooltip.
+  - Added localization for the new tooltip labels.
+[OPEN_ITEMS]
+  - None
