@@ -1,46 +1,93 @@
-# Authority / Title System — Formulas & Derived Variables ONLY
-# Build B (Condensed)
-# NOTE: No editable input variables are defined in this file.
+============================================
+AUTHORITY SYSTEM — FORMULAS ONLY
+Build B (EU5)
+============================================
 
-## Naming
-# TA = Title Authority
-# TR = Title Rank
+------------------------------------------------
+POPULATION HANDLING
+------------------------------------------------
+# Pops are stored in thousands.
+# Per-location population is capped.
 
-## Population handling
 EffPopsK(l) = min(PopsK(l), POP_CAP_K)
 
-## Base political weight (old authority base)
+
+------------------------------------------------
+BASE LOCATION AUTHORITY
+------------------------------------------------
+# TaxBase is the total money generated at the location
+# (not profits).
+
 BaseLoc(l) = Dev(l) × EffPopsK(l) × TaxBase(l)
 
-## Aggregation
-CapitalBase = Σ BaseLoc(l)   # locations in capital province only
-LocalBase   = Σ BaseLoc(l)   # locations NOT in capital province
 
-## Stability normalization
-# Assumes Stability range is −3 … +3
-StabNorm = clamp( (Stability + 3) / 6 , 0 , 1 )
+------------------------------------------------
+AGGREGATION
+------------------------------------------------
+# CapitalBase: locations in capital province only
+# LocalBase: all other locations
 
-## Combined state capacity
+CapitalBase = Σ BaseLoc(l)   [capital province]
+LocalBase   = Σ BaseLoc(l)   [non-capital provinces]
+
+
+------------------------------------------------
+STABILITY NORMALIZATION (EU5)
+------------------------------------------------
+# EU5 stability range: −100 … +100
+
+StabNorm = clamp( (Stability + 100) / 200 , 0 , 1 )
+
+
+------------------------------------------------
+GOVERNMENT POWER NORMALIZATION (CANON)
+------------------------------------------------
+# GovP is the canon government power value:
+# - Monarchy: Legitimacy
+# - Republic: Republican Power
+# - Theocracy: Devotion
+# - Other governments: canon equivalent
+#
+# Canon range assumed: 0 … 100
+
+GovP_norm = clamp( GovP / 100 , 0 , 1 )
+
+
+------------------------------------------------
+STATE CAPACITY
+------------------------------------------------
+
 StateScore = (GovP_norm + StabNorm) / 2
-StateMult  = CA_STATE_MIN + (1 - CA_STATE_MIN) × StateScore
 
-## Title Rank reinforcement
+StateMult  = CA_STATE_MIN
+           + (1 - CA_STATE_MIN) × StateScore
+
+
+------------------------------------------------
+TITLE RANK MODIFIER
+------------------------------------------------
+
 TRMult = 1 + CA_TR_COEFF × TR
 
-## Core outputs
+
+------------------------------------------------
+FINAL AUTHORITY VALUES
+------------------------------------------------
+
 LA = LocalBase
 
 CA = ceil(
-  CapitalBase
-  × StateMult
-  × TRMult
+    CapitalBase
+    × StateMult
+    × TRMult
 )
 
 NA = CA − LA
 
-## Title Authority accumulation
-TA = TA + NA
 
-## Title Rank
-# TR is derived from TA via threshold table + hysteresis
-# (defined elsewhere)
+------------------------------------------------
+TITLE AUTHORITY ACCUMULATION
+------------------------------------------------
+# No clamp, no decay
+
+TA = TA + NA
