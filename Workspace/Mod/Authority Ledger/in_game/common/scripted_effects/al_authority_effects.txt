@@ -12,7 +12,7 @@ if = {
 	}
 	if = {
 		limit = { NOT = { has_variable = ta } }
-		set_variable = { name = ta value = 0 }
+	if = { limit = { NOT = { has_variable = ta } } set_variable = { name = ta value = 0 } }
 	}
 
 	set_variable = { name = al_capital_base value = 0 }
