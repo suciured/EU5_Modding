@@ -1,188 +1,241 @@
-EU5 Authority Ledger — Index (Codex Fast Find)
+EU5 Authority Ledger — Codex Index (Authoritative)
 [DATE] 2025-12-30
-[SCOPE] Knowledge Base > Explainers (Authority / T-Rank)
+[SCOPE] Canon / Knowledge Base / Explainers
+[STATUS] Design-Phase, Implementation-Pending
 
 PURPOSE
-- Quick lookup map for Codex agent to find the right file fast.
-- Navigation only. No mechanics are defined here.
+- Canonical navigation index for Codex agents.
+- Explicitly defines what exists, what does not, and where intent is documented.
+- Prevents Codex from hallucinating missing engine paths or scripts.
 
-CANON / TRUST ORDER
-1) Knowledge Base (this folder)
-2) Mod output files
-3) Raw reference
-
-============================================================
-KEY TERMS (SEARCH TOKENS)
-============================================================
-TA = Title Authority (hidden accumulator; formerly RScore)
-TR = Title Rank (tier derived from TA; formerly RRank)
-CA = Central Authority
-LA = Local Authority
-NA = Net Authority (= CA - LA)
-T-rank = UI/selection tree nodes (Tn.m where m=slot 1..6)
-Thresholds = TA breakpoints for TR tiers
-Hysteresis = demotion buffer rule for TR
+IMPORTANT RULE
+- If something is not implemented in /Canon/Raw/, it MUST be defined here as intent.
 
 ============================================================
-PRIMARY FILES (WHAT TO OPEN FOR WHAT)
+CORE TERMINOLOGY
 ============================================================
-
-(1) Core math (authoritative formulas)
-- File: Explainers/Formulas/Formulas_Only.txt
-  - Contains: derived variables + formulas for CA/LA/NA/TA and TR derivation note
-  - Keywords: BaseLoc, CapitalBase, LocalBase, StabNorm, StateMult, TRMult, TA = TA + NA
-
-(2) Balance knobs (editable constants)
-- File: Explainers/Formulas/Variables.txt
-  - Contains: POP_CAP_K, CA_STATE_MIN, CA_TR_COEFF, TR_MAX
-
-(3) TR tier thresholds (data table)
-- File: Explainers/Formulas/TR_Thresholds.txt
-  - Contains: TA thresholds for TR0..TR15, hysteresis buffer rule, independence gate TR10->TR11
-
-(4) T-rank node template (UI tree structure; NOT TR thresholds)
-- File: Explainers/T-Rank/EU5_T-RANK_TEMPLATE.txt
-  - Contains: T0..T15 and Tn.1..Tn.6 blocks
-  - Slot mapping: .1.. .6 correspond to UI slots 1..6
-  - Includes: EMPTY placeholders, upgrade paths (T0->T1), TBD elsewhere
-
-(5) T-rank / TR system handoff (continuation doc)
-- File: Explainers/T-Rank/T_Rank_System_Handoff.txt
-  - Contains: updated system summary (TA/TR naming, Build B formulas, thresholds references, UI tree notes)
-
-(6) Repo-wide guardrails for Codex agent (must follow)
-- File: CODEX_INSTRUCTIONS.txt
-  - Contains: SOURCE-ONLY rules, stop conditions, logging rules, sync rules
-
-
-- "R-rank UI chart" nodes are now "T-ranks" (Tn.m), where:
-  - n = row (tier band)
-  - m = slot (1..6) mapped directly to UI columns
-
-IMPORTANT: TR (Title Rank) is NOT the same as T-rank (UI node tree).
-- TR is computed from TA via thresholds (TR_Thresholds.txt).
-- T-rank is a player-facing selection/tree layout (EU5_T-RANK_TEMPLATE.txt).
+CA = Central Authority (country-scoped)
+LA = Local Authority (country-scoped)
+NA = Net Authority (CA − LA)
+TA = Title Authority (persistent country accumulator)
+TR = Title Rank (hidden tier derived from TA)
+T-rank = UI node tree (Tn.m, m = slot 1..6)
 
 ============================================================
-CORE IDEA
+AUTHORITATIVE FILE MAP
 ============================================================
-TR is an INTERNAL, HIDDEN tier system that represents the degree of structural centralization of a state.
-- Not shown directly to player
-- Never directly set
-- Always derived from Authority math (CA/LA/NA -> TA -> TR)
 
-TR answers:
-"How centralized is this state over time?"
+[FORMULAS — WHAT IS CALCULATED]
 
-============================================================
-INPUT: NET AUTHORITY (NA)
-============================================================
-Definitions:
-- CA = Central Authority
-- LA = Local Authority
-- NA = CA − LA
+(1) Authority math (derived variables only)
+File:
+  Canon/Knowledge Base/Explainers/Formulas/Formulas_Only.txt
 
-Interpretation:
-- Positive NA -> TA increases -> TR tends to rise
-- Negative NA -> TA decreases -> TR tends to fall
+Defines:
+- BaseLoc
+- CapitalBase
+- LocalBase
+- CA / LA / NA
+- TA = TA + NA
+- TR dependency on thresholds
 
-============================================================
-BUILD B (CURRENT AUTHORITY MATH)
-============================================================
-This system removed the old single "Authority" variable.
-CA and LA are computed separately from the shared base.
+Does NOT define:
+- Variable storage
+- Update hooks
+- GUI exposure
 
-(1) Population cap per location:
-  EffPopsK(l) = min(PopsK(l), POP_CAP_K)
+--------------------------------------------
 
-(2) Location base:
-  BaseLoc(l) = Dev(l) × EffPopsK(l) × TaxBase(l)
+(2) Balance constants (editable)
+File:
+  Canon/Knowledge Base/Explainers/Formulas/Variables.txt
 
-(3) Aggregation:
-  CapitalBase = Σ BaseLoc(l) for locations in capital province only
-  LocalBase   = Σ BaseLoc(l) for locations NOT in capital province
+Defines:
+- POP_CAP_K
+- CA_STATE_MIN
+- CA_TR_COEFF
+- TR_MAX
 
-(4) State capacity (merged stability + government power):
-  StabNorm    = clamp((Stability + 3)/6, 0, 1)   # assumes stability range -3..+3
-  StateScore  = (GovP_norm + StabNorm)/2
-  StateMult   = CA_STATE_MIN + (1 - CA_STATE_MIN) × StateScore
+--------------------------------------------
 
-(5) TR feedback into CA:
-  TRMult = 1 + CA_TR_COEFF × TR
+(3) TR thresholds & hysteresis
+File:
+  Canon/Knowledge Base/Explainers/Formulas/TR_Thresholds.txt
 
-(6) Outputs:
-  LA = LocalBase
-  CA = ceil(CapitalBase × StateMult × TRMult)
-  NA = CA − LA
-
-(7) TA accumulation (no clamp, no decay):
-  TA = TA + NA
-
-AUTHORITATIVE FILES:
-- Explainers/Formulas/Variables.txt
-- Explainers/Formulas/Formulas_Only.txt
+Defines:
+- TA → TR mapping (TR0–TR15)
+- Demotion buffer rule
+- Independence gate (TR10 → TR11)
 
 ============================================================
-TR DERIVATION (THRESHOLDS + HYSTERESIS)
+INTENT-DEFINED (NOT YET IMPLEMENTED)
 ============================================================
-TR is derived from TA using a threshold ladder plus hysteresis to prevent flapping.
 
-Promotion:
-- if TA ≥ Threshold[TR+1] and Gate(TR+1) passes -> TR += 1
+The following systems are NOT present in /Canon/Raw/.
+They are defined by intent and must NOT be assumed by Codex.
 
-Demotion:
-- if TA < Threshold[TR] − Buffer[TR] -> TR -= 1
+--------------------------------------------
 
-Buffer rule:
-- Buffer[TR] = max(250000, 0.15 × Threshold[TR])
+(4) Authority variable storage model
+File:
+  Canon/Knowledge Base/Explainers/Authority/Authority_Ledger_Exposure.txt
 
-Gate:
-- TR10 -> TR11 requires Independence (TR capped at 10 unless independent)
+Defines (by intent):
+- CA, LA, NA, TA are country-scoped values
+- Values are recomputed on a regular pulse
+- Values are readable by UI systems
 
-AUTHORITATIVE FILE:
-- Explainers/Formulas/TR_Thresholds.txt
+This file is the authoritative answer to:
+- “Where do CA/LA/TA live?”
+- “Are they GUI-readable?”
+
+--------------------------------------------
+
+(5) Monthly authority update hook
+STATUS: NOT IMPLEMENTED
+
+Defined by intent in:
+- Authority_Ledger_Exposure.txt
+- T_Rank_System_Handoff.txt
+
+Explicitly NOT defined:
+- Which on_action is used
+- Which script file performs the update
+
+Codex must treat this as:
+> “A monthly scripted effect exists by design, but is not yet implemented.”
+
+--------------------------------------------
+
+(6) GovP_norm definition
+STATUS: NOT IMPLEMENTED
+
+Defined by intent:
+- GovP_norm is a normalized government power scalar in range [0,1]
+- It represents state administrative capacity
+- Used ONLY via StateScore in authority math
+
+Authoritative intent reference:
+- T_Rank_System_Handoff.txt
+
+Codex must NOT assume:
+- Which base-game value is used
+- Which file defines it
+- Any specific scaling
+
+--------------------------------------------
+
+(7) Eligible provinces for CA
+STATUS: DEFINED BY INTENT
+
+Authoritative rule:
+- ONLY locations in the capital province contribute to CA
+- All other locations contribute to LA
+
+Defined in:
+- Formulas_Only.txt
+- T_Rank_System_Handoff.txt
+
+--------------------------------------------
+
+(8) TR derivation & storage
+STATUS: PARTIALLY DEFINED
+
+Defined:
+- TR is derived from TA via thresholds + hysteresis
+- TR feeds back into CA via TRMult
+
+Not defined:
+- Script variable names
+- Persistence layer
+
+Authoritative source:
+- TR_Thresholds.txt
+- T_Rank_System_Handoff.txt
 
 ============================================================
-T-RANK (UI TREE NODES) — SEPARATE FROM TR
+UI / LEDGER SYSTEM
 ============================================================
-T-ranks are the UI grid/tree nodes used for selecting a "type" within a tier band.
-They are defined as Tn.m:
-- n: row/tier band (0..15)
-- m: slot/column (1..6)
 
-Slot mapping:
-- .1 .. .6 correspond to UI columns 1..6
+(9) Ledger exposure model
+STATUS: INTENT-DEFINED
 
-EMPTY handling:
-- Unused slots are explicit blocks with EMPTY values.
+Authoritative file:
+  Canon/Knowledge Base/Explainers/Authority/Authority_Ledger_Exposure.txt
 
-Locked upgrade paths (T0 -> T1):
-- T0.2 (Monarchy seed) upgrades to: T1.1, T1.3
-- T0.5 (Republic seed) upgrades to: T1.4
+Defines:
+- CA / LA / TA are exposed via ledger-style UI
+- Read-only
+- Pattern follows existing ledgers (cultures, religions, wars)
 
-AUTHORITATIVE FILE:
-- Explainers/T-Rank/EU5_T-RANK_TEMPLATE.txt
-(Localization for node labels: deferred.)
+Explicitly NOT defined:
+- GUI file names
+- Ledger tab registration method
+- Widget bindings
 
 ============================================================
-DESIGN PRINCIPLES
+T-RANK (UI TREE, NOT TIERS)
 ============================================================
-- TR changes based on long-run structure (NA -> TA), not one-off events
-- Thresholds tuned so France-scale states sit around TR 11–13 when successful
-- TR14–TR15 are rare hegemon tiers
 
+(10) T-rank UI node structure
+File:
+  Canon/Knowledge Base/Explainers/T-Rank/EU5_T-RANK_TEMPLATE.txt
+
+Defines:
+- T0–T15 rows
+- Tn.1–Tn.6 slots
+- EMPTY handling
+- Locked upgrade paths (T0 → T1)
+
+IMPORTANT:
+- T-rank ≠ TR
+- T-rank is player-facing structure
+- TR is hidden progression tier
 
 ============================================================
-STATUS / OPEN ITEMS
+SYSTEM HANDOFF
 ============================================================
-- Localization: deferred
-- Scripted hooks: only proceed if defined in repo KB
-- T-rank upgrades beyond T1: TBD
+
+(11) Full system handoff
+File:
+  Canon/Knowledge Base/Explainers/T-Rank/T_Rank_System_Handoff.txt
+
+Defines:
+- All renames (R → T)
+- Authority math summary
+- TR logic summary
+- Design principles
+- Explicit non-assumptions
 
 ============================================================
-NOT DEFINED HERE
+CODEX INSTRUCTIONS
 ============================================================
-- Any localization strings for T-rank nodes (add later, not in templates)
-- Exact scripted implementation file paths (only if defined in repo KB)
+
+(12) Codex guardrails
+File:
+  CODEX_INSTRUCTIONS.txt
+
+Defines:
+- Source-only rules
+- No hallucination policy
+- Stop conditions
+
+============================================================
+CODING STATUS SUMMARY
+============================================================
+
+Defined in KB:
+✔ Authority math
+✔ Thresholds
+✔ Intent for storage
+✔ Intent for ledger exposure
+
+NOT defined yet:
+✘ Script hooks
+✘ Variable declarations in Raw
+✘ GUI bindings
+
+Codex must treat missing items as:
+> “Design-defined, implementation-pending”
 
 END
