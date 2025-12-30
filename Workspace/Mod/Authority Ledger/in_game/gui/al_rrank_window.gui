@@ -44,10 +44,28 @@ window = {
 						button_ignore = none
 					}
 					widget = { size = { 120 40 } }
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r0_type_2_button"
+						onclick = "[GetScriptedGui('al_r0_type_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r0_type_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_type_tooltip"
+						button_ignore = none
+					}
 					widget = { size = { 120 40 } }
 					widget = { size = { 120 40 } }
-					widget = { size = { 120 40 } }
-					widget = { size = { 120 40 } }
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r0_type_5_button"
+						onclick = "[GetScriptedGui('al_r0_type_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r0_type_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_type_tooltip"
+						button_ignore = none
+					}
 					widget = { size = { 120 40 } }
 				}
 				hbox = {
