@@ -65,7 +65,7 @@ al_v_system_monthly_update_effect = {
 
     # V4.3: net authority flow (per tick)
     set_variable = { name = v4_3 value = var:v4_1 }
-    change_variable = { name = v4_3 add = var:v4_2 }
+    change_variable = { name = v4_3 subtract = var:v4_2 }
 
     # V4.4: title authority accumulation
     change_variable = { name = v4_ta add = var:v4_3 }
