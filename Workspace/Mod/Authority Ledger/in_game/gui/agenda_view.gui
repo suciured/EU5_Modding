@@ -157,6 +157,8 @@ basic_priority_dialog = {
 				blockoverride "primary_visible" {}
 				size = { 180 40 }
 				name = "Authority Ledger"
+				
+				tooltipwidget = { using = AuthorityLedger_Button_Tooltip }
 				onclick = "[ExecuteConsoleCommand('GUI.CreateWidget gui/al_rrank_window.gui al_rrank_window')]"
 				onrightclick = "[ExecuteConsoleCommand('GUI.ClearWidgets gui/al_rrank_window.gui al_rrank_window')]"
 				text = "al_rrank_window_button"

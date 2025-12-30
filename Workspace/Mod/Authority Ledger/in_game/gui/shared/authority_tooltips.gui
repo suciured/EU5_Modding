@@ -39,9 +39,18 @@ template AuthorityLedger_LA_Breakdown_Tooltip {
 		blockoverride "tooltip_content" {
 			TooltipTextBlock = {
 				blockoverride "text" {
-					text = "Per-location LA breakdown pending GUI list binding."
+					text = "Owned Locations (LA per location stored as Location variable: LA_contrib)"
+				}
+			}
+			# This list is the built-in owned locations info list (names/counts). Value column binding for LA_contrib
+			# requires a scope-list widget or a new textcontext that returns name|value pairs.
+			TooltipStringPairList = { textcontext = "[Player.MakeScope.GetOwnedLocationsInfo]" }
+			TooltipTextBlock = {
+				blockoverride "text" {
+					text = "NOTE: Showing LA_contrib values here requires a scope-iterating list widget."
 				}
 			}
 		}
 	}
 }
+
