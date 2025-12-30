@@ -4,9 +4,10 @@
 [PARENT_FOLDER] Authority Ledger
 [FILES_CHANGED]
   - Added:
-    - Workspace/Mod/Authority Ledger/in_game/common/on_action/al_authority_game_start.txt
+    - Workspace/Mod/Authority Ledger/in_game/common/on_action/_hardcoded.txt
   - Edited:
   - Deleted:
+    - Workspace/Mod/Authority Ledger/in_game/common/on_action/al_authority_game_start.txt
 [TEMPLATE_CLEANUP]
   - Removed unused template folders/files: None
 [SOURCES_USED]
@@ -14,6 +15,6 @@
   - Raw:
     - Canon/Raw/in_game/common/on_action/_hardcoded.txt
 [NOTES]
-  - Added an on_game_start hook to precompute authority variables for all countries at game start.
+  - Added authority precalc to the hardcoded on_game_start effect so CA/LA/TA are initialized when the game begins.
 [OPEN_ITEMS]
   - None
