@@ -46,6 +46,17 @@ al_base_loc = {
 	multiply = location_tax_base
 }
 
+al_la_loc_value = {
+	value = al_base_loc
+	multiply = {
+		value = 2
+		subtract = {
+			value = local_control
+			multiply = 1.5
+		}
+	}
+}
+
 al_govp_norm_value = {
 	value = government_power
 	divide = 100

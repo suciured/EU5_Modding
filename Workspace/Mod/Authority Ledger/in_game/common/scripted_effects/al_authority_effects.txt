@@ -26,8 +26,8 @@
 			remove_variable = al_la_value
 		}
 		else = {
-			change_variable = { name = al_local_base add = al_base_loc }
-			set_variable = { name = al_la_value value = al_base_loc }
+			change_variable = { name = al_local_base add = al_la_loc_value }
+			set_variable = { name = al_la_value value = al_la_loc_value }
 			add_to_list = al_la_locations
 		}
 	}
