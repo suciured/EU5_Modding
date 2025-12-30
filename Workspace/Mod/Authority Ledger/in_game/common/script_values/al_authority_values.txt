@@ -1,1 +1,62 @@
+﻿al_pop_cap_k = 30
+al_ca_state_min = 0.75
+al_ca_tr_coeff = 0.05
 
+al_tr_threshold_0 = 0
+al_tr_threshold_1 = 250000
+al_tr_threshold_2 = 650000
+al_tr_threshold_3 = 1700000
+al_tr_threshold_4 = 4400000
+al_tr_threshold_5 = 11500000
+al_tr_threshold_6 = 30000000
+al_tr_threshold_7 = 78000000
+al_tr_threshold_8 = 200000000
+al_tr_threshold_9 = 350000000
+al_tr_threshold_10 = 500000000
+al_tr_threshold_11 = 650000000
+al_tr_threshold_12 = 900000000
+al_tr_threshold_13 = 1200000000
+al_tr_threshold_14 = 1800000000
+al_tr_threshold_15 = 2700000000
+
+al_tr_demote_1 = 0
+al_tr_demote_2 = 400000
+al_tr_demote_3 = 1445000
+al_tr_demote_4 = 3740000
+al_tr_demote_5 = 9775000
+al_tr_demote_6 = 25500000
+al_tr_demote_7 = 66300000
+al_tr_demote_8 = 170000000
+al_tr_demote_9 = 297500000
+al_tr_demote_10 = 425000000
+al_tr_demote_11 = 552500000
+al_tr_demote_12 = 765000000
+al_tr_demote_13 = 1020000000
+al_tr_demote_14 = 1530000000
+al_tr_demote_15 = 2295000000
+
+al_eff_pops_k = {
+	value = population
+	max = al_pop_cap_k
+}
+
+al_base_loc = {
+	value = development
+	multiply = al_eff_pops_k
+	multiply = location_tax_base
+}
+
+al_govp_norm_value = {
+	value = government_power
+	divide = 100
+	min = 0
+	max = 1
+}
+
+al_stab_norm_value = {
+	value = stability
+	add = 100
+	divide = 200
+	min = 0
+	max = 1
+}

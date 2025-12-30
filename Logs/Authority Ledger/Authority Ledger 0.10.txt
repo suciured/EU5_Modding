@@ -1,0 +1,21 @@
+[VERSION] 0.10
+[DATE] 2025-12-30
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - Workspace/Mod/Authority Ledger/in_game/common/on_action/al_authority_on_action.txt
+    - Workspace/Mod/Authority Ledger/in_game/common/on_action/country_monthly.txt
+  - Edited:
+  - Deleted:
+[TEMPLATE_CLEANUP]
+  - Removed unused template folders/files: None
+[SOURCES_USED]
+  - Knowledge Base: None
+  - Raw:
+    - Canon/Raw/in_game/common/on_action/country_monthly.txt
+[NOTES]
+  - Restored the monthly on_action hook to run the authority update effect each month.
+  - Reintroduced the base monthly country pulse file with the authority update appended to the on_actions list.
+[OPEN_ITEMS]
+  - None
