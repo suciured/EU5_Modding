@@ -5,11 +5,12 @@ EU5 Authority Ledger — Codex Index (Authoritative)
 
 PURPOSE
 - Canonical navigation index for Codex agents.
-- Explicitly defines what exists, what does not, and where intent is documented.
-- Prevents Codex from hallucinating missing engine paths or scripts.
+- Explicitly defines what exists, what does not, and where definitions live.
+- Prevents Codex from hallucinating engine paths or scripts.
 
 IMPORTANT RULE
-- If something is not implemented in /Canon/Raw/, it MUST be defined here as intent.
+- Only files listed here are authoritative.
+- If something is not defined here or in Canon/Raw, it is NOT assumed to exist.
 
 ============================================================
 CORE TERMINOLOGY
@@ -68,73 +69,45 @@ Defines:
 - Independence gate (TR10 → TR11)
 
 ============================================================
-INTENT-DEFINED (NOT YET IMPLEMENTED)
+IMPLEMENTATION STATUS (EXPLICIT)
 ============================================================
 
-The following systems are NOT present in /Canon/Raw/.
-They are defined by intent and must NOT be assumed by Codex.
+The following items are NOT defined in Canon/Raw and must not be assumed
+to exist by Codex or tooling.
 
 --------------------------------------------
 
-(4) Authority variable storage model
-File:
-  Canon/Knowledge Base/Explainers/Authority/Authority_Ledger_Exposure.txt
+(4) Authority variable storage
+STATUS: NOT DEFINED IN REPO SOURCES
 
-Defines (by intent):
-- CA, LA, NA, TA are country-scoped values
-- Values are recomputed on a regular pulse
-- Values are readable by UI systems
-
-This file is the authoritative answer to:
-- “Where do CA/LA/TA live?”
-- “Are they GUI-readable?”
+- No country variables for CA / LA / NA / TA are declared in Canon/Raw.
+- Storage names, scopes, and persistence are unspecified.
 
 --------------------------------------------
 
 (5) Monthly authority update hook
-STATUS: NOT IMPLEMENTED
+STATUS: NOT DEFINED IN REPO SOURCES
 
-Defined by intent in:
-- Authority_Ledger_Exposure.txt
-- T_Rank_System_Handoff.txt
-
-Explicitly NOT defined:
-- Which on_action is used
-- Which script file performs the update
-
-Codex must treat this as:
-> “A monthly scripted effect exists by design, but is not yet implemented.”
+- No on_action, scripted effect, or scheduled update is defined.
+- Update cadence (monthly or otherwise) is not implemented.
 
 --------------------------------------------
 
 (6) GovP_norm definition
-STATUS: NOT IMPLEMENTED
+STATUS: NOT DEFINED IN REPO SOURCES
 
-Defined by intent:
-- GovP_norm is a normalized government power scalar in range [0,1]
-- It represents state administrative capacity
-- Used ONLY via StateScore in authority math
-
-Authoritative intent reference:
-- T_Rank_System_Handoff.txt
-
-Codex must NOT assume:
-- Which base-game value is used
-- Which file defines it
-- Any specific scaling
+- GovP_norm is referenced by formulas but not defined as a value.
+- Source value, scale, and normalization are unspecified.
+- Codex must treat GovP_norm as an external dependency.
 
 --------------------------------------------
 
 (7) Eligible provinces for CA
-STATUS: DEFINED BY INTENT
+STATUS: DEFINED BY FORMULA
 
-Authoritative rule:
-- ONLY locations in the capital province contribute to CA
-- All other locations contribute to LA
-
-Defined in:
-- Formulas_Only.txt
-- T_Rank_System_Handoff.txt
+Authoritative rule (from Formulas_Only.txt):
+- ONLY locations in the capital province contribute to CA.
+- All other locations contribute to LA.
 
 --------------------------------------------
 
@@ -142,36 +115,24 @@ Defined in:
 STATUS: PARTIALLY DEFINED
 
 Defined:
-- TR is derived from TA via thresholds + hysteresis
-- TR feeds back into CA via TRMult
+- TR is derived from TA via thresholds + hysteresis.
+- TR feeds back into CA via TRMult.
 
 Not defined:
 - Script variable names
 - Persistence layer
-
-Authoritative source:
-- TR_Thresholds.txt
-- T_Rank_System_Handoff.txt
+- Update timing
 
 ============================================================
 UI / LEDGER SYSTEM
 ============================================================
 
-(9) Ledger exposure model
-STATUS: INTENT-DEFINED
+(9) Ledger exposure
+STATUS: NOT DEFINED IN REPO SOURCES
 
-Authoritative file:
-  Canon/Knowledge Base/Explainers/Authority/Authority_Ledger_Exposure.txt
-
-Defines:
-- CA / LA / TA are exposed via ledger-style UI
-- Read-only
-- Pattern follows existing ledgers (cultures, religions, wars)
-
-Explicitly NOT defined:
-- GUI file names
-- Ledger tab registration method
-- Widget bindings
+- No generic country ledger extension pattern is defined.
+- No GUI bindings for CA / LA / TA exist.
+- No ledger tab registration mechanism is specified.
 
 ============================================================
 T-RANK (UI TREE, NOT TIERS)
@@ -193,25 +154,10 @@ IMPORTANT:
 - TR is hidden progression tier
 
 ============================================================
-SYSTEM HANDOFF
-============================================================
-
-(11) Full system handoff
-File:
-  Canon/Knowledge Base/Explainers/T-Rank/T_Rank_System_Handoff.txt
-
-Defines:
-- All renames (R → T)
-- Authority math summary
-- TR logic summary
-- Design principles
-- Explicit non-assumptions
-
-============================================================
 CODEX INSTRUCTIONS
 ============================================================
 
-(12) Codex guardrails
+(11) Codex guardrails
 File:
   CODEX_INSTRUCTIONS.txt
 
@@ -227,15 +173,15 @@ CODING STATUS SUMMARY
 Defined in KB:
 ✔ Authority math
 ✔ Thresholds
-✔ Intent for storage
-✔ Intent for ledger exposure
+✔ T-rank UI structure
 
-NOT defined yet:
-✘ Script hooks
-✘ Variable declarations in Raw
-✘ GUI bindings
+NOT defined:
+✘ Variable storage
+✘ Scripted updates
+✘ Ledger integration
+✘ GovP_norm source
 
-Codex must treat missing items as:
-> “Design-defined, implementation-pending”
+Codex must treat all missing items as:
+> “Not defined in repo sources.”
 
 END
