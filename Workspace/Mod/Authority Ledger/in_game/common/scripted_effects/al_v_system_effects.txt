@@ -50,9 +50,90 @@ al_v_system_monthly_update_effect = {
     set_variable = { name = al_total_development value = total_development }
     set_variable = { name = al_total_locations value = num_locations }
 
-    # V3 debug proxies: map totals into central/local bases for now
-    set_variable = { name = v3_7 value = var:al_total_population }
-    set_variable = { name = v3_8 value = var:al_total_development }
+    # V2.5: stability scalar
+    set_variable = { name = al_v2_stability_scalar value = stability }
+    change_variable = { name = al_v2_stability_scalar add = 100 }
+    change_variable = { name = al_v2_stability_scalar divide = 200 }
+    change_variable = { name = al_v2_stability_scalar multiply = 3.75 }
+    change_variable = { name = al_v2_stability_scalar add = 0.25 }
+
+    # V2.6: government power scalar
+    set_variable = { name = al_v2_gov_power_scalar value = government_power }
+    change_variable = { name = al_v2_gov_power_scalar divide = 100 }
+    change_variable = { name = al_v2_gov_power_scalar multiply = 3.75 }
+    change_variable = { name = al_v2_gov_power_scalar add = 0.25 }
+
+    # V3.2: governance composite
+    set_variable = { name = al_v3_governance value = var:al_v2_stability_scalar }
+    change_variable = { name = al_v3_governance add = var:al_v2_gov_power_scalar }
+    change_variable = { name = al_v3_governance divide = 2 }
+
+    # V3.7/V3.8: reset country bases
+    set_variable = { name = v3_7 value = 0 }
+    set_variable = { name = v3_8 value = 0 }
+
+    every_owned_province = {
+        # V2.1–V2.3: province aggregates
+        set_variable = { name = al_v2_control_sum value = 0 }
+        set_variable = { name = al_v2_location_count value = 0 }
+        set_variable = { name = al_v2_population_sum value = 0 }
+        set_variable = { name = al_v2_development_sum value = 0 }
+
+        every_location = {
+            change_variable = { name = al_v2_control_sum add = control }
+            change_variable = { name = al_v2_location_count add = 1 }
+            change_variable = { name = al_v2_population_sum add = population }
+            change_variable = { name = al_v2_development_sum add = development }
+        }
+
+        # V2.1: control average
+        set_variable = { name = al_v2_control_avg value = 0 }
+        if = {
+            limit = { check_variable = { name = al_v2_location_count value > 0 } }
+            set_variable = { name = al_v2_control_avg value = var:al_v2_control_sum }
+            change_variable = { name = al_v2_control_avg divide = var:al_v2_location_count }
+        }
+
+        # V2.4: control scalar
+        set_variable = { name = al_v2_control_scaled value = var:al_v2_control_avg }
+        change_variable = { name = al_v2_control_scaled multiply = 0.015 }
+        set_variable = { name = al_v2_control_scalar value = 2.0 }
+        change_variable = { name = al_v2_control_scalar subtract = var:al_v2_control_scaled }
+
+        # V3.3/V3.4: ready outputs
+        set_variable = { name = al_v3_central_pop value = 0 }
+        set_variable = { name = al_v3_central_dev value = 0 }
+        set_variable = { name = al_v3_local_pop value = 0 }
+        set_variable = { name = al_v3_local_dev value = 0 }
+
+        if = {
+            limit = {
+                any_location = {
+                    limit = { is_capital = yes }
+                }
+            }
+            set_variable = { name = al_v3_central_pop value = var:al_v2_population_sum }
+            change_variable = { name = al_v3_central_pop multiply = var:al_v3_governance }
+            set_variable = { name = al_v3_central_dev value = var:al_v2_development_sum }
+            change_variable = { name = al_v3_central_dev multiply = var:al_v3_governance }
+        }
+        else = {
+            set_variable = { name = al_v3_local_pop value = var:al_v2_population_sum }
+            change_variable = { name = al_v3_local_pop multiply = var:al_v2_control_scalar }
+            set_variable = { name = al_v3_local_dev value = var:al_v2_development_sum }
+            change_variable = { name = al_v3_local_dev multiply = var:al_v2_control_scalar }
+        }
+
+        # V3.5/V3.6: province bases
+        set_variable = { name = al_v3_central_base value = var:al_v3_central_pop }
+        change_variable = { name = al_v3_central_base multiply = var:al_v3_central_dev }
+        set_variable = { name = al_v3_local_base value = var:al_v3_local_pop }
+        change_variable = { name = al_v3_local_base multiply = var:al_v3_local_dev }
+
+        # V3.7/V3.8: country base totals
+        change_variable = { name = v3_7 add = var:al_v3_central_base }
+        change_variable = { name = v3_8 add = var:al_v3_local_base }
+    }
 
     # V4.1/V4.2: role-aware central/local flow
     set_variable = { name = v4_1 value = var:v3_7 }

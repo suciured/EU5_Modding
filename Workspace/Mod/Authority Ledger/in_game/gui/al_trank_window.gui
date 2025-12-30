@@ -62,9 +62,9 @@ template al_trank_ca_value_tooltip {
 					}
 					TooltipManualTableField = {
 						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_ca_tooltip_pop" }
+							text_single = { raw_text = "al_trank_ca_tooltip_gov" }
 							expand = {}
-							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('al_total_population').GetValue|0]" }
+							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('al_v3_governance').GetValue|2]" }
 						}
 					}
 				}
@@ -99,13 +99,6 @@ template al_trank_la_value_tooltip {
 							text_single = { raw_text = "al_trank_la_tooltip_v42" }
 							expand = {}
 							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('v4_2').GetValue|0]" }
-						}
-					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_la_tooltip_dev" }
-							expand = {}
-							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('al_total_development').GetValue|0]" }
 						}
 					}
 				}
