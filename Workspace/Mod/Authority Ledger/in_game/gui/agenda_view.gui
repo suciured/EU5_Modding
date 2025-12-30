@@ -162,7 +162,7 @@ template al_authority_ledger_tooltip {
 					blockoverride "field_content" {
 						text_single = { raw_text = "Tick:" }
 						expand = {}
-						text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('authority_tick_count').GetValue|0]" }
+						text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('v4_tick').GetValue|0]" }
 					}
 				}
 				}
@@ -261,7 +261,6 @@ basic_priority_dialog = {
 				onrightclick = "[ExecuteConsoleCommand('GUI.ClearWidgets gui/al_trank_window.gui al_trank_window')]"
 				text = "al_trank_window_button"
 				fontsize = 11
-				tooltipwidget = { using = al_authority_ledger_tooltip }
 				button_ignore = none
 			}
 			
