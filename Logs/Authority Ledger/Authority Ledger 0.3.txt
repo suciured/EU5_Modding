@@ -1,0 +1,30 @@
+[VERSION] 0.3
+[DATE] 2025-12-30
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/localization/english/authority_ledger_tranks_custom_l_english.yml
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/main_menu/localization/english/authority_ledger_tranks_custom_l_english.yml
+  - Edited:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/gui/al_rrank_window.gui
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/common/scripted_effects/al_rrank_effects.txt
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/common/scripted_guis/al_rrank_scripted_guis.txt
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/common/customizable_localization/al_rrank_country_ranks.txt
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/localization/english/authority_ledger_rranks_l_english.yml
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/main_menu/localization/english/authority_ledger_rranks_l_english.yml
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - /workspace/EU5_Modding/Canon/Knowledge Base/Explainers/T-Rank/EU5_T-RANK_TEMPLATE.txt
+  - Raw:
+    - None
+[NOTES]
+  - Added T0 subtype buttons and scripted GUI handlers for the defined T0.2 and T0.5 slots while preserving empty slot spacing.
+  - Extended variable clearing and country flavor localization to recognize the new T0 subtype variables.
+  - Moved rank and subtype localization strings into a dedicated editable T-rank localization file for both in-game and main-menu contexts.
+[OPEN_ITEMS]
+  - None
