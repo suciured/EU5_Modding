@@ -1,0 +1,24 @@
+[VERSION] 0.5
+[DATE] 2025-12-30
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/common/on_action/al_authority_on_action.txt
+  - Edited:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/common/on_action/country_monthly.txt
+  - Deleted:
+    - /workspace/EU5_Modding/Workspace/Mod/Authority Ledger/in_game/common/on_action/al_authority_monthly.txt
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - /workspace/EU5_Modding/Canon/Knowledge Base/Explainers/Formulas/Formulas_Only.txt
+  - Raw:
+    - /workspace/EU5_Modding/Canon/Raw/in_game/common/on_action/country_monthly.txt
+[NOTES]
+  - Hooked the Authority monthly update on_action into the base monthly country pulse by overriding the on_action file.
+  - Split the custom on_action definition into a standalone file to avoid redefining monthly_country_pulse elsewhere.
+  - Removed the previous standalone monthly_country_pulse override to fix the update not firing.
+[OPEN_ITEMS]
+  - None
