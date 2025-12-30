@@ -129,7 +129,7 @@ template al_authority_ledger_tooltip {
 							}
 							expand = {}
 							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('al_ca').GetValue|0]"
+								raw_text = "[GetPlayer.MakeScope.GetVariable('ca').GetValue|0]"
 							}
 						}
 					}
@@ -140,7 +140,7 @@ template al_authority_ledger_tooltip {
 							}
 							expand = {}
 							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('al_la').GetValue|0]"
+								raw_text = "[GetPlayer.MakeScope.GetVariable('la').GetValue|0]"
 								tooltipwidget = {
 									using = al_authority_ledger_la_tooltip
 								}
@@ -154,7 +154,7 @@ template al_authority_ledger_tooltip {
 							}
 							expand = {}
 							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('al_ta').GetValue|0]"
+								raw_text = "[GetPlayer.MakeScope.GetVariable('ta').GetValue|0]"
 							}
 						}
 					}
