@@ -71,8 +71,15 @@ al_v_system_monthly_update_effect = {
     # V3.7/V3.8: reset country bases
     set_variable = { name = v3_7 value = 0 }
     set_variable = { name = v3_8 value = 0 }
+    set_variable = { name = al_dbg_central_pop value = 0 }
+    set_variable = { name = al_dbg_central_dev value = 0 }
+    set_variable = { name = al_dbg_local_pop value = 0 }
+    set_variable = { name = al_dbg_local_dev value = 0 }
+    set_variable = { name = al_dbg_has_capital value = 0 }
+    set_variable = { name = al_dbg_province_count value = 0 }
 
     every_owned_province = {
+        change_variable = { name = al_dbg_province_count add = 1 }
         # V2.1–V2.3: province aggregates
         set_variable = { name = al_v2_control_sum value = 0 }
         set_variable = { name = al_v2_location_count value = 0 }
@@ -112,6 +119,7 @@ al_v_system_monthly_update_effect = {
                     limit = { is_capital = yes }
                 }
             }
+            set_variable = { name = al_dbg_has_capital value = 1 }
             set_variable = { name = al_v3_central_pop value = var:al_v2_population_sum }
             change_variable = { name = al_v3_central_pop multiply = var:al_v3_governance }
             set_variable = { name = al_v3_central_dev value = var:al_v2_development_sum }
@@ -133,6 +141,10 @@ al_v_system_monthly_update_effect = {
         # V3.7/V3.8: country base totals
         change_variable = { name = v3_7 add = var:al_v3_central_base }
         change_variable = { name = v3_8 add = var:al_v3_local_base }
+        change_variable = { name = al_dbg_central_pop add = var:al_v3_central_pop }
+        change_variable = { name = al_dbg_central_dev add = var:al_v3_central_dev }
+        change_variable = { name = al_dbg_local_pop add = var:al_v3_local_pop }
+        change_variable = { name = al_dbg_local_dev add = var:al_v3_local_dev }
     }
 
     # V4.1/V4.2: role-aware central/local flow
