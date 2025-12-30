@@ -10,6 +10,28 @@ al_rrank_r0_sgui = {
 	}
 }
 
+al_r0_type_2_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r0
+		set_variable = al_r0_type_2
+	}
+}
+
+al_r0_type_5_sgui = {
+	scope = country
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		al_clear_rrank_variables = yes
+		set_variable = al_rrank_r0
+		set_variable = al_r0_type_5
+	}
+}
+
 al_rrank_r1_sgui = {
 	scope = country
 	is_shown = { always = yes }

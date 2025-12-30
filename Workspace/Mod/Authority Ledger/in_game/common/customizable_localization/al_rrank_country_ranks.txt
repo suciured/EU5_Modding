@@ -3,6 +3,20 @@ country_flavor = {
 	type = country
 
 	text = {
+		localization_key = al_r0_type_2_name
+		trigger = {
+			has_variable = al_r0_type_2
+		}
+	}
+
+	text = {
+		localization_key = al_r0_type_5_name
+		trigger = {
+			has_variable = al_r0_type_5
+		}
+	}
+
+	text = {
 		localization_key = al_r1_type_1_name
 		trigger = {
 			has_variable = al_r1_type_1
