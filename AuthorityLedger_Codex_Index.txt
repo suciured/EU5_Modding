@@ -170,16 +170,6 @@ Defines:
 CODING STATUS SUMMARY
 ============================================================
 
-Defined in KB:
-✔ Authority math
-✔ Thresholds
-✔ T-rank UI structure
-
-NOT defined:
-✘ Variable storage
-✘ Scripted updates
-✘ Ledger integration
-✘ GovP_norm source
 
 Codex must treat all missing items as:
 > “Not defined in repo sources.”
