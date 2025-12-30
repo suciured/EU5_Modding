@@ -50,20 +50,14 @@ template al_trank_ca_value_tooltip {
 						blockoverride "field_content" {
 							text_single = { raw_text = "al_trank_ca_tooltip_v37" }
 							expand = {}
-							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('v3_7').GetValue|0]"
-								tooltipwidget = { using = al_trank_ca_base_tooltip }
-							}
+							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('v3_7').GetValue|0]" }
 						}
 					}
 					TooltipManualTableField = {
 						blockoverride "field_content" {
 							text_single = { raw_text = "al_trank_ca_tooltip_v41" }
 							expand = {}
-							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('v4_1').GetValue|0]"
-								tooltipwidget = { using = al_trank_ca_flow_tooltip }
-							}
+							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('v4_1').GetValue|0]" }
 						}
 					}
 					TooltipManualTableField = {
@@ -71,88 +65,6 @@ template al_trank_ca_value_tooltip {
 							text_single = { raw_text = "al_trank_ca_tooltip_gov" }
 							expand = {}
 							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('al_v3_governance').GetValue|2]" }
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-template al_trank_ca_base_tooltip {
-	ContextualTooltipType = {
-		blockoverride "title_text" {
-			text = "al_trank_ca_base_tooltip_title"
-		}
-
-		blockoverride "tooltip_content" {
-			TooltipListBase = {
-				TooltipListRowContent = {
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_ca_base_tooltip_formula" }
-						}
-					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_ca_base_tooltip_pop" }
-							expand = {}
-							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('al_dbg_central_pop').GetValue|0]" }
-						}
-					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_ca_base_tooltip_dev" }
-							expand = {}
-							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('al_dbg_central_dev').GetValue|0]" }
-						}
-					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_ca_base_tooltip_gov" }
-							expand = {}
-							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('al_v3_governance').GetValue|2]" }
-						}
-					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_ca_base_tooltip_capital" }
-							expand = {}
-							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('al_dbg_has_capital').GetValue|0]" }
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-template al_trank_ca_flow_tooltip {
-	ContextualTooltipType = {
-		blockoverride "title_text" {
-			text = "al_trank_ca_flow_tooltip_title"
-		}
-
-		blockoverride "tooltip_content" {
-			TooltipListBase = {
-				TooltipListRowContent = {
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_ca_flow_tooltip_formula" }
-						}
-					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_ca_flow_tooltip_v37" }
-							expand = {}
-							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('v3_7').GetValue|0]" }
-						}
-					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_ca_flow_tooltip_subject" }
-							expand = {}
-							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('v4_1').GetValue|0]" }
 						}
 					}
 				}
@@ -179,86 +91,12 @@ template al_trank_la_value_tooltip {
 						blockoverride "field_content" {
 							text_single = { raw_text = "al_trank_la_tooltip_v38" }
 							expand = {}
-							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('v3_8').GetValue|0]"
-								tooltipwidget = { using = al_trank_la_base_tooltip }
-							}
-						}
-					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_la_tooltip_v42" }
-							expand = {}
-							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('v4_2').GetValue|0]"
-								tooltipwidget = { using = al_trank_la_flow_tooltip }
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-template al_trank_la_base_tooltip {
-	ContextualTooltipType = {
-		blockoverride "title_text" {
-			text = "al_trank_la_base_tooltip_title"
-		}
-
-		blockoverride "tooltip_content" {
-			TooltipListBase = {
-				TooltipListRowContent = {
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_la_base_tooltip_formula" }
-						}
-					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_la_base_tooltip_pop" }
-							expand = {}
-							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('al_dbg_local_pop').GetValue|0]" }
-						}
-					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_la_base_tooltip_dev" }
-							expand = {}
-							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('al_dbg_local_dev').GetValue|0]" }
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-template al_trank_la_flow_tooltip {
-	ContextualTooltipType = {
-		blockoverride "title_text" {
-			text = "al_trank_la_flow_tooltip_title"
-		}
-
-		blockoverride "tooltip_content" {
-			TooltipListBase = {
-				TooltipListRowContent = {
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_la_flow_tooltip_formula" }
-						}
-					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_la_flow_tooltip_v38" }
-							expand = {}
 							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('v3_8').GetValue|0]" }
 						}
 					}
 					TooltipManualTableField = {
 						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_la_flow_tooltip_subject" }
+							text_single = { raw_text = "al_trank_la_tooltip_v42" }
 							expand = {}
 							text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('v4_2').GetValue|0]" }
 						}
