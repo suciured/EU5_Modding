@@ -38,16 +38,6 @@ window = {
 					widget = {
 						size = { 120 40 }
 						background = { using = tooltip_table_field_texture }
-						tooltipwidget = { using = al_trank_ta_value_tooltip }
-						text_single = {
-							size = { 100% 100% }
-							align = center|nobaseline
-							raw_text = "[Player.MakeScope.GetVariable('v4_ta').GetValue|0]"
-						}
-					}
-					widget = {
-						size = { 120 40 }
-						background = { using = tooltip_table_field_texture }
 						tooltipwidget = { using = al_trank_cb_value_tooltip }
 						text_single = {
 							size = { 100% 100% }
@@ -73,6 +63,16 @@ window = {
 							size = { 100% 100% }
 							align = center|nobaseline
 							raw_text = "[Player.MakeScope.GetVariable('v4_3').GetValue|0]"
+						}
+					}
+					widget = {
+						size = { 120 40 }
+						background = { using = tooltip_table_field_texture }
+						tooltipwidget = { using = al_trank_ta_value_tooltip }
+						text_single = {
+							size = { 100% 100% }
+							align = center|nobaseline
+							raw_text = "[Player.MakeScope.GetVariable('v4_ta').GetValue|0]"
 						}
 					}
 					widget = {

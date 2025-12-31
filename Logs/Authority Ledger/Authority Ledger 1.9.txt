@@ -1,0 +1,29 @@
+[VERSION] 1.9
+[DATE] 2025-12-31
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - Canon/Self Patches/Authority Ledger Subject Capital Routing Patch 0.1.txt
+    - Logs/Authority Ledger/Authority Ledger 1.9.txt
+  - Edited:
+    - Workspace/Mod/Authority Ledger/in_game/common/scripted_effects/al_v_system_effects.txt
+    - Workspace/Mod/Authority Ledger/in_game/common/on_action/al_authority_on_action.txt
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - Canon/Knowledge Base/Explainers/V_System_Spec 0.2.txt
+    - Canon/Self Patches/Authority Ledger Location Authority Patch 0.1.txt
+    - Canon/Mod References/1 provence start/in_game/common/on_action/one_loc_all_on_actions.txt
+  - Raw:
+    - Canon/Raw/in_game/common/scripted_effects/country_effects.txt
+    - Canon/Raw/in_game/common/effect_localization/location_effects.txt
+[NOTES]
+  - Added a game-start setup effect that reassigns subject-owned locations to the top overlord, then runs a full authority update.
+  - Routed subject capital locations into the overlord's Local Base (V3.8) while preserving subject Central Base (V3.7).
+  - Documented the subject-capital routing override as a self patch.
+[OPEN_ITEMS]
+  - Define the full "release vassals to balance net authority toward zero" mechanism (effect names, sorting/priority rules, and subject creation/release patterns).
