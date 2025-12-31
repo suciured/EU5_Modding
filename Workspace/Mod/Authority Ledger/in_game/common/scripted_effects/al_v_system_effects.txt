@@ -56,14 +56,15 @@ al_authority_monthly_update_effect = {
     set_variable = { name = v3_7 value = 0 }
     set_variable = { name = v3_8 value = 0 }
 
-    every_owned_province = {
+    every_province = {
+        limit = { owner = root }
         # V2.1–V2.3: province aggregates
         set_variable = { name = v2_1_control_sum value = 0 }
         set_variable = { name = v2_1_location_count value = 0 }
         set_variable = { name = v2_2_population_sum value = 0 }
         set_variable = { name = v2_3_development_sum value = 0 }
 
-        every_location = {
+        every_location_in_province = {
             change_variable = { name = v2_1_control_sum add = control }
             change_variable = { name = v2_1_location_count add = 1 }
             change_variable = { name = v2_2_population_sum add = population }
@@ -92,7 +93,7 @@ al_authority_monthly_update_effect = {
 
         if = {
             limit = {
-                any_location = {
+                any_location_in_province = {
                     limit = { is_capital = yes }
                 }
             }
