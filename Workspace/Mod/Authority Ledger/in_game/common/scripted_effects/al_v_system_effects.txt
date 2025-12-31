@@ -115,8 +115,10 @@ al_authority_monthly_update_effect = {
         change_variable = { name = v3_6 multiply = var:v3_3_local_dev }
 
         # V3.7/V3.8: country base totals
-        change_variable = { name = v3_7 add = var:v3_5 }
-        change_variable = { name = v3_8 add = var:v3_6 }
+        owner = {
+            change_variable = { name = v3_7 add = var:v3_5 }
+            change_variable = { name = v3_8 add = var:v3_6 }
+        }
     }
 
     # V4.3: net authority flow (per tick)
