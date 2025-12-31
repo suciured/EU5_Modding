@@ -5,6 +5,8 @@
 # V1 inputs are read-only and pulled from engine values.
 
 al_authority_monthly_update_effect = {
+    save_scope_as = al_authority_root
+
     # V4 tick counter (optional)
     if = {
         limit = { NOT = { has_variable = v4_tick } }
@@ -105,6 +107,35 @@ al_authority_monthly_update_effect = {
         }
     }
 
+    # Subject capitals contribute to overlord Local Base
+    if = {
+        limit = { any_subject_or_below = { exists = capital } }
+        every_subject_or_below = {
+            limit = { exists = capital }
+            capital = {
+                save_scope_as = al_subject_capital_location
+                scope:al_authority_root = {
+                    set_variable = {
+                        name = al_subject_capital_control_scaled
+                        value = scope:al_subject_capital_location.control
+                    }
+                    change_variable = { name = al_subject_capital_control_scaled multiply = 0.015 }
+                    set_variable = { name = al_subject_capital_control_scalar value = 2.0 }
+                    change_variable = { name = al_subject_capital_control_scalar subtract = var:al_subject_capital_control_scaled }
+                    set_variable = {
+                        name = al_subject_capital_authority_value
+                        value = {
+                            add = scope:al_subject_capital_location.population
+                            multiply = scope:al_subject_capital_location.development
+                            multiply = var:al_subject_capital_control_scalar
+                        }
+                    }
+                    change_variable = { name = v3_8 add = var:al_subject_capital_authority_value }
+                }
+            }
+        }
+    }
+
     # V4.3: net authority flow (per tick)
     set_variable = { name = v4_3 value = var:v3_7 }
     change_variable = { name = v4_3 add = var:v3_8 }
@@ -158,5 +189,23 @@ al_authority_monthly_update_effect = {
     else_if = {
         limit = { check_variable = { name = v4_ta value > 99 } }
         set_variable = { name = v5_t_rank value = 1 }
+    }
+}
+
+al_authority_game_start_setup_effect = {
+    every_country = {
+        if = {
+            limit = { is_subject = yes }
+            if = {
+                limit = { exists = top_overlord }
+                top_overlord = { save_scope_as = al_top_overlord_scope }
+                every_owned_location = {
+                    change_location_owner = scope:al_top_overlord_scope
+                }
+            }
+        }
+    }
+    every_country = {
+        al_authority_monthly_update_effect = yes
     }
 }

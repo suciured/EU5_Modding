@@ -1,0 +1,25 @@
+[VERSION] 1.8
+[DATE] 2025-12-31
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - Logs/Authority Ledger/Authority Ledger 1.8.txt
+  - Edited:
+    - Workspace/Mod/Authority Ledger/in_game/gui/al_trank_window.gui
+    - Workspace/Mod/Authority Ledger/in_game/common/on_action/al_authority_on_action.txt
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - Canon/Knowledge Base/Explainers/V_System_Spec 0.2.txt
+    - Canon/Mod References/1 provence start/in_game/common/on_action/one_loc_all_on_actions.txt
+  - Raw:
+    - None
+[NOTES]
+  - Reordered the Authority Ledger T-rank value row to show Central Base, Local Base, Net Authority, Title Authority, then displayed T-rank.
+  - Added an on_game_start hook to run the Authority Ledger update effect once at game start.
+[OPEN_ITEMS]
+  - Define the "capacity" system and breakup rules needed to split large countries at game start (thresholds, variables, and target scripted effect names).
