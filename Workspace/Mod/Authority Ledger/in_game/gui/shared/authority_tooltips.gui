@@ -1,6 +1,6 @@
 template AuthorityLedger_Button_Tooltip {
 	ConceptTooltipType = {
-		blockoverride "title_text" { text = "AUTHORITY" }
+		blockoverride "title_text" { text = "al_authority_tooltip_title" }
 
 		blockoverride "tooltip_content" {
 			vbox = {
@@ -15,16 +15,22 @@ template AuthorityLedger_Button_Tooltip {
 
 				hbox = {
 					spacing = 6
-					text_single = { text = "Central (V4.1):" }
-					text_single = { text = "[Player.MakeScope.GetVariable('v4_1').GetValue|0]" }
+					text_single = { text = "al_authority_tooltip_ca_label" }
+					text_single = {
+						text = "[Player.MakeScope.GetVariable('v4_1').GetValue|0]"
+						tooltipwidget = { using = al_trank_ca_value_tooltip }
+					}
 				}
 
 				hbox = {
 					spacing = 6
-					text_single = { text = "Local (V4.2):" }
+					text_single = {
+						text = "al_authority_tooltip_la_label"
+						tooltipwidget = { using = AuthorityLedger_LA_Breakdown_Tooltip }
+					}
 					text_single = {
 						text = "[Player.MakeScope.GetVariable('v4_2').GetValue|0]"
-						tooltipwidget = { using = AuthorityLedger_LA_Breakdown_Tooltip }
+						tooltipwidget = { using = al_trank_la_value_tooltip }
 					}
 				}
 
@@ -36,20 +42,29 @@ template AuthorityLedger_Button_Tooltip {
 
 				hbox = {
 					spacing = 6
-					text_single = { text = "TA:" }
-					text_single = { text = "[Player.MakeScope.GetVariable('v4_ta').GetValue|0]" }
+					text_single = { text = "al_authority_tooltip_ta_label" }
+					text_single = {
+						text = "[Player.MakeScope.GetVariable('v4_ta').GetValue|0]"
+						tooltipwidget = { using = al_trank_ta_value_tooltip }
+					}
 				}
 
 				hbox = {
 					spacing = 6
 					text_single = { text = "Central Base (V3.7):" }
-					text_single = { text = "[Player.MakeScope.GetVariable('v3_7').GetValue|0]" }
+					text_single = {
+						text = "[Player.MakeScope.GetVariable('v3_7').GetValue|0]"
+						tooltipwidget = { using = al_trank_ca_value_tooltip }
+					}
 				}
 
 				hbox = {
 					spacing = 6
 					text_single = { text = "Local Base (V3.8):" }
-					text_single = { text = "[Player.MakeScope.GetVariable('v3_8').GetValue|0]" }
+					text_single = {
+						text = "[Player.MakeScope.GetVariable('v3_8').GetValue|0]"
+						tooltipwidget = { using = al_trank_la_value_tooltip }
+					}
 				}
 			}
 		}
