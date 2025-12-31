@@ -71,6 +71,115 @@ template AuthorityLedger_Button_Tooltip {
 	}
 }
 
+template al_trank_ta_value_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "al_trank_ta_tooltip_title"
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipListBase = {
+				TooltipListRowContent = {
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = { raw_text = "al_trank_ta_tooltip_formula" }
+						}
+					}
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = { raw_text = "al_trank_ta_tooltip_v43" }
+							expand = {}
+							text_single = { raw_text = "[Player.MakeScope.GetVariable('v4_3').GetValue|0]" }
+						}
+					}
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = { raw_text = "al_trank_ta_tooltip_ta" }
+							expand = {}
+							text_single = { raw_text = "[Player.MakeScope.GetVariable('v4_ta').GetValue|0]" }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+template al_trank_ca_value_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "al_trank_ca_tooltip_title"
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipListBase = {
+				TooltipListRowContent = {
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = { raw_text = "al_trank_ca_tooltip_formula" }
+						}
+					}
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = { raw_text = "al_trank_ca_tooltip_v37" }
+							expand = {}
+							text_single = { raw_text = "[Player.MakeScope.GetVariable('v3_7').GetValue|0]" }
+						}
+					}
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = { raw_text = "al_trank_ca_tooltip_v41" }
+							expand = {}
+							text_single = { raw_text = "[Player.MakeScope.GetVariable('v4_1').GetValue|0]" }
+						}
+					}
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = { raw_text = "al_trank_ca_tooltip_gov" }
+							expand = {}
+							text_single = { raw_text = "[Player.MakeScope.GetVariable('al_v3_governance').GetValue|2]" }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+template al_trank_la_value_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "al_trank_la_tooltip_title"
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipListBase = {
+				TooltipListRowContent = {
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = { raw_text = "al_trank_la_tooltip_formula" }
+						}
+					}
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = { raw_text = "al_trank_la_tooltip_v38" }
+							expand = {}
+							text_single = { raw_text = "[Player.MakeScope.GetVariable('v3_8').GetValue|0]" }
+						}
+					}
+					TooltipManualTableField = {
+						blockoverride "field_content" {
+							text_single = { raw_text = "al_trank_la_tooltip_v42" }
+							expand = {}
+							text_single = { raw_text = "[Player.MakeScope.GetVariable('v4_2').GetValue|0]" }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 template AuthorityLedger_LA_Breakdown_Tooltip {
 	ConceptTooltipType = {
 		blockoverride "title_text" { text = "LOCAL AUTHORITY BREAKDOWN" }
