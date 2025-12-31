@@ -129,7 +129,7 @@ template al_authority_ledger_tooltip {
 							}
 							expand = {}
 							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('ca').GetValue|0]"
+								raw_text = "[GetPlayer.MakeScope.GetVariable('v4_1').GetValue|0]"
 							}
 						}
 					}
@@ -140,7 +140,7 @@ template al_authority_ledger_tooltip {
 							}
 							expand = {}
 							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('la').GetValue|0]"
+								raw_text = "[GetPlayer.MakeScope.GetVariable('v4_2').GetValue|0]"
 								tooltipwidget = {
 									using = al_authority_ledger_la_tooltip
 								}
@@ -154,7 +154,7 @@ template al_authority_ledger_tooltip {
 							}
 							expand = {}
 							text_single = {
-								raw_text = "[GetPlayer.MakeScope.GetVariable('ta').GetValue|0]"
+								raw_text = "[GetPlayer.MakeScope.GetVariable('v4_ta').GetValue|0]"
 							}
 						}
 					}
@@ -162,7 +162,7 @@ template al_authority_ledger_tooltip {
 					blockoverride "field_content" {
 						text_single = { raw_text = "Tick:" }
 						expand = {}
-						text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('authority_tick_count').GetValue|0]" }
+						text_single = { raw_text = "[GetPlayer.MakeScope.GetVariable('v4_tick').GetValue|0]" }
 					}
 				}
 				}
@@ -261,7 +261,6 @@ basic_priority_dialog = {
 				onrightclick = "[ExecuteConsoleCommand('GUI.ClearWidgets gui/al_trank_window.gui al_trank_window')]"
 				text = "al_trank_window_button"
 				fontsize = 11
-				tooltipwidget = { using = al_authority_ledger_tooltip }
 				button_ignore = none
 			}
 			
