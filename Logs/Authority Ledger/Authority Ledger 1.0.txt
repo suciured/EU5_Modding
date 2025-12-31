@@ -1,0 +1,33 @@
+[VERSION] 1.0
+[DATE] 2025-12-31
+[SCOPE] MAJOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - Workspace/Mod/Authority Ledger/.metadata/metadata.json
+    - Workspace/Mod/Authority Ledger/in_game/common/on_action/al_authority_on_action.txt
+    - Workspace/Mod/Authority Ledger/in_game/common/on_action/country_monthly.txt
+    - Workspace/Mod/Authority Ledger/in_game/common/scripted_effects/al_v_system_effects.txt
+    - Workspace/Mod/Authority Ledger/in_game/gui/al_trank_window.gui
+    - Workspace/Mod/Authority Ledger/in_game/gui/agenda_view.gui
+    - Workspace/Mod/Authority Ledger/in_game/gui/shared/authority_tooltips.gui
+    - Workspace/Mod/Authority Ledger/in_game/localization/english/authority_ledger_tranks_custom_l_english.yml
+    - Workspace/Mod/Authority Ledger/main_menu/localization/english/authority_ledger_tranks_custom_l_english.yml
+    - Logs/Authority Ledger/Authority Ledger 1.0.txt
+  - Edited:
+  - Deleted:
+[TEMPLATE_CLEANUP]
+  - Removed unused template folders/files: None
+[SOURCES_USED]
+  - Knowledge Base:
+    - Canon/Knowledge Base/Explainers/V_System_Spec 0.2.txt
+    - Canon/Knowledge Base/Explainers/T_Rank_Thresholds_Draft 0.2.txt
+    - Canon/Knowledge Base/Explainers/T_Rank_UI_Spec 0.2.txt
+  - Raw:
+    - Canon/Raw/in_game/common/on_action/country_monthly.txt
+[NOTES]
+  - Rebuilt Authority Ledger mod output from scratch with V2–V5 calculations, subject scaling, and T-rank threshold evaluation.
+  - Standardized variables on V-system keys and updated UI/tooltips to display V3.7/V3.8/V4.3/V4_ta/V5_t_rank.
+  - Replaced legacy R-rank labels with T-rank labels and aligned subtype slot naming to v5_tN_type_K.
+[OPEN_ITEMS]
+  - None
