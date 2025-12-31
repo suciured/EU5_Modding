@@ -57,7 +57,6 @@ al_authority_monthly_update_effect = {
     set_variable = { name = v3_8 value = 0 }
 
     every_province = {
-        limit = { owner = root }
         # V2.1–V2.3: province aggregates
         set_variable = { name = v2_1_control_sum value = 0 }
         set_variable = { name = v2_1_location_count value = 0 }
