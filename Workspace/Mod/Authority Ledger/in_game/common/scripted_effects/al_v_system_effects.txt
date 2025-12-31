@@ -120,26 +120,6 @@ al_authority_monthly_update_effect = {
     set_variable = { name = v5_t_rank value = 0 }
 
     if = {
-        limit = { check_variable = { name = v4_ta value > 14999 } NOT = { is_subject = yes } }
-        set_variable = { name = v5_t_rank value = 15 }
-    }
-    else_if = {
-        limit = { check_variable = { name = v4_ta value > 11499 } NOT = { is_subject = yes } }
-        set_variable = { name = v5_t_rank value = 14 }
-    }
-    else_if = {
-        limit = { check_variable = { name = v4_ta value > 8799 } NOT = { is_subject = yes } }
-        set_variable = { name = v5_t_rank value = 13 }
-    }
-    else_if = {
-        limit = { check_variable = { name = v4_ta value > 6799 } NOT = { is_subject = yes } }
-        set_variable = { name = v5_t_rank value = 12 }
-    }
-    else_if = {
-        limit = { check_variable = { name = v4_ta value > 5199 } NOT = { is_subject = yes } }
-        set_variable = { name = v5_t_rank value = 11 }
-    }
-    else_if = {
         limit = { check_variable = { name = v4_ta value > 3999 } }
         set_variable = { name = v5_t_rank value = 10 }
     }
