@@ -1,0 +1,25 @@
+[VERSION] 1.1
+[DATE] 2025-12-31
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - None
+  - Edited:
+    - Workspace/Mod/Authority Ledger/in_game/common/scripted_effects/al_v_system_effects.txt
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - Canon/Knowledge Base/Explainers/V_System_Spec 0.2.txt
+  - Raw:
+    - Canon/Raw/in_game/common/scripted_effects/global_effects.txt
+    - Canon/Raw/in_game/events/disaster/succession_crisis.txt
+[NOTES]
+  - Switched the authority calculation loop to every_province to match supported province iteration.
+  - Replaced every_location with every_location_in_province to aggregate location control/pop/dev correctly.
+  - Updated the capital detection to any_location_in_province to align with province scope usage.
+[OPEN_ITEMS]
+  - None

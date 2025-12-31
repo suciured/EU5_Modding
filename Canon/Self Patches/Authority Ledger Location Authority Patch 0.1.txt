@@ -1,0 +1,52 @@
+EU5 Authority Ledger — Location Authority Patch (Semi-Canon)
+============================================================
+[DATE] 2025-12-31
+[SCOPE] Authority Ledger V-system override (location-based)
+[STATUS] Semi-Canon (Self Patch)
+
+OVERVIEW
+--------
+This patch replaces the province-level V2/V3 aggregation with a location-level
+model. Authority is generated directly by eligible locations and then summed
+into country totals for V4/V5. Provincial capitals no longer matter; only the
+country capital location is treated as the central source.
+
+ELIGIBILITY RULES
+-----------------
+- Central authority uses ONLY the country capital location (is_capital = yes).
+- Local authority uses any owned location with:
+  - location_rank = location_rank:town OR location_rank:city
+  - is_capital = no
+
+LOCATION AUTHORITY VALUE (L1)
+-----------------------------
+L1(l) = population(l) × development(l)
+
+V-SYSTEM REDEFINITIONS
+----------------------
+V3.7 — Country Central Base (location-based)
+  V3.7 = Σ L1(l) for the single capital location
+
+V3.8 — Country Local Base (location-based)
+  V3.8 = Σ L1(l) for all owned town/city locations that are NOT the capital
+
+V4.3 — Net Authority flow (per tick)
+  V4.3 = V3.7 + V3.8
+  Subject rule remains: if subject, apply 0.5 multiplier to V4.3
+
+V4.4 — Title Authority update (persistent)
+  TA(t+1) = TA(t) + V4.3
+
+V5 — T-Rank determination
+  Threshold table and independence gate are unchanged from V_System_Spec 0.2
+
+TRACKING LISTS
+--------------
+- al_local_authority_locations: list of locations contributing to V3.8
+  (cleared and rebuilt each tick)
+
+NOTES
+-----
+- This patch intentionally bypasses province aggregation, control scalars,
+  and governance composites. Authority is computed directly per location.
+- Use V1 inputs only: population and development at location scope.

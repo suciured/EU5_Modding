@@ -1,0 +1,26 @@
+[VERSION] 1.3
+[DATE] 2025-12-31
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - Canon/Self Patches/Authority Ledger Location Authority Patch 0.1.txt
+  - Edited:
+    - Workspace/Mod/Authority Ledger/in_game/common/scripted_effects/al_v_system_effects.txt
+    - Workspace/Mod/Authority Ledger/in_game/localization/english/authority_ledger_tranks_custom_l_english.yml
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - Canon/Knowledge Base/Explainers/V_System_Spec 0.2.txt
+  - Raw:
+    - Canon/Raw/in_game/common/location_ranks/00_default.txt
+    - Canon/Raw/in_game/common/on_action/country_monthly.txt
+[NOTES]
+  - Added a semi-canon self patch defining location-based authority generation and V3.7/V3.8 redefinitions.
+  - Reworked monthly authority calculation to iterate owned locations, using capital-only central authority and town/city-only local authority.
+  - Added a tracking list for local authority locations and updated tooltip formulas to match the new model.
+[OPEN_ITEMS]
+  - None
