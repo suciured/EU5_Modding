@@ -1,0 +1,27 @@
+[VERSION] 1.6
+[DATE] 2025-12-31
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - None
+  - Edited:
+    - Workspace/Mod/Authority Ledger/in_game/common/scripted_effects/al_v_system_effects.txt
+    - Workspace/Mod/Authority Ledger/in_game/localization/english/authority_ledger_tranks_custom_l_english.yml
+    - Workspace/Mod/Authority Ledger/main_menu/localization/english/authority_ledger_tranks_custom_l_english.yml
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - Canon/Knowledge Base/Explainers/T_Rank_Thresholds_Draft 0.2.txt
+    - Canon/Explainers/T Ranks Sheet (T0-10).xlsx
+  - Raw:
+    - None
+[NOTES]
+  - Aligned T-rank threshold evaluation to the 10-rank (T0–T10) table.
+  - Applied the T0–T10 sheet data to chart row labels and subtype slots, using "TBD" for undefined entries.
+  - Kept localization in sync between in_game and main_menu copies.
+[OPEN_ITEMS]
+  - None
