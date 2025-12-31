@@ -15,13 +15,14 @@
  al_trank_ta_tooltip_ta: "TA (Current):"
 
  al_trank_cb_tooltip_title: "Central Base"
- al_trank_cb_tooltip_formula: "Formula: V3.7 = Σ(CentralPop × CentralDev)"
+ al_trank_cb_tooltip_formula: "Formula: V3.7 = Capital Location (Pop × Dev × Governance)"
  al_trank_cb_tooltip_v37: "V3.7 (Central Base):"
  al_trank_cb_tooltip_gov: "V3.2 (Governance Composite):"
 
- al_trank_lb_tooltip_title: "Local Base"
- al_trank_lb_tooltip_formula: "Formula: V3.8 = Σ(LocalPop × LocalDev)"
- al_trank_lb_tooltip_v38: "V3.8 (Local Base):"
+al_trank_lb_tooltip_title: "Local Base"
+al_trank_lb_tooltip_formula: "Formula: V3.8 = Σ(Town/City non-capital Pop × Dev × Control Scalar)"
+al_trank_lb_tooltip_v38: "V3.8 (Local Base):"
+al_trank_lb_tooltip_breakdown_title: "Contributing Locations"
 
  al_trank_na_tooltip_title: "Net Authority"
  al_trank_na_tooltip_formula: "Formula: V4.3 = V3.7 + V3.8 (subject halved)"

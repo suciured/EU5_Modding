@@ -134,18 +134,56 @@ template al_trank_lb_value_tooltip {
 		}
 
 		blockoverride "tooltip_content" {
-			TooltipListBase = {
-				TooltipListRowContent = {
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_lb_tooltip_formula" }
+			vbox = {
+				using = layoutpolicy_vertical
+				spacing = 4
+
+				TooltipListBase = {
+					TooltipListRowContent = {
+						TooltipManualTableField = {
+							blockoverride "field_content" {
+								text_single = { raw_text = "al_trank_lb_tooltip_formula" }
+							}
+						}
+						TooltipManualTableField = {
+							blockoverride "field_content" {
+								text_single = { raw_text = "al_trank_lb_tooltip_v38" }
+								expand = {}
+								text_single = { raw_text = "[Player.MakeScope.GetVariable('v3_8').GetValue|0]" }
+							}
 						}
 					}
-					TooltipManualTableField = {
-						blockoverride "field_content" {
-							text_single = { raw_text = "al_trank_lb_tooltip_v38" }
-							expand = {}
-							text_single = { raw_text = "[Player.MakeScope.GetVariable('v3_8').GetValue|0]" }
+				}
+
+				text_single = { text = "al_trank_lb_tooltip_breakdown_title" }
+
+				TooltipListBase = {
+					TooltipListColumnContent = {
+						TooltipTableColumn = {
+							blockoverride "column_title" {
+								visible = no
+							}
+							blockoverride "field_text" {
+								default_format = "#subtle_name"
+								align = left|nobaseline
+								raw_text = "[Location.GetName]"
+							}
+							blockoverride "field_right" { expand = {} }
+						}
+
+						TooltipTableColumn = {
+							blockoverride "column_title" {
+								visible = no
+							}
+							blockoverride "field_left" { expand = {} }
+							blockoverride "field_text" {
+								align = right|nobaseline
+								raw_text = "[Location.MakeScope.GetVariable('al_local_authority_value').GetValue|0]"
+							}
+						}
+
+						blockoverride "column_datamodel" {
+							datamodel = "[Player.MakeScope.GetList('al_local_authority_locations')]"
 						}
 					}
 				}

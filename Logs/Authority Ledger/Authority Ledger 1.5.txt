@@ -1,0 +1,27 @@
+[VERSION] 1.5
+[DATE] 2025-12-31
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - None
+  - Edited:
+    - Workspace/Mod/Authority Ledger/in_game/common/scripted_effects/al_v_system_effects.txt
+    - Workspace/Mod/Authority Ledger/in_game/gui/shared/authority_tooltips.gui
+    - Workspace/Mod/Authority Ledger/in_game/localization/english/authority_ledger_tranks_custom_l_english.yml
+    - Canon/Self Patches/Authority Ledger Location Authority Patch 0.1.txt
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - Canon/Knowledge Base/Explainers/V_System_Spec 0.2.txt
+  - Raw:
+    - Canon/Raw/in_game/common/location_ranks/00_default.txt
+[NOTES]
+  - Added local authority tooltip breakdown listing contributing locations and their per-location values.
+  - Stored per-location local authority values alongside the contributor list for tooltip use.
+  - Scaled TA thresholds by x10 to better align starting T-ranks with the game world.
+[OPEN_ITEMS]
+  - None
