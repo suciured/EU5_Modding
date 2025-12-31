@@ -18,7 +18,7 @@ TERMS (MOD CANON)
 - "Local Base"    = V3.8 (country total)
 - "Net Authority" = V4.3 (per-tick flow added into Title Authority)
 - "Title Authority" (TA) = v4_ta (persistent accumulator)
-- "T-rank" = v5_t_rank (integer T0–T15 derived from TA thresholds; subject/independence gates apply)
+- "T-rank" = v5_t_rank (integer T0–T10 derived from TA thresholds)
 
 IMPORTANT: T-rank (UI structure) ≠ any legacy TR system.
 This mod uses T-rank as the *rank tier* derived from Title Authority.
@@ -30,7 +30,7 @@ V1 : Raw inputs (location & country primitives; no aggregation; no scaling)
 V2 : Province aggregation & scalar construction (no routing outputs; no ready outputs; no governance composite)
 V3 : Routing + governance composite + province ready outputs + base construction (country totals)
 V4 : Net authority + persistence (role-aware for subjects; no export to overlords)
-V5 : T-rank determination (threshold table + independence gate)
+V5 : T-rank determination (threshold table)
 
 =====================================================
 V1 — RAW INPUTS (NO AGGREGATION; NO SCALING)
@@ -146,8 +146,6 @@ V5.1 — Determine integer T-rank
 - Highest Tn such that TA >= threshold[Tn].
 
 Independence Gate (MOD CANON):
-- If NOT independent: clamp resulting T-rank to at most T10.
-- T11+ requires Independence.
 
 Subranks (.1–.6):
 - UI structure only; not thresholded here.
@@ -165,7 +163,7 @@ Core:
 - v4_3       : net authority flow   (V4.3)
 - v4_ta      : title authority      (persistent)
 - v4_tick    : tick counter (optional)
-- v5_t_rank  : integer T-rank (T0–T15)
+- v5_t_rank  : integer T-rank (T0–T10)
 
 Chart slot keys (preserve layout positions):
 - v5_tN_type_K  where N=0..15 and K=1..6

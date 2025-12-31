@@ -1,10 +1,9 @@
 EU5 T-RANK — DRAFT TA THRESHOLDS (MOD DATA)
 =========================================
 [DATE] 2025-12-30
-Purpose: Bottom-heavy first-pass thresholds mapping Title Authority (v4_ta) -> integer T-rank (T0..T15).
+Purpose: Bottom-heavy first-pass thresholds mapping Title Authority (v4_ta) -> integer T-rank (T0..T10).
 Notes:
 - Integer T-rank is derived from v4_ta only.
-- Independence gate: if NOT independent, max attainable rank is T10 (cannot enter T11+).
 - Subranks (.1–.6) are not thresholded here.
 
 THRESHOLD TABLE (minimum TA to qualify)
@@ -20,16 +19,10 @@ T7  : 1,900
 T8  : 2,500
 T9  : 3,200
 T10 : 4,000
-T11 : 5,200   (requires Independence)
-T12 : 6,800
-T13 : 8,800
-T14 : 11,500
-T15 : 15,000  (max)
 
 EVALUATION RULE
 ---------------
 - Highest Tn such that v4_ta >= threshold[Tn].
-- If not independent: clamp result to at most T10.
 
 OPTIONAL STABILITY (HYSTERESIS) — OFF BY DEFAULT
 ------------------------------------------------

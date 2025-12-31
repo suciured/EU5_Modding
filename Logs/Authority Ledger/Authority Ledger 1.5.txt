@@ -1,0 +1,34 @@
+[VERSION] 1.5
+[DATE] 2025-12-31
+[SCOPE] MINOR
+[PARENT_FOLDER] Authority Ledger
+[FILES_CHANGED]
+  - Added:
+    - None
+  - Edited:
+    - Workspace/Mod/Authority Ledger/in_game/gui/al_trank_window.gui
+    - Workspace/Mod/Authority Ledger/in_game/localization/english/authority_ledger_tranks_custom_l_english.yml
+    - Workspace/Mod/Authority Ledger/main_menu/localization/english/authority_ledger_tranks_custom_l_english.yml
+    - Canon/Explainers/T_Rank_Thresholds_Draft 0.2.txt
+    - Canon/Explainers/T_Rank_UI_Spec 0.2.txt
+    - Canon/Explainers/V_System_Spec 0.2.txt
+    - Canon/Knowledge Base/Explainers/T_Rank_Thresholds_Draft 0.2.txt
+    - Canon/Knowledge Base/Explainers/T_Rank_UI_Spec 0.2.txt
+    - Canon/Knowledge Base/Explainers/V_System_Spec 0.2.txt
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base:
+    - Canon/Knowledge Base/Explainers/T_Rank_Thresholds_Draft 0.2.txt
+    - Canon/Knowledge Base/Explainers/T_Rank_UI_Spec 0.2.txt
+    - Canon/Knowledge Base/Explainers/V_System_Spec 0.2.txt
+  - Raw:
+    - None
+[NOTES]
+  - Applied the T0–T10 chart data from the T Ranks sheet to the T-rank localization entries.
+  - Trimmed the T-rank UI to end at T10 and removed T11–T15 rows from the chart.
+  - Updated T-rank specs/thresholds to reflect the 10-rank calibration and remove independence-gate language.
+[OPEN_ITEMS]
+  - None
