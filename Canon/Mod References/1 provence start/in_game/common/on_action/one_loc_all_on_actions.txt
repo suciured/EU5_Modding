@@ -1,0 +1,108 @@
+﻿# Overpowered France Mod - On Actions
+# Apply the OP modifier to France at game start
+
+on_game_start = {
+	on_actions = {
+    	one_loc_all_on_action #the name should be unique, but does not need to follow any strict pattern
+    }
+}
+
+one_loc_all_on_action = {
+    effect = {
+
+        every_location_in_the_world = {
+            if = {
+                limit = {
+                    has_owner = yes
+                    is_capital = no
+                    location_rank = location_rank:city
+                }
+                create_country_from_location = {
+                    set_capital = PREV
+                    save_scope_as = new_country_scope
+                }
+                add_core = scope:new_country_scope
+                change_location_owner = scope:new_country_scope
+            }
+        }
+
+        every_country = {
+            save_scope_as = current_country
+            clear_list = locations_to_abandon
+    
+            every_owned_location = {
+                if = {
+                    limit = {
+                        #NOT = { is_capital = this }
+                        NOT = { this = scope:current_country.capital }
+                    }
+                    add_to_list = locations_to_abandon
+                    #every_pop = {
+                    #    destroy_pop = this
+                    #}
+                }
+            }
+    
+            every_in_list = {
+                list = locations_to_abandon
+                scope:current_country = {
+                    abandon_location = PREV
+                }
+            }
+
+            capital = {
+                save_scope_as = current_location
+                every_buildings_in_location = {
+                    if = {
+                        limit = {
+                            building_category = defense_category
+                        }
+                        scope:current_location = {
+                            destroy_building = PREV
+                        }
+                    }
+                }
+
+                add_location_modifier = {
+                    modifier = one_loc_food_bonus_modifier
+                    years = 100  
+                    mode = add
+                }
+
+            }
+
+            every_army = {
+                destroy_unit = yes
+            }
+
+            every_navy = {
+                destroy_unit = yes
+            }
+
+            every_subject_or_below = {
+                scope:current_country = {
+                    cancel_subject = PREV
+                }
+            }
+
+            add_country_modifier = {
+                modifier = one_loc_pop_grow_modifier
+                years = 100
+                mode = add
+            }
+
+        }
+
+        every_location_in_the_world = {
+            if = {
+                limit = {
+                    has_owner = no  # or whatever the trigger is for unowned
+                }
+                every_pop = {
+                    destroy_pop = this
+                }
+            }
+        }
+
+    }
+}

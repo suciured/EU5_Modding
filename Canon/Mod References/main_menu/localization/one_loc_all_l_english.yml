@@ -1,0 +1,7 @@
+﻿l_english:
+
+ STATIC_MODIFIER_NAME_one_loc_food_bonus_modifier: "one location food bonus"
+ STATIC_MODIFIER_DESC_one_loc_food_bonus_modifier: "gives a food bonus to every capital to aid in lack of food at th3e beggining of the game"
+
+ STATIC_MODIFIER_NAME_one_loc_pop_grow_modifier: "one location pop grow bonus"
+ STATIC_MODIFIER_DESC_one_loc_pop_grow_modifier: "gives a pop grow bonus to every country to aid in lack of population in the world"
