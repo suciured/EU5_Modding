@@ -1,128 +1,71 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
-# ------------------------------------------------------------
-# Sync_AuthorityLedger.ps1
-# - Reads destination from Mod Output.txt
-# - Validates destination looks like an EU/Paradox mod folder
-# - Shows file counts before/after
-# - Empties destination, then copies Authority Ledger exactly
-# ------------------------------------------------------------
-
-$SCRIPT_DIR = Split-Path -Parent $MyInvocation.MyCommand.Path
-$MOD_OUTPUT_FILE = Join-Path $SCRIPT_DIR "Mod Output.txt"
-
-# Fixed source (Authority Ledger in GitHub KB)
-$SRC = "C:\Users\jason\OneDrive\Documents\GitHub\EU5_KB\Authority Ledger"
-
-function Count-Files([string]$Path) : int {
-    if (-not (Test-Path -LiteralPath $Path)) { return 0 }
-    return (Get-ChildItem -LiteralPath $Path -Recurse -File -Force -ErrorAction SilentlyContinue | Measure-Object).Count
-}
-
-function Count-Dirs([string]$Path) : int {
-    if (-not (Test-Path -LiteralPath $Path)) { return 0 }
-    return (Get-ChildItem -LiteralPath $Path -Recurse -Directory -Force -ErrorAction SilentlyContinue | Measure-Object).Count
-}
-
-function Is-Probably-ParadoxModFolder([string]$Path) : bool {
-    # We do a "looks like" check:
-    # - Common Paradox mod folders usually contain descriptor.mod OR .mod metadata,
-    #   OR contain common top-level folders like "common", "localization", "gfx", etc.
-    # This is conservative: it warns/blocks obvious wrong targets (e.g. Documents root).
-    $descriptor = Join-Path $Path "descriptor.mod"
-    if (Test-Path -LiteralPath $descriptor) { return $true }
-
-    $commonMarkers = @("common","localization","gfx","interface","events","missions","history","map_data","gui")
-    foreach ($m in $commonMarkers) {
-        if (Test-Path -LiteralPath (Join-Path $Path $m)) { return $true }
+function Count-Tree([string]$Path) {
+    if (-not (Test-Path -LiteralPath $Path)) {
+        return [pscustomobject]@{ Files = 0; Dirs = 0 }
     }
-
-    return $false
+    $files = (Get-ChildItem -LiteralPath $Path -Recurse -Force -File -ErrorAction SilentlyContinue | Measure-Object).Count
+    $dirs  = (Get-ChildItem -LiteralPath $Path -Recurse -Force -Directory -ErrorAction SilentlyContinue | Measure-Object).Count
+    return [pscustomobject]@{ Files = $files; Dirs = $dirs }
 }
 
-# --- Validate inputs -----------------------------------------
-
-if (-not (Test-Path -LiteralPath $MOD_OUTPUT_FILE)) {
-    Write-Error "Mod Output.txt not found in: $SCRIPT_DIR"
-    exit 1
+function Ensure-Dir([string]$p) {
+    if (-not (Test-Path -LiteralPath $p)) {
+        New-Item -ItemType Directory -Path $p -Force | Out-Null
+    }
 }
+
+$SRC = "C:\Users\jason\OneDrive\Documents\GitHub\EU5_Modding\Workspace\Mod\Authority Ledger"
+$DST = "C:\Users\jason\OneDrive\Documents\Paradox Interactive\Europa Universalis V\mod\Authority Ledger"
 
 if (-not (Test-Path -LiteralPath $SRC)) {
-    Write-Error "Source folder not found: $SRC"
-    exit 1
+    throw "Source folder not found: $SRC"
 }
 
-# --- Read destination from Mod Output.txt ---------------------
+Ensure-Dir $DST
 
-$DST = (Get-Content -LiteralPath $MOD_OUTPUT_FILE -Raw).Trim()
+$srcBefore = Count-Tree $SRC
+$dstBefore = Count-Tree $DST
 
-if ([string]::IsNullOrWhiteSpace($DST)) {
-    Write-Error "Mod Output.txt is empty. Put the full destination folder path on one line."
-    exit 1
-}
-
-# Create destination folder if needed
-if (-not (Test-Path -LiteralPath $DST)) {
-    New-Item -ItemType Directory -Path $DST -Force | Out-Null
-}
-
-# --- (4) Validate destination is probably a Paradox mod folder --
-
-# Hard safety: block dangerous targets (root drive, user profile, Documents, etc.)
-$badTargets = @("C:\", "$env:USERPROFILE", "$env:USERPROFILE\Documents")
-foreach ($bt in $badTargets) {
-    if ($DST.TrimEnd('\') -ieq $bt.TrimEnd('\')) {
-        Write-Error "Refusing to wipe a high-risk folder target: $DST"
-        exit 1
-    }
-}
-
-# "Probably mod folder" check
-if (-not (Is-Probably-ParadoxModFolder $DST)) {
-    Write-Error @"
-Destination does not look like a Paradox/EU mod folder (no descriptor.mod and no common mod folders found):
-  $DST
-
-Fix Mod Output.txt to point at the correct mod folder, e.g.:
-  ...\Paradox Interactive\Europa Universalis V\mod\Authority Ledger
-"@
-    exit 1
-}
-
-# --- (2) Counts before ----------------------------------------
-
-$dstFilesBefore = Count-Files $DST
-$dstDirsBefore  = Count-Dirs  $DST
-$srcFiles       = Count-Files $SRC
-$srcDirs        = Count-Dirs  $SRC
-
-Write-Host "PRE:"
-Write-Host "  SRC files: $srcFiles   dirs: $srcDirs"
-Write-Host "  DST files: $dstFilesBefore   dirs: $dstDirsBefore"
+Write-Host "BEFORE:"
+Write-Host "  SRC: $SRC"
+Write-Host "       Files=$($srcBefore.Files)  Dirs=$($srcBefore.Dirs)"
+Write-Host "  DST: $DST"
+Write-Host "       Files=$($dstBefore.Files)  Dirs=$($dstBefore.Dirs)"
 Write-Host ""
 
-# --- Empty destination ----------------------------------------
+# Use ROBOCOPY to mirror SRC -> DST (this effectively wipes + copies correctly)
+# /MIR = mirror (adds + removes to match source)
+# /R:0 /W:0 = no retries/waits
+# /NFL /NDL /NP = quieter output
+$cmd = @(
+    "robocopy",
+    "`"$SRC`"",
+    "`"$DST`"",
+    "/MIR",
+    "/COPY:DAT",
+    "/DCOPY:DAT",
+    "/R:0",
+    "/W:0",
+    "/NFL",
+    "/NDL",
+    "/NP"
+) -join " "
 
-Get-ChildItem -LiteralPath $DST -Force -ErrorAction SilentlyContinue |
-    Remove-Item -Recurse -Force -ErrorAction Stop
+cmd /c $cmd | Out-Host
 
-# --- Copy ------------------------------------------------------
+# Robocopy exit codes: 0-7 = success, >=8 = failure
+$rc = $LASTEXITCODE
+if ($rc -ge 8) {
+    throw "ROBOCOPY failed with exit code $rc"
+}
 
-Copy-Item -LiteralPath (Join-Path $SRC "*") `
-          -Destination $DST `
-          -Recurse `
-          -Force `
-          -ErrorAction Stop
+$dstAfterCopy = Count-Tree $DST
 
-# --- Counts after ---------------------------------------------
-
-$dstFilesAfter = Count-Files $DST
-$dstDirsAfter  = Count-Dirs  $DST
-
-Write-Host "POST:"
-Write-Host "  DST files: $dstFilesAfter   dirs: $dstDirsAfter"
 Write-Host ""
-Write-Host "OK: Synced Authority Ledger"
-Write-Host "FROM: $SRC"
-Write-Host "TO:   $DST"
+Write-Host "AFTER COPY:"
+Write-Host "  DST: $DST"
+Write-Host "       Files=$($dstAfterCopy.Files)  Dirs=$($dstAfterCopy.Dirs)"
+Write-Host ""
+Write-Host "OK: Synced Authority Ledger."
