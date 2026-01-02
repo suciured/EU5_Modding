@@ -1,56 +1,4 @@
 #Note:  logic assumes that anything below a rank in the list is worse
-metropolis = {
-	
-	rank_modifier = {
-		local_burghers_desired_pop = 1.5
-		local_laborers_desired_pop = 1.25
-		local_soldiers_desired_pop = 0.35
-		local_nobles_desired_pop = 0.08
-		local_clergy_desired_pop = 0.12
-	
-		local_max_control = 0.15
-		local_population_capacity = 200
-		local_population_capacity_modifier = 0.4
-		
-		local_food_capacity = 1000
-		
-		local_construction_speed = 0.4
-		
-		local_integration_speed_modifier = -0.65
-		
-		local_monthly_food_modifier = -0.45
-		
-		local_pop_promotion_speed_modifier = 0.35
-		
-		free_building_levels = 150
-		
-		max_constructions_at_same_time = 2
-	}
-	
-	country_modifier = {
-		monthly_doom = 0.05
-		fort_limit = 2
-	}
-	
-	allow = {
-		location_rank = location_rank:city
-		population >= 60
-		modifier:cannot_upgrade_location = no
-	}
-	max_rank = yes
-	
-	build_time = 1095
-	
-	color = color_rank_empire
-	is_established_city = yes
-	
-	construction_demand = build_city_demand
-	
-	frame_tier = 4
-	show_in_label = yes
-
-}
-
 city = {
 	
 	rank_modifier = {
@@ -128,7 +76,7 @@ town = {
 	}
 	
 	allow = {
-		location_rank = location_rank:hamlet
+		location_rank = location_rank:township
 		population >= 5
 		modifier:cannot_upgrade_location = no
 	}
@@ -144,7 +92,7 @@ town = {
 
 }
 
-hamlet = {
+township = {
 	rank_modifier = {
 		local_burghers_desired_pop = 0.1
 		local_laborers_desired_pop = 0.15
@@ -168,7 +116,7 @@ hamlet = {
 	}
 
 	allow = {
-		location_rank = location_rank:rural_settlement
+		location_rank = location_rank:dispersed_villages
 		population >= 2
 		modifier:cannot_upgrade_location = no
 	}
@@ -184,7 +132,7 @@ hamlet = {
 
 }
 
-rural_settlement = {
+dispersed_villages = {
 	rank_modifier = {
 		local_max_rgo_size_modifier = 1.0
 		local_monthly_food_modifier = 0.1
@@ -194,6 +142,31 @@ rural_settlement = {
 	
 	country_modifier = {
 		monthly_doom = 0.005
+	}
+
+	allow = {
+		location_rank = location_rank:untamed_wilds
+		population >= 1
+		modifier:cannot_upgrade_location = no
+	}
+	
+	color = color_rank_county
+
+	frame_tier = 1
+	show_in_label = no
+
+}
+
+untamed_wilds = {
+	rank_modifier = {
+		local_max_rgo_size_modifier = 1.0
+		local_monthly_food_modifier = 0.05
+		
+		local_population_growth = 0.0005
+	}
+	
+	country_modifier = {
+		monthly_doom = 0.002
 	}
 	
 	color = color_rank_county
