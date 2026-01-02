@@ -37,7 +37,7 @@ city = {
 		population >= 30
 		modifier:cannot_upgrade_location = no
 	}
-	max_rank = yes
+	max_rank = no
 	
 	build_time = 730
 	
