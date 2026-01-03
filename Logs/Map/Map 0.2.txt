@@ -1,0 +1,24 @@
+[VERSION] 0.2
+[DATE] 2026-01-03
+[SCOPE] MINOR
+[PARENT_FOLDER] Map
+[FILES_CHANGED]
+  - Added:
+    - Logs/Map/Map 0.2.txt
+  - Edited:
+    - Workspace/Mod/More LR/in_game/common/location_ranks/00_default.txt
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base: None
+  - Raw:
+    - Canon/Knowledge Bases/Raw/main_menu/common/modifier_type_definitions/00_modifier_types.txt
+    - Canon/Knowledge Bases/Raw/in_game/common/location_ranks/00_default.txt
+[NOTES]
+  - Replaced invalid construction modifier keys with the defined local_construction_speed modifier.
+  - Corrected peasants desired-pop modifier naming to match defined modifier types.
+  - Removed undefined construction cost modifiers to avoid invalid rank definitions.
+[OPEN_ITEMS]
+  - None
