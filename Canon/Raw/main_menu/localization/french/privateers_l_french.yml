@@ -1,3 +1,0 @@
-﻿l_french:
- PIRATES_NAME: "Pirates de [AREA.GetNameWithNoTooltip]"
- PRIVATEER_NAME: "Corsaires #L [PRIVATEER.GetOwner.GetAdjectiveWithNoTooltip]s#!"

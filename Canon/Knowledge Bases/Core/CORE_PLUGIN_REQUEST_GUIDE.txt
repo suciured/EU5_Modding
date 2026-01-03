@@ -1,0 +1,24 @@
+EU5 KB - PLUGIN REQUEST GUIDE (STRUCTURE-ONLY)
+==============================================
+
+Plugins are organized by BUCKET.
+You must request a BUCKET (not a part).
+
+Storage:
+- Unzipped: Designer\Plugins\<BUCKET>\
+- Zipped:   Designer\PluginZips\<BUCKET>.zip
+
+Request protocol (bucket-only):
+  REQUEST_PLUGIN_BUCKET | BUCKET=<bucket>
+
+Examples:
+  REQUEST_PLUGIN_BUCKET | BUCKET=MAP
+  REQUEST_PLUGIN_BUCKET | BUCKET=LOCALIZATION
+
+How to choose a bucket:
+- Use Core\CORE_PLUGIN_BUCKET_INDEX.txt to see which BUCKETs exist.
+- Request the most relevant BUCKET; if still missing, request another BUCKET.
+
+Rule:
+- Structure-only. Do not infer mechanics.
+- If information is missing, request more BUCKETS rather than guessing.

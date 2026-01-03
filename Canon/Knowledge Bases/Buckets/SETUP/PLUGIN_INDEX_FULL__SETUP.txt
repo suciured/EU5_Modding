@@ -1,0 +1,6 @@
+﻿BUCKET | PART | FILE | BYTES
+NOTE: This index lists all part files in this bucket folder.
+
+SETUP | 0001 | PLUGIN_SETUP__PART_0001.txt | 1639694
+SETUP | 0002 | PLUGIN_SETUP__PART_0002.txt | 8026341
+SETUP | 0003 | PLUGIN_SETUP__PART_0003.txt | 6438340

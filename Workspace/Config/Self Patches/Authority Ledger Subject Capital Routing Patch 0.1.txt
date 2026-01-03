@@ -1,0 +1,22 @@
+EU5 Authority Ledger — Subject Capital Routing Patch (Self Patch)
+============================================================
+[DATE] 2025-12-31
+[SCOPE] Authority Ledger V-system override (subject routing)
+[STATUS] Self Patch
+
+OVERVIEW
+--------
+Subject capitals contribute to their own Central Base (V3.7), but the same
+capital locations also contribute to the overlord's Local Base (V3.8) for
+net authority calculations.
+
+RULES
+-----
+- Subject capital locations are treated as Central Base for the subject.
+- Subject capital locations are treated as Local Base for the top overlord.
+- Overlord uses the same local control scalar calculation for these capitals.
+
+NOTES
+-----
+- This patch only alters routing logic; it does not change the V3.7/V3.8
+  formulas or T-rank thresholds.

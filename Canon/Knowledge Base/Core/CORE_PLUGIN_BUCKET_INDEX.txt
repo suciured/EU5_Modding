@@ -1,8 +1,0 @@
-﻿BUCKET | PARTS | TOTAL_BYTES | PLUGIN_FOLDER | BUCKET_ZIP
-REQUEST: REQUEST_PLUGIN_BUCKET | BUCKET=<bucket>
-NOTE: Upload the bucket ZIP when requested (contains all parts for that bucket).
-
-COMMON | 3 | 20760958 | Designer\Plugins\COMMON | Designer\PluginZips\COMMON.zip
-MAP | 17 | 138095103 | Designer\Plugins\MAP | Designer\PluginZips\MAP.zip
-SETUP | 3 | 16104375 | Designer\Plugins\SETUP | Designer\PluginZips\SETUP.zip
-LOCALIZATION | 26 | 211409789 | Designer\Plugins\LOCALIZATION | Designer\PluginZips\LOCALIZATION.zip

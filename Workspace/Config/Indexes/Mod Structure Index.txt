@@ -1,0 +1,150 @@
+EU5 MOD FOLDER HIERARCHY (CANON-ACCURATE)
+
+CORE PRINCIPLE
+────────────────────────────────
+EU5 mods work by COPYING the base game folder structure.
+Only folders/files that exist in the base game may exist in a mod.
+Anything missing is treated as "not overridden".
+
+A mod is NOT a new structure.
+It is a partial mirror of /game/.
+
+────────────────────────────────
+BASE GAME ROOT (REFERENCE)
+────────────────────────────────
+<Steam>/Europa Universalis V/game/
+
+├─ in_game/
+├─ main_menu/
+├─ loading_screen/
+├─ tools/
+├─ fonts/
+├─ gfx/
+├─ localization/
+├─ setup/
+├─ common/
+└─ (root metadata files)
+
+────────────────────────────────
+MOD ROOT (ACTUAL)
+────────────────────────────────
+<Documents>/Paradox Interactive/Europa Universalis V/mod/<mod_name>/
+
+├─ .metadata/                (launcher & workshop data)
+│
+├─ in_game/                  (mirrors game/in_game/)
+│
+├─ main_menu/                (mirrors game/main_menu/)
+│
+├─ loading_screen/           (mirrors game/loading_screen/)
+│
+└─ descriptor.mod            (required)
+
+❗ No other top-level folders are valid.
+
+────────────────────────────────
+IN_GAME FOLDER (MOST MODDING)
+────────────────────────────────
+<mod>/in_game/
+
+├─ common/
+│   ├─ advances/
+│   ├─ age/
+│   ├─ ai_diplochance/
+│   ├─ building_types/
+│   ├─ casus_belli/
+│   ├─ cultures/
+│   ├─ culture_groups/
+│   ├─ disasters/
+│   ├─ diseases/
+│   ├─ estate_privileges/
+│   ├─ game_rules/
+│   ├─ goods/
+│   ├─ laws/
+│   ├─ modifiers/
+│   ├─ subjects/
+│   ├─ scripted_effects/
+│   ├─ scripted_triggers/
+│   └─ (any folder seen in base game/in_game/common/)
+│
+├─ content_source/
+├─ events/
+├─ fonts/
+├─ gfx/
+├─ gui/
+├─ map_data/
+├─ setup/
+│   ├─ start/
+│   ├─ history/
+│   └─ scenarios/
+│
+└─ *.json / *.txt (only if present in base game)
+
+────────────────────────────────
+MAIN_MENU FOLDER
+────────────────────────────────
+<mod>/main_menu/
+
+├─ common/
+│   ├─ achievements/
+│   ├─ coat_of_arms/
+│   ├─ flag_definitions/
+│   ├─ game_concepts/
+│   ├─ game_rules/
+│   ├─ modifier_icons/
+│   ├─ modifier_type_definitions/
+│   ├─ named_colors/
+│   ├─ scenarios/
+│   ├─ scripted_lists/
+│   ├─ scripted_triggers/
+│   ├─ static_modifiers/
+│   └─ achievement_groups.txt
+│
+├─ fonts/
+├─ gfx/
+├─ gui/
+├─ gui_animations/
+├─ localization/
+├─ music/
+├─ notifications/
+├─ setup/
+└─ tools/
+
+────────────────────────────────
+LOADING_SCREEN FOLDER
+────────────────────────────────
+<mod>/loading_screen/
+
+├─ common/
+├─ dependency_graphs/
+├─ fonts/
+├─ gfx/
+├─ gui/
+├─ input_profile/
+├─ localization/
+├─ sound/
+│
+├─ compound_settings.txt
+├─ credits.txt
+├─ settings_layout.txt
+└─ *.json / *.txt (only if present in base game)
+
+────────────────────────────────
+WHAT NOT TO DO (CRITICAL)
+────────────────────────────────
+✘ Do NOT invent folders
+✘ Do NOT copy the entire /game/ directory
+✘ Do NOT mix in_game and main_menu content
+✘ Do NOT place common/ at mod root
+✘ Do NOT assume EU4-style layouts
+
+────────────────────────────────
+SAFE MODDING RULE
+────────────────────────────────
+If the base game does not have the folder:
+→ your mod must not have it.
+
+If you want to override ONE file:
+→ recreate ONLY the folders needed to reach that file.
+
+This guarantees safe, minimal overrides.

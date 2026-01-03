@@ -1,0 +1,218 @@
+EU5 Authority Ledger — Codex Index (Authoritative)
+[DATE] 2025-12-30
+[SCOPE] Canon / Knowledge Base / Explainers
+[STATUS] Design-Phase, Implementation-Pending
+
+PURPOSE
+- Canonical navigation index for Codex agents.
+- Explicitly defines what exists, what does not, and where definitions live.
+- Prevents Codex from hallucinating engine paths or scripts.
+
+IMPORTANT RULE
+- Only files listed here are authoritative.
+- If something is not defined here or in Canon/Raw, it is NOT assumed to exist.
+
+============================================================
+CORE TERMINOLOGY
+============================================================
+CA/LA/TR LEGACY (DEPRECATED IN MOD)
+---------------------------------
+The original Canon KB terminology uses:
+- CA = Central Authority
+- LA = Local Authority
+- NA = Net Authority (CA − LA)
+- TR = Title Rank (hidden tier derived from TA)
+- T-rank = UI node tree (Tn.m)
+
+This MOD replaces the authority math with the V-system below.
+
+MOD CANON TERMINOLOGY (V-SYSTEM)
+--------------------------------
+- Central Base  = V3.7 (country-scoped, derived)
+- Local Base    = V3.8 (country-scoped, derived)
+- Net Authority = V4.3 (per-tick flow)
+- Title Authority (TA) = v4_ta (persistent accumulator)
+- T-rank (integer) = v5_t_rank, T0–T15 derived from TA thresholds (V5)
+- T-rank UI grid = Tn.m slots (UI structure only; does not set integer rank)
+
+INDEPENDENCE GATE (MOD CANON)
+-----------------------------
+- T11+ requires Independence.
+- If NOT independent: clamp integer T-rank to at most T10.
+- Subjects use the same rules but accumulate TA from halved central/local contributions.
+
+============================================================
+AUTHORITATIVE FILE MAP
+============================================================
+
+[FORMULAS — WHAT IS CALCULATED]
+
+(1) Authority math (derived variables only)
+File:
+  Canon/Knowledge Base/Explainers/Formulas/Formulas_Only.txt
+
+Defines:
+- BaseLoc
+- CapitalBase
+- LocalBase
+- CA / LA / NA
+- TA = TA + NA
+- TR dependency on thresholds
+
+Does NOT define:
+- Variable storage
+- Update hooks
+- GUI exposure
+
+--------------------------------------------
+
+(2) Balance constants (editable)
+File:
+  Canon/Knowledge Base/Explainers/Formulas/Variables.txt
+
+Defines:
+- POP_CAP_K
+- CA_STATE_MIN
+- CA_TR_COEFF
+- TR_MAX
+
+--------------------------------------------
+
+(3) TR thresholds & hysteresis
+File:
+  Canon/Knowledge Base/Explainers/Formulas/TR_Thresholds.txt
+
+Defines:
+- TA → TR mapping (TR0–TR15)
+- Demotion buffer rule
+- Independence gate (T10 → T11)
+
+============================================================
+IMPLEMENTATION STATUS (EXPLICIT)
+============================================================
+
+The following items are NOT defined in Canon/Raw and must not be assumed
+to exist by Codex or tooling.
+
+--------------------------------------------
+
+(4) Authority variable storage
+STATUS: NOT DEFINED IN REPO SOURCES
+
+- No country variables for CA / LA / NA / TA are declared in Canon/Raw.
+- Storage names, scopes, and persistence are unspecified.
+
+--------------------------------------------
+
+(5) Monthly authority update hook
+STATUS: NOT DEFINED IN REPO SOURCES
+
+- No on_action, scripted effect, or scheduled update is defined.
+- Update cadence (monthly or otherwise) is not implemented.
+
+--------------------------------------------
+
+(6) GovP_norm definition
+STATUS: NOT DEFINED IN REPO SOURCES
+
+- GovP_norm is referenced by formulas but not defined as a value.
+- Source value, scale, and normalization are unspecified.
+- Codex must treat GovP_norm as an external dependency.
+
+--------------------------------------------
+
+(7) Eligible provinces for CA
+STATUS: DEFINED BY FORMULA
+
+Authoritative rule (from Formulas_Only.txt):
+- ONLY locations in the capital province contribute to CA.
+- All other locations contribute to LA.
+
+--------------------------------------------
+
+(8) TR derivation & storage
+STATUS: PARTIALLY DEFINED
+
+Defined:
+- TR is derived from TA via thresholds + hysteresis.
+- TR feeds back into CA via TRMult.
+
+Not defined:
+- Script variable names
+- Persistence layer
+- Update timing
+
+============================================================
+UI / LEDGER SYSTEM
+============================================================
+
+(9) Ledger exposure
+STATUS: NOT DEFINED IN REPO SOURCES
+
+- No generic country ledger extension pattern is defined.
+- No GUI bindings for CA / LA / TA exist.
+- No ledger tab registration mechanism is specified.
+
+============================================================
+T-RANK (UI TREE, NOT TIERS)
+============================================================
+
+(10) T-rank UI node structure
+File:
+  Canon/Knowledge Base/Explainers/T-Rank/EU5_T-RANK_TEMPLATE.txt
+
+Defines:
+- T0–T15 rows
+- Tn.1–Tn.6 slots
+- EMPTY handling
+- Locked upgrade paths (T0 → T1)
+
+IMPORTANT:
+- T-rank ≠ TR
+- T-rank is player-facing structure
+- TR is hidden progression tier
+
+============================================================
+CODEX INSTRUCTIONS
+============================================================
+
+(11) Codex guardrails
+File:
+  CODEX_INSTRUCTIONS.txt
+
+Defines:
+- Source-only rules
+- No hallucination policy
+- Stop conditions
+
+============================================================
+CODING STATUS SUMMARY
+============================================================
+
+
+Codex must treat all missing items as:
+> “Not defined in repo sources.”
+
+END
+
+
+============================================================
+MOD AUTHORITATIVE FILE MAP (V-SYSTEM)
+============================================================
+These files are authoritative for the Authority Ledger MOD's authority math and UI:
+
+(1) V-system math + variable key standard
+File:
+  Codex/Authority Ledger/V_System_Spec 0.2.txt
+
+(2) T-rank UI chart + tooltip spec (no reflow)
+File:
+  Codex/Authority Ledger/T_Rank_UI_Spec 0.2.txt
+
+(3) T-rank thresholds (TA -> integer T-rank)
+File:
+  Codex/Authority Ledger/T_Rank_Thresholds_Draft 0.2.txt
+
+(4) Explainers note (avoid legacy TR confusion)
+File:
+  Codex/Authority Ledger/Explainers_Note 0.2.txt
