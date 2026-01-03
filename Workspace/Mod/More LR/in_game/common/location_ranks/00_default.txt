@@ -1,10 +1,11 @@
-# Generated from 'Location Ranks' table PDF. Order is best-to-worst; lower entries are considered worse.
+﻿# More LR - expanded location ranks + base aliases
+# Note: ordering is best-to-worst; anything below is considered worse.
 
 city_of_wonders = {
 	rank_modifier = {
+		build_time = 1825
 		free_building_levels = 250
 		local_clergy_desired_pop = 0.15
-		local_construction_speed = 1
 		local_food_capacity = 2500
 		local_integration_speed_modifier = -0.5
 		local_max_control = 1
@@ -17,7 +18,6 @@ city_of_wonders = {
 		local_population_capacity_modifier = 2.5
 		max_constructions_at_same_time = 5
 	}
-	build_time = 1825
 	color = color_rank_kingdom
 	frame_tier = 3
 	show_in_label = yes
@@ -25,8 +25,8 @@ city_of_wonders = {
 
 capital_city = {
 	rank_modifier = {
+		build_time = 730
 		free_building_levels = 50
-		local_construction_speed = 0.5
 		local_food_capacity = 500
 		local_integration_speed_modifier = -0.25
 		local_max_control = 0.25
@@ -39,7 +39,6 @@ capital_city = {
 		local_population_capacity_modifier = 2
 		max_constructions_at_same_time = 3
 	}
-	build_time = 730
 	color = color_rank_kingdom
 	frame_tier = 3
 	show_in_label = yes
@@ -47,8 +46,8 @@ capital_city = {
 
 major_city = {
 	rank_modifier = {
+		build_time = 730
 		free_building_levels = 50
-		local_construction_speed = 0.5
 		local_food_capacity = 500
 		local_integration_speed_modifier = -0.25
 		local_max_control = 0.25
@@ -61,7 +60,6 @@ major_city = {
 		local_population_capacity_modifier = 1.5
 		max_constructions_at_same_time = 3
 	}
-	build_time = 730
 	color = color_rank_kingdom
 	frame_tier = 3
 	show_in_label = yes
@@ -69,8 +67,8 @@ major_city = {
 
 minor_city = {
 	rank_modifier = {
+		build_time = 730
 		free_building_levels = 50
-		local_construction_speed = 0.5
 		local_food_capacity = 500
 		local_integration_speed_modifier = -0.25
 		local_max_control = 0.25
@@ -82,7 +80,6 @@ minor_city = {
 		local_population_capacity_modifier = 1
 		max_constructions_at_same_time = 3
 	}
-	build_time = 730
 	color = color_rank_kingdom
 	frame_tier = 3
 	show_in_label = yes
@@ -90,6 +87,7 @@ minor_city = {
 
 large_town = {
 	rank_modifier = {
+		build_time = 365
 		free_building_levels = 25
 		local_food_capacity = 250
 		local_migration_attraction = 0.1
@@ -98,7 +96,6 @@ large_town = {
 		local_population_capacity_modifier = 0.7
 		max_constructions_at_same_time = 2
 	}
-	build_time = 365
 	color = color_rank_duchy
 	frame_tier = 2
 	show_in_label = yes
@@ -106,6 +103,7 @@ large_town = {
 
 chartered_town = {
 	rank_modifier = {
+		build_time = 365
 		free_building_levels = 25
 		local_food_capacity = 250
 		local_migration_attraction = 0.1
@@ -114,7 +112,6 @@ chartered_town = {
 		local_population_capacity_modifier = 0.4
 		max_constructions_at_same_time = 2
 	}
-	build_time = 365
 	color = color_rank_duchy
 	frame_tier = 2
 	show_in_label = yes
@@ -122,6 +119,7 @@ chartered_town = {
 
 township = {
 	rank_modifier = {
+		build_time = 365
 		free_building_levels = 25
 		local_food_capacity = 250
 		local_migration_attraction = 0.25
@@ -130,7 +128,6 @@ township = {
 		local_population_capacity_modifier = 0.1
 		max_constructions_at_same_time = 2
 	}
-	build_time = 365
 	color = color_rank_county
 	frame_tier = 1
 	show_in_label = yes
@@ -139,16 +136,15 @@ township = {
 market_village = {
 	rank_modifier = {
 		free_building_levels = 0
-		local_clergy_desired_pop = 0.1
 		local_burghers_desired_pop = 0.05
-		local_construction_speed = -0.25
+		local_clergy_desired_pop = 0.1
 		local_food_capacity = 50
 		local_integration_speed_modifier = 0.5
 		local_laborers_desired_pop = 0.15
 		local_max_control = -0.25
 		local_max_rgo_size_modifier = 0.5
 		local_monthly_food_modifier = 1
-		local_peasants_desired_pop = 0.3
+		local_nobles_desired_pop = 0.05
 		local_population_capacity = 25
 		local_population_capacity_modifier = 0
 		local_soldiers_desired_pop = 0.1
@@ -163,13 +159,11 @@ isolated_villages = {
 	rank_modifier = {
 		free_building_levels = 0
 		local_clergy_desired_pop = 0.1
-		local_construction_speed = -0.25
 		local_food_capacity = 50
 		local_integration_speed_modifier = 0.5
 		local_max_control = -0.25
 		local_max_rgo_size_modifier = 0.5
 		local_monthly_food_modifier = 1
-		local_peasants_desired_pop = 0.3
 		local_population_capacity = 25
 		local_population_capacity_modifier = -0.1
 		local_soldiers_desired_pop = 0.1
@@ -185,7 +179,6 @@ homesteads = {
 	rank_modifier = {
 		free_building_levels = 0
 		local_clergy_desired_pop = 0.05
-		local_construction_speed = -0.25
 		local_food_capacity = 50
 		local_integration_speed_modifier = 0.5
 		local_max_control = -0.25
@@ -205,7 +198,6 @@ homesteads = {
 wilderness = {
 	rank_modifier = {
 		free_building_levels = -25
-		local_construction_speed = -0.5
 		local_integration_speed_modifier = 1
 		local_max_control = -0.5
 		local_max_rgo_size_modifier = 1
@@ -220,5 +212,65 @@ wilderness = {
 	}
 	color = color_rank_county
 	frame_tier = 1
+	show_in_label = no
+}
+
+# Compatibility aliases for vanilla ranks
+city = {
+	rank_modifier = {
+		build_time = 730
+		free_building_levels = 50
+		local_food_capacity = 500
+		local_integration_speed_modifier = -0.25
+		local_max_control = 0.25
+		local_max_rgo_size_modifier = 0.5
+		local_migration_attraction = 0.25
+		local_monthly_food_modifier = -0.5
+		local_nobles_desired_pop = 0.2
+		local_pop_promotion_speed_modifier = 0.5
+		local_population_capacity = 100
+		local_population_capacity_modifier = 1.5
+		max_constructions_at_same_time = 3
+	}
+	color = color_rank_kingdom
+	frame_tier = 3
+	show_in_label = no
+}
+
+town = {
+	rank_modifier = {
+		build_time = 365
+		free_building_levels = 25
+		local_food_capacity = 250
+		local_migration_attraction = 0.1
+		local_pop_promotion_speed_modifier = 0.25
+		local_population_capacity = 50
+		local_population_capacity_modifier = 0.7
+		max_constructions_at_same_time = 2
+	}
+	color = color_rank_duchy
+	frame_tier = 2
+	show_in_label = no
+}
+
+rural_settlement = {
+	rank_modifier = {
+		free_building_levels = -25
+		local_integration_speed_modifier = 1
+		local_max_control = -0.5
+		local_max_rgo_size_modifier = 1
+		local_migration_attraction = -0.5
+		local_monthly_food_modifier = 2
+		local_pop_promotion_speed_modifier = -0.5
+		local_population_capacity = 30
+		local_population_capacity_modifier = -0.5
+		local_soldiers_desired_pop = 0.1
+		local_tribesmen_desired_pop = 0.75
+		max_constructions_at_same_time = 1
+	}
+	color = color_rank_county
+	frame_tier = 1
+	show_in_label = no
+
 	show_in_label = no
 }
