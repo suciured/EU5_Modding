@@ -1,0 +1,23 @@
+[VERSION] 0.1
+[DATE] 2026-01-03
+[SCOPE] MINOR
+[PARENT_FOLDER] Map
+[FILES_CHANGED]
+  - Added:
+    - Logs/Map/Map 0.1.txt
+  - Edited:
+    - Workspace/Mod/More LR/in_game/common/location_ranks/00_default.txt
+    - Workspace/Mod/More LR/in_game/common/on_action/zzz_more_lr_set_wilds_on_start.txt
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - None
+[SOURCES_USED]
+  - Knowledge Base: None
+  - Raw: Canon/Zipped/In_game_2_RAW.zip (common/location_ranks/00_default.txt)
+[NOTES]
+  - Aligned More LR rank modifiers to match the chart values and moved build_time to the rank level.
+  - Added construction cost/speed modifiers and desired-pop distributions per rank from the table.
+  - Updated game-start rank reassignment to tier all locations by population thresholds.
+[OPEN_ITEMS]
+  - None

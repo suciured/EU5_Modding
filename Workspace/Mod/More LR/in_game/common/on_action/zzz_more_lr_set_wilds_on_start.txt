@@ -4,15 +4,46 @@ on_game_start = {
 		every_province = {
 			every_location_in_province = {
 				if = {
-					limit = { location_rank = location_rank:city }
+					limit = { population >= 300 }
+					change_location_rank = location_rank:city_of_wonders
+				}
+				else_if = {
+					limit = { population >= 200 }
+					change_location_rank = location_rank:capital_city
+				}
+				else_if = {
+					limit = { population >= 150 }
 					change_location_rank = location_rank:major_city
 				}
 				else_if = {
-					limit = { location_rank = location_rank:town }
+					limit = { population >= 100 }
+					change_location_rank = location_rank:minor_city
+				}
+				else_if = {
+					limit = { population >= 75 }
 					change_location_rank = location_rank:large_town
 				}
 				else_if = {
-					limit = { location_rank = location_rank:rural_settlement }
+					limit = { population >= 50 }
+					change_location_rank = location_rank:chartered_town
+				}
+				else_if = {
+					limit = { population >= 25 }
+					change_location_rank = location_rank:township
+				}
+				else_if = {
+					limit = { population >= 20 }
+					change_location_rank = location_rank:market_village
+				}
+				else_if = {
+					limit = { population >= 15 }
+					change_location_rank = location_rank:isolated_villages
+				}
+				else_if = {
+					limit = { population >= 10 }
+					change_location_rank = location_rank:homesteads
+				}
+				else = {
 					change_location_rank = location_rank:wilderness
 				}
 			}
