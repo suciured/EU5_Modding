@@ -1,0 +1,25 @@
+[VERSION] 0.3
+[DATE] 2026-01-03
+[SCOPE] MINOR
+[PARENT_FOLDER] Map
+[FILES_CHANGED]
+  - Added:
+    - Logs/Map/Map 0.3.txt
+  - Edited:
+    - None
+  - Deleted:
+    - None
+  - Moved:
+    - Workspace/Mod/More LR/localization/english/more_lr_l_english.yml -> Workspace/Mod/More LR/main_menu/localization/english/more_lr_l_english.yml
+[TEMPLATE_CLEANUP]
+  - Removed unused template folders/files:
+    - Workspace/Mod/More LR/localization
+[SOURCES_USED]
+  - Knowledge Base: None
+  - Raw:
+    - Canon/Mod Template/main_menu/localization
+[NOTES]
+  - Moved More LR localization into main_menu localization so rank names resolve in UI.
+  - Removed the obsolete localization folder after the move.
+[OPEN_ITEMS]
+  - None
