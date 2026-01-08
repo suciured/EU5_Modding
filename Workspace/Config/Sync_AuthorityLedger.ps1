@@ -16,8 +16,8 @@ function Ensure-Dir([string]$p) {
     }
 }
 
-$SRC = "C:\Users\jason\OneDrive\Documents\GitHub\EU5_Modding\Workspace\Mod\Authority Ledger"
-$DST = "C:\Users\jason\OneDrive\Documents\Paradox Interactive\Europa Universalis V\mod\Authority Ledger"
+$SRC = "C:\Users\jason\OneDrive\Documents\GitHub\EU5_Modding\Workspace\Mod\More LR"
+$DST = "C:\Users\jason\OneDrive\Documents\Paradox Interactive\Europa Universalis V\mod\More LR"
 
 if (-not (Test-Path -LiteralPath $SRC)) {
     throw "Source folder not found: $SRC"
