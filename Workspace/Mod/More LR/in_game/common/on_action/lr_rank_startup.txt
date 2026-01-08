@@ -13,11 +13,11 @@ on_game_start = {
                         change_location_rank = location_rank:city_of_wonders
                     }
                     else_if = {
-                        limit = { population >= 200 is_capital = yes NOT = { location_rank = location_rank:capital_city } }
+                        limit = { is_capital = yes population >= 200 NOT = { location_rank = location_rank:capital_city } }
                         change_location_rank = location_rank:capital_city
                     }
                     else_if = {
-                        limit = { population >= 150 is_province_capital = yes NOT = { location_rank = location_rank:major_city } }
+                        limit = { is_province_capital = yes population >= 150 NOT = { location_rank = location_rank:major_city } }
                         change_location_rank = location_rank:major_city
                     }
                     else_if = {

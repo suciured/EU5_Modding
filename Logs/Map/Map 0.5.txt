@@ -1,0 +1,22 @@
+[VERSION] 0.5
+[DATE] 2026-01-08
+[SCOPE] MINOR
+[PARENT_FOLDER] Map
+[FILES_CHANGED]
+  - Added:
+    - Logs/Map/Map 0.5.txt
+  - Edited:
+    - Workspace/Mod/More LR/in_game/common/location_ranks/00_default.txt
+    - Workspace/Mod/More LR/in_game/common/on_action/lr_rank_startup.txt
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - Removed unused template folders/files: None
+[SOURCES_USED]
+  - Knowledge Base: None
+  - Raw: None
+[NOTES]
+  - Restored the original top-rank population thresholds.
+  - Re-aligned startup rank reassignment to match the original thresholds for one-time upgrades.
+[OPEN_ITEMS]
+  - None
