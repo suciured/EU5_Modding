@@ -2,7 +2,7 @@
 # rural_settlement, town and city are base game due to hardcoding do not not change the code. localization will fix it
 
 city_of_wonders = {
-	population_required = 300
+	population_required = 250
 	rank_modifier = {
 		local_population_capacity_modifier = 2.5
 		free_building_levels = 250
@@ -29,13 +29,13 @@ city_of_wonders = {
 
 	allow = {
 		location_rank = location_rank:capital_city
-		population >= 300
+		population >= 250
 		modifier:cannot_upgrade_location = no
 	}
 }
 
 capital_city = {
-	population_required = 200
+	population_required = 180
 	rank_modifier = {
 		local_population_capacity_modifier = 2
 		free_building_levels = 50
@@ -61,14 +61,14 @@ capital_city = {
 
 	allow = {
 		location_rank = location_rank:major_city
-		population >= 200
+		population >= 180
 		is_capital = yes
 		modifier:cannot_upgrade_location = no
 	}
 }
 
 major_city = {
-	population_required = 150
+	population_required = 140
 	rank_modifier = {
 		local_population_capacity_modifier = 1.5
 		free_building_levels = 50
@@ -95,7 +95,7 @@ major_city = {
 
 	allow = {
 		location_rank = location_rank:city
-		population >= 150
+		population >= 140
 		is_province_capital = yes
 		modifier:cannot_upgrade_location = no
 	}

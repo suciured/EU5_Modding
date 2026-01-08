@@ -1,0 +1,22 @@
+[VERSION] 0.4
+[DATE] 2026-01-08
+[SCOPE] MINOR
+[PARENT_FOLDER] Map
+[FILES_CHANGED]
+  - Added:
+    - Logs/Map/Map 0.4.txt
+  - Edited:
+    - Workspace/Mod/More LR/in_game/common/location_ranks/00_default.txt
+    - Workspace/Mod/More LR/in_game/common/on_action/lr_rank_startup.txt
+  - Deleted:
+    - None
+[TEMPLATE_CLEANUP]
+  - Removed unused template folders/files: None
+[SOURCES_USED]
+  - Knowledge Base: None
+  - Raw: None
+[NOTES]
+  - Lowered the highest population thresholds so more location ranks can appear at game start.
+  - Kept the startup reassignment thresholds aligned with the location rank requirements.
+[OPEN_ITEMS]
+  - None
