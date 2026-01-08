@@ -1,0 +1,8 @@
+countries = {
+  countries = {
+    CCB = {
+      type = building
+      is_valid_for_release = no
+    }
+  }
+}

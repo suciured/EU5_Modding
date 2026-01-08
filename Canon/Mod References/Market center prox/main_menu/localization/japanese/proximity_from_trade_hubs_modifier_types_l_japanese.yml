@@ -1,0 +1,15 @@
+﻿l_japanese:
+ MODIFIER_TYPE_NAME_proximity_from_trade_hubs_base_proximity: "基本のローカル近接度ソース"
+ MODIFIER_TYPE_DESC_proximity_from_trade_hubs_base_proximity: "[location|e]に基本の[proximity|e]ソースを追加する。これは建物レベルで増加しない。"
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier: "王室監督官庁"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('royal_intendancy')]は、この[location|e]に基本の[proximity|e]ソースを追加する。この基本の近接度ソースは建物レベルや雇用の影響を受けない。[ShowBuildingTypeName('royal_intendancy')]を撤去すると、この効果も取り除かれる。"
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_merchant_council_proximity_source_modifier: "商人評議会"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_merchant_council_proximity_source_modifier: "[ShowBuildingTypeName('merchant_council')]は、この[location|e]に基本の[proximity|e]ソースを追加する。この基本の近接度ソースは建物レベルや雇用の影響を受けない。[ShowBuildingTypeName('merchant_council')]を撤去すると、この効果も取り除かれる。"
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier: "教会監督官庁"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('ecclesiastical_intendancy')]は、この[location|e]に基本の[proximity|e]ソースを追加する。この基本の近接度ソースは建物レベルや雇用の影響を受けない。[ShowBuildingTypeName('ecclesiastical_intendancy')]を撤去すると、この効果も取り除かれる。"
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier: "中華監督官庁"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('chinese_intendancy')]は、この[location|e]に基本の[proximity|e]ソースを追加する。この基本の近接度ソースは建物レベルや雇用の影響を受けない。[ShowBuildingTypeName('chinese_intendancy')]を撤去すると、この効果も取り除かれる。"

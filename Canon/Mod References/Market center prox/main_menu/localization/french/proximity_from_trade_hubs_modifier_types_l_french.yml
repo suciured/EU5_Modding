@@ -1,0 +1,16 @@
+﻿l_french:
+ MODIFIER_TYPE_NAME_proximity_from_trade_hubs_base_proximity: "Source de proximité locale de base"
+ MODIFIER_TYPE_DESC_proximity_from_trade_hubs_base_proximity: "Ajoute une source de [proximity|e] de base dans un [location|e], qui n'augmente pas avec les niveaux du bâtiment."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier: "Intendance royale"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('royal_intendancy')] ajoute une source de [proximity|e] de base dans ce [location|e]. Cette source de proximité de base n'est pas affectée par les niveaux du bâtiment ni par l'emploi. Retirer [ShowBuildingTypeName('royal_intendancy')] supprimera également cet effet."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_merchant_council_proximity_source_modifier: "Conseil des marchands"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_merchant_council_proximity_source_modifier: "[ShowBuildingTypeName('merchant_council')] ajoute une source de [proximity|e] de base dans ce [location|e]. Cette source de proximité de base n'est pas affectée par les niveaux du bâtiment ni par l'emploi. Retirer [ShowBuildingTypeName('merchant_council')] supprimera également cet effet."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier: "Intendance ecclésiastique"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('ecclesiastical_intendancy')] ajoute une source de [proximity|e] de base dans ce [location|e]. Cette source de proximité de base n'est pas affectée par les niveaux du bâtiment ni par l'emploi. Retirer [ShowBuildingTypeName('ecclesiastical_intendancy')] supprimera également cet effet."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier: "Intendance chinoise"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('chinese_intendancy')] ajoute une source de [proximity|e] de base dans ce [location|e]. Cette source de proximité de base n'est pas affectée par les niveaux du bâtiment ni par l'emploi. Retirer [ShowBuildingTypeName('chinese_intendancy')] supprimera également cet effet."
+

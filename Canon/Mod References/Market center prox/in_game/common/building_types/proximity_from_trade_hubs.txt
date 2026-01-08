@@ -1,0 +1,362 @@
+﻿royal_intendancy = {
+	is_foreign = no
+	max_levels = administration_max_level
+	pop_type = nobles
+	
+	employment_size = huge_noble_employment
+	category = government_category
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	increase_per_level_cost = 0.1
+	build_time = large_capital_build_time
+	
+	forbidden_for_estates = yes
+
+	country_potential = {
+		NOT = { culture = { has_culture_group = culture_group:chinese_group } }
+		government_type = government_type:monarchy
+	}
+	
+	location_potential = {
+		custom_tooltip = {
+			text = proximity_from_trade_hubs_proximity_source_workaround_tt
+			always = yes
+		}
+		is_market_center = yes
+		is_capital = no
+		is_overseas_for_owner = no
+	}
+
+	allow = {
+		development >= 20
+	}
+
+	remove_if = {
+		location = {
+			OR = {
+				is_market_center = no
+				is_capital = yes
+			}
+		}
+	}
+
+	possible_production_methods = {
+		proximity_hub_admin_maintenance
+	}
+
+	construction_demand = important_building_construction
+
+	on_built = {
+		hidden_effect = {
+			location = {
+				if = {
+					limit = { NOT = { has_location_modifier = proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier } }
+					add_location_modifier = {
+						modifier = proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier
+						years = -1
+						mode = add_and_extend
+					}
+				}
+			}
+		}
+	}
+	on_destroyed = {
+		hidden_effect = {
+			location = {
+				if = {
+					limit = {
+						location_building_level = {
+							building_type = building_type:royal_intendancy
+							value < 2
+						}
+					}
+					remove_location_modifier = proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier
+				}
+			}
+		}
+	}
+
+	raw_modifier = {
+		local_population_capacity_modifier = 0.05
+		proximity_from_trade_hubs_base_proximity = 30
+	}
+
+	modifier = {
+		local_proximity_source = 10
+	}
+}
+
+merchant_council = {
+	is_foreign = no
+	max_levels = administration_max_level
+	pop_type = nobles
+	
+	employment_size = huge_noble_employment
+	category = government_category
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	increase_per_level_cost = 0.1
+	build_time = large_capital_build_time
+	
+	forbidden_for_estates = yes
+
+	country_potential = {
+		NOT = { culture = { has_culture_group = culture_group:chinese_group } }
+		government_type = government_type:republic
+	}
+	
+	location_potential = {
+		custom_tooltip = {
+			text = proximity_from_trade_hubs_proximity_source_workaround_tt
+			always = yes
+		}
+		is_market_center = yes
+		is_capital = no
+		is_overseas_for_owner = no
+	}
+	
+	allow = {
+		development >= 20
+	}
+	
+	remove_if = {
+		location = {
+			OR = {
+				is_market_center = no
+				is_capital = yes
+			}
+		}
+	}
+	
+	possible_production_methods = {
+		proximity_hub_admin_maintenance
+	}
+
+	construction_demand = important_building_construction
+
+	on_built = {
+		hidden_effect = {
+			location = {
+				if = {
+					limit = { NOT = { has_location_modifier = proximity_from_trade_hubs_merchant_council_proximity_source_modifier } }
+					add_location_modifier = {
+						modifier = proximity_from_trade_hubs_merchant_council_proximity_source_modifier
+						years = -1
+						mode = add_and_extend
+					}
+				}
+			}
+		}
+	}
+	on_destroyed = {
+		hidden_effect = {
+			location = {
+				if = {
+					limit = {
+						location_building_level = {
+							building_type = building_type:merchant_council
+							value < 2
+						}
+					}
+					remove_location_modifier = proximity_from_trade_hubs_merchant_council_proximity_source_modifier
+				}
+			}
+		}
+	}
+
+	raw_modifier = {
+		local_population_capacity_modifier = 0.05
+		proximity_from_trade_hubs_base_proximity = 30
+	}
+
+	modifier = {
+		local_proximity_source = 10
+	}
+}
+
+ecclesiastical_intendancy = {
+	is_foreign = no
+	max_levels = administration_max_level
+	pop_type = nobles
+	
+	employment_size = huge_noble_employment
+	category = government_category
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	increase_per_level_cost = 0.1
+	build_time = large_capital_build_time
+	
+	forbidden_for_estates = yes
+
+	country_potential = {
+		NOT = { culture = { has_culture_group = culture_group:chinese_group } }
+		government_type = government_type:theocracy
+	}
+	
+	location_potential = {
+		custom_tooltip = {
+			text = proximity_from_trade_hubs_proximity_source_workaround_tt
+			always = yes
+		}
+		is_market_center = yes
+		is_capital = no
+		is_overseas_for_owner = no
+	}
+	
+	allow = {
+		development >= 20
+	}
+	
+	remove_if = {
+		location = {
+			OR = {
+				is_market_center = no
+				is_capital = yes
+			}
+		}
+	}
+	
+	possible_production_methods = {
+		proximity_hub_admin_maintenance
+	}
+
+	construction_demand = important_building_construction
+
+	on_built = {
+		hidden_effect = {
+			location = {
+				if = {
+					limit = { NOT = { has_location_modifier = proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier } }
+					add_location_modifier = {
+						modifier = proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier
+						years = -1
+						mode = add_and_extend
+					}
+				}
+			}
+		}
+	}
+	on_destroyed = {
+		hidden_effect = {
+			location = {
+				if = {
+					limit = {
+						location_building_level = {
+							building_type = building_type:ecclesiastical_intendancy
+							value < 2
+						}
+					}
+					remove_location_modifier = proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier
+				}
+			}
+		}
+	}
+
+	raw_modifier = {
+		local_population_capacity_modifier = 0.05
+		proximity_from_trade_hubs_base_proximity = 30
+	}
+
+	modifier = {
+		local_proximity_source = 10
+	}
+}
+
+chinese_intendancy = {
+	is_foreign = no
+	max_levels = administration_max_level
+	pop_type = nobles
+	
+	employment_size = huge_noble_employment
+	category = government_category
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	increase_per_level_cost = 0.1
+	build_time = large_capital_build_time
+	
+	forbidden_for_estates = yes
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:chinese_group }
+	}
+	
+	location_potential = {
+		custom_tooltip = {
+			text = proximity_from_trade_hubs_proximity_source_workaround_tt
+			always = yes
+		}
+		is_market_center = yes
+		is_capital = no
+		is_overseas_for_owner = no
+	}
+
+	allow = {
+		development >= 20
+	}
+	
+	remove_if = {
+		location = {
+			OR = {
+				is_market_center = no
+				is_capital = yes
+			}
+		}
+	}
+	
+	possible_production_methods = {
+		chinese_hub_admin_maintenance
+	}
+
+	construction_demand = important_building_construction
+
+	on_built = {
+		hidden_effect = {
+			location = {
+				if = {
+					limit = { NOT = { has_location_modifier = proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier } }
+					add_location_modifier = {
+						modifier = proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier
+						years = -1
+						mode = add_and_extend
+					}
+				}
+			}
+		}
+	}
+	on_destroyed = {
+		hidden_effect = {
+			location = {
+				if = {
+					limit = {
+						location_building_level = {
+							building_type = building_type:chinese_intendancy
+							value < 2
+						}
+					}
+					remove_location_modifier = proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier
+				}
+			}
+		}
+	}
+
+	raw_modifier = {
+		local_population_capacity_modifier = 0.05
+		proximity_from_trade_hubs_base_proximity = 30
+	}
+
+	modifier = {
+		local_proximity_source = 10
+	}
+}

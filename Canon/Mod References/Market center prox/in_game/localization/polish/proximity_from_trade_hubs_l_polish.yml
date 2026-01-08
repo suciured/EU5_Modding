@@ -1,0 +1,16 @@
+﻿l_polish:
+
+ proximity_from_trade_hubs_proximity_source_workaround_tt:0 "Dodaje bazowe źródło [proximity|e] w lokalizacji, które nie rośnie wraz z poziomami budynku."
+ royal_intendancy:0 "Intendentura Królewska"
+ royal_intendancy_desc:0 "$royal_intendancy$ reprezentuje obecność Korony w centrum handlowym, dbając o wykonywanie jej dekretów. Stąd urzędnicy prowadzą rachunki i rozszerzają królewską władzę na okoliczne ziemie."
+
+ merchant_council:0 "Rada Kupiecka"
+ merchant_council_desc:0 "$merchant_council$ to organ mieszczan odpowiedzialny za porządek handlu w centrum handlowym. Wiąże okoliczne miasta swoimi zasadami."
+
+ ecclesiastical_intendancy:0 "Intendentura Kościelna"
+ ecclesiastical_intendancy_desc:0 "$ecclesiastical_intendancy$ to urząd duchowny, który prowadzi zapisy i nadzoruje sprawy Kościoła w centrum handlowym. Jego korespondencja i rejestry pomagają nieść wpływy duchowe i świeckie na sąsiednie ziemie."
+
+ chinese_intendancy:0 "Intendentura Chińska"
+ chinese_intendancy_desc:0 "$chinese_intendancy$ to urząd administracji w centrum handlowym, odpowiedzialny za rejestry, dochody i edykty. Organizując swoją pracę, rozszerza porządek państwowy na okoliczne ziemie."
+
+ proximity_hub_admin_maintenance:0 "Zaopatrzenie administracji"

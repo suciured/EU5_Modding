@@ -1,0 +1,17 @@
+﻿l_english:
+
+ proximity_from_trade_hubs_proximity_source_workaround_tt: "Adds a base [proximity|e] source in a location, which doesn't increase with building levels."
+
+ royal_intendancy: "Royal Intendancy"
+ royal_intendancy_desc: "The $royal_intendancy$ represents the Crown's presence in the market center, ensuring its decrees are carried out. From here officials keep accounts and extend royal authority into the surrounding lands."
+
+ merchant_council: "Merchant Council"
+ merchant_council_desc: "The $merchant_council$ is a body of burghers tasked with the order of trade in the market center. It binds the surrounding towns to its rules."
+
+ ecclesiastical_intendancy: "Ecclesiastical Intendancy"
+ ecclesiastical_intendancy_desc: "The $ecclesiastical_intendancy$ is a clerical office that keeps records and oversees the Church's affairs in the market center. Its correspondence and registers help carry spiritual and temporal influence into neighboring lands."
+
+ chinese_intendancy: "Chinese Intendancy"
+ chinese_intendancy_desc: "The $chinese_intendancy$ is an office of administration in the market center, charged with registers, revenues, and edicts. By organizing its work, it extends state order into the surrounding lands."
+
+ proximity_hub_admin_maintenance: "Administration Supplies"

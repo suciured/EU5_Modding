@@ -1,0 +1,2742 @@
+ccc_copy_country_color = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 0 }
+	}
+
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = target_country
+		name = "ccc_copy_country_color_select_country"
+		none_available_msg_key = "ccc_copy_country_color_no_countries"
+		column = { data = name }
+		visible = { always = yes }
+		enabled = { always = yes }
+		
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+					limit = { NOT = { has_variable = ccc_saved_original } }
+					if = {
+						limit = { exists = c:CCB }
+						c:CCB = { copy_country_color = scope:actor }
+						set_variable = { name = ccc_saved_original value = yes }
+					}
+				}
+
+				if = {
+					limit = { exists = scope:target_country }
+					copy_country_color = scope:target_country
+					refresh_map_colors = yes
+				}
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+
+ccc_restore_original_color = {
+	type = situation
+
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 0 }
+	}
+
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = ccc_restore_original_color_no_buffer
+			exists = c:CCB
+		}
+		custom_tooltip = {
+			text = ccc_restore_original_color_no_saved
+			scope:actor = { has_variable = ccc_saved_original }
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				# extra safety – only touch CCB if it exists
+				if = {
+					limit = { exists = c:CCB }
+					copy_country_color = c:CCB
+					refresh_map_colors = yes
+				}
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_current_as_original = {
+	type = situation
+
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 0 }
+	}
+
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = ccc_set_current_as_original_not_available
+			exists = c:CCB
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = { 
+					limit = { exists = c:CCB }
+					c:CCB = { copy_country_color = scope:actor }
+					set_variable = { name = ccc_saved_original value = yes }
+				}
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+
+
+ccc_page_tools = {
+	type = situation
+	potential = { always = yes }
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				set_variable = { name = ccc_color_page value = 0 }
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+
+ccc_set_color_red = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 1 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_red
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_crimson = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 1 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_crimson
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_ruby = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 1 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_ruby
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_maroon = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 1 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_maroon
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_burgundy = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 1 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_burgundy
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_coral = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 1 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_coral
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_salmon = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 1 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_salmon
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_blue = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 2 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_blue
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_navy = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 2 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_navy
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_royal_blue = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 2 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_royal_blue
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_cerulean = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 2 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_cerulean
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_sky_blue = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 2 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_sky_blue
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_azure = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 2 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_azure
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_periwinkle = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 2 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_periwinkle
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_green = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 3 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_green
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_forest_green = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 3 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_forest_green
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_emerald = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 3 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_emerald
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_olive = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 3 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_olive
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_mint = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 3 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_mint
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_seafoam = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 3 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_seafoam
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_midnight_green = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 3 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_midnight_green
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_yellow = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 4 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_yellow
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_gold = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 4 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_gold
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_amber = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 4 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_amber
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_lemon = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 4 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_lemon
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_sand = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 4 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_sand
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_wheat = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 4 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_wheat
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_mustard = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 4 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_mustard
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_orange = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 5 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_orange
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_tangerine = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 5 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_tangerine
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_peach = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 5 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_peach
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_apricot = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 5 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_apricot
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_burnt_orange = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 5 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_burnt_orange
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_terracotta = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 5 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_terracotta
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_copper = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 5 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_copper
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_purple = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 6 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_purple
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_indigo = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 6 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_indigo
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_violet = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 6 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_violet
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_lavender = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 6 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_lavender
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_lilac = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 6 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_lilac
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_plum = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 6 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_plum
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_magenta = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 6 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_magenta
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_black = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 7 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_black
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_charcoal = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 7 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_charcoal
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_gunmetal = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 7 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_gunmetal
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_graphite = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 7 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_graphite
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_slate = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 7 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_slate
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_ink = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 7 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_ink
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_obsidian = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 7 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_obsidian
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_white = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 8 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_white
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_snow = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 8 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_snow
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_pearl = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 8 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_pearl
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_eggshell = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 8 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_eggshell
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_ivory = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 8 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_ivory
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_linen = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 8 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_linen
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_parchment = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 8 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_parchment
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_set_color_custom = {
+	type = situation
+	potential = {
+		always = yes
+		scope:actor = { var:ccc_color_page = 8 }
+	}
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				if = {
+								limit = { NOT = { has_variable = ccc_saved_original } }
+								if = {
+									limit = { exists = c:CCB }
+									c:CCB = { copy_country_color = scope:actor }
+									set_variable = { name = ccc_saved_original value = yes }
+								}
+							}
+				change_country_color = ccc_custom
+				refresh_map_colors = yes
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+
+ccc_page_red = {
+	type = situation
+	potential = { always = yes }
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				set_variable = { name = ccc_color_page value = 1 }
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_page_blue = {
+	type = situation
+	potential = { always = yes }
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				set_variable = { name = ccc_color_page value = 2 }
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_page_green = {
+	type = situation
+	potential = { always = yes }
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				set_variable = { name = ccc_color_page value = 3 }
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_page_yellow = {
+	type = situation
+	potential = { always = yes }
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				set_variable = { name = ccc_color_page value = 4 }
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_page_orange = {
+	type = situation
+	potential = { always = yes }
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				set_variable = { name = ccc_color_page value = 5 }
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_page_purple = {
+	type = situation
+	potential = { always = yes }
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				set_variable = { name = ccc_color_page value = 6 }
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_page_black = {
+	type = situation
+	potential = { always = yes }
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				set_variable = { name = ccc_color_page value = 7 }
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}
+
+ccc_page_white = {
+	type = situation
+	potential = { always = yes }
+	show_message = no
+	show_message_to_target = no
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = { situation:ccc_country_color = this situation_is_active = yes }
+	}
+
+	allow = { always = yes }
+
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				set_variable = { name = ccc_color_page value = 8 }
+			}
+		}
+	}
+
+	ai_tick = never
+	automation_tick = never
+	ai_will_do = { base = 0 }
+}

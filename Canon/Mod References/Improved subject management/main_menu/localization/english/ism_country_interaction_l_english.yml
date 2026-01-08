@@ -1,0 +1,72 @@
+﻿l_english:
+ # Note to translators: The `#E #!` and `#F #!` prefixes are just used to order the interactions in the list.
+ # Options
+ select_country_to_transfer_land_from: "Select the [country|e] you want to transfer land from:"
+ select_country_to_transfer_land_to: "Select the [country|e] you want to transfer land to:"
+ select_transfer_mode: "Select Transfer Mode"
+
+ # Generic Land Transfer
+ transfer_location_from_subject_select_title: "Select a location to transfer from our subject."
+ transfer_province_from_subject_select_title: "Select a province to transfer from our subject."
+ transfer_area_from_subject_select_title: "Select an area to transfer from our subject."
+ transfer_region_from_subject_select_title: "Select a region to transfer from our subject."
+
+ transfer_location_to_subject_select_title: "Select a location to transfer to our subject."
+ transfer_province_to_subject_select_title: "Select a province to transfer to our subject."
+ transfer_area_to_subject_select_title: "Select an area to transfer to our subject."
+ transfer_region_to_subject_select_title: "Select a region to transfer to our subject."
+
+ select_location_to_transfer: "Select a location to transfer."
+ select_province_to_transfer: "Select a province to transfer."
+ select_area_to_transfer: "Select an area to transfer."
+ select_region_to_transfer: "Select a region to transfer."
+
+ select_a_location_to_move_capital: "Click to select a [location|e] that we should move our subject's capital to."
+
+ # Transfer Land to Subject
+ transfer_land_to_subject: "#E #!Transfer Land To"
+ transfer_land_to_subject_desc: "We will transfer land to our subject."
+ transfer_land_to_subject_act: "Transfer Land to [SCOPE.sCountry('recipient').GetName]"
+ transfer_land_to_subject_effect_text: "[SCOPE.sCountry('actor').GetName] will transfer land to [SCOPE.sCountry('recipient').GetName]"
+ transfer_land_to_subject_effect_text_past: "[SCOPE.sCountry('actor').GetName] transferred land to [SCOPE.sCountry('recipient').GetName]"
+ PROPOSE_transfer_land_to_subject: "Transfer land to $RECIPIENT$?\n$INFO$."
+
+ # Transfer Land from Subject
+ transfer_land_from_subject: "#E #!Transfer Land From"
+ transfer_land_from_subject_desc: "We will transfer land from our subject."
+ transfer_land_from_subject_act: "Transfer Land from [SCOPE.sCountry('recipient').GetName]"
+ transfer_land_from_subject_effect_text: "[SCOPE.sCountry('actor').GetName] will transfer land from [SCOPE.sCountry('recipient').GetName]"
+ transfer_land_from_subject_effect_text_past: "[SCOPE.sCountry('actor').GetName] transferred land from [SCOPE.sCountry('recipient').GetName]"
+ PROPOSE_transfer_land_from_subject: "Transfer land from $RECIPIENT$?\n$INFO$."
+
+ # Move Subject Capital
+ move_subject_capital: "#F #!Move Capital"
+ move_subject_capital_desc: "We will move our subject's capital to a new [location|e]."
+ move_subject_capital_act: "Move Capital to [SCOPE.sCountry('target').GetName]"
+ move_subject_capital_effect_text: "Move [SCOPE.sCountry('target').GetName] capital to a new [location|e]."
+ move_subject_capital_effect_text_past: "Moved [SCOPE.sCountry('target').GetName] capital to a new [location|e]."
+ PROPOSE_move_subject_capital: "Move subject's capital to $TARGET$?\n$INFO$."
+
+ # Change Subject Liturgical Language
+ change_subject_liturgical_language: "Change Liturgical Language"
+ change_subject_liturgical_language_desc: "We will demand that they adopt our [liturgical_language|e]!"
+ change_subject_liturgical_language_act: "Change Liturgical Language in [SCOPE.sCountry('recipient').GetName]"
+ change_subject_liturgical_language_effect_text: "[SCOPE.sCountry('actor').GetName] change the [liturgical_language|e] in [SCOPE.sCountry('recipient').GetName]"
+ change_subject_liturgical_language_effect_text_past: "[SCOPE.sCountry('actor').GetName] changed the [liturgical_language|e] in [SCOPE.sCountry('recipient').GetName]"
+ PROPOSE_change_subject_liturgical_language: "Change [liturgical_language|e] in $RECIPIENT$?\n$INFO$."
+
+ # Block subject colonization
+ block_subject_colonization: "Block Colonization"
+ block_subject_colonization_desc: "We will prevent our colonial nation from creating new [colonial_charters|e]."
+ block_subject_colonization_act: "Blocks Colonization"
+ block_subject_colonization_effect_text: "[SCOPE.sCountry('actor').GetName] blocks the colonization of [SCOPE.sCountry('recipient').GetName]"
+ block_subject_colonization_effect_text_past: "[SCOPE.sCountry('actor').GetName] is now blocking the colonization of [SCOPE.sCountry('recipient').GetName]"
+ PROPOSE_block_subject_colonization: "Block Colonization of $TARGET$?"
+
+ # Allow subject colonization
+ allow_subject_colonization: "Allow Colonization"
+ allow_subject_colonization_desc: "We will allow our colonial nation to create new [colonial_charters|e]."
+ allow_subject_colonization_act: "Allows Colonization"
+ allow_subject_colonization_effect_text: "[SCOPE.sCountry('actor').GetName] allows the colonization of [SCOPE.sCountry('recipient').GetName]"
+ allow_subject_colonization_effect_text_past: "[SCOPE.sCountry('actor').GetName] is no longer blocking the colonization of [SCOPE.sCountry('recipient').GetName]"
+ PROPOSE_allow_subject_colonization: "Allow Colonization of $TARGET$?"

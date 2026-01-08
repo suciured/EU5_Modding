@@ -1,0 +1,27 @@
+﻿proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier = {
+	game_data = {
+		category = location
+	}
+	local_proximity_source = 30
+}
+
+proximity_from_trade_hubs_merchant_council_proximity_source_modifier = {
+	game_data = {
+		category = location
+	}
+	local_proximity_source = 30
+}
+
+proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier = {
+	game_data = {
+		category = location
+	}
+	local_proximity_source = 30
+}
+
+proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier = {
+	game_data = {
+		category = location
+	}
+	local_proximity_source = 30
+}

@@ -1,0 +1,16 @@
+﻿l_simp_chinese:
+
+ proximity_from_trade_hubs_proximity_source_workaround_tt:0 "在一处地点添加基础[proximity|e]来源，该来源不会随建筑等级提升而增加。"
+ royal_intendancy:0 "王室总督署"
+ royal_intendancy_desc:0 "$royal_intendancy$代表王权在市场中心的在场，确保诏令得以施行。官员在此理清账目，并将王室权威延伸至周边土地。"
+
+ merchant_council:0 "商人议会"
+ merchant_council_desc:0 "$merchant_council$由市民阶层组成，负责维持市场中心的贸易秩序，并以其规章约束周边城镇。"
+
+ ecclesiastical_intendancy:0 "教会总督署"
+ ecclesiastical_intendancy_desc:0 "$ecclesiastical_intendancy$是设于市场中心的教会机构，负责保管文书并监督教务。其往来文书与簿册将精神与世俗影响带往邻近土地。"
+
+ chinese_intendancy:0 "华夏官署"
+ chinese_intendancy_desc:0 "$chinese_intendancy$是设于市场中心的行政官署，掌管簿册、税收与诏令。通过整饬政务，它将国家秩序延伸至周边土地。"
+
+ proximity_hub_admin_maintenance:0 "行政补给"

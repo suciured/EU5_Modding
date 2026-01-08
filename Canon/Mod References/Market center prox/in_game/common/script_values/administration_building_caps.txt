@@ -1,0 +1,52 @@
+﻿administration_max_level = {
+	add = {
+		desc = "BUILDING_LEVEL_BASE"
+		value = 1
+	}
+
+	if = {
+		limit = {
+			owner = { current_age_or_later = { age = age_2_renaissance } }
+		}
+		add = {
+			desc = "BUILDING_LEVEL_FROM_OWNER_MODIFIERS"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			owner = { current_age_or_later = { age = age_3_discovery } }
+		}
+		add = {
+			desc = "BUILDING_LEVEL_FROM_OWNER_MODIFIERS"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			owner = { current_age_or_later = { age = age_4_reformation } }
+		}
+		add = {
+			desc = "BUILDING_LEVEL_FROM_OWNER_MODIFIERS"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			owner = { current_age_or_later = { age = age_5_absolutism } }
+		}
+		add = {
+			desc = "BUILDING_LEVEL_FROM_OWNER_MODIFIERS"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			owner = { current_age_or_later = { age = age_6_revolutions } }
+		}
+		add = {
+			desc = "BUILDING_LEVEL_FROM_OWNER_MODIFIERS"
+			value = 1
+		}
+	}
+}

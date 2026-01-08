@@ -1,0 +1,165 @@
+﻿namespace = provincial_capital
+
+# Triggered on_new_age - grants the appropriate Provincial Capital advance
+provincial_capital.1 = {
+	type = country_event
+
+	hidden = yes
+	
+	title = provincial_capital.1.t
+	desc = provincial_capital.1.desc
+	
+	trigger = {
+		OR = {
+			government_type = government_type:monarchy
+			government_type = government_type:theocracy
+			government_type = government_type:republic
+		}
+	}
+	
+	immediate = {
+		# Set flag so the yearly pulse doesn't run unnecessarily
+		set_country_flag = provincial_capital_initialized
+		
+		# Age of Traditions - grant tier 1
+		if = {
+			limit = {
+				current_age = age_1_traditions
+				NOT = { has_advance = provincial_capital_1_advance }
+			}
+			research_advance = advance_type:provincial_capital_1_advance
+			custom_tooltip = provincial_capital_unlocked_1_tt
+		}
+		# Age of Renaissance - grant tier 2
+		if = {
+			limit = {
+				current_age = age_2_renaissance
+				NOT = { has_advance = provincial_capital_2_advance }
+			}
+			research_advance = advance_type:provincial_capital_2_advance
+			custom_tooltip = provincial_capital_unlocked_2_tt
+		}
+		# Age of Discovery - grant tier 3
+		if = {
+			limit = {
+				current_age = age_3_discovery
+				NOT = { has_advance = provincial_capital_3_advance }
+			}
+			research_advance = advance_type:provincial_capital_3_advance
+			custom_tooltip = provincial_capital_unlocked_3_tt
+		}
+		# Age of Reformation - grant tier 4
+		if = {
+			limit = {
+				current_age = age_4_reformation
+				NOT = { has_advance = provincial_capital_4_advance }
+			}
+			research_advance = advance_type:provincial_capital_4_advance
+			custom_tooltip = provincial_capital_unlocked_4_tt
+		}
+		# Age of Absolutism - grant tier 5
+		if = {
+			limit = {
+				current_age = age_5_absolutism
+				NOT = { has_advance = provincial_capital_5_advance }
+			}
+			research_advance = advance_type:provincial_capital_5_advance
+			custom_tooltip = provincial_capital_unlocked_5_tt
+		}
+		# Age of Revolutions - grant tier 6
+		if = {
+			limit = {
+				current_age = age_6_revolutions
+				NOT = { has_advance = provincial_capital_6_advance }
+			}
+			research_advance = advance_type:provincial_capital_6_advance
+			custom_tooltip = provincial_capital_unlocked_6_tt
+		}
+	}
+	
+	option = {
+		name = provincial_capital.1.ok
+	}
+}
+
+# Triggered on monthly_country_pulse - for mid-game mod additions
+# This ensures the mod works when added to existing saves (within 1 month)
+provincial_capital.2 = {
+	type = country_event
+
+	hidden = yes
+	
+	# Only trigger once per country - check if they don't have the flag yet
+	trigger = {
+		OR = {
+			government_type = government_type:monarchy
+			government_type = government_type:theocracy
+			government_type = government_type:republic
+		}
+		NOT = { has_country_flag = provincial_capital_initialized }
+	}
+	
+	immediate = {
+		# Set flag so this only runs once
+		set_country_flag = provincial_capital_initialized
+		
+		# Age of Traditions - grant tier 1
+		if = {
+			limit = {
+				current_age = age_1_traditions
+				NOT = { has_advance = provincial_capital_1_advance }
+			}
+			research_advance = advance_type:provincial_capital_1_advance
+			custom_tooltip = provincial_capital_unlocked_1_tt
+		}
+		# Age of Renaissance - grant tier 2
+		if = {
+			limit = {
+				current_age = age_2_renaissance
+				NOT = { has_advance = provincial_capital_2_advance }
+			}
+			research_advance = advance_type:provincial_capital_2_advance
+			custom_tooltip = provincial_capital_unlocked_2_tt
+		}
+		# Age of Discovery - grant tier 3
+		if = {
+			limit = {
+				current_age = age_3_discovery
+				NOT = { has_advance = provincial_capital_3_advance }
+			}
+			research_advance = advance_type:provincial_capital_3_advance
+			custom_tooltip = provincial_capital_unlocked_3_tt
+		}
+		# Age of Reformation - grant tier 4
+		if = {
+			limit = {
+				current_age = age_4_reformation
+				NOT = { has_advance = provincial_capital_4_advance }
+			}
+			research_advance = advance_type:provincial_capital_4_advance
+			custom_tooltip = provincial_capital_unlocked_4_tt
+		}
+		# Age of Absolutism - grant tier 5
+		if = {
+			limit = {
+				current_age = age_5_absolutism
+				NOT = { has_advance = provincial_capital_5_advance }
+			}
+			research_advance = advance_type:provincial_capital_5_advance
+			custom_tooltip = provincial_capital_unlocked_5_tt
+		}
+		# Age of Revolutions - grant tier 6
+		if = {
+			limit = {
+				current_age = age_6_revolutions
+				NOT = { has_advance = provincial_capital_6_advance }
+			}
+			research_advance = advance_type:provincial_capital_6_advance
+			custom_tooltip = provincial_capital_unlocked_6_tt
+		}
+	}
+	
+	option = {
+		name = provincial_capital.1.ok
+	}
+}

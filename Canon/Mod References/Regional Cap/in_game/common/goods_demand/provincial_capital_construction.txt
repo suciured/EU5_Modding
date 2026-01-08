@@ -1,0 +1,88 @@
+﻿# Provincial Capital Construction Demands
+# Scaling costs for each tier
+# Tier 1: ~500 | Tier 2: ~1000 | Tier 3: ~2000 | Tier 4: ~4000 | Tier 5: ~8000 | Tier 6: ~16000
+
+# =============================================================================
+# TIER 1: Provincial Seat (~500 gold)
+# =============================================================================
+provincial_capital_construction_1 = {
+	paper = 1
+	stone = 2
+	lumber = 2
+	
+	category = building_construction
+}
+
+# =============================================================================
+# TIER 2: Provincial Administration (~1000 gold)
+# =============================================================================
+provincial_capital_construction_2 = {
+	paper = 1
+	books = 1
+	stone = 2
+	marble = 1
+	silver = 1
+	lumber = 4
+	
+	category = building_construction
+}
+
+# =============================================================================
+# TIER 3: Provincial Government (~2000 gold)
+# =============================================================================
+provincial_capital_construction_3 = {
+	paper = 2
+	books = 2
+	stone = 4
+	marble = 1
+	silver = 1
+	goods_gold = 1
+	lumber = 5
+
+	category = building_construction
+}
+
+# =============================================================================
+# TIER 4: Provincial Palace (~4000 gold)
+# =============================================================================
+provincial_capital_construction_4 = {
+	paper = 2
+	books = 2
+	stone = 4
+	marble = 2
+	silver = 1
+	goods_gold = 2
+	lumber = 10
+	
+	category = building_construction
+}
+
+# =============================================================================
+# TIER 5: Grand Provincial Estate (~8000 gold)
+# =============================================================================
+provincial_capital_construction_5 = {
+	paper = 4
+	books = 4
+	stone = 4
+	marble = 2
+	silver = 2
+	goods_gold = 2
+	lumber = 12
+	
+	category = building_construction
+}
+
+# =============================================================================
+# TIER 6: Imperial Provincial Capital (~16000 gold)
+# =============================================================================
+provincial_capital_construction_6 = {
+	paper = 6
+	books = 6
+	stone = 4
+	marble = 4
+	silver = 2
+	goods_gold = 3
+	lumber = 15
+
+	category = building_construction
+}

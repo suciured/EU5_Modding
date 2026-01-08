@@ -1,0 +1,11 @@
+{
+	"name":	"Provincial Capital",
+	"id":	"provincial.capital",
+	"version":	"1.0",
+	"supported_game_version":	"1.*",
+	"short_description":	"Local capitals for proximity sources",
+	"tags":	["Gameplay", "Government and Estates"],
+	"relationships":	[],
+	"game_custom_data":	{
+}
+}

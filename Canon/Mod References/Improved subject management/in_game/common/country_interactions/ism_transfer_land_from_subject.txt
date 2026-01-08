@@ -1,0 +1,184 @@
+﻿transfer_land_from_subject = {
+    type = subject
+    category = CATEGORY_SUBJECT_ACTIONS
+    ai_tick = never
+    use_enroute = no
+
+    select_trigger = {
+        allow_self = yes
+        looking_for_a = country
+        # this is actually the giver, but must be named recipient due to game limitations
+        target_flag = recipient
+        name = select_country_to_transfer_land_from
+
+        interaction_source_list = {
+            scope:actor = {
+                every_subject_or_below = { add_to_list = source }
+                add_to_list = source
+            }
+        }
+
+        column = { data = name }
+
+        visible = {
+            # Is a land owning country
+            NOR = {
+                country_type = building
+                country_type = pop
+            }
+        }
+        enabled = {
+            # subject is loyal
+            OR = {
+                # To prevent error log spam
+                is_subject = no
+                AND = {
+                    subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
+                    liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
+                }
+            }
+        }
+    }
+
+    select_trigger = {
+        allow_self = yes
+        looking_for_a = country
+        target_flag = real_receiver
+        name = select_country_to_transfer_land_to
+        interaction_source_list = {
+            scope:actor = {
+                every_subject_or_below = { add_to_list = source }
+                add_to_list = source
+            }
+        }
+        show_if = {
+            exists = scope:recipient
+        }
+        column = { data = name }
+
+        visible = {
+            can_transfer_land = {
+                giver = scope:recipient
+                receiver = ROOT
+            }
+        }
+        enabled = {
+            allow_transfer_land = {
+                giver = scope:recipient
+                receiver = ROOT
+            }
+        }
+    }
+
+    select_trigger = {
+        looking_for_a = situation
+        target_flag = transfer_mode
+        name = select_transfer_mode
+
+        interaction_source_list = {
+            situation:ism_transfer_mode_region   = { add_to_list = source }
+            situation:ism_transfer_mode_area     = { add_to_list = source }
+            situation:ism_transfer_mode_province = { add_to_list = source }
+            situation:ism_transfer_mode_location = { add_to_list = source }
+        }
+
+        column = { data = name }
+    }
+
+    select_trigger = {
+        looking_for_a = location
+        source = recipient
+        target_flag = target_location
+        source_flags = only_actual_locations
+        name = "transfer_location_from_subject_select_title"
+        none_available_msg_key = "no_valid_locations"
+
+        show_if = {
+            exists = scope:transfer_mode
+            scope:transfer_mode = situation:ism_transfer_mode_location
+        }
+
+        column = { data = name }
+        column = { data = population }
+
+        visible = {
+            can_transfer_location = {
+                giver = scope:recipient
+                receiver = scope:real_receiver
+            }
+        }
+    }
+
+    select_trigger = {
+        looking_for_a = province
+        source = recipient
+        target_flag = target_province
+        name = "transfer_province_from_subject_select_title"
+        none_available_msg_key = "no_valid_locations"
+
+        show_if = {
+            exists = scope:transfer_mode
+            scope:transfer_mode = situation:ism_transfer_mode_province
+        }
+        column = { data = name }
+        column = { data = population }
+
+        visible = {
+            can_transfer_province = {
+                giver = scope:recipient
+                receiver = scope:real_receiver
+            }
+        }
+    }
+
+    select_trigger = {
+        looking_for_a = area
+        source = recipient
+        target_flag = target_area
+        name = "transfer_area_from_subject_select_title"
+        none_available_msg_key = "no_valid_areas"
+
+        show_if = {
+            exists = scope:transfer_mode
+            scope:transfer_mode = situation:ism_transfer_mode_area
+        }
+        column = { data = name }
+        column = { data = population }
+
+        visible = {
+            can_transfer_area = {
+                giver = scope:recipient
+                receiver = scope:real_receiver
+            }
+        }
+    }
+
+    select_trigger = {
+        looking_for_a = region
+        source = recipient
+        target_flag = target_region
+        name = "transfer_region_from_subject_select_title"
+        none_available_msg_key = "no_valid_regions"
+
+        show_if = {
+            exists = scope:transfer_mode
+            scope:transfer_mode = situation:ism_transfer_mode_region
+        }
+        column = { data = name }
+        column = { data = population }
+
+        visible = {
+            can_transfer_region = {
+                giver = scope:recipient
+                receiver = scope:real_receiver
+            }
+        }
+    }
+
+    effect = {
+        ism_perform_land_transfer = {
+            giver = scope:recipient
+            receiver = scope:real_receiver
+        }
+    }
+}

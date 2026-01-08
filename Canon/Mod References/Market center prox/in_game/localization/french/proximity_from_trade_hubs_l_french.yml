@@ -1,0 +1,16 @@
+﻿l_french:
+
+ proximity_from_trade_hubs_proximity_source_workaround_tt: "Ajoute une source de [proximity|e] de base dans un lieu, qui n'augmente pas avec les niveaux du bâtiment."
+ royal_intendancy: "Intendance royale"
+ royal_intendancy_desc: "L'$royal_intendancy$ représente la présence de la Couronne au centre du marché, garantissant l'application de ses édits. Depuis ce lieu, des officiers tiennent les comptes et étendent l'autorité royale aux terres voisines."
+
+ merchant_council: "Conseil des marchands"
+ merchant_council_desc: "Le $merchant_council$ est un corps de bourgeois chargé de régir le commerce au centre du marché. Il lie les villes alentour à ses règles."
+
+ ecclesiastical_intendancy: "Intendance ecclésiastique"
+ ecclesiastical_intendancy_desc: "L'$ecclesiastical_intendancy$ est un office clérical qui tient les registres et supervise les affaires de l'Église au centre du marché. Sa correspondance et ses archives étendent l'influence spirituelle et temporelle aux terres voisines."
+
+ chinese_intendancy: "Intendance chinoise"
+ chinese_intendancy_desc: "L'$chinese_intendancy$ est un office administratif au centre du marché, chargé des registres, des revenus et des édits. En organisant son travail, il étend l'ordre de l'État aux terres voisines."
+
+ proximity_hub_admin_maintenance: "Approvisionnements administratifs"

@@ -1,0 +1,96 @@
+﻿# Only for AI
+
+four_yearly_country_pulse = {
+	on_actions = {
+		proximity_trade_hubs_ai_on_action
+	}
+}
+
+proximity_trade_hubs_ai_on_action = {
+	trigger = {
+		is_ai = yes
+		country_tax_base > 150
+		gold > 500
+		any_owned_location = {
+			is_market_center = yes
+			is_capital = no
+			OR = {
+				can_build_building = building_type:royal_intendancy
+				can_build_building = building_type:merchant_council
+				can_build_building = building_type:ecclesiastical_intendancy
+				can_build_building = building_type:chinese_intendancy
+			}
+			OR = {
+				AND = {
+					proximity < 50
+					NOT = {
+						OR = {
+							has_building = building_type:royal_intendancy
+							has_building = building_type:merchant_council
+							has_building = building_type:ecclesiastical_intendancy
+							has_building = building_type:chinese_intendancy
+						}
+					}
+				}
+				OR = {
+					has_building = building_type:royal_intendancy
+					has_building = building_type:merchant_council
+					has_building = building_type:ecclesiastical_intendancy
+					has_building = building_type:chinese_intendancy
+				}
+			}
+			
+		}
+	}
+
+	effect = {
+		random_owned_location = {
+			limit = {
+				is_market_center = yes
+				is_capital = no
+				OR = {
+					AND = {
+						proximity < 50
+						NOT = {
+							OR = {
+								has_building = building_type:royal_intendancy
+								has_building = building_type:merchant_council
+								has_building = building_type:ecclesiastical_intendancy
+								has_building = building_type:chinese_intendancy
+							}
+						}
+					}
+					OR = {
+						has_building = building_type:royal_intendancy
+						has_building = building_type:merchant_council
+						has_building = building_type:ecclesiastical_intendancy
+						has_building = building_type:chinese_intendancy
+					}
+				}
+				OR = {
+					can_build_building = building_type:royal_intendancy
+					can_build_building = building_type:merchant_council
+					can_build_building = building_type:ecclesiastical_intendancy
+					can_build_building = building_type:chinese_intendancy
+				}
+			}
+
+			if = {
+				limit = { can_build_building = building_type:royal_intendancy }
+				construct_building = { building_type = building_type:royal_intendancy }
+			}
+			else_if = {
+				limit = { can_build_building = building_type:merchant_council }
+				construct_building = { building_type = building_type:merchant_council }
+			}
+			else_if = {
+				limit = { can_build_building = building_type:ecclesiastical_intendancy }
+				construct_building = { building_type = building_type:ecclesiastical_intendancy }
+			}
+			else_if = {
+				limit = { can_build_building = building_type:chinese_intendancy }
+				construct_building = { building_type = building_type:chinese_intendancy }
+			}
+		}
+	}
+}

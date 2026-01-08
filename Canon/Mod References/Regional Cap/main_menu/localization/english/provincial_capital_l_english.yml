@@ -1,0 +1,95 @@
+﻿l_english:
+ # Building Tier 1: Bailiff's Court
+ provincial_capital_1: "Bailiff's Court"
+ provincial_capital_1_desc: "A modest judicial and administrative center where the local bailiff holds court, collects taxes, and maintains order on behalf of the crown. The building serves as the foundation of regional governance."
+
+ # Building Tier 2: Castellan's Hall
+ provincial_capital_2: "Castellan's Hall"
+ provincial_capital_2_desc: "An expanded administrative complex overseen by a castellan who manages the region's affairs. Record-keepers maintain detailed accounts while messengers carry correspondence throughout the province."
+
+ # Building Tier 3: Governor's Residence
+ provincial_capital_3: "Governor's Residence"
+ provincial_capital_3_desc: "A well-appointed residence and governmental seat where an appointed governor exercises authority over the surrounding lands. Courts of law, tax offices, and military coordination all operate from this imposing structure."
+
+ # Building Tier 4: Regional Capitol
+ provincial_capital_4: "Regional Capitol"
+ provincial_capital_4_desc: "A grand capitol building that serves as the seat of regional power. Appointed officials rule from these impressive halls, wielding significant authority over the surrounding territories."
+
+ # Building Tier 5: Grand Provincial Estate
+ provincial_capital_5: "Grand Provincial Estate"
+ provincial_capital_5_desc: "A magnificent estate complex rivaling the capital itself in grandeur. The provincial elite gather here to conduct the business of state, extending the sovereign's reach across the realm."
+
+ # Building Tier 6: Imperial Administrative Center
+ provincial_capital_6: "Imperial Administrative Center"
+ provincial_capital_6_desc: "The pinnacle of regional administration - a sprawling governmental complex that represents the full might and sophistication of imperial bureaucracy. From here, entire regions are governed with precision and authority."
+
+ # Construction Demands
+ provincial_capital_construction_1: "Bailiff's Court Construction"
+ provincial_capital_construction_2: "Castellan's Hall Construction"
+ provincial_capital_construction_3: "Governor's Residence Construction"
+ provincial_capital_construction_4: "Regional Capitol Construction"
+ provincial_capital_construction_5: "Grand Provincial Estate Construction"
+ provincial_capital_construction_6: "Imperial Administrative Center Construction"
+
+ # Advances (Tech Tree)
+ provincial_capital_1_advance: "Provincial Administration"
+ provincial_capital_1_advance_desc: "Establishing a formal administrative presence in our provinces allows for better governance and tax collection."
+ provincial_capital_2_advance: "Expanded Provincial Governance"
+ provincial_capital_2_advance_desc: "More sophisticated administrative structures enable greater oversight of provincial affairs."
+ provincial_capital_3_advance: "Provincial Governorships"
+ provincial_capital_3_advance_desc: "Appointed governors bring centralized authority to distant territories."
+ provincial_capital_4_advance: "Regional Capitols"
+ provincial_capital_4_advance_desc: "Grand administrative centers cement our authority over entire regions."
+ provincial_capital_5_advance: "Provincial Estates"
+ provincial_capital_5_advance_desc: "Magnificent estates serve as symbols of power and centers of provincial governance."
+ provincial_capital_6_advance: "Imperial Administration"
+ provincial_capital_6_advance_desc: "The pinnacle of bureaucratic organization extends our reach across the realm."
+
+# Event Localization
+ provincial_capital.1.t: "New Advance Available"
+ provincial_capital.1.desc: "Our administrative capabilities have expanded, allowing us to construct more sophisticated provincial governance structures."
+ provincial_capital.1.ok: "Excellent"
+ 
+ # Custom Tooltips for Unlocked Buildings
+ provincial_capital_unlocked_1_tt: "We can now construct [provincial_capital_1] buildings"
+ provincial_capital_unlocked_2_tt: "We can now construct [provincial_capital_2] buildings"
+ provincial_capital_unlocked_3_tt: "We can now construct [provincial_capital_3] buildings"
+ provincial_capital_unlocked_4_tt: "We can now construct [provincial_capital_4] buildings"
+ provincial_capital_unlocked_5_tt: "We can now construct [provincial_capital_5] buildings"
+ provincial_capital_unlocked_6_tt: "We can now construct [provincial_capital_6] buildings"
+
+ # Trigger Tooltips
+ only_one_provincial_capital_per_region_tt: "We do not already have a Provincial Capital in this [region|e]"
+ only_one_provincial_capital_per_market_tt: "We do not already have a Provincial Capital in this [market|e]"
+ only_one_provincial_capital_by_population_tt: "We have not reached our maximum Provincial Capitals based on [population|e]"
+
+ # Production Methods
+ provincial_capital_maintenance: "Provincial Administration"
+ provincial_capital_maintenance_desc: "The administrative apparatus of the provincial capital. Scribes maintain records, officials process correspondence, guards protect the premises, and modest feasts honor visiting dignitaries."
+ 
+ provincial_capital_maintenance_1: "Bailiff's Administration"
+ provincial_capital_maintenance_1_desc: "A modest administrative operation. Scribes maintain basic records, a small guard contingent protects the premises, and occasional receptions host local dignitaries."
+ 
+ provincial_capital_maintenance_2: "Castellan's Administration"
+ provincial_capital_maintenance_2_desc: "An expanded administrative apparatus. More scribes keep detailed records, guards maintain order, and regular gatherings facilitate regional governance."
+ 
+ provincial_capital_maintenance_3: "Governor's Administration"
+ provincial_capital_maintenance_3_desc: "A sophisticated governmental operation. Extensive record-keeping, trained guards, and formal receptions demonstrate the authority of the governor's office."
+ 
+ provincial_capital_maintenance_4: "Regional Administration"
+ provincial_capital_maintenance_4_desc: "A grand administrative system befitting a regional capitol. Numerous scribes manage complex affairs, guards project power, and elaborate ceremonies impress visiting officials."
+ 
+ provincial_capital_maintenance_5: "Provincial Estate Administration"
+ provincial_capital_maintenance_5_desc: "A magnificent bureaucratic apparatus rivaling the capital itself. Extensive staffing maintains the estate's prestige through meticulous records, security, and lavish entertainments."
+ 
+ provincial_capital_maintenance_6: "Imperial Administration"
+ provincial_capital_maintenance_6_desc: "The pinnacle of provincial governance. A vast administrative machine operates with precision, consuming considerable resources to maintain the impressive standards of imperial bureaucracy."
+
+ # Game Rule Localization
+ rule_provincial_capital_restriction: "Provincial Capital Restriction"
+ setting_provincial_capital_by_market: "One per Market"
+ setting_provincial_capital_by_market_desc: "Each country may build one Provincial Capital per market zone. This allows administrative centers to be established in each economic sphere of influence."
+ setting_provincial_capital_by_region: "One per Region"
+ setting_provincial_capital_by_region_desc: "Each country may build one Provincial Capital per geographic region. This creates a more spread-out administrative network."
+ setting_provincial_capital_by_population: "By Population Size"
+ setting_provincial_capital_by_population_desc: "The number of Provincial Capitals a country can build depends on its population. Start with one provincial capital, then gain one additional slot for every 10 million population."

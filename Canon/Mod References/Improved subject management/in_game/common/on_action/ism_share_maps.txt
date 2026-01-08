@@ -1,0 +1,42 @@
+﻿yearly_country_pulse = {
+    on_actions = {
+        ism_share_maps
+    }
+}
+
+ism_share_maps = {
+    trigger = {
+        is_overlord = yes
+        OR = {
+            is_subject = no
+            is_human = yes
+        }
+    }
+    effect = {
+        save_temporary_scope_as = highest_overlord
+        every_area = {
+            save_temporary_scope_as = current_area
+            if = {
+                limit = {
+                    NOT = { scope:highest_overlord = { has_discovered_area = scope:current_area } }
+                    any_neighbor_area = { scope:highest_overlord = { has_discovered_area = prev } }
+                    scope:highest_overlord = { any_subject_or_below = { has_discovered_area = scope:current_area } }
+                }
+                scope:highest_overlord = {
+                    add_to_variable_list = {
+                        name = areas_to_discover
+                        target = scope:current_area
+                    }
+                }
+            }
+        }
+        if = {
+            limit = { has_variable_list = areas_to_discover }
+            every_in_list = {
+                variable = areas_to_discover
+                scope:highest_overlord = { discover_area = prev }
+            }
+            clear_variable_list = areas_to_discover
+        }
+    }
+}

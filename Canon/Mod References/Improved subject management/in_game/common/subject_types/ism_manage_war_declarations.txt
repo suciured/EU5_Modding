@@ -1,0 +1,19 @@
+﻿# Scaffolding for future feature
+# INJECT:vassal = {
+#     allow_declaring_wars = { ism_can_declare_war = yes }
+# }
+# INJECT:fiefdom = {
+#     allow_declaring_wars = { ism_can_declare_war = yes }
+# }
+# INJECT:march = {
+#     allow_declaring_wars = { ism_can_declare_war = yes }
+# }
+# INJECT:colonial_nation = {
+#     allow_declaring_wars = { ism_can_declare_war = yes }
+# }
+# INJECT:trade_company = {
+#     is_colonial_subject = yes
+# }
+# INJECT:dominion = {
+# 	is_colonial_subject = yes
+# }

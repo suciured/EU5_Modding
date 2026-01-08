@@ -1,0 +1,3 @@
+﻿blocked_from_colonization = {
+	positive = "gfx/interface/icons/modifier_types/can_colonize_negative.dds"
+}

@@ -1,0 +1,35 @@
+﻿# Provincial Capital On Actions
+# Hooks into age changes to auto-grant building advances
+
+# on_new_age runs for ALL active countries in country scope
+on_new_age = {
+	events = {
+		provincial_capital.1
+	}
+}
+
+# on_game_start runs once globally, so we need to iterate countries manually
+on_game_start = {
+	effect = {
+		every_country = {
+			limit = {
+				OR = {
+					government_type = government_type:monarchy
+					government_type = government_type:theocracy
+					government_type = government_type:republic
+				}
+			}
+			trigger_event_silently = { id = provincial_capital.1 }
+			set_country_flag = provincial_capital_initialized
+		}
+	}
+}
+
+# monthly_country_pulse for mid-game mod additions
+# This runs in country scope for all active countries every month
+# Will trigger within 1 month when mod is added to existing save
+monthly_country_pulse = {
+	events = {
+		provincial_capital.2
+	}
+}

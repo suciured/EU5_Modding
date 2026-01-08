@@ -1,0 +1,6 @@
+﻿proximity_from_trade_hubs_base_proximity = {
+	decimals = 2
+	game_data = {
+		category = location
+	}
+}

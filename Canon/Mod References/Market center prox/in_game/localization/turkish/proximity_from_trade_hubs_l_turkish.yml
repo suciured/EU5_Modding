@@ -1,0 +1,16 @@
+﻿l_turkish:
+
+ proximity_from_trade_hubs_proximity_source_workaround_tt:0 "Bina seviyeleriyle artmayan, bir konuma temel bir [proximity|e] kaynağı ekler."
+ royal_intendancy:0 "Kraliyet İntendansı"
+ royal_intendancy_desc:0 "$royal_intendancy$, pazar merkezinde Taç'ın varlığını temsil eder ve fermanlarının uygulanmasını sağlar. Buradan görevliler hesapları tutar ve kraliyet otoritesini çevredeki topraklara taşır."
+
+ merchant_council:0 "Tüccar Konseyi"
+ merchant_council_desc:0 "$merchant_council$, pazar merkezindeki ticaret düzeninden sorumlu bir burjuva meclisidir. Çevredeki kasabaları kurallarına bağlar."
+
+ ecclesiastical_intendancy:0 "Ruhban İntendansı"
+ ecclesiastical_intendancy_desc:0 "$ecclesiastical_intendancy$, pazar merkezinde kayıt tutan ve Kilise'nin işlerini denetleyen bir ruhban dairesidir. Yazışmaları ve kayıtları, ruhani ve dünyevi nüfuzu komşu topraklara taşır."
+
+ chinese_intendancy:0 "Çin İntendansı"
+ chinese_intendancy_desc:0 "$chinese_intendancy$, pazar merkezinde sicillerden, gelirlerden ve fermanlardan sorumlu bir idare dairesidir. İşlerini düzenleyerek devlet düzenini çevredeki topraklara yayar."
+
+ proximity_hub_admin_maintenance:0 "İdare Malzemeleri"

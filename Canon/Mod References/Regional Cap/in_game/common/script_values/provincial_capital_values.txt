@@ -1,0 +1,54 @@
+# Script values for Provincial Capital mod
+# These calculate numeric values that can be used in triggers and effects
+
+# Calculates maximum number of provincial capitals allowed based on country rank and population
+# Formula: baseline (0 for county/duchy, 1 for kingdom, 3 for empire) + 1 per 10 million population
+# Usage: root = country scope
+# Returns: numeric value (e.g., 1 at 5M pop, 2 at 15M pop, 3 at 25M pop, etc.)
+provincial_capital_max_allowed = {
+	value = 0
+	
+	# Add baseline based on country rank
+	# County/Duchy: 0 baseline
+	# Kingdom: 1 baseline
+	if = {
+		limit = { country_rank = country_rank:rank_kingdom }
+		add = 1
+	}
+	# Empire: 3 baseline
+	else_if = {
+		limit = { country_rank = country_rank:rank_empire }
+		add = 3
+	}
+	# Add based on population: 1 per 10 million population
+	add = {
+		value = total_population # total population of the country in 10k people (40M people = 40k return value)
+		divide = 10000 # divide by 10k to get the number of 10k people in the country (40k / 10k = 4)
+		floor = yes # floor the value to the nearest integer (4.5 = 4)
+	}
+}
+
+# Counts the current number of provincial capitals owned by a country
+# Usage: root = country scope
+# Returns: numeric value (0-10+)
+provincial_capital_current_count = {
+	value = 0
+	
+	# Add 1 for each location that has any tier of provincial capital
+	every_owned_location = {
+		if = {
+			limit = {
+				OR = {
+					has_building = building_type:provincial_capital_1
+					has_building = building_type:provincial_capital_2
+					has_building = building_type:provincial_capital_3
+					has_building = building_type:provincial_capital_4
+					has_building = building_type:provincial_capital_5
+					has_building = building_type:provincial_capital_6
+				}
+			}
+			add = 1
+		}
+	}
+}
+

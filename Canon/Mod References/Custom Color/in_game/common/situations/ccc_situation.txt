@@ -1,0 +1,19 @@
+ccc_country_color = {
+	monthly_spawn_chance = 1
+	hint_tag = hint_ccc_country_color
+
+	can_start = { always = yes }
+	can_end   = { always = no }
+
+	visible = {
+		has_ruler = yes
+		ruler ?= { has_character_modifier = ccc_color_ui_enabled }
+	}
+
+	map_color = {
+		value = owner.country_color
+	}
+
+
+	on_start = { }
+}

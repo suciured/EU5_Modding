@@ -1,0 +1,16 @@
+﻿l_japanese:
+
+ proximity_from_trade_hubs_proximity_source_workaround_tt: "建物レベルで増加しない、基本の[proximity|e]ソースを地点に追加する。"
+ royal_intendancy: "王室監督官庁"
+ royal_intendancy_desc: "$royal_intendancy$は市場の中心に置かれた王室機関であり、王権の存在を示し、その布告が実行されるよう取り計らう。ここから官吏が会計を管理し、王権を周辺の土地へと広げる。"
+
+ merchant_council: "商人評議会"
+ merchant_council_desc: "$merchant_council$は市場の中心で交易の秩序を担う市民の評議会である。その規則によって周辺の町々を従わせる。"
+
+ ecclesiastical_intendancy: "教会監督官庁"
+ ecclesiastical_intendancy_desc: "$ecclesiastical_intendancy$は市場の中心で記録を管理し、教会の事務を監督する聖職者の役所である。書簡と台帳は霊的・世俗的な影響力を近隣の土地へと運ぶ。"
+
+ chinese_intendancy: "中華監督官庁"
+ chinese_intendancy_desc: "$chinese_intendancy$は市場の中心に置かれ、台帳・歳入・布告を扱う行政の役所である。業務を整えることで、国家の秩序を周辺の土地へと広げる。"
+
+ proximity_hub_admin_maintenance: "行政用品"

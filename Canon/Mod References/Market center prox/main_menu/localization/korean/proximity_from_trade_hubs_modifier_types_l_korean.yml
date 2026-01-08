@@ -1,0 +1,17 @@
+﻿l_korean:
+
+ MODIFIER_TYPE_NAME_proximity_from_trade_hubs_base_proximity:0 "기본 지역 근접도 원천"
+ MODIFIER_TYPE_DESC_proximity_from_trade_hubs_base_proximity:0 "[location|e]에 기본 [proximity|e] 원천을 추가하며, 이는 건물 레벨에 따라 증가하지 않습니다."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier:0 "왕실 행정청"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('royal_intendancy')]이(가) 이 [location|e]에 기본 [proximity|e] 원천을 추가합니다. 이 기본 근접도 원천은 건물 레벨이나 고용의 영향을 받지 않습니다. [ShowBuildingTypeName('royal_intendancy')]을(를) 제거하면 이 효과도 함께 제거됩니다."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_merchant_council_proximity_source_modifier:0 "상인 평의회"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_merchant_council_proximity_source_modifier:0 "[ShowBuildingTypeName('merchant_council')]이(가) 이 [location|e]에 기본 [proximity|e] 원천을 추가합니다. 이 기본 근접도 원천은 건물 레벨이나 고용의 영향을 받지 않습니다. [ShowBuildingTypeName('merchant_council')]을(를) 제거하면 이 효과도 함께 제거됩니다."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier:0 "교회 행정청"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('ecclesiastical_intendancy')]이(가) 이 [location|e]에 기본 [proximity|e] 원천을 추가합니다. 이 기본 근접도 원천은 건물 레벨이나 고용의 영향을 받지 않습니다. [ShowBuildingTypeName('ecclesiastical_intendancy')]을(를) 제거하면 이 효과도 함께 제거됩니다."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier:0 "중화 행정청"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('chinese_intendancy')]이(가) 이 [location|e]에 기본 [proximity|e] 원천을 추가합니다. 이 기본 근접도 원천은 건물 레벨이나 고용의 영향을 받지 않습니다. [ShowBuildingTypeName('chinese_intendancy')]을(를) 제거하면 이 효과도 함께 제거됩니다."
+

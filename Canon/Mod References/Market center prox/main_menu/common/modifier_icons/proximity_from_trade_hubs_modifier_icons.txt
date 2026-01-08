@@ -1,0 +1,3 @@
+﻿proximity_from_trade_hubs_base_proximity = {
+	positive = "gfx/interface/icons/modifier_types/local_proximity_source.dds"
+}

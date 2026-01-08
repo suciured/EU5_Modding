@@ -1,0 +1,78 @@
+colors = {
+
+# BLACK family
+ccc_black          = rgb { 14 14 16 }
+ccc_charcoal       = rgb { 36 36 40 }
+ccc_gunmetal       = rgb { 44 54 60 }
+ccc_graphite       = rgb { 92 92 102 }
+ccc_slate          = hsv360 { 215 18 52 }
+ccc_ink            = hsv360 { 225 45 22 }
+ccc_obsidian       = rgb { 16 18 22 }
+
+# WHITE family
+ccc_white          = rgb { 245 245 245 }
+ccc_snow           = rgb { 206 206 210 } #silver
+ccc_pearl          = rgb { 234 242 250 } 
+ccc_eggshell       = rgb { 248 241 230 }
+ccc_ivory          = rgb { 238 228 205 }
+ccc_linen          = rgb { 224 226 228 }
+ccc_parchment      = rgb { 210 200 178 }  
+
+# CUSTOM COLOR GOES HERE
+ccc_custom         = rgb { 0 0 0 }
+
+# RED family
+ccc_red            = rgb { 205 45 55 }
+ccc_crimson        = rgb { 213 0 39 }
+ccc_ruby           = rgb { 200 15 15 } 
+ccc_maroon         = hsv360 { 4 100 58 } 
+ccc_burgundy       = rgb { 100 30 25 } 
+ccc_coral          = rgb { 255 115 66 } 
+ccc_salmon         = rgb { 255 83 74 }
+
+# BLUE family
+ccc_blue           = rgb { 55 95 205 }
+ccc_navy           = hsv360 { 222 70 35 }
+ccc_royal_blue     = hsv360 { 214 85 70 }
+ccc_cerulean       = hsv360 { 200 75 78 }
+ccc_sky_blue       = hsv360 { 205 45 92 }
+ccc_azure          = hsv360 { 195 60 88 }
+ccc_periwinkle     = hsv360 { 235 25 92 }
+
+# GREEN family
+ccc_green          = rgb { 55 165 95 }
+ccc_forest_green   = hsv360 { 125 70 38 }
+ccc_emerald        = hsv360 { 145 75 62 }
+ccc_olive          = hsv360 { 70  55 55 }
+ccc_mint           = hsv360 { 135 28 94 }
+ccc_seafoam        = hsv360 { 165 35 88 }
+ccc_midnight_green = hsv360 { 175 55 30 }
+
+# PURPLE family
+ccc_purple         = rgb { 140 75 200 }
+ccc_indigo         = hsv360 { 255 75 40 }
+ccc_violet         = hsv360 { 275 70 80 }
+ccc_lavender       = hsv360 { 255 20 94 }
+ccc_lilac          = hsv360 { 300 22 90 }
+ccc_plum           = hsv360 { 315 55 45 }
+ccc_magenta        = hsv360 { 320 75 78 }
+
+# YELLOW family
+ccc_yellow         = rgb { 232 202 70 }
+ccc_gold           = hsv360 { 46  85 78 }
+ccc_amber          = hsv360 { 38  90 90 }
+ccc_lemon          = hsv360 { 58  55 96 }
+ccc_sand           = rgb { 255  191 146 }
+ccc_wheat          = rgb { 228 208 10 }
+ccc_mustard        = hsv360 { 50  65 62 }
+
+# ORANGE family
+ccc_orange         = rgb { 238 120 40 }
+ccc_tangerine      = hsv360 { 28  90 92 }
+ccc_peach          = rgb { 255  85 74 }
+ccc_apricot        = rgb { 255  120 89 }
+ccc_burnt_orange   = hsv360 { 20  85 60 }
+ccc_terracotta     = hsv360 { 14  70 58 }
+ccc_copper         = hsv360 { 22  60 48 }
+
+}

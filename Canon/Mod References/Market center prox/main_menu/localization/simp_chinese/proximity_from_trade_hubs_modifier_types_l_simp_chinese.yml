@@ -1,0 +1,15 @@
+﻿l_simp_chinese:
+ MODIFIER_TYPE_NAME_proximity_from_trade_hubs_base_proximity:0 "基础本地接近度来源"
+ MODIFIER_TYPE_DESC_proximity_from_trade_hubs_base_proximity:0 "在一处[location|e]中添加基础[proximity|e]来源，该来源不会随建筑等级提升而增加。"
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier:0 "王室总督署"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('royal_intendancy')]在此[location|e]中添加基础[proximity|e]来源。该基础接近度来源不受建筑等级或就业影响。移除[ShowBuildingTypeName('royal_intendancy')]也会移除该效果。"
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_merchant_council_proximity_source_modifier:0 "商人议会"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_merchant_council_proximity_source_modifier:0 "[ShowBuildingTypeName('merchant_council')]在此[location|e]中添加基础[proximity|e]来源。该基础接近度来源不受建筑等级或就业影响。移除[ShowBuildingTypeName('merchant_council')]也会移除该效果。"
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier:0 "教会总督署"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('ecclesiastical_intendancy')]在此[location|e]中添加基础[proximity|e]来源。该基础接近度来源不受建筑等级或就业影响。移除[ShowBuildingTypeName('ecclesiastical_intendancy')]也会移除该效果。"
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier:0 "华夏官署"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('chinese_intendancy')]在此[location|e]中添加基础[proximity|e]来源。该基础接近度来源不受建筑等级或就业影响。移除[ShowBuildingTypeName('chinese_intendancy')]也会移除该效果。"

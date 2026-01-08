@@ -1,0 +1,15 @@
+﻿l_polish:
+ MODIFIER_TYPE_NAME_proximity_from_trade_hubs_base_proximity: "Bazowe lokalne źródło bliskości"
+ MODIFIER_TYPE_DESC_proximity_from_trade_hubs_base_proximity: "Dodaje bazowe źródło [proximity|e] w [location|e], które nie rośnie wraz z poziomami budynku."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier: "Intendentura Królewska"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('royal_intendancy')] dodaje bazowe źródło [proximity|e] w tej [location|e]. To bazowe źródło bliskości nie jest zależne od poziomów budynku ani zatrudnienia. Usunięcie [ShowBuildingTypeName('royal_intendancy')] usunie również ten efekt."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_merchant_council_proximity_source_modifier: "Rada Kupiecka"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_merchant_council_proximity_source_modifier: "[ShowBuildingTypeName('merchant_council')] dodaje bazowe źródło [proximity|e] w tej [location|e]. To bazowe źródło bliskości nie jest zależne od poziomów budynku ani zatrudnienia. Usunięcie [ShowBuildingTypeName('merchant_council')] usunie również ten efekt."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier: "Intendentura Kościelna"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('ecclesiastical_intendancy')] dodaje bazowe źródło [proximity|e] w tej [location|e]. To bazowe źródło bliskości nie jest zależne od poziomów budynku ani zatrudnienia. Usunięcie [ShowBuildingTypeName('ecclesiastical_intendancy')] usunie również ten efekt."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier: "Intendentura Chińska"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('chinese_intendancy')] dodaje bazowe źródło [proximity|e] w tej [location|e]. To bazowe źródło bliskości nie jest zależne od poziomów budynku ani zatrudnienia. Usunięcie [ShowBuildingTypeName('chinese_intendancy')] usunie również ten efekt."

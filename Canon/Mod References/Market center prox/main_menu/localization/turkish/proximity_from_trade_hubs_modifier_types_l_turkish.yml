@@ -1,0 +1,15 @@
+﻿l_turkish:
+ MODIFIER_TYPE_NAME_proximity_from_trade_hubs_base_proximity:0 "Temel Yerel Yakınlık Kaynağı"
+ MODIFIER_TYPE_DESC_proximity_from_trade_hubs_base_proximity:0 "Bir [location|e] içinde temel bir [proximity|e] kaynağı ekler; bu kaynak bina seviyeleriyle artmaz."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier:0 "Kraliyet İntendansı"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('royal_intendancy')], bu [location|e] içinde temel bir [proximity|e] kaynağı ekler. Bu temel yakınlık kaynağı bina seviyelerinden veya istihdamdan etkilenmez. [ShowBuildingTypeName('royal_intendancy')] kaldırılırsa bu etki de kaldırılır."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_merchant_council_proximity_source_modifier:0 "Tüccar Konseyi"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_merchant_council_proximity_source_modifier:0 "[ShowBuildingTypeName('merchant_council')], bu [location|e] içinde temel bir [proximity|e] kaynağı ekler. Bu temel yakınlık kaynağı bina seviyelerinden veya istihdamdan etkilenmez. [ShowBuildingTypeName('merchant_council')] kaldırılırsa bu etki de kaldırılır."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier:0 "Ruhban İntendansı"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('ecclesiastical_intendancy')], bu [location|e] içinde temel bir [proximity|e] kaynağı ekler. Bu temel yakınlık kaynağı bina seviyelerinden veya istihdamdan etkilenmez. [ShowBuildingTypeName('ecclesiastical_intendancy')] kaldırılırsa bu etki de kaldırılır."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier:0 "Çin İntendansı"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('chinese_intendancy')], bu [location|e] içinde temel bir [proximity|e] kaynağı ekler. Bu temel yakınlık kaynağı bina seviyelerinden veya istihdamdan etkilenmez. [ShowBuildingTypeName('chinese_intendancy')] kaldırılırsa bu etki de kaldırılır."

@@ -1,0 +1,17 @@
+﻿l_russian:
+
+ MODIFIER_TYPE_NAME_proximity_from_trade_hubs_base_proximity:0 "Базовый источник локальной близости"
+ MODIFIER_TYPE_DESC_proximity_from_trade_hubs_base_proximity:0 "Добавляет базовый источник [proximity|e] в [location|e], который не увеличивается с уровнями здания."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier:0 "Королевская интендантура"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('royal_intendancy')] добавляет базовый источник [proximity|e] в этой [location|e]. Этот базовый источник близости не зависит от уровней здания или занятости. Удаление [ShowBuildingTypeName('royal_intendancy')] также уберёт этот эффект."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_merchant_council_proximity_source_modifier:0 "Купеческий совет"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_merchant_council_proximity_source_modifier:0 "[ShowBuildingTypeName('merchant_council')] добавляет базовый источник [proximity|e] в этой [location|e]. Этот базовый источник близости не зависит от уровней здания или занятости. Удаление [ShowBuildingTypeName('merchant_council')] также уберёт этот эффект."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier:0 "Церковная интендантура"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('ecclesiastical_intendancy')] добавляет базовый источник [proximity|e] в этой [location|e]. Этот базовый источник близости не зависит от уровней здания или занятости. Удаление [ShowBuildingTypeName('ecclesiastical_intendancy')] также уберёт этот эффект."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier:0 "Китайская интендантура"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier:0 "[ShowBuildingTypeName('chinese_intendancy')] добавляет базовый источник [proximity|e] в этой [location|e]. Этот базовый источник близости не зависит от уровней здания или занятости. Удаление [ShowBuildingTypeName('chinese_intendancy')] также уберёт этот эффект."
+

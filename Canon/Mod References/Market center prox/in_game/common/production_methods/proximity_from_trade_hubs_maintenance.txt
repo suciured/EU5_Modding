@@ -1,0 +1,22 @@
+﻿proximity_hub_admin_maintenance = {
+	paper = 0.4
+	tools = 0.15
+	books = 0.15
+	weaponry = 0.04
+	glass = 0.02
+	fine_cloth = 0.04
+	furniture = 0.04
+	category = building_maintenance
+}
+
+chinese_hub_admin_maintenance = {
+	paper = 0.4
+	tools = 0.15
+	books = 0.15
+	weaponry = 0.04
+	tea = 0.04
+	silk = 0.02
+	fine_cloth = 0.04
+	furniture = 0.04
+	category = building_maintenance
+}

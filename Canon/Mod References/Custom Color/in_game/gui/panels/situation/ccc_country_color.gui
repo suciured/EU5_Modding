@@ -1,0 +1,16 @@
+situation_panel = {
+
+	blockoverride "visible_hint" {
+		visible = yes
+	}
+
+	blockoverride "onaction_hint" {
+		action_tooltip = {
+			if = {
+				limit = { IsNull( SituationPanel.GetHint() ) }
+				selected_hint = hint_ccc_country_color
+			}
+			else = { selected_hint = SituationPanel.GetHint() }
+		}
+	}
+}

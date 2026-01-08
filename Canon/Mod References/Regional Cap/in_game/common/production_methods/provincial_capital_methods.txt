@@ -1,0 +1,55 @@
+﻿# Provincial Capital Production Methods
+
+provincial_capital_maintenance_1 = {
+	paper = 0.2
+	books = 0.1
+	weaponry = 0.1
+	wine = 0.1
+	
+	category = building_maintenance
+}
+
+provincial_capital_maintenance_2 = {
+	paper = 0.4
+	books = 0.2
+	weaponry = 0.1
+	wine = 0.1
+	
+	category = building_maintenance
+}
+
+provincial_capital_maintenance_3 = {
+	paper = 1
+	books = 0.5
+	weaponry = 0.3
+	wine = 0.3
+	
+	category = building_maintenance
+}
+
+provincial_capital_maintenance_4 = {
+	paper = 2
+	books = 1
+	weaponry = 0.3
+	wine = 0.6
+	
+	category = building_maintenance
+}
+
+provincial_capital_maintenance_5 = {
+	paper = 3
+	books = 2
+	weaponry = 0.6
+	wine = 1
+	
+	category = building_maintenance
+}
+
+provincial_capital_maintenance_6 = {
+	paper = 4
+	books = 3
+	weaponry = 0.9
+	wine = 1.5
+	
+	category = building_maintenance
+}

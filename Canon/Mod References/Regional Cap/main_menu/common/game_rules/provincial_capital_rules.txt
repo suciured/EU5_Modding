@@ -1,0 +1,22 @@
+﻿# Provincial Capital Building Restriction Game Rule
+# Determines how the "one per area" restriction is calculated
+
+provincial_capital_restriction = {
+	default = provincial_capital_by_population
+	
+	provincial_capital_by_market = {
+		flag = provincial_capital_by_market
+		flag = flavour_rule
+	}
+	
+	provincial_capital_by_region = {
+		flag = provincial_capital_by_region
+		flag = flavour_rule
+	}
+	
+	provincial_capital_by_population = {
+		flag = provincial_capital_by_population
+		flag = flavour_rule
+	}
+}
+

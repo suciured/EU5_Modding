@@ -1,0 +1,307 @@
+﻿# Provincial Capital Buildings
+# A grand administrative center that serves as the regional seat of power
+# Limited to one per market per country (configurable via game rule)
+# 6 tiers - unlocked through advances, visibility controlled by has_advance checks
+
+# =============================================================================
+# TIER 1: Bailiff's Court (Age of Traditions)
+# =============================================================================
+provincial_capital_1 = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	category = government_category
+	employment_size = huge_noble_employment
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	important_for_AI = yes
+	build_time = large_capital_build_time
+	
+	location_potential = {
+		is_capital = no
+		owner_can_build_more_provincial_capitals = yes
+	}
+	
+	country_potential = {
+		has_advance = provincial_capital_1_advance
+		NOT = { has_advance = provincial_capital_2_advance }
+		OR = {
+			government_type = government_type:monarchy
+			government_type = government_type:theocracy
+			government_type = government_type:republic
+		}
+	}
+	
+	modifier = {
+		local_proximity_source = 25
+		local_nobles_estate_power = 1
+		local_crown_estate_power = 0.1
+		local_monthly_development_modifier = 0.05
+		local_max_literacy = 2.5
+		local_max_control = 0.1
+	}
+	
+	possible_production_methods = {
+		provincial_capital_maintenance_1
+	}
+	
+	construction_demand = provincial_capital_construction_1
+}
+
+# =============================================================================
+# TIER 2: Castellan's Hall (Age of Renaissance)
+# =============================================================================
+provincial_capital_2 = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	obsolete = provincial_capital_1
+	
+	category = government_category
+	employment_size = huge_noble_employment
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	important_for_AI = yes
+	build_time = large_capital_build_time
+	
+	location_potential = {
+		is_capital = no
+		owner_can_build_more_provincial_capitals = yes
+	}
+	
+	country_potential = {
+		has_advance = provincial_capital_2_advance
+		NOT = { has_advance = provincial_capital_3_advance }
+		OR = {
+			government_type = government_type:monarchy
+			government_type = government_type:theocracy
+			government_type = government_type:republic
+		}
+	}
+	
+	modifier = {
+		local_proximity_source = 35
+		local_nobles_estate_power = 2
+		local_crown_estate_power = 0.25
+		local_monthly_development_modifier = 0.06
+		local_max_literacy = 5
+		local_max_control = 0.1
+	}
+	
+	possible_production_methods = {
+		provincial_capital_maintenance_2
+	}
+	
+	construction_demand = provincial_capital_construction_2
+}
+
+# =============================================================================
+# TIER 3: Governor's Residence (Age of Discovery)
+# =============================================================================
+provincial_capital_3 = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	obsolete = provincial_capital_2
+	
+	category = government_category
+	employment_size = huge_noble_employment
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	important_for_AI = yes
+	build_time = large_capital_build_time
+	
+	location_potential = {
+		is_capital = no
+		owner_can_build_more_provincial_capitals = yes
+	}
+	
+	country_potential = {
+		has_advance = provincial_capital_3_advance
+		NOT = { has_advance = provincial_capital_4_advance }
+		OR = {
+			government_type = government_type:monarchy
+			government_type = government_type:theocracy
+			government_type = government_type:republic
+		}
+	}
+	
+	modifier = {
+		local_proximity_source = 50
+		local_nobles_estate_power = 3
+		local_crown_estate_power = 0.3
+		local_monthly_development_modifier = 0.07
+		local_max_literacy = 7.5
+		local_max_control = 0.15
+	}
+	
+	possible_production_methods = {
+		provincial_capital_maintenance_3
+	}
+	
+	construction_demand = provincial_capital_construction_3
+}
+
+# =============================================================================
+# TIER 4: Regional Capitol (Age of Reformation)
+# =============================================================================
+provincial_capital_4 = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	obsolete = provincial_capital_3
+	
+	category = government_category
+	employment_size = huge_noble_employment
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	important_for_AI = yes
+	build_time = large_capital_build_time
+	
+	location_potential = {
+		is_capital = no
+		owner_can_build_more_provincial_capitals = yes
+	}
+	
+	country_potential = {
+		has_advance = provincial_capital_4_advance
+		NOT = { has_advance = provincial_capital_5_advance }
+		OR = {
+			government_type = government_type:monarchy
+			government_type = government_type:theocracy
+			government_type = government_type:republic
+		}
+	}
+	
+	modifier = {
+		local_proximity_source = 65
+		local_nobles_estate_power = 4
+		local_crown_estate_power = 0.4
+		local_monthly_development_modifier = 0.08
+		local_max_literacy = 10
+		local_max_control = 0.15
+	}
+	
+	possible_production_methods = {
+		provincial_capital_maintenance_4
+	}
+	
+	construction_demand = provincial_capital_construction_4
+}
+
+# =============================================================================
+# TIER 5: Grand Provincial Estate (Age of Absolutism)
+# =============================================================================
+provincial_capital_5 = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	obsolete = provincial_capital_4
+	
+	category = government_category
+	employment_size = huge_noble_employment
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	important_for_AI = yes
+	build_time = large_capital_build_time
+	
+	location_potential = {
+		is_capital = no
+		owner_can_build_more_provincial_capitals = yes
+	}
+	
+	country_potential = {
+		has_advance = provincial_capital_5_advance
+		NOT = { has_advance = provincial_capital_6_advance }
+		OR = {
+			government_type = government_type:monarchy
+			government_type = government_type:theocracy
+			government_type = government_type:republic
+		}
+	}
+	
+	modifier = {
+		local_proximity_source = 70
+		local_nobles_estate_power = 5
+		local_crown_estate_power = 0.5
+		local_monthly_development_modifier = 0.1
+		local_max_literacy = 12.5
+		local_max_control = 0.15
+	}
+	
+	possible_production_methods = {
+		provincial_capital_maintenance_5
+	}
+	
+	construction_demand = provincial_capital_construction_5
+}
+
+# =============================================================================
+# TIER 6: Imperial Administrative Center (Age of Revolutions)
+# =============================================================================
+provincial_capital_6 = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	obsolete = provincial_capital_5
+	
+	category = government_category
+	employment_size = huge_noble_employment
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	important_for_AI = yes
+	build_time = large_capital_build_time
+	
+	location_potential = {
+		is_capital = no
+		owner_can_build_more_provincial_capitals = yes
+	}
+	
+	country_potential = {
+		has_advance = provincial_capital_6_advance
+		OR = {
+			government_type = government_type:monarchy
+			government_type = government_type:theocracy
+			government_type = government_type:republic
+		}
+	}
+	
+	modifier = {
+		local_proximity_source = 80
+		local_nobles_estate_power = 5
+		local_crown_estate_power = 1
+		local_monthly_development_modifier = 0.1
+		local_max_literacy = 15
+		local_max_control = 0.2
+	}
+	
+	possible_production_methods = {
+		provincial_capital_maintenance_6
+	}
+	
+	construction_demand = provincial_capital_construction_6
+}

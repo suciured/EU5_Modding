@@ -1,0 +1,63 @@
+﻿# Provincial Capital Scripted Triggers
+# Ensures only one Provincial Capital per area per country
+# Area type determined by game rule: region, market, or population-based (default: market)
+
+# Helper trigger to check if location has any tier of provincial capital
+has_any_provincial_capital = {
+	OR = {
+		has_building = building_type:provincial_capital_1
+		has_building = building_type:provincial_capital_2
+		has_building = building_type:provincial_capital_3
+		has_building = building_type:provincial_capital_4
+		has_building = building_type:provincial_capital_5
+		has_building = building_type:provincial_capital_6
+	}
+}
+
+# Check if owner already has a Provincial Capital in this area
+# Used in location_potential to restrict building placement
+# root = the location being checked for building
+# scope:actor = the country trying to build
+# Excludes the current location so upgrades are allowed
+owner_can_build_more_provincial_capitals = {
+	trigger_if = {
+		limit = { has_game_rule = provincial_capital_by_region }
+		custom_tooltip = {
+			text = only_one_provincial_capital_per_region_tt
+			NOT = {
+				scope:actor = {
+					any_owned_location = {
+						NOT = { this = root }
+						region = root.region
+						has_any_provincial_capital = yes
+					}
+				}
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = { has_game_rule = provincial_capital_by_population }
+		custom_tooltip = {
+			text = only_one_provincial_capital_by_population_tt
+			# Simple comparison: current count < maximum allowed
+			# Maximum = 1 + floor(population / 10M)
+			scope:actor = {
+				provincial_capital_current_count < provincial_capital_max_allowed
+			}
+		}
+	}
+	trigger_else = {
+		custom_tooltip = {
+			text = only_one_provincial_capital_per_market_tt
+			NOT = {
+				scope:actor = {
+					any_owned_location = {
+						NOT = { this = root }
+						market = root.market
+						has_any_provincial_capital = yes
+					}
+				}
+			}
+		}
+	}
+}

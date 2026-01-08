@@ -1,0 +1,15 @@
+﻿forced_us_to_use_their_liturgical_language = {
+	game_data = {
+		category = country
+		decaying = yes
+	}
+	loyalty_to_overlord = -15
+    change_liturgical_language_cost_modifier = 10
+}
+
+overlord_blocking_colonization = {
+    game_data = {
+        category = country
+    }
+    blocked_from_colonization = yes
+}

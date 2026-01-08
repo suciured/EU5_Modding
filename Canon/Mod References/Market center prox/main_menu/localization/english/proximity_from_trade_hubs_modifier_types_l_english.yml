@@ -1,0 +1,15 @@
+﻿l_english:
+ MODIFIER_TYPE_NAME_proximity_from_trade_hubs_base_proximity: "Base Local Proximity Source"
+ MODIFIER_TYPE_DESC_proximity_from_trade_hubs_base_proximity: "Adds a base [proximity|e] source in a [location|e], which doesn't increase with building levels."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier: "Royal Intendancy"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('royal_intendancy')] adds a base [proximity|e] source in this [location|e]. This base proximity source is not affected by building levels or employment. Removing [ShowBuildingTypeName('royal_intendancy')] will also remove this effect."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_merchant_council_proximity_source_modifier: "Merchant Council"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_merchant_council_proximity_source_modifier: "[ShowBuildingTypeName('merchant_council')] adds a base [proximity|e] source in this [location|e]. This base proximity source is not affected by building levels or employment. Removing [ShowBuildingTypeName('merchant_council')] will also remove this effect."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier: "Ecclesiastical Intendancy"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('ecclesiastical_intendancy')] adds a base [proximity|e] source in this [location|e]. This base proximity source is not affected by building levels or employment. Removing [ShowBuildingTypeName('ecclesiastical_intendancy')] will also remove this effect."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier: "Chinese Intendancy"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('chinese_intendancy')] adds a base [proximity|e] source in this [location|e]. This base proximity source is not affected by building levels or employment. Removing [ShowBuildingTypeName('chinese_intendancy')] will also remove this effect."

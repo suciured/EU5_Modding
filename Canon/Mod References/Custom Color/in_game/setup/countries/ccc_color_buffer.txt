@@ -1,0 +1,7 @@
+CCB = {
+    color  = map_TIM          
+    color2 = rgb { 0 0 0 }
+
+    culture_definition  = swedish_culture   
+    religion_definition = catholic
+}

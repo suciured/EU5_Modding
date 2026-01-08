@@ -1,0 +1,4 @@
+ccc_color_ui_enabled = {
+    game_data = { category = character }
+	auto_conquer_at_war = no
+}

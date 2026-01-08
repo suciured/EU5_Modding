@@ -1,0 +1,62 @@
+﻿# Provincial Capital Building Unlocks
+# Each tier is auto-granted at the appropriate age via on_new_age event
+
+provincial_capital_1_advance = {
+	age = age_1_traditions
+	
+	depth = 0
+
+	unlock_building = provincial_capital_1
+	
+	potential = { always = no }
+}
+
+provincial_capital_2_advance = {
+	age = age_2_renaissance
+	
+	unlock_building = provincial_capital_2
+
+	depth = 0
+	
+	potential = { always = no }
+}
+
+provincial_capital_3_advance = {
+	age = age_3_discovery
+	
+	depth = 0
+
+	unlock_building = provincial_capital_3
+	
+	potential = { always = no }
+}
+
+provincial_capital_4_advance = {
+	age = age_4_reformation
+
+	depth = 0
+	
+	unlock_building = provincial_capital_4
+	
+	potential = { always = no }
+}
+
+provincial_capital_5_advance = {
+	age = age_5_absolutism
+
+	depth = 0
+	
+	unlock_building = provincial_capital_5
+	
+	potential = { always = no }
+}
+
+provincial_capital_6_advance = {
+	age = age_6_revolutions
+
+	depth = 0
+	
+	unlock_building = provincial_capital_6
+	
+	potential = { always = no }
+}

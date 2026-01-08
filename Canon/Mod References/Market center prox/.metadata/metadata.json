@@ -1,0 +1,18 @@
+{
+  "name": "Proximity from Market Centers",
+  "id": "ProximityFromTradeHubs_local",
+  "version": "1.2.0",
+  "supported_game_version": "1.0.10",
+  "short_description": "Adds a administration building for market centers that provides a proximity source.",
+  "tags": [
+    "Gameplay",
+    "Economy",
+    "Map"
+  ],
+  "relationships": [
+  ],
+  "game_custom_data": {
+    "replace_paths": [
+    ]
+  }
+}

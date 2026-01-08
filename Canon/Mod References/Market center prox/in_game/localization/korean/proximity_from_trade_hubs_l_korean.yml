@@ -1,0 +1,16 @@
+﻿l_korean:
+
+ proximity_from_trade_hubs_proximity_source_workaround_tt:0 "건물 레벨에 따라 증가하지 않는 기본 [proximity|e] 원천을 위치에 추가합니다."
+ royal_intendancy:0 "왕실 행정청"
+ royal_intendancy_desc:0 "$royal_intendancy$는 시장 중심지에 왕권의 존재를 드러내고, 칙령이 집행되도록 보장한다. 이곳에서 관리들이 장부를 정리하고 왕실의 권위를 주변 지역으로 확장한다."
+
+ merchant_council:0 "상인 평의회"
+ merchant_council_desc:0 "$merchant_council$는 시장 중심지의 교역 질서를 맡은 시민들의 기구이다. 그 규칙으로 주변 도시들을 결속시킨다."
+
+ ecclesiastical_intendancy:0 "교회 행정청"
+ ecclesiastical_intendancy_desc:0 "$ecclesiastical_intendancy$는 시장 중심지에서 기록을 보관하고 교회의 일을 감독하는 성직자 관청이다. 서신과 등록부는 영적·세속적 영향력을 인접한 땅으로 전한다."
+
+ chinese_intendancy:0 "중화 행정청"
+ chinese_intendancy_desc:0 "$chinese_intendancy$는 시장 중심지에 설치된 행정 관청으로, 장부와 수입, 칙령을 담당한다. 업무를 정비함으로써 국가 질서를 주변 지역으로 확장한다."
+
+ proximity_hub_admin_maintenance:0 "행정 물자"

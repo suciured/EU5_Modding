@@ -1,0 +1,56 @@
+﻿# Executes the land transfer based on the selected transfer_mode
+# Checks for region, area, province, or location modes and transfers ownership accordingly
+# ROOT: country interaction
+# ARGS: giver; receiver
+ism_perform_land_transfer = {
+    if = {
+        limit = {
+            exists = scope:transfer_mode
+        }
+        if = {
+            limit = { scope:transfer_mode = { situation:ism_transfer_mode_location = this } }
+            if = {
+                limit = { exists = scope:target_location }
+                scope:target_location = { change_location_owner = $receiver$ }
+            }
+            else = { custom_tooltip = select_a_location_to_take }
+        }
+        else_if = {
+            limit = { scope:transfer_mode = { situation:ism_transfer_mode_province = this } }
+            if = {
+                limit = { exists = scope:target_province }
+                scope:target_province = { change_province_owner = $receiver$ }
+            }
+            else = { custom_tooltip = select_province_to_transfer }
+        }
+        else_if = {
+            limit = { scope:transfer_mode = { situation:ism_transfer_mode_area = this } }
+            if = {
+                limit = { exists = scope:target_area }
+                $giver$ = {
+                    every_owned_location = {
+                        limit = { area = scope:target_area }
+                        province = { change_province_owner = $receiver$ }
+                    }
+                }
+            }
+            else = { custom_tooltip = select_area_to_transfer }
+        }
+        else_if = {
+            limit = { scope:transfer_mode = { situation:ism_transfer_mode_region = this } }
+            if = {
+                limit = { exists = scope:target_region }
+                $giver$ = {
+                    every_owned_location = {
+                        limit = { region = scope:target_region }
+                        province = { change_province_owner = $receiver$ }
+                    }
+                }
+            }
+            else = { custom_tooltip = select_region_to_transfer }
+        }
+    }
+    else = {
+        custom_tooltip = select_transfer_mode
+    }
+}

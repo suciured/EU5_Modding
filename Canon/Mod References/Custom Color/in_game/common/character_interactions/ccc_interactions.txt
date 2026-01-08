@@ -1,0 +1,51 @@
+ccc_toggle_color_ui = {
+	on_own_nation = yes
+	message = no
+	context_menu_click_mode = click
+	ai_tick = never
+
+	potential = {
+		scope:actor = { is_ai = no has_ruler = yes }
+	}
+
+	allow = {
+		scope:actor = { is_ai = no has_ruler = yes }
+	}
+
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = recipient
+		name = "ccc_toggle_color_ui"
+		column = { data = name }
+
+		visible = {
+			this = scope:actor.ruler
+		}
+
+		enabled = { always = yes }
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { scope:actor = { ruler ?= { has_character_modifier = ccc_color_ui_enabled } } }
+				scope:actor = { ruler ?= { remove_character_modifier = ccc_color_ui_enabled } }
+				scope:actor = { remove_variable = ccc_color_page }
+			}
+			else = {
+				scope:actor = {
+					ruler ?= {
+						add_character_modifier = {
+							modifier = ccc_color_ui_enabled
+							years = -1
+							mode = add_and_extend
+						}
+					}
+				}
+				scope:actor = { set_variable = { name = ccc_color_page value = 0 } }
+				activate_situation = situation:ccc_country_color
+			}
+		}
+	}
+}

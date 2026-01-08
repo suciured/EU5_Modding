@@ -1,0 +1,317 @@
+
+city_of_wonders = {
+	rank_modifier = {
+		build_time = 1825
+		free_building_levels = 250
+		local_clergy_desired_pop = 0.15
+		local_food_capacity = 2500
+		local_integration_speed_modifier = -0.5
+		local_max_control = 1
+		local_max_rgo_size_modifier = 2
+		local_migration_attraction = 1
+		local_monthly_food_modifier = -0.75
+		local_nobles_desired_pop = 0.25
+		local_pop_promotion_speed_modifier = 1
+		local_population_capacity = 300
+		local_population_capacity_modifier = 2.5
+		max_constructions_at_same_time = 5
+	}
+
+	allow = {
+		location_rank = location_rank:capital_city
+		population >= 300
+		modifier:cannot_upgrade_location = no
+		custom_tooltip = { tooltip = lr_tt_fail_required_city_of_wonders trigger = { lr_meets_required_for_next_rank_city_of_wonders = yes } }
+		custom_tooltip = { tooltip = lr_tt_fail_desired_capital_city_to_city_of_wonders trigger = { lr_meets_desired_gate_for_transition_capital_city_to_city_of_wonders = yes } }
+	}
+
+	color = color_rank_kingdom
+	frame_tier = 11
+	show_in_label = yes
+}
+
+
+capital_city = {
+	rank_modifier = {
+		build_time = 730
+		free_building_levels = 50
+		local_food_capacity = 500
+		local_integration_speed_modifier = -0.25
+		local_max_control = 0.25
+		local_max_rgo_size_modifier = 0.5
+		local_migration_attraction = 0.25
+		local_monthly_food_modifier = -0.5
+		local_nobles_desired_pop = 0.2
+		local_pop_promotion_speed_modifier = 0.5
+		local_population_capacity = 100
+		local_population_capacity_modifier = 2
+		max_constructions_at_same_time = 3
+	}
+
+	allow = {
+		location_rank = location_rank:major_city
+		population >= 200
+		modifier:cannot_upgrade_location = no
+		custom_tooltip = { tooltip = lr_tt_fail_required_capital_city trigger = { lr_meets_required_for_next_rank_capital_city = yes } }
+		custom_tooltip = { tooltip = lr_tt_fail_desired_major_city_to_capital_city trigger = { lr_meets_desired_gate_for_transition_major_city_to_capital_city = yes } }
+	}
+
+	color = color_rank_kingdom
+	frame_tier = 10
+	show_in_label = yes
+}
+
+major_city = {
+	rank_modifier = {
+		build_time = 730
+		free_building_levels = 50
+		local_food_capacity = 500
+		local_integration_speed_modifier = -0.25
+		local_max_control = 0.25
+		local_max_rgo_size_modifier = 0.5
+		local_migration_attraction = 0.25
+		local_monthly_food_modifier = -0.5
+		local_nobles_desired_pop = 0.2
+		local_pop_promotion_speed_modifier = 0.5
+		local_population_capacity = 100
+		local_population_capacity_modifier = 1.5
+		max_constructions_at_same_time = 3
+	}
+
+	allow = {
+		location_rank = location_rank:city
+		population >= 150
+		modifier:cannot_upgrade_location = no
+		custom_tooltip = { tooltip = lr_tt_fail_required_major_city trigger = { lr_meets_required_for_next_rank_major_city = yes } }
+		custom_tooltip = { tooltip = lr_tt_fail_desired_city_to_major_city trigger = { lr_meets_desired_gate_for_transition_city_to_major_city = yes } }
+	}
+
+	color = color_rank_kingdom
+	frame_tier = 9
+	show_in_label = yes
+}
+
+city = {
+	rank_modifier = {
+		build_time = 730
+		free_building_levels = 50
+		local_food_capacity = 500
+		local_integration_speed_modifier = -0.25
+		local_max_control = 0.25
+		local_max_rgo_size_modifier = 0.5
+		local_migration_attraction = 0.25
+		local_monthly_food_modifier = -0.5
+		local_pop_promotion_speed_modifier = 0.5
+		local_population_capacity = 100
+		local_population_capacity_modifier = 1
+		max_constructions_at_same_time = 3
+	}
+
+	allow = {
+		location_rank = location_rank:large_town
+		population >= 100
+		modifier:cannot_upgrade_location = no
+		custom_tooltip = { tooltip = lr_tt_fail_required_city trigger = { lr_meets_required_for_next_rank_city = yes } }
+		custom_tooltip = { tooltip = lr_tt_fail_desired_large_town_to_city trigger = { lr_meets_desired_gate_for_transition_large_town_to_city = yes } }
+	}
+
+	color = color_rank_kingdom
+	frame_tier = 8
+	show_in_label = yes
+}
+
+large_town = {
+	rank_modifier = {
+		build_time = 365
+		free_building_levels = 25
+		local_food_capacity = 250
+		local_migration_attraction = 0.1
+		local_pop_promotion_speed_modifier = 0.25
+		local_population_capacity = 50
+		local_population_capacity_modifier = 0.7
+		max_constructions_at_same_time = 2
+	}
+
+	allow = {
+		location_rank = location_rank:town
+		population >= 75
+		modifier:cannot_upgrade_location = no
+		custom_tooltip = { tooltip = lr_tt_fail_required_large_town trigger = { lr_meets_required_for_next_rank_large_town = yes } }
+		custom_tooltip = { tooltip = lr_tt_fail_desired_town_to_large_town trigger = { lr_meets_desired_gate_for_transition_town_to_large_town = yes } }
+	}
+
+	color = color_rank_duchy
+	frame_tier = 7
+	show_in_label = yes
+}
+
+
+
+town = {
+	rank_modifier = {
+		build_time = 365
+		free_building_levels = 25
+		local_food_capacity = 250
+		local_migration_attraction = 0.1
+		local_pop_promotion_speed_modifier = 0.25
+		local_population_capacity = 50
+		local_population_capacity_modifier = 0.4
+		max_constructions_at_same_time = 2
+	}
+
+	allow = {
+		location_rank = location_rank:township
+		population >= 50
+		modifier:cannot_upgrade_location = no
+		custom_tooltip = { tooltip = lr_tt_fail_required_town trigger = { lr_meets_required_for_next_rank_town = yes } }
+		custom_tooltip = { tooltip = lr_tt_fail_desired_township_to_town trigger = { lr_meets_desired_gate_for_transition_township_to_town = yes } }
+	}
+
+	color = color_rank_duchy
+	frame_tier = 6
+	show_in_label = yes
+}
+
+
+township = {
+	rank_modifier = {
+		build_time = 365
+		free_building_levels = 25
+		local_food_capacity = 250
+		local_migration_attraction = 0.25
+		local_pop_promotion_speed_modifier = 0.25
+		local_population_capacity = 50
+		local_population_capacity_modifier = 0.1
+		max_constructions_at_same_time = 2
+	}
+
+	allow = {
+		location_rank = location_rank:market_village
+		population >= 25
+		modifier:cannot_upgrade_location = no
+		custom_tooltip = { tooltip = lr_tt_fail_required_township trigger = { lr_meets_required_for_next_rank_township = yes } }
+		custom_tooltip = { tooltip = lr_tt_fail_desired_market_village_to_township trigger = { lr_meets_desired_gate_for_transition_market_village_to_township = yes } }
+	}
+
+	color = color_rank_county
+	frame_tier = 5
+	show_in_label = yes
+}
+
+
+
+market_village = {
+	rank_modifier = {
+		free_building_levels = 0
+		local_burghers_desired_pop = 0.05
+		local_clergy_desired_pop = 0.1
+		local_food_capacity = 50
+		local_integration_speed_modifier = 0.5
+		local_laborers_desired_pop = 0.15
+		local_max_control = -0.25
+		local_max_rgo_size_modifier = 0.5
+		local_monthly_food_modifier = 1
+		local_nobles_desired_pop = 0.05
+		local_population_capacity = 25
+		local_population_capacity_modifier = 0
+		local_soldiers_desired_pop = 0.1
+		max_constructions_at_same_time = 1
+	}
+
+	allow = {
+		location_rank = location_rank:isolated_villages
+		population >= 20
+		modifier:cannot_upgrade_location = no
+		custom_tooltip = { tooltip = lr_tt_fail_required_market_village trigger = { lr_meets_required_for_next_rank_market_village = yes } }
+		custom_tooltip = { tooltip = lr_tt_fail_desired_isolated_villages_to_market_village trigger = { lr_meets_desired_gate_for_transition_isolated_villages_to_market_village = yes } }
+	}
+
+	color = color_rank_county
+	frame_tier = 4
+	show_in_label = yes
+}
+
+
+
+isolated_villages = {
+	rank_modifier = {
+		free_building_levels = 0
+		local_clergy_desired_pop = 0.1
+		local_food_capacity = 50
+		local_integration_speed_modifier = 0.5
+		local_max_control = -0.25
+		local_max_rgo_size_modifier = 0.5
+		local_monthly_food_modifier = 1
+		local_population_capacity = 25
+		local_population_capacity_modifier = -0.1
+		local_soldiers_desired_pop = 0.1
+		local_tribesmen_desired_pop = 0.25
+		max_constructions_at_same_time = 1
+	}
+
+	allow = {
+		location_rank = location_rank:homesteads
+		population >= 15
+		modifier:cannot_upgrade_location = no
+		custom_tooltip = { tooltip = lr_tt_fail_required_isolated_villages trigger = { lr_meets_required_for_next_rank_isolated_villages = yes } }
+		custom_tooltip = { tooltip = lr_tt_fail_desired_homesteads_to_isolated_villages trigger = { lr_meets_desired_gate_for_transition_homesteads_to_isolated_villages = yes } }
+	}
+
+	color = color_rank_county
+	frame_tier = 3
+	show_in_label = yes
+}
+
+
+homesteads = {
+	rank_modifier = {
+		free_building_levels = 0
+		local_clergy_desired_pop = 0.05
+		local_food_capacity = 50
+		local_integration_speed_modifier = 0.5
+		local_max_control = -0.25
+		local_max_rgo_size_modifier = 0.5
+		local_monthly_food_modifier = 1
+		local_population_capacity = 25
+		local_population_capacity_modifier = -0.2
+		local_soldiers_desired_pop = 0.1
+		local_tribesmen_desired_pop = 0.5
+		max_constructions_at_same_time = 1
+	}
+
+	allow = {
+		location_rank = location_rank:rural_settlement
+		population >= 10
+		modifier:cannot_upgrade_location = no
+		custom_tooltip = { tooltip = lr_tt_fail_required_homesteads trigger = { lr_meets_required_for_next_rank_homesteads = yes } }
+		custom_tooltip = { tooltip = lr_tt_fail_desired_rural_settlement_to_homesteads trigger = { lr_meets_desired_gate_for_transition_rural_settlement_to_homesteads = yes } }
+	}
+
+	color = color_rank_county
+	frame_tier = 2
+	show_in_label = yes
+}
+
+
+
+
+rural_settlement = {
+	rank_modifier = {
+		free_building_levels = -25
+		local_integration_speed_modifier = 1
+		local_max_control = -0.5
+		local_max_rgo_size_modifier = 1
+		local_migration_attraction = -0.5
+		local_monthly_food_modifier = 2
+		local_pop_promotion_speed_modifier = -0.5
+		local_population_capacity = 30
+		local_population_capacity_modifier = -0.5
+		local_soldiers_desired_pop = 0.1
+		local_tribesmen_desired_pop = 0.75
+		max_constructions_at_same_time = 1
+	}
+	color = color_rank_county
+	frame_tier = 1
+	show_in_label = yes
+}
+

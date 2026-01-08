@@ -1,0 +1,15 @@
+﻿l_german:
+ MODIFIER_TYPE_NAME_proximity_from_trade_hubs_base_proximity: "Grundwert: Lokale Nähequelle"
+ MODIFIER_TYPE_DESC_proximity_from_trade_hubs_base_proximity: "Fügt eine grundlegende [proximity|e]-Quelle in einem [location|e] hinzu, die nicht mit Gebäudestufen ansteigt."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier: "Königliche Intendanz"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_royal_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('royal_intendancy')] fügt in diesem [location|e] eine grundlegende [proximity|e]-Quelle hinzu. Diese grundlegende Nähequelle wird nicht durch Gebäudestufen oder Beschäftigung beeinflusst. Das Entfernen von [ShowBuildingTypeName('royal_intendancy')] entfernt diesen Effekt ebenfalls."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_merchant_council_proximity_source_modifier: "Handelsrat"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_merchant_council_proximity_source_modifier: "[ShowBuildingTypeName('merchant_council')] fügt in diesem [location|e] eine grundlegende [proximity|e]-Quelle hinzu. Diese grundlegende Nähequelle wird nicht durch Gebäudestufen oder Beschäftigung beeinflusst. Das Entfernen von [ShowBuildingTypeName('merchant_council')] entfernt diesen Effekt ebenfalls."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier: "Kirchliche Intendanz"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_ecclesiastical_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('ecclesiastical_intendancy')] fügt in diesem [location|e] eine grundlegende [proximity|e]-Quelle hinzu. Diese grundlegende Nähequelle wird nicht durch Gebäudestufen oder Beschäftigung beeinflusst. Das Entfernen von [ShowBuildingTypeName('ecclesiastical_intendancy')] entfernt diesen Effekt ebenfalls."
+
+ STATIC_MODIFIER_NAME_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier: "Chinesische Intendanz"
+ STATIC_MODIFIER_DESC_proximity_from_trade_hubs_chinese_intendancy_proximity_source_modifier: "[ShowBuildingTypeName('chinese_intendancy')] fügt in diesem [location|e] eine grundlegende [proximity|e]-Quelle hinzu. Diese grundlegende Nähequelle wird nicht durch Gebäudestufen oder Beschäftigung beeinflusst. Das Entfernen von [ShowBuildingTypeName('chinese_intendancy')] entfernt diesen Effekt ebenfalls."

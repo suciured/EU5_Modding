@@ -1,0 +1,17 @@
+﻿{
+    "name": "Rename Any Country",
+    "id": "rename.any.country",
+    "version": "1.0",
+    "game_id": "eu5",
+    "supported_game_version": "1.0.*",
+    "short_description": "Allows renaming any country (including yourself).",
+    "tags": [
+        "Utilities",
+        "Diplomacy",
+        "User Interface",
+        "Gameplay",
+        "Map"
+    ],
+    "relationships": [],
+    "game_custom_data": {}
+}
