@@ -1,0 +1,11 @@
+﻿{
+	"name":	"RGO Change – With Requirements",
+	"id":	"rgochange.requirements",
+	"version":	"",
+	"supported_game_version":	"",
+	"short_description":	"Changes RGO through situation panel(just like columbian exchange). You have to put your Court Maintainance 100% to see this situation(You can put it back to normal anytime if you don't want to use this feature)",
+	"tags":	["Balance"],
+	"relationships":	[],
+	"game_custom_data":	{
+}
+}

@@ -1,0 +1,7 @@
+﻿l_korean:
+ change_rgo_mod_situation: "RGO 변경"
+ change_rgo_mod_situation_desc: "RGO를 변경합니다. 이 창은 궁정비용이 100% 투자되고 있을 때만 보여집니다."
+ change_rgo_to_new_location_mod: "RGO 변경 - 상품 선택 후 지역 선택"
+ change_rgo_to_new_location_mod_desc: "100 두카트를 사용해 RGO를 변경합니다"
+ change_rgo_to_new_location_mod_by_location: "RGO 변경 - 지역 선택 후 상품 선택"
+ change_rgo_to_new_location_mod_by_location_desc: "100 두카트를 사용해 RGO를 변경합니다"

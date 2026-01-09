@@ -1,0 +1,3 @@
+rgo_change_mod_price = {
+	gold = 100
+}

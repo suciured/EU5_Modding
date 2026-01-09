@@ -1,0 +1,34 @@
+﻿change_rgo_mod_situation = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	
+	can_start = {
+		always = yes	
+	}
+	
+	can_end = {
+		always = no
+	}
+	
+	visible = {
+		is_ai = no
+		court_maintenance = 1
+	}
+	
+
+	on_start = {
+		
+	}
+
+	on_monthly = {
+		
+	}
+
+	tooltip = {
+	}
+
+
+	on_ended = {
+		
+	}
+	
+}

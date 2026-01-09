@@ -1,0 +1,14 @@
+colors = {
+	# More LR: location rank colors (custom tokens referenced by in_game/common/location_ranks/00_default.txt)
+	lr_rank_capital_city = rgb { 80 120 80 }
+	lr_rank_chartered_town = rgb { 140 110 60 }
+	lr_rank_city_of_wonders = rgb { 120 120 180 }
+	lr_rank_homesteads = rgb { 90 150 90 }
+	lr_rank_isolated_villages = rgb { 150 130 90 }
+	lr_rank_large_town = rgb { 200 160 80 }
+	lr_rank_major_city = rgb { 170 90 90 }
+	lr_rank_market_village = rgb { 120 170 200 }
+	lr_rank_minor_city = rgb { 180 120 200 }
+	lr_rank_township = rgb { 200 200 120 }
+	lr_rank_wilderness = rgb { 70 70 70 }
+}

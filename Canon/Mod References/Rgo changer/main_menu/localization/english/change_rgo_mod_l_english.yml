@@ -1,0 +1,7 @@
+﻿l_english:
+ change_rgo_mod_situation: "Change RGO"
+ change_rgo_mod_situation_desc: "Change RGO. This situation is only shown if court maintainance set as 100%."
+ change_rgo_to_new_location_mod: "Change RGO - Select RGO then select location"
+ change_rgo_to_new_location_mod_desc: "Use 100 ducats to change RGO"
+ change_rgo_to_new_location_mod_by_location: "Change RGO - Select location then select RGO"
+ change_rgo_to_new_location_mod_by_location_desc: "Use 100 ducats to change RGO"

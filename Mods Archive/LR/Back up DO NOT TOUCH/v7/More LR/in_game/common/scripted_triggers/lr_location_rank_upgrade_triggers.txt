@@ -1,0 +1,108 @@
+﻿#############################
+# Location Rank Upgrade Gates
+#
+# NOTE: This file is scaffolded.
+# The demographic checks are TODO until the exact EU5 location pop share/count trigger syntax is confirmed.
+#
+# All triggers currently evaluate to YES, so they will not block upgrades by themselves.
+#############################
+
+lr_meets_required_for_next_rank_homesteads = {
+	# TODO: implement required pop-by-type minimums for this rank
+	always = yes
+}
+
+lr_meets_required_for_next_rank_isolated_villages = {
+	# TODO: implement required pop-by-type minimums for this rank
+	always = yes
+}
+
+lr_meets_required_for_next_rank_market_village = {
+	# TODO: implement required pop-by-type minimums for this rank
+	always = yes
+}
+
+lr_meets_required_for_next_rank_township = {
+	# TODO: implement required pop-by-type minimums for this rank
+	always = yes
+}
+
+lr_meets_required_for_next_rank_town = {
+	# TODO: implement required pop-by-type minimums for this rank
+	always = yes
+}
+
+lr_meets_required_for_next_rank_large_town = {
+	# TODO: implement required pop-by-type minimums for this rank
+	always = yes
+}
+
+lr_meets_required_for_next_rank_city = {
+	# TODO: implement required pop-by-type minimums for this rank
+	always = yes
+}
+
+lr_meets_required_for_next_rank_major_city = {
+	# TODO: implement required pop-by-type minimums for this rank
+	always = yes
+}
+
+lr_meets_required_for_next_rank_capital_city = {
+	# TODO: implement required pop-by-type minimums for this rank
+	always = yes
+}
+
+lr_meets_required_for_next_rank_city_of_wonders = {
+	# TODO: implement required pop-by-type minimums for this rank
+	always = yes
+}
+
+lr_meets_desired_gate_for_transition_wilderness_to_homesteads = {
+	# TODO: implement directional desired ratio gates for this transition
+	always = yes
+}
+
+lr_meets_desired_gate_for_transition_homesteads_to_isolated_villages = {
+	# TODO: implement directional desired ratio gates for this transition
+	always = yes
+}
+
+lr_meets_desired_gate_for_transition_isolated_villages_to_market_village = {
+	# TODO: implement directional desired ratio gates for this transition
+	always = yes
+}
+
+lr_meets_desired_gate_for_transition_market_village_to_township = {
+	# TODO: implement directional desired ratio gates for this transition
+	always = yes
+}
+
+lr_meets_desired_gate_for_transition_township_to_town = {
+	# TODO: implement directional desired ratio gates for this transition
+	always = yes
+}
+
+lr_meets_desired_gate_for_transition_town_to_large_town = {
+	# TODO: implement directional desired ratio gates for this transition
+	always = yes
+}
+
+lr_meets_desired_gate_for_transition_large_town_to_city = {
+	# TODO: implement directional desired ratio gates for this transition
+	always = yes
+}
+
+lr_meets_desired_gate_for_transition_city_to_major_city = {
+	# TODO: implement directional desired ratio gates for this transition
+	always = yes
+}
+
+lr_meets_desired_gate_for_transition_major_city_to_capital_city = {
+	# TODO: implement directional desired ratio gates for this transition
+	always = yes
+}
+
+lr_meets_desired_gate_for_transition_capital_city_to_city_of_wonders = {
+	# TODO: implement directional desired ratio gates for this transition
+	always = yes
+}

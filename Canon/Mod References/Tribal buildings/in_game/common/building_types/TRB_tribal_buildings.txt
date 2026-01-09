@@ -1,0 +1,230 @@
+﻿tribal_agriculture = {
+	is_foreign = no
+	max_levels = 3
+	pop_type = tribesmen
+	
+	category = village_category
+	employment_size = village_employment_size
+	
+	rural_settlement = yes
+	
+	location_potential = {
+		is_overseas_for_owner = no
+		OR = {
+			raw_material = goods:wheat
+			raw_material = goods:maize
+			raw_material = goods:rice
+			raw_material = goods:millet
+			raw_material = goods:legumes
+			raw_material = goods:potato
+			raw_material = goods:livestock
+			raw_material = goods:olives
+			raw_material = goods:fruit
+			raw_material = goods:wool
+		}
+		any_pop = { 
+			pop_type = pop_type:tribesmen 
+			pop_size > 1
+		}
+	}
+	
+		
+	
+	build_time = village_build_time
+	
+	unique_production_methods = {
+		tribal_agriculture_maintenance = {
+			tools = 0.015
+			clay = 0.25
+			
+			output = 0.5
+			
+			produced = livestock
+			
+			debug_max_profit = 0.6
+	
+			category = building_maintenance
+		}
+	}
+
+	construction_demand = village_construction
+
+	modifier = {
+		local_food_capacity = 100
+		local_monthly_food_modifier = 0.05	
+		local_tribes_estate_power = 0.25		#25% higher here.
+
+	}
+}
+
+tribal_market_villages = {
+	is_foreign = no
+	max_levels = 3
+	pop_type = tribesmen
+	
+	employment_size = village_employment_size
+	
+	rural_settlement = yes
+	
+	category = village_category
+	
+		
+	location_potential = {
+		is_overseas_for_owner = no
+		any_pop = { 
+			pop_type = pop_type:tribesmen 
+			pop_size > 1
+		}
+	}
+	
+	build_time = village_build_time
+
+	construction_demand = village_construction
+
+
+	unique_production_methods = {
+		tribal_blacksmith = {
+			produced = tools
+			output = 0.52
+		
+			iron = 0.2
+			category = guild_input
+		}
+		tribal_coppersmith = {
+			produced = tools
+			output = 0.52
+		
+			copper = 0.6
+			category = guild_input
+		}
+		
+		tribal_glassmaker = {
+			produced = glass
+			output = 0.1
+			sand = 0.5
+
+			category = guild_input
+		}
+
+		tribal_millet_brewery = {
+			millet = 0.2
+			lumber = 0.05
+			tools = 0.03
+			
+			produced = beer
+			output = 0.2
+
+			
+			category = guild_input
+		}
+		tribal_weaponmaker = {
+			produced = weaponry
+			output = 0.1
+		
+			lumber = 0.2
+			category = guild_input
+		}
+		tribal_jewelry_carver = {
+			produced = jewelry
+			output = 0.05
+		
+			stone = 0.2
+			category = guild_input
+		}
+		
+		tribal_pottery_maker = {
+			produced = pottery
+			output = 0.1
+		
+			clay = 0.15
+			category = guild_input
+		}
+	}
+
+	modifier = {
+		local_merchant_capacity = 0.10
+		local_merchant_power = 0.10
+		local_food_capacity = 50
+		local_tribes_estate_power = 0.25
+
+		
+	}
+}
+tribal_war_camp = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = tribesmen
+	
+	employment_size = rural_peasant_produce_employment
+	category = village_category
+	
+	rural_settlement = yes
+	build_time = village_build_time
+
+	construction_demand = village_construction
+	
+	
+	location_potential = {
+		is_overseas_for_owner = no
+		any_pop = { 
+			pop_type = pop_type:tribesmen 
+			pop_size > 1
+		}
+	}
+	
+	
+	unique_production_methods = {
+		bailiff_input = {
+			weaponry = 0.2
+			category = building_maintenance
+		}
+	}
+
+	modifier = {
+		local_levy_size_modifier = 0.1
+	}
+	
+	
+}
+tribal_hunting_lodge = {
+	is_foreign = no
+	max_levels = 3
+	pop_type = tribesmen
+	
+	employment_size = rural_peasant_produce_employment
+	category = village_category
+	
+	rural_settlement = yes
+	build_time = village_build_time
+
+	construction_demand = village_construction
+	
+	
+	location_potential = {
+		is_overseas_for_owner = no
+		OR = {
+			vegetation = woods
+			vegetation = forest
+			vegetation = jungle
+		}
+		any_pop = { 
+			pop_type = pop_type:tribesmen 
+			pop_size > 1
+		}
+	}
+	
+	
+	unique_production_methods = {
+		tribal_hunting_lodge_input = {
+			weaponry = 0.1
+			category = building_maintenance
+		}
+	}
+
+	modifier = {
+		local_tribesmen_food_consumption = -0.2
+		gold_to_building_owner = 0.1
+	}
+	
+	
+}

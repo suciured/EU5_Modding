@@ -1,0 +1,328 @@
+# Location ranks (LR) – highest -> lowest
+# Note: These rank IDs are referenced by scripts/setup. You can rebalance them, but keep the IDs consistent.
+
+city_of_wonders = {
+	population_required = 300
+	rank_modifier = {
+		local_population_capacity_modifier = 2.5
+		free_building_levels = 250
+		local_burghers_desired_pop = 0.35
+		local_burghers_required_pop = 0.25
+		local_clergy_desired_pop = 0.15
+		local_clergy_required_pop = 0.15
+		local_construction_cost_modifier = -0.75
+		local_construction_speed_modifier = 1
+		local_food_capacity = 2500
+		local_integration_speed_modifier = -0.5
+		local_max_control = 1
+		local_max_rgo_size_modifier = 2
+		local_migration_attraction = 1
+		local_monthly_food_modifier = -0.75
+		local_nobles_desired_pop = 0.25
+		local_nobles_required_pop = 0.25
+		local_pop_promotion_speed_modifier = 1
+		local_population_growth_modifier = -0.5
+		max_constructions_at_same_time = 5
+	}
+	color = lr_rank_city_of_wonders
+	max_rank = yes
+
+	allow = {
+		location_rank = location_rank:capital_city
+		population >= 300
+		modifier:cannot_upgrade_location = no
+	}
+}
+
+capital_city = {
+	population_required = 200
+	rank_modifier = {
+		local_population_capacity_modifier = 2
+		free_building_levels = 50
+		local_burghers_desired_pop = 0.3
+		local_burghers_required_pop = 0.2
+		local_clergy_desired_pop = 0.15
+		local_clergy_required_pop = 0.1
+		local_construction_cost_modifier = -0.5
+		local_construction_speed_modifier = 0.5
+		local_food_capacity = 500
+		local_integration_speed_modifier = -0.25
+		local_max_control = 0.25
+		local_max_rgo_size_modifier = 0.5
+		local_migration_attraction = 0.25
+		local_monthly_food_modifier = -0.5
+		local_nobles_desired_pop = 0.2
+		local_nobles_required_pop = 0.2
+		local_pop_promotion_speed_modifier = 0.5
+		local_population_growth_modifier = -0.25
+		max_constructions_at_same_time = 3
+	}
+	color = lr_rank_capital_city
+
+	allow = {
+		location_rank = location_rank:major_city
+		population >= 200
+		is_capital = yes
+		modifier:cannot_upgrade_location = no
+	}
+}
+
+major_city = {
+	population_required = 150
+	rank_modifier = {
+		local_population_capacity_modifier = 1.5
+		free_building_levels = 50
+		local_burghers_desired_pop = 0.3
+		local_burghers_required_pop = 0.2
+		local_clergy_desired_pop = 0.1
+		local_clergy_required_pop = 0.1
+		local_construction_cost_modifier = -0.5
+		local_construction_speed_modifier = 0.5
+		local_food_capacity = 500
+		local_integration_speed_modifier = -0.25
+		local_laborers_desired_pop = 0.25
+		local_max_control = 0.25
+		local_max_rgo_size_modifier = 0.5
+		local_migration_attraction = 0.25
+		local_monthly_food_modifier = -0.5
+		local_nobles_desired_pop = 0.2
+		local_nobles_required_pop = 0.15
+		local_pop_promotion_speed_modifier = 0.5
+		local_population_growth_modifier = -0.25
+		max_constructions_at_same_time = 3
+	}
+	color = lr_rank_major_city
+
+	allow = {
+		location_rank = location_rank:city
+		population >= 150
+		is_province_capital = yes
+		modifier:cannot_upgrade_location = no
+	}
+}
+
+city = {
+	population_required = 100
+	rank_modifier = {
+		local_population_capacity_modifier = 1
+		free_building_levels = 50
+		local_burghers_desired_pop = 0.3
+		local_burghers_required_pop = 0.2
+		local_clergy_desired_pop = 0.1
+		local_clergy_required_pop = 0.1
+		local_construction_cost_modifier = -0.5
+		local_construction_speed_modifier = 0.5
+		local_food_capacity = 500
+		local_integration_speed_modifier = -0.25
+		local_laborers_desired_pop = 0.3
+		local_max_control = 0.25
+		local_max_rgo_size_modifier = 0.5
+		local_migration_attraction = 0.25
+		local_monthly_food_modifier = -0.5
+		local_nobles_desired_pop = 0.15
+		local_nobles_required_pop = 0.1
+		local_pop_promotion_speed_modifier = 0.5
+		local_population_growth_modifier = -0.25
+		max_constructions_at_same_time = 3
+	}
+	color = lr_rank_minor_city
+
+	allow = {
+		location_rank = location_rank:large_town
+		population >= 100
+		modifier:cannot_upgrade_location = no
+	}
+}
+
+large_town = {
+	population_required = 75
+	rank_modifier = {
+		local_population_capacity_modifier = 0.7
+		free_building_levels = 25
+		local_burghers_desired_pop = 0.3
+		local_burghers_required_pop = 0.15
+		local_clergy_desired_pop = 0.1
+		local_clergy_required_pop = 0.05
+		local_food_capacity = 250
+		local_laborers_desired_pop = 0.25
+		local_laborers_required_pop = 0.15
+		local_migration_attraction = 0.1
+		local_nobles_desired_pop = 0.1
+		local_nobles_required_pop = 0.05
+		local_pop_promotion_speed_modifier = 0.25
+		local_soldiers_desired_pop = 0.05
+		max_constructions_at_same_time = 2
+	}
+	color = lr_rank_large_town
+
+	allow = {
+		location_rank = location_rank:town
+		population >= 75
+		modifier:cannot_upgrade_location = no
+	}
+}
+
+town = {
+	population_required = 50
+	rank_modifier = {
+		local_population_capacity_modifier = 0.4
+		free_building_levels = 25
+		local_burghers_desired_pop = 0.25
+		local_burghers_required_pop = 0.1
+		local_clergy_desired_pop = 0.1
+		local_clergy_required_pop = 0.05
+		local_food_capacity = 250
+		local_laborers_desired_pop = 0.25
+		local_laborers_required_pop = 0.15
+		local_migration_attraction = 0.1
+		local_nobles_desired_pop = 0.08
+		local_nobles_required_pop = 0.03
+		local_pop_promotion_speed_modifier = 0.25
+		local_soldiers_desired_pop = 0.05
+		max_constructions_at_same_time = 2
+	}
+	color = lr_rank_chartered_town
+
+	allow = {
+		location_rank = location_rank:township
+		population >= 50
+		modifier:cannot_upgrade_location = no
+	}
+}
+
+township = {
+	population_required = 25
+	rank_modifier = {
+		local_population_capacity_modifier = 0.1
+		free_building_levels = 25
+		local_burghers_desired_pop = 0.1
+		local_burghers_required_pop = 0.05
+		local_clergy_desired_pop = 0.1
+		local_clergy_required_pop = 0.05
+		local_food_capacity = 250
+		local_laborers_desired_pop = 0.2
+		local_laborers_required_pop = 0.1
+		local_migration_attraction = 0.25
+		local_nobles_desired_pop = 0.05
+		local_nobles_required_pop = 0.02
+		local_peasant_desired_pop = 0.2
+		local_peasant_required_pop = 0.15
+		local_pop_promotion_speed_modifier = 0.25
+		local_soldiers_desired_pop = 0.05
+		local_soldiers_required_pop = 0.05
+		max_constructions_at_same_time = 2
+	}
+	color = lr_rank_township
+
+	allow = {
+		location_rank = location_rank:market_village
+		population >= 25
+		modifier:cannot_upgrade_location = no
+	}
+}
+
+market_village = {
+	population_required = 20
+	rank_modifier = {
+		local_population_capacity_modifier = 0
+		local_burghers_desired_pop = 0.05
+		local_burghers_required_pop = 0.02
+		local_clergy_desired_pop = 0.1
+		local_clergy_required_pop = 0.05
+		local_laborers_desired_pop = 0.15
+		local_laborers_required_pop = 0.1
+		local_nobles_desired_pop = 0.05
+		local_peasant_desired_pop = 0.25
+		local_peasant_required_pop = 0.2
+		local_soldiers_desired_pop = 0.1
+		local_soldiers_required_pop = 0.05
+	}
+	color = lr_rank_market_village
+
+	allow = {
+		location_rank = location_rank:isolated_villages
+		population >= 20
+		modifier:cannot_upgrade_location = no
+	}
+}
+
+isolated_villages = {
+	population_required = 15
+	rank_modifier = {
+		local_population_capacity_modifier = -0.1
+		local_clergy_desired_pop = 0.1
+		local_clergy_required_pop = 0.02
+		local_construction_cost_modifier = 0.5
+		local_construction_speed_modifier = -0.25
+		local_food_capacity = 50
+		local_integration_speed_modifier = 0.5
+		local_max_control = -0.25
+		local_max_rgo_size_modifier = 0.5
+		local_migration_attraction = 0
+		local_monthly_food_modifier = 1
+		local_peasant_desired_pop = 0.3
+		local_peasant_required_pop = 0.2
+		local_population_growth_modifier = 0.5
+		local_soldiers_desired_pop = 0.1
+		local_soldiers_required_pop = 0.05
+		local_tribesmen_desired_pop = 0.25
+		local_tribesmen_required_pop = 0.1
+	}
+	color = lr_rank_isolated_villages
+
+	allow = {
+		location_rank = location_rank:homesteads
+		population >= 15
+		modifier:cannot_upgrade_location = no
+	}
+}
+
+homesteads = {
+	population_required = 10
+	rank_modifier = {
+		local_population_capacity_modifier = -0.2
+		local_clergy_desired_pop = 0.05
+		local_construction_cost_modifier = 0.5
+		local_construction_speed_modifier = -0.25
+		local_food_capacity = 50
+		local_integration_speed_modifier = 0.5
+		local_max_control = -0.25
+		local_max_rgo_size_modifier = 0.5
+		local_monthly_food_modifier = 1
+		local_peasant_required_pop = 0.15
+		local_population_growth_modifier = 0.5
+		local_soldiers_desired_pop = 0.1
+		local_soldiers_required_pop = 0.05
+		local_tribesmen_desired_pop = 0.5
+		local_tribesmen_required_pop = 0.25
+	}
+	color = lr_rank_homesteads
+
+	allow = {
+		location_rank = location_rank:rural_settlement
+		population >= 10
+		modifier:cannot_upgrade_location = no
+	}
+}
+
+rural_settlement = {
+	population_required = 0
+	rank_modifier = {
+		local_population_capacity_modifier = -0.5
+		free_building_levels = -25
+		local_construction_cost_modifier = 1
+		local_construction_speed_modifier = -0.5
+		local_integration_speed_modifier = 1
+		local_max_control = -0.5
+		local_max_rgo_size_modifier = 1
+		local_migration_attraction = -0.5
+		local_monthly_food_modifier = 2
+		local_pop_promotion_speed_modifier = -0.5
+		local_population_growth_modifier = 1
+		local_soldiers_desired_pop = 0.1
+		local_soldiers_required_pop = 0.05
+		local_tribesmen_desired_pop = 0.75
+		local_tribesmen_required_pop = 0.5
+	}
+	color = lr_rank_wilderness
+}

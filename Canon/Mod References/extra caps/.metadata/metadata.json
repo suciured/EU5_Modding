@@ -1,0 +1,12 @@
+﻿{
+	"name":	"陪都 Multiple Capital",
+	"id":	"Supercenter",
+	"version":	"0.0.1",
+	"supported_game_version":	"1.0.2",
+	"short_description":	"允许玩家拥有多个控制力中心 Allow player gain multiple control spreading center",
+	"tags":	["Events"],
+	"picture": "thumbnail.png",
+	"relationships":	[],
+	"game_custom_data":	{
+}
+}

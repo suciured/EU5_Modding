@@ -1,0 +1,33 @@
+LR_tt = {
+    type = location
+    log_loc_errors = no
+
+    text = { localization_key = wilderness_tt_LR trigger = { location_rank = location_rank:wilderness } }
+    text = { localization_key = homesteads_tt_LR trigger = { location_rank = location_rank:homesteads } }
+    text = { localization_key = isolated_villages_tt_LR trigger = { location_rank = location_rank:isolated_villages } }
+    text = { localization_key = market_village_tt_LR trigger = { location_rank = location_rank:market_village } }
+    text = { localization_key = township_tt_LR trigger = { location_rank = location_rank:township } }
+    text = { localization_key = town_tt_LR trigger = { location_rank = location_rank:town } }
+    text = { localization_key = large_town_tt_LR trigger = { location_rank = location_rank:large_town } }
+    text = { localization_key = city_tt_LR trigger = { location_rank = location_rank:city } }
+    text = { localization_key = major_city_tt_LR trigger = { location_rank = location_rank:major_city } }
+    text = { localization_key = capital_city_tt_LR trigger = { location_rank = location_rank:capital_city } }
+    text = { localization_key = city_of_wonders_tt_LR trigger = { location_rank = location_rank:city_of_wonders } }
+}
+
+LR_GEN = {
+    type = location
+    log_loc_errors = no
+
+    text = { localization_key = wilderness_GEN trigger = { location_rank = location_rank:wilderness } }
+    text = { localization_key = homesteads_GEN trigger = { location_rank = location_rank:homesteads } }
+    text = { localization_key = isolated_villages_GEN trigger = { location_rank = location_rank:isolated_villages } }
+    text = { localization_key = market_village_GEN trigger = { location_rank = location_rank:market_village } }
+    text = { localization_key = township_GEN trigger = { location_rank = location_rank:township } }
+    text = { localization_key = town_GEN trigger = { location_rank = location_rank:town } }
+    text = { localization_key = large_town_GEN trigger = { location_rank = location_rank:large_town } }
+    text = { localization_key = city_GEN trigger = { location_rank = location_rank:city } }
+    text = { localization_key = major_city_GEN trigger = { location_rank = location_rank:major_city } }
+    text = { localization_key = capital_city_GEN trigger = { location_rank = location_rank:capital_city } }
+    text = { localization_key = city_of_wonders_GEN trigger = { location_rank = location_rank:city_of_wonders } }
+}

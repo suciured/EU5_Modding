@@ -1,0 +1,42 @@
+secondary_capital = {
+	is_foreign = no
+	in_empty = owned
+	max_levels = 1
+	pop_type = nobles
+	
+	employment_size = 0.5
+	category = government_category
+	
+	city = yes
+	expensive = yes
+	build_time = large_capital_build_time
+	
+	forbidden_for_estates = yes
+	
+	location_potential = {
+		is_overseas_for_owner = no
+		is_capital = no
+	}
+	
+	construction_demand = early_capital_building_construction
+	
+	unique_production_methods = {
+		secondary_capital_maintenance = {
+			paper = 0.5
+			furniture = 0.15
+			tools = 0.05
+			glass = 0.1
+			fine_cloth = 0.2
+			books = 0.1
+			goods_gold = 0.1
+			category = building_maintenance
+		}
+	}
+	modifier = {
+		local_proximity_source = 100
+		global_crown_estate_power = 0.05 
+	}
+	
+
+	
+}

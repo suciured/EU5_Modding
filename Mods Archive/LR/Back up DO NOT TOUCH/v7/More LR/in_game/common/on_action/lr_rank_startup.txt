@@ -1,0 +1,59 @@
+on_game_start = {
+    effect = {
+        if = {
+            limit = { NOT = { has_global_variable = lr_rank_startup_done } }
+            set_global_variable = lr_rank_startup_done
+
+            # One-time rank reassignment based on existing population (and capital/province-capital status).
+            # No population is added by this mod.
+            every_province_definition = {
+                every_location_in_province_definition = {
+                    ordered_if = {
+                        limit = { population >= 300 NOT = { location_rank = location_rank:city_of_wonders } }
+                        change_location_rank = location_rank:city_of_wonders
+                    }
+                    else_if = {
+                        limit = { population >= 200 is_capital = yes NOT = { location_rank = location_rank:capital_city } }
+                        change_location_rank = location_rank:capital_city
+                    }
+                    else_if = {
+                        limit = { population >= 150 is_province_capital = yes NOT = { location_rank = location_rank:major_city } }
+                        change_location_rank = location_rank:major_city
+                    }
+                    else_if = {
+                        limit = { population >= 100 NOT = { location_rank = location_rank:city } }
+                        change_location_rank = location_rank:city
+                    }
+                    else_if = {
+                        limit = { population >= 75 NOT = { location_rank = location_rank:large_town } }
+                        change_location_rank = location_rank:large_town
+                    }
+                    else_if = {
+                        limit = { population >= 50 NOT = { location_rank = location_rank:town } }
+                        change_location_rank = location_rank:town
+                    }
+                    else_if = {
+                        limit = { population >= 25 NOT = { location_rank = location_rank:township } }
+                        change_location_rank = location_rank:township
+                    }
+                    else_if = {
+                        limit = { population >= 20 NOT = { location_rank = location_rank:market_village } }
+                        change_location_rank = location_rank:market_village
+                    }
+                    else_if = {
+                        limit = { population >= 15 NOT = { location_rank = location_rank:isolated_villages } }
+                        change_location_rank = location_rank:isolated_villages
+                    }
+                    else_if = {
+                        limit = { population >= 10 NOT = { location_rank = location_rank:homesteads } }
+                        change_location_rank = location_rank:homesteads
+                    }
+                    else_if = {
+                        limit = { NOT = { location_rank = location_rank:wilderness } }
+                        change_location_rank = location_rank:wilderness
+                    }
+                }
+            }
+        }
+    }
+}

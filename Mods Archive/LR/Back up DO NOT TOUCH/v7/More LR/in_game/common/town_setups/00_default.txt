@@ -1,0 +1,111 @@
+﻿basic_startup_town = {
+	marketplace = 1
+	pottery_guild = 1
+	mason = 1
+	temple = 1
+	tools_guild = 1
+	weapon_guild = 1
+	granary = 1
+	tannery = 1
+	brewery = 1
+	cloth_guild = 1
+}
+
+basic_startup_large_town = {
+	marketplace = 1
+	pottery_guild = 1
+	mason = 1
+	temple = 1
+	tools_guild = 1
+	weapon_guild = 1
+	granary = 1
+	tannery = 1
+	brewery = 1
+	cloth_guild = 1
+}
+
+basic_startup_township = {
+	marketplace = 1
+	pottery_guild = 1
+	mason = 1
+	temple = 1
+	tools_guild = 1
+	weapon_guild = 1
+	granary = 1
+}
+
+basic_startup_city = {
+	granary = 1
+	temple = 1
+	mason = 1
+	weapon_guild = 1
+	marketplace = 1
+	cloth_guild = 1
+	tools_guild = 1
+	pottery_guild = 1
+	paper_guild = 1
+	castle = 1
+}
+
+basic_startup_major_city = {
+	granary = 1
+	temple = 1
+	mason = 1
+	weapon_guild = 1
+	marketplace = 1
+	cloth_guild = 1
+	tools_guild = 1
+	pottery_guild = 1
+	paper_guild = 1
+	castle = 1
+}
+
+basic_startup_capital_city = {
+	granary = 1
+	temple = 1
+	mason = 1
+	weapon_guild = 1
+	marketplace = 1
+	cloth_guild = 1
+	tools_guild = 1
+	pottery_guild = 1
+	paper_guild = 1
+	castle = 1
+}
+
+basic_startup_city_of_wonders = {
+	granary = 1
+	temple = 1
+	mason = 1
+	weapon_guild = 1
+	marketplace = 1
+	cloth_guild = 1
+	tools_guild = 1
+	pottery_guild = 1
+	paper_guild = 1
+	castle = 1
+}
+
+basic_startup_wilderness = {
+	market_village = 1
+	local_markets = 1
+	fishing_village = 1
+}
+
+basic_startup_homesteads = {
+	market_village = 1
+	local_markets = 1
+	fishing_village = 1
+}
+
+basic_startup_isolated_villages = {
+	market_village = 1
+	local_markets = 1
+	fishing_village = 1
+}
+
+basic_startup_market_village = {
+	market_village = 1
+	local_markets = 1
+	fishing_village = 1
+}
